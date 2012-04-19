@@ -240,7 +240,11 @@ sub dbAccessionsInfo {
 	#$sql =qq{ select a.id, a.eid, b.identifier, b.name, c.institution, c.pi, c.author, c.pmid, c.title, c.designtype, c.timeseries, c.treatment, c.growthcond, c.modification, c.arraydesign, c.strain, c.substrain from experiment a, identifiable b, curated c where a.id=b.id(+) and (a.id=c.expid and c.status=3) order by to_number(substr(b.identifier,4)) };
 	
 	#czhang
-	$sql =qq{ select a.id, a.eid, b.identifier, b.name, c.institution, c.pi, c.author, c.pmid, c.title, c.designtype, c.timeseries, c.treatment, c.growthcond, c.modification, c.arraydesign, c.strain, c.substrain, c.GEOMATCH organism from experiment a, identifiable b, curated c where a.id=b.id(+) and (a.id=c.expid and c.status=3) order by to_number(substr(b.identifier,4)) };
+	#$sql =qq{ select a.id, a.eid, b.identifier, b.name, c.institution, c.pi, c.author, c.pmid, c.title, c.designtype, c.timeseries, c.treatment, c.growthcond, c.modification, c.arraydesign, c.strain, c.substrain, c.GEOMATCH organism from experiment a, identifiable b, curated c where a.id=b.id(+) and (a.id=c.expid and c.status=3) order by to_number(substr(b.identifier,4)) };
+	
+	
+	#czhang added MODUSER
+	$sql =qq{ select a.id, a.eid, b.identifier, b.name, c.institution, c.pi, c.author, c.pmid, c.title, c.designtype, c.timeseries, c.treatment, c.growthcond, c.modification, c.arraydesign, c.strain, c.substrain, c.GEOMATCH organism, c.MODUSER moduser from experiment a, identifiable b, curated c where a.id=b.id(+) and (a.id=c.expid and c.status=3) order by to_number(substr(b.identifier,4)) };
 	
 	
 	$sth = $dbh->prepare($sql);
@@ -251,14 +255,16 @@ sub dbAccessionsInfo {
 	#my ( $id, $eid, $identifier, $name, $institution, $pi, $author, $pmid, $title, $designtype, $timeseries, $treatment, $growthcond, $modification, $arraydesign, $strain, $substrain);
 
 	#czhang
-	my ( $id, $eid, $identifier, $name, $institution, $pi, $author, $pmid, $title, $designtype, $timeseries, $treatment, $growthcond, $modification, $arraydesign, $strain, $substrain, $organism );
+	#my ( $id, $eid, $identifier, $name, $institution, $pi, $author, $pmid, $title, $designtype, $timeseries, $treatment, $growthcond, $modification, $arraydesign, $strain, $substrain, $organism );
+
+	#add moduser
+	my ( $id, $eid, $identifier, $name, $institution, $pi, $author, $pmid, $title, $designtype, $timeseries, $treatment, $growthcond, $modification, $arraydesign, $strain, $substrain, $organism, $moduser );
 
 	my $i = 1;
 	
 	$sth->bind_columns(
-		\$id,         \$eid,        \$identifier, \$name,       \$institution,  \$pi,          \$author, \$pmid, \$title,
-		\$designtype, \$timeseries, \$treatment,  \$growthcond, \$modification, \$arraydesign, \$strain, \$substrain, \$organism
-	);
+			\$id,         \$eid,        \$identifier, \$name,       \$institution,  \$pi,          \$author, \$pmid, \$title,
+		\$designtype, \$timeseries, \$treatment,  \$growthcond, \$modification, \$arraydesign, \$strain, \$substrain, \$organism, \$moduser);
 
 	while ( $row = $sth->fetchrow_arrayref ) {
 		$dbAccessionRec{$i}{id}           = ($id)           ? $id           : '';
@@ -280,7 +286,8 @@ sub dbAccessionsInfo {
 		$dbAccessionRec{$i}{substrain}    = ($substrain)    ? $substrain    : '';
 		
 		#czhang
-		$dbAccessionRec{$i}{organism}    = ($organism)    ?  $organism    : '';
+		$dbAccessionRec{$i}{organism}    = ($organism)    ?  $organism    : '';		
+		$dbAccessionRec{$i}{moduser}    = ($moduser)    ?  $moduser    : '';
 		
 		$i++;
 	}

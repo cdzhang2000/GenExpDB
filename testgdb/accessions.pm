@@ -270,11 +270,11 @@ sub accessions {
 		
 		
  	   	#czhang GEO matched organism 
-        	my $organism = ( $dbAccession{$i}{organism} ) ? $dbAccession{$i}{organism} : '';
+        my $organism = ( $dbAccession{$i}{organism} ) ? $dbAccession{$i}{organism} : '';
 
-        	#print "testing <pre>" . Dumper( $organism ) . "</pre>";
+       	#print "testing <pre>" . Dumper( $organism ) . "</pre>";
          
-       		$line{$i}{organism} = qq{<td class="tdl">$organism</td>\n};
+       	$line{$i}{organism} = qq{<td class="tdl">$organism</td>\n};
 
 
 		#PLATFORM
@@ -286,6 +286,14 @@ sub accessions {
 		}
 		$gplS =~ s/, $//;		
 		$line{$i}{platform} = qq{<td class="tdl">$gplS</td>\n};
+		
+		
+		#czhang added MODUSER
+        my $moduser = ( $dbAccession{$i}{moduser} ) ? $dbAccession{$i}{moduser} : '';
+
+       	#print "testing <pre>" . Dumper( $moduser ) . "</pre>";
+         
+       	$line{$i}{moduser} = qq{<td class="tdl">$moduser</td>\n};
 
 
 	}
@@ -305,6 +313,10 @@ sub accessions {
 	#print "<pre>" . Dumper( $organismHead ) . "</pre>";
 	    
 	my $platformHead = ($col =~ /platform/) ? qq{PLATFORM<img id="accessionssort" src="$testgdb::util::webloc/web/$arrow.gif" alt="">} : "PLATFORM";
+	
+	#czhang
+	my $moduserHead = ($col =~ /moduser/) ? qq{MODUSER<img id="accessionssort" src="$testgdb::util::webloc/web/$arrow.gif" alt="">} : "MODUSER";	    
+	#print "<pre>" . Dumper( $organismHead ) . "</pre>";
 	
 	
 	print 
@@ -329,6 +341,10 @@ sub accessions {
 	  qq{<th><span class="shc" onclick="sm('organism','$dir');" onmouseover="return overlib('Organism, click to sort');" onmouseout="return nd();">$organismHead</span></th>\n},
 	  
 	  qq{<th><span class="shc" onclick="sm('platform','$dir');" onmouseover="return overlib('Platform, click to sort');" onmouseout="return nd();">$platformHead</span></th>\n},	
+	 
+	  #czhang
+	  qq{<th><span class="shc" onclick="sm('moduser','$dir');" onmouseover="return overlib('Moduser, click to sort');" onmouseout="return nd();">$moduserHead</span></th>\n},
+	 
 	  qq{</tr>\n};
 	
 	
@@ -352,7 +368,11 @@ for my $i ( sort myColsort keys %line ) {
 		 	#czhang
 		 	$line{$i}{organism},
 		 	
-		 	$line{$i}{platform},				
+		 	$line{$i}{platform},
+		 	
+		 	#czhang
+		 	$line{$i}{moduser},				
+		 	
 			qq{</tr>\n};
 			 		
 		#hidden experiments
