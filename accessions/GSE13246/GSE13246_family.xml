@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Robert</First><Last>Geffers</Last></Person>
+    <Email>robert.geffers@helmholtz-hzi.de</Email>
+    <Phone>+49 531-6181-3058</Phone>
+    <Fax>+49 531-6181-3099</Fax>
+    <Laboratory>Array Facility</Laboratory>
+    <Department>Dep. Cell Biology</Department>
+    <Organization>HCI - Helmholtz Centre for Infection Research</Organization>
+    <Address>
+      <Line>Inhoffenstr. 7</Line>
+      <City>Braunschweig</City>
+      <Zip-Code>38124</Zip-Code>
+      <Country>Germany</Country>
+    </Address>
+    <Web-Link>http://www.helmholtz-hzi.de/en/research/research_groups/technology_platforms/gene_expression_analysis/</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Franz-Christoph</First><Last>Bange</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>R</First><Last>Geffers</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>S</First><Last>Malm</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>F</First><Middle>C</Middle><Last>Bange</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL7477">
+    <Status database="GEO">
+      <Submission-Date>2008-10-14</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-12-31</Last-Update-Date>
+    </Status>
+    <Title>HCI Mycobacterium tuberculosis H37Rv 5.5K MTbH37Rv</Title>
+    <Accession database="GEO">GPL7477</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CDF">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL7477/GPL7477_MTbH37Rva520456F.cdf.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Organism</Name>
+        <Description>organism source of the feature</Description>
+      </Column>
+      <Column position="3">
+        <Name>RANGE_GB</Name>
+        <Description>chromosome accession and version upon which probes are mapped</Description>
+      </Column>
+      <Column position="4">
+        <Name>RANGE_START</Name>
+        <Description>start position of mapped probe relative to RANGE_GB</Description>
+      </Column>
+      <Column position="5">
+        <Name>RANGE_END</Name>
+        <Description>end position of mapped probe relative to RANGE_GB</Description>
+      </Column>
+      <Column position="6">
+        <Name>RANGE_STRAND</Name>
+        <Description>chromosomal stand</Description>
+      </Column>
+      <Column position="7">
+        <Name>Gene Title</Name>
+        <Description>Titel of gene represented by the probe set</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORF</Name>
+        <Description>open reading frame  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="9">
+        <Name>Gene Symbol</Name>
+        <Description>genes symbol, when one is available from UniGene</Description>
+      </Column>
+      <Column position="10">
+        <Name>Description</Name>
+        <Description>description</Description>
+      </Column>
+      <Column position="11">
+        <Name>SPOT_ID</Name>
+        <Description>alternative spot identifer, identifies controls</Description>
+      </Column>
+    <External-Data rows="5470">
+GPL7477-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM334269">
+    <Status database="GEO">
+      <Submission-Date>2008-10-16</Submission-Date>
+      <Release-Date>2009-04-03</Release-Date>
+      <Last-Update-Date>2009-04-03</Last-Update-Date>
+    </Status>
+    <Title>Null glnR_18h_A</Title>
+    <Accession database="GEO">GSM334269</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Null glnR_18h_A</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="genetic modification">
+deletion of glnR (Rv0818)
+      </Characteristics>
+      <Growth-Protocol>
+minimal medium with nitrate; incubated for 18 hours
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy (Qiagen)
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA were prepared according to the standard Affymetrix protocol from 10 microg total RNA (Prokaryotic Expression Analysis, Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 4 microg of cDNA were hybridized for 16 hr at conditions recommended by the manufacturer. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GCS 3000.
+    </Scan-Protocol>
+    <Description>
+delta-glnR_18h_A
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 150.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7477" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM334nnn/GSM334269/GSM334269.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="5470">
+GSM334269-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM334270">
+    <Status database="GEO">
+      <Submission-Date>2008-10-16</Submission-Date>
+      <Release-Date>2009-04-03</Release-Date>
+      <Last-Update-Date>2009-04-03</Last-Update-Date>
+    </Status>
+    <Title>wt_18h_A</Title>
+    <Accession database="GEO">GSM334270</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>wt_18h_A</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="genetic modification">
+none (wild type)
+      </Characteristics>
+      <Growth-Protocol>
+minimal medium with nitrate; incubated for 18 hours
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy (Qiagen)
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA were prepared according to the standard Affymetrix protocol from 10 microg total RNA (Prokaryotic Expression Analysis, Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 4 microg of cDNA were hybridized for 16 hr at conditions recommended by the manufacturer. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GCS 3000.
+    </Scan-Protocol>
+    <Description>
+wt_18h_A
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 150.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7477" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM334nnn/GSM334270/GSM334270.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="5470">
+GSM334270-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM334271">
+    <Status database="GEO">
+      <Submission-Date>2008-10-16</Submission-Date>
+      <Release-Date>2009-04-03</Release-Date>
+      <Last-Update-Date>2009-04-03</Last-Update-Date>
+    </Status>
+    <Title>Null glnR_ 48h_A</Title>
+    <Accession database="GEO">GSM334271</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Null glnR_ 48h_A</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="genetic modification">
+deletion of glnR (Rv0818)
+      </Characteristics>
+      <Growth-Protocol>
+minimal medium with nitrate; incubated for 48 hours
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy (Qiagen)
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA were prepared according to the standard Affymetrix protocol from 10 microg total RNA (Prokaryotic Expression Analysis, Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 4 microg of cDNA were hybridized for 16 hr at conditions recommended by the manufacturer. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GCS 3000.
+    </Scan-Protocol>
+    <Description>
+delta-glnR_ 48h_A
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 150.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7477" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM334nnn/GSM334271/GSM334271.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="5470">
+GSM334271-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM334272">
+    <Status database="GEO">
+      <Submission-Date>2008-10-16</Submission-Date>
+      <Release-Date>2009-04-03</Release-Date>
+      <Last-Update-Date>2009-04-03</Last-Update-Date>
+    </Status>
+    <Title>wt_48h_A</Title>
+    <Accession database="GEO">GSM334272</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>wt_48h_A</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="genetic modification">
+none (wild type)
+      </Characteristics>
+      <Growth-Protocol>
+minimal medium with nitrate; incubated for 48 hours
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy (Qiagen)
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA were prepared according to the standard Affymetrix protocol from 10 microg total RNA (Prokaryotic Expression Analysis, Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 4 microg of cDNA were hybridized for 16 hr at conditions recommended by the manufacturer. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GCS 3000.
+    </Scan-Protocol>
+    <Description>
+wt_48h_A
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 150.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7477" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM334nnn/GSM334272/GSM334272.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="5470">
+GSM334272-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM334273">
+    <Status database="GEO">
+      <Submission-Date>2008-10-16</Submission-Date>
+      <Release-Date>2009-04-03</Release-Date>
+      <Last-Update-Date>2009-04-03</Last-Update-Date>
+    </Status>
+    <Title>Null glnR_48h_B</Title>
+    <Accession database="GEO">GSM334273</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Null glnR_48h_B</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="genetic modification">
+deletion of glnR (Rv0818)
+      </Characteristics>
+      <Growth-Protocol>
+minimal medium with nitrate; incubated for 48 hours
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy (Qiagen)
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA were prepared according to the standard Affymetrix protocol from 10 microg total RNA (Prokaryotic Expression Analysis, Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 4 microg of cDNA were hybridized for 16 hr at conditions recommended by the manufacturer. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GCS 3000.
+    </Scan-Protocol>
+    <Description>
+delta-glnR_48h_B
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 150.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7477" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM334nnn/GSM334273/GSM334273.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="5470">
+GSM334273-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM334274">
+    <Status database="GEO">
+      <Submission-Date>2008-10-16</Submission-Date>
+      <Release-Date>2009-04-03</Release-Date>
+      <Last-Update-Date>2009-04-03</Last-Update-Date>
+    </Status>
+    <Title>wt_48h_B</Title>
+    <Accession database="GEO">GSM334274</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>wt_48h_B</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="genetic modification">
+none (wild type)
+      </Characteristics>
+      <Growth-Protocol>
+minimal medium with nitrate; incubated for 48 hours
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy (Qiagen)
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA were prepared according to the standard Affymetrix protocol from 10 microg total RNA (Prokaryotic Expression Analysis, Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 4 microg of cDNA were hybridized for 16 hr at conditions recommended by the manufacturer. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GCS 3000.
+    </Scan-Protocol>
+    <Description>
+wt_48h_B
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 150.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7477" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM334nnn/GSM334274/GSM334274.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="5470">
+GSM334274-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM334275">
+    <Status database="GEO">
+      <Submission-Date>2008-10-16</Submission-Date>
+      <Release-Date>2009-04-03</Release-Date>
+      <Last-Update-Date>2009-04-03</Last-Update-Date>
+    </Status>
+    <Title>Null glnR_18h_B</Title>
+    <Accession database="GEO">GSM334275</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Null glnR_18h_B</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="genetic modification">
+deletion of glnR (Rv0818)
+      </Characteristics>
+      <Growth-Protocol>
+minimal medium with nitrate; incubated for 18 hours
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy (Qiagen)
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA were prepared according to the standard Affymetrix protocol from 10 microg total RNA (Prokaryotic Expression Analysis, Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 4 microg of cDNA were hybridized for 16 hr at conditions recommended by the manufacturer. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GCS 3000.
+    </Scan-Protocol>
+    <Description>
+delta-glnR_18h_B
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 150.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7477" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM334nnn/GSM334275/GSM334275.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="5470">
+GSM334275-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM334276">
+    <Status database="GEO">
+      <Submission-Date>2008-10-16</Submission-Date>
+      <Release-Date>2009-04-03</Release-Date>
+      <Last-Update-Date>2009-04-03</Last-Update-Date>
+    </Status>
+    <Title>wt_18h_B</Title>
+    <Accession database="GEO">GSM334276</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>wt_18h_B</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="genetic modification">
+none (wild type)
+      </Characteristics>
+      <Growth-Protocol>
+minimal medium with nitrate; incubated for 18 hours
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy (Qiagen)
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA were prepared according to the standard Affymetrix protocol from 10 microg total RNA (Prokaryotic Expression Analysis, Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 4 microg of cDNA were hybridized for 16 hr at conditions recommended by the manufacturer. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GCS 3000.
+    </Scan-Protocol>
+    <Description>
+wt_18h_B
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 150.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7477" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM334nnn/GSM334276/GSM334276.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="5470">
+GSM334276-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE13246">
+    <Status database="GEO">
+      <Submission-Date>2008-10-16</Submission-Date>
+      <Release-Date>2009-04-03</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Expressionprofiling of a glnR-mutant of Mycobacterium tuberculosis during culture on nitrate</Title>
+    <Accession database="GEO">GSE13246</Accession>
+    <Pubmed-ID>19332834</Pubmed-ID>
+    <Summary>
+Identification of glnR-dependent regulation of nitrate assimilation
+
+Keywords: genetic modification
+    </Summary>
+    <Overall-Design>
+Mycobacterium tuberculosis H37Rv wild type and glnR mutant strain were incubated in minimal medium supplemented with 5 mM NO3 for 18 and 48 hours. RNA was extracted at indicated time points and microarray analysis was performed. Experiments were repeated once. As we wanted to focus on genes that were regulated steadily over time, data obtained from time points 18 hours and 48 hours were grouped. Thus for wild type and mutant, four independent data sets were obtained each, and compared using t-test statistics.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM334269" />
+    <Sample-Ref ref="GSM334270" />
+    <Sample-Ref ref="GSM334271" />
+    <Sample-Ref ref="GSM334272" />
+    <Sample-Ref ref="GSM334273" />
+    <Sample-Ref ref="GSM334274" />
+    <Sample-Ref ref="GSM334275" />
+    <Sample-Ref ref="GSM334276" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE13246/GSE13246_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/109525" />
+  </Series>
+
+</MINiML>

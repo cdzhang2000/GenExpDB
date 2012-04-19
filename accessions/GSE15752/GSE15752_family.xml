@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Sebastian</First><Last>Winter</Last></Person>
+    <Email>sewinter@ucdavis.edu</Email>
+    <Department>MMI</Department>
+    <Organization>UC Davis</Organization>
+    <Address>
+      <Line>One Shields Ave</Line>
+      <City>Davis</City>
+      <State>CA</State>
+      <Zip-Code>95616</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Sebastian</First><Middle>E</Middle><Last>Winter</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Andreas</First><Middle>J</Middle><Last>Baumler</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL8446">
+    <Status database="GEO">
+      <Submission-Date>2009-04-14</Submission-Date>
+      <Release-Date>2009-12-11</Release-Date>
+      <Last-Update-Date>2009-12-11</Last-Update-Date>
+    </Status>
+    <Title>PFGRC_BaumlerLabUCD_Salmonella_Version_4</Title>
+    <Accession database="GEO">GPL8446</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="28901">Salmonella enterica</Organism>
+    <Manufacturer>PFGRC / J. Craig Venter Institute (TIGR)</Manufacturer>
+    <Manufacture-Protocol>
+PFGRC protocol
+    </Manufacture-Protocol>
+    <Catalog-Number>Salmonella Typhimurium/Typhi Version 4</Catalog-Number>
+    <Support>glass</Support>
+    <Coating>other</Coating>
+    <Description>
+Number of Grids: 48
+Element Type: 70mer Oligonucleotide
+Surface Coating: Epoxy
+Oligonucleotides Designed: 5462
+Replicate Oligo Printings: 5x
+
+The Platform data table is a condensed representation of the array's replicate oligos.
+The full array layout file (including oligo sequences) is linked below as a supplementary file. The full layout file was obtained from http://pfgrc.jcvi.org/index.php/microarray/array_description/salmonella_typhimurium/version4.html.
+    </Description>
+    <Web-Link>http://pfgrc.jcvi.org/index.php/microarray/array_description/salmonella_typhimurium/version4.html</Web-Link>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL8446/GPL8446_full_array_layout_s_typhimurium_4_ty2.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>REP</Name>
+        <Description>previous IDs of replicates on microarray, replicates have been combined and assigned a new ID</Description>
+      </Column>
+      <Column position="3">
+        <Name>Primary Strain</Name>
+        <Description>strain for which sequences of oligonucleotides were derived from</Description>
+      </Column>
+      <Column position="4">
+        <Name>Primary Target</Name>
+        <Description>locus tag of target</Description>
+      </Column>
+      <Column position="5">
+        <Name>Common Name of Primary Target</Name>
+        <Description>description of (putative) function</Description>
+      </Column>
+      <Column position="6">
+        <Name>Gene Symbol</Name>
+        <Description>gene symbol</Description>
+      </Column>
+      <Column position="7">
+        <Name>Strain CT18</Name>
+        <Description>target present in S. Typhi CT18</Description>
+      </Column>
+      <Column position="8">
+        <Name>Strain Ty2</Name>
+        <Description>target present in S. Typhi Ty2</Description>
+      </Column>
+      <Column position="9">
+        <Name>Strain LT2 (SGSC1412)</Name>
+        <Description>target present in S. Typhimurium LT2</Description>
+      </Column>
+      <Column position="10">
+        <Name>ORF</Name>
+        <Description>locus tag </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+    <External-Data rows="5459">
+GPL8446-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM395580">
+    <Status database="GEO">
+      <Submission-Date>2009-04-20</Submission-Date>
+      <Release-Date>2009-12-11</Release-Date>
+      <Last-Update-Date>2009-04-26</Last-Update-Date>
+    </Status>
+    <Title>STyphi_Ty2_vs_rcsB_lowsalt_rep1</Title>
+    <Accession database="GEO">GSM395580</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>S. Typhi Ty2 wild-type low salt</Source>
+      <Organism taxid="90370">Salmonella enterica subsp. enterica serovar Typhi</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhi was grown in SOB broth to mid-log phase (OD600 = 0.4-0.5) statically at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+S. Typhi strains were grown in 5 ml broth. 0.8 ml stop solution (5 % water saturated phenol in ethanol) was added and the suspension centrifuged at 7,700 g for 5 min at 4°C. The bacterial pellet was resuspended in 0.4 ml lysis solution (0.1 mg/ml lysozyme, 1mM EDTA 10mM, Tris/Cl pH = 8.0) and the suspension incubated at 25°C for 1 h. Next, 40 μl 10 % SDS was added and the solution heated to 65°C. After 2 min, 0.44 ml 1 M sodium acetate and 0.9 ml hot (65°C) phenol was added to the sample. The emulsion was incubated at 65°C for 6 min, chilled on ice for 10 min and centrifuged at 20,000 g for 10 min at 4°C. The aqueous phase was transferred to a new tube, extracted with 0.9 ml chloroform. Phases were separated by centrifugation at 20,000 g for 5 min at 4°C. After transferring the upper aqueous phase to a new tube, the RNA was precipitated by adding 80 μl 1 mM EDTA 3 M sodium acetate pH = 5.2 and 1 ml isopropanol. The samples were centrifuged for 30 min at 20,000 g at 4°C and the supernatant discarded. The RNA pellet was washed with 1 ml 80 % Ethanol and the samples were centrifuged for 5 min at 20,000 g at 4°C. RNA was air-dried and resuspended in RNase-free water. Traces of DNA in the RNA preparation were removed by DNase treatment (DNA-free DNase treatment, Applied Biosystems).
+      </Extract-Protocol>
+      <Label>Alexa Fluor 555</Label>
+      <Label-Protocol>
+cDNA was synthesized and differentially labeled using the SuperScript Plus Indirect cDNA Labeling System (Invitrogen) 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>S. Typhi Ty2 rcsB mutant low salt</Source>
+      <Organism taxid="90370">Salmonella enterica subsp. enterica serovar Typhi</Organism>
+      <Characteristics tag="genotype/variation">
+rcsB mutant
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhi was grown in SOB broth to mid-log phase (OD600 = 0.4-0.5) statically at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+S. Typhi strains were grown in 5 ml broth. 0.8 ml stop solution (5 % water saturated phenol in ethanol) was added and the suspension centrifuged at 7,700 g for 5 min at 4°C. The bacterial pellet was resuspended in 0.4 ml lysis solution (0.1 mg/ml lysozyme, 1mM EDTA 10mM, Tris/Cl pH = 8.0) and the suspension incubated at 25°C for 1 h. Next, 40 μl 10 % SDS was added and the solution heated to 65°C. After 2 min, 0.44 ml 1 M sodium acetate and 0.9 ml hot (65°C) phenol was added to the sample. The emulsion was incubated at 65°C for 6 min, chilled on ice for 10 min and centrifuged at 20,000 g for 10 min at 4°C. The aqueous phase was transferred to a new tube, extracted with 0.9 ml chloroform. Phases were separated by centrifugation at 20,000 g for 5 min at 4°C. After transferring the upper aqueous phase to a new tube, the RNA was precipitated by adding 80 μl 1 mM EDTA 3 M sodium acetate pH = 5.2 and 1 ml isopropanol. The samples were centrifuged for 30 min at 20,000 g at 4°C and the supernatant discarded. The RNA pellet was washed with 1 ml 80 % Ethanol and the samples were centrifuged for 5 min at 20,000 g at 4°C. RNA was air-dried and resuspended in RNase-free water. Traces of DNA in the RNA preparation were removed by DNase treatment (DNA-free DNase treatment, Applied Biosystems).
+      </Extract-Protocol>
+      <Label>Alexa Fluor 647</Label>
+      <Label-Protocol>
+modifications: cDNA was synthesized and differentially labeled using the SuperScript Plus Indirect cDNA Labeling System (Invitrogen)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Seo YS, Sriariyanun M, Wang L, Pfeiff J, Phetsom J, Lin Y, Jung KH, Chou HH, Bogdanove A, Ronald P. A two-genome microarray for the rice pathogens Xanthomonas oryzae pv. oryzae and X. oryzae pv. oryzicola and its use in the discovery of a difference in their regulation of hrp genes. BMC Microbiol. 2008 Jun 18;8:99. PMID 18564427
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Seo YS, Sriariyanun M, Wang L, Pfeiff J, Phetsom J, Lin Y, Jung KH, Chou HH, Bogdanove A, Ronald P. A two-genome microarray for the rice pathogens Xanthomonas oryzae pv. oryzae and X. oryzae pv. oryzicola and its use in the discovery of a difference in their regulation of hrp genes. BMC Microbiol. 2008 Jun 18;8:99. PMID 18564427
+    </Scan-Protocol>
+    <Description>
+Comparison between the S. Typhi wild-type strain and a rcsB mutant to assess effect of the regulatory gene rcsB on global gene expression
+    </Description>
+    <Data-Processing>
+For raw data processing and analysis, the TM4 Microarray Software Suite was used. Local background intensity was substracted from each itensity value. Raw expression data were normalized using a global Locfit/LOWESS algorithm.  Replicates on each replicate were combined by averaging the fold change of each gene.
+Photomultiplier setting (HI: high intensity, LI low intensity): Data from both scans was processed (local background subtraction, normalization, in-slide replicates averaged). Then HI and LI were compared. If the intensity value of any channel (Ch1 or Ch2) in the high intensity scan was higher than 32000 (half of the maximum value), all information was replaced with that from the low intensity scan (values &lt;32000).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8446" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM395nnn/GSM395580/GSM395580_Ty2555rcsB647_1_HI.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM395nnn/GSM395580/GSM395580_Ty2555rcsB647_1_LI.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2(CH1/CH2)</Description>
+      </Column>
+      <Column position="3">
+        <Name>IA</Name>
+        <Description>Intensity 1; processed data for CH1</Description>
+      </Column>
+      <Column position="4">
+        <Name>IB</Name>
+        <Description>Intensity 2; processed data for CH2</Description>
+      </Column>
+      <Column position="5">
+        <Name>Array</Name>
+        <Description>Photomultiplier setting (HI: high intensity, LI low intensity)</Description>
+      </Column>
+    <External-Data rows="5459">
+GSM395580-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM395581">
+    <Status database="GEO">
+      <Submission-Date>2009-04-20</Submission-Date>
+      <Release-Date>2009-12-11</Release-Date>
+      <Last-Update-Date>2009-04-26</Last-Update-Date>
+    </Status>
+    <Title>STyphi_Ty2_vs_rcsB_lowsalt_rep2</Title>
+    <Accession database="GEO">GSM395581</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>S. Typhi Ty2 wild-type low salt</Source>
+      <Organism taxid="90370">Salmonella enterica subsp. enterica serovar Typhi</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhi was grown in SOB broth to mid-log phase (OD600 = 0.4-0.5) statically at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+S. Typhi strains were grown in 5 ml broth. 0.8 ml stop solution (5 % water saturated phenol in ethanol) was added and the suspension centrifuged at 7,700 g for 5 min at 4°C. The bacterial pellet was resuspended in 0.4 ml lysis solution (0.1 mg/ml lysozyme, 1mM EDTA 10mM, Tris/Cl pH = 8.0) and the suspension incubated at 25°C for 1 h. Next, 40 μl 10 % SDS was added and the solution heated to 65°C. After 2 min, 0.44 ml 1 M sodium acetate and 0.9 ml hot (65°C) phenol was added to the sample. The emulsion was incubated at 65°C for 6 min, chilled on ice for 10 min and centrifuged at 20,000 g for 10 min at 4°C. The aqueous phase was transferred to a new tube, extracted with 0.9 ml chloroform. Phases were separated by centrifugation at 20,000 g for 5 min at 4°C. After transferring the upper aqueous phase to a new tube, the RNA was precipitated by adding 80 μl 1 mM EDTA 3 M sodium acetate pH = 5.2 and 1 ml isopropanol. The samples were centrifuged for 30 min at 20,000 g at 4°C and the supernatant discarded. The RNA pellet was washed with 1 ml 80 % Ethanol and the samples were centrifuged for 5 min at 20,000 g at 4°C. RNA was air-dried and resuspended in RNase-free water. Traces of DNA in the RNA preparation were removed by DNase treatment (DNA-free DNase treatment, Applied Biosystems).
+      </Extract-Protocol>
+      <Label>Alexa Fluor 555</Label>
+      <Label-Protocol>
+cDNA was synthesized and differentially labeled using the SuperScript Plus Indirect cDNA Labeling System (Invitrogen) 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>S. Typhi Ty2 rcsB mutant low salt</Source>
+      <Organism taxid="90370">Salmonella enterica subsp. enterica serovar Typhi</Organism>
+      <Characteristics tag="genotype/variation">
+rcsB mutant
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhi was grown in SOB broth to mid-log phase (OD600 = 0.4-0.5) statically at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+S. Typhi strains were grown in 5 ml broth. 0.8 ml stop solution (5 % water saturated phenol in ethanol) was added and the suspension centrifuged at 7,700 g for 5 min at 4°C. The bacterial pellet was resuspended in 0.4 ml lysis solution (0.1 mg/ml lysozyme, 1mM EDTA 10mM, Tris/Cl pH = 8.0) and the suspension incubated at 25°C for 1 h. Next, 40 μl 10 % SDS was added and the solution heated to 65°C. After 2 min, 0.44 ml 1 M sodium acetate and 0.9 ml hot (65°C) phenol was added to the sample. The emulsion was incubated at 65°C for 6 min, chilled on ice for 10 min and centrifuged at 20,000 g for 10 min at 4°C. The aqueous phase was transferred to a new tube, extracted with 0.9 ml chloroform. Phases were separated by centrifugation at 20,000 g for 5 min at 4°C. After transferring the upper aqueous phase to a new tube, the RNA was precipitated by adding 80 μl 1 mM EDTA 3 M sodium acetate pH = 5.2 and 1 ml isopropanol. The samples were centrifuged for 30 min at 20,000 g at 4°C and the supernatant discarded. The RNA pellet was washed with 1 ml 80 % Ethanol and the samples were centrifuged for 5 min at 20,000 g at 4°C. RNA was air-dried and resuspended in RNase-free water. Traces of DNA in the RNA preparation were removed by DNase treatment (DNA-free DNase treatment, Applied Biosystems).
+      </Extract-Protocol>
+      <Label>Alexa Fluor 647</Label>
+      <Label-Protocol>
+modifications: cDNA was synthesized and differentially labeled using the SuperScript Plus Indirect cDNA Labeling System (Invitrogen)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Seo YS, Sriariyanun M, Wang L, Pfeiff J, Phetsom J, Lin Y, Jung KH, Chou HH, Bogdanove A, Ronald P. A two-genome microarray for the rice pathogens Xanthomonas oryzae pv. oryzae and X. oryzae pv. oryzicola and its use in the discovery of a difference in their regulation of hrp genes. BMC Microbiol. 2008 Jun 18;8:99. PMID 18564427
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Seo YS, Sriariyanun M, Wang L, Pfeiff J, Phetsom J, Lin Y, Jung KH, Chou HH, Bogdanove A, Ronald P. A two-genome microarray for the rice pathogens Xanthomonas oryzae pv. oryzae and X. oryzae pv. oryzicola and its use in the discovery of a difference in their regulation of hrp genes. BMC Microbiol. 2008 Jun 18;8:99. PMID 18564427
+    </Scan-Protocol>
+    <Description>
+Comparison between the S. Typhi wild-type strain and a rcsB mutant to assess effect of the regulatory gene rcsB on global gene expression
+    </Description>
+    <Data-Processing>
+For raw data processing and analysis, the TM4 Microarray Software Suite was used. Local background intensity was substracted from each itensity value. Raw expression data were normalized using a global Locfit/LOWESS algorithm.  Replicates on each replicate were combined by averaging the fold change of each gene.
+Photomultiplier setting (HI: high intensity, LI low intensity): Data from both scans was processed (local background subtraction, normalization, in-slide replicates averaged). Then HI and LI were compared. If the intensity value of any channel (Ch1 or Ch2) in the high intensity scan was higher than 32000 (half of the maximum value), all information was replaced with that from the low intensity scan (values &lt;32000).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8446" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM395nnn/GSM395581/GSM395581_Ty2555rcsB647_2_HI.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM395nnn/GSM395581/GSM395581_Ty2555rcsB647_2_LI.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2(CH1/CH2)</Description>
+      </Column>
+      <Column position="3">
+        <Name>IA</Name>
+        <Description>Intensity 1; processed data for CH1</Description>
+      </Column>
+      <Column position="4">
+        <Name>IB</Name>
+        <Description>Intensity 2; processed data for CH2</Description>
+      </Column>
+      <Column position="5">
+        <Name>Array</Name>
+        <Description>Photomultiplier setting (HI: high intensity, LI low intensity)</Description>
+      </Column>
+    <External-Data rows="5459">
+GSM395581-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM395582">
+    <Status database="GEO">
+      <Submission-Date>2009-04-20</Submission-Date>
+      <Release-Date>2009-12-11</Release-Date>
+      <Last-Update-Date>2009-04-26</Last-Update-Date>
+    </Status>
+    <Title>STyphi_viaB_vs_tviB-vexE_lowsalt_rep1</Title>
+    <Accession database="GEO">GSM395582</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>S. Typhi Ty2 viaB mutant low salt</Source>
+      <Organism taxid="90370">Salmonella enterica subsp. enterica serovar Typhi</Organism>
+      <Characteristics tag="genotype/variation">
+viaB mutant
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhi viaB mutant was grown in SOB broth to mid-log phase (OD600 = 0.4-0.5) statically at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+S. Typhi strains were grown in 5 ml broth. 0.8 ml stop solution (5 % water saturated phenol in ethanol) was added and the suspension centrifuged at 7,700 g for 5 min at 4°C. The bacterial pellet was resuspended in 0.4 ml lysis solution (0.1 mg/ml lysozyme, 1mM EDTA 10mM, Tris/Cl pH = 8.0) and the suspension incubated at 25°C for 1 h. Next, 40 μl 10 % SDS was added and the solution heated to 65°C. After 2 min, 0.44 ml 1 M sodium acetate and 0.9 ml hot (65°C) phenol was added to the sample. The emulsion was incubated at 65°C for 6 min, chilled on ice for 10 min and centrifuged at 20,000 g for 10 min at 4°C. The aqueous phase was transferred to a new tube, extracted with 0.9 ml chloroform. Phases were separated by centrifugation at 20,000 g for 5 min at 4°C. After transferring the upper aqueous phase to a new tube, the RNA was precipitated by adding 80 μl 1 mM EDTA 3 M sodium acetate pH = 5.2 and 1 ml isopropanol. The samples were centrifuged for 30 min at 20,000 g at 4°C and the supernatant discarded. The RNA pellet was washed with 1 ml 80 % Ethanol and the samples were centrifuged for 5 min at 20,000 g at 4°C. RNA was air-dried and resuspended in RNase-free water. Traces of DNA in the RNA preparation were removed by DNase treatment (DNA-free DNase treatment, Applied Biosystems).
+      </Extract-Protocol>
+      <Label>Alexa Fluor 555</Label>
+      <Label-Protocol>
+cDNA was synthesized and differentially labeled using the SuperScript Plus Indirect cDNA Labeling System (Invitrogen) 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>S. Typhi Ty2 tviB-vexE mutant low salt</Source>
+      <Organism taxid="90370">Salmonella enterica subsp. enterica serovar Typhi</Organism>
+      <Characteristics tag="genotype/variation">
+tviB-vexE mutant
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhi tviB-vexE mutant was grown in SOB broth to mid-log phase (OD600 = 0.4-0.5) statically at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+S. Typhi strains were grown in 5 ml broth. 0.8 ml stop solution (5 % water saturated phenol in ethanol) was added and the suspension centrifuged at 7,700 g for 5 min at 4°C. The bacterial pellet was resuspended in 0.4 ml lysis solution (0.1 mg/ml lysozyme, 1mM EDTA 10mM, Tris/Cl pH = 8.0) and the suspension incubated at 25°C for 1 h. Next, 40 μl 10 % SDS was added and the solution heated to 65°C. After 2 min, 0.44 ml 1 M sodium acetate and 0.9 ml hot (65°C) phenol was added to the sample. The emulsion was incubated at 65°C for 6 min, chilled on ice for 10 min and centrifuged at 20,000 g for 10 min at 4°C. The aqueous phase was transferred to a new tube, extracted with 0.9 ml chloroform. Phases were separated by centrifugation at 20,000 g for 5 min at 4°C. After transferring the upper aqueous phase to a new tube, the RNA was precipitated by adding 80 μl 1 mM EDTA 3 M sodium acetate pH = 5.2 and 1 ml isopropanol. The samples were centrifuged for 30 min at 20,000 g at 4°C and the supernatant discarded. The RNA pellet was washed with 1 ml 80 % Ethanol and the samples were centrifuged for 5 min at 20,000 g at 4°C. RNA was air-dried and resuspended in RNase-free water. Traces of DNA in the RNA preparation were removed by DNase treatment (DNA-free DNase treatment, Applied Biosystems).
+      </Extract-Protocol>
+      <Label>Alexa Fluor 647</Label>
+      <Label-Protocol>
+modifications: cDNA was synthesized and differentially labeled using the SuperScript Plus Indirect cDNA Labeling System (Invitrogen)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Seo YS, Sriariyanun M, Wang L, Pfeiff J, Phetsom J, Lin Y, Jung KH, Chou HH, Bogdanove A, Ronald P. A two-genome microarray for the rice pathogens Xanthomonas oryzae pv. oryzae and X. oryzae pv. oryzicola and its use in the discovery of a difference in their regulation of hrp genes. BMC Microbiol. 2008 Jun 18;8:99. PMID 18564427
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Seo YS, Sriariyanun M, Wang L, Pfeiff J, Phetsom J, Lin Y, Jung KH, Chou HH, Bogdanove A, Ronald P. A two-genome microarray for the rice pathogens Xanthomonas oryzae pv. oryzae and X. oryzae pv. oryzicola and its use in the discovery of a difference in their regulation of hrp genes. BMC Microbiol. 2008 Jun 18;8:99. PMID 18564427
+    </Scan-Protocol>
+    <Description>
+Comparison between viaB mutant and tviB-vexE mutant to assess effect of regulatory gene tviA on global gene expression
+    </Description>
+    <Data-Processing>
+For raw data processing and analysis, the TM4 Microarray Software Suite was used. Local background intensity was substracted from each itensity value. Raw expression data were normalized using a global Locfit/LOWESS algorithm.  Replicates on each replicate were combined by averaging the fold change of each gene.
+Photomultiplier setting (HI: high intensity, LI low intensity): Data from both scans was processed (local background subtraction, normalization, in-slide replicates averaged). Then HI and LI were compared. If the intensity value of any channel (Ch1 or Ch2) in the high intensity scan was higher than 32000 (half of the maximum value), all information was replaced with that from the low intensity scan (values &lt;32000).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8446" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM395nnn/GSM395582/GSM395582_viaB555tviB647_1_HI.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM395nnn/GSM395582/GSM395582_viaB555tviB647_1_LI.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2(CH1/CH2)</Description>
+      </Column>
+      <Column position="3">
+        <Name>IA</Name>
+        <Description>Intensity 1; processed data for CH1</Description>
+      </Column>
+      <Column position="4">
+        <Name>IB</Name>
+        <Description>Intensity 2; processed data for CH2</Description>
+      </Column>
+      <Column position="5">
+        <Name>Array</Name>
+        <Description>Photomultiplier setting (HI: high intensity, LI low intensity)</Description>
+      </Column>
+    <External-Data rows="5459">
+GSM395582-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM395583">
+    <Status database="GEO">
+      <Submission-Date>2009-04-20</Submission-Date>
+      <Release-Date>2009-12-11</Release-Date>
+      <Last-Update-Date>2009-04-26</Last-Update-Date>
+    </Status>
+    <Title>STyphi_viaB_vs_tviBvexE_lowsalt_rep2</Title>
+    <Accession database="GEO">GSM395583</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>S. Typhi Ty2 viaB mutant low salt</Source>
+      <Organism taxid="90370">Salmonella enterica subsp. enterica serovar Typhi</Organism>
+      <Characteristics tag="genotype/variation">
+viaB mutant
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhi viaB mutant was grown in SOB broth to mid-log phase (OD600 = 0.4-0.5) statically at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+S. Typhi strains were grown in 5 ml broth. 0.8 ml stop solution (5 % water saturated phenol in ethanol) was added and the suspension centrifuged at 7,700 g for 5 min at 4°C. The bacterial pellet was resuspended in 0.4 ml lysis solution (0.1 mg/ml lysozyme, 1mM EDTA 10mM, Tris/Cl pH = 8.0) and the suspension incubated at 25°C for 1 h. Next, 40 μl 10 % SDS was added and the solution heated to 65°C. After 2 min, 0.44 ml 1 M sodium acetate and 0.9 ml hot (65°C) phenol was added to the sample. The emulsion was incubated at 65°C for 6 min, chilled on ice for 10 min and centrifuged at 20,000 g for 10 min at 4°C. The aqueous phase was transferred to a new tube, extracted with 0.9 ml chloroform. Phases were separated by centrifugation at 20,000 g for 5 min at 4°C. After transferring the upper aqueous phase to a new tube, the RNA was precipitated by adding 80 μl 1 mM EDTA 3 M sodium acetate pH = 5.2 and 1 ml isopropanol. The samples were centrifuged for 30 min at 20,000 g at 4°C and the supernatant discarded. The RNA pellet was washed with 1 ml 80 % Ethanol and the samples were centrifuged for 5 min at 20,000 g at 4°C. RNA was air-dried and resuspended in RNase-free water. Traces of DNA in the RNA preparation were removed by DNase treatment (DNA-free DNase treatment, Applied Biosystems).
+      </Extract-Protocol>
+      <Label>Alexa Fluor 555</Label>
+      <Label-Protocol>
+cDNA was synthesized and differentially labeled using the SuperScript Plus Indirect cDNA Labeling System (Invitrogen) 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>S. Typhi Ty2 tviB-vexE mutant low salt</Source>
+      <Organism taxid="90370">Salmonella enterica subsp. enterica serovar Typhi</Organism>
+      <Characteristics tag="genotype/variation">
+tviB-vexE mutant
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhi tviB-vexE mutant was grown in SOB broth to mid-log phase (OD600 = 0.4-0.5) statically at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+S. Typhi strains were grown in 5 ml broth. 0.8 ml stop solution (5 % water saturated phenol in ethanol) was added and the suspension centrifuged at 7,700 g for 5 min at 4°C. The bacterial pellet was resuspended in 0.4 ml lysis solution (0.1 mg/ml lysozyme, 1mM EDTA 10mM, Tris/Cl pH = 8.0) and the suspension incubated at 25°C for 1 h. Next, 40 μl 10 % SDS was added and the solution heated to 65°C. After 2 min, 0.44 ml 1 M sodium acetate and 0.9 ml hot (65°C) phenol was added to the sample. The emulsion was incubated at 65°C for 6 min, chilled on ice for 10 min and centrifuged at 20,000 g for 10 min at 4°C. The aqueous phase was transferred to a new tube, extracted with 0.9 ml chloroform. Phases were separated by centrifugation at 20,000 g for 5 min at 4°C. After transferring the upper aqueous phase to a new tube, the RNA was precipitated by adding 80 μl 1 mM EDTA 3 M sodium acetate pH = 5.2 and 1 ml isopropanol. The samples were centrifuged for 30 min at 20,000 g at 4°C and the supernatant discarded. The RNA pellet was washed with 1 ml 80 % Ethanol and the samples were centrifuged for 5 min at 20,000 g at 4°C. RNA was air-dried and resuspended in RNase-free water. Traces of DNA in the RNA preparation were removed by DNase treatment (DNA-free DNase treatment, Applied Biosystems).
+      </Extract-Protocol>
+      <Label>Alexa Fluor 647</Label>
+      <Label-Protocol>
+modifications: cDNA was synthesized and differentially labeled using the SuperScript Plus Indirect cDNA Labeling System (Invitrogen)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Seo YS, Sriariyanun M, Wang L, Pfeiff J, Phetsom J, Lin Y, Jung KH, Chou HH, Bogdanove A, Ronald P. A two-genome microarray for the rice pathogens Xanthomonas oryzae pv. oryzae and X. oryzae pv. oryzicola and its use in the discovery of a difference in their regulation of hrp genes. BMC Microbiol. 2008 Jun 18;8:99. PMID 18564427
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Seo YS, Sriariyanun M, Wang L, Pfeiff J, Phetsom J, Lin Y, Jung KH, Chou HH, Bogdanove A, Ronald P. A two-genome microarray for the rice pathogens Xanthomonas oryzae pv. oryzae and X. oryzae pv. oryzicola and its use in the discovery of a difference in their regulation of hrp genes. BMC Microbiol. 2008 Jun 18;8:99. PMID 18564427
+    </Scan-Protocol>
+    <Description>
+Comparison between viaB mutant and tviB-vexE mutant to assess effect of regulatory gene tviA on global gene expression
+    </Description>
+    <Data-Processing>
+For raw data processing and analysis, the TM4 Microarray Software Suite was used. Local background intensity was substracted from each itensity value. Raw expression data were normalized using a global Locfit/LOWESS algorithm.  Replicates on each replicate were combined by averaging the fold change of each gene.
+Photomultiplier setting (HI: high intensity, LI low intensity): Data from both scans was processed (local background subtraction, normalization, in-slide replicates averaged). Then HI and LI were compared. If the intensity value of any channel (Ch1 or Ch2) in the high intensity scan was higher than 32000 (half of the maximum value), all information was replaced with that from the low intensity scan (values &lt;32000).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8446" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM395nnn/GSM395583/GSM395583_viaB555tviB647_2_HI.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM395nnn/GSM395583/GSM395583_viaB555tviB647_2_LI.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2(CH1/CH2)</Description>
+      </Column>
+      <Column position="3">
+        <Name>IA</Name>
+        <Description>Intensity 1; processed data for CH1</Description>
+      </Column>
+      <Column position="4">
+        <Name>IB</Name>
+        <Description>Intensity 2; processed data for CH2</Description>
+      </Column>
+      <Column position="5">
+        <Name>Array</Name>
+        <Description>Photomultiplier setting (HI: high intensity, LI low intensity)</Description>
+      </Column>
+    <External-Data rows="5459">
+GSM395583-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE15752">
+    <Status database="GEO">
+      <Submission-Date>2009-04-20</Submission-Date>
+      <Release-Date>2009-12-11</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Gene regulation by the RcsCB two-component system and the auxiliary protein TviA in S. Typhi</Title>
+    <Accession database="GEO">GSE15752</Accession>
+    <Pubmed-ID>19703107</Pubmed-ID>
+    <Summary>
+In response to osmolarity, Salmonella enterica serotype Typhi (S. Typhi) regulates genes required for Vi capsular antigen expression oppositely to those required for motility and invasion. Previous studies suggest that osmoregulation of motility, invasion and capsule expression is mediated through the RcsC/RcsD/RcsB phosphorelay system. Here we performed gene expression profiling and functional studies to determine the role of TviA, an auxiliary protein of the RcsB response regulator, in controlling virulence gene expression in S. Typhi. TviA repressed expression of genes encoding flagella and the invasion associated type III secretion system (T3SS-1) through repression of the flagellar regulators flhDC and fliZ, resulting in reduced invasion and reduced expression of FliC. Both RcsB and TviA reduced expression of flhDC, but only TviA altered flhDC expression in response to osmolarity. These data suggest that the auxiliary TviA protein integrates a new regulatory input into the RcsB regulon of S. Typhi, thereby altering expression of genes encoding flagella, the Vi antigen and T3SS-1 in response to osmolarity.
+    </Summary>
+    <Overall-Design>
+Gene expression profiles of the S. Typhi wild-type strain, a rcsB mutant, a  (delta)tviB-vexE (tviBCDEvexABCDE) mutant, and a (delta)viaB (tviABCDEvexABCDE) mutant (lacking tviA expression) was compared. Strains were cultured in SOB broth (low salt), a condition known to induce expression of TviA and the RcsCB system. Total RNA was extracted from two independent cultures (biological replicates) of each strain. cDNA was differentially labeled with Alexa Fluor 555 and 648, respectively and competitively hybridized on S.Typhimurium arrays (PFGRC, version 4). The submitted samples are biological replicates of a competitive hybridization of cDNA from the wild-type strain (Ty2) and the rcsB mutant (SW237) (GSM395580, GSM395581) or the viaB mutant (STY2) and the tviB-vexE mutant (SW74) (GSM395582, GSM395583), respectively.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM395580" />
+    <Sample-Ref ref="GSM395581" />
+    <Sample-Ref ref="GSM395582" />
+    <Sample-Ref ref="GSM395583" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE15752/GSE15752_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/116777" />
+  </Series>
+
+</MINiML>

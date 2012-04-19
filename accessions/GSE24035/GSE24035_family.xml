@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Lu</First><Last>Yu</Last></Person>
+    <Email>yulu225@126.com</Email>
+    <Organization>Jilin university</Organization>
+    <Address>
+      <Line>Xi'an Road 5333</Line>
+      <City>Changchun</City>
+      <Postal-Code>130062</Postal-Code>
+      <Country>China</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Na</First><Last>Guo</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Junchao</First><Last>Liang</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL10895">
+    <Status database="GEO">
+      <Submission-Date>2010-09-08</Submission-Date>
+      <Release-Date>2010-09-20</Release-Date>
+      <Last-Update-Date>2010-09-20</Last-Update-Date>
+    </Status>
+    <Title>Agilent Mycobacterium tuberculosis Whole Genome Oligo Microarray (8x15K)_condensed</Title>
+    <Accession database="GEO">GPL10895</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+    <Manufacturer>Agilent Technologies</Manufacturer>
+    <Manufacture-Protocol>
+Refer to manufacturer's website (www.agilent.com).
+    </Manufacture-Protocol>
+    <Description>
+The Platform data table reflects a condensed representation of the array's replicate features.
+    </Description>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Relation type="Alternative to" target="GPL10877" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>PROBE_NAME</Description>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus-tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Mycobacterium tuberculosis[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>ControlType</Name>
+      </Column>
+      <Column position="4">
+        <Name>ACCESSION_STRING</Name>
+        <Description>Rv number from Tuberculist Database</Description>
+      </Column>
+      <Column position="5">
+        <Name>SPOT ID</Name>
+      </Column>
+    <External-Data rows="4645">
+GPL10895-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM591599">
+    <Status database="GEO">
+      <Submission-Date>2010-09-08</Submission-Date>
+      <Release-Date>2010-09-20</Release-Date>
+      <Last-Update-Date>2010-09-20</Last-Update-Date>
+    </Status>
+    <Title>Chelerythrine treated Replicate 1</Title>
+    <Accession database="GEO">GSM591599</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mycobacterium tuberculosis_Chelerythrine [test]</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="agent">
+chelerythrine
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium tuberculosis H37Rv was incubated in a rotary shaker. Subsequently, Chelerythrine stock solution, prepared in dimethyl sulfoxide (DMSO), and DMSO was added to the culture,respectively. Then, the the cells were further incubated for a certain time.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The samples were labeled using the Agilent Quick Amp labeling kit.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Mycobacterium tuberculosis_DMSO [reference]</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="agent">
+control (DMSO)
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium tuberculosis H37Rv was incubated in a rotary shaker. Subsequently, Chelerythrine stock solution, prepared in dimethyl sulfoxide (DMSO), and DMSO was added to the culture,respectively. Then, the the cells were further incubated for a certain time.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The samples were labeled using the Agilent Quick Amp labeling kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The samples were hybridized with Agilent whole genome oligo microarray,performed by Agilent Gene Expression Hybridization Kit (Agilent p/n 5188-5242)in Agilent’s SureHyb Hybridization Chambers. After hybridization, slides were washed sequential.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned with the Agilent DNA microarray scanner (part number G2505B) using settings recommended by Agilent Technologies.
+Images were quantified using Agilent Feature Extraction Software (version 10.5.1.1).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 2.
+    </Description>
+    <Data-Processing>
+Agilent Feature Extraction Software (version 10.5.1.1) was used for background subtraction and LOWESS normalization. The 8 microarray data sets were normalized in Agilent Feature Extraction Software (mainly LOWESS normalization), and then genes marked present (P) or marginal (M) in at least 4 out of 8 samples (&quot;All Targets Value&quot;) were chosen for further analysis.
+The resulting file (showing raw and normalized data) extracted from Agilent Feature Extraction Software is linked as a supplementary file on the Series record. The details of the 8 samples are described in a PDF file linked to the Series record (NOTE: The samples 'Plumbagin' and 'chelerythrine' represent the submissions to GEO).
+The resulting files extracted from Agilent Feature Extraction Software (version10.5.1.1) were imported into the Agilent GeneSpring GX software (version 11.0) for further analysis.  Filtering with the Agilent GeneSpring GX software (version 11.0) yielded 3442 genes (as shown in Data table below).
+    </Data-Processing>
+    <Platform-Ref ref="GPL10895" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="3442">
+GSM591599-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM591600">
+    <Status database="GEO">
+      <Submission-Date>2010-09-08</Submission-Date>
+      <Release-Date>2010-09-20</Release-Date>
+      <Last-Update-Date>2010-09-20</Last-Update-Date>
+    </Status>
+    <Title>Chelerythrine treated Replicate 2</Title>
+    <Accession database="GEO">GSM591600</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mycobacterium tuberculosis_Chelerythrine [test]</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="agent">
+chelerythrine
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium tuberculosis H37Rv was incubated in a rotary shaker. Subsequently, Chelerythrine stock solution, prepared in dimethyl sulfoxide (DMSO), and DMSO was added to the culture,respectively. Then, the the cells were further incubated for a certain time.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The samples were labeled using the Agilent Quick Amp labeling kit.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Mycobacterium tuberculosis_DMSO [reference]</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="agent">
+control (DMSO)
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium tuberculosis H37Rv was incubated in a rotary shaker. Subsequently, Chelerythrine stock solution, prepared in dimethyl sulfoxide (DMSO), and DMSO was added to the culture,respectively. Then, the the cells were further incubated for a certain time.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The samples were labeled using the Agilent Quick Amp labeling kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The samples were hybridized with Agilent whole genome oligo microarray,performed by Agilent Gene Expression Hybridization Kit (Agilent p/n 5188-5242)in Agilent’s SureHyb Hybridization Chambers. After hybridization, slides were washed sequential.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned with the Agilent DNA microarray scanner (part number G2505B) using settings recommended by Agilent Technologies.
+Images were quantified using Agilent Feature Extraction Software (version 10.5.1.1).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 2.
+    </Description>
+    <Data-Processing>
+Agilent Feature Extraction Software (version 10.5.1.1) was used for background subtraction and LOWESS normalization. The 8 microarray data sets were normalized in Agilent Feature Extraction Software (mainly LOWESS normalization), and then genes marked present (P) or marginal (M) in at least 4 out of 8 samples (&quot;All Targets Value&quot;) were chosen for further analysis.
+The resulting file (showing raw and normalized data) extracted from Agilent Feature Extraction Software is linked as a supplementary file on the Series record. The details of the 8 samples are described in a PDF file linked to the Series record (NOTE: The samples 'Plumbagin' and 'chelerythrine' represent the submissions to GEO).
+The resulting files extracted from Agilent Feature Extraction Software (version10.5.1.1) were imported into the Agilent GeneSpring GX software (version 11.0) for further analysis.  Filtering with the Agilent GeneSpring GX software (version 11.0) yielded 3442 genes (as shown in Data table below).
+    </Data-Processing>
+    <Platform-Ref ref="GPL10895" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="3442">
+GSM591600-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE24035">
+    <Status database="GEO">
+      <Submission-Date>2010-09-08</Submission-Date>
+      <Release-Date>2010-09-20</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Mycobacterium tuberulosis H37Rv strains: Control vs. Chelerythrine</Title>
+    <Accession database="GEO">GSE24035</Accession>
+    <Pubmed-ID>21170712</Pubmed-ID>
+    <Summary>
+Transcriptional profiling of Mycobacterium tuberculosis H37Rv strains comparing control DMSO treated strains with chelerythrine treated strains. Goal was to determine the effects of chelerythrine against Mycobacterium tuberculosis H37Rv strains.
+    </Summary>
+    <Overall-Design>
+Two-condition experiment,control DMSO treated strains vs. Chelerythrine treated strains. Biological replicates: 2 control replicates, 2 Chelerythrine replicates.
+
+The file showing raw and normalized data (~4645 rows) extracted from Agilent Feature Extraction Software is linked below. Samples details are described in PDF file linked below (NOTE: The samples 'Plumbagin' and 'chelerythrine' represent the submissions to GEO).
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM591599" />
+    <Sample-Ref ref="GSM591600" />
+    <Supplementary-Data type="PDF">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE24035/GSE24035_Chelerythrine_Sample_Details.pdf.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE24035/GSE24035_raw_norm_ChelerythrineSamples.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/130333" />
+  </Series>
+
+</MINiML>

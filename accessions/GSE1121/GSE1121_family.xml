@@ -1,0 +1,2180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jinseong</First><Last>Cheong</Last></Person>
+    <Email>jcheong@ucsd.edu</Email>
+    <Phone>(858)534-8758</Phone>
+    <Organization>University of California at San Diego</Organization>
+    <Address>
+      <City>La Jolla</City>
+      <State>CA</State>
+      <Zip-Code>92093</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Markus</First><Middle>W</Middle><Last>Covert</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Eric</First><Middle>M</Middle><Last>Knight</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Jennie</First><Middle>L</Middle><Last>Reed</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Markus</First><Middle>J</Middle><Last>Herrgard</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Bernhard</First><Middle>O</Middle><Last>Palsson</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL199">
+    <Status database="GEO">
+      <Submission-Date>2002-07-01</Submission-Date>
+      <Release-Date>2002-07-18</Release-Date>
+      <Last-Update-Date>2010-07-08</Last-Update-Date>
+    </Status>
+    <Title>[Ecoli_ASv2] Affymetrix E. coli Antisense Genome Array</Title>
+    <Accession database="GEO">GPL199</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+Has 7312 entries and was indexed 20-May-2002.
+The GeneChip E. coli Antisense Genome Array can be used for examining expression of all known E. coli genes and discovering novel, uncharacterized intergenic transcripts. The array contains probe sets to detect the antisense strand of more than 4,200 known open reading frames. In addition, over 1,350 intergenic sequences can be interrogated in both directions permitting functional characterization of potentially important shorter expressed sequences.
+Sequence information for probes on the array correspond to the M49 version of the E. coli Genome Project database at the University of Wisconsin.
+
+
+Keywords = high density oligonucleotide array
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoliantisense</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Relation type="Alternative to" target="GPL10659" comment="Alternative CDF" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=ECOLI_ANTISENSE&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli K12[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="4">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="5">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="12">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="13">
+        <Name>RefSeq Transcript ID</Name>
+        <Description>References to multiple sequences in RefSeq. The field contains the ID and Description for each entry, and there can be multiple entries per ProbeSet.</Description>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="7312">
+GPL199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM18235">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_appY_rep1</Title>
+    <Accession database="GEO">GSM18235</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of appY knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18235/GSM18235.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18235-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18236">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_appY_rep2</Title>
+    <Accession database="GEO">GSM18236</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of appY knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18236/GSM18236.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18236-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18237">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_appY_rep3</Title>
+    <Accession database="GEO">GSM18237</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of appY knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18237/GSM18237.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18237-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18246">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_arcA_rep1</Title>
+    <Accession database="GEO">GSM18246</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of arcA knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18246/GSM18246.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18246-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18247">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_arcA_rep2</Title>
+    <Accession database="GEO">GSM18247</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of arcA knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18247/GSM18247.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18247-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18248">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_arcA_rep3</Title>
+    <Accession database="GEO">GSM18248</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of arcA knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18248/GSM18248.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18248-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18249">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_arcAfnr_rep1</Title>
+    <Accession database="GEO">GSM18249</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of arcA/fnr double knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18249/GSM18249.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18249-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18250">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_arcAfnr_rep2</Title>
+    <Accession database="GEO">GSM18250</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of arcA/fnr double knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18250/GSM18250.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18250-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18251">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_arcAfnr_rep3</Title>
+    <Accession database="GEO">GSM18251</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of arcA/fnr double knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18251/GSM18251.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18251-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18252">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_fnr_rep1</Title>
+    <Accession database="GEO">GSM18252</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of fnr knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18252/GSM18252.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18252-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18253">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_fnr_rep2</Title>
+    <Accession database="GEO">GSM18253</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of fnr knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18253/GSM18253.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18253-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18254">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_fnr_rep3</Title>
+    <Accession database="GEO">GSM18254</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of fnr knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18254/GSM18254.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18254-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18255">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_oxyR_rep1</Title>
+    <Accession database="GEO">GSM18255</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of oxyR knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18255/GSM18255.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18255-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18256">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_oxyR_rep2</Title>
+    <Accession database="GEO">GSM18256</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of oxyR knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18256/GSM18256.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18256-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18257">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_oxyR_rep3</Title>
+    <Accession database="GEO">GSM18257</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of oxyR knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18257/GSM18257.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18257-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18258">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_soxS_rep1</Title>
+    <Accession database="GEO">GSM18258</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of soxS knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18258/GSM18258.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18258-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18259">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_soxS_rep2</Title>
+    <Accession database="GEO">GSM18259</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of soxS knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18259/GSM18259.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18259-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18260">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_soxS_rep3</Title>
+    <Accession database="GEO">GSM18260</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of soxS knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18260/GSM18260.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18260-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18261">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_wild_rep1</Title>
+    <Accession database="GEO">GSM18261</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of wild-type strain on M9 media with glucose (reference)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18261/GSM18261.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18261-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18262">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_wild_rep2</Title>
+    <Accession database="GEO">GSM18262</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of wild-type strain on M9 media with glucose (reference)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18262/GSM18262.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18262-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18263">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-07-26</Last-Update-Date>
+    </Status>
+    <Title>aerobic_wild_rep3</Title>
+    <Accession database="GEO">GSM18263</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic growth of wild-type strain on M9 media with glucose (reference)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18263/GSM18263.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18263-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18264">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_appY_rep1</Title>
+    <Accession database="GEO">GSM18264</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of appY knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18264/GSM18264.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18264-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18265">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_appY_rep2</Title>
+    <Accession database="GEO">GSM18265</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of appY knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18265/GSM18265.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18265-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18266">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_appY_rep3</Title>
+    <Accession database="GEO">GSM18266</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of appY knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18266/GSM18266.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18266-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18271">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_arcA_rep1</Title>
+    <Accession database="GEO">GSM18271</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of arcA knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18271/GSM18271.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18271-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18272">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_arcA_rep2</Title>
+    <Accession database="GEO">GSM18272</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of arcA knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18272/GSM18272.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18272-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18273">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_arcA_rep3</Title>
+    <Accession database="GEO">GSM18273</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of arcA knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18273/GSM18273.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18273-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18274">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_arcAfnr_rep1</Title>
+    <Accession database="GEO">GSM18274</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of arcA/fnr double knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18274/GSM18274.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18274-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18275">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_arcAfnr_rep2</Title>
+    <Accession database="GEO">GSM18275</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of arcA/fnr double knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18275/GSM18275.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18275-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18276">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_arcAfnr_rep3</Title>
+    <Accession database="GEO">GSM18276</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of arcA/fnr double knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18276/GSM18276.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18276-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18277">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_fnr_rep1</Title>
+    <Accession database="GEO">GSM18277</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of fnr knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18277/GSM18277.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18277-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18278">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_fnr_rep2</Title>
+    <Accession database="GEO">GSM18278</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of fnr knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18278/GSM18278.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18278-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18279">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_fnr_rep3</Title>
+    <Accession database="GEO">GSM18279</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of fnr knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18279/GSM18279.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18279-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18280">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_oxyR_rep1</Title>
+    <Accession database="GEO">GSM18280</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of oxyR knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18280/GSM18280.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18280-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18281">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_oxyR_rep2</Title>
+    <Accession database="GEO">GSM18281</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of oxyR knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18281/GSM18281.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18281-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18282">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_oxyR_rep3</Title>
+    <Accession database="GEO">GSM18282</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of oxyR knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18282/GSM18282.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18282-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18283">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_soxS_rep1</Title>
+    <Accession database="GEO">GSM18283</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of soxS knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18283/GSM18283.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18283-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18284">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_soxS_rep2</Title>
+    <Accession database="GEO">GSM18284</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of soxS knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18284/GSM18284.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18284-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18285">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_soxS_rep3</Title>
+    <Accession database="GEO">GSM18285</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of soxS knock-out strain on M9 media with glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18285/GSM18285.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18285-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18286">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_wild_rep1</Title>
+    <Accession database="GEO">GSM18286</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of wild-type strain on M9 media with glucose (reference)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18286/GSM18286.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18286-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18287">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_wild_rep2</Title>
+    <Accession database="GEO">GSM18287</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of wild-type strain on M9 media with glucose (reference)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18287/GSM18287.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18287-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18288">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_wild_rep3</Title>
+    <Accession database="GEO">GSM18288</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of wild-type strain on M9 media with glucose (reference)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18288/GSM18288.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18288-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM18289">
+    <Status database="GEO">
+      <Submission-Date>2004-03-04</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>anaerobic_wild_rep4</Title>
+    <Accession database="GEO">GSM18289</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic growth of wild-type strain on M9 media with glucose (reference)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift.  All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose.  Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com).  The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image.  All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM18nnn/GSM18289/GSM18289.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip preprocessed and normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Affymetrix's judgement call whether a value is good or not</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM18289-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE1121">
+    <Status database="GEO">
+      <Submission-Date>2004-03-09</Submission-Date>
+      <Release-Date>2004-03-10</Release-Date>
+      <Last-Update-Date>2012-03-02</Last-Update-Date>
+    </Status>
+    <Title>changes of global gene expression in E. coli during an oxygen shift</Title>
+    <Accession database="GEO">GSE1121</Accession>
+    <Pubmed-ID>15129285</Pubmed-ID>
+    <Summary>
+The purpose of this study is to investigate the changes of global gene expression in E. coli during an oxygen shift. All cultures were grown under aerobic or anaerobic conditions in M9 minimal media supplemented with glucose. Samples were RNA-stabilized using Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated from exponentially growing cells using a Qiagen RNeasy mini kit (protocols available at www1.qiagen.com). The RNA (10 µg) was then used as the template for cDNA synthesis, the product of which was fragmented, labelled, and hybridized to an Affymetrix E. coli Antisense Genome Array, which was washed and scanned to obtain an image. All of these steps were performed according to Affymetrix protocols (available at www.affymetrix.com).
+
+This SuperSeries is composed of the following subset Series:
+GSE1106: aerobic knock-out
+GSE1107: anaerobic knock-out
+Keywords: SuperSeries
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM18235" />
+    <Sample-Ref ref="GSM18236" />
+    <Sample-Ref ref="GSM18237" />
+    <Sample-Ref ref="GSM18246" />
+    <Sample-Ref ref="GSM18247" />
+    <Sample-Ref ref="GSM18248" />
+    <Sample-Ref ref="GSM18249" />
+    <Sample-Ref ref="GSM18250" />
+    <Sample-Ref ref="GSM18251" />
+    <Sample-Ref ref="GSM18252" />
+    <Sample-Ref ref="GSM18253" />
+    <Sample-Ref ref="GSM18254" />
+    <Sample-Ref ref="GSM18255" />
+    <Sample-Ref ref="GSM18256" />
+    <Sample-Ref ref="GSM18257" />
+    <Sample-Ref ref="GSM18258" />
+    <Sample-Ref ref="GSM18259" />
+    <Sample-Ref ref="GSM18260" />
+    <Sample-Ref ref="GSM18261" />
+    <Sample-Ref ref="GSM18262" />
+    <Sample-Ref ref="GSM18263" />
+    <Sample-Ref ref="GSM18264" />
+    <Sample-Ref ref="GSM18265" />
+    <Sample-Ref ref="GSM18266" />
+    <Sample-Ref ref="GSM18271" />
+    <Sample-Ref ref="GSM18272" />
+    <Sample-Ref ref="GSM18273" />
+    <Sample-Ref ref="GSM18274" />
+    <Sample-Ref ref="GSM18275" />
+    <Sample-Ref ref="GSM18276" />
+    <Sample-Ref ref="GSM18277" />
+    <Sample-Ref ref="GSM18278" />
+    <Sample-Ref ref="GSM18279" />
+    <Sample-Ref ref="GSM18280" />
+    <Sample-Ref ref="GSM18281" />
+    <Sample-Ref ref="GSM18282" />
+    <Sample-Ref ref="GSM18283" />
+    <Sample-Ref ref="GSM18284" />
+    <Sample-Ref ref="GSM18285" />
+    <Sample-Ref ref="GSM18286" />
+    <Sample-Ref ref="GSM18287" />
+    <Sample-Ref ref="GSM18288" />
+    <Sample-Ref ref="GSM18289" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE1121/GSE1121_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SuperSeries of" target="GSE1106" />
+    <Relation type="SuperSeries of" target="GSE1107" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/87233" />
+  </Series>
+
+</MINiML>

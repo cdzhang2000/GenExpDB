@@ -1,0 +1,2641 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Manuel</First><Last>Ares</Last></Person>
+    <Email>ares@biology.ucsc.edu</Email>
+    <Phone>831 459-4628</Phone>
+    <Organization>UC Santa Cruz</Organization>
+    <Address>
+      <City>Santa Cruz</City>
+      <State>CA</State>
+      <Zip-Code>95064</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Tyson</First><Middle>A</Middle><Last>Clark</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Charles</First><Middle>W</Middle><Last>Sugnet</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL108">
+    <Status database="GEO">
+      <Submission-Date>2002-03-15</Submission-Date>
+      <Release-Date>2002-04-02</Release-Date>
+      <Last-Update-Date>2007-11-08</Last-Update-Date>
+    </Status>
+    <Title>Yeast Splicing Chip v4.0</Title>
+    <Accession database="GEO">GPL108</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Description>
+This is an oligonucleotide microarray designed to measure splicing in yeast.  Each intron containing gene has 3 features (Splice Junction, Intron, Exon2).  The SJ oligo symmetrically spans the splice junction with 20nt on each side.  The SJ, Int, and Ex2 oligos are custom designed 40-mers.  The array also contains about 1000 70-mers from the Operon Yeast Genome Set.  All of the SJ, Int, and Ex2 oligos are printed 4 times, the Operon 70-mers are printed only once.
+Keywords = Splicing
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib1" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Name</Name>
+        <Description>Feature Name</Description>
+      </Column>
+      <Column position="3">
+        <Name>ORF</Name>
+        <Description>Yeast ORF </Description>
+        <Link-Prefix>http://genome-www4.stanford.edu/cgi-bin/SGD/locus.pl?locus=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>Type</Name>
+        <Description>Feature Type</Description>
+      </Column>
+      <Column position="5">
+        <Name>Intron</Name>
+        <Description>Is the Feature from an Intron-containing gene?</Description>
+      </Column>
+      <Column position="6">
+        <Name>Block</Name>
+        <Description>Block that the spot was printed in</Description>
+      </Column>
+      <Column position="7">
+        <Name>Row</Name>
+        <Description>Row within the block</Description>
+      </Column>
+      <Column position="8">
+        <Name>Column</Name>
+        <Description>Column within the block</Description>
+      </Column>
+    <External-Data rows="5760">
+GPL108-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM1500">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-18</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-0mins_5</Title>
+    <Accession database="GEO">GSM1500</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SS330 (wt) @ 26 deg</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SRY4-1a (prp4-1) @ 26 deg</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-32
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5760">
+GSM1500-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1501">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-18</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-0mins_3</Title>
+    <Accession database="GEO">GSM1501</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SRY4-1a (prp4-1) @ 26 deg</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SS330 (wt) @ 26 deg</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-1046
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5760">
+GSM1501-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1502">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-16</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-5mins_5</Title>
+    <Accession database="GEO">GSM1502</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SS330 (wt) @ 37 deg for 5mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 5 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-33
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5762">
+GSM1502-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1503">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-16</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-5mins_3</Title>
+    <Accession database="GEO">GSM1503</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 5 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SS330 (wt) @ 37 deg for 5mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-1048
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5762">
+GSM1503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1504">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-16</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-15mins_5</Title>
+    <Accession database="GEO">GSM1504</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SS330 (wt) @ 37 deg for 15mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 15 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-34
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5762">
+GSM1504-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1505">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-16</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-15mins_3</Title>
+    <Accession database="GEO">GSM1505</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 15 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SS330 (wt) @ 37 deg for 15mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-1049
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5762">
+GSM1505-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1506">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-16</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-30mins_5</Title>
+    <Accession database="GEO">GSM1506</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SS330 (wt) @ 37 deg for 30 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 30 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-35
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5760">
+GSM1506-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1507">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-18</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-30mins_3</Title>
+    <Accession database="GEO">GSM1507</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 30 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SS330 (wt) @ 37 deg for 30 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-1050
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5762">
+GSM1507-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1508">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-18</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-60mins_5</Title>
+    <Accession database="GEO">GSM1508</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SS330 (wt) @ 37 deg for 60 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 60 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-36
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5760">
+GSM1508-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1509">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-18</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-60mins_3</Title>
+    <Accession database="GEO">GSM1509</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 60 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SS330 (wt) @ 37 deg for 60 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-1051
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5762">
+GSM1509-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1510">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-18</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-120mins_5</Title>
+    <Accession database="GEO">GSM1510</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SS330 (wt) @ 37 deg for 120 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 120 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-37
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5762">
+GSM1510-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1511">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-18</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>prp4-TempShift-120mins_3</Title>
+    <Accession database="GEO">GSM1511</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SRY4-1a (prp4-1) @ 37 deg for 120 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>SS330 (wt) @ 37 deg for 120 mins</Source>
+      <Organism taxid="4932">Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Prp4-1 and wt strains were grown at 26deg to A600 of 1.0, then an equal volume of 48deg media was added to bring the temperature to 37deg.  Both strains were allowed to grow at 37deg and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Lot batch = Slide4-1052
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL108" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X_COORD</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y_COORD</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_SIZE</Name>
+        <Description>Size of the spot (diameter, in microns)</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEDIAN</Name>
+        <Description>Channel 2 (Cy5/635) median background intensity</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Channel 2 (Cy5/635) mean background intensity</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Channel 2 (Cy5/635) standard deviation of background</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_PERCNT_PIX_1SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_PERCNT_PIX_2SD</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_PERCNT_PIX_SAT</Name>
+        <Description>Channel 2 (Cy5/635) percent of pixels saturated</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH1_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median pixel intensity - feature</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH1_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean pixel intensity - feature</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH1_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of pixel intensities - feature</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH1_BKD_MEDIAN</Name>
+        <Description>Channel 1 (Cy3/532) median background intensity</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Channel 1 (Cy3/532) mean background intensity</Description>
+      </Column>
+      <Column position="19">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Channel 1 (Cy3/532) standard deviation of background</Description>
+      </Column>
+      <Column position="20">
+        <Name>CH1_PERCNT_PIX_1SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 1 StDev above background</Description>
+      </Column>
+      <Column position="21">
+        <Name>CH1_PERCNT_PIX_2SD</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels 2 StDevs above background</Description>
+      </Column>
+      <Column position="22">
+        <Name>CH1_PERCNT_PIX_SAT</Name>
+        <Description>Channel 1 (Cy3/532) percent of pixels saturated</Description>
+      </Column>
+      <Column position="23">
+        <Name>RATIO_MEDIANS</Name>
+        <Description>Ratio of medians (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="24">
+        <Name>RATIO_MEANS</Name>
+        <Description>Ratio of means (Ch2/Ch1)</Description>
+      </Column>
+      <Column position="25">
+        <Name>MEDIAN_RATIOS</Name>
+        <Description>Median of ratios</Description>
+      </Column>
+      <Column position="26">
+        <Name>MEAN_RATIOS</Name>
+        <Description>Mean of ratios</Description>
+      </Column>
+      <Column position="27">
+        <Name>RATIO_SD</Name>
+        <Description>Ratio standard deviation</Description>
+      </Column>
+      <Column position="28">
+        <Name>RGN_RATIO</Name>
+        <Description>Regression ratio</Description>
+      </Column>
+      <Column position="29">
+        <Name>RGN_SQ_RATIO</Name>
+        <Description>Regression square ratio</Description>
+      </Column>
+      <Column position="30">
+        <Name>SPOT_PIXELS</Name>
+        <Description>Number of feature pixels</Description>
+      </Column>
+      <Column position="31">
+        <Name>BKD_PIXELS</Name>
+        <Description>Number of background pixels</Description>
+      </Column>
+      <Column position="32">
+        <Name>LOG_RATIO</Name>
+        <Description>Log ratio (base 2)</Description>
+      </Column>
+      <Column position="33">
+        <Name>CH2_MED_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="34">
+        <Name>CH1_MED_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted median feature intensity</Description>
+      </Column>
+      <Column position="35">
+        <Name>CH2_MEAN_MINUS_BKD</Name>
+        <Description>Channel 2 (Cy5/635) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="36">
+        <Name>CH1_MEAN_MINUS_BKD</Name>
+        <Description>Channel 1 (Cy3/532) background subtracted mean feature intensity</Description>
+      </Column>
+      <Column position="37">
+        <Name>FLAG</Name>
+        <Description>User defined flag (default=0)</Description>
+      </Column>
+      <Column position="38">
+        <Name>NORM_RATIO</Name>
+        <Description>Normalized ratio of medians</Description>
+      </Column>
+      <Column position="39">
+        <Name>VALUE</Name>
+        <Description>Normalized log ratio (base 2)</Description>
+      </Column>
+      <Column position="40">
+        <Name>MEAN_VALUE</Name>
+        <Description>Average normalized log ratio for replicate spots</Description>
+      </Column>
+      <Column position="41">
+        <Name>SD_VALUE</Name>
+        <Description>Standard deviation of average normalized log ratio</Description>
+      </Column>
+      <Column position="42">
+        <Name>NUM_REPLICATES</Name>
+        <Description>Number of replicate spots used in average normalized log ratio</Description>
+      </Column>
+    <External-Data rows="5762">
+GSM1511-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE34">
+    <Status database="GEO">
+      <Submission-Date>2002-03-19</Submission-Date>
+      <Release-Date>2002-04-16</Release-Date>
+      <Last-Update-Date>2012-02-23</Last-Update-Date>
+    </Status>
+    <Title>Prp4-1 temperature shift</Title>
+    <Accession database="GEO">GSE34</Accession>
+    <Pubmed-ID>11988574</Pubmed-ID>
+    <Summary>
+Prp4-1 and wt strains were grown at 26°C to A600 of 1.0, then an equal volume of 48°C media was added to bring the temperature to 37°C.  Both strains were allowed to grow at 37°C and samples were taken at 0 (before shift), 5, 15, 30, 60, and 120 mins after shift to restrictive temperature.
+Keywords = splicing
+Keywords: time-course
+    </Summary>
+    <Overall-Design>
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM1500" />
+    <Sample-Ref ref="GSM1501" />
+    <Sample-Ref ref="GSM1502" />
+    <Sample-Ref ref="GSM1503" />
+    <Sample-Ref ref="GSM1504" />
+    <Sample-Ref ref="GSM1505" />
+    <Sample-Ref ref="GSM1506" />
+    <Sample-Ref ref="GSM1507" />
+    <Sample-Ref ref="GSM1508" />
+    <Sample-Ref ref="GSM1509" />
+    <Sample-Ref ref="GSM1510" />
+    <Sample-Ref ref="GSM1511" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/84819" />
+  </Series>
+
+</MINiML>

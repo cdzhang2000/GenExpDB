@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Kyle</First><Middle>Herman</Middle><Last>Rohde</Last></Person>
+    <Email>khr4@cornell.edu</Email>
+    <Phone>607-253-4017</Phone>
+    <Laboratory>David G. Russell</Laboratory>
+    <Department>Microbiology and Immunology</Department>
+    <Organization>Cornell University</Organization>
+    <Address>
+      <Line>Vet. Med. Center, C5 101</Line>
+      <City>Ithaca</City>
+      <State>NY</State>
+      <Zip-Code>14853</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Kyle</First><Middle>H</Middle><Last>Rohde</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Robert</First><Middle>B</Middle><Last>Abramovitch</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>David</First><Middle>G</Middle><Last>Russell</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5754">
+    <Status database="GEO">
+      <Submission-Date>2007-08-17</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2007-11-14</Last-Update-Date>
+    </Status>
+    <Title>RussellDG-Mtb-Rv+CDC1551 spotted oligo array</Title>
+    <Accession database="GEO">GPL5754</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+    <Manufacturer>Oligo library designed/synthesized by Operon, Inc.  Arrays printed by Center For Gene Expression Profiling (CGEP) at the Boyce Thompson Institute</Manufacturer>
+    <Manufacture-Protocol>
+The version 1.1 Mtb 70-mer oligo library was used.  It contains a totall of 4320 70-mers, including targets for 3,924 ORFs annotated for strain H37Rv by Sanger plus an additional 371 ORFs from strain CDC1551 (TIGER) with less than 97% homology to H37Rv.  Oligos are Tm normalized to 79C +/- 5 degrees C.  Negative controls are 25 randomized 70-mers.  Positive control - mix of 4295 Mtb specific 70-mers.  Oligos were spotted using a Genomic Solutions (previously BioRobotics), MicroGrid Pro arrayer equipped with Micro-Spot 2500 pins (BioRobotics) onto Corning UltraGap slides. Each target wass spotted in duplicate  After spotting slides were UV irradiated at 200 milli-Joules in a BioRad UV box and then baked  for 1-2 hours at 85C.  They were then washed with 1%SDS for 2 minutes, then 2X Milli-Q water wash, dunk in 100% ethanol for 10 seconds and dried by centrifugation at 600RPM for 3 minutes.
+    </Manufacture-Protocol>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Gene Name</Name>
+        <Description>according to annotation of Cole et.al (http://genolist.pasteur.fr/TubercuList</Description>
+      </Column>
+      <Column position="3">
+        <Name>Synonyms</Name>
+        <Description>Additional names/gene designations commonly used.</Description>
+      </Column>
+      <Column position="4">
+        <Name>Chromosome map location</Name>
+        <Description>Coordinates for gene Start and Stop based on genome annotation</Description>
+      </Column>
+      <Column position="5">
+        <Name>SEQUENCE</Name>
+        <Description>Nucleotide Sequence of 70-mer oligonucleotide probe spotted on array</Description>
+      </Column>
+      <Column position="6">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Mycobacterium tuberculosis[organism]</Link-Suffix>
+      </Column>
+      <Column position="7">
+        <Name>Description</Name>
+        <Description>Available annotation information derived from TubercuList database</Description>
+      </Column>
+      <Column position="8">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="4324">
+GPL5754-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM218909">
+    <Status database="GEO">
+      <Submission-Date>2007-08-17</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mtb response to pH 5.5 (6 replicates)</Title>
+    <Accession database="GEO">GSM218909</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mycobacterium tuberculosis, pH 7.0 control, 2 hr</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain CDC1551, grown in 7H9 broth standing cultures to OD ~0.25
+      </Characteristics>
+      <Treatment-Protocol>
+The transcriptional responses of Mtb CDC1551 to low pH were examined in buffered 7H9-OADC medium. The pH 5.5 and 6.5 adjusted media were buffered with 100 mM 2-(4-morpholino)-ethane sulfonic acid (MES), and the pH 7.0 adjusted medium was buffered with 100 mM 3-(N-morpholino) propanesulfonic acid (MOPS) (Piddington et al., 2000).  A 50 ml starter culture of Mtb grown in 7H9-OADC (pH 7.0) to early log phase (OD ~0.25) was split into three 15 mL aliquots, centrifuged, and the pellets were resuspended in 12mL of 7H9-OADC buffered at pH 5.5, pH 6.5 or pH 7.0.  Cells were incubated at 37 oC for 2 hr before RNA isolation, amplification and analysis by microarray as detailed below.  Mtb responses to pH were examined in three independent experiments and for each experimental replicate, technical replicates were conducted in which the amplified RNA was labeled and hybridized to microarrays a second time.  The presented microarray data are the average of six total datasets (three experimental replicates and two technical replicates).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described {Butcher, 1998 #139; Mangan, 2002 #140}.  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5 ug/ml lysozyme before being lysed in 65C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 647</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling. amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Mycobacterium tuberculosis, pH 5.5 acid stress, 2 hr</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain CDC1551, grown in 7H9 broth standing cultures to OD ~0.25
+      </Characteristics>
+      <Treatment-Protocol>
+The transcriptional responses of Mtb CDC1551 to low pH were examined in buffered 7H9-OADC medium. The pH 5.5 and 6.5 adjusted media were buffered with 100 mM 2-(4-morpholino)-ethane sulfonic acid (MES), and the pH 7.0 adjusted medium was buffered with 100 mM 3-(N-morpholino) propanesulfonic acid (MOPS) (Piddington et al., 2000).  A 50 ml starter culture of Mtb grown in 7H9-OADC (pH 7.0) to early log phase (OD ~0.25) was split into three 15 mL aliquots, centrifuged, and the pellets were resuspended in 12mL of 7H9-OADC buffered at pH 5.5, pH 6.5 or pH 7.0.  Cells were incubated at 37 oC for 2 hr before RNA isolation, amplification and analysis by microarray as detailed below.  Mtb responses to pH were examined in three independent experiments and for each experimental replicate, technical replicates were conducted in which the amplified RNA was labeled and hybridized to microarrays a second time.  The presented microarray data are the average of six total datasets (three experimental replicates and two technical replicates).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described {Butcher, 1998 #139; Mangan, 2002 #140}.  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5 ug/ml lysozyme before being lysed in 65C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling. amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+5-10 ug of Cy-labeled cDNA or Alexa-labeled aRNA from paired samples was dried using a Speedvac and resuspended in 50 ul of hybridization buffer (5X SSC, 25% formamide, 0.1% SDS, and 25 g salmon sperm DNA).  Samples were denatured at 95oC for 5 min and briefly cooled to 60oC before being applied to arrays under a glass LifterSlip (Erie Scientific).  Slides were prehybridized for 1 hr in 25% formamide, 5X SSC, 0.1% SDS, 1% BSA and washed with H2O and isopropanol.  Labeled targets were hybridized to microarrays in humidified slide chambers (Corning) at 45oC for 16-18 hr.  Arrays were washed sequentially with buffer 1 (2X SSC, 0.1% SDS) pre-warmed to 45oC, buffer 2 (0.2X SSC, 0.1% SDS), buffer 3 (0.2X SSC), and buffer 4 (0.05X SSC).  Slides were briefly dipped in de-ionized ultrafiltered water before being dried by centrifugation (700 X g, 10 min).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned with a GenePix 4000B instrument (Axon Instruments, Inc.) with preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  PMT levels for scanning were set to equalize signal intensity of positive control spots and minimize saturated spots.  
+    </Scan-Protocol>
+    <Description>
+Nothing to add.
+    </Description>
+    <Data-Processing>
+Preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  Poor quality spots with signal intensities less than three standard deviations above background were excluded from further analysis.  Subsequent normalization, statistical analysis, and visualization of array data were performed with Genespring 7.3 (Agilent).  Lowess normalization was used, Genespring Cross-Gene error model was activated.  Genes with significant changes in expression levels relative to controls were identified based on fold change (1.5-fold) and reproducibility between replicates (p-value &lt;0.05).
+    </Data-Processing>
+    <Platform-Ref ref="GPL5754" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_control_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_control_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_control_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_control_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_control_5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_control_6.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_raw_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_raw_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_raw_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_raw_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_raw_5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218909/GSM218909_raw_6.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates, log2-transformed</Description>
+      </Column>
+      <Column position="3">
+        <Name>Raw</Name>
+        <Description>Expression at pH 5.5</Description>
+      </Column>
+      <Column position="4">
+        <Name>Control</Name>
+        <Description>Expression at pH 7.0</Description>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates</Description>
+      </Column>
+    <External-Data rows="4323">
+GSM218909-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM218910">
+    <Status database="GEO">
+      <Submission-Date>2007-08-17</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mtb response to pH 6.5 (6 replicates)</Title>
+    <Accession database="GEO">GSM218910</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mycobacterium tuberculosis, pH 7.0 control, 2 hr</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain CDC1551, grown in 7H9 broth standing cultures to OK ~0.25
+      </Characteristics>
+      <Treatment-Protocol>
+The transcriptional responses of Mtb CDC1551 to low pH were examined in buffered 7H9-OADC medium. The pH 5.5 and 6.5 adjusted media were buffered with 100 mM 2-(4-morpholino)-ethane sulfonic acid (MES), and the pH 7.0 adjusted medium was buffered with 100 mM 3-(N-morpholino) propanesulfonic acid (MOPS) (Piddington et al., 2000).  A 50 ml starter culture of Mtb grown in 7H9-OADC (pH 7.0) to early log phase (OD ~0.25) was split into three 15 mL aliquots, centrifuged, and the pellets were resuspended in 12mL of 7H9-OADC buffered at pH 5.5, pH 6.5 or pH 7.0.  Cells were incubated at 37 oC for 2 hr before RNA isolation, amplification and analysis by microarray as detailed below.  Mtb responses to pH were examined in three independent experiments and for each experimental replicate, technical replicates were conducted in which the amplified RNA was labeled and hybridized to microarrays a second time.  The presented microarray data are the average of six total datasets (three experimental replicates and two technical replicates).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described {Butcher, 1998 #139; Mangan, 2002 #140}.  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5 ug/ml lysozyme before being lysed in 65C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 647</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling. amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Mycobacterium tuberculosis, pH 6.5 acid stress, 2 hr</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain CDC1551, grown in 7H9 broth standing cultures to OK ~0.25
+      </Characteristics>
+      <Treatment-Protocol>
+The transcriptional responses of Mtb CDC1551 to low pH were examined in buffered 7H9-OADC medium. The pH 5.5 and 6.5 adjusted media were buffered with 100 mM 2-(4-morpholino)-ethane sulfonic acid (MES), and the pH 7.0 adjusted medium was buffered with 100 mM 3-(N-morpholino) propanesulfonic acid (MOPS) (Piddington et al., 2000).  A 50 ml starter culture of Mtb grown in 7H9-OADC (pH 7.0) to early log phase (OD ~0.25) was split into three 15 mL aliquots, centrifuged, and the pellets were resuspended in 12mL of 7H9-OADC buffered at pH 5.5, pH 6.5 or pH 7.0.  Cells were incubated at 37 oC for 2 hr before RNA isolation, amplification and analysis by microarray as detailed below.  Mtb responses to pH were examined in three independent experiments and for each experimental replicate, technical replicates were conducted in which the amplified RNA was labeled and hybridized to microarrays a second time.  The presented microarray data are the average of six total datasets (three experimental replicates and two technical replicates).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described {Butcher, 1998 #139; Mangan, 2002 #140}.  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5 ug/ml lysozyme before being lysed in 65C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).   
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling. amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+5-10 ug of Cy-labeled cDNA or Alexa-labeled aRNA from paired samples was dried using a Speedvac and resuspended in 50 ul of hybridization buffer (5X SSC, 25% formamide, 0.1% SDS, and 25 g salmon sperm DNA).  Samples were denatured at 95oC for 5 min and briefly cooled to 60oC before being applied to arrays under a glass LifterSlip (Erie Scientific).  Slides were prehybridized for 1 hr in 25% formamide, 5X SSC, 0.1% SDS, 1% BSA and washed with H2O and isopropanol.  Labeled targets were hybridized to microarrays in humidified slide chambers (Corning) at 45oC for 16-18 hr.  Arrays were washed sequentially with buffer 1 (2X SSC, 0.1% SDS) pre-warmed to 45oC, buffer 2 (0.2X SSC, 0.1% SDS), buffer 3 (0.2X SSC), and buffer 4 (0.05X SSC).  Slides were briefly dipped in de-ionized ultrafiltered water before being dried by centrifugation (700 X g, 10 min).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned with a GenePix 4000B instrument (Axon Instruments, Inc.) with preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  PMT levels for scanning were set to equalize signal intensity of positive control spots and minimize saturated spots.  
+    </Scan-Protocol>
+    <Description>
+Nothing to add.
+    </Description>
+    <Data-Processing>
+Preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  Poor quality spots with signal intensities less than three standard deviations above background were excluded from further analysis.  Subsequent normalization, statistical analysis, and visualization of array data were performed with Genespring 7.3 (Agilent).  Lowess normalization was used, Genespring Cross-Gene error model was activated.  Genes with significant changes in expression levels relative to controls were identified based on fold change (1.5-fold) and reproducibility between replicates (p-value &lt;0.05).
+    </Data-Processing>
+    <Platform-Ref ref="GPL5754" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_control_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_control_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_control_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_control_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_control_5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_control_6.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_raw_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_raw_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_raw_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_raw_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_raw_5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218910/GSM218910_raw_6.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates, log2-transformed</Description>
+      </Column>
+      <Column position="3">
+        <Name>Raw</Name>
+        <Description>Expression at pH 6.5</Description>
+      </Column>
+      <Column position="4">
+        <Name>Control</Name>
+        <Description>Expression at pH 7.0</Description>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates</Description>
+      </Column>
+    <External-Data rows="4323">
+GSM218910-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM218911">
+    <Status database="GEO">
+      <Submission-Date>2007-08-17</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Phagosomal induced Mtb genes affected by Concanamycin A inhibition of phagosome acidification</Title>
+    <Accession database="GEO">GSM218911</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mycobacterium tuberculosis, untreated macrophage, 2 hr</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain CDC1551, grown in 7H9 broth standing cultures to OK ~0.25.  Isolated from infected bone marrow derived murine macrophages 2hr post-infection
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  MØ were pretreated with  100 nM concanamycin A (CcA) for 20 min prior to infection to inhibit phagosome acidification and maintained throughout the infection period.  Control mycobacteria not exposed to MØ were treated with identical inhibitor concentrations
+Concanamycin A (100 nM) was shown to effectively block acidification of mycobacterial phagosomes using carboxyfluoroscein-modified beads and BCG as previously described
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described {Butcher, 1998 #139; Mangan, 2002 #140}.  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5 ug/ml lysozyme before being lysed in 65C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  Where indicated, MØ were pretreated with 100 nM concanamycin A (CcA) for 20 min prior to infection to inhibit phagosome acidification and maintained throughout the infection period. 
+      </Extract-Protocol>
+      <Label>Alexa 647</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling. amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Mycobacterium tuberculosis, Concanamycin A treated macrophages, 2 hr</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain CDC1551, grown in 7H9 broth standing cultures to OK ~0.25.  Isolated from infected bone marrow derived murine macrophages (pretreated with 100nM concanamycin A for 20min prior to infection) 2hr post-infection
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  MØ were pretreated with 100 nM concanamycin A (CcA) for 20 min prior to infection to inhibit phagosome acidification and maintained throughout the infection period.  Control mycobacteria not exposed to MØ were treated with identical inhibitor concentrations
+Concanamycin A (100 nM) was shown to effectively block acidification of mycobacterial phagosomes using carboxyfluoroscein-modified beads and BCG as previously described
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described {Butcher, 1998 #139; Mangan, 2002 #140}.  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5 ug/ml lysozyme before being lysed in 65C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  Where indicated, MØ were pretreated with 100 nM concanamycin A (CcA) for 20 min prior to infection to inhibit phagosome acidification and maintained throughout the infection period. 
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling. amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+5-10 ug of Alexa-labeled aRNA from paired samples was dried using a Speedvac and resuspended in 50 ul of hybridization buffer (5X SSC, 25% formamide, 0.1% SDS, and 25 g salmon sperm DNA).  Samples were denatured at 95oC for 5 min and briefly cooled to 60oC before being applied to arrays under a glass LifterSlip (Erie Scientific).  Slides were prehybridized for 1 hr in 25% formamide, 5X SSC, 0.1% SDS, 1% BSA and washed with H2O and isopropanol.  Labeled targets were hybridized to microarrays in humidified slide chambers (Corning) at 45oC for 16-18 hr.  Arrays were washed sequentially with buffer 1 (2X SSC, 0.1% SDS) pre-warmed to 45oC, buffer 2 (0.2X SSC, 0.1% SDS), buffer 3 (0.2X SSC), and buffer 4 (0.05X SSC).  Slides were briefly dipped in de-ionized ultrafiltered water before being dried by centrifugation (700 X g, 10 min).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned with a GenePix 4000B instrument (Axon Instruments, Inc.) with preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  PMT levels for scanning were set to equalize signal intensity of positive control spots and minimize saturated spots.  
+    </Scan-Protocol>
+    <Description>
+Nothing to add.
+    </Description>
+    <Data-Processing>
+Preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  Poor quality spots with signal intensities less than three standard deviations above background were excluded from further analysis.  Subsequent normalization, statistical analysis, and visualization of array data were performed with Genespring 7.3 (Agilent).  Lowess normalization was used, Genespring Cross-Gene error model was activated.  Genes with significant changes in expression levels relative to controls were identified based on fold change (1.5-fold) and reproducibility between replicates (p-value &lt;0.05).
+    </Data-Processing>
+    <Platform-Ref ref="GPL5754" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218911/GSM218911_control_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218911/GSM218911_control_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218911/GSM218911_raw_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218911/GSM218911_raw_2.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates, log2-transformed</Description>
+      </Column>
+      <Column position="3">
+        <Name>Raw</Name>
+        <Description>Expression in untreated macrophages, 2hr post-infection</Description>
+      </Column>
+      <Column position="4">
+        <Name>Control</Name>
+        <Description>Expression in concanamycin A-treated macrophages, 2hr post-infection</Description>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates</Description>
+      </Column>
+    <External-Data rows="4323">
+GSM218911-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM218912">
+    <Status database="GEO">
+      <Submission-Date>2007-08-17</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Effect of macrophage contact (phagocytosis inhibited with cytochalasin D) on Mtb gene expression</Title>
+    <Accession database="GEO">GSM218912</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mycobacterium tuberculosis, cytochalasin D treated macrophage, 2 hr</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain CDC1551
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  MØ were pretreated with  5 micromolar cytochalasin D (cytoD) for 20 min prior to infection to inhibit phagocytosis, respectively, and maintained throughout the infection period.  Control mycobacteria not exposed to MØ were treated with identical inhibitor concentrations.  Microscopic examination of cytochalasin D-pretreated MØ incubated with carboxyfluorescein-labeled silica beads and BCG confirmed inhibition of phagocytosis.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described {Butcher, 1998 #139; Mangan, 2002 #140}.  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5 ug/ml lysozyme before being lysed in 65C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).   
+      </Extract-Protocol>
+      <Label>Alexa 647</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling. amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Mycobacterium tuberculosis, cytochalasin D treated no macrophage extracellular controls</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain CDC1551
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  MØ were pretreated with  5 micromolar cytochalasin D (cytoD) for 20 min prior to infection to inhibit phagocytosis, respectively, and maintained throughout the infection period.  Control mycobacteria not exposed to MØ were treated with identical inhibitor concentrations.  Microscopic examination of cytochalasin D-pretreated MØ incubated with carboxyfluorescein-labeled silica beads and BCG confirmed inhibition of phagocytosis.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described {Butcher, 1998 #139; Mangan, 2002 #140}.  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5 ug/ml lysozyme before being lysed in 65C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling. amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+5-10 ug of Alexa-labeled aRNA from paired samples was dried using a Speedvac and resuspended in 50 ul of hybridization buffer (5X SSC, 25% formamide, 0.1% SDS, and 25 g salmon sperm DNA).  Samples were denatured at 95oC for 5 min and briefly cooled to 60oC before being applied to arrays under a glass LifterSlip (Erie Scientific).  Slides were prehybridized for 1 hr in 25% formamide, 5X SSC, 0.1% SDS, 1% BSA and washed with H2O and isopropanol.  Labeled targets were hybridized to microarrays in humidified slide chambers (Corning) at 45oC for 16-18 hr.  Arrays were washed sequentially with buffer 1 (2X SSC, 0.1% SDS) pre-warmed to 45oC, buffer 2 (0.2X SSC, 0.1% SDS), buffer 3 (0.2X SSC), and buffer 4 (0.05X SSC).  Slides were briefly dipped in de-ionized ultrafiltered water before being dried by centrifugation (700 X g, 10 min).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned with a GenePix 4000B instrument (Axon Instruments, Inc.) with preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  PMT levels for scanning were set to equalize signal intensity of positive control spots and minimize saturated spots.  
+    </Scan-Protocol>
+    <Description>
+Nothing to add.
+    </Description>
+    <Data-Processing>
+Preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  Poor quality spots with signal intensities less than three standard deviations above background were excluded from further analysis.  Subsequent normalization, statistical analysis, and visualization of array data were performed with Genespring 7.3 (Agilent).  Lowess normalization was used, Genespring Cross-Gene error model was activated.  Genes with significant changes in expression levels relative to controls were identified based on fold change (1.5-fold) and reproducibility between replicates (p-value &lt;0.05).
+    </Data-Processing>
+    <Platform-Ref ref="GPL5754" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218912/GSM218912_control_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218912/GSM218912_control_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218912/GSM218912_raw_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM218nnn/GSM218912/GSM218912_raw_2.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates, log2-transformed</Description>
+      </Column>
+      <Column position="3">
+        <Name>Raw</Name>
+        <Description>Expression after 2hr contact with cytochalasin D-treated macrophages</Description>
+      </Column>
+      <Column position="4">
+        <Name>Control</Name>
+        <Description>Expression in 2hr cytochalasin D-treated extracellular Mtb without macrophages</Description>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates</Description>
+      </Column>
+    <External-Data rows="4323">
+GSM218912-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219303">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>BCG 2hr phagosomal profile</Title>
+    <Accession database="GEO">GSM219303</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Phagosomal BCG after 2hr macrophage infection</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+M. bovis BCG Pasteur, grown in standing 7H9 broth cultures to mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The clinical isolate strain CDC1551 of M. tuberculosis (MTb) and the attenuated vaccine strain M. bovis BCG Pasteur (BCG) were routinely cultured in 7H9-OADC medium without shaking in 75 cm2 vented tissue culture flasks (T-75).  Bone marrow-derived macrophages (MØ) were isolated from C57BL/6 mice and grown in DMEM supplemented with 10% FCS, 20% L cell-conditioned medium and antibiotics (penicillin and streptomycin).   Macrophage media lacking antibiotics was added at least 24 hr before initiation of mycobacterial infections.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described (Butcher et al., 1998; Mangan et al., 2002).  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5g/ml lysozyme before being lysed in 650C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 647</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling.  According the manufacturer recommendation for consistent amplification results, a standardized RNA isolation protocol was used to generate all template RNA and master mixes of reaction components were prepared for each step.  In addition, care was taken to use the same amount of starting template and identical incubation times and temperatures for all samples to be compared.    amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Extracellular Control BCG, 2hr in infection media, no macrophages</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+M. bovis BCG Pasteur, grown in standing 7H9 broth cultures to mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The clinical isolate strain CDC1551 of M. tuberculosis (MTb) and the attenuated vaccine strain M. bovis BCG Pasteur (BCG) were routinely cultured in 7H9-OADC medium without shaking in 75 cm2 vented tissue culture flasks (T-75).  Bone marrow-derived macrophages (MØ) were isolated from C57BL/6 mice and grown in DMEM supplemented with 10% FCS, 20% L cell-conditioned medium and antibiotics (penicillin and streptomycin).   Macrophage media lacking antibiotics was added at least 24 hr before initiation of mycobacterial infections.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described (Butcher et al., 1998; Mangan et al., 2002).  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5g/ml lysozyme before being lysed in 650C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling.  According the manufacturer recommendation for consistent amplification results, a standardized RNA isolation protocol was used to generate all template RNA and master mixes of reaction components were prepared for each step.  In addition, care was taken to use the same amount of starting template and identical incubation times and temperatures for all samples to be compared.    amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+5-10 g of Cy-labeled cDNA or Alexa-labeled aRNA from paired samples was dried using a Speedvac and resuspended in 50 l of hybridization buffer (5X SSC, 25% formamide, 0.1% SDS, and 25 g salmon sperm DNA).  Samples were denatured at 95oC for 5 min and briefly cooled to 60oC before being applied to arrays under a glass LifterSlip (Erie Scientific).  Slides were prehybridized for 1 hr in 25% formamide, 5X SSC, 0.1% SDS, 1% BSA and washed with H2O and isopropanol.  Labeled targets were hybridized to microarrays in humidified slide chambers (Corning) at 45oC for 16-18 hr.  Arrays were washed sequentially with buffer 1 (2X SSC, 0.1% SDS) pre-warmed to 45oC, buffer 2 (0.2X SSC, 0.1% SDS), buffer 3 (0.2X SSC), and buffer 4 (0.05X SSC).  Slides were briefly dipped in de-ionized ultrafiltered water before being dried by centrifugation (700 X g, 10 min).  
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned with a GenePix 4000B instrument (Axon Instruments, Inc.) with preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  PMT settings were adjusted to equalize the two channels based on equal intensity of positive control spots.  PMT were also adjusted such that only a few spots were saturated to maximize detection of weak spots and maintain most intensities with linear range.  
+    </Scan-Protocol>
+    <Description>
+nothing to add
+    </Description>
+    <Data-Processing>
+Poor quality spots with signal intensities less than three standard deviations above background were excluded from further analysis.  Subsequent normalization, statistical analysis, and visualization of array data were performed with Genespring 7.3 (Agilent).
+    </Data-Processing>
+    <Platform-Ref ref="GPL5754" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219303/GSM219303_control_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219303/GSM219303_control_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219303/GSM219303_control_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219303/GSM219303_control_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219303/GSM219303_raw_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219303/GSM219303_raw_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219303/GSM219303_raw_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219303/GSM219303_raw_4.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates, log2-transformed</Description>
+      </Column>
+      <Column position="3">
+        <Name>Raw</Name>
+        <Description>Expression in untreated macrophages, 2hr post-infection</Description>
+      </Column>
+      <Column position="4">
+        <Name>Control</Name>
+        <Description>Expression in extracellular in vitro controls, 2hr</Description>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from replicates</Description>
+      </Column>
+    <External-Data rows="4322">
+GSM219303-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219304">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>BCG 24hr phagosomal profile</Title>
+    <Accession database="GEO">GSM219304</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Phagosomal BCG after 24hr macrophage infection</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+M. bovis BCG Pasteur isolated from resting bone marrow derived macrophage phagosomes 24hr post-infection
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The clinical isolate strain CDC1551 of M. tuberculosis (MTb) and the attenuated vaccine strain M. bovis BCG Pasteur (BCG) were routinely cultured in 7H9-OADC medium without shaking in 75 cm2 vented tissue culture flasks (T-75).  Bone marrow-derived macrophages (MØ) were isolated from C57BL/6 mice and grown in DMEM supplemented with 10% FCS, 20% L cell-conditioned medium and antibiotics (penicillin and streptomycin).   Macrophage media lacking antibiotics was added at least 24 hr before initiation of mycobacterial infections.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described (Butcher et al., 1998; Mangan et al., 2002).  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5g/ml lysozyme before being lysed in 650C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 647</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling.  According the manufacturer recommendation for consistent amplification results, a standardized RNA isolation protocol was used to generate all template RNA and master mixes of reaction components were prepared for each step.  In addition, care was taken to use the same amount of starting template and identical incubation times and temperatures for all samples to be compared.    amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Extracellular Control BCG, 24hr in infection media, no macrophages</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+M. bovis BCG Pasteur &quot;no macrophage&quot; controls, 24hr
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The clinical isolate strain CDC1551 of M. tuberculosis (MTb) and the attenuated vaccine strain M. bovis BCG Pasteur (BCG) were routinely cultured in 7H9-OADC medium without shaking in 75 cm2 vented tissue culture flasks (T-75).  Bone marrow-derived macrophages (MØ) were isolated from C57BL/6 mice and grown in DMEM supplemented with 10% FCS, 20% L cell-conditioned medium and antibiotics (penicillin and streptomycin).   Macrophage media lacking antibiotics was added at least 24 hr before initiation of mycobacterial infections.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described (Butcher et al., 1998; Mangan et al., 2002).  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5g/ml lysozyme before being lysed in 650C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling.  According the manufacturer recommendation for consistent amplification results, a standardized RNA isolation protocol was used to generate all template RNA and master mixes of reaction components were prepared for each step.  In addition, care was taken to use the same amount of starting template and identical incubation times and temperatures for all samples to be compared.    amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+5-10 g of Cy-labeled cDNA or Alexa-labeled aRNA from paired samples was dried using a Speedvac and resuspended in 50 l of hybridization buffer (5X SSC, 25% formamide, 0.1% SDS, and 25 g salmon sperm DNA).  Samples were denatured at 95oC for 5 min and briefly cooled to 60oC before being applied to arrays under a glass LifterSlip (Erie Scientific).  Slides were prehybridized for 1 hr in 25% formamide, 5X SSC, 0.1% SDS, 1% BSA and washed with H2O and isopropanol.  Labeled targets were hybridized to microarrays in humidified slide chambers (Corning) at 45oC for 16-18 hr.  Arrays were washed sequentially with buffer 1 (2X SSC, 0.1% SDS) pre-warmed to 45oC, buffer 2 (0.2X SSC, 0.1% SDS), buffer 3 (0.2X SSC), and buffer 4 (0.05X SSC).  Slides were briefly dipped in de-ionized ultrafiltered water before being dried by centrifugation (700 X g, 10 min).  
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned with a GenePix 4000B instrument (Axon Instruments, Inc.) with preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  PMT settings were adjusted to equalize the two channels based on equal intensity of positive control spots.  PMT were also adjusted such that only a few spots were saturated to maximize detection of weak spots and maintain most intensities with linear range.  
+    </Scan-Protocol>
+    <Description>
+nothing to add
+    </Description>
+    <Data-Processing>
+Poor quality spots with signal intensities less than three standard deviations above background were excluded from further analysis.  Subsequent normalization, statistical analysis, and visualization of array data were performed with Genespring 7.3 (Agilent).
+    </Data-Processing>
+    <Platform-Ref ref="GPL5754" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219304/GSM219304_control_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219304/GSM219304_control_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219304/GSM219304_control_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219304/GSM219304_control_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219304/GSM219304_raw_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219304/GSM219304_raw_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219304/GSM219304_raw_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219304/GSM219304_raw_4.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates, log2-transformed</Description>
+      </Column>
+      <Column position="3">
+        <Name>Raw</Name>
+        <Description>Expression in untreated macrophages, 24hr post-infection</Description>
+      </Column>
+      <Column position="4">
+        <Name>Control</Name>
+        <Description>Expression in extracellular in vitro controls, 24hr</Description>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from replicates</Description>
+      </Column>
+    <External-Data rows="4322">
+GSM219304-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219305">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>M. tuberculosis CDC1551 2hr phagosome expression profile</Title>
+    <Accession database="GEO">GSM219305</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mycobacterium tuberculosis, untreated macrophage, 2 hr</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+M. tuberculosis strain CDC1551
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The clinical isolate strain CDC1551 of M. tuberculosis (MTb) and the attenuated vaccine strain M. bovis BCG Pasteur (BCG) were routinely cultured in 7H9-OADC medium without shaking in 75 cm2 vented tissue culture flasks (T-75).  Bone marrow-derived macrophages (MØ) were isolated from C57BL/6 mice and grown in DMEM supplemented with 10% FCS, 20% L cell-conditioned medium and antibiotics (penicillin and streptomycin).   Macrophage media lacking antibiotics was added at least 24 hr before initiation of mycobacterial infections.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described (Butcher et al., 1998; Mangan et al., 2002).  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5g/ml lysozyme before being lysed in 650C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 647</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling.  According the manufacturer recommendation for consistent amplification results, a standardized RNA isolation protocol was used to generate all template RNA and master mixes of reaction components were prepared for each step.  In addition, care was taken to use the same amount of starting template and identical incubation times and temperatures for all samples to be compared.    amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Extracellular Control M. tuberculosis, 2hr in infection media, no macrophages</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+M. tuberculosis strain CDC1551
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The clinical isolate strain CDC1551 of M. tuberculosis (MTb) and the attenuated vaccine strain M. bovis BCG Pasteur (BCG) were routinely cultured in 7H9-OADC medium without shaking in 75 cm2 vented tissue culture flasks (T-75).  Bone marrow-derived macrophages (MØ) were isolated from C57BL/6 mice and grown in DMEM supplemented with 10% FCS, 20% L cell-conditioned medium and antibiotics (penicillin and streptomycin).   Macrophage media lacking antibiotics was added at least 24 hr before initiation of mycobacterial infections.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described (Butcher et al., 1998; Mangan et al., 2002).  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5g/ml lysozyme before being lysed in 650C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling.  According the manufacturer recommendation for consistent amplification results, a standardized RNA isolation protocol was used to generate all template RNA and master mixes of reaction components were prepared for each step.  In addition, care was taken to use the same amount of starting template and identical incubation times and temperatures for all samples to be compared.    amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+5-10 ug of Cy-labeled Alexa-labeled aRNA from paired samples was dried using a Speedvac and resuspended in 50 l of hybridization buffer (5X SSC, 25% formamide, 0.1% SDS, and 25 g salmon sperm DNA).  Samples were denatured at 95oC for 5 min and briefly cooled to 60oC before being applied to arrays under a glass LifterSlip (Erie Scientific).  Slides were prehybridized for 1 hr in 25% formamide, 5X SSC, 0.1% SDS, 1% BSA and washed with H2O and isopropanol.  Labeled targets were hybridized to microarrays in humidified slide chambers (Corning) at 45oC for 16-18 hr.  Arrays were washed sequentially with buffer 1 (2X SSC, 0.1% SDS) pre-warmed to 45oC, buffer 2 (0.2X SSC, 0.1% SDS), buffer 3 (0.2X SSC), and buffer 4 (0.05X SSC).  Slides were briefly dipped in de-ionized ultrafiltered water before being dried by centrifugation (700 X g, 10 min).  
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned with a GenePix 4000B instrument (Axon Instruments, Inc.) with preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  PMT settings were adjusted to equalize the two channels based on equal intensity of positive control spots.  PMT were also adjusted such that only a few spots were saturated to maximize detection of weak spots and maintain most intensities with linear range.  
+    </Scan-Protocol>
+    <Description>
+nothing to add
+    </Description>
+    <Data-Processing>
+Poor quality spots with signal intensities less than three standard deviations above background were excluded from further analysis.  Subsequent normalization, statistical analysis, and visualization of array data were performed with Genespring 7.3 (Agilent).
+    </Data-Processing>
+    <Platform-Ref ref="GPL5754" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219305/GSM219305_control_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219305/GSM219305_control_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219305/GSM219305_control_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219305/GSM219305_control_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219305/GSM219305_raw_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219305/GSM219305_raw_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219305/GSM219305_raw_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219305/GSM219305_raw_4.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates, log2-transformed</Description>
+      </Column>
+      <Column position="3">
+        <Name>Raw</Name>
+        <Description>Expression in untreated macrophages, 2hr post-infection</Description>
+      </Column>
+      <Column position="4">
+        <Name>Control</Name>
+        <Description>Expression in extracellular in vitro controls, 2hr</Description>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from replicates</Description>
+      </Column>
+    <External-Data rows="4322">
+GSM219305-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219324">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>M. tuberculosis CDC1551 24hr phagosome expression profile</Title>
+    <Accession database="GEO">GSM219324</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mycobacterium tuberculosis, untreated macrophage, 24 hr</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Mtb strain CDC1551
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The clinical isolate strain CDC1551 of M. tuberculosis (MTb) and the attenuated vaccine strain M. bovis BCG Pasteur (BCG) were routinely cultured in 7H9-OADC medium without shaking in 75 cm2 vented tissue culture flasks (T-75).  Bone marrow-derived macrophages (MØ) were isolated from C57BL/6 mice and grown in DMEM supplemented with 10% FCS, 20% L cell-conditioned medium and antibiotics (penicillin and streptomycin).   Macrophage media lacking antibiotics was added at least 24 hr before initiation of mycobacterial infections.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described (Butcher et al., 1998; Mangan et al., 2002).  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5g/ml lysozyme before being lysed in 650C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 647</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling.  According the manufacturer recommendation for consistent amplification results, a standardized RNA isolation protocol was used to generate all template RNA and master mixes of reaction components were prepared for each step.  In addition, care was taken to use the same amount of starting template and identical incubation times and temperatures for all samples to be compared.    amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Extracellular Control M. tuberculosis, 24hr in infection media, no macrophages</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Mtb strain CDC1551
+      </Characteristics>
+      <Treatment-Protocol>
+Prior to infections, bacteria were declumped by 10 passages through a 21 gauge needle and resuspended in infection buffer (DMEM with 5% fetal calf serum, 10mM HEPES, pH 7.4).  MØ were infected (MOI ~20:1) with Mtb or BCG grown to mid-log phase (OD=0.6-0.8) in standing 75 cm2 vented tissue culture flasks.  Infections were initiated by centrifugation (1000xg, 10 min) of bacteria onto confluent MØ monolayers followed by incubation at 370C for various times as indicated.  Care was taken to treat control bacteria identically with the exception of the condition being tested to minimize detection of spurious changes in gene expression due to irrelevant stimuli.  For example, for binding and invasion assays aliquots of the same bacterial samples were centrifuged and incubated in flasks without a MØ monolayer.  
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The clinical isolate strain CDC1551 of M. tuberculosis (MTb) and the attenuated vaccine strain M. bovis BCG Pasteur (BCG) were routinely cultured in 7H9-OADC medium without shaking in 75 cm2 vented tissue culture flasks (T-75).  Bone marrow-derived macrophages (MØ) were isolated from C57BL/6 mice and grown in DMEM supplemented with 10% FCS, 20% L cell-conditioned medium and antibiotics (penicillin and streptomycin).   Macrophage media lacking antibiotics was added at least 24 hr before initiation of mycobacterial infections.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Addition of a lysis buffer (4 M guanidine thiocyanate, 0.5% Na N-lauryl sarcosine, 25 mM sodium citrate, and 0.1M -mercaptoethanol) selectively lysed MØ, halted RNA transcription/degradation while leaving mycobacteria intact as previously described (Butcher et al., 1998; Mangan et al., 2002).  Samples were vortexed and passed five times through a 21 gauge needle to shear MØ and reduce viscosity.  Intracellular mycobacteria were recovered by centrifugation at 3500 rpm for 30min.   Pelleted BCG or MTb were digested with 5g/ml lysozyme before being lysed in 650C Trizol using a BeadBeater and 0.1mm silicon beads.  Total RNA was isolated from Trizol lysates by chloroform extraction followed by addition of ethanol and direct application to Qiagen RNeasy column purification.  Finally, residual DNA contamination was removed using Turbo DNAfree DNase (Ambion).  
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Using the MessageAmpTM-II Bacteria RNA Amplification system (Ambion), we amplified 100-250 ng total RNA to generate sufficient RNA from mycobacteria isolated from infected MØ for microarray hybrization.  Briefly, total bacterial RNA was first polyadenylated by E. coli poly(A) polymerase.  Using an oligo(dT) primer that incorporated a T7 promoter, poly(A) tailed RNA was reverse transcribed to yield double-stranded cDNA.  The resulting cDNA served as the template for in vitro transcription (IVT) by T7 RNA polymerase which generates multiple antisense RNA (aRNA) copies of each transcript in the sample.  Amino-allyl UTP was incorporated into aRNA during the IVT reaction to permit fluorophore post-labeling.  According the manufacturer recommendation for consistent amplification results, a standardized RNA isolation protocol was used to generate all template RNA and master mixes of reaction components were prepared for each step.  In addition, care was taken to use the same amount of starting template and identical incubation times and temperatures for all samples to be compared.    amino-allyl modified aRNA were labeled with Alexa Fluor 555 and Alexa Fluor 647 (Invitrogen) and purified using a MegaClear kit (Ambion).  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+5-10 ug of Cy-labeled Alexa-labeled aRNA from paired samples was dried using a Speedvac and resuspended in 50 l of hybridization buffer (5X SSC, 25% formamide, 0.1% SDS, and 25 g salmon sperm DNA).  Samples were denatured at 95oC for 5 min and briefly cooled to 60oC before being applied to arrays under a glass LifterSlip (Erie Scientific).  Slides were prehybridized for 1 hr in 25% formamide, 5X SSC, 0.1% SDS, 1% BSA and washed with H2O and isopropanol.  Labeled targets were hybridized to microarrays in humidified slide chambers (Corning) at 45oC for 16-18 hr.  Arrays were washed sequentially with buffer 1 (2X SSC, 0.1% SDS) pre-warmed to 45oC, buffer 2 (0.2X SSC, 0.1% SDS), buffer 3 (0.2X SSC), and buffer 4 (0.05X SSC).  Slides were briefly dipped in de-ionized ultrafiltered water before being dried by centrifugation (700 X g, 10 min).  
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned with a GenePix 4000B instrument (Axon Instruments, Inc.) with preliminary image analysis, spot intensity determination, background measurements, spot quality assessment and flagging conducted using Imagene software (version 6.0, Biodiscovery).  PMT settings were adjusted to equalize the two channels based on equal intensity of positive control spots.  PMT were also adjusted such that only a few spots were saturated to maximize detection of weak spots and maintain most intensities with linear range.  
+    </Scan-Protocol>
+    <Description>
+nothing to add
+    </Description>
+    <Data-Processing>
+Poor quality spots with signal intensities less than three standard deviations above background were excluded from further analysis.  Subsequent normalization, statistical analysis, and visualization of array data were performed with Genespring 7.3 (Agilent).
+    </Data-Processing>
+    <Platform-Ref ref="GPL5754" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_control_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_control_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_control_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_control_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_control_5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_raw_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_raw_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_raw_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_raw_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219324/GSM219324_raw_5.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from 6 replicates, log2-transformed</Description>
+      </Column>
+      <Column position="3">
+        <Name>Raw</Name>
+        <Description>Expression in untreated macrophages, 24hr post-infection</Description>
+      </Column>
+      <Column position="4">
+        <Name>Control</Name>
+        <Description>Expression in extracellular in vitro controls, 24hr</Description>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>Lowess Normalized value expression ratio of raw/control using averaged data from replicates</Description>
+      </Column>
+    <External-Data rows="4322">
+GSM219324-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE8827">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-11-14</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>M. tuberculosis response to macrophage intracellular cues - Role of contact, phagosome pH, time, strain</Title>
+    <Accession database="GEO">GSE8827</Accession>
+    <Pubmed-ID>18005756</Pubmed-ID>
+    <Summary>
+A central feature of Mycobacterium tuberculosis (Mtb) pathogenesis is the ability of Mtb to survive within macrophages (MØ). Despite its critical importance our appreciation of the interplay between these two cells remains superficial. In this study we employed microarrays to conduct a stepwise dissection of Mtb-MØ interaction during the invasion of resting bone-marrow MØ. Contrary to many bacterial pathogens, engagement by MØ receptors without internalization did not alter Mtb gene expression. Subsequently, a high-resolution profile of Mtb invasion-linked gene expression was generated by assaying the Mtb transcriptome at 20 min intervals up to 2 hours post-infection. Transcriptional responses were detected within minutes of phagocytosis, including gene subsets with distinct temporal profiles. Pharmacological manipulation of phagosomal pH and in vitro acid stress studies revealed that vacuole acidification is an important trigger for differential gene expression. Finally, there are marked species-specific differences in the response of Mtb and M. bovis BCG to intraphagosomal cues.
+Keywords: time-course, species-specific expression, in vitro and in vivo acid stress
+    </Summary>
+    <Overall-Design>
+M. tuberculosis CDC1551 or BCG RNA was isolated from macrophage associated bacteria using a guanidine thiocyanate based lysis/RNA stablization buffer that rapidly lyses macrophages while permeating mycobacteria to &quot;freeze&quot; and stabilize the transcriptome.  Due to limited RNA yields from intracellular bacteria, total bacterial RNA was linearly amplified, incorporating amino-allyl UTP during in vitro transcription.  aRNA were post-labeled with amine reactive Alexa dyes and samples were hybridized to spotted oligo arrays in treated vs control dual channel format.   A minimum of two biological replicates was conducted for each assay.  Contact-induced gene expression using cytochalasin D-treated macrophages and pH induced gene expression using concanamycin A treated macrophages (2 biological replicates), CDC1551 and BCG 2hr and 24hr intraphagosomal profiles (5 biological replicates), in vitro acid stress at pH 5.5 and 6.5 (3 biological and 2 technical replicates - 6 total arrays) for each condition.  
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM218909" />
+    <Sample-Ref ref="GSM218910" />
+    <Sample-Ref ref="GSM218911" />
+    <Sample-Ref ref="GSM218912" />
+    <Sample-Ref ref="GSM219303" />
+    <Sample-Ref ref="GSM219304" />
+    <Sample-Ref ref="GSM219305" />
+    <Sample-Ref ref="GSM219324" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE8827/GSE8827_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/102155" />
+  </Series>
+
+</MINiML>

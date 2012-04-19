@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/projects/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/projects/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jenni</First><Last>Weeks</Last></Person>
+    <Email>jweeks@cvm.tamu.edu</Email>
+    <Phone>9798454118</Phone>
+    <Organization>Texas A&amp;M University</Organization>
+    <Address>
+      <Line>4467 TAMU</Line>
+      <City>College Station</City>
+      <State>TX</State>
+      <Zip-Code>77841</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Stephen</First><Middle>A</Middle><Last>Johnston</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Mitchell</First><Last>McGee</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Rhonda</First><Last>Friedberg</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Jonathan</First><Last>Lawson</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Jenni</First><Middle>N</Middle><Last>Weeks</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Cristi</First><Middle>L</Middle><Last>Galindo</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Carlos</First><Middle>A</Middle><Last>Rossetti</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Sarah</First><Middle>D</Middle><Last>Lawhon</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib10">
+    <Person><First>Harold</First><Middle>R</Middle><Last>Garner</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib11">
+    <Person><First>Thomas</First><Middle>A</Middle><Last>Ficht</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib12">
+    <Person><First>L</First><Middle>G</Middle><Last>Adams</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL7612">
+    <Status database="GEO">
+      <Submission-Date>2008-11-07</Submission-Date>
+      <Release-Date>2010-04-23</Release-Date>
+      <Last-Update-Date>2009-10-23</Last-Update-Date>
+    </Status>
+    <Title>ASU Brucella melitensis 13K oligo array v1.0</Title>
+    <Accession database="GEO">GPL7612</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="29459">Brucella melitensis</Organism>
+    <Manufacturer>Western Regional Center of Excellence (WRCE) Pathogen Expression Core (Arizona State University)</Manufacturer>
+    <Manufacture-Protocol>
+A set of unique 70-base oligonucleotides representing 3,227 ORFs of B. melitensis strain 16M and unique/divergent genes from B. abortus and B. suis were designed at the Pathogen Expression Core and purchased from Sigma-Genosys (The Woodland, TX). Oligonucleotides were suspended in 3X SSC (Ambion) at the final concentration of 40 uM before robotic arraying in triplicate onto ultraGAPS coated glass slides (Corning) using a Spotarray 72 microarray printer (Perkin Elmer, Downer’s Grove, ILL). Printed slides were steamed and UV cross-linked and stored in a desiccator until use.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>ultraGAPS</Coating>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Unique Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>Array Block</Description>
+      </Column>
+      <Column position="3">
+        <Name>Column</Name>
+        <Description>Block Column</Description>
+      </Column>
+      <Column position="4">
+        <Name>Row</Name>
+        <Description>Block Row</Description>
+      </Column>
+      <Column position="5">
+        <Name>Oligo Number</Name>
+        <Description>Oligo number</Description>
+      </Column>
+      <Column position="6">
+        <Name>PT_ACC</Name>
+        <Description>Protein accession </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=protein&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="7">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Brucella[organism]</Link-Suffix>
+      </Column>
+      <Column position="8">
+        <Name>GENOME_ACC</Name>
+        <Description>Genome accession </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="9">
+        <Name>Protein Ident</Name>
+        <Description>Protein database accession number</Description>
+      </Column>
+      <Column position="10">
+        <Name>Protein GI</Name>
+        <Description>GenInfo Identifier</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene ID</Name>
+        <Description>Entrez Gene Database identifier</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Locus Tag</Name>
+        <Description>Brucella gene number</Description>
+      </Column>
+      <Column position="13">
+        <Name>Gene Function</Name>
+        <Description>Gene Product Function</Description>
+      </Column>
+      <Column position="14">
+        <Name>Oligo Seq</Name>
+        <Description>Sequence of oligonucleotide</Description>
+      </Column>
+      <Column position="15">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="13824">
+GPL7612-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM343499">
+    <Status database="GEO">
+      <Submission-Date>2008-11-18</Submission-Date>
+      <Release-Date>2010-04-23</Release-Date>
+      <Last-Update-Date>2009-10-23</Last-Update-Date>
+    </Status>
+    <Title>Wild type_late logarithmic growth phase_rep1</Title>
+    <Accession database="GEO">GSM343499</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis 16M, late logarithmic phase of growth.</Source>
+      <Organism taxid="224914">Brucella melitensis 16M</Organism>
+      <Characteristics>
+16M bv.1 strain.
+      </Characteristics>
+      <Growth-Protocol>
+Brucella melitensis 16M Bv. 1 was obtained from ATCC and re-isolated from an aborted goat fetus by this lab. B. melitensis 16M Bv. 1 and its genetically modified derivatives were maintained as frozen glycerol stocks.  Strains were plated for isolation on TSA and incubated at 37°C with 5% CO2 for 3 days.  Individual 50 ml conical tubes with 5 ml of Brucella Broth (Difco Laboratories, Becton, Dickinson and Company, Franklin Lakes, NJ) were inoculated from an isolated single colony and incubated at 37ºC with agitation for 48 hours.  Cultures were then innoculated 1:1000 in Brucella Broth and grown at 37°C with agitation.  Growth curves of cultures were determined by the optical density (OD) of the culture at 600nm with bacterial colony forming units (CFU). For late logarithmic phase of growth, OD600=0.9.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+At harvest time, 14 % (v/v) of a cold ethanol solution containing 5 % (v/v) acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added to the bacterial culture and immediately centrifuged at 10900 x g for 3 minutes.  The supernatant was removed and the bacterial pellet was frozen in liquid nitrogen and stored at -80°C.  RNA was collected by re-suspending the bacterial pellets in 0.5 mg ml-1 lysozyme (Amresco, Solon, OH) dissolved in TE, followed by the addition of 0.97 % (v/v) SDS.  The cells were then incubated at 64°C for 2 minutes.  Next, 0.5 M sodium acetate (pH 5.2) was added, mixed gently by inversion and an equal volume of acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added and mixed well by inversion.  The bacteria-phenol mix was incubated at 64°C for 6 minutes and mixed by inversion several times every 40 seconds.  The bacteria-phenol mix was chilled on ice for 30 minutes and the layers were separated by centrifugation at 28900 x g for 13 minutes.  The aqueous layer was removed and placed in a clean tube.  An equal volume of chloroform (Sigma, St. Louis, MO) was added to the aqueous layer and mixed well by inversion.  The layers were separated by centrifugation at 20700 x g for 7 minutes.  This aqueous layer was placed into a clean tube and total RNA was precipitated by adding an equal volume of cold isopropanol and 0.1 volumes of 3M sodium acetate (pH 5.4).  RNA was precipitated for one hour at -80°C and then pelleted by centrifugation at 19000 x g for 30 minutes, washed with 80 % (v/v) ethanol, centrifuged for 5 minutes at 19000 x g, and the resulting pellets were air-dried for 20 minutes.  The dried pellets were resuspended in RNAse-free water, and subjected to DNAseI treatment. The DNA was degraded and removed by incubation with 5X DNAseI buffer (50 mM MgCl2, 50 mM Tris-Cl pH 7.5, 5 mM EDTA, 5 mM dithiothreitol (DTT)), 10 units of DNAseI (Qiagen, Valencia, CA) and 10 units of RNAse Inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 37°C for one hour.  Following the DNAseI digestion, the total RNA was further purified using the HighPure RNA isolation kit (Roche, Indianapolis, IN), following manufacturer’s instructions and included the optional (second) DNAseI incubation.  The RNA was eluted with the provided elution buffer, precipitated with 3 volumes of cold 95 % (v/v) ethanol and 0.1 volumes 3 M sodium acetate (pH 5.2) and washed with 80 % (v/v) ethanol.  The pellet was air dried for 15 minutes and then resuspended in The RNA Storage Solution (Ambion, Austin, TX).
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Total RNA extracted from B. melitensis 16M was transcribed into cDNA incorporating 5-(3-aminoallyl)-dUTP (aha-dUTP) for indirect labeling with Alexa Fluor 555 (Invitrogen, Carlsbad, CA), a Cy3-like fluorescein.  The cDNA synthesis combined 10 µg of total RNA, 6 µg random primers (Invitrogen, Carlsbad, CA), 1X first strand buffer (Invitrogen, Carlsbad, CA), 10 mM DTT, 0.5 mM each dATP, dTTP and dGTP, 0.3 mM dTTP (PCR grade, Invitrogen, Carlsbad, CA), 0.2 mM aha-dUTP (Invitrogen, Carlsbad, CA), 400 units SuperScript III reverse transcriptase (Invitrogen, Carlsbad, CA) and 20 units protector RNAse inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 23°C for one minute and then at 46°C overnight.  The reaction was then treated with 0.4 M NaOH and incubated at 65°C for 15 minutes to stop the reaction and remove residual RNA. The pH was brought back to neutral with the addition of 0.2M HCl, then the cDNA was purified to remove unincorporated aha-dUTP and free amines using PCR Purification columns (Qiagen, Valencia, CA) with the modified wash (5 mM KPO4 (pH 8.0) and 80 % (v/v) ethanol) and elution buffers (4 mM KPO4 (pH 8.5)).  The manufacturer’s instructions were modified to include 2 washes with the substituted phosphate wash buffer, and the elution was carried out in 2 steps: 50 µl each elution (yielding 100 µl total) with a one minute incubation of the elution buffer in the column at room temperature before centrifugation. Alexa-Fluor 555 (Invitrogen, Carlsbad, CA) was coupled to the aha-dUTP incorporated into the cDNA following the coupling procedure outlined in the BioPrime® Plus Array CGH Indirect Genomic Labeling System (Invitrogen, Carlsbad, CA) and purified using PCR purification columns (Qiagen, Valencia, CA) following manufacturer’s instructions.  Concentration and labeling efficiency of the labeled cDNA was examined using the Nanodrop® ND-1000 (Nanodrop, Wilmington, DE).  Labeled RNA samples were dried completely (Eppendorf Vacufuge, Westbury, NY) and resuspended in ddH2O immediately before hybridization to the microarrays.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Printed slides were submerged in 0.2 % SDS (Ambion, Austin, TX) for 2 minutes and washed three times in containers with ample ddH2O.  The microarray slides were placed in a prehybridization solution (5X SSC (Ambion, Austin, TX), 0.1 % SDS (Ambion, Austin, TX), and 1 % (w/v) BSA (Sigma, St. Louis, MO)) pre-warmed to 45°C for a minimum of 45 minutes.  Following prehybridization, the slides were washed five times in containers containing ample ddH2O, submerged once in isopropanol, and then immediately dried by centrifugation at 207 x g for 2 minutes at room temperature in a Jouan CR422 table top centrifuge.  The resuspended labeled RNA was combined with 1 µg of labeled genomic DNA from B. melitensis 16M to a total volume of 35 µl.  The sample was heated at 95°C for 5 minutes and held at 45°C until hybridization to the microarray slide.  The labeled cDNA was combined with 1X hybridization buffer (25 % (v/v) formamide (Sigma, St. Louis, Mo), 1X SSC (Ambion, Austin, TX) and 0.1 % (v/v) SDS (Ambion, Austin, TX)) and applied to the microarray with a 22 x 60 mm LifterSlip (Erie Scientific Company, Portsmouth, NH).  The microarray was incubated in a water bath for approximately 21 hours at 42°C in a sealed hybridization chamber (Corning, Corning, NY).    After hybridization, microarray slides were washed three times with agitation at room temperature.  The first wash buffer (2X SSC (Ambion, Austin, TX) and 0.2 % (v/v) SDS (Ambion, Austin, TX)) was pre-heated to 42°C and the microarray was washed for 10 minutes, followed by a 5 minute wash in 2X SSC (Ambion, Austin, TX).  The microarray was subsequently washed a third time in 0.2X SSC (Ambion, Austin, TX) for 5 minutes.  Immediately after the last wash, the arrays were dried by centrifugation for 2 minutes at 207 x g at room temperature in a Jouan CR422 tabletop centrifuge.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using a commercial laser scanner GenePix 4100A (Molecular Devices, Sunnyvale, CA) and Genepix 6.1 Pro software.  The auto-PMT (photomultiplier tube) function was used to determine the optimal gain for each laser channel with each slide.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3.
+Total RNA from Brucella melitensis culture grown cells to late logarithmic growth phase (OD600=0.9), labeled with Alexa 555 and hybridized to the microarray with Brucella melitensis genomic DNA labeled with Cy5.  The same genomic DNA sample was hybridized to all microarrays.
+    </Description>
+    <Data-Processing>
+Spots that were flagged as bad or absent were removed from the analysis and background values were subtracted.  Raw Alexa 555 signals were normalized against the mean of the baseline Cy-5 gDNA reference.  GeneSifter (VizX Labs, Seattle, WA) was used to perform global mean normalization on the signal values already normalized to the reference channel.  Genes were retained if their signals were altered by at least a 1.5-fold change between conditions and a p value of 0.05 or less was obtained applying a Student’s t-test.  To further filter data based on biological relevance, individual pairwise comparisons were also performed on signal values after global mean normalization using Spotfire DecisionSite 9.0 (Spotfire, Inc., Somerville, MA).  Any fold-change observed between test conditions were expected to be at least 50 % greater in magnitude (e.g., 1.5-fold greater) than the fold-change observed between any two biological replicate samples.  Genes that did not meet the criteria were removed from the analysis.  For the samples extracted during the exponential growth phase, the analysis was modified to account for variation revealed by scatter plots fitted with a trend line using the normalized signal values in the wild type samples.  In addition to the analysis described above, a separate comparison was performed that included only the two similar wild type samples.  The resulting fold-change values were expected to be greater than 50 % of the value obtained for wild type 1 versus wild type 2.  A Student’s t-test was performed, retaining genes that had a p value of less than 0.05.  Genes that passed the conditions in either analysis method were considered statistically significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7612" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM343nnn/GSM343499/GSM343499.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Background corrected, normalized signal value</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM343499-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM343500">
+    <Status database="GEO">
+      <Submission-Date>2008-11-18</Submission-Date>
+      <Release-Date>2010-04-23</Release-Date>
+      <Last-Update-Date>2009-10-23</Last-Update-Date>
+    </Status>
+    <Title>Wild type_late logarithmic growth phase_rep2</Title>
+    <Accession database="GEO">GSM343500</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis 16M, late logarithmic phase of growth.</Source>
+      <Organism taxid="224914">Brucella melitensis 16M</Organism>
+      <Characteristics>
+16M bv.1 strain.
+      </Characteristics>
+      <Growth-Protocol>
+Brucella melitensis 16M Bv. 1 was obtained from ATCC and re-isolated from an aborted goat fetus by this lab. B. melitensis 16M Bv. 1 and its genetically modified derivatives were maintained as frozen glycerol stocks.  Strains were plated for isolation on TSA and incubated at 37°C with 5% CO2 for 3 days.  Individual 50 ml conical tubes with 5 ml of Brucella Broth (Difco Laboratories, Becton, Dickinson and Company, Franklin Lakes, NJ) were inoculated from an isolated single colony and incubated at 37ºC with agitation for 48 hours.  Cultures were then innoculated 1:1000 in Brucella Broth and grown at 37°C with agitation.  Growth curves of cultures were determined by the optical density (OD) of the culture at 600nm with bacterial colony forming units (CFU). For late logarithmic phase of growth, OD600=0.9.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+At harvest time, 14 % (v/v) of a cold ethanol solution containing 5 % (v/v) acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added to the bacterial culture and immediately centrifuged at 10900 x g for 3 minutes.  The supernatant was removed and the bacterial pellet was frozen in liquid nitrogen and stored at -80°C.  RNA was collected by re-suspending the bacterial pellets in 0.5 mg ml-1 lysozyme (Amresco, Solon, OH) dissolved in TE, followed by the addition of 0.97 % (v/v) SDS.  The cells were then incubated at 64°C for 2 minutes.  Next, 0.5 M sodium acetate (pH 5.2) was added, mixed gently by inversion and an equal volume of acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added and mixed well by inversion.  The bacteria-phenol mix was incubated at 64°C for 6 minutes and mixed by inversion several times every 40 seconds.  The bacteria-phenol mix was chilled on ice for 30 minutes and the layers were separated by centrifugation at 28900 x g for 13 minutes.  The aqueous layer was removed and placed in a clean tube.  An equal volume of chloroform (Sigma, St. Louis, MO) was added to the aqueous layer and mixed well by inversion.  The layers were separated by centrifugation at 20700 x g for 7 minutes.  This aqueous layer was placed into a clean tube and total RNA was precipitated by adding an equal volume of cold isopropanol and 0.1 volumes of 3M sodium acetate (pH 5.4).  RNA was precipitated for one hour at -80°C and then pelleted by centrifugation at 19000 x g for 30 minutes, washed with 80 % (v/v) ethanol, centrifuged for 5 minutes at 19000 x g, and the resulting pellets were air-dried for 20 minutes.  The dried pellets were resuspended in RNAse-free water, and subjected to DNAseI treatment. The DNA was degraded and removed by incubation with 5X DNAseI buffer (50 mM MgCl2, 50 mM Tris-Cl pH 7.5, 5 mM EDTA, 5 mM dithiothreitol (DTT)), 10 units of DNAseI (Qiagen, Valencia, CA) and 10 units of RNAse Inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 37°C for one hour.  Following the DNAseI digestion, the total RNA was further purified using the HighPure RNA isolation kit (Roche, Indianapolis, IN), following manufacturer’s instructions and included the optional (second) DNAseI incubation.  The RNA was eluted with the provided elution buffer, precipitated with 3 volumes of cold 95 % (v/v) ethanol and 0.1 volumes 3 M sodium acetate (pH 5.2) and washed with 80 % (v/v) ethanol.  The pellet was air dried for 15 minutes and then resuspended in The RNA Storage Solution (Ambion, Austin, TX).
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Total RNA extracted from B. melitensis 16M was transcribed into cDNA incorporating 5-(3-aminoallyl)-dUTP (aha-dUTP) for indirect labeling with Alexa Fluor 555 (Invitrogen, Carlsbad, CA), a Cy3-like fluorescein.  The cDNA synthesis combined 10 µg of total RNA, 6 µg random primers (Invitrogen, Carlsbad, CA), 1X first strand buffer (Invitrogen, Carlsbad, CA), 10 mM DTT, 0.5 mM each dATP, dTTP and dGTP, 0.3 mM dTTP (PCR grade, Invitrogen, Carlsbad, CA), 0.2 mM aha-dUTP (Invitrogen, Carlsbad, CA), 400 units SuperScript III reverse transcriptase (Invitrogen, Carlsbad, CA) and 20 units protector RNAse inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 23°C for one minute and then at 46°C overnight.  The reaction was then treated with 0.4 M NaOH and incubated at 65°C for 15 minutes to stop the reaction and remove residual RNA. The pH was brought back to neutral with the addition of 0.2M HCl, then the cDNA was purified to remove unincorporated aha-dUTP and free amines using PCR Purification columns (Qiagen, Valencia, CA) with the modified wash (5 mM KPO4 (pH 8.0) and 80 % (v/v) ethanol) and elution buffers (4 mM KPO4 (pH 8.5)).  The manufacturer’s instructions were modified to include 2 washes with the substituted phosphate wash buffer, and the elution was carried out in 2 steps: 50 µl each elution (yielding 100 µl total) with a one minute incubation of the elution buffer in the column at room temperature before centrifugation. Alexa-Fluor 555 (Invitrogen, Carlsbad, CA) was coupled to the aha-dUTP incorporated into the cDNA following the coupling procedure outlined in the BioPrime® Plus Array CGH Indirect Genomic Labeling System (Invitrogen, Carlsbad, CA) and purified using PCR purification columns (Qiagen, Valencia, CA) following manufacturer’s instructions.  Concentration and labeling efficiency of the labeled cDNA was examined using the Nanodrop® ND-1000 (Nanodrop, Wilmington, DE).  Labeled RNA samples were dried completely (Eppendorf Vacufuge, Westbury, NY) and resuspended in ddH2O immediately before hybridization to the microarrays.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Printed slides were submerged in 0.2 % SDS (Ambion, Austin, TX) for 2 minutes and washed three times in containers with ample ddH2O.  The microarray slides were placed in a prehybridization solution (5X SSC (Ambion, Austin, TX), 0.1 % SDS (Ambion, Austin, TX), and 1 % (w/v) BSA (Sigma, St. Louis, MO)) pre-warmed to 45°C for a minimum of 45 minutes.  Following prehybridization, the slides were washed five times in containers containing ample ddH2O, submerged once in isopropanol, and then immediately dried by centrifugation at 207 x g for 2 minutes at room temperature in a Jouan CR422 table top centrifuge.  The resuspended labeled RNA was combined with 1 µg of labeled genomic DNA from B. melitensis 16M to a total volume of 35 µl.  The sample was heated at 95°C for 5 minutes and held at 45°C until hybridization to the microarray slide.  The labeled cDNA was combined with 1X hybridization buffer (25 % (v/v) formamide (Sigma, St. Louis, Mo), 1X SSC (Ambion, Austin, TX) and 0.1 % (v/v) SDS (Ambion, Austin, TX)) and applied to the microarray with a 22 x 60 mm LifterSlip (Erie Scientific Company, Portsmouth, NH).  The microarray was incubated in a water bath for approximately 21 hours at 42°C in a sealed hybridization chamber (Corning, Corning, NY).    After hybridization, microarray slides were washed three times with agitation at room temperature.  The first wash buffer (2X SSC (Ambion, Austin, TX) and 0.2 % (v/v) SDS (Ambion, Austin, TX)) was pre-heated to 42°C and the microarray was washed for 10 minutes, followed by a 5 minute wash in 2X SSC (Ambion, Austin, TX).  The microarray was subsequently washed a third time in 0.2X SSC (Ambion, Austin, TX) for 5 minutes.  Immediately after the last wash, the arrays were dried by centrifugation for 2 minutes at 207 x g at room temperature in a Jouan CR422 tabletop centrifuge.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using a commercial laser scanner GenePix 4100A (Molecular Devices, Sunnyvale, CA) and Genepix 6.1 Pro software.  The auto-PMT (photomultiplier tube) function was used to determine the optimal gain for each laser channel with each slide.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3.
+Total RNA from Brucella melitensis culture grown cells to late logarithmic growth phase (OD600=0.9), labeled with Alexa 555 and hybridized to the microarray with Brucella melitensis genomic DNA labeled with Cy5.  The same genomic DNA sample was hybridized to all microarrays.
+    </Description>
+    <Data-Processing>
+Spots that were flagged as bad or absent were removed from the analysis and background values were subtracted.  Raw Alexa 555 signals were normalized against the mean of the baseline Cy-5 gDNA reference.  GeneSifter (VizX Labs, Seattle, WA) was used to perform global mean normalization on the signal values already normalized to the reference channel.  Genes were retained if their signals were altered by at least a 1.5-fold change between conditions and a p value of 0.05 or less was obtained applying a Student’s t-test.  To further filter data based on biological relevance, individual pairwise comparisons were also performed on signal values after global mean normalization using Spotfire DecisionSite 9.0 (Spotfire, Inc., Somerville, MA).  Any fold-change observed between test conditions were expected to be at least 50 % greater in magnitude (e.g., 1.5-fold greater) than the fold-change observed between any two biological replicate samples.  Genes that did not meet the criteria were removed from the analysis.  For the samples extracted during the exponential growth phase, the analysis was modified to account for variation revealed by scatter plots fitted with a trend line using the normalized signal values in the wild type samples.  In addition to the analysis described above, a separate comparison was performed that included only the two similar wild type samples.  The resulting fold-change values were expected to be greater than 50 % of the value obtained for wild type 1 versus wild type 2.  A Student’s t-test was performed, retaining genes that had a p value of less than 0.05.  Genes that passed the conditions in either analysis method were considered statistically significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7612" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM343nnn/GSM343500/GSM343500.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Background corrected, normalized signal value</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM343500-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM343501">
+    <Status database="GEO">
+      <Submission-Date>2008-11-18</Submission-Date>
+      <Release-Date>2010-04-23</Release-Date>
+      <Last-Update-Date>2009-10-23</Last-Update-Date>
+    </Status>
+    <Title>Wild type_late logarithmic growth phase_rep3</Title>
+    <Accession database="GEO">GSM343501</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis 16M, late logarithmic phase of growth.</Source>
+      <Organism taxid="224914">Brucella melitensis 16M</Organism>
+      <Characteristics>
+16M bv.1 strain.
+      </Characteristics>
+      <Growth-Protocol>
+Brucella melitensis 16M Bv. 1 was obtained from ATCC and re-isolated from an aborted goat fetus by this lab. B. melitensis 16M Bv. 1 and its genetically modified derivatives were maintained as frozen glycerol stocks.  Strains were plated for isolation on TSA and incubated at 37°C with 5% CO2 for 3 days.  Individual 50 ml conical tubes with 5 ml of Brucella Broth (Difco Laboratories, Becton, Dickinson and Company, Franklin Lakes, NJ) were inoculated from an isolated single colony and incubated at 37ºC with agitation for 48 hours.  Cultures were then innoculated 1:1000 in Brucella Broth and grown at 37°C with agitation.  Growth curves of cultures were determined by the optical density (OD) of the culture at 600nm with bacterial colony forming units (CFU). For late logarithmic phase of growth, OD600=0.9.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+At harvest time, 14 % (v/v) of a cold ethanol solution containing 5 % (v/v) acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added to the bacterial culture and immediately centrifuged at 10900 x g for 3 minutes.  The supernatant was removed and the bacterial pellet was frozen in liquid nitrogen and stored at -80°C.  RNA was collected by re-suspending the bacterial pellets in 0.5 mg ml-1 lysozyme (Amresco, Solon, OH) dissolved in TE, followed by the addition of 0.97 % (v/v) SDS.  The cells were then incubated at 64°C for 2 minutes.  Next, 0.5 M sodium acetate (pH 5.2) was added, mixed gently by inversion and an equal volume of acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added and mixed well by inversion.  The bacteria-phenol mix was incubated at 64°C for 6 minutes and mixed by inversion several times every 40 seconds.  The bacteria-phenol mix was chilled on ice for 30 minutes and the layers were separated by centrifugation at 28900 x g for 13 minutes.  The aqueous layer was removed and placed in a clean tube.  An equal volume of chloroform (Sigma, St. Louis, MO) was added to the aqueous layer and mixed well by inversion.  The layers were separated by centrifugation at 20700 x g for 7 minutes.  This aqueous layer was placed into a clean tube and total RNA was precipitated by adding an equal volume of cold isopropanol and 0.1 volumes of 3M sodium acetate (pH 5.4).  RNA was precipitated for one hour at -80°C and then pelleted by centrifugation at 19000 x g for 30 minutes, washed with 80 % (v/v) ethanol, centrifuged for 5 minutes at 19000 x g, and the resulting pellets were air-dried for 20 minutes.  The dried pellets were resuspended in RNAse-free water, and subjected to DNAseI treatment. The DNA was degraded and removed by incubation with 5X DNAseI buffer (50 mM MgCl2, 50 mM Tris-Cl pH 7.5, 5 mM EDTA, 5 mM dithiothreitol (DTT)), 10 units of DNAseI (Qiagen, Valencia, CA) and 10 units of RNAse Inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 37°C for one hour.  Following the DNAseI digestion, the total RNA was further purified using the HighPure RNA isolation kit (Roche, Indianapolis, IN), following manufacturer’s instructions and included the optional (second) DNAseI incubation.  The RNA was eluted with the provided elution buffer, precipitated with 3 volumes of cold 95 % (v/v) ethanol and 0.1 volumes 3 M sodium acetate (pH 5.2) and washed with 80 % (v/v) ethanol.  The pellet was air dried for 15 minutes and then resuspended in The RNA Storage Solution (Ambion, Austin, TX).
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Total RNA extracted from B. melitensis 16M was transcribed into cDNA incorporating 5-(3-aminoallyl)-dUTP (aha-dUTP) for indirect labeling with Alexa Fluor 555 (Invitrogen, Carlsbad, CA), a Cy3-like fluorescein.  The cDNA synthesis combined 10 µg of total RNA, 6 µg random primers (Invitrogen, Carlsbad, CA), 1X first strand buffer (Invitrogen, Carlsbad, CA), 10 mM DTT, 0.5 mM each dATP, dTTP and dGTP, 0.3 mM dTTP (PCR grade, Invitrogen, Carlsbad, CA), 0.2 mM aha-dUTP (Invitrogen, Carlsbad, CA), 400 units SuperScript III reverse transcriptase (Invitrogen, Carlsbad, CA) and 20 units protector RNAse inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 23°C for one minute and then at 46°C overnight.  The reaction was then treated with 0.4 M NaOH and incubated at 65°C for 15 minutes to stop the reaction and remove residual RNA. The pH was brought back to neutral with the addition of 0.2M HCl, then the cDNA was purified to remove unincorporated aha-dUTP and free amines using PCR Purification columns (Qiagen, Valencia, CA) with the modified wash (5 mM KPO4 (pH 8.0) and 80 % (v/v) ethanol) and elution buffers (4 mM KPO4 (pH 8.5)).  The manufacturer’s instructions were modified to include 2 washes with the substituted phosphate wash buffer, and the elution was carried out in 2 steps: 50 µl each elution (yielding 100 µl total) with a one minute incubation of the elution buffer in the column at room temperature before centrifugation. Alexa-Fluor 555 (Invitrogen, Carlsbad, CA) was coupled to the aha-dUTP incorporated into the cDNA following the coupling procedure outlined in the BioPrime® Plus Array CGH Indirect Genomic Labeling System (Invitrogen, Carlsbad, CA) and purified using PCR purification columns (Qiagen, Valencia, CA) following manufacturer’s instructions.  Concentration and labeling efficiency of the labeled cDNA was examined using the Nanodrop® ND-1000 (Nanodrop, Wilmington, DE).  Labeled RNA samples were dried completely (Eppendorf Vacufuge, Westbury, NY) and resuspended in ddH2O immediately before hybridization to the microarrays.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Printed slides were submerged in 0.2 % SDS (Ambion, Austin, TX) for 2 minutes and washed three times in containers with ample ddH2O.  The microarray slides were placed in a prehybridization solution (5X SSC (Ambion, Austin, TX), 0.1 % SDS (Ambion, Austin, TX), and 1 % (w/v) BSA (Sigma, St. Louis, MO)) pre-warmed to 45°C for a minimum of 45 minutes.  Following prehybridization, the slides were washed five times in containers containing ample ddH2O, submerged once in isopropanol, and then immediately dried by centrifugation at 207 x g for 2 minutes at room temperature in a Jouan CR422 table top centrifuge.  The resuspended labeled RNA was combined with 1 µg of labeled genomic DNA from B. melitensis 16M to a total volume of 35 µl.  The sample was heated at 95°C for 5 minutes and held at 45°C until hybridization to the microarray slide.  The labeled cDNA was combined with 1X hybridization buffer (25 % (v/v) formamide (Sigma, St. Louis, Mo), 1X SSC (Ambion, Austin, TX) and 0.1 % (v/v) SDS (Ambion, Austin, TX)) and applied to the microarray with a 22 x 60 mm LifterSlip (Erie Scientific Company, Portsmouth, NH).  The microarray was incubated in a water bath for approximately 21 hours at 42°C in a sealed hybridization chamber (Corning, Corning, NY).    After hybridization, microarray slides were washed three times with agitation at room temperature.  The first wash buffer (2X SSC (Ambion, Austin, TX) and 0.2 % (v/v) SDS (Ambion, Austin, TX)) was pre-heated to 42°C and the microarray was washed for 10 minutes, followed by a 5 minute wash in 2X SSC (Ambion, Austin, TX).  The microarray was subsequently washed a third time in 0.2X SSC (Ambion, Austin, TX) for 5 minutes.  Immediately after the last wash, the arrays were dried by centrifugation for 2 minutes at 207 x g at room temperature in a Jouan CR422 tabletop centrifuge.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using a commercial laser scanner GenePix 4100A (Molecular Devices, Sunnyvale, CA) and Genepix 6.1 Pro software.  The auto-PMT (photomultiplier tube) function was used to determine the optimal gain for each laser channel with each slide.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3.
+Total RNA from Brucella melitensis culture grown cells to late logarithmic growth phase (OD600=0.9), labeled with Alexa 555 and hybridized to the microarray with Brucella melitensis genomic DNA labeled with Cy5.  The same genomic DNA sample was hybridized to all microarrays.
+    </Description>
+    <Data-Processing>
+Spots that were flagged as bad or absent were removed from the analysis and background values were subtracted.  Raw Alexa 555 signals were normalized against the mean of the baseline Cy-5 gDNA reference.  GeneSifter (VizX Labs, Seattle, WA) was used to perform global mean normalization on the signal values already normalized to the reference channel.  Genes were retained if their signals were altered by at least a 1.5-fold change between conditions and a p value of 0.05 or less was obtained applying a Student’s t-test.  To further filter data based on biological relevance, individual pairwise comparisons were also performed on signal values after global mean normalization using Spotfire DecisionSite 9.0 (Spotfire, Inc., Somerville, MA).  Any fold-change observed between test conditions were expected to be at least 50 % greater in magnitude (e.g., 1.5-fold greater) than the fold-change observed between any two biological replicate samples.  Genes that did not meet the criteria were removed from the analysis.  For the samples extracted during the exponential growth phase, the analysis was modified to account for variation revealed by scatter plots fitted with a trend line using the normalized signal values in the wild type samples.  In addition to the analysis described above, a separate comparison was performed that included only the two similar wild type samples.  The resulting fold-change values were expected to be greater than 50 % of the value obtained for wild type 1 versus wild type 2.  A Student’s t-test was performed, retaining genes that had a p value of less than 0.05.  Genes that passed the conditions in either analysis method were considered statistically significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7612" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM343nnn/GSM343501/GSM343501.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Background corrected, normalized signal value</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM343501-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM343502">
+    <Status database="GEO">
+      <Submission-Date>2008-11-18</Submission-Date>
+      <Release-Date>2010-04-23</Release-Date>
+      <Last-Update-Date>2009-10-23</Last-Update-Date>
+    </Status>
+    <Title>dmucR_late logarithmic growth phase_rep1</Title>
+    <Accession database="GEO">GSM343502</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis 16M∆mucR, late logarithmic phase of growth.</Source>
+      <Organism taxid="224914">Brucella melitensis 16M</Organism>
+      <Characteristics>
+16M bv.1 ∆mucR strain.
+      </Characteristics>
+      <Characteristics>
+B. melitensis 16M∆mucR (BMEI1364).
+      </Characteristics>
+      <Growth-Protocol>
+Brucella melitensis 16M Bv. 1 was obtained from ATCC and re-isolated from an aborted goat fetus by this lab. B. melitensis 16M Bv. 1 and its genetically modified derivatives were maintained as frozen glycerol stocks.  Strains were plated for isolation on TSA and incubated at 37°C with 5% CO2 for 3 days.  Individual 50 ml conical tubes with 5 ml of Brucella Broth (Difco Laboratories, Becton, Dickinson and Company, Franklin Lakes, NJ) were inoculated from an isolated single colony and incubated at 37ºC with agitation for 48 hours.  Cultures were then innoculated 1:1000 in Brucella Broth and grown at 37°C with agitation.  Growth curves of cultures were determined by the optical density (OD) of the culture at 600nm with bacterial colony forming units (CFU). For late logarithmic phase of growth, OD600=0.9.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+At harvest time, 14 % (v/v) of a cold ethanol solution containing 5 % (v/v) acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added to the bacterial culture and immediately centrifuged at 10900 x g for 3 minutes.  The supernatant was removed and the bacterial pellet was frozen in liquid nitrogen and stored at -80°C.  RNA was collected by re-suspending the bacterial pellets in 0.5 mg ml-1 lysozyme (Amresco, Solon, OH) dissolved in TE, followed by the addition of 0.97 % (v/v) SDS.  The cells were then incubated at 64°C for 2 minutes.  Next, 0.5 M sodium acetate (pH 5.2) was added, mixed gently by inversion and an equal volume of acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added and mixed well by inversion.  The bacteria-phenol mix was incubated at 64°C for 6 minutes and mixed by inversion several times every 40 seconds.  The bacteria-phenol mix was chilled on ice for 30 minutes and the layers were separated by centrifugation at 28900 x g for 13 minutes.  The aqueous layer was removed and placed in a clean tube.  An equal volume of chloroform (Sigma, St. Louis, MO) was added to the aqueous layer and mixed well by inversion.  The layers were separated by centrifugation at 20700 x g for 7 minutes.  This aqueous layer was placed into a clean tube and total RNA was precipitated by adding an equal volume of cold isopropanol and 0.1 volumes of 3M sodium acetate (pH 5.4).  RNA was precipitated for one hour at -80°C and then pelleted by centrifugation at 19000 x g for 30 minutes, washed with 80 % (v/v) ethanol, centrifuged for 5 minutes at 19000 x g, and the resulting pellets were air-dried for 20 minutes.  The dried pellets were resuspended in RNAse-free water, and subjected to DNAseI treatment. The DNA was degraded and removed by incubation with 5X DNAseI buffer (50 mM MgCl2, 50 mM Tris-Cl pH 7.5, 5 mM EDTA, 5 mM dithiothreitol (DTT)), 10 units of DNAseI (Qiagen, Valencia, CA) and 10 units of RNAse Inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 37°C for one hour.  Following the DNAseI digestion, the total RNA was further purified using the HighPure RNA isolation kit (Roche, Indianapolis, IN), following manufacturer’s instructions and included the optional (second) DNAseI incubation.  The RNA was eluted with the provided elution buffer, precipitated with 3 volumes of cold 95 % (v/v) ethanol and 0.1 volumes 3 M sodium acetate (pH 5.2) and washed with 80 % (v/v) ethanol.  The pellet was air dried for 15 minutes and then resuspended in The RNA Storage Solution (Ambion, Austin, TX).
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Total RNA extracted from B. melitensis 16M was transcribed into cDNA incorporating 5-(3-aminoallyl)-dUTP (aha-dUTP) for indirect labeling with Alexa Fluor 555 (Invitrogen, Carlsbad, CA), a Cy3-like fluorescein.  The cDNA synthesis combined 10 µg of total RNA, 6 µg random primers (Invitrogen, Carlsbad, CA), 1X first strand buffer (Invitrogen, Carlsbad, CA), 10 mM DTT, 0.5 mM each dATP, dTTP and dGTP, 0.3 mM dTTP (PCR grade, Invitrogen, Carlsbad, CA), 0.2 mM aha-dUTP (Invitrogen, Carlsbad, CA), 400 units SuperScript III reverse transcriptase (Invitrogen, Carlsbad, CA) and 20 units protector RNAse inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 23°C for one minute and then at 46°C overnight.  The reaction was then treated with 0.4 M NaOH and incubated at 65°C for 15 minutes to stop the reaction and remove residual RNA. The pH was brought back to neutral with the addition of 0.2M HCl, then the cDNA was purified to remove unincorporated aha-dUTP and free amines using PCR Purification columns (Qiagen, Valencia, CA) with the modified wash (5 mM KPO4 (pH 8.0) and 80 % (v/v) ethanol) and elution buffers (4 mM KPO4 (pH 8.5)).  The manufacturer’s instructions were modified to include 2 washes with the substituted phosphate wash buffer, and the elution was carried out in 2 steps: 50 µl each elution (yielding 100 µl total) with a one minute incubation of the elution buffer in the column at room temperature before centrifugation. Alexa-Fluor 555 (Invitrogen, Carlsbad, CA) was coupled to the aha-dUTP incorporated into the cDNA following the coupling procedure outlined in the BioPrime® Plus Array CGH Indirect Genomic Labeling System (Invitrogen, Carlsbad, CA) and purified using PCR purification columns (Qiagen, Valencia, CA) following manufacturer’s instructions.  Concentration and labeling efficiency of the labeled cDNA was examined using the Nanodrop® ND-1000 (Nanodrop, Wilmington, DE).  Labeled RNA samples were dried completely (Eppendorf Vacufuge, Westbury, NY) and resuspended in ddH2O immediately before hybridization to the microarrays.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Printed slides were submerged in 0.2 % SDS (Ambion, Austin, TX) for 2 minutes and washed three times in containers with ample ddH2O.  The microarray slides were placed in a prehybridization solution (5X SSC (Ambion, Austin, TX), 0.1 % SDS (Ambion, Austin, TX), and 1 % (w/v) BSA (Sigma, St. Louis, MO)) pre-warmed to 45°C for a minimum of 45 minutes.  Following prehybridization, the slides were washed five times in containers containing ample ddH2O, submerged once in isopropanol, and then immediately dried by centrifugation at 207 x g for 2 minutes at room temperature in a Jouan CR422 table top centrifuge.  The resuspended labeled RNA was combined with 1 µg of labeled genomic DNA from B. melitensis 16M to a total volume of 35 µl.  The sample was heated at 95°C for 5 minutes and held at 45°C until hybridization to the microarray slide.  The labeled cDNA was combined with 1X hybridization buffer (25 % (v/v) formamide (Sigma, St. Louis, Mo), 1X SSC (Ambion, Austin, TX) and 0.1 % (v/v) SDS (Ambion, Austin, TX)) and applied to the microarray with a 22 x 60 mm LifterSlip (Erie Scientific Company, Portsmouth, NH).  The microarray was incubated in a water bath for approximately 21 hours at 42°C in a sealed hybridization chamber (Corning, Corning, NY).    After hybridization, microarray slides were washed three times with agitation at room temperature.  The first wash buffer (2X SSC (Ambion, Austin, TX) and 0.2 % (v/v) SDS (Ambion, Austin, TX)) was pre-heated to 42°C and the microarray was washed for 10 minutes, followed by a 5 minute wash in 2X SSC (Ambion, Austin, TX).  The microarray was subsequently washed a third time in 0.2X SSC (Ambion, Austin, TX) for 5 minutes.  Immediately after the last wash, the arrays were dried by centrifugation for 2 minutes at 207 x g at room temperature in a Jouan CR422 tabletop centrifuge.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using a commercial laser scanner GenePix 4100A (Molecular Devices, Sunnyvale, CA) and Genepix 6.1 Pro software.  The auto-PMT (photomultiplier tube) function was used to determine the optimal gain for each laser channel with each slide.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3.
+Total RNA from Brucella melitensis 16M∆mucR culture grown cells to late logarithmic growth phase (OD600=0.9), labeled with Alexa 555 and hybridized to the microarray with Brucella melitensis genomic DNA labeled with Cy5.  The same genomic DNA sample was hybridized to all microarrays.
+    </Description>
+    <Data-Processing>
+Spots that were flagged as bad or absent were removed from the analysis and background values were subtracted.  Raw Alexa 555 signals were normalized against the mean of the baseline Cy-5 gDNA reference.  GeneSifter (VizX Labs, Seattle, WA) was used to perform global mean normalization on the signal values already normalized to the reference channel.  Genes were retained if their signals were altered by at least a 1.5-fold change between conditions and a p value of 0.05 or less was obtained applying a Student’s t-test.  To further filter data based on biological relevance, individual pairwise comparisons were also performed on signal values after global mean normalization using Spotfire DecisionSite 9.0 (Spotfire, Inc., Somerville, MA).  Any fold-change observed between test conditions were expected to be at least 50 % greater in magnitude (e.g., 1.5-fold greater) than the fold-change observed between any two biological replicate samples.  Genes that did not meet the criteria were removed from the analysis.  For the samples extracted during the exponential growth phase, the analysis was modified to account for variation revealed by scatter plots fitted with a trend line using the normalized signal values in the wild type samples.  In addition to the analysis described above, a separate comparison was performed that included only the two similar wild type samples.  The resulting fold-change values were expected to be greater than 50 % of the value obtained for wild type 1 versus wild type 2.  A Student’s t-test was performed, retaining genes that had a p value of less than 0.05.  Genes that passed the conditions in either analysis method were considered statistically significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7612" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM343nnn/GSM343502/GSM343502.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Background corrected, normalized signal value</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM343502-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM343503">
+    <Status database="GEO">
+      <Submission-Date>2008-11-18</Submission-Date>
+      <Release-Date>2010-04-23</Release-Date>
+      <Last-Update-Date>2009-10-23</Last-Update-Date>
+    </Status>
+    <Title>dmucR_late logarithmic growth phase_rep2</Title>
+    <Accession database="GEO">GSM343503</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis 16M∆mucR, late logarithmic phase of growth.</Source>
+      <Organism taxid="224914">Brucella melitensis 16M</Organism>
+      <Characteristics>
+16M bv.1 ∆mucR strain.
+      </Characteristics>
+      <Characteristics>
+B. melitensis 16M∆mucR (BMEI1364).
+      </Characteristics>
+      <Growth-Protocol>
+Brucella melitensis 16M Bv. 1 was obtained from ATCC and re-isolated from an aborted goat fetus by this lab. B. melitensis 16M Bv. 1 and its genetically modified derivatives were maintained as frozen glycerol stocks.  Strains were plated for isolation on TSA and incubated at 37°C with 5% CO2 for 3 days.  Individual 50 ml conical tubes with 5 ml of Brucella Broth (Difco Laboratories, Becton, Dickinson and Company, Franklin Lakes, NJ) were inoculated from an isolated single colony and incubated at 37ºC with agitation for 48 hours.  Cultures were then innoculated 1:1000 in Brucella Broth and grown at 37°C with agitation.  Growth curves of cultures were determined by the optical density (OD) of the culture at 600nm with bacterial colony forming units (CFU). For late logarithmic phase of growth, OD600=0.9.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+At harvest time, 14 % (v/v) of a cold ethanol solution containing 5 % (v/v) acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added to the bacterial culture and immediately centrifuged at 10900 x g for 3 minutes.  The supernatant was removed and the bacterial pellet was frozen in liquid nitrogen and stored at -80°C.  RNA was collected by re-suspending the bacterial pellets in 0.5 mg ml-1 lysozyme (Amresco, Solon, OH) dissolved in TE, followed by the addition of 0.97 % (v/v) SDS.  The cells were then incubated at 64°C for 2 minutes.  Next, 0.5 M sodium acetate (pH 5.2) was added, mixed gently by inversion and an equal volume of acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added and mixed well by inversion.  The bacteria-phenol mix was incubated at 64°C for 6 minutes and mixed by inversion several times every 40 seconds.  The bacteria-phenol mix was chilled on ice for 30 minutes and the layers were separated by centrifugation at 28900 x g for 13 minutes.  The aqueous layer was removed and placed in a clean tube.  An equal volume of chloroform (Sigma, St. Louis, MO) was added to the aqueous layer and mixed well by inversion.  The layers were separated by centrifugation at 20700 x g for 7 minutes.  This aqueous layer was placed into a clean tube and total RNA was precipitated by adding an equal volume of cold isopropanol and 0.1 volumes of 3M sodium acetate (pH 5.4).  RNA was precipitated for one hour at -80°C and then pelleted by centrifugation at 19000 x g for 30 minutes, washed with 80 % (v/v) ethanol, centrifuged for 5 minutes at 19000 x g, and the resulting pellets were air-dried for 20 minutes.  The dried pellets were resuspended in RNAse-free water, and subjected to DNAseI treatment. The DNA was degraded and removed by incubation with 5X DNAseI buffer (50 mM MgCl2, 50 mM Tris-Cl pH 7.5, 5 mM EDTA, 5 mM dithiothreitol (DTT)), 10 units of DNAseI (Qiagen, Valencia, CA) and 10 units of RNAse Inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 37°C for one hour.  Following the DNAseI digestion, the total RNA was further purified using the HighPure RNA isolation kit (Roche, Indianapolis, IN), following manufacturer’s instructions and included the optional (second) DNAseI incubation.  The RNA was eluted with the provided elution buffer, precipitated with 3 volumes of cold 95 % (v/v) ethanol and 0.1 volumes 3 M sodium acetate (pH 5.2) and washed with 80 % (v/v) ethanol.  The pellet was air dried for 15 minutes and then resuspended in The RNA Storage Solution (Ambion, Austin, TX).
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Total RNA extracted from B. melitensis 16M was transcribed into cDNA incorporating 5-(3-aminoallyl)-dUTP (aha-dUTP) for indirect labeling with Alexa Fluor 555 (Invitrogen, Carlsbad, CA), a Cy3-like fluorescein.  The cDNA synthesis combined 10 µg of total RNA, 6 µg random primers (Invitrogen, Carlsbad, CA), 1X first strand buffer (Invitrogen, Carlsbad, CA), 10 mM DTT, 0.5 mM each dATP, dTTP and dGTP, 0.3 mM dTTP (PCR grade, Invitrogen, Carlsbad, CA), 0.2 mM aha-dUTP (Invitrogen, Carlsbad, CA), 400 units SuperScript III reverse transcriptase (Invitrogen, Carlsbad, CA) and 20 units protector RNAse inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 23°C for one minute and then at 46°C overnight.  The reaction was then treated with 0.4 M NaOH and incubated at 65°C for 15 minutes to stop the reaction and remove residual RNA. The pH was brought back to neutral with the addition of 0.2M HCl, then the cDNA was purified to remove unincorporated aha-dUTP and free amines using PCR Purification columns (Qiagen, Valencia, CA) with the modified wash (5 mM KPO4 (pH 8.0) and 80 % (v/v) ethanol) and elution buffers (4 mM KPO4 (pH 8.5)).  The manufacturer’s instructions were modified to include 2 washes with the substituted phosphate wash buffer, and the elution was carried out in 2 steps: 50 µl each elution (yielding 100 µl total) with a one minute incubation of the elution buffer in the column at room temperature before centrifugation. Alexa-Fluor 555 (Invitrogen, Carlsbad, CA) was coupled to the aha-dUTP incorporated into the cDNA following the coupling procedure outlined in the BioPrime® Plus Array CGH Indirect Genomic Labeling System (Invitrogen, Carlsbad, CA) and purified using PCR purification columns (Qiagen, Valencia, CA) following manufacturer’s instructions.  Concentration and labeling efficiency of the labeled cDNA was examined using the Nanodrop® ND-1000 (Nanodrop, Wilmington, DE).  Labeled RNA samples were dried completely (Eppendorf Vacufuge, Westbury, NY) and resuspended in ddH2O immediately before hybridization to the microarrays.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Printed slides were submerged in 0.2 % SDS (Ambion, Austin, TX) for 2 minutes and washed three times in containers with ample ddH2O.  The microarray slides were placed in a prehybridization solution (5X SSC (Ambion, Austin, TX), 0.1 % SDS (Ambion, Austin, TX), and 1 % (w/v) BSA (Sigma, St. Louis, MO)) pre-warmed to 45°C for a minimum of 45 minutes.  Following prehybridization, the slides were washed five times in containers containing ample ddH2O, submerged once in isopropanol, and then immediately dried by centrifugation at 207 x g for 2 minutes at room temperature in a Jouan CR422 table top centrifuge.  The resuspended labeled RNA was combined with 1 µg of labeled genomic DNA from B. melitensis 16M to a total volume of 35 µl.  The sample was heated at 95°C for 5 minutes and held at 45°C until hybridization to the microarray slide.  The labeled cDNA was combined with 1X hybridization buffer (25 % (v/v) formamide (Sigma, St. Louis, Mo), 1X SSC (Ambion, Austin, TX) and 0.1 % (v/v) SDS (Ambion, Austin, TX)) and applied to the microarray with a 22 x 60 mm LifterSlip (Erie Scientific Company, Portsmouth, NH).  The microarray was incubated in a water bath for approximately 21 hours at 42°C in a sealed hybridization chamber (Corning, Corning, NY).    After hybridization, microarray slides were washed three times with agitation at room temperature.  The first wash buffer (2X SSC (Ambion, Austin, TX) and 0.2 % (v/v) SDS (Ambion, Austin, TX)) was pre-heated to 42°C and the microarray was washed for 10 minutes, followed by a 5 minute wash in 2X SSC (Ambion, Austin, TX).  The microarray was subsequently washed a third time in 0.2X SSC (Ambion, Austin, TX) for 5 minutes.  Immediately after the last wash, the arrays were dried by centrifugation for 2 minutes at 207 x g at room temperature in a Jouan CR422 tabletop centrifuge.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using a commercial laser scanner GenePix 4100A (Molecular Devices, Sunnyvale, CA) and Genepix 6.1 Pro software.  The auto-PMT (photomultiplier tube) function was used to determine the optimal gain for each laser channel with each slide.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3.
+Total RNA from Brucella melitensis 16M∆mucR culture grown cells to late logarithmic growth phase (OD600=0.9), labeled with Alexa 555 and hybridized to the microarray with Brucella melitensis genomic DNA labeled with Cy5.  The same genomic DNA sample was hybridized to all microarrays.
+    </Description>
+    <Data-Processing>
+Spots that were flagged as bad or absent were removed from the analysis and background values were subtracted.  Raw Alexa 555 signals were normalized against the mean of the baseline Cy-5 gDNA reference.  GeneSifter (VizX Labs, Seattle, WA) was used to perform global mean normalization on the signal values already normalized to the reference channel.  Genes were retained if their signals were altered by at least a 1.5-fold change between conditions and a p value of 0.05 or less was obtained applying a Student’s t-test.  To further filter data based on biological relevance, individual pairwise comparisons were also performed on signal values after global mean normalization using Spotfire DecisionSite 9.0 (Spotfire, Inc., Somerville, MA).  Any fold-change observed between test conditions were expected to be at least 50 % greater in magnitude (e.g., 1.5-fold greater) than the fold-change observed between any two biological replicate samples.  Genes that did not meet the criteria were removed from the analysis.  For the samples extracted during the exponential growth phase, the analysis was modified to account for variation revealed by scatter plots fitted with a trend line using the normalized signal values in the wild type samples.  In addition to the analysis described above, a separate comparison was performed that included only the two similar wild type samples.  The resulting fold-change values were expected to be greater than 50 % of the value obtained for wild type 1 versus wild type 2.  A Student’s t-test was performed, retaining genes that had a p value of less than 0.05.  Genes that passed the conditions in either analysis method were considered statistically significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7612" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM343nnn/GSM343503/GSM343503.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Background corrected, normalized signal value</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM343503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM343504">
+    <Status database="GEO">
+      <Submission-Date>2008-11-18</Submission-Date>
+      <Release-Date>2010-04-23</Release-Date>
+      <Last-Update-Date>2009-10-23</Last-Update-Date>
+    </Status>
+    <Title>dmucR_late logarithmic growth phase_rep3</Title>
+    <Accession database="GEO">GSM343504</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis 16M∆mucR, late logarithmic phase of growth.</Source>
+      <Organism taxid="224914">Brucella melitensis 16M</Organism>
+      <Characteristics>
+16M bv.1 ∆mucR strain.
+      </Characteristics>
+      <Characteristics>
+B. melitensis 16M∆mucR (BMEI1364).
+      </Characteristics>
+      <Growth-Protocol>
+Brucella melitensis 16M Bv. 1 was obtained from ATCC and re-isolated from an aborted goat fetus by this lab. B. melitensis 16M Bv. 1 and its genetically modified derivatives were maintained as frozen glycerol stocks.  Strains were plated for isolation on TSA and incubated at 37°C with 5% CO2 for 3 days.  Individual 50 ml conical tubes with 5 ml of Brucella Broth (Difco Laboratories, Becton, Dickinson and Company, Franklin Lakes, NJ) were inoculated from an isolated single colony and incubated at 37ºC with agitation for 48 hours.  Cultures were then innoculated 1:1000 in Brucella Broth and grown at 37°C with agitation.  Growth curves of cultures were determined by the optical density (OD) of the culture at 600nm with bacterial colony forming units (CFU). For late logarithmic phase of growth, OD600=0.9.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+At harvest time, 14 % (v/v) of a cold ethanol solution containing 5 % (v/v) acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added to the bacterial culture and immediately centrifuged at 10900 x g for 3 minutes.  The supernatant was removed and the bacterial pellet was frozen in liquid nitrogen and stored at -80°C.  RNA was collected by re-suspending the bacterial pellets in 0.5 mg ml-1 lysozyme (Amresco, Solon, OH) dissolved in TE, followed by the addition of 0.97 % (v/v) SDS.  The cells were then incubated at 64°C for 2 minutes.  Next, 0.5 M sodium acetate (pH 5.2) was added, mixed gently by inversion and an equal volume of acidic water saturated phenol (Ultrapure, Invitrogen, Carlsbad, CA) was added and mixed well by inversion.  The bacteria-phenol mix was incubated at 64°C for 6 minutes and mixed by inversion several times every 40 seconds.  The bacteria-phenol mix was chilled on ice for 30 minutes and the layers were separated by centrifugation at 28900 x g for 13 minutes.  The aqueous layer was removed and placed in a clean tube.  An equal volume of chloroform (Sigma, St. Louis, MO) was added to the aqueous layer and mixed well by inversion.  The layers were separated by centrifugation at 20700 x g for 7 minutes.  This aqueous layer was placed into a clean tube and total RNA was precipitated by adding an equal volume of cold isopropanol and 0.1 volumes of 3M sodium acetate (pH 5.4).  RNA was precipitated for one hour at -80°C and then pelleted by centrifugation at 19000 x g for 30 minutes, washed with 80 % (v/v) ethanol, centrifuged for 5 minutes at 19000 x g, and the resulting pellets were air-dried for 20 minutes.  The dried pellets were resuspended in RNAse-free water, and subjected to DNAseI treatment. The DNA was degraded and removed by incubation with 5X DNAseI buffer (50 mM MgCl2, 50 mM Tris-Cl pH 7.5, 5 mM EDTA, 5 mM dithiothreitol (DTT)), 10 units of DNAseI (Qiagen, Valencia, CA) and 10 units of RNAse Inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 37°C for one hour.  Following the DNAseI digestion, the total RNA was further purified using the HighPure RNA isolation kit (Roche, Indianapolis, IN), following manufacturer’s instructions and included the optional (second) DNAseI incubation.  The RNA was eluted with the provided elution buffer, precipitated with 3 volumes of cold 95 % (v/v) ethanol and 0.1 volumes 3 M sodium acetate (pH 5.2) and washed with 80 % (v/v) ethanol.  The pellet was air dried for 15 minutes and then resuspended in The RNA Storage Solution (Ambion, Austin, TX).
+      </Extract-Protocol>
+      <Label>Alexa 555</Label>
+      <Label-Protocol>
+Total RNA extracted from B. melitensis 16M was transcribed into cDNA incorporating 5-(3-aminoallyl)-dUTP (aha-dUTP) for indirect labeling with Alexa Fluor 555 (Invitrogen, Carlsbad, CA), a Cy3-like fluorescein.  The cDNA synthesis combined 10 µg of total RNA, 6 µg random primers (Invitrogen, Carlsbad, CA), 1X first strand buffer (Invitrogen, Carlsbad, CA), 10 mM DTT, 0.5 mM each dATP, dTTP and dGTP, 0.3 mM dTTP (PCR grade, Invitrogen, Carlsbad, CA), 0.2 mM aha-dUTP (Invitrogen, Carlsbad, CA), 400 units SuperScript III reverse transcriptase (Invitrogen, Carlsbad, CA) and 20 units protector RNAse inhibitor (Roche, Indianapolis, IN).  The reaction was incubated at 23°C for one minute and then at 46°C overnight.  The reaction was then treated with 0.4 M NaOH and incubated at 65°C for 15 minutes to stop the reaction and remove residual RNA. The pH was brought back to neutral with the addition of 0.2M HCl, then the cDNA was purified to remove unincorporated aha-dUTP and free amines using PCR Purification columns (Qiagen, Valencia, CA) with the modified wash (5 mM KPO4 (pH 8.0) and 80 % (v/v) ethanol) and elution buffers (4 mM KPO4 (pH 8.5)).  The manufacturer’s instructions were modified to include 2 washes with the substituted phosphate wash buffer, and the elution was carried out in 2 steps: 50 µl each elution (yielding 100 µl total) with a one minute incubation of the elution buffer in the column at room temperature before centrifugation. Alexa-Fluor 555 (Invitrogen, Carlsbad, CA) was coupled to the aha-dUTP incorporated into the cDNA following the coupling procedure outlined in the BioPrime® Plus Array CGH Indirect Genomic Labeling System (Invitrogen, Carlsbad, CA) and purified using PCR purification columns (Qiagen, Valencia, CA) following manufacturer’s instructions.  Concentration and labeling efficiency of the labeled cDNA was examined using the Nanodrop® ND-1000 (Nanodrop, Wilmington, DE).  Labeled RNA samples were dried completely (Eppendorf Vacufuge, Westbury, NY) and resuspended in ddH2O immediately before hybridization to the microarrays.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Printed slides were submerged in 0.2 % SDS (Ambion, Austin, TX) for 2 minutes and washed three times in containers with ample ddH2O.  The microarray slides were placed in a prehybridization solution (5X SSC (Ambion, Austin, TX), 0.1 % SDS (Ambion, Austin, TX), and 1 % (w/v) BSA (Sigma, St. Louis, MO)) pre-warmed to 45°C for a minimum of 45 minutes.  Following prehybridization, the slides were washed five times in containers containing ample ddH2O, submerged once in isopropanol, and then immediately dried by centrifugation at 207 x g for 2 minutes at room temperature in a Jouan CR422 table top centrifuge.  The resuspended labeled RNA was combined with 1 µg of labeled genomic DNA from B. melitensis 16M to a total volume of 35 µl.  The sample was heated at 95°C for 5 minutes and held at 45°C until hybridization to the microarray slide.  The labeled cDNA was combined with 1X hybridization buffer (25 % (v/v) formamide (Sigma, St. Louis, Mo), 1X SSC (Ambion, Austin, TX) and 0.1 % (v/v) SDS (Ambion, Austin, TX)) and applied to the microarray with a 22 x 60 mm LifterSlip (Erie Scientific Company, Portsmouth, NH).  The microarray was incubated in a water bath for approximately 21 hours at 42°C in a sealed hybridization chamber (Corning, Corning, NY).    After hybridization, microarray slides were washed three times with agitation at room temperature.  The first wash buffer (2X SSC (Ambion, Austin, TX) and 0.2 % (v/v) SDS (Ambion, Austin, TX)) was pre-heated to 42°C and the microarray was washed for 10 minutes, followed by a 5 minute wash in 2X SSC (Ambion, Austin, TX).  The microarray was subsequently washed a third time in 0.2X SSC (Ambion, Austin, TX) for 5 minutes.  Immediately after the last wash, the arrays were dried by centrifugation for 2 minutes at 207 x g at room temperature in a Jouan CR422 tabletop centrifuge.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using a commercial laser scanner GenePix 4100A (Molecular Devices, Sunnyvale, CA) and Genepix 6.1 Pro software.  The auto-PMT (photomultiplier tube) function was used to determine the optimal gain for each laser channel with each slide.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3.
+Total RNA from Brucella melitensis 16M∆mucR culture grown cells to late logarithmic growth phase (OD600=0.9), labeled with Alexa 555 and hybridized to the microarray with Brucella melitensis genomic DNA labeled with Cy5.  The same genomic DNA sample was hybridized to all microarrays.
+    </Description>
+    <Data-Processing>
+Spots that were flagged as bad or absent were removed from the analysis and background values were subtracted.  Raw Alexa 555 signals were normalized against the mean of the baseline Cy-5 gDNA reference.  GeneSifter (VizX Labs, Seattle, WA) was used to perform global mean normalization on the signal values already normalized to the reference channel.  Genes were retained if their signals were altered by at least a 1.5-fold change between conditions and a p value of 0.05 or less was obtained applying a Student’s t-test.  To further filter data based on biological relevance, individual pairwise comparisons were also performed on signal values after global mean normalization using Spotfire DecisionSite 9.0 (Spotfire, Inc., Somerville, MA).  Any fold-change observed between test conditions were expected to be at least 50 % greater in magnitude (e.g., 1.5-fold greater) than the fold-change observed between any two biological replicate samples.  Genes that did not meet the criteria were removed from the analysis.  For the samples extracted during the exponential growth phase, the analysis was modified to account for variation revealed by scatter plots fitted with a trend line using the normalized signal values in the wild type samples.  In addition to the analysis described above, a separate comparison was performed that included only the two similar wild type samples.  The resulting fold-change values were expected to be greater than 50 % of the value obtained for wild type 1 versus wild type 2.  A Student’s t-test was performed, retaining genes that had a p value of less than 0.05.  Genes that passed the conditions in either analysis method were considered statistically significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7612" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM343nnn/GSM343504/GSM343504.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Background corrected, normalized signal value</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM343504-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE13647">
+    <Status database="GEO">
+      <Submission-Date>2008-11-18</Submission-Date>
+      <Release-Date>2010-04-23</Release-Date>
+      <Last-Update-Date>2009-10-23</Last-Update-Date>
+    </Status>
+    <Title>Identification of MucR regulatory targets</Title>
+    <Accession database="GEO">GSE13647</Accession>
+    <Summary>
+The transcriptional regulator MucR was identified as highly attenuated in a mutagenesis screen conducted by this laboratory.  MucR has been described as a key regulator of exopolysaccharide synthesis in closely related Rhizobials soil symbionts.  The goal of this study was to apply custom Brucella melitensis oligonucleotide microarrays to identify the regulatory targets of MucR.  These studies revealed that MucR's regulation of exopolysaccharide synthesis is also conserved in Brucella melitensis and is also a key regulator of iron sequestering/storage and denitrification.
+
+Keywords: Microarray comparison of a genetically modified organism compared to wild type.
+    </Summary>
+    <Overall-Design>
+There are 3 biological replicates isolated from Brucella melitensis wild type 16M and from 16M∆mucR.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib6" position="1" />
+    <Contributor-Ref ref="contrib7" position="2" />
+    <Contributor-Ref ref="contrib8" position="3" />
+    <Contributor-Ref ref="contrib9" position="4" />
+    <Contributor-Ref ref="contrib10" position="5" />
+    <Contributor-Ref ref="contrib11" position="6" />
+    <Contributor-Ref ref="contrib12" position="7" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM343499" />
+    <Sample-Ref ref="GSM343500" />
+    <Sample-Ref ref="GSM343501" />
+    <Sample-Ref ref="GSM343502" />
+    <Sample-Ref ref="GSM343503" />
+    <Sample-Ref ref="GSM343504" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE13647/GSE13647_RAW.tar
+    </Supplementary-Data>
+  </Series>
+
+</MINiML>

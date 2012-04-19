@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Monot</First><Last>Marc</Last></Person>
+    <Email>mmonot@pasteur.fr</Email>
+    <Phone>+33145688316</Phone>
+    <Laboratory>Laboratoire Pathogenese des Bacteries Anaerobies</Laboratory>
+    <Department>Microbiologie</Department>
+    <Organization>Institut Pasteur</Organization>
+    <Address>
+      <Line>25, rue du docteur roux</Line>
+      <City>Paris</City>
+      <Zip-Code>75015</Zip-Code>
+      <Country>France</Country>
+    </Address>
+    <Web-Link>+33140613123  </Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Gaëlle</First><Last>André</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Marc</First><Last>Monot</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL9765">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-02-01</Release-Date>
+      <Last-Update-Date>2010-02-01</Last-Update-Date>
+    </Status>
+    <Title>Agilent Clostridium perfringens 15K array</Title>
+    <Accession database="GEO">GPL9765</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1502">Clostridium perfringens</Organism>
+    <Manufacturer>Agilent Technologies</Manufacturer>
+    <Manufacture-Protocol>
+see the manufacturer's website at http://www.agilent.com/
+    </Manufacture-Protocol>
+    <Description>
+Clostridium Perfringens S13 expression array (Genome + plasmide)
+The ID column represents the Agilent Feature Extraction feature number.
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>RefNumber</Description>
+      </Column>
+      <Column position="2">
+        <Name>Column</Name>
+      </Column>
+      <Column position="3">
+        <Name>Row</Name>
+      </Column>
+      <Column position="4">
+        <Name>Name</Name>
+      </Column>
+      <Column position="5">
+        <Name>ProbeID</Name>
+      </Column>
+      <Column position="6">
+        <Name>ORF</Name>
+        <Description>ORF Name  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+      <Column position="7">
+        <Name>ControlType</Name>
+      </Column>
+      <Column position="8">
+        <Name>SEQUENCE</Name>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="15744">
+GPL9765-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM480621">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-10-01</Release-Date>
+      <Last-Update-Date>2009-12-08</Last-Update-Date>
+    </Status>
+    <Title>CP-CymR01-cy3</Title>
+    <Accession database="GEO">GSM480621</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13∆cpe1786 erm grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+∆cpe1786 erm
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 13 grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed in Agilent washing buffers.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix 4200L dual-channel laser scanner.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 4
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9765" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM480nnn/GSM480621/GSM480621.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>loess normalized intensity ratio Cy3/Cy5</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM480621-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM480622">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-10-01</Release-Date>
+      <Last-Update-Date>2009-12-08</Last-Update-Date>
+    </Status>
+    <Title>CP-CymR01-cy5</Title>
+    <Accession database="GEO">GSM480622</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13 grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 13∆cpe1786 erm grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+∆cpe1786 erm
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed in Agilent washing buffers.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix 4200L dual-channel laser scanner.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 4
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9765" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM480nnn/GSM480622/GSM480622.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>INV_VALUE</Name>
+        <Description>loess normalized intensity ratio Cy3/Cy5</Description>
+      </Column>
+      <Column position="3">
+        <Name>VALUE</Name>
+        <Description>loess normalized ratio Cy5/Cy3 (delta cpe1786 erm/wild type strain 13)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM480622-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM480623">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-10-01</Release-Date>
+      <Last-Update-Date>2009-12-08</Last-Update-Date>
+    </Status>
+    <Title>CP-CymR02-cy3</Title>
+    <Accession database="GEO">GSM480623</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13∆cpe1786 erm grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+∆cpe1786 erm
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 13 grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed in Agilent washing buffers.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix 4200L dual-channel laser scanner.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 4
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9765" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM480nnn/GSM480623/GSM480623.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>loess normalized intensity ratio Cy3/Cy5</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM480623-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM480624">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-10-01</Release-Date>
+      <Last-Update-Date>2009-12-08</Last-Update-Date>
+    </Status>
+    <Title>CP-CymR02-cy5</Title>
+    <Accession database="GEO">GSM480624</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13 grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 13∆cpe1786 erm grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+∆cpe1786 erm
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed in Agilent washing buffers.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix 4200L dual-channel laser scanner.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 4
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9765" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM480nnn/GSM480624/GSM480624.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>INV_VALUE</Name>
+        <Description>loess normalized intensity ratio Cy3/Cy5</Description>
+      </Column>
+      <Column position="3">
+        <Name>VALUE</Name>
+        <Description>loess normalized ratio Cy5/Cy3 (delta cpe1786 erm/wild type strain 13)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM480624-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM480625">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-10-01</Release-Date>
+      <Last-Update-Date>2009-12-08</Last-Update-Date>
+    </Status>
+    <Title>CP-CymR03-cy3</Title>
+    <Accession database="GEO">GSM480625</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13∆cpe1786 erm grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+∆cpe1786 erm
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 13 grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed in Agilent washing buffers.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix 4200L dual-channel laser scanner.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 4
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9765" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM480nnn/GSM480625/GSM480625.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>loess normalized intensity ratio Cy3/Cy5</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM480625-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM480626">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-10-01</Release-Date>
+      <Last-Update-Date>2009-12-08</Last-Update-Date>
+    </Status>
+    <Title>CP-CymR03-cy5</Title>
+    <Accession database="GEO">GSM480626</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13 grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 13∆cpe1786 erm grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+∆cpe1786 erm
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed in Agilent washing buffers.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix 4200L dual-channel laser scanner.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 4
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9765" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM480nnn/GSM480626/GSM480626.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>INV_VALUE</Name>
+        <Description>loess normalized intensity ratio Cy3/Cy5</Description>
+      </Column>
+      <Column position="3">
+        <Name>VALUE</Name>
+        <Description>loess normalized ratio Cy5/Cy3 (delta cpe1786 erm/wild type strain 13)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM480626-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM480627">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-10-01</Release-Date>
+      <Last-Update-Date>2009-12-08</Last-Update-Date>
+    </Status>
+    <Title>CP-CymR04-cy3</Title>
+    <Accession database="GEO">GSM480627</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13∆cpe1786 erm grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+∆cpe1786 erm
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 13 grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed in Agilent washing buffers.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix 4200L dual-channel laser scanner.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 4
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9765" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM480nnn/GSM480627/GSM480627.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>loess normalized intensity ratio Cy3/Cy5</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM480627-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM480628">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-10-01</Release-Date>
+      <Last-Update-Date>2009-12-08</Last-Update-Date>
+    </Status>
+    <Title>CP-CymR04-cy5</Title>
+    <Accession database="GEO">GSM480628</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13 grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 13∆cpe1786 erm grown with cystine</Source>
+      <Organism taxid="1502">Clostridium perfringens</Organism>
+      <Characteristics tag="strain">
+13
+      </Characteristics>
+      <Characteristics tag="genome/variation">
+∆cpe1786 erm
+      </Characteristics>
+      <Growth-Protocol>
+C. perfringens strains were grown in minimal medium in the presence of 0.5 mM cystine until late exponential growth phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 1600 U SuperScript III Reverse Transcriptase (Invitrogen), and each dATP, dTTP, dGTP, dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed in Agilent washing buffers.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix 4200L dual-channel laser scanner.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 4
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9765" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM480nnn/GSM480628/GSM480628.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>INV_VALUE</Name>
+        <Description>loess normalized intensity ratio Cy3/Cy5</Description>
+      </Column>
+      <Column position="3">
+        <Name>VALUE</Name>
+        <Description>loess normalized ratio Cy5/Cy3 (delta cpe1786 erm/wild type strain 13)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM480628-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE19359">
+    <Status database="GEO">
+      <Submission-Date>2009-12-07</Submission-Date>
+      <Release-Date>2010-10-01</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>C. perfringens 13 strain vs 13∆cpe1786 erm strain</Title>
+    <Accession database="GEO">GSE19359</Accession>
+    <Pubmed-ID>20822510</Pubmed-ID>
+    <Summary>
+Transcriptional profiling of C. perfringens 13 strain compared with strain 13∆cpe1786 erm after growth in minimal medium with 0.5 mM cystine.
+    </Summary>
+    <Overall-Design>
+two-condition experiment, 13 vs 13∆cpe1786 erm, 4 biological replicates for each condition
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM480621" />
+    <Sample-Ref ref="GSM480622" />
+    <Sample-Ref ref="GSM480623" />
+    <Sample-Ref ref="GSM480624" />
+    <Sample-Ref ref="GSM480625" />
+    <Sample-Ref ref="GSM480626" />
+    <Sample-Ref ref="GSM480627" />
+    <Sample-Ref ref="GSM480628" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE19359/GSE19359_RAW.tar
+    </Supplementary-Data>
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE19359/GSE19359_Result_files.xls.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/120395" />
+  </Series>
+
+</MINiML>

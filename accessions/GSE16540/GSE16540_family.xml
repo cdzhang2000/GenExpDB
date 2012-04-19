@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Sacha</First><Last>Lucchini</Last></Person>
+    <Email>sacha.lucchini@bbsrc.ac.uk</Email>
+    <Department>Molecular Microbiology</Department>
+    <Organization>Institute of Food Research</Organization>
+    <Address>
+      <Line>Colney Lane</Line>
+      <City>Norwich</City>
+      <Postal-Code>NR4 7UA</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Arthur</First><Last>Thompson</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Jay</First><Middle>C</Middle><Last>Hinton</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Verena</First><Last>Pfeiffer</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Kai</First><Last>Papenfort</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Joerg</First><Last>Vogel</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5780">
+    <Status database="GEO">
+      <Submission-Date>2007-08-28</Submission-Date>
+      <Release-Date>2007-08-30</Release-Date>
+      <Last-Update-Date>2009-07-14</Last-Update-Date>
+    </Status>
+    <Title>IFR_Salmonella_7.3k_v1.0</Title>
+    <Accession database="GEO">GPL5780</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="28901">Salmonella enterica</Organism>
+    <Manufacturer>Institute of Food Research, Norwich, UK</Manufacturer>
+    <Manufacture-Protocol>
+PCR product microarray of ORF's from S. Typhimurium LT2, S. Typhimurium SL1344, S. Typhimurium DT104, S. Enteritidis PT4, and S. Gallinarum 287/91. For the description of PCR amplification and printing procedures see:
+Clements et al., (2002) PNAS 99(13): 8784-8789;
+Nagy et al., (2006) Infect. Immun. 74(10):5914-5925
+    </Manufacture-Protocol>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>METAROW</Name>
+      </Column>
+      <Column position="3">
+        <Name>METACOLUMN</Name>
+      </Column>
+      <Column position="4">
+        <Name>ROW</Name>
+      </Column>
+      <Column position="5">
+        <Name>COLUMN</Name>
+      </Column>
+      <Column position="6">
+        <Name>SPOT ID</Name>
+      </Column>
+      <Column position="7">
+        <Name>SYNONYM</Name>
+      </Column>
+      <Column position="8">
+        <Name>SEQUENCE</Name>
+      </Column>
+      <Column position="9">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+      <Column position="10">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="7296">
+GPL5780-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM415384">
+    <Status database="GEO">
+      <Submission-Date>2009-06-10</Submission-Date>
+      <Release-Date>2009-07-16</Release-Date>
+      <Last-Update-Date>2009-07-13</Last-Update-Date>
+    </Status>
+    <Title>pBAD_CTRL_BR1</Title>
+    <Accession database="GEO">GSM415384</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="reference">
+Salmonella enterica serovar Typhimurium SL1344 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/Safety/Microarrays/default.html#protocols
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pBAD_CTRL_BR1</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="cell (plasmid)">
+Salmonella enterica serovar Typhimurium SL1344 (pBAD-CTRL)
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium was grown in LB under aeration until A600=1.5 was reached. L-arabinose was then added to a 0.2% final concentration. Total RNA was isolated 10min after L-arabinose addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10nm resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of RNA (channel 2) divided by DNA (channel 1) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5780" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM415nnn/GSM415384/GSM415384.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>AMPCH1</Name>
+        <Description>Block-by-block median normalised channel 1 (Cy3) value</Description>
+      </Column>
+      <Column position="3">
+        <Name>AMPCH2</Name>
+        <Description>Block-by-block median normalised channel 2 (Cy5) value</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>log2 of Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>CONFIDENCE</Name>
+        <Description>BlueFuse 3.1 calculated confidence</Description>
+      </Column>
+      <Column position="6">
+        <Name>UNNORM_VALUE</Name>
+        <Description>Unnormalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="7">
+        <Name>PRE_VALUE</Name>
+        <Description>Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+    <External-Data rows="7296">
+GSM415384-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM415385">
+    <Status database="GEO">
+      <Submission-Date>2009-06-10</Submission-Date>
+      <Release-Date>2009-07-16</Release-Date>
+      <Last-Update-Date>2009-07-13</Last-Update-Date>
+    </Status>
+    <Title>pBAD_CTRL_BR2</Title>
+    <Accession database="GEO">GSM415385</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="reference">
+Salmonella enterica serovar Typhimurium SL1344 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/Safety/Microarrays/default.html#protocols
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pBAD_CTRL_BR2</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="cell (plasmid)">
+Salmonella enterica serovar Typhimurium SL1344 (pBAD-CTRL)
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium was grown in LB under aeration until A600=1.5 was reached. L-arabinose was then added to a 0.2% final concentration. Total RNA was isolated 10min after L-arabinose addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10nm resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of RNA (channel 2) divided by DNA (channel 1) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5780" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM415nnn/GSM415385/GSM415385.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>AMPCH1</Name>
+        <Description>Block-by-block median normalised channel 1 (Cy3) value</Description>
+      </Column>
+      <Column position="3">
+        <Name>AMPCH2</Name>
+        <Description>Block-by-block median normalised channel 2 (Cy5) value</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>log2 of Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>CONFIDENCE</Name>
+        <Description>BlueFuse 3.1 calculated confidence</Description>
+      </Column>
+      <Column position="6">
+        <Name>UNNORM_VALUE</Name>
+        <Description>Unnormalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="7">
+        <Name>PRE_VALUE</Name>
+        <Description>Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+    <External-Data rows="7296">
+GSM415385-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM415398">
+    <Status database="GEO">
+      <Submission-Date>2009-06-10</Submission-Date>
+      <Release-Date>2009-07-16</Release-Date>
+      <Last-Update-Date>2009-07-13</Last-Update-Date>
+    </Status>
+    <Title>pBAD_CTRL_BR3</Title>
+    <Accession database="GEO">GSM415398</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="reference">
+Salmonella enterica serovar Typhimurium SL1344 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/Safety/Microarrays/default.html#protocols
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pBAD_CTRL_BR3</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="cell (plasmid)">
+Salmonella enterica serovar Typhimurium SL1344 (pBAD-CTRL)
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium was grown in LB under aeration until A600=1.5 was reached. L-arabinose was then added to a 0.2% final concentration. Total RNA was isolated 10min after L-arabinose addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10nm resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of RNA (channel 2) divided by DNA (channel 1) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5780" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM415nnn/GSM415398/GSM415398.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>AMPCH1</Name>
+        <Description>Block-by-block median normalised channel 1 (Cy3) value</Description>
+      </Column>
+      <Column position="3">
+        <Name>AMPCH2</Name>
+        <Description>Block-by-block median normalised channel 2 (Cy5) value</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>log2 of Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>CONFIDENCE</Name>
+        <Description>BlueFuse 3.1 calculated confidence</Description>
+      </Column>
+      <Column position="6">
+        <Name>UNNORM_VALUE</Name>
+        <Description>Unnormalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="7">
+        <Name>PRE_VALUE</Name>
+        <Description>Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+    <External-Data rows="7296">
+GSM415398-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM415411">
+    <Status database="GEO">
+      <Submission-Date>2009-06-10</Submission-Date>
+      <Release-Date>2009-07-16</Release-Date>
+      <Last-Update-Date>2009-07-13</Last-Update-Date>
+    </Status>
+    <Title>pBAD_MicC_BR1</Title>
+    <Accession database="GEO">GSM415411</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="reference">
+Salmonella enterica serovar Typhimurium SL1344 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/Safety/Microarrays/default.html#protocols
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pBAD_MicC_BR1</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="cell (plasmid)">
+Salmonella enterica serovar Typhimurium SL1344 (pBAD-MicC)
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium was grown in LB under aeration until A600=1.5 was reached. L-arabinose was then added to a 0.2% final concentration. Total RNA was isolated 10min after L-arabinose addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10nm resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of RNA (channel 2) divided by DNA (channel 1) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5780" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM415nnn/GSM415411/GSM415411.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>AMPCH1</Name>
+        <Description>Block-by-block median normalised channel 1 (Cy3) value</Description>
+      </Column>
+      <Column position="3">
+        <Name>AMPCH2</Name>
+        <Description>Block-by-block median normalised channel 2 (Cy5) value</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>log2 of Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>CONFIDENCE</Name>
+        <Description>BlueFuse 3.1 calculated confidence</Description>
+      </Column>
+      <Column position="6">
+        <Name>UNNORM_VALUE</Name>
+        <Description>Unnormalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="7">
+        <Name>PRE_VALUE</Name>
+        <Description>Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+    <External-Data rows="7296">
+GSM415411-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM415412">
+    <Status database="GEO">
+      <Submission-Date>2009-06-10</Submission-Date>
+      <Release-Date>2009-07-16</Release-Date>
+      <Last-Update-Date>2009-07-13</Last-Update-Date>
+    </Status>
+    <Title>pBAD_MicC_BR2</Title>
+    <Accession database="GEO">GSM415412</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="reference">
+Salmonella enterica serovar Typhimurium SL1344 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/Safety/Microarrays/default.html#protocols
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pBAD_MicC_BR2</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="cell (plasmid)">
+Salmonella enterica serovar Typhimurium SL1344 (pBAD-MicC)
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium was grown in LB under aeration until A600=1.5 was reached. L-arabinose was then added to a 0.2% final concentration. Total RNA was isolated 10min after L-arabinose addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10nm resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of RNA (channel 2) divided by DNA (channel 1) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5780" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM415nnn/GSM415412/GSM415412.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>AMPCH1</Name>
+        <Description>Block-by-block median normalised channel 1 (Cy3) value</Description>
+      </Column>
+      <Column position="3">
+        <Name>AMPCH2</Name>
+        <Description>Block-by-block median normalised channel 2 (Cy5) value</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>log2 of Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>CONFIDENCE</Name>
+        <Description>BlueFuse 3.1 calculated confidence</Description>
+      </Column>
+      <Column position="6">
+        <Name>UNNORM_VALUE</Name>
+        <Description>Unnormalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="7">
+        <Name>PRE_VALUE</Name>
+        <Description>Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+    <External-Data rows="7296">
+GSM415412-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM415413">
+    <Status database="GEO">
+      <Submission-Date>2009-06-10</Submission-Date>
+      <Release-Date>2009-07-16</Release-Date>
+      <Last-Update-Date>2009-07-13</Last-Update-Date>
+    </Status>
+    <Title>pBAD_MicC_BR3</Title>
+    <Accession database="GEO">GSM415413</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="reference">
+Salmonella enterica serovar Typhimurium SL1344 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/Safety/Microarrays/default.html#protocols
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pBAD_MicC_BR3</Source>
+      <Organism taxid="28901">Salmonella enterica</Organism>
+      <Characteristics tag="cell (plasmid)">
+Salmonella enterica serovar Typhimurium SL1344 (pBAD-MicC)
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium was grown in LB under aeration until A600=1.5 was reached. L-arabinose was then added to a 0.2% final concentration. Total RNA was isolated 10min after L-arabinose addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10nm resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of RNA (channel 2) divided by DNA (channel 1) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5780" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM415nnn/GSM415413/GSM415413.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>AMPCH1</Name>
+        <Description>Block-by-block median normalised channel 1 (Cy3) value</Description>
+      </Column>
+      <Column position="3">
+        <Name>AMPCH2</Name>
+        <Description>Block-by-block median normalised channel 2 (Cy5) value</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>log2 of Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>CONFIDENCE</Name>
+        <Description>BlueFuse 3.1 calculated confidence</Description>
+      </Column>
+      <Column position="6">
+        <Name>UNNORM_VALUE</Name>
+        <Description>Unnormalised Cy5/Cy3 ratio</Description>
+      </Column>
+      <Column position="7">
+        <Name>PRE_VALUE</Name>
+        <Description>Block-by-block median normalised Cy5/Cy3 ratio</Description>
+      </Column>
+    <External-Data rows="7296">
+GSM415413-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE16540">
+    <Status database="GEO">
+      <Submission-Date>2009-06-10</Submission-Date>
+      <Release-Date>2009-07-16</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Coding sequence targeting by MicC RNA reveals bacterial mRNA silencing downstream of translational initiation</Title>
+    <Accession database="GEO">GSE16540</Accession>
+    <Pubmed-ID>19620966</Pubmed-ID>
+    <Web-Link>http://www.nature.com/nsmb/journal/v16/n8/abs/nsmb.1631.html</Web-Link>
+    <Summary>
+It is well established that small noncoding RNAs (sRNAs) of bacteria recognize the 5’ regions of target mRNAs, generally at the ribosome binding site. Until now, the translated coding sequence (CDS) of mRNA appeared to be refractory to sRNA interactions. We have discovered that Salmonella MicC RNA silences ompD mRNA by targeting the CDS, at codons 23-26. Analyses of MicC-ompD RNA complexes in vitro, and of chimeric sRNAs and ompD reporter fusions in vivo, show that interactions are confined to the CDS, and that a ≤12 bp RNA duplex involving the conserved 5’ end of MicC is essential and sufficient for target repression. MicC cannot act as a translational repressor at this downstream position being unable to inhibit 30S or 70S ribosome activity on the ompD mRNA. Instead, MicC accelerates RNase E-dependent ompD mRNA decay. The degradosome contributes to target destabilization, and facilitates the efficient degradation of processed ompD mRNA. Our data show that bacterial gene silencing by sRNAs can take place downstream of the translational initiation site by triggering irreversible mRNA decay. This ability of sRNAs allows targets in the CDS to be silenced without interference from the strong RNA helicase activity of elongating ribosomes.
+    </Summary>
+    <Overall-Design>
+To determine the targets of the small regulatory RNA MicC in S. Typhimurium, we looked at the effect of a short pulse of MicC over-expression on the Salmonella transcriptome. To achieve over-expression, the micC gene was cloned in the pBAD plasmid and induced with 0.2% L-arabinose for 10 min. We then extracted the total RNA for transcriptional profiling. A strain carrying the pBAD plasmid w/o insert was used as negative control. 3 biological replicates were performed. This sRNA target identification strategy has been described in Papenfort et al; Molecular Microbiology (2006) 62(6), 1674–1688.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib4" position="1" />
+    <Contributor-Ref ref="contrib5" position="2" />
+    <Contributor-Ref ref="contrib1" position="3" />
+    <Contributor-Ref ref="contrib3" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM415384" />
+    <Sample-Ref ref="GSM415385" />
+    <Sample-Ref ref="GSM415398" />
+    <Sample-Ref ref="GSM415411" />
+    <Sample-Ref ref="GSM415412" />
+    <Sample-Ref ref="GSM415413" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE16540/GSE16540_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/116059" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/projects/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/projects/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Gary</First><Last>Splitter</Last></Person>
+    <Email>splitter@svm.vetmed.wisc.edu, angelajmathison@uwalumni.com</Email>
+    <Laboratory>Dr. Gary Splitter</Laboratory>
+    <Department>Pathobiological Sciences</Department>
+    <Organization>University of Wisconsin - Madison</Organization>
+    <Address>
+      <Line>1656 Linden Dr</Line>
+      <City>Madison</City>
+      <State>WI</State>
+      <Zip-Code>53706</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Gary</First><Middle>A</Middle><Last>Splitter</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Gireesh</First><Last>Rajashekara</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Amy</First><Middle>A</Middle><Last>Rambow-Larsen</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL6170">
+    <Status database="GEO">
+      <Submission-Date>2007-11-20</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-05-01</Last-Update-Date>
+    </Status>
+    <Title>Splitter_Bmelitensis_289mini_v1</Title>
+    <Accession database="GEO">GPL6170</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="29459">Brucella melitensis</Organism>
+    <Manufacturer>Splitter</Manufacturer>
+    <Manufacture-Protocol>
+Oligonucleotides (70-mers) representing 289 genes (Qiagen) were re-suspended in 3x SSC and spotted onto Ultra GAPS coated slides (Corning) using the MicroGrid Microarrayer (Apogent Discoveries). Slides were dessicated in a vaccum oven with Drierite for 48 hours and UV cross linked using a Stratalinker at 600mJ.  The printing of each ORF spot was verified by hybridizing with Cy3 labeled 9 mer (Qiagen).
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>coding region identifier </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="3">
+        <Name>Name</Name>
+        <Description>annotated gene name</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="384">
+GPL6170-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM258798">
+    <Status database="GEO">
+      <Submission-Date>2008-01-23</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>B_melitensis_16M_broth_rep1</Title>
+    <Accession database="GEO">GSM258798</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis, strain 16M, log phase growth in broth
+      </Characteristics>
+      <Growth-Protocol>
+TSB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM258798-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM258799">
+    <Status database="GEO">
+      <Submission-Date>2008-01-23</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>B_melitensis_16M_broth_rep2</Title>
+    <Accession database="GEO">GSM258799</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis, strain 16M, log phase growth in broth
+      </Characteristics>
+      <Growth-Protocol>
+TSB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM258799-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM258800">
+    <Status database="GEO">
+      <Submission-Date>2008-01-23</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>B_melitensis_16M_broth_rep3</Title>
+    <Accession database="GEO">GSM258800</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis, strain 16M, log phase growth in broth
+      </Characteristics>
+      <Growth-Protocol>
+TSB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM258800-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM258802">
+    <Status database="GEO">
+      <Submission-Date>2008-01-23</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>B_melitensis_16M_broth_rep4</Title>
+    <Accession database="GEO">GSM258802</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis, strain 16M, log phase growth in broth
+      </Characteristics>
+      <Growth-Protocol>
+TSB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM258802-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM258803">
+    <Status database="GEO">
+      <Submission-Date>2008-01-23</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>B_melitensis_16M_broth_rep5</Title>
+    <Accession database="GEO">GSM258803</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis, strain 16M, log phase growth in broth
+      </Characteristics>
+      <Growth-Protocol>
+TSB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM258803-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM258804">
+    <Status database="GEO">
+      <Submission-Date>2008-01-23</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>B_melitensis_16M_broth_rep6</Title>
+    <Accession database="GEO">GSM258804</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis, strain 16M, log phase growth in broth
+      </Characteristics>
+      <Growth-Protocol>
+TSB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM258804-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM258805">
+    <Status database="GEO">
+      <Submission-Date>2008-01-23</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>B_melitensis_16M_broth_rep7</Title>
+    <Accession database="GEO">GSM258805</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis, strain 16M, log phase growth in broth
+      </Characteristics>
+      <Growth-Protocol>
+TSB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM258805-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM258806">
+    <Status database="GEO">
+      <Submission-Date>2008-01-23</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>B_melitensis_16M_broth_rep8</Title>
+    <Accession database="GEO">GSM258806</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis, strain 16M, log phase growth in broth
+      </Characteristics>
+      <Growth-Protocol>
+TSB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM258806-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM263815">
+    <Status database="GEO">
+      <Submission-Date>2008-02-07</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>Brucella_melitensis_BlxR_mutant_broth_rep1</Title>
+    <Accession database="GEO">GSM263815</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis, strain 16M, log phase growth in broth
+      </Characteristics>
+      <Treatment-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM263815-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM263816">
+    <Status database="GEO">
+      <Submission-Date>2008-02-07</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>Brucella_melitensis_BlxR_mutant_broth_rep2</Title>
+    <Accession database="GEO">GSM263816</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis delta blxR, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis blxR mutant, log phase, in broth
+      </Characteristics>
+      <Treatment-Protocol>
+Brucella melitensis, strain 16M delta blxR, log phase growth in broth
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM263816-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM263817">
+    <Status database="GEO">
+      <Submission-Date>2008-02-07</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>Brucella_melitensis_BlxR_mutant_broth_rep3</Title>
+    <Accession database="GEO">GSM263817</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis delta blxR, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis delta blxR, log phase, in broth
+      </Characteristics>
+      <Treatment-Protocol>
+Brucella melitensis, strain 16M delta blxR, log phase growth in broth
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM263817-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM263818">
+    <Status database="GEO">
+      <Submission-Date>2008-02-07</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>Brucella_melitensis_BlxR_mutant_broth_rep4</Title>
+    <Accession database="GEO">GSM263818</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis delta blxR, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis delta blxR, log phase, in broth
+      </Characteristics>
+      <Treatment-Protocol>
+Brucella melitensis, strain 16M delta blxR, log phase growth in broth
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM263818-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM263819">
+    <Status database="GEO">
+      <Submission-Date>2008-02-07</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>Brucella_melitensis_BlxR_mutant_broth_rep5</Title>
+    <Accession database="GEO">GSM263819</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis delta blxR, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis delta blxR, log phase, in broth
+      </Characteristics>
+      <Treatment-Protocol>
+Brucella melitensis, strain 16M delta blxR, log phase growth in broth
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM263819-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM263820">
+    <Status database="GEO">
+      <Submission-Date>2008-02-07</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-03-06</Last-Update-Date>
+    </Status>
+    <Title>Brucella_melitensis_BlxR_mutant_broth_rep6</Title>
+    <Accession database="GEO">GSM263820</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Brucella melitensis delta blxR, log phase, in broth</Source>
+      <Organism taxid="29459">Brucella melitensis</Organism>
+      <Characteristics>
+Brucella melitensis delta blxR, log phase, in broth
+      </Characteristics>
+      <Treatment-Protocol>
+Brucella melitensis, strain 16M delta blxR, log phase growth in broth
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3-labeled cDNA was mixed with 0.75 g cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 l.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  
+    </Scan-Protocol>
+    <Description>
+cDNA levels normalized to gDNA levels
+    </Description>
+    <Data-Processing>
+Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV
+    </Data-Processing>
+    <Platform-Ref ref="GPL6170" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LOG cy3 cDNA</Description>
+      </Column>
+    <External-Data rows="384">
+GSM263820-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE10735">
+    <Status database="GEO">
+      <Submission-Date>2008-03-05</Submission-Date>
+      <Release-Date>2008-05-01</Release-Date>
+      <Last-Update-Date>2008-05-01</Last-Update-Date>
+    </Status>
+    <Title>Microarray of Genes affected by BlxR deletion</Title>
+    <Accession database="GEO">GSE10735</Accession>
+    <Pubmed-ID>18310341</Pubmed-ID>
+    <Summary>
+A mini-microarray containing spotted oligos corresponding to 289 B. melitensis genes was used to identify candidate genes whose transcription is influenced by BlxR.  This microarray contains genes encoding the type IV secretion system, flagella, transcriptional regulators, transporters, and proteins involved in outer membrane biogenesis, iron acquisition, and denitrification.  RNA was prepared from both B. melitensis 16M, and the blxR deletion strain, 16M(delta)blxR, grown to late log phase in TSB.
+Keywords: genetic modification
+    </Summary>
+    <Overall-Design>
+Bacteria were grown in TSB until mid/late-log phase.  Before RNA isolation, phenol-ethanol (1:19) was added, cells were pelleted by centrifugation and stored at -80°C.  Total RNA was extracted from cell pellets using the MasterPure RNA Purification Kit (Epicentre), and DNA was removed using TURBO DNA-free (Ambion).  cDNA was synthesized from 7 ug of total RNA in the presence of CyDye-3-dCTP (Amersham Biosciences).  The labeled cDNA was purified using the ChipShot cDNA System (Promega).  For each sample, RNA was extracted from two independently grown cultures and cDNA was generated three times for each RNA sample.
+For the mini-microarray, 289 potential open reading frames (ORF’s) of the B. melitensis 16M genome were selected based on their hypothesized involvement in virulence.  These included genes for proteins involved in: type IV secretion, flagella, outer membrane biogenesis, transcriptional regulation, denitrification, iron uptake, and peptide and small molecule transport.  Oligonucleotides (70-mers) representing these 289 genes were purchased from Qiagen, re-suspended in 3x SSC, and spotted onto Ultra GAPS coated slides (Corning) using the MicroGrid Microarrayer (Apogent Discoveries).  Slides were desiccated in a vacuum oven with Drierite for 48 h and UV cross linked using a Stratalinker at 600 mJ.  The printing of each ORF spot was verified by hybridizing with Cy3 labeled 9 mer (Qiagen).  The slides were stored under vacuum at room temp with “Drierite” pellets until further use.
+16M genomic DNA was labeled by incorporation of CyDye-5-dCTP (Amersham Biosciences) using High Prime DNA Labeling (Roche) according to manufacturer’s instructions.  Unincorporated nucleotides were removed using Micron YM-30 Columns (Millipore).
+Cy3-labeled cDNA was mixed with 0.75 ug cy5-labeled gDNA, and hybridization buffer (Pronto Plus Kit, Promega) was added to a final volume of 35 ul.  The entire sample was loaded onto the printed array and covered with a HybriSlip coverslip (Molecular Probes).  Arrays were placed in specialized hybridization chambers (Telechem Inc., Sunnyvale, CA), and incubated at 42°C overnight.  Slides were washed using the Pronto Plus Hybridization System (Promega) and dried by centrifugation at 1000 rpm for 5 min.
+Slides were scanned using the GenePix4000B scanner (Axon Instruments) with independent excitation of the fluorophores Cy3 and Cy5.  Background intensities for each spot were calculated using GenPixPro 3.0 software (Axon Instruments) via the segmentation method.  The signal intensity for each spot was calculated as the difference between the average signal intensity and the average local background intensity.  Data was normalized to gDNA levels by calculating the ratios of cDNA to gDNA for each spot.  Data was then log2 transformed, and the signal ratio for each spot was divided by the mean signal ratio of the entire array to validate comparisons between different arrays.  Data normalization and statistical analysis were performed using TIGR MeV.
+
+GPR files were not submitted because they cannot be located.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM258798" />
+    <Sample-Ref ref="GSM258799" />
+    <Sample-Ref ref="GSM258800" />
+    <Sample-Ref ref="GSM258802" />
+    <Sample-Ref ref="GSM258803" />
+    <Sample-Ref ref="GSM258804" />
+    <Sample-Ref ref="GSM258805" />
+    <Sample-Ref ref="GSM258806" />
+    <Sample-Ref ref="GSM263815" />
+    <Sample-Ref ref="GSM263816" />
+    <Sample-Ref ref="GSM263817" />
+    <Sample-Ref ref="GSM263818" />
+    <Sample-Ref ref="GSM263819" />
+    <Sample-Ref ref="GSM263820" />
+  </Series>
+
+</MINiML>

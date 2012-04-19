@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Monot</First><Last>Marc</Last></Person>
+    <Email>mmonot@pasteur.fr</Email>
+    <Phone>+33145688316</Phone>
+    <Laboratory>Laboratoire Pathogenese des Bacteries Anaerobies</Laboratory>
+    <Department>Microbiologie</Department>
+    <Organization>Institut Pasteur</Organization>
+    <Address>
+      <Line>25, rue du docteur roux</Line>
+      <City>Paris</City>
+      <Zip-Code>75015</Zip-Code>
+      <Country>France</Country>
+    </Address>
+    <Web-Link>+33140613123  </Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Laure</First><Last>Saujet</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Marc</First><Last>Monot</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL10556">
+    <Status database="GEO">
+      <Submission-Date>2010-06-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2012-01-17</Last-Update-Date>
+    </Status>
+    <Title>Agilent-020954 Clostridium difficile Expression 15.7k array</Title>
+    <Accession database="GEO">GPL10556</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1496">[Clostridium] difficile</Organism>
+    <Manufacturer>Agilent Technologies</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site at http://www.agilent.com/
+    </Manufacture-Protocol>
+    <Description>
+Agilent-020954 CD_Expression-01_1_Of_1
+
+Arrays of this design have barcodes that begin with 16020954 or 2520954.
+
+Orientation:
+Features are numbered numbered Left-to-Right, Top-to-Bottom as scanned by an Agilent scanner (barcode on the left, DNA on the back surface, scanned through the glass), matching the FeatureNum output from Agilent's Feature Extraction software.
+
+The ID column represents the Agilent Feature Extraction feature number.
+
+Rows and columns are numbered as scanned by an Axon Scanner (barcode on the bottom, DNA on the front surface).
+
+To match data scanned on an Axon scanner, use the RefNumber column contained in the Agilent-provided GAL file as the ID_REF column in sample submissions.
+
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Agilent feature number</Description>
+      </Column>
+      <Column position="2">
+        <Name>COL</Name>
+        <Description>Column</Description>
+      </Column>
+      <Column position="3">
+        <Name>ROW</Name>
+        <Description>Row</Description>
+      </Column>
+      <Column position="4">
+        <Name>NAME</Name>
+        <Description>NAME</Description>
+      </Column>
+      <Column position="5">
+        <Name>Probe_ID</Name>
+        <Description>Spot identifier</Description>
+      </Column>
+      <Column position="6">
+        <Name>CONTROL_TYPE</Name>
+        <Description>Control type</Description>
+      </Column>
+      <Column position="7">
+        <Name>CHROMOSOMAL_LOCATION</Name>
+        <Description>Chromosomal Location</Description>
+      </Column>
+      <Column position="8">
+        <Name>SEQUENCE</Name>
+        <Description>Sequence</Description>
+      </Column>
+      <Column position="9">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+      <Column position="10">
+        <Name>SPOT_ID</Name>
+        <Description>control</Description>
+      </Column>
+    <External-Data rows="15744">
+GPL10556-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM625914">
+    <Status database="GEO">
+      <Submission-Date>2010-11-18</Submission-Date>
+      <Release-Date>2011-08-22</Release-Date>
+      <Last-Update-Date>2011-08-23</Last-Update-Date>
+    </Status>
+    <Title>CD630_WT1-10h-cy3_WT1-4h-cy5</Title>
+    <Accession database="GEO">GSM625914</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain C630E grown 4h in TY (test)</Source>
+      <Organism taxid="1496">[Clostridium] difficile</Organism>
+      <Characteristics tag="strain">
+C630E Mullany
+      </Characteristics>
+      <Characteristics tag="time">
+4hr
+      </Characteristics>
+      <Growth-Protocol>
+C.difficile strain C630E was grown for 4h or 10 hours in TY medium.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using phenol, Trizol reagent and chloroform/isoamylalcohol.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 800 U SuperScript III Reverse Transcriptase (Invitrogen), each dATP, dTTP, dGTP,  dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 630E in TY 10H of growth (reference)</Source>
+      <Organism taxid="1496">[Clostridium] difficile</Organism>
+      <Characteristics tag="strain">
+C630E Mullany
+      </Characteristics>
+      <Characteristics tag="time">
+10hr
+      </Characteristics>
+      <Growth-Protocol>
+C.difficile strain C630E was grown for 4h or 10 hours in TY medium.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using phenol, Trizol reagent and chloroform/isoamylalcohol.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 800 U SuperScript III Reverse Transcriptase (Invitrogen), each dATP, dTTP, dGTP,  dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed with Agilent washing buffers
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix Pro 6 dual-channel laser scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 4.
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10556" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM625nnn/GSM625914/GSM625914_CD630_WT1-10h-cy3_WT1-4h-cy5.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>loess-normalized log2 (R/G) ratio</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM625914-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM625915">
+    <Status database="GEO">
+      <Submission-Date>2010-11-18</Submission-Date>
+      <Release-Date>2011-08-22</Release-Date>
+      <Last-Update-Date>2011-08-23</Last-Update-Date>
+    </Status>
+    <Title>CD630_WT2-10h-cy5_WT2-4h-cy3</Title>
+    <Accession database="GEO">GSM625915</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain C630E grown 4h in TY (test)</Source>
+      <Organism taxid="1496">[Clostridium] difficile</Organism>
+      <Characteristics tag="strain">
+C630E Mullany
+      </Characteristics>
+      <Characteristics tag="time">
+4hr
+      </Characteristics>
+      <Growth-Protocol>
+C.difficile strain C630E was grown for 4h or 10 hours in TY medium.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using phenol, Trizol reagent and chloroform/isoamylalcohol.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 800 U SuperScript III Reverse Transcriptase (Invitrogen), each dATP, dTTP, dGTP,  dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 630E in TY 10H of growth (reference)</Source>
+      <Organism taxid="1496">[Clostridium] difficile</Organism>
+      <Characteristics tag="strain">
+C630E Mullany
+      </Characteristics>
+      <Characteristics tag="time">
+10hr
+      </Characteristics>
+      <Growth-Protocol>
+C.difficile strain C630E was grown for 4h or 10 hours in TY medium.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using phenol, Trizol reagent and chloroform/isoamylalcohol.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 800 U SuperScript III Reverse Transcriptase (Invitrogen), each dATP, dTTP, dGTP,  dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed with Agilent washing buffers
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix Pro 6 dual-channel laser scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 4.
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10556" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM625nnn/GSM625915/GSM625915_CD630_WT2-10h-cy5_WT2-4h-cy3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>-[INV_VALUE]; loess-normalized log2 (G/R) ratio</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>loess-normalized log2 (R/G) ratio</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM625915-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM625916">
+    <Status database="GEO">
+      <Submission-Date>2010-11-18</Submission-Date>
+      <Release-Date>2011-08-22</Release-Date>
+      <Last-Update-Date>2011-08-23</Last-Update-Date>
+    </Status>
+    <Title>CD630_WT3-10h-cy3_WT3-4h-cy5</Title>
+    <Accession database="GEO">GSM625916</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain C630E grown 4h in TY (test)</Source>
+      <Organism taxid="1496">[Clostridium] difficile</Organism>
+      <Characteristics tag="strain">
+C630E Mullany
+      </Characteristics>
+      <Characteristics tag="time">
+4hr
+      </Characteristics>
+      <Growth-Protocol>
+C.difficile strain C630E was grown for 4h or 10 hours in TY medium.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using phenol, Trizol reagent and chloroform/isoamylalcohol.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 800 U SuperScript III Reverse Transcriptase (Invitrogen), each dATP, dTTP, dGTP,  dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 630E in TY 10H of growth (reference)</Source>
+      <Organism taxid="1496">[Clostridium] difficile</Organism>
+      <Characteristics tag="strain">
+C630E Mullany
+      </Characteristics>
+      <Characteristics tag="time">
+10hr
+      </Characteristics>
+      <Growth-Protocol>
+C.difficile strain C630E was grown for 4h or 10 hours in TY medium.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using phenol, Trizol reagent and chloroform/isoamylalcohol.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 800 U SuperScript III Reverse Transcriptase (Invitrogen), each dATP, dTTP, dGTP,  dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed with Agilent washing buffers
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix Pro 6 dual-channel laser scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 4.
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10556" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM625nnn/GSM625916/GSM625916_CD630_WT3-10h-cy3_WT3-4h-cy5.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>loess-normalized log2 (R/G) ratio</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM625916-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM625917">
+    <Status database="GEO">
+      <Submission-Date>2010-11-18</Submission-Date>
+      <Release-Date>2011-08-22</Release-Date>
+      <Last-Update-Date>2011-08-23</Last-Update-Date>
+    </Status>
+    <Title>CD630_WT4-10h-cy5_WT4-4h-cy3</Title>
+    <Accession database="GEO">GSM625917</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain C630E grown 4h in TY (test)</Source>
+      <Organism taxid="1496">[Clostridium] difficile</Organism>
+      <Characteristics tag="strain">
+C630E Mullany
+      </Characteristics>
+      <Characteristics tag="time">
+4hr
+      </Characteristics>
+      <Growth-Protocol>
+C.difficile strain C630E was grown for 4h or 10 hours in TY medium.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using phenol, Trizol reagent and chloroform/isoamylalcohol.
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 800 U SuperScript III Reverse Transcriptase (Invitrogen), each dATP, dTTP, dGTP,  dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>strain 630E in TY 10H of growth (reference)</Source>
+      <Organism taxid="1496">[Clostridium] difficile</Organism>
+      <Characteristics tag="strain">
+C630E Mullany
+      </Characteristics>
+      <Characteristics tag="time">
+10hr
+      </Characteristics>
+      <Growth-Protocol>
+C.difficile strain C630E was grown for 4h or 10 hours in TY medium.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using phenol, Trizol reagent and chloroform/isoamylalcohol.
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA and pdN6 primer were heated at 70°C for 5 min, then reversed transcribed at 42°C for 3 h in the presence of 800 U SuperScript III Reverse Transcriptase (Invitrogen), each dATP, dTTP, dGTP,  dCTP. cDNA were then incubated with cy5 or cy3 dyes 1h at room temperature in the dark.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+samples were applied to microarrays enclosed in Agilent hybridization chambers for 17h at 65°C. After hybridization, slides were washed with Agilent washing buffers
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an GenePix Pro 6 dual-channel laser scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 4.
+    </Description>
+    <Data-Processing>
+R limma package - Function used - Background correction : backgroundCorrect normexp ; Normalization : normalizeWithinArrays loess - Correlation of spot duplicat : duplicateCorrelation - Adjust to linear method : lmFit - Statistical analysis : eBayes, decideTests global BH.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10556" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM625nnn/GSM625917/GSM625917_CD630_WT4-10h-cy5_WT4-4h-cy3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>-[INV_VALUE]; loess-normalized log2 (G/R) ratio</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>loess-normalized log2 (R/G) ratio</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM625917-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE25474">
+    <Status database="GEO">
+      <Submission-Date>2010-11-18</Submission-Date>
+      <Release-Date>2011-08-22</Release-Date>
+      <Last-Update-Date>2012-03-23</Last-Update-Date>
+    </Status>
+    <Title>Comparison of the expression profiles of 630E strain after 4h and 10h of growth</Title>
+    <Accession database="GEO">GSE25474</Accession>
+    <Pubmed-ID>21572003</Pubmed-ID>
+    <Summary>
+Transcriptional profiling of C. difficile 630E strain after 4h vs 10h of growth
+    </Summary>
+    <Overall-Design>
+Two-conditions experiments, 630E strain 4h vs 630E strain 10h, 4 biological replicates for each condition
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM625914" />
+    <Sample-Ref ref="GSM625915" />
+    <Sample-Ref ref="GSM625916" />
+    <Sample-Ref ref="GSM625917" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE25474/GSE25474_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE25521" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/142595" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Michael</First><Last>Berney</Last></Person>
+    <Email>michael.berney@alumni.ethz.ch</Email>
+    <Department>Department of Microbiology and Immunology</Department>
+    <Organization>University of Otago</Organization>
+    <Address>
+      <Line>P.O. Box 56</Line>
+      <City>Dunedin</City>
+      <Postal-Code>9010</Postal-Code>
+      <Country>New Zealand</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>PFGRC</First><Last>JCVI</Last></Person>
+    <Email>jli@jcvi.org</Email>
+    <Phone>3017957840</Phone>
+    <Department>PFGRC</Department>
+    <Organization>J. Craig Venter Institute</Organization>
+    <Address>
+      <Line>9704 Medical Center Drive</Line>
+      <City>Rockville</City>
+      <State>MD</State>
+      <Zip-Code>20850</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Gregory</First><Middle>M</Middle><Last>Cook</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5862">
+    <Status database="GEO">
+      <Submission-Date>2007-09-13</Submission-Date>
+      <Release-Date>2007-12-13</Release-Date>
+      <Last-Update-Date>2011-07-13</Last-Update-Date>
+    </Status>
+    <Title>JCVI PFGRC Mycobacterium smegmatis 25K v4 array designed primarily based on strain MC2 155</Title>
+    <Accession database="GEO">GPL5862</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+    <Manufacturer>JCVI PFGRC</Manufacturer>
+    <Manufacture-Protocol>
+4QMS, with arrayer GENETIX, machine cycles 0, pen id 0, pen cycles 0, operator 0, humidity control 0, humidity set point0.000
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Description>
+This set includes 7148 oligonucleotides, has 25392 spots distributed in 48 blocks.
+    </Description>
+    <Web-Link>http://pfgrc.jcvi.org/descriptionPages.shtml</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Relation type="Alternative to" target="GPL13909" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>SEQUENCE</Name>
+        <Description>Oligo sequence</Description>
+      </Column>
+      <Column position="3">
+        <Name>GC%</Name>
+        <Description>GC content of the sequence</Description>
+      </Column>
+      <Column position="4">
+        <Name>Internal Repeat Score</Name>
+        <Description>Internal repeat score</Description>
+      </Column>
+      <Column position="5">
+        <Name>Self-Annealing Score</Name>
+        <Description>Self-anneal score</Description>
+      </Column>
+      <Column position="6">
+        <Name>Primary Strain</Name>
+        <Description>The strain of primary target</Description>
+      </Column>
+      <Column position="7">
+        <Name>Primary Target</Name>
+        <Description>Locus primarily hit by the oligo</Description>
+      </Column>
+      <Column position="8">
+        <Name>Common Name of Primary Target</Name>
+        <Description>Common name of primary target</Description>
+      </Column>
+      <Column position="9">
+        <Name>Gene Symbol</Name>
+        <Description>Gene symbol</Description>
+      </Column>
+      <Column position="10">
+        <Name>Strain MC2 155</Name>
+        <Description>Target map of strain MC2 155</Description>
+      </Column>
+      <Column position="11">
+        <Name>ORF</Name>
+        <Description>primary target linkin Entrez Gene  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Mycobacterium smegmatis[organism]</Link-Suffix>
+      </Column>
+      <Column position="12">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="8216">
+GPL5862-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM436644">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>Slow vs. Fast Replicate 1</Title>
+    <Accession database="GEO">GSM436644</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture fast 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+4.6 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436644/GSM436644.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_50%_vs_fast_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_50%_vs_fast_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436644-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436645">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>Slow vs. Fast Replicate 2</Title>
+    <Accession database="GEO">GSM436645</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture fast 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+4.6 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436645/GSM436645.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_50%_vs_fast_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_50%_vs_fast_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436645-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436646">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>Slow vs. Fast Replicate 3</Title>
+    <Accession database="GEO">GSM436646</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture fast 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+4.6 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436646/GSM436646.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_50%_vs_fast_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_50%_vs_fast_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436646-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436647">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>Slow vs. Fast Replicate 4</Title>
+    <Accession database="GEO">GSM436647</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture fast 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+4.6 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436647/GSM436647.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_50%_vs_fast_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_50%_vs_fast_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436647-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436648">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>Slow vs. Fast Replicate 5</Title>
+    <Accession database="GEO">GSM436648</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture fast 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+4.6 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436648/GSM436648.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_50%_vs_fast_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_50%_vs_fast_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436648-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436649">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>2.5% vs. 50% air saturation Replicate 1</Title>
+    <Accession database="GEO">GSM436649</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 2.5% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436649/GSM436649.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_2.5%_vs_slow 50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_2.5%_vs_slow 50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436649-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436650">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>2.5% vs. 50% air saturation Replicate 2</Title>
+    <Accession database="GEO">GSM436650</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 2.5% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436650/GSM436650.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_2.5%_vs_slow 50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_2.5%_vs_slow 50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436650-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436651">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>2.5% vs. 50% air saturation Replicate 3</Title>
+    <Accession database="GEO">GSM436651</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 2.5% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436651/GSM436651.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_2.5%_vs_slow 50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_2.5%_vs_slow 50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436651-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436652">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>2.5% vs. 50% air saturation Replicate 4</Title>
+    <Accession database="GEO">GSM436652</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 2.5% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436652/GSM436652.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_2.5%_vs_slow 50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_2.5%_vs_slow 50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436652-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436653">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>2.5% vs. 50% air saturation Replicate 5</Title>
+    <Accession database="GEO">GSM436653</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 2.5% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436653/GSM436653.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_2.5%_vs_slow 50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_2.5%_vs_slow 50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436653-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436654">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>0.6% vs. 50% air saturation Replicate 1</Title>
+    <Accession database="GEO">GSM436654</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 0.6% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436654/GSM436654.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_0.6%_vs_slow_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_0.6%_vs_slow_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436654-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436655">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>0.6% vs. 50% air saturation Replicate 2</Title>
+    <Accession database="GEO">GSM436655</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 0.6% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436655/GSM436655.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_0.6%_vs_slow_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_0.6%_vs_slow_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436655-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436656">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>0.6% vs. 50% air saturation Replicate 3</Title>
+    <Accession database="GEO">GSM436656</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 0.6% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436656/GSM436656.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_0.6%_vs_slow_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_0.6%_vs_slow_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436656-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436657">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>0.6% vs. 50% air saturation Replicate 4</Title>
+    <Accession database="GEO">GSM436657</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 0.6% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436657/GSM436657.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_0.6%_vs_slow_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_0.6%_vs_slow_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436657-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM436658">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2009-08-05</Last-Update-Date>
+    </Status>
+    <Title>0.6% vs. 50% air saturation Replicate 5</Title>
+    <Accession database="GEO">GSM436658</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Chemostat culture slow 50% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Chemostat culture slow 0.6% air saturation</Source>
+      <Organism taxid="246196">Mycobacterium smegmatis str. MC2 155</Organism>
+      <Characteristics tag="culture doubling time">
+69 hours
+      </Characteristics>
+      <Growth-Protocol>
+Prior to each experiment bacteria were loop inoculated from a cryo-culture (-80°C) onto a LBT plate and incubated for 3 days at 37°C.  A colony was picked from the plate and inoculated into the 5 ml batch medium in a 30 ml glass universal and incubacted at 37°C on a rotary shaker at 200 rpm. At an OD between 0.3 - 0.5 a sample was withdrawn to inoculate the bioreactor (700 ml) to a starting OD600 of 0.005. The culture was then left in batch mode under oxystatic condition (maintaining an air saturation of 50% i.e. 10% dissolved oxygen concentration) until OD600 reached around 80% of maximum OD600 and then turned in to chemostat mode either at a dilution rate of 4.6 h-1 or 69 h-1. The chemostat was then left running for at least two volume changes before harvest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Trizol following manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were reverse transcribed and labelled in a two step protocol according to SOP M007 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybrization performed according to SOP M008 from TIGR (Hegde, P., Qi, R., Abernathy, K. &amp; other authors (2000). A concise guide to cDNA microarray analysis. BioTechniques 29, 548-550, 552-544, 556 passim.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned Genepix 4000A scanner .
+Images were quantified using Spotfinder (TIGR).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 5.
+    </Description>
+    <Data-Processing>
+Total normalization and LOWESS normalization with MIDAS software (TIGR)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5862" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM436nnn/GSM436658/GSM436658.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio representing slow_0.6%_vs_slow_50% (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio representing slow_0.6%_vs_slow_50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSM436658-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE17520">
+    <Status database="GEO">
+      <Submission-Date>2009-08-05</Submission-Date>
+      <Release-Date>2010-08-05</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>M. smegmatis response to energy- and oxygen-limitation in continuous culture</Title>
+    <Accession database="GEO">GSE17520</Accession>
+    <Pubmed-ID>20062806</Pubmed-ID>
+    <Summary>
+Transcriptional profiling of M. smegmatis grown at 69h doubling time compared to 4.6h doubling time both at 50% air saturation. Transcriptional profiling of M. smegmatis grown at 69h doubling time with 50%, 2.5% and 0.6% air saturation.
+    </Summary>
+    <Overall-Design>
+Two-condition experiment. Biological replicates: 5 independently grown and harvested. One replicate per array.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM436644" />
+    <Sample-Ref ref="GSM436645" />
+    <Sample-Ref ref="GSM436646" />
+    <Sample-Ref ref="GSM436647" />
+    <Sample-Ref ref="GSM436648" />
+    <Sample-Ref ref="GSM436649" />
+    <Sample-Ref ref="GSM436650" />
+    <Sample-Ref ref="GSM436651" />
+    <Sample-Ref ref="GSM436652" />
+    <Sample-Ref ref="GSM436653" />
+    <Sample-Ref ref="GSM436654" />
+    <Sample-Ref ref="GSM436655" />
+    <Sample-Ref ref="GSM436656" />
+    <Sample-Ref ref="GSM436657" />
+    <Sample-Ref ref="GSM436658" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE17520/GSE17520_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/118797" />
+    <Data-Table>
+        <Title>Combined means and p-values for biological replicates</Title>
+      <Column position="1">
+        <Name>Locus</Name>
+        <Description>Locus</Description>
+      </Column>
+      <Column position="2">
+        <Name>GeneN</Name>
+        <Description>GeneN</Description>
+      </Column>
+      <Column position="3">
+        <Name>GeneS</Name>
+        <Description>GeneS</Description>
+      </Column>
+      <Column position="4">
+        <Name>mean(slow_50%_vs_fast_50%)</Name>
+        <Description>Gene mean for slow 50% vs. fast 50%</Description>
+      </Column>
+      <Column position="5">
+        <Name>p-value(slow_50%_vs_fast_50%)</Name>
+        <Description>Raw p value for slow 50% vs. fast 50%</Description>
+      </Column>
+      <Column position="6">
+        <Name>mean(slow_2.5%_vs_slow 50%)</Name>
+        <Description>Gene mean for slow 2.5% vs. slow 50%</Description>
+      </Column>
+      <Column position="7">
+        <Name>p-value(slow_2.5%_vs_slow 50%)</Name>
+        <Description>Raw p value for slow 2.5% vs. slow 50%</Description>
+      </Column>
+      <Column position="8">
+        <Name>mean(slow_0.6%_vs_slow_50%)</Name>
+        <Description>Gene mean for slow 0.6% vs slow 50%</Description>
+      </Column>
+      <Column position="9">
+        <Name>p-value(slow_0.6%_vs_slow_50%)</Name>
+        <Description>Raw p value for slow 0.6% vs slow 50%</Description>
+      </Column>
+    <External-Data rows="6897">
+GSE17520-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Series>
+
+</MINiML>

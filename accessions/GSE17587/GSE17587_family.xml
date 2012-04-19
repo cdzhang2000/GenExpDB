@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Tom</First><Last>Zahrt</Last></Person>
+    <Email>tzahrt@mcw.edu</Email>
+    <Phone>(414) 955-7409</Phone>
+    <Fax>(414) 955-6567</Fax>
+    <Department>Microbiology and Molecular Genetics</Department>
+    <Organization>Medical College of Wisconsin</Organization>
+    <Address>
+      <Line>8701 Watertown Plank Rd</Line>
+      <City>Milwaukee</City>
+      <State>WI</State>
+      <Zip-Code>53226</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>PFGRC</First><Last>JCVI</Last></Person>
+    <Email>jli@jcvi.org</Email>
+    <Phone>3017957840</Phone>
+    <Department>PFGRC</Department>
+    <Organization>J. Craig Venter Institute</Organization>
+    <Address>
+      <Line>9704 Medical Center Drive</Line>
+      <City>Rockville</City>
+      <State>MD</State>
+      <Zip-Code>20850</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Mark</First><Middle>J</Middle><Last>White</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Tom</First><Middle>C</Middle><Last>Zahrt</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5774">
+    <Status database="GEO">
+      <Submission-Date>2007-08-27</Submission-Date>
+      <Release-Date>2007-10-10</Release-Date>
+      <Last-Update-Date>2007-11-07</Last-Update-Date>
+    </Status>
+    <Title>JCVI PFGRC Mycobacterium tuberculosis 22K v4 array designed primarily based on strain H37Rv</Title>
+    <Accession database="GEO">GPL5774</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+    <Manufacturer>JCVI PFGRC</Manufacturer>
+    <Manufacture-Protocol>
+4QMT, with arrayer GENETIX, machine cycles 0, pen id 0, pen cycles 0, operator 0, humidity control 0, humidity set point0.000
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Description>
+This set includes 4742 oligonucleotides, has 22176 spots distributed in 48 blocks.
+    </Description>
+    <Web-Link>http://pfgrc.jcvi.org/descriptionPages.shtml</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>SEQUENCE</Name>
+        <Description>Oligo sequence</Description>
+      </Column>
+      <Column position="3">
+        <Name>GC%</Name>
+        <Description>GC content of the sequence</Description>
+      </Column>
+      <Column position="4">
+        <Name>Internal Repeat Score</Name>
+        <Description>Internal repeat score</Description>
+      </Column>
+      <Column position="5">
+        <Name>Self-Annealing Score</Name>
+        <Description>Self-anneal score</Description>
+      </Column>
+      <Column position="6">
+        <Name>Primary Strain</Name>
+        <Description>The strain of primary target</Description>
+      </Column>
+      <Column position="7">
+        <Name>Primary Target</Name>
+        <Description>Locus primarily hit by the oligo</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Mycobacterium tuberculosis[organism]</Link-Suffix>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="10">
+        <Name>Common Name of Primary Target</Name>
+        <Description>Common name of primary target</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>Gene symbol</Description>
+      </Column>
+      <Column position="12">
+        <Name>Strain H37Rv</Name>
+        <Description>Target map of strain H37Rv</Description>
+      </Column>
+      <Column position="13">
+        <Name>Strain CDC1551</Name>
+        <Description>Target map of strain CDC1551</Description>
+      </Column>
+    <External-Data rows="5250">
+GPL5774-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM438221">
+    <Status database="GEO">
+      <Submission-Date>2009-08-11</Submission-Date>
+      <Release-Date>2009-10-30</Release-Date>
+      <Last-Update-Date>2010-09-09</Last-Update-Date>
+    </Status>
+    <Title>Replicate 1</Title>
+    <Accession database="GEO">GSM438221</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild-type</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>mutant</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+delta pepD
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization buffer (5x SSC, 0.1% SDS, 50% formamide) was added, and samples were hybridized using a Tecan HS 400 Pro hybridization station.  Slides were pre-hybridized (1% BSA, 0.1% SDS, 4x SSC) for 45min. Slides were washed sequentially using 2x SSC 0.1% SDS, 1x SSC, 0.2x SSC, and 0.05x SSC.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned using a GenePix 2500 scanner.
+    </Scan-Protocol>
+    <Description>
+Analysis used wild-type RNA as a control to compare against RNA obtained from pepD deletion strain
+    </Description>
+    <Data-Processing>
+Scanned images were processed and normalized using Scanalyze software.  Data output was processed using MS Excel and SAM.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM438nnn/GSM438221/GSM438221.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratios (pepD/wild-type)</Description>
+      </Column>
+    <External-Data rows="5109">
+GSM438221-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM438222">
+    <Status database="GEO">
+      <Submission-Date>2009-08-11</Submission-Date>
+      <Release-Date>2009-10-30</Release-Date>
+      <Last-Update-Date>2010-09-09</Last-Update-Date>
+    </Status>
+    <Title>Dye-Flip Replicate 1</Title>
+    <Accession database="GEO">GSM438222</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild-type</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>mutant</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+delta pepD
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization buffer (5x SSC, 0.1% SDS, 50% formamide) was added, and samples were hybridized using a Tecan HS 400 Pro hybridization station.  Slides were pre-hybridized (1% BSA, 0.1% SDS, 4x SSC) for 45min. Slides were washed sequentially using 2x SSC 0.1% SDS, 1x SSC, 0.2x SSC, and 0.05x SSC.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned using a GenePix 2500 scanner.
+    </Scan-Protocol>
+    <Description>
+Analysis used wild-type RNA as a control to compare against RNA obtained from pepD deletion strain
+    </Description>
+    <Data-Processing>
+Scanned images were processed and normalized using Scanalyze software.  Data output was processed using MS Excel and SAM.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM438nnn/GSM438222/GSM438222.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratios (pepD/wild-type)</Description>
+      </Column>
+    <External-Data rows="5109">
+GSM438222-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM438223">
+    <Status database="GEO">
+      <Submission-Date>2009-08-11</Submission-Date>
+      <Release-Date>2009-10-30</Release-Date>
+      <Last-Update-Date>2010-09-09</Last-Update-Date>
+    </Status>
+    <Title>Replicate 2</Title>
+    <Accession database="GEO">GSM438223</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild-type</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>mutant</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+delta pepD
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization buffer (5x SSC, 0.1% SDS, 50% formamide) was added, and samples were hybridized using a Tecan HS 400 Pro hybridization station.  Slides were pre-hybridized (1% BSA, 0.1% SDS, 4x SSC) for 45min. Slides were washed sequentially using 2x SSC 0.1% SDS, 1x SSC, 0.2x SSC, and 0.05x SSC.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned using a GenePix 2500 scanner.
+    </Scan-Protocol>
+    <Description>
+Analysis used wild-type RNA as a control to compare against RNA obtained from pepD deletion strain
+    </Description>
+    <Data-Processing>
+Scanned images were processed and normalized using Scanalyze software.  Data output was processed using MS Excel and SAM.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM438nnn/GSM438223/GSM438223.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratios (pepD/wild-type)</Description>
+      </Column>
+    <External-Data rows="5109">
+GSM438223-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM438224">
+    <Status database="GEO">
+      <Submission-Date>2009-08-11</Submission-Date>
+      <Release-Date>2009-10-30</Release-Date>
+      <Last-Update-Date>2010-09-09</Last-Update-Date>
+    </Status>
+    <Title>Dye-Flip Replicate 2</Title>
+    <Accession database="GEO">GSM438224</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild-type</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>mutant</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+delta pepD
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization buffer (5x SSC, 0.1% SDS, 50% formamide) was added, and samples were hybridized using a Tecan HS 400 Pro hybridization station.  Slides were pre-hybridized (1% BSA, 0.1% SDS, 4x SSC) for 45min. Slides were washed sequentially using 2x SSC 0.1% SDS, 1x SSC, 0.2x SSC, and 0.05x SSC.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned using a GenePix 2500 scanner.
+    </Scan-Protocol>
+    <Description>
+Analysis used wild-type RNA as a control to compare against RNA obtained from pepD deletion strain
+    </Description>
+    <Data-Processing>
+Scanned images were processed and normalized using Scanalyze software.  Data output was processed using MS Excel and SAM.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM438nnn/GSM438224/GSM438224.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratios (pepD/wild-type)</Description>
+      </Column>
+    <External-Data rows="5109">
+GSM438224-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM438225">
+    <Status database="GEO">
+      <Submission-Date>2009-08-11</Submission-Date>
+      <Release-Date>2009-10-30</Release-Date>
+      <Last-Update-Date>2010-09-09</Last-Update-Date>
+    </Status>
+    <Title>Replicate 3</Title>
+    <Accession database="GEO">GSM438225</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild-type</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>mutant</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="strain">
+delta pepD
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in standard 7H9 broth media until a desired OD600 of 0.4-0.6 was reached.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was fixed by treating the samples with RNAlater,and later extracted using RNAbee (Tel-test Inc).  Samples underwent phenol/chloroform extraction and isopropanol precipitation.  For clean up, samples were DNAse treated and purified using an RNeasy Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+8 ug of total RNA was primed with random decamers, then reverse transcribed for 2h at 50C using 400 U SuperScript III RTase (Invitrogen) in the presence of 10 mM each of dATP, dGTP, dTTP, 2 mM dCTP, and 1 mM Cy3/Cy5 dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization buffer (5x SSC, 0.1% SDS, 50% formamide) was added, and samples were hybridized using a Tecan HS 400 Pro hybridization station.  Slides were pre-hybridized (1% BSA, 0.1% SDS, 4x SSC) for 45min. Slides were washed sequentially using 2x SSC 0.1% SDS, 1x SSC, 0.2x SSC, and 0.05x SSC.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned using a GenePix 2500 scanner.
+    </Scan-Protocol>
+    <Description>
+Analysis used wild-type RNA as a control to compare against RNA obtained from pepD deletion strain
+    </Description>
+    <Data-Processing>
+Scanned images were processed and normalized using Scanalyze software.  Data output was processed using MS Excel and SAM.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM438nnn/GSM438225/GSM438225.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratios (pepD/wild-type)</Description>
+      </Column>
+    <External-Data rows="5109">
+GSM438225-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE17587">
+    <Status database="GEO">
+      <Submission-Date>2009-08-11</Submission-Date>
+      <Release-Date>2009-10-30</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>M. tuberculosis transcriptional profile of delta pepD strain vs wild-type strain</Title>
+    <Accession database="GEO">GSE17587</Accession>
+    <Pubmed-ID>20061478</Pubmed-ID>
+    <Summary>
+pepD is regulated by a 2CS, MprAB, and impacts upon the regulation of sigE, an important M.tb sigma factor.  Here we examine the global impact of gene regulation in a delta pepD mutant strain.
+    </Summary>
+    <Overall-Design>
+Analysis compares total RNA from early log growth cultures of both wild-type and a delta pepD strain.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM438221" />
+    <Sample-Ref ref="GSM438222" />
+    <Sample-Ref ref="GSM438223" />
+    <Sample-Ref ref="GSM438224" />
+    <Sample-Ref ref="GSM438225" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE17587/GSE17587_M_tuberculosis_4_H37Rv_scanalyze_annotation.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE17587/GSE17587_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/118519" />
+  </Series>
+
+</MINiML>

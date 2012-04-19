@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>SMD</First><Last>Staff</Last></Person>
+    <Email>array@genome.stanford.edu</Email>
+    <Phone>650-498-6012</Phone>
+    <Department>Stanford University, School of Medicine</Department>
+    <Organization>Stanford Microarray Database (SMD)</Organization>
+    <Address>
+      <Line>300 Pasteur Drive</Line>
+      <City>Stanford</City>
+      <State>CA</State>
+      <Zip-Code>94305</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://genome-www5.stanford.edu/</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Lisa</First><Last>Rickman</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Colin</First><Last>Scott</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5753">
+    <Status database="GEO">
+      <Submission-Date>2007-08-16</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2007-08-21</Last-Update-Date>
+    </Status>
+    <Title>Bacterial Microarray Group, St George’s Hospital Medical Tv_0_0 array</Title>
+    <Accession database="GEO">GPL5753</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+    <Manufacturer>Bacterial Microarray Group, St George’s Hospital Medical</Manufacturer>
+    <Manufacture-Protocol>
+Material is transferred from microtiter plate wells to the slide surface by an automated print head
+    </Manufacture-Protocol>
+    <Support>unknown</Support>
+    <Coating>unknown</Coating>
+    <Description>
+Array with 4624 features, in 16 zones, with 15655 biosequences representing 4592 reporters and 3924 composite sequences, with surface type unknown
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>COLUMN</Name>
+      </Column>
+      <Column position="3">
+        <Name>ROW</Name>
+      </Column>
+      <Column position="4">
+        <Name>ORF</Name>
+        <Description>Locus tag </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="5">
+        <Name>control</Name>
+      </Column>
+      <Column position="6">
+        <Name>POLYMER</Name>
+      </Column>
+      <Column position="7">
+        <Name>TYPE</Name>
+      </Column>
+      <Column position="8">
+        <Name>ORF_ID</Name>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="4624">
+GPL5753-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM219343">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant</Title>
+    <Accession database="GEO">GSM219343</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 7. Comparison between M. tuberculosis CPR like mutant and wild type. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219343/GSM219343.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219343-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219344">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 1</Title>
+    <Accession database="GEO">GSM219344</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 7. Comparison between M. tuberculosis wild type and CPR like mutant. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219344/GSM219344.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219344-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219345">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 2</Title>
+    <Accession database="GEO">GSM219345</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 7. Comparison between M. tuberculosis CPR like mutant and wild type. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219345/GSM219345.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219345-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219346">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 3</Title>
+    <Accession database="GEO">GSM219346</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 7. Comparison between M. tuberculosis wild type and CPR like mutant. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219346/GSM219346.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219346-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219347">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 4</Title>
+    <Accession database="GEO">GSM219347</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 7. Comparison between M. tuberculosis CPR like mutant and wild type. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219347/GSM219347.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219347-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219348">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 5</Title>
+    <Accession database="GEO">GSM219348</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 7. Comparison between M. tuberculosis wild type and CPR like mutant. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219348/GSM219348.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219348-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219349">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 6</Title>
+    <Accession database="GEO">GSM219349</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 7. Comparison between M. tuberculosis CPR like mutant and wild type. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219349/GSM219349.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219349-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219350">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 7</Title>
+    <Accession database="GEO">GSM219350</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 7. Comparison between M. tuberculosis wild type and CPR like mutant. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219350/GSM219350.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219350-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219351">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 8</Title>
+    <Accession database="GEO">GSM219351</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 7. Comparison between M. tuberculosis CPR like mutant and wild type. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219351/GSM219351.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219351-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219352">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 9</Title>
+    <Accession database="GEO">GSM219352</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 7. Comparison between M. tuberculosis wild type and CPR like mutant. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219352/GSM219352.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219352-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219353">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 10</Title>
+    <Accession database="GEO">GSM219353</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 6 of 7. Comparison between M. tuberculosis CPR like mutant and wild type. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219353/GSM219353.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219353-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219354">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 11</Title>
+    <Accession database="GEO">GSM219354</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 6 of 7. Comparison between M. tuberculosis wild type and CPR like mutant. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219354/GSM219354.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219354-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219355">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 12</Title>
+    <Accession database="GEO">GSM219355</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 7 of 7. Comparison between M. tuberculosis CPR like mutant and wild type. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219355/GSM219355.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219355-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219356">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Comparison between M. tuberculosis wild type and M. tuberculosis CPR like mutant. Rep 13</Title>
+    <Accession database="GEO">GSM219356</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew in roller bottles containing Dubos medium</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3676 (H37Rv-DeltaRv3676">
+:hyg)
+      </Characteristics>
+      <Treatment-Protocol>
+RNA was treated twice with RNase-free DNase (Roche) in the presence of 1 unit ml-1 RNasin ribonuclease inhibitor (Promega), 20 mM sodium acetate, 10 mM magnesium chloride and 10 mM sodium chloride
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in Dubos medium (supplemented with 0.2% v/v glycerol, 4% v/v Dubos medium albumin) in roller bottles at 37 C. Growth was measured at OD600 and bacteria were harvested at mid-exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using a Hybaid RNA isolation kit (Hybaid). RNA was purified using RNeasy columns (Qiagen) between treatments. RNA was checked for DNA contamination by PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently labelled cDNA copies of total RNA (5Ð10 ug) were generated by direct incorporation of Cy3- or Cy5-labelled dCTP (Amersham) using 6 ug of random hexamers together with 500 units Superscript RNase H- reverse transcriptase (GibcoBRL), 1x first-strand buffer, 10 mM DTT, dNTPs (40 uM dCTP, 100 uM each of dATP, dGTP, dTTP) and 1.5 nmol Cy3 or Cy5 labelled dCTP. RNA and random primers were heated at 95 C for 5 min in a final volume of 11 ul, snap cooled before adding the remaining components. Incubation was at 25 C for 10 min, followed by 42 C for 90 min. The two labelled samples to be compared (Cy3 and Cy5) were combined and purified using MinElute columns (Qiagen) and the pellets resuspended in 12.5 ul of water, 4x SSC, 0.3% SDS, heated at 95 C for 2 min.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray experiments were performed using a whole genome microarray of M. tuberculosis H37Rv prepared in the laboratory of Dr P. Butcher (St. George's Hospital Medical School, London).  Hybridization of microarray slides was performed under a coverslip as described (Wilson et al., 1999) in hybridization chambers at 60 C for 16Ð24 h and washed in 1x SSC, 0.005% SDS for 2 min and in 0.06x SSC for 4 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray slides were scanned for fluorescence with an Axon 4000A microarray scanner, local background subtracted using the GenePix software and normalized equivalent readings were plotted using GeneSpring software (Silicon Genetics).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 7 of 7. Comparison between M. tuberculosis wild type and CPR like mutant. Cell culture grew in Dubos medium.
+    </Description>
+    <Data-Processing>
+Data were obtained from at least six slides, including dye swaps. To account for dye swap, the signal channel and control channel measurements for dye swap samples were reversed. Each gene's measured intensity (wild type) was divided by its control channel value (mutant) in each sample to give the ratio of expression; if the control channel were below 10 then 10 was used instead. If the control channel and the signal channel were both below 10 then no data was reported. The 50th percentile of all measurements was used as a positive control for each sample; each measurement for each gene was divided by this synthetic positive control. The percentile was calculated using only genes marked present. This normalizes each array so that the 50th percentile/median measurement (ratio) for each array is equal to 1 and ensures that any systematic effects are removed (caused by scanning, labelling, hybridization, etc.), enabling valid comparison between different arrays as each array is scaled/transformed to have the same median value. Genes were defined as being differentially regulated where there was a greater than twofold change in at least four of the hybridizations and where P &lt; 0.05 by Student's t-test. The t-test was conducted on the six experiments as a group. To limit the list of genes it was arbitrarily limited to those with a 2.4-fold increase or decrease in expression.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5753" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219356/GSM219356.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4624">
+GSM219356-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE8830">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>A member of the cAMP receptor protein family of transcription regulators in M. tuberculosis is required for virulence</Title>
+    <Accession database="GEO">GSE8830</Accession>
+    <Pubmed-ID>15882420</Pubmed-ID>
+    <Summary>
+Deletion of gene Rv3676 in Mycobacterium tuberculosis coding for a transcription factor belonging to the cAMP receptor protein (CRP) family caused growth defects in laboratory medium, in bone marrow-derived macrophages and in a mouse model of tuberculosis. Transcript profiling of M. tuberculosis grown in vitro identified 16 genes with significantly altered expression in the mutant compared with the wild type. Analysis of the DNA sequences upstream of the corresponding open reading frames revealed that 12 possessed sequences related to a consensus CRP binding site that could represent the sites of action of Rv3676. These included rpfA, lprQ, whiB1 and ahpC among genes with enhanced expression in the wild type, and Rv3616c-Rv3613c, Rv0188 and lipQ among genes exhibiting enhanced expression in the mutant. The activity of an rpfA::lacZ promoter fusion was lowered in the Rv3676 mutant and by mutation of the predicted Rv3676 binding site. Moreover, the product of Rv3676 (isolated as a TrxA fusion protein) interacted specifically with the rpfA promoter, and binding was inhibited by mutation of the Rv3676 site. Although Rv3676 retains four of the six amino acid residues that bind cAMP in Escherichia coli CRP addition of cAMP did not enhance Rv3676 binding at the rpfA promoter in vitro. In summary, it has been shown that Rv3676 is a direct regulator of rpfA expression, and because rpfA codes for a resuscitation promoting factor this may implicate Rv3676 in reactivation of dormant M. tuberculosis infections.
+Keywords: strain or line design, genetic modification design, and comparative genome hybridization design
+    </Summary>
+    <Overall-Design>
+Six samples were analyzed. The quality controls were biological replicate and technical replicate and dye swap quality control
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM219343" />
+    <Sample-Ref ref="GSM219344" />
+    <Sample-Ref ref="GSM219345" />
+    <Sample-Ref ref="GSM219346" />
+    <Sample-Ref ref="GSM219347" />
+    <Sample-Ref ref="GSM219348" />
+    <Sample-Ref ref="GSM219349" />
+    <Sample-Ref ref="GSM219350" />
+    <Sample-Ref ref="GSM219351" />
+    <Sample-Ref ref="GSM219352" />
+    <Sample-Ref ref="GSM219353" />
+    <Sample-Ref ref="GSM219354" />
+    <Sample-Ref ref="GSM219355" />
+    <Sample-Ref ref="GSM219356" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE8830/GSE8830_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/102161" />
+  </Series>
+
+</MINiML>

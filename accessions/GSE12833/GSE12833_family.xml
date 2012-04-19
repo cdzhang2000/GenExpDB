@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Hideki</First><Last>Hirakawa</Last></Person>
+    <Email>hirakawa@grt.kyushu-u.ac.jp</Email>
+    <Phone>+81-92-642-3043</Phone>
+    <Fax>+81-92-642-3043</Fax>
+    <Department>Faculty of Agriculture</Department>
+    <Organization>Kyushu University</Organization>
+    <Address>
+      <Line>6-10-1, Hakozaki, Higashi-ku</Line>
+      <City>Fukuoka</City>
+      <State>Fukuoka</State>
+      <Postal-Code>812-8581</Postal-Code>
+      <Country>Japan</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Shimizu</First><Last>Tohru</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Kaoru</First><Last>Ohtani</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Satoru</First><Last>Kuhara</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Kosuke</First><Last>Tashiro</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Kiyoshi</First><Last>Yamamoto</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Akiko</First><Last>Enomoto</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL7332">
+    <Status database="GEO">
+      <Submission-Date>2008-09-18</Submission-Date>
+      <Release-Date>2009-09-17</Release-Date>
+      <Last-Update-Date>2009-09-17</Last-Update-Date>
+    </Status>
+    <Title>Kyushu University Clostridium perfringens strain 13 DNA 27K microarray version 1</Title>
+    <Accession database="GEO">GPL7332</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+    <Manufacturer>Molecular Gene Technics, Department of Genetic Resources Technology, Faculty of Agriculture, Kyushu University, Fukuoka, Japan.</Manufacturer>
+    <Manufacture-Protocol>
+2723 genes and 144 intergenic regions of strain 13 were amplified by PCR with gene-specific primers and PCR products were confirmed by gel electrophoresis
+In total, 2867 probes were spotted onto poly-L-Lysine coated glass slides in twice (SD10011; Matsunami Glass Ind., Osaka, Japan) using SPBIO (Hitachi Software Engineering, Tokyo, Japan).
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>poly-L-lysine</Coating>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Clostridium perfringens str. 13[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE SYMBOL</Name>
+        <Description>CPE (ORF in chromosome), PCP (ORF in plasmid), IGR (intergenic region)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DESCRIPTION</Name>
+      </Column>
+    <External-Data rows="2660">
+GPL7332-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM322162">
+    <Status database="GEO">
+      <Submission-Date>2008-09-18</Submission-Date>
+      <Release-Date>2009-09-17</Release-Date>
+      <Last-Update-Date>2008-09-25</Last-Update-Date>
+    </Status>
+    <Title>VirRS mutant vs WT at 1.5 h</Title>
+    <Accession database="GEO">GSM322162</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13, wild type, 1.5 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+Wild type
+      </Characteristics>
+      <Characteristics>
+1.5 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>TS133, virR/virS mutant, 1.5 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+virR/virS mutant
+      </Characteristics>
+      <Characteristics>
+1.5 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization solution (25 μl of Cy-dye-labeled cDNA solution, 10 μl of x20 SSC, 3 μl of water, and 2 μl of 10% SDS) was poured onto the slide glass and covered with a cover-glass with a gap (Matsunami Glass). The slide was inserted into the hybridization chamber, and hybridization was performed at 60 °C overnight.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an FLA-8000 scanner (Fuji Film, Japan). The density of the scanned spots was measured by ArrayVision software (Imaging Research, USA)
+    </Scan-Protocol>
+    <Description>
+VirRS mutant vs WT at 1.5 h
+    </Description>
+    <Data-Processing>
+Normalized by the median of the raw intensities for all spots in each control and sample. LOWESS normalization was performed. GeneSpring software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7332" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322162/GSM322162_TS133_strain_13_1.5_h_exp1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322162/GSM322162_TS133_strain_13_1.5_h_exp2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322162/GSM322162_TS133_strain_13_1.5_h_exp3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>TS133/strain 13 1.5 h (control)</Name>
+      </Column>
+      <Column position="4">
+        <Name>TS133/strain 13 1.5 h (sample)</Name>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+    <External-Data rows="2660">
+GSM322162-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322163">
+    <Status database="GEO">
+      <Submission-Date>2008-09-18</Submission-Date>
+      <Release-Date>2009-09-17</Release-Date>
+      <Last-Update-Date>2008-09-25</Last-Update-Date>
+    </Status>
+    <Title>VirRS mutant vs WT at 2 h</Title>
+    <Accession database="GEO">GSM322163</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13, wild type, 2 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+Wild type
+      </Characteristics>
+      <Characteristics>
+2 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>TS133, virR/virS mutant, 2 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+virR/virS mutant
+      </Characteristics>
+      <Characteristics>
+2 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization solution (25 μl of Cy-dye-labeled cDNA solution, 10 μl of x20 SSC, 3 μl of water, and 2 μl of 10% SDS) was poured onto the slide glass and covered with a cover-glass with a gap (Matsunami Glass). The slide was inserted into the hybridization chamber, and hybridization was performed at 60 °C overnight.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an FLA-8000 scanner (Fuji Film, Japan). The density of the scanned spots was measured by ArrayVision software (Imaging Research, USA)
+    </Scan-Protocol>
+    <Description>
+VirRS mutant vs WT at 2 h
+    </Description>
+    <Data-Processing>
+Normalized by the median of the raw intensities for all spots in each control and sample. LOWESS normalization was performed. GeneSpring software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7332" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322163/GSM322163_TS133_strain_13_2_h_exp1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322163/GSM322163_TS133_strain_13_2_h_exp2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322163/GSM322163_TS133_strain_13_2_h_exp3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>TS133/strain 13 2 h (control)</Name>
+      </Column>
+      <Column position="4">
+        <Name>TS133/strain 13 2 h (sample)</Name>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+    <External-Data rows="2660">
+GSM322163-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322164">
+    <Status database="GEO">
+      <Submission-Date>2008-09-18</Submission-Date>
+      <Release-Date>2009-09-17</Release-Date>
+      <Last-Update-Date>2008-09-25</Last-Update-Date>
+    </Status>
+    <Title>VirRS mutant vs WT at 2.5 h</Title>
+    <Accession database="GEO">GSM322164</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13, wild type, 2.5 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+Wild type
+      </Characteristics>
+      <Characteristics>
+2.5 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>TS133, virR/virS mutant, 2.5 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+virR/virS mutant
+      </Characteristics>
+      <Characteristics>
+2.5 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization solution (25 μl of Cy-dye-labeled cDNA solution, 10 μl of x20 SSC, 3 μl of water, and 2 μl of 10% SDS) was poured onto the slide glass and covered with a cover-glass with a gap (Matsunami Glass). The slide was inserted into the hybridization chamber, and hybridization was performed at 60 °C overnight.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an FLA-8000 scanner (Fuji Film, Japan). The density of the scanned spots was measured by ArrayVision software (Imaging Research, USA)
+    </Scan-Protocol>
+    <Description>
+VirRS mutant vs WT at 2.5 h
+    </Description>
+    <Data-Processing>
+Normalized by the median of the raw intensities for all spots in each control and sample. LOWESS normalization was performed. GeneSpring software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7332" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322164/GSM322164_TS133_strain_13_2.5_h_exp1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322164/GSM322164_TS133_strain_13_2.5_h_exp2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322164/GSM322164_TS133_strain_13_2.5_h_exp3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>TS133/strain 13 2.5 h (control)</Name>
+      </Column>
+      <Column position="4">
+        <Name>TS133/strain 13 2.5 h (sample)</Name>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+    <External-Data rows="2660">
+GSM322164-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322165">
+    <Status database="GEO">
+      <Submission-Date>2008-09-18</Submission-Date>
+      <Release-Date>2009-09-17</Release-Date>
+      <Last-Update-Date>2008-09-25</Last-Update-Date>
+    </Status>
+    <Title>VR-RNA mutant vs WT at 1.5 h</Title>
+    <Accession database="GEO">GSM322165</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13, wild type, 1.5 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+Wild type
+      </Characteristics>
+      <Characteristics>
+1.5 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>TS140, VR-RNA mutant, 1.5 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+VR-RNA mutant
+      </Characteristics>
+      <Characteristics>
+1.5 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization solution (25 μl of Cy-dye-labeled cDNA solution, 10 μl of x20 SSC, 3 μl of water, and 2 μl of 10% SDS) was poured onto the slide glass and covered with a cover-glass with a gap (Matsunami Glass). The slide was inserted into the hybridization chamber, and hybridization was performed at 60 °C overnight.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an FLA-8000 scanner (Fuji Film, Japan). The density of the scanned spots was measured by ArrayVision software (Imaging Research, USA)
+    </Scan-Protocol>
+    <Description>
+VR-RNA mutant vs WT at 1.5 h
+    </Description>
+    <Data-Processing>
+Normalized by the median of the raw intensities for all spots in each control and sample. LOWESS normalization was performed. GeneSpring software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7332" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322165/GSM322165_TS140_strain_13_2_h_exp1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322165/GSM322165_TS140_strain_13_2_h_exp2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322165/GSM322165_TS140_strain_13_2_h_exp3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>TS140/strain 13 1.5 h (control)</Name>
+      </Column>
+      <Column position="4">
+        <Name>TS140/strain 13 1.5 h (sample)</Name>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+    <External-Data rows="2660">
+GSM322165-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322166">
+    <Status database="GEO">
+      <Submission-Date>2008-09-18</Submission-Date>
+      <Release-Date>2009-09-17</Release-Date>
+      <Last-Update-Date>2008-09-25</Last-Update-Date>
+    </Status>
+    <Title>VR-RNA mutant vs WT at 2 h</Title>
+    <Accession database="GEO">GSM322166</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13, wild type, 2 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+Wild type
+      </Characteristics>
+      <Characteristics>
+2 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>TS140, VR-RNA mutant, 2 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+VR-RNA mutant
+      </Characteristics>
+      <Characteristics>
+2 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization solution (25 μl of Cy-dye-labeled cDNA solution, 10 μl of x20 SSC, 3 μl of water, and 2 μl of 10% SDS) was poured onto the slide glass and covered with a cover-glass with a gap (Matsunami Glass). The slide was inserted into the hybridization chamber, and hybridization was performed at 60 °C overnight.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an FLA-8000 scanner (Fuji Film, Japan). The density of the scanned spots was measured by ArrayVision software (Imaging Research, USA)
+    </Scan-Protocol>
+    <Description>
+VR-RNA mutant vs WT at 2 h
+    </Description>
+    <Data-Processing>
+Normalized by the median of the raw intensities for all spots in each control and sample. LOWESS normalization was performed. GeneSpring software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7332" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322166/GSM322166_TS140_strain_13_1.5_h_exp1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322166/GSM322166_TS140_strain_13_1.5_h_exp2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322166/GSM322166_TS140_strain_13_1.5_h_exp3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>TS140/strain 13 2 h (control)</Name>
+      </Column>
+      <Column position="4">
+        <Name>TS140/strain 13 2 h (sample)</Name>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+    <External-Data rows="2660">
+GSM322166-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322167">
+    <Status database="GEO">
+      <Submission-Date>2008-09-18</Submission-Date>
+      <Release-Date>2009-09-17</Release-Date>
+      <Last-Update-Date>2008-09-25</Last-Update-Date>
+    </Status>
+    <Title>VR-RNA mutant vs WT at 2.5 h</Title>
+    <Accession database="GEO">GSM322167</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>strain 13, wild type, 2.5 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+Wild type
+      </Characteristics>
+      <Characteristics>
+2.5 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>TS140, VR-RNA mutant, 2.5 h from strart of culture</Source>
+      <Organism taxid="195102">Clostridium perfringens str. 13</Organism>
+      <Characteristics>
+VR-RNA mutant
+      </Characteristics>
+      <Characteristics>
+2.5 h from strart of culture
+      </Characteristics>
+      <Growth-Protocol>
+strains  were cultured in GAM (Gifu Anaerobic Medium)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using hot-phenol method
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of total RNA from was mixed with 2 µl of random primers (d(N)6, d(N)9, 0.5 µg/µl each, Takara, Japan) and adjusted to 22 µl with water. The solution was kept at 65°C for 5 min to denature the RNA. The annealing reaction was performed at 42°C for 5 min. The premix solution (18 µl) was mixed into RNA solution, and reverse transcription was performed at 42 °C for 60 min. The premix solution was a mixture of 8 µl of x5 power script reaction buffer, 4 µl of dNTPs (5 mM dATP, 5 mM dCTP, 5 mM dGTP, 2 mM dTTP, 3 mM amino-allyl dUTP (Sigma, USA)), 4 µl of 0.1 M DTT, 0.1 µl of RNase inhibitor (TakaRa, Japan), and 2 µl of Powerscript reverse transcriptase (BD Biosciences, USA). After incubation, 5 µl of 0.5M EDTA (pH 8.0) and 10 µl of 1 N NaOH were mixed, and the mixture was incubated at 65°C for 30 min to stop the reaction and remove the RNA templates, followed by the addition of 25 µl of 1 M Tris-Cl (pH 7.5) for neutralization. The mixture was transferred to a Microcon-30 filter (Millipore, USA) and centrifuged. The filter was washed with 100 µl of water 4 times, and the sample was eluted in 25 µl of water.  The solution was completely dried, re-suspended in 10 µl of 50 mM NaCO3, and incubated at room temperature (RT) for 3 min.  Ten microliters of Cy3 or Cy5 (GE Healthcare, USA) was mixed and incubated at RT for 60 min in a dark place. Ten microliters of Na2OH (Sigma) was added to remove un-reacted Cy-dye. Finally, the labeled product was purified by a QIAquick column (Qiagen, Germany).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization solution (25 μl of Cy-dye-labeled cDNA solution, 10 μl of x20 SSC, 3 μl of water, and 2 μl of 10% SDS) was poured onto the slide glass and covered with a cover-glass with a gap (Matsunami Glass). The slide was inserted into the hybridization chamber, and hybridization was performed at 60 °C overnight.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on an FLA-8000 scanner (Fuji Film, Japan). The density of the scanned spots was measured by ArrayVision software (Imaging Research, USA)
+    </Scan-Protocol>
+    <Description>
+VR-RNA mutant vs WT at 2.5 h
+    </Description>
+    <Data-Processing>
+Normalized by the median of the raw intensities for all spots in each control and sample. LOWESS normalization was performed. GeneSpring software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7332" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322167/GSM322167_TS140_strain_13_2.5_h_exp1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322167/GSM322167_TS140_strain_13_2.5_h_exp2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM322nnn/GSM322167/GSM322167_TS140_strain_13_2.5_h_exp3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>TS140/strain 13 2.5h (control)</Name>
+      </Column>
+      <Column position="4">
+        <Name>TS140/strain 13 2.5h (sample)</Name>
+      </Column>
+      <Column position="5">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy3/Cy5) representing sample/control</Description>
+      </Column>
+    <External-Data rows="2660">
+GSM322167-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE12833">
+    <Status database="GEO">
+      <Submission-Date>2008-09-18</Submission-Date>
+      <Release-Date>2009-09-17</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Effect of VirR/VirS-VR-RNA regulatory cascade on the expression of chromosomal genes of Clostridium perfringens</Title>
+    <Accession database="GEO">GSE12833</Accession>
+    <Pubmed-ID>19835966</Pubmed-ID>
+    <Summary>
+The microarrays were subjected to two-color hybridization using Cy5 and Cy3 dyes incorporated in the cDNAs synthesized from total RNA samples of strains.  We compared each gene’s transcription level between the wild-type (WT) strain 13 (labeled by Cy5) and the VirR-mutant strain (TS133) or VR-RNA-mutant strain (TS140) (both labeled by Cy3) on a single DNA microarray.
+
+Keywords: gene regulation in time course
+    </Summary>
+    <Overall-Design>
+Each sample represent data calculated from 3 to 4 biological  replicates of independent experiments. Each biological replicate contains duplicated data.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib1" position="5" />
+    <Contributor-Ref ref="contrib6" position="6" />
+    <Contributor-Ref ref="contrib7" position="7" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM322162" />
+    <Sample-Ref ref="GSM322163" />
+    <Sample-Ref ref="GSM322164" />
+    <Sample-Ref ref="GSM322165" />
+    <Sample-Ref ref="GSM322166" />
+    <Sample-Ref ref="GSM322167" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE12833/GSE12833_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/111143" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,1837 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Petros</First><Last>Karakousis</Last></Person>
+    <Email>petros@jhmi.edu</Email>
+    <Phone>410-502-8233</Phone>
+    <Fax>410-614-8173</Fax>
+    <Laboratory>Center for TB Research</Laboratory>
+    <Department>Medicine</Department>
+    <Organization>Johns Hopkins University School of Medicine</Organization>
+    <Address>
+      <Line>1550 Orleans St</Line>
+      <City>Baltimore</City>
+      <State>MD</State>
+      <Zip-Code>21231</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Petros</First><Middle>C</Middle><Last>Karakousis</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Ernest</First><Middle>P</Middle><Last>Williams</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL6020">
+    <Status database="GEO">
+      <Submission-Date>2007-10-18</Submission-Date>
+      <Release-Date>2007-10-22</Release-Date>
+      <Last-Update-Date>2007-10-22</Last-Update-Date>
+    </Status>
+    <Title>Colorado State University Mycobacterium Tuberculosis V2</Title>
+    <Accession database="GEO">GPL6020</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+    <Manufacturer>Colorado State University TB Vaccine Testing and Research NIH, NIAID Contract No. HHSN266200400091C</Manufacturer>
+    <Manufacture-Protocol>
+Oligonucleotide 70mers were generated from whole genome sequence within coding regions.  Features were designed to have similar hybridization temperatures.  Samples were spotted and pre-processed using standard procedures from the Brown lab at Stanford University School of Medicine
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Description>
+The oligo set represents 4505 70mer probes representing 3926 Open Reading Frames (ORFs) from the mycobacterium tuberculosis H37Rv strain and also representing 3811 ORFs from the CDC-1551 strain.  3932 probes were obtained from the sanger institute (http://www.sanger.ac.uk) representing H37Rv while 573 probes are designed from ORFs from the Institute for Genomic Research (http://www.tigr.org).  H37Rv has 3926 ORFs represented while CDC1551 has 3811 ORFs represented. Each oligo is designed to be within 5oC of 79oC using Tm=81.5+16.6*log[Na+]+41*(#G+#C)/Length-500/length with [Na]=0.1M and length equaling the total bases.  Oligo's are then screened for hairpin and cross-reactivity.
+    </Description>
+    <Web-Link>http://www.cvmbs.colostate.edu/microbiology/tb/top.htm</Web-Link>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GAL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL6020/GPL6020.gal.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>Master grouping of rows and columns during spotting coinciding with spotting pins</Description>
+      </Column>
+      <Column position="3">
+        <Name>Row</Name>
+        <Description>horizontally aligned spots</Description>
+      </Column>
+      <Column position="4">
+        <Name>Column</Name>
+        <Description>vertically aligned spots</Description>
+      </Column>
+      <Column position="5">
+        <Name>Type</Name>
+        <Description>Feature type (ORF, Negative_Control, Oligonucleotide_Control)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Name</Name>
+        <Description>name of transcription product</Description>
+      </Column>
+      <Column position="7">
+        <Name>ORF</Name>
+        <Description>Gene number for NCBI Genome NC_000962 </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="8">
+        <Name>ORGANISM</Name>
+        <Description>non-control spots represent organism Mycobacterium Tuberculosis H37rV</Description>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="4608">
+GPL6020-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM241391">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Log phase 2 hour 1ug/ml INH treated replicate 1</Title>
+    <Accession database="GEO">GSM241391</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>2 hour 1ug/ml INH treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with 1ug/ml Isoniazid for 2 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 2 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads.  Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively.  Samples were spun at 10kxg for 10 minutes at room temperature.  200ul Chloroform was added to each samples and mixed by shaking.  Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C.  The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C.  The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol.  RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>2 hour water treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with water for 2 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 2 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads.  Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively.  Samples were spun at 10kxg for 10 minutes at room temperature.  200ul Chloroform was added to each samples and mixed by shaking.  Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C.  The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C.  The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol.  RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker.  Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice.  Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier.  Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven.  Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software.  Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel. 
+    </Scan-Protocol>
+    <Description>
+These data represent a short term dose of a high concentration (10x MIC) of isoniazid to log phase cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241391/GSM241391.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241391-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241392">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Log phase 6 hour 1ug/ml INH treated replicate 1</Title>
+    <Accession database="GEO">GSM241392</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads.  Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively.  Samples were spun at 10kxg for 10 minutes at room temperature.  200ul Chloroform was added to each samples and mixed by shaking.  Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C.  The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C.  The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol.  RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads.  Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively.  Samples were spun at 10kxg for 10 minutes at room temperature.  200ul Chloroform was added to each samples and mixed by shaking.  Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C.  The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C.  The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol.  RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker.  Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice.  Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier.  Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven.  Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software.  Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel. 
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to log phase cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241392/GSM241392.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241392-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241431">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Log phase 2 hour 1ug/ml INH treated replicate 2</Title>
+    <Accession database="GEO">GSM241431</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>2 hour 1ug/ml INH treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with 1ug/ml Isoniazid for 2 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 2 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>2 hour water treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with water for 2 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 2 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a short term dose of a high concentration (10x MIC) of isoniazid to log phase cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241431/GSM241431.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241431-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241432">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Log phase 2 hour 1ug/ml INH treated replicate 3</Title>
+    <Accession database="GEO">GSM241432</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>2 hour 1ug/ml INH treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with 1ug/ml Isoniazid for 2 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 2 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>2 hour water treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with water for 2 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 2 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a short term dose of a high concentration (10x MIC) of isoniazid to log phase cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241432/GSM241432.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241432-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241433">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Log phase 6 hour 1ug/ml INH treated replicate 2</Title>
+    <Accession database="GEO">GSM241433</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to log phase cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241433/GSM241433.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241433-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241434">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Log phase 6 hour 1ug/ml INH treated replicate 3</Title>
+    <Accession database="GEO">GSM241434</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated log phase culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to log phase cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241434/GSM241434.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241434-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241437">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Log phase 2 hour 1ug/ml INH treated KatG knockout replicate 1</Title>
+    <Accession database="GEO">GSM241437</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated log phase KatG knockout culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv with KatG deletion grown to log phase and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG knockout stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated log phase KatG knockout culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv with KatG deletion grown to log phase and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG deletion stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to log phase KatG deletion cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241437/GSM241437.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241437-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241439">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Log phase 2 hour 1ug/ml INH treated KatG knockout replicate 2</Title>
+    <Accession database="GEO">GSM241439</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated log phase KatG knockout culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv with KatG deletion grown to log phase and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG knockout stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated log phase KatG knockout culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv with KatG deletion grown to log phase and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG deletion stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to log phase cultures of KatG deletion mutant in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241439/GSM241439.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241439-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241441">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Log phase 2 hour 1ug/ml INH treated KatG knockout replicate 3</Title>
+    <Accession database="GEO">GSM241441</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated log phase KatG knockout culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv with KatG deletion grown to log phase and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG knockout stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated log phase KatG knockout culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv with KatG deletion grown to log phase and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG deletion stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to log phase cultures of KatG deletion mutant in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241441/GSM241441.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241441-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241442">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Nutrient starved 2 hour 1ug/ml INH treated replicate 1</Title>
+    <Accession database="GEO">GSM241442</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated nutrient starved culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transfered into PBS, and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG knockout stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The cultures were then pelleted by centrifugation at 1800xg at room temperature and washed twice with 50ml PBS.  The pellet was resuspended in 50ml PBS with 0.05% Tween 80 and placed in a non-shaking 37C incubator.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated nutrient starved culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transferred to PBS, and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG deletion stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The cultures were then pelleted by centrifugation at 1800xg at room temperature and washed twice with 50ml PBS.  The pellet was resuspended in 50ml PBS with 0.05% Tween 80 and placed in a non-shaking 37C incubator.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to nutrient starved cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241442/GSM241442.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241442-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241443">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Nutrient starved 2 hour 1ug/ml INH treated replicate 2</Title>
+    <Accession database="GEO">GSM241443</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated nutrient starved culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transfered into PBS, and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG knockout stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The cultures were then pelleted by centrifugation at 1800xg at room temperature and washed twice with 50ml PBS.  The pellet was resuspended in 50ml PBS with 0.05% Tween 80 and placed in a non-shaking 37C incubator.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated nutrient starved culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transfered into PBS, and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis KatG deletion stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The cultures were then pelleted by centrifugation at 1800xg at room temperature and washed twice with 50ml PBS.  The pellet was resuspended in 50ml PBS with 0.05% Tween 80 and placed in a non-shaking 37C incubator.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy3 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to nutrient starved cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241443/GSM241443.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241443-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241450">
+    <Status database="GEO">
+      <Submission-Date>2007-11-06</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Oxygen depleted 6 hour 1ug/ml INH treated replicate 1</Title>
+    <Accession database="GEO">GSM241450</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated oxygen depleted culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transferred to progressive hypoxia model, and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added via a 23G needle to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml Dubose tween albumin broth with methylene blue and grown at 37C to OD600 of 0.5 at 225rpm. The cultures were then diluted to 10^4 cfu/ml and transferred to a 23ml test tube with sufficient volume to leave a 0.5vol head space.  The cultures were stoppered and incubated upright at 37C without shaking but with gentle stirring to keep the culture homogeneous but not disturb the air/liquid interface.  Hypoxia and entry into growth stage NRP2 was indicated by color change of the methylene blue to clear.  Treatment started the day after color change.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated oxygen depleted culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transferred to progressive hypoxia model, and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added via a 23G needle to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml Dubose tween albumin broth with methylene blue and grown at 37C to OD600 of 0.5 at 225rpm. The cultures were then diluted to 10^4 cfu/ml and transferred to a 23ml test tube with sufficient volume to leave a 0.5vol head space.  The cultures were stoppered and incubated upright at 37C without shaking but with gentle stirring to keep the culture homogeneous but not disturb the air/liquid interface.  Hypoxia and entry into growth stage NRP2 was indicated by color change of the methylene blue to clear.  Treatment started the day after color change.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to oxygen depleted cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241450/GSM241450.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241450-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241661">
+    <Status database="GEO">
+      <Submission-Date>2007-11-07</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Oxygen depleted 6 hour 1ug/ml INH treated replicate 2</Title>
+    <Accession database="GEO">GSM241661</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated oxygen depleted culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transferred to progressive hypoxia model, and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added via a 23G needle to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml Dubose tween albumin broth with methylene blue and grown at 37C to OD600 of 0.5 at 225rpm. The cultures were then diluted to 10^4 cfu/ml and transferred to a 23ml test tube with sufficient volume to leave a 0.5vol head space. The cultures were stoppered and incubated upright at 37C without shaking but with gentle stirring to keep the culture homogeneous but not disturb the air/liquid interface. Hypoxia and entry into growth stage NRP2 was indicated by color change of the methylene blue to clear. Treatment started the day after color change.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated oxygen depleted culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transferred to progressive hypoxia model, and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added via a 23G needle to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml Dubose tween albumin broth with methylene blue and grown at 37C to OD600 of 0.5 at 225rpm. The cultures were then diluted to 10^4 cfu/ml and transferred to a 23ml test tube with sufficient volume to leave a 0.5vol head space. The cultures were stoppered and incubated upright at 37C without shaking but with gentle stirring to keep the culture homogeneous but not disturb the air/liquid interface. Hypoxia and entry into growth stage NRP2 was indicated by color change of the methylene blue to clear. Treatment started the day after color change.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to oxygen depleted cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241661/GSM241661.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241661-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241662">
+    <Status database="GEO">
+      <Submission-Date>2007-11-07</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Oxygen depleted 6 hour 1ug/ml INH treated replicate 3</Title>
+    <Accession database="GEO">GSM241662</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 1ug/ml INH treated oxygen depleted culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transferred to progressive hypoxia model, and treated with 1ug/ml Isoniazid for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul Isoniazid was added via a 23G needle to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml Dubose tween albumin broth with methylene blue and grown at 37C to OD600 of 0.5 at 225rpm. The cultures were then diluted to 10^4 cfu/ml and transferred to a 23ml test tube with sufficient volume to leave a 0.5vol head space. The cultures were stoppered and incubated upright at 37C without shaking but with gentle stirring to keep the culture homogeneous but not disturb the air/liquid interface. Hypoxia and entry into growth stage NRP2 was indicated by color change of the methylene blue to clear. Treatment started the day after color change.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated oxygen depleted culture</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium Tuberculosis H37Rv grown to log phase, transferred to progressive hypoxia model, and treated with water for 6 hours.
+      </Characteristics>
+      <Treatment-Protocol>
+100ul water was added via a 23G needle to a final concentration of 1ug/ml and incubated for 6 hours prior to RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml Dubose tween albumin broth with methylene blue and grown at 37C to OD600 of 0.5 at 225rpm. The cultures were then diluted to 10^4 cfu/ml and transferred to a 23ml test tube with sufficient volume to leave a 0.5vol head space. The cultures were stoppered and incubated upright at 37C without shaking but with gentle stirring to keep the culture homogeneous but not disturb the air/liquid interface. Hypoxia and entry into growth stage NRP2 was indicated by color change of the methylene blue to clear. Treatment started the day after color change.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+treated culture was pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent a long term dose of a high concentration (10x MIC) of isoniazid to oxygen depleted cultures in-vitro.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241662/GSM241662.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241662-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241663">
+    <Status database="GEO">
+      <Submission-Date>2007-11-07</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mouse hollow fiber encapsulated 25mg/kg Isoniazid 3 dose 6 hour replicate 1</Title>
+    <Accession database="GEO">GSM241663</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 25mg/kg INH treated hollow fiber</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis encapsulated into polyvinyllidine fluoride fibers and implanted subcutaneously in mice.  Mice were administered 25mg/kg INH by gavage daily for three days fourteen days after implantation.  Hollow fibers were extracted 6 hours after the third dose.
+      </Characteristics>
+      <Treatment-Protocol>
+200ul Isoniazid was administered via a canula to a final concentration of 25mg/kg daily for three days.  Treatment ended and the hollow fibers were removed 6 hours after the third dose.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The culture was diluted to 10^5 cells/ml and encapsulated into a 2cm x 8mm polyvinyllidine fluoride fiber.  The fibers were implanted subcutaneously into nude immunocompetent SKH1 mice via an apical incision at the base of the skull and placed near each flank with three fibers per mouse.  The fibers were incubated in the mice for fourteen days prior to treatment.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The hollow fibers were extracted from the mice and the fiber contents were pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 500ul Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated hollow fiber</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis encapsulated into polyvinyllidine fluoride fibers and implanted subcutaneously in mice.  Mice were administered water by gavage daily for three days fourteen days after implantation.  Hollow fibers were extracted 6 hours after the third dose.
+      </Characteristics>
+      <Treatment-Protocol>
+200ul water was administered via a canula to a final concentration of 25mg/kg daily for three days.  Treatment ended and the hollow fibers were removed 6 hours after the third dose.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The culture was diluted to 10^5 cells/ml and encapsulated into a 2cm x 8mm polyvinyllidine fluoride fiber.  The fibers were implanted subcutaneously into nude immunocompetent SKH1 mice via an apical incision at the base of the skull and placed near each flank with three fibers per mouse.  The fibers were incubated in the mice for fourteen days prior to treatment.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The hollow fibers were extracted from the mice and the fiber contents were pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent exposure of Mycobacterium tuberculosis bacilli to Isoniazid in an in-vivo hollow fiber model of dormancy.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241663/GSM241663.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241663-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241664">
+    <Status database="GEO">
+      <Submission-Date>2007-11-07</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mouse hollow fiber encapsulated 25mg/kg Isoniazid 3 dose 6 hour replicate 2</Title>
+    <Accession database="GEO">GSM241664</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 25mg/kg INH treated hollow fiber</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis encapsulated into polyvinyllidine fluoride fibers and implanted subcutaneously in mice. Mice were administered 25mg/kg INH by gavage daily for three days fourteen days after implantation. Hollow fibers were extracted 6 hours after the third dose.
+      </Characteristics>
+      <Treatment-Protocol>
+200ul Isoniazid was administered via a canula to a final concentration of 25mg/kg daily for three days.  Treatment ended and the hollow fibers were removed 6 hours after the third dose.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The culture was diluted to 10^5 cells/ml and encapsulated into a 2cm x 8mm polyvinyllidine fluoride fiber.  The fibers were implanted subcutaneously into nude immunocompetent SKH1 mice via an apical incision at the base of the skull and placed near each flank with three fibers per mouse.  The fibers were incubated in the mice for fourteen days prior to treatment.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The hollow fibers were extracted from the mice and the fiber contents were pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 500ul Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated hollow fiber</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis encapsulated into polyvinyllidine fluoride fibers and implanted subcutaneously in mice. Mice were administered water by gavage daily for three days fourteen days after implantation. Hollow fibers were extracted 6 hours after the third dose.
+      </Characteristics>
+      <Treatment-Protocol>
+200ul water was administered via a canula to a final concentration of 25mg/kg daily for three days.  Treatment ended and the hollow fibers were removed 6 hours after the third dose.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The culture was diluted to 10^5 cells/ml and encapsulated into a 2cm x 8mm polyvinyllidine fluoride fiber.  The fibers were implanted subcutaneously into nude immunocompetent SKH1 mice via an apical incision at the base of the skull and placed near each flank with three fibers per mouse.  The fibers were incubated in the mice for fourteen days prior to treatment.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The hollow fibers were extracted from the mice and the fiber contents were pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent exposure of Mycobacterium tuberculosis bacilli to Isoniazid in an in-vivo hollow fiber model of dormancy.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241664/GSM241664.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241664-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM241665">
+    <Status database="GEO">
+      <Submission-Date>2007-11-07</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mouse hollow fiber encapsulated 25mg/kg Isoniazid 3 dose 6 hour replicate 3</Title>
+    <Accession database="GEO">GSM241665</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>6 hour 25mg/kg INH treated hollow fiber</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis encapsulated into polyvinyllidine fluoride fibers and implanted subcutaneously in mice. Mice were administered 25mg/kg INH by gavage daily for three days fourteen days after implantation. Hollow fibers were extracted 6 hours after the third dose.
+      </Characteristics>
+      <Treatment-Protocol>
+200ul Isoniazid was administered via a canula to a final concentration of 25mg/kg daily for three days.  Treatment ended and the hollow fibers were removed 6 hours after the third dose.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The culture was diluted to 10^5 cells/ml and encapsulated into a 2cm x 8mm polyvinyllidine fluoride fiber.  The fibers were implanted subcutaneously into nude immunocompetent SKH1 mice via an apical incision at the base of the skull and placed near each flank with three fibers per mouse.  The fibers were incubated in the mice for fourteen days prior to treatment.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The hollow fibers were extracted from the mice and the fiber contents were pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 500ul Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>6 hour water treated hollow fiber</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis encapsulated into polyvinyllidine fluoride fibers and implanted subcutaneously in mice. Mice were administered water by gavage daily for three days fourteen days after implantation. Hollow fibers were extracted 6 hours after the third dose.
+      </Characteristics>
+      <Treatment-Protocol>
+200ul water was administered via a canula to a final concentration of 25mg/kg daily for three days.  Treatment ended and the hollow fibers were removed 6 hours after the third dose.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+100ul Mycobacterium tuberculosis stock culture was added to 50ml 7H9 medium supplemented with OADC, glycerol, and Tween 80 and grown at 37C to OD600 of 0.5 at 225rpm.  The culture was diluted to 10^5 cells/ml and encapsulated into a 2cm x 8mm polyvinyllidine fluoride fiber.  The fibers were implanted subcutaneously into nude immunocompetent SKH1 mice via an apical incision at the base of the skull and placed near each flank with three fibers per mouse.  The fibers were incubated in the mice for fourteen days prior to treatment.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The hollow fibers were extracted from the mice and the fiber contents were pelleted by centrifugation at 1800xg for 10 minutes at 4C and resuspended in 1ml Tri Reagent (Sigma T9424) and 1/2 volume 0.1mm Silicon/Zirconia beads. Samples were alternately homogenized in a beadbeater and cooled on ice for 30 seconds and 1 minute respectively. Samples were spun at 10kxg for 10 minutes at room temperature. 200ul Chloroform was added to each samples and mixed by shaking. Samples were incubated for 15 minutes at room temperature and spun at 10kxg for 15 minutes at 4C. The aqueous phase was transferred to an equal volume of isopropanol and the RNA was precipitated overnight at -20C. The samples were spun at 12kxg for 20 minutes at 4C and washed with 1ml 70% ethanol. RNA was resuspended in 15ul DEPC treated water and analyzed by spectrophotometry.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Purified RNA samples were labeled with Cy5 using the Atlas Glass RNA labelling kit from Clontech according to the manufacturers instructions.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1ug human COT1 DNA was added to combined labeled RNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30ul water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in DI water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel.
+    </Scan-Protocol>
+    <Description>
+These data represent exposure of Mycobacterium tuberculosis bacilli to Isoniazid in an in-vivo hollow fiber model of dormancy.
+    </Description>
+    <Data-Processing>
+Genepix result files were loaded into the R statistical language using the limma package of bioconductor (www.bioconductor.org) for normalization and statistical analysis. Median spot intensities were calculated using the read.maimages function with weighted spots set to zero and normalized using the normalizeWithinArrays function with the nonlinear printtiploess normalizing algorithm and the normexp background correction algorithm with a correction factor of 50. A linear model using the lmFit function was then applied to the normalized data and a Bayesian method for determining differential expression was applied using the eBayes function.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6020" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM241nnn/GSM241665/GSM241665.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 1 versus channel 2</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM241665-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE9776">
+    <Status database="GEO">
+      <Submission-Date>2007-12-04</Submission-Date>
+      <Release-Date>2007-12-14</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>Effect of INH treatment on Mycobacterium tuberculosis gene expression in various dormancy models.</Title>
+    <Accession database="GEO">GSE9776</Accession>
+    <Pubmed-ID>18156607</Pubmed-ID>
+    <Summary>
+These data represent the expression patterns of Mycobacterium tuberculosis in progressive hypoxia, nutrient depletion, and in-vivo hollow fiber models of dormancy.  The assumptions are that the set of genes that respond to INH treatment during Log phase growth would not be differentially regulated during INH treatment in the dormancy models, and that the overall number of differentially regulated genes would be reduced do to the low metabolic state of the cells.
+Keywords: Dormancy Model Drug Response Comparison
+    </Summary>
+    <Overall-Design>
+Each condition was repeated as multiple biological replicates to reduce the number of false positives caused by temporal and human inconsistencies.  The in-vitro growth experiments represent a positive control and a core set of genes have previously been shown to respond to INH treatment under these conditions.  The KatG mutant represents a negative control.  In this case the drug is not converted to its active form by the catalase and thus any change in gene regulation would be caused by change in osmotic potential by the introduction of a soluble but non-metabolisable substrate.  The progressive hypoxia model is similar to the KatG mutant because oxygen is required for the activity of the gene, but the overall phenotypic state of the cell is non-replicative.  The nutrient depletion model is also non-replicative dormancy model in which the drug should be in its active state.  The hollow fiber model model is an in-vivo model and is hypothesized to be both low nutrient and low oxygen as well as contain a variety of other stresses.  This model is also marked by a different drug delivery system as it must first pass through the host.  Together these models should demonstrate Mycobacterium tuberculosis gene expression under different metabolic cell states as well as different drug states.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM241391" />
+    <Sample-Ref ref="GSM241392" />
+    <Sample-Ref ref="GSM241431" />
+    <Sample-Ref ref="GSM241432" />
+    <Sample-Ref ref="GSM241433" />
+    <Sample-Ref ref="GSM241434" />
+    <Sample-Ref ref="GSM241437" />
+    <Sample-Ref ref="GSM241439" />
+    <Sample-Ref ref="GSM241441" />
+    <Sample-Ref ref="GSM241442" />
+    <Sample-Ref ref="GSM241443" />
+    <Sample-Ref ref="GSM241450" />
+    <Sample-Ref ref="GSM241661" />
+    <Sample-Ref ref="GSM241662" />
+    <Sample-Ref ref="GSM241663" />
+    <Sample-Ref ref="GSM241664" />
+    <Sample-Ref ref="GSM241665" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE9776/GSE9776_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/103713" />
+  </Series>
+
+</MINiML>

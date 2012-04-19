@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Shamlan</First><Last>Reshamwala</Last></Person>
+    <Email>shamlan@iitb.ac.in</Email>
+    <Organization>Indian Institute of Technology Bombay</Organization>
+    <Address>
+      <Line>Powai</Line>
+      <City>Mumbai</City>
+      <Postal-Code>400076</Postal-Code>
+      <Country>India</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Shamlan</First><Middle>M</Middle><Last>Reshamwala</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Santosh</First><Middle>B</Middle><Last>Noronha</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL8701">
+    <Status database="GEO">
+      <Submission-Date>2009-06-11</Submission-Date>
+      <Release-Date>2009-06-20</Release-Date>
+      <Last-Update-Date>2010-12-29</Last-Update-Date>
+    </Status>
+    <Title>Agilent Escherichia coli 15K array</Title>
+    <Accession database="GEO">GPL8701</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Agilent</Manufacturer>
+    <Manufacture-Protocol>
+Agilent's E. coli Custom Array (8*15k)(AMADID: 19439).
+    </Manufacture-Protocol>
+    <Description>
+Agilent-019439
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Relation type="Alternative to" target="GPL11366" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Row</Name>
+        <Description>The horizontal row of spots is the row</Description>
+      </Column>
+      <Column position="3">
+        <Name>Col</Name>
+        <Description>The vertical row of spots is the column</Description>
+      </Column>
+      <Column position="4">
+        <Name>GB_RANGE</Name>
+        <Description>GENOME_ACC[start..end]</Description>
+      </Column>
+      <Column position="5">
+        <Name>ORF</Name>
+        <Description>Gene name  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND NC_000913.2</Link-Suffix>
+      </Column>
+      <Column position="6">
+        <Name>GENOME_ACC</Name>
+        <Description>RefSeq genome accession </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="7">
+        <Name>GeneName</Name>
+      </Column>
+      <Column position="8">
+        <Name>accessions</Name>
+        <Description>This refers to the genes</Description>
+      </Column>
+      <Column position="9">
+        <Name>chr_coord</Name>
+        <Description>This provides the coordinates of the genes on the genome</Description>
+      </Column>
+      <Column position="10">
+        <Name>SEQUENCE</Name>
+        <Description>Sequence of the oligonucleotide</Description>
+      </Column>
+      <Column position="11">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="15744">
+GPL8701-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM419103">
+    <Status database="GEO">
+      <Submission-Date>2009-06-19</Submission-Date>
+      <Release-Date>2009-06-20</Release-Date>
+      <Last-Update-Date>2009-06-19</Last-Update-Date>
+    </Status>
+    <Title>biofilm, cra mutant, rep 1</Title>
+    <Accession database="GEO">GSM419103</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli MG1655 cra mutant</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12
+      </Characteristics>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Characteristics tag="mutation">
+cra deletion
+      </Characteristics>
+      <Treatment-Protocol>
+The cells were scraped off the plate after incubation was complete. 500 μl RNAlater (Ambion) was added to stabilize RNA, and stored at 4°C till further processing.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 wild type and cra mutant cells were cultured for 48 hours at 26 degC on colony-forming antigen (CFA) agar plates.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RNeasy Minikit (Qiagen) according to the manufacturer’s instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were labelled using the Agilent Low Input RNA amplification kit (Agilent, Cat# 5184-3523), and purified using RNeasy mini kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli MG1655 wild type</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12
+      </Characteristics>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Treatment-Protocol>
+The cells were scraped off the plate after incubation was complete. 500 μl RNAlater (Ambion) was added to stabilize RNA, and stored at 4°C till further processing.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 wild type and cra mutant cells were cultured for 48 hours at 26 degC on colony-forming antigen (CFA) agar plates.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RNeasy Minikit (Qiagen) according to the manufacturer’s instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were labelled using the Agilent Low Input RNA amplification kit (Agilent, Cat# 5184-3523), and purified using RNeasy mini kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was done using Agilent’s in-situ hybridization kit (5184-3568).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Microarray Scanner was used.
+    </Scan-Protocol>
+    <Description>
+cra  deletion mutant vs. wild type
+    </Description>
+    <Data-Processing>
+Data from the images was extracted using Feature Extraction software of Agilent. Data was normalized using intensity-dependent (Lowess) normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8701" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM419nnn/GSM419103/GSM419103.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log10 ratio Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM419103-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM419104">
+    <Status database="GEO">
+      <Submission-Date>2009-06-19</Submission-Date>
+      <Release-Date>2009-06-20</Release-Date>
+      <Last-Update-Date>2009-06-19</Last-Update-Date>
+    </Status>
+    <Title>biofilm, cra mutant, rep 2</Title>
+    <Accession database="GEO">GSM419104</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli MG1655 wild type</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12
+      </Characteristics>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Treatment-Protocol>
+The cells were scraped off the plate after incubation was complete. 500 μl RNAlater (Ambion) was added to stabilize RNA, and stored at 4°C till further processing.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 wild type and cra mutant cells were cultured for 48 hours at 26 degC on colony-forming antigen (CFA) agar plates.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RNeasy Minikit (Qiagen) according to the manufacturer’s instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were labelled using the Agilent Low Input RNA amplification kit (Agilent, Cat# 5184-3523), and purified using RNeasy mini kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli MG1655 cra mutant</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12
+      </Characteristics>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Characteristics tag="mutation">
+cra deletion
+      </Characteristics>
+      <Treatment-Protocol>
+The cells were scraped off the plate after incubation was complete. 500 μl RNAlater (Ambion) was added to stabilize RNA, and stored at 4°C till further processing.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 wild type and cra mutant cells were cultured for 48 hours at 26 degC on colony-forming antigen (CFA) agar plates.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RNeasy Minikit (Qiagen) according to the manufacturer’s instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were labelled using the Agilent Low Input RNA amplification kit (Agilent, Cat# 5184-3523), and purified using RNeasy mini kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was done using Agilent’s in-situ hybridization kit (5184-3568).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Microarray Scanner was used.
+    </Scan-Protocol>
+    <Description>
+cra  deletion mutant vs. wild type
+    </Description>
+    <Data-Processing>
+Data from the images was extracted using Feature Extraction software of Agilent. Data was normalized using intensity-dependent (Lowess) normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8701" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM419nnn/GSM419104/GSM419104.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log10 ratio Cy3/Cy5</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized log10 ratio Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM419104-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE16726">
+    <Status database="GEO">
+      <Submission-Date>2009-06-19</Submission-Date>
+      <Release-Date>2009-06-20</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Effect of deletion of cra on E. coli biofilm formation</Title>
+    <Accession database="GEO">GSE16726</Accession>
+    <Pubmed-ID>21559929</Pubmed-ID>
+    <Summary>
+Transcriptional analysis of biofilm wild-type and cra mutant E. coli cells was carried out to determine the effect of cra on biofilm formation.
+    </Summary>
+    <Overall-Design>
+Samples were prepared in duplicates, with one of the replicates being dye swapped.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM419103" />
+    <Sample-Ref ref="GSM419104" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE16726/GSE16726_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/117491" />
+  </Series>
+
+</MINiML>

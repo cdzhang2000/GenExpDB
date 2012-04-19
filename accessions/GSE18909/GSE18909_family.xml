@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Brian</First><Last>Weinrick</Last></Person>
+    <Laboratory>Jacobs Lab, Price Center Room 569</Laboratory>
+    <Department>Microbiology &amp; Immunology</Department>
+    <Organization>Howard Hughes Medical Institute at Albert Einstein College of Medicine</Organization>
+    <Address>
+      <Line>1300 Morris Park Avenue</Line>
+      <City>Bronx</City>
+      <State>NY</State>
+      <Zip-Code>10461</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>PFGRC</First><Last>JCVI</Last></Person>
+    <Email>jli@jcvi.org</Email>
+    <Phone>3017957840</Phone>
+    <Department>PFGRC</Department>
+    <Organization>J. Craig Venter Institute</Organization>
+    <Address>
+      <Line>9704 Medical Center Drive</Line>
+      <City>Rockville</City>
+      <State>MD</State>
+      <Zip-Code>20850</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Catherine</First><Last>Vilcheze</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5774">
+    <Status database="GEO">
+      <Submission-Date>2007-08-27</Submission-Date>
+      <Release-Date>2007-10-10</Release-Date>
+      <Last-Update-Date>2007-11-07</Last-Update-Date>
+    </Status>
+    <Title>JCVI PFGRC Mycobacterium tuberculosis 22K v4 array designed primarily based on strain H37Rv</Title>
+    <Accession database="GEO">GPL5774</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+    <Manufacturer>JCVI PFGRC</Manufacturer>
+    <Manufacture-Protocol>
+4QMT, with arrayer GENETIX, machine cycles 0, pen id 0, pen cycles 0, operator 0, humidity control 0, humidity set point0.000
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Description>
+This set includes 4742 oligonucleotides, has 22176 spots distributed in 48 blocks.
+    </Description>
+    <Web-Link>http://pfgrc.jcvi.org/descriptionPages.shtml</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>SEQUENCE</Name>
+        <Description>Oligo sequence</Description>
+      </Column>
+      <Column position="3">
+        <Name>GC%</Name>
+        <Description>GC content of the sequence</Description>
+      </Column>
+      <Column position="4">
+        <Name>Internal Repeat Score</Name>
+        <Description>Internal repeat score</Description>
+      </Column>
+      <Column position="5">
+        <Name>Self-Annealing Score</Name>
+        <Description>Self-anneal score</Description>
+      </Column>
+      <Column position="6">
+        <Name>Primary Strain</Name>
+        <Description>The strain of primary target</Description>
+      </Column>
+      <Column position="7">
+        <Name>Primary Target</Name>
+        <Description>Locus primarily hit by the oligo</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Mycobacterium tuberculosis[organism]</Link-Suffix>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="10">
+        <Name>Common Name of Primary Target</Name>
+        <Description>Common name of primary target</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>Gene symbol</Description>
+      </Column>
+      <Column position="12">
+        <Name>Strain H37Rv</Name>
+        <Description>Target map of strain H37Rv</Description>
+      </Column>
+      <Column position="13">
+        <Name>Strain CDC1551</Name>
+        <Description>Target map of strain CDC1551</Description>
+      </Column>
+    <External-Data rows="5250">
+GPL5774-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM468504">
+    <Status database="GEO">
+      <Submission-Date>2009-11-05</Submission-Date>
+      <Release-Date>2010-02-24</Release-Date>
+      <Last-Update-Date>2009-12-21</Last-Update-Date>
+    </Status>
+    <Title>Nicotinamide Starve of Mycobacterium tuberculosis Defective for de novo NAD Biosysthesis Replicate 1</Title>
+    <Accession database="GEO">GSM468504</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>whole_organism from Mycobacterium tuberculosis CDC1551 Delta nadABC aka mc2 4968</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.01mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+CDC1551
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown with 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>whole_organism from Mycobacterium tuberculosis CDC1551 Delta nadABC aka mc2 4968</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.01mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+CDC1551
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown without 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slide was hybridized for 16 hours at 42 in water bath with volume of 60 uL in solution of standard gene expression hybridization solution, and blocked in standard prehybridization solution. After hybridization, the slide was washed with standard wash protocol.
+refer to PFGRC protocol SOP#M008
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+scanned with PMT voltage adjusted for maximum dynamic range
+    </Scan-Protocol>
+    <Description>
+effect of nicotinamide starvation in mycobacteria defective for de novo NAD biosynthesis
+    </Description>
+    <Data-Processing>
+In MIDAS, lowess normalization, standard deviation regularization, in-slide replicate analysis, one bad channel policy set to generous, all flags on
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="MEV">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM468nnn/GSM468504/GSM468504.mev.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log(Test (Channel B)/Reference (Channel A)) averaged.</Description>
+      </Column>
+    <External-Data rows="1448">
+GSM468504-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM468505">
+    <Status database="GEO">
+      <Submission-Date>2009-11-05</Submission-Date>
+      <Release-Date>2010-02-24</Release-Date>
+      <Last-Update-Date>2009-12-21</Last-Update-Date>
+    </Status>
+    <Title>Nicotinamide Starve of Mycobacterium tuberculosis Defective for de novo NAD Biosysthesis Replicate 2</Title>
+    <Accession database="GEO">GSM468505</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>whole_organism from Mycobacterium tuberculosis CDC1551 Delta nadABC aka mc2 4968</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.01mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+CDC1551
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown with 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>whole_organism from Mycobacterium tuberculosis CDC1551 Delta nadABC aka mc2 4968</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.01mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+CDC1551
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown without 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slide was hybridized for 16 hours at 42 in water bath with volume of 60 uL in solution of standard gene expression hybridization solution, and blocked in standard prehybridization solution. After hybridization, the slide was washed with standard wash protocol.
+refer to PFGRC protocol SOP#M008
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+scanned with PMT voltage adjusted for maximum dynamic range
+    </Scan-Protocol>
+    <Description>
+effect of nicotinamide starvation in mycobacteria defective for de novo NAD biosynthesis
+    </Description>
+    <Data-Processing>
+In MIDAS, lowess normalization, standard deviation regularization, in-slide replicate analysis, one bad channel policy set to generous, all flags on
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="MEV">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM468nnn/GSM468505/GSM468505.mev.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log(Test (Channel B)/Reference (Channel A)) averaged.</Description>
+      </Column>
+    <External-Data rows="2865">
+GSM468505-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM468506">
+    <Status database="GEO">
+      <Submission-Date>2009-11-05</Submission-Date>
+      <Release-Date>2010-02-24</Release-Date>
+      <Last-Update-Date>2009-12-21</Last-Update-Date>
+    </Status>
+    <Title>Nicotinamide Starve of Mycobacterium tuberculosis Defective for de novo NAD Biosysthesis Replicate 3</Title>
+    <Accession database="GEO">GSM468506</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>whole_organism from Mycobacterium tuberculosis CDC1551 Delta nadABC aka mc2 4968</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.01mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+CDC1551
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown with 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>whole_organism from Mycobacterium tuberculosis CDC1551 Delta nadABC aka mc2 4968</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.01mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+CDC1551
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown without 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slide was hybridized for 16 hours at 42 in water bath with volume of 60 uL in solution of standard gene expression hybridization solution, and blocked in standard prehybridization solution. After hybridization, the slide was washed with standard wash protocol.
+refer to PFGRC protocol SOP#M008
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+scanned with PMT voltage adjusted for maximum dynamic range
+    </Scan-Protocol>
+    <Description>
+effect of nicotinamide starvation in mycobacteria defective for de novo NAD biosynthesis
+    </Description>
+    <Data-Processing>
+In MIDAS, lowess normalization, standard deviation regularization, in-slide replicate analysis, one bad channel policy set to generous, all flags on
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="MEV">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM468nnn/GSM468506/GSM468506.mev.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log(Test (Channel B)/Reference (Channel A)) averaged.</Description>
+      </Column>
+    <External-Data rows="2582">
+GSM468506-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM468507">
+    <Status database="GEO">
+      <Submission-Date>2009-11-05</Submission-Date>
+      <Release-Date>2010-02-24</Release-Date>
+      <Last-Update-Date>2009-12-21</Last-Update-Date>
+    </Status>
+    <Title>Nicotinamide Starve of Mycobacterium bovis Defective for de novo NAD Biosysthesis Replicate 1</Title>
+    <Accession database="GEO">GSM468507</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>whole_organism from Mycobacterium bovis Ravenel Delta nadABC aka mc2 4957</Source>
+      <Organism taxid="1765">Mycobacterium bovis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.1mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+Delta
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown with 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>whole_organism from Mycobacterium bovis Ravenel Delta nadABC aka mc2 4957</Source>
+      <Organism taxid="1765">Mycobacterium bovis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.1mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+Delta
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown without 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slide was hybridized for 16 hours at 42 in water bath with volume of 60 uL in solution of standard gene expression hybridization solution, and blocked in standard prehybridization solution. After hybridization, the slide was washed with standard wash protocol.
+refer to PFGRC protocol SOP#M008
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+scanned with PMT voltage adjusted for maximum dynamic range
+    </Scan-Protocol>
+    <Description>
+effect of nicotinamide starvation in mycobacteria defective for de novo NAD biosynthesis
+    </Description>
+    <Data-Processing>
+In MIDAS, lowess normalization, standard deviation regularization, in-slide replicate analysis, one bad channel policy set to generous, all flags on
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="MEV">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM468nnn/GSM468507/GSM468507.mev.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log(Test (Channel B)/Reference (Channel A)) averaged.</Description>
+      </Column>
+    <External-Data rows="1201">
+GSM468507-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM468526">
+    <Status database="GEO">
+      <Submission-Date>2009-11-05</Submission-Date>
+      <Release-Date>2010-02-24</Release-Date>
+      <Last-Update-Date>2009-12-21</Last-Update-Date>
+    </Status>
+    <Title>Nicotinamide Starve of Mycobacterium bovis Defective for de novo NAD Biosysthesis Replicate 2</Title>
+    <Accession database="GEO">GSM468526</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>whole_organism from Mycobacterium bovis Ravenel Delta nadABC aka mc2 4957</Source>
+      <Organism taxid="1765">Mycobacterium bovis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.1mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+Delta
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown with 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>whole_organism from Mycobacterium bovis Ravenel Delta nadABC aka mc2 4957</Source>
+      <Organism taxid="1765">Mycobacterium bovis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.1mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+Delta
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown without 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slide was hybridized for 16 hours at 42 in water bath with volume of 60 uL in solution of standard gene expression hybridization solution, and blocked in standard prehybridization solution. After hybridization, the slide was washed with standard wash protocol.
+refer to PFGRC protocol SOP#M008
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+scanned with PMT voltage adjusted for maximum dynamic range
+    </Scan-Protocol>
+    <Description>
+effect of nicotinamide starvation in mycobacteria defective for de novo NAD biosynthesis
+    </Description>
+    <Data-Processing>
+In MIDAS, lowess normalization, standard deviation regularization, in-slide replicate analysis, one bad channel policy set to generous, all flags on
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="MEV">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM468nnn/GSM468526/GSM468526.mev.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log(Test (Channel B)/Reference (Channel A)) averaged.</Description>
+      </Column>
+    <External-Data rows="1380">
+GSM468526-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM468527">
+    <Status database="GEO">
+      <Submission-Date>2009-11-05</Submission-Date>
+      <Release-Date>2010-02-24</Release-Date>
+      <Last-Update-Date>2009-12-21</Last-Update-Date>
+    </Status>
+    <Title>Nicotinamide Starve of Mycobacterium bovis Defective for de novo NAD Biosysthesis Replicate 3</Title>
+    <Accession database="GEO">GSM468527</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>whole_organism from Mycobacterium bovis Ravenel Delta nadABC aka mc2 4957</Source>
+      <Organism taxid="1765">Mycobacterium bovis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.1mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+Delta
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown with 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>whole_organism from Mycobacterium bovis Ravenel Delta nadABC aka mc2 4957</Source>
+      <Organism taxid="1765">Mycobacterium bovis</Organism>
+      <Characteristics tag="phenotype">
+requires 0.1mg/L nicotinamide for growth
+      </Characteristics>
+      <Characteristics tag="strain">
+Delta
+      </Characteristics>
+      <Biomaterial-Provider>Catherine  Vilcheze at HHMI at Albert Einstein CoM
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+nucleic_acid_extraction: total RNA prep
+      </Treatment-Protocol>
+      <Growth-Protocol>
+grown without 20mg/L nicotinamide
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells are collected by centrifugation and resuspended in 1mL buffer RLT from a Qiagen RNeasy kit.  The suspension is transferred to Fast-Prep Blue Cap tubes and processed for 45 seconds at speed 6.5 in a Fast-Prep apparatus.  After a brief incubation on ice the debris is spun down and the supernatant (~750uL) is removed to a fresh microcentrifuge tube.  525uL absolute ethanol is added and the samples are applied to RNeasy columns in two applications.  At this point the RNA is purified as recommended by the Qiagen protocol.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+2 ug total RNA was used as template for reverse transcription with random hexamer primers and aminoallyl-dUTP in a 2:3 ratio to dTTP in the nucleotide mix.  After overnight incubation at 42°C, the reaction was stopped, RNA was hydrolyzed, and unincorporated nucleotides and free amines were removed with the Qiagen MinElute kit as per protocol, with amine-free phosphate wash and elution buffers.  cDNA concentration and purity were measured by Nanodrop.  Cy3 and Cy5 dyes were coupled to the aminoallyl-cDNA, which was then purified using a MinElute kit.  Probe concentration, purity, and dye incorporation were measured by Nanodrop.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slide was hybridized for 16 hours at 42 in water bath with volume of 60 uL in solution of standard gene expression hybridization solution, and blocked in standard prehybridization solution. After hybridization, the slide was washed with standard wash protocol.
+refer to PFGRC protocol SOP#M008
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+scanned with PMT voltage adjusted for maximum dynamic range
+    </Scan-Protocol>
+    <Description>
+effect of nicotinamide starvation in mycobacteria defective for de novo NAD biosynthesis
+    </Description>
+    <Data-Processing>
+In MIDAS, lowess normalization, standard deviation regularization, in-slide replicate analysis, one bad channel policy set to generous, all flags on
+    </Data-Processing>
+    <Platform-Ref ref="GPL5774" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="MEV">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM468nnn/GSM468527/GSM468527.mev.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log(Test (Channel B)/Reference (Channel A)) averaged.</Description>
+      </Column>
+    <External-Data rows="1352">
+GSM468527-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE18909">
+    <Status database="GEO">
+      <Submission-Date>2009-11-05</Submission-Date>
+      <Release-Date>2010-02-24</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Nicotinamide Starvation of Mycobacteria Defective for de novo NAD Biosynthesis</Title>
+    <Accession database="GEO">GSE18909</Accession>
+    <Pubmed-ID>20199601</Pubmed-ID>
+    <Summary>
+Mycobacteria can synthesize NAD+ using either the de novo biosynthesis pathway or the salvage pathway.  The deletion of the three genes involved specifically in the NAD+ de novo biosynthesis pathway in the human pathogen Mycobacterium tuberculosis had no effect on the growth of the strain in vivo.  In contrast, the same deletion in the bovine pathogen Mycobacterium bovis resulted in a strain that could not grow in vivo and could only grow in vitro with substantial nicotinamide supplmentation.  This striking difference was attributed to the known defect in the nicotinamidase PncA of M. bovis, since introducing the M. tuberculosis pncA gene into the M. bovis strain defective for de novo NAD+ biosynthesis restored growth in vitro and in vivo.  This study demonstrates that NAD+ starvation is a cidal event in mycobacteria and confirms that enzymes common to the de novo and salvage pathways may be good drug targets.  We also propose that simultaneously targeting both the salvage and the de novo NAD+ biosynthesis pathways represents a potentially effective way to treat infection with tubercle bacilli. To characterize the lethality induced by nicotinamide starvation transcriptional profiling of the auxotrophs was performed. Triplicate 50 mL cultures of M. tuberculosis and M. bovis Delta nadABC mutants were grown in 7H9 OADC glycerol 0.05% tween broth in 500 mL roller bottles to an OD600nm= 0.1 in a roller incubator at 37°C.  The cells were washed 1x in PBS and resuspended in 50 mL 7H9 OADC glycerol 0.05% tween broth with or without 20mg/L nicotinamide and returned to the incubator.  After 7 days, cultures were harvested.
+    </Summary>
+    <Overall-Design>
+Three biological replicates of each of two species with one dye-flip each
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM468504" />
+    <Sample-Ref ref="GSM468505" />
+    <Sample-Ref ref="GSM468506" />
+    <Sample-Ref ref="GSM468507" />
+    <Sample-Ref ref="GSM468526" />
+    <Sample-Ref ref="GSM468527" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE18909/GSE18909_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/121323" />
+  </Series>
+
+</MINiML>

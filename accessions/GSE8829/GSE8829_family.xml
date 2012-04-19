@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>SMD</First><Last>Staff</Last></Person>
+    <Email>array@genome.stanford.edu</Email>
+    <Phone>650-498-6012</Phone>
+    <Department>Stanford University, School of Medicine</Department>
+    <Organization>Stanford Microarray Database (SMD)</Organization>
+    <Address>
+      <Line>300 Pasteur Drive</Line>
+      <City>Stanford</City>
+      <State>CA</State>
+      <Zip-Code>94305</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://genome-www5.stanford.edu/</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Heui-Dong</First><Last>Park</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Martin</First><Middle>I</Middle><Last>Voskuil</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5714">
+    <Status database="GEO">
+      <Submission-Date>2007-08-06</Submission-Date>
+      <Release-Date>2007-08-11</Release-Date>
+      <Last-Update-Date>2012-03-06</Last-Update-Date>
+    </Status>
+    <Title>Mycobacterium tuberculosis 4.6k array_TB-Oligos</Title>
+    <Accession database="GEO">GPL5714</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+    <Manufacturer>Tina, Boussard. Stanford University, School of Medicine, Department of Genetics. Stanford, CA 94305 United States. Phone: 650-736-0077. Email:  boussard@genome.stanford.edu</Manufacturer>
+    <Manufacture-Protocol>
+Material is transferred from microtiter plate wells to the slide surface by an automated print head
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>unknown</Coating>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>COLUMN</Name>
+      </Column>
+      <Column position="3">
+        <Name>ROW</Name>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID_SMD</Name>
+      </Column>
+      <Column position="5">
+        <Name>ORF_SMD</Name>
+      </Column>
+      <Column position="6">
+        <Name>CONTROL</Name>
+      </Column>
+      <Column position="7">
+        <Name>POLYMER</Name>
+      </Column>
+      <Column position="8">
+        <Name>TYPE</Name>
+      </Column>
+      <Column position="9">
+        <Name>ORF</Name>
+        <Description>Locus tag; TubercuList accession number  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Mycobacterium tuberculosis H37Rv[organism]</Link-Suffix>
+      </Column>
+      <Column position="10">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="4608">
+GPL5714-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM219331">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis wild type</Title>
+    <Accession database="GEO">GSM219331</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 6. H37Rv (wild type) grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219331/GSM219331.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219331-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219332">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis wild type. Rep 1</Title>
+    <Accession database="GEO">GSM219332</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 6. H37Rv (wild type) grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219332/GSM219332.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219332-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219333">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis wild type. Rep 2</Title>
+    <Accession database="GEO">GSM219333</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 6. H37Rv (wild type) grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219333/GSM219333.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219333-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219334">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis wild type. Rep 3</Title>
+    <Accession database="GEO">GSM219334</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 6. H37Rv (wild type) grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219334/GSM219334.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219334-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219335">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis wild type. Rep 4</Title>
+    <Accession database="GEO">GSM219335</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 6. H37Rv (wild type) grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219335/GSM219335.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219335-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219336">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis wild type. Rep 5</Title>
+    <Accession database="GEO">GSM219336</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+H37Rv (ATCC 27294 wild_type)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 6 of 6. H37Rv (wild type) grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219336/GSM219336.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219336-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219337">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis dosR mutant</Title>
+    <Accession database="GEO">GSM219337</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 6. H37Rv dosR mutant grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219337/GSM219337.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219337-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219338">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis dosR mutant. Rep 1</Title>
+    <Accession database="GEO">GSM219338</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 6. H37Rv dosR mutant grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219338/GSM219338.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219338-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219339">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis dosR mutant. Rep 2</Title>
+    <Accession database="GEO">GSM219339</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 6. H37Rv dosR mutant grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219339/GSM219339.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219339-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219340">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis dosR mutant. Rep 3</Title>
+    <Accession database="GEO">GSM219340</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 6. H37Rv dosR mutant grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219340/GSM219340.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219340-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219341">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis dosR mutant. Rep 4</Title>
+    <Accession database="GEO">GSM219341</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 6. H37Rv dosR mutant grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219341/GSM219341.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219341-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM219342">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Hypoxic conditions experiment of M. tuberculosis dosR mutant. Rep 5</Title>
+    <Accession database="GEO">GSM219342</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cell culture grew under any treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cell culture grew under 0.2% Oxygen treatment</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics tag="Rv3133 (H37Rv Delta-DosR">
+:Kan)
+      </Characteristics>
+      <Treatment-Protocol>
+Frozen cell pellets were suspended in 1 ml of Trizol reagent (GIBCOy BRL) and transferred to 2-ml screw-cap tubes containing 0.4-ml of 0.1-mm diameter zirconiaysilica beads (BioSpec Products, Bartlesville, OK).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+H37Rv (ATCC 27294), H37RdeltadosR::kan and M. bovis BCG-Montreal (ATCC 35735) were grown to mid-log phase in 7H9 media with 0.05% Tween 80 and ADC supplement (Becton Dickinson) and stored as 1 ml aliquots in 15% glycerol (final concentration) at -80 C. For individual experiments, bacilli were grown in roller bottles in Middlebrook 7H9 medium (Becton Dickinson) with 0.05% Tween 80 and ADC supplement or on Middlebrook 7H10 plates at 37 C as described previously . When needed, kanamycin was used at 30 ug/ml (50 ug/ml for E. coli) and hygromycin at 50 ug/ml (200 ug/ml for E. coli).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were disrupted by three 30-sec pulses in a BioSpec Products bead beater. After 5 min at room temperature, samples were centrifuged at 13,000 x g for 45 sec, and the supernatants were extracted with 300 ul of chloroformyisoamyl alcohol (24:1) and precipitated with isopropyl alcohol. Samples were incubated 10 min to overnight at 4 C and centrifuged for 10 min at 4 C. The RNA pellets were washed with 1 ml of 75% ethanol, centrifuged at 13,000 x g for 5 min, and air-dried. After suspension of the RNA pellets in 90 ul of water, 10 ul of DNase I 10x buffer and 4 units of DNase I (Ambion, Austin, TX) were added and the samples were incubated for 30 min. Final purification of RNA was by RNeasy column (Qiagen, Chatsworth, CA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labelled cDNA was prepared as follows: 2 ug of total RNA and 4.4 ug of random oligonucleotide hexamers were incubated for 2 min at 98 C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dA-, G-, CTP, 0.02 mM dTTP, 1.5 nmol of Cy3- or Cy5-dUTP (Amersham) and 1.8 ul of Stratascript RTase (Stratagene) in a total volume of 25 ul and incubated for 10 min at 25 C and for 90 min at 42 C. cDNA was purified by microcon-10 (Amicon) filtration.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A 70-mer oligonucleotide-based microarray (tuberculosis oligonucleotide set; Qiagen) was used. Hybridization solution (10 ul; labelled cDNA, 5 ug of tRNA, 2x SSC, 25% formamide, 0.1% SDS) was hybridized at 52 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarrays were scanned using a GenePix 4000 A (Axon Instruments). The intensities of the two dyes at each spot were quantified using SCANALYZE (M. Eisen; http://rana.lbl.gov/EisenSoftware.htm).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 6 of 6. H37Rv dosR mutant grew under 0.2% Oxygen treatment
+    </Description>
+    <Data-Processing>
+Microarray-determined ratios were calculated from three biological replicates with two microarrays for each biological replicate. The overall reproducibility of the microarray experiments was evaluated using the Signifi-cance Analysis of Microarrays (SAM) program.  The SAM algorithm was set for two-class unpaired analysis with 500 permutations and K-nearest imputer for missing data. Significantly regulated genes were selected by adjusting the delta value to give a false discovery rate below 1%. In each data set, all genes regulated 1.5-fold and greater were determined to be significant with a false discovery rate of less than 1%, indicating a high degree of reproducibility.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM219nnn/GSM219342/GSM219342.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(base2) of R/G Normalized Ratio (Mean)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM219342-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE8829">
+    <Status database="GEO">
+      <Submission-Date>2007-08-20</Submission-Date>
+      <Release-Date>2007-08-21</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>Rv3133c/dosR is a transcription factor that mediates the hypoxic response of Mycobacterium tuberculosis</Title>
+    <Accession database="GEO">GSE8829</Accession>
+    <Pubmed-ID>12694625</Pubmed-ID>
+    <Summary>
+Unlike many pathogens that are overtly harmful to their hosts, Mycobacterium tuberculosis can persist for years within humans in a clinically latent state. Latency is often linked to hypoxic conditions within the host. Among M. tuberculosis genes induced by hypoxia is a putative transcription factor, Rv3133c/DosR. We performed targeted disruption of this locus followed by transcriptome analysis of wild-type and mutant bacilli. Nearly all the genes powerfully regulated by hypoxia require Rv3133c/DosR for their induction. Computer analysis identified a consensus motif, a variant of which is located upstream of nearly all M. tuberculosis genes rapidly induced by hypoxia. Further, Rv3133c/DosR binds to the two copies of this motif upstream of the hypoxic response gene alpha-crystallin. Mutations within the binding sites abolish both Rv3133c/DosR binding as well as hypoxic induction of a downstream reporter gene. Also, mutation experiments with Rv3133c/DosR confirmed sequence-based predictions that the C-terminus is responsible for DNA binding and that the aspartate at position 54 is essential for function. Together, these results demonstrate that Rv3133c/DosR is a transcription factor of the two-component response regulator class, and that it is the primary mediator of a hypoxic signal within M. tuberculosis.
+Keywords: strain or line design, genetic modification design and comparative genome hybridization design
+    </Summary>
+    <Overall-Design>
+12 samples were analyzed. The quality controls were biological replicate and technical replicate
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM219331" />
+    <Sample-Ref ref="GSM219332" />
+    <Sample-Ref ref="GSM219333" />
+    <Sample-Ref ref="GSM219334" />
+    <Sample-Ref ref="GSM219335" />
+    <Sample-Ref ref="GSM219336" />
+    <Sample-Ref ref="GSM219337" />
+    <Sample-Ref ref="GSM219338" />
+    <Sample-Ref ref="GSM219339" />
+    <Sample-Ref ref="GSM219340" />
+    <Sample-Ref ref="GSM219341" />
+    <Sample-Ref ref="GSM219342" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE8829/GSE8829_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/102159" />
+  </Series>
+
+</MINiML>

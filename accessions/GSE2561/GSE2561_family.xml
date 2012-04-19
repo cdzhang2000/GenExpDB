@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Michael</First><Last>Glickman</Last></Person>
+    <Email>glickmam@mskcc.org</Email>
+    <Phone>212-639-3191</Phone>
+    <Laboratory>Laboratory of Microbial Pathogenesis</Laboratory>
+    <Organization>Sloan Kettering Institute for Cancer Research</Organization>
+    <Address>
+      <City>New York</City>
+      <State>NY</State>
+      <Zip-Code>10021</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Michael</First><Middle>S</Middle><Last>Glickman</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Hideki</First><Last>Makinoshima</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL1983">
+    <Status database="GEO">
+      <Submission-Date>2005-04-22</Submission-Date>
+      <Release-Date>2005-07-22</Release-Date>
+      <Last-Update-Date>2005-07-22</Last-Update-Date>
+    </Status>
+    <Title>M. tuberculosis oligo</Title>
+    <Accession database="GEO">GPL1983</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Description>
+This M. tuberculosis whole genome microarray was constructed from the Operon Tuberculosis whole genome oligo set, version 1.0 (http://www.operon.com/arrays/oligosets_tb.php).
+The complete array was spotted in duplicate on each slide using a Biorobotics Microgrid II with oligonucleotides resuspended at 20 micromolar in 50%DMSO on Corning UltraGaps Coated slides. Arrays were crosslinked immediately after printing in a Stratalinker with 300mJ.
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>grid number on array</Description>
+      </Column>
+      <Column position="3">
+        <Name>Column</Name>
+        <Description>column position</Description>
+      </Column>
+      <Column position="4">
+        <Name>Row</Name>
+        <Description>Row position</Description>
+      </Column>
+      <Column position="5">
+        <Name>Feature Description</Name>
+        <Description>gene annotation</Description>
+      </Column>
+      <Column position="6">
+        <Name>gene or feature name</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="7">
+        <Name>ORF</Name>
+      </Column>
+      <Column position="8">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="10080">
+GPL1983-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM48951">
+    <Status database="GEO">
+      <Submission-Date>2005-04-23</Submission-Date>
+      <Release-Date>2005-07-22</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>WTCy3/Rv2869c Cy5 no Tween #1</Title>
+    <Accession database="GEO">GSM48951</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Rv2869c mutant</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Channel position="2">
+      <Source>Wild Type M. tuberculosis</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+o	All RNA was from the indicated strain of M. tuberculosis (either wild type M. tuberculosis Erdman or the Mtb Rv2869c null mutant
+•RNA was isolated from logarithmic phase cultures at OD600 .3.  For (+Tween) conditions, the media was Middlebrook 7H9 with 10% OADC supplement, .5% glycerol, and .05% Tween 80.  For (-Tween) conditions, bacilli were transferred to identical media without Tween 80 and harvested for RNA preparation 18hours later.
+
+Protocol for preparing the hybridization extract:
+
+15ml of liquid culture described above were collected by centrifugation at 3000g, and cell pellets frozen on dry ice.  Frozen pellets were resuspended in 1ml of Trizol reagent (Invitrogen) and lysed by mechanical disruption using .7mm Zirconia beads for 3 x 1min in a Mini bead beater 8 (Biospec products) at maximum speed. The remainder of the procedure was according to the Trizol manufacturers instructions with the addition of the optional high salt precipitation step.  RNA was subsequently cleaned using Qiagen RNAeasy columns according ot the manufacturers RNA cleanup protocol.
+
+Labeling protocol(s).
+5-7.5micrograms of total RNA was labeled using the Fairplay microrray labeling kit (Stratagene) with substitution of Random Hexamer primers.  Aminoallyl labeled CDNA was coupled to Cy3/Cy5 using Post labeling reactive dye packs (Amersham). Excess dye was removed using Qiaquick nucleotide removal columns according to the manufacturer’s instructions.
+
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL1983" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio</Description>
+      </Column>
+      <Column position="3">
+        <Name>Cy5 Mean</Name>
+        <Description>Rv2869c</Description>
+      </Column>
+      <Column position="4">
+        <Name>BCy5 Mean</Name>
+        <Description>Rv2869c background</Description>
+      </Column>
+      <Column position="5">
+        <Name>Cy3 Mean</Name>
+        <Description>Wild Type Mtb</Description>
+      </Column>
+      <Column position="6">
+        <Name>BCy3 Mean</Name>
+        <Description>Wild Type Mtb Background</Description>
+      </Column>
+    <External-Data rows="10080">
+GSM48951-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM60094">
+    <Status database="GEO">
+      <Submission-Date>2005-06-02</Submission-Date>
+      <Release-Date>2005-07-22</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT Cy5/Rv2869c mutant Cy3 no Tween #2</Title>
+    <Accession database="GEO">GSM60094</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Rv2869c mutant without tween</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+see below for channel 2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Wild type M. tuberculosis Erdman</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+o All RNA was from the indicated strain of M. tuberculosis (either wild type M. tuberculosis Erdman or the Mtb Rv2869c null mutant
+      </Characteristics>
+      <Characteristics>
+•RNA was isolated from logarithmic phase cultures at OD600 .3. For (+Tween) conditions, the media was Middlebrook 7H9 with 10% OADC supplement, .5% glycerol, and .05% Tween 80. For (-Tween) conditions, bacilli were transferred to identical media without Tween 80 and harvested for RNA preparation 18hours later.
+      </Characteristics>
+      <Characteristics>
+
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Protocol for preparing the hybridization extract:
+
+15ml of liquid culture described above were collected by centrifugation at 3000g, and cell pellets frozen on dry ice. Frozen pellets were resuspended in 1ml of Trizol reagent (Invitrogen) and lysed by mechanical disruption using .7mm Zirconia beads for 3 x 1min in a Mini bead beater 8 (Biospec products) at maximum speed. The remainder of the procedure was according to the Trizol manufacturers instructions with the addition of the optional high salt precipitation step. RNA was subsequently cleaned using Qiagen RNAeasy columns according ot the manufacturers RNA cleanup protocol.
+
+Labeling protocol(s).
+5-7.5micrograms of total RNA was labeled using the Fairplay microrray labeling kit (Stratagene) with substitution of Random Hexamer primers. Aminoallyl labeled CDNA was coupled to Cy3/Cy5 using Post labeling reactive dye packs (Amersham). Excess dye was removed using Qiaquick nucleotide removal columns according to the manufacturer’s instructions
+    </Description>
+    <Data-Processing>
+Intensity dependent normalization in GenePix 4.0
+    </Data-Processing>
+    <Platform-Ref ref="GPL1983" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Cy5 Mean</Name>
+        <Description>Cy5 fluorescence intensity for feature Wild type cells in this sample</Description>
+      </Column>
+      <Column position="3">
+        <Name>BCy5 Mean</Name>
+        <Description>Cy5 background intensity for feature</Description>
+      </Column>
+      <Column position="4">
+        <Name>Cy3 Mean</Name>
+        <Description>Cy3 fluorescence intensity for feature Rv2869c mutant cells in this sample</Description>
+      </Column>
+      <Column position="5">
+        <Name>BCy3 Mean</Name>
+        <Description>Cy3 background intensity for feature</Description>
+      </Column>
+      <Column position="6">
+        <Name>VALUE</Name>
+        <Description>log2ratio for each feature</Description>
+      </Column>
+    <External-Data rows="10080">
+GSM60094-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM60096">
+    <Status database="GEO">
+      <Submission-Date>2005-06-02</Submission-Date>
+      <Release-Date>2005-07-22</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>WTCy3/Rv2869c Cy5 with Tween #1</Title>
+    <Accession database="GEO">GSM60096</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT Mtb grown with Tween</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Wild type Mtb erdman grown with .05% Tween80
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>M. tuberculosis Rv2869c null mutant</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Rv2869c null mutant grown in vitro with .05% Tween.
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Protocol for preparing the hybridization extract:
+
+15ml of liquid culture described above were collected by centrifugation at 3000g, and cell pellets frozen on dry ice. Frozen pellets were resuspended in 1ml of Trizol reagent (Invitrogen) and lysed by mechanical disruption using .7mm Zirconia beads for 3 x 1min in a Mini bead beater 8 (Biospec products) at maximum speed. The remainder of the procedure was according to the Trizol manufacturers instructions with the addition of the optional high salt precipitation step. RNA was subsequently cleaned using Qiagen RNAeasy columns according ot the manufacturers RNA cleanup protocol.
+
+Labeling protocol(s).
+5-7.5micrograms of total RNA was labeled using the Fairplay microrray labeling kit (Stratagene) with substitution of Random Hexamer primers. Aminoallyl labeled CDNA was coupled to Cy3/Cy5 using Post labeling reactive dye packs (Amersham). Excess dye was removed using Qiaquick nucleotide removal columns according to the manufacturer’s instructions.
+    </Description>
+    <Data-Processing>
+Intensity dependent normalization in GenePix 4.0
+    </Data-Processing>
+    <Platform-Ref ref="GPL1983" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Cy5 Mean</Name>
+        <Description>Rv2869c mutant</Description>
+      </Column>
+      <Column position="3">
+        <Name>BCy5 Mean</Name>
+        <Description>Rv2869c mutant background</Description>
+      </Column>
+      <Column position="4">
+        <Name>Cy3 Mean</Name>
+        <Description>Wild type M. tuberculosis erdman</Description>
+      </Column>
+      <Column position="5">
+        <Name>BCy3 Mean</Name>
+        <Description>Wild type M. tuberculosis erdman background</Description>
+      </Column>
+      <Column position="6">
+        <Name>VALUE</Name>
+        <Description>log2 ratio</Description>
+      </Column>
+    <External-Data rows="10080">
+GSM60096-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM60529">
+    <Status database="GEO">
+      <Submission-Date>2005-06-08</Submission-Date>
+      <Release-Date>2005-07-22</Release-Date>
+      <Last-Update-Date>2005-07-22</Last-Update-Date>
+    </Status>
+    <Title>WT Vs Rv2869c mutant +Tw</Title>
+    <Accession database="GEO">GSM60529</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mtb Erdman RNA grown with Tween</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Mtb strain Erdman grown in +Tween media in logarithmic phase
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Mtb Rv2869c null mutant</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Mtb Rv2869c null mutant grown in +Tween media in logarithmic phase
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+See other samples in this set
+    </Description>
+    <Data-Processing>
+Ratio is Cy5/Cy3. Intensity dependent normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1983" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Cy5 Mean</Name>
+        <Description>Cy5 mean signal (Wild type in this sample)</Description>
+      </Column>
+      <Column position="3">
+        <Name>BCy5 Mean</Name>
+        <Description>Cy5 background</Description>
+      </Column>
+      <Column position="4">
+        <Name>Cy3 Mean</Name>
+        <Description>Cy3 mean signal (Rv2869c mutant)</Description>
+      </Column>
+      <Column position="5">
+        <Name>BCy3 Mean</Name>
+        <Description>Cy3 backgroun</Description>
+      </Column>
+      <Column position="6">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="10080">
+GSM60529-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM60530">
+    <Status database="GEO">
+      <Submission-Date>2005-06-08</Submission-Date>
+      <Release-Date>2005-07-22</Release-Date>
+      <Last-Update-Date>2005-07-22</Last-Update-Date>
+    </Status>
+    <Title>WT Vs Rv2869c mutant +Tw #2</Title>
+    <Accession database="GEO">GSM60530</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Mtb Erdman RNA grown with Tween</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Mtb Erdman grown in log phase with Tween.
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Mtb Rv2869c null mutant</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Mtb Rv2869c null mutant grown in log phase with Tween
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+See replicate #1
+    </Description>
+    <Data-Processing>
+Intesnity Dependent Normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1983" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Cy5 Mean</Name>
+        <Description>Cy5 mean signal (Wild type in this sample)</Description>
+      </Column>
+      <Column position="3">
+        <Name>BCy5 Mean</Name>
+      </Column>
+      <Column position="4">
+        <Name>Cy3 Mean</Name>
+        <Description>Cy3 mean signal (Rv2869c mutant)</Description>
+      </Column>
+      <Column position="5">
+        <Name>BCy5 Mean</Name>
+      </Column>
+      <Column position="6">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="10080">
+GSM60530-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE2561">
+    <Status database="GEO">
+      <Submission-Date>2005-04-23</Submission-Date>
+      <Release-Date>2005-07-22</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Mtb Rv2869c mutant/WT +/- detergent</Title>
+    <Accession database="GEO">GSE2561</Accession>
+    <Pubmed-ID>16034419</Pubmed-ID>
+    <Summary>
+The purpose of this experiment is to examine gene expression controlled by Rv2869c in the presence or absence of detergent (Tween 80) in the culture medium.
+Keywords: parallel sample
+    </Summary>
+    <Overall-Design>
+Wild type Mtb and the Rv2869c mutant were grown either with or without the detergent Tween 80 in the culture medium. Each hybridization is wild type versus mutant with three biologic replicates (+Tw) or Two biologic replicates (-Tw). Each array contains two spots for each gene. Each condition (+/-Tw) contains one dye swap (WTCy3).
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM48951" />
+    <Sample-Ref ref="GSM60094" />
+    <Sample-Ref ref="GSM60096" />
+    <Sample-Ref ref="GSM60529" />
+    <Sample-Ref ref="GSM60530" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/92177" />
+  </Series>
+
+</MINiML>

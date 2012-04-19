@@ -1,0 +1,3310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Ryan</First><Middle>William</Middle><Last>Honaker</Last></Person>
+    <Laboratory>Marty Voskuil</Laboratory>
+    <Department>Microbiology</Department>
+    <Organization>University of Colorado Denver</Organization>
+    <Address>
+      <Line>12800 E. 19th Ave.</Line>
+      <City>Aurora</City>
+      <State>CO</State>
+      <Zip-Code>80045</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Martin</First><Last>Voskuil</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Ryan</First><Middle>W</Middle><Last>Honaker</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Rachel</First><Middle>L</Middle><Last>Leistikow</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Iona</First><Middle>L</Middle><Last>Bartek</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Martin</First><Middle>I</Middle><Last>Voskuil</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL8768">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-26</Last-Update-Date>
+    </Status>
+    <Title>Univ Colorado Denver Mycobacterium tuberculosis 4.6K Operon Microarray</Title>
+    <Accession database="GEO">GPL8768</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+    <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+    <Manufacturer>Voskuil laboratory, University of Colorado Denver</Manufacturer>
+    <Manufacture-Protocol>
+1.Oligos (purchased from Operon) are arrayed in Whatman 384-well V-bottom plates. Each well contains 600 pmol of 70-mer oligo.
+2. Oligos are suspended in 3xSSC to 20 uM and centrifuged at 500 rpm for 2 minutes.
+3. Plates are stored at 4oC overnight.
+4. Incubate at RT for 30 minutes and shake for 5 min to aid resuspension of DNA.
+5. Centrifuge plates at 500 rpm for 2 minutes.
+6. Remove seals.
+7. Print.
+8. After completion of print, allow slides to dry through passive evaporation in a protected environment.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Gene_Symbol</Name>
+        <Description>Gene symbol</Description>
+      </Column>
+      <Column position="3">
+        <Name>ORF</Name>
+        <Description>Locus tag of strain H37Rv  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Mycobacterium tuberculosis[organism]</Link-Suffix>
+      </Column>
+      <Column position="4">
+        <Name>ORF</Name>
+        <Description>Locus tag of strain H37Rv  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Mycobacterium tuberculosis[organism]</Link-Suffix>
+      </Column>
+      <Column position="5">
+        <Name>Gene_Description</Name>
+        <Description>Short description of gene</Description>
+      </Column>
+      <Column position="6">
+        <Name>Oligo_ID</Name>
+        <Description>Unique oligo identifier</Description>
+      </Column>
+      <Column position="7">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="4589">
+GPL8768-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM422038">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_RAD_day6_rep1</Title>
+    <Accession database="GEO">GSM422038</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA091
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422038/GSM422038.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422038-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422039">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_RAD_day6_rep2</Title>
+    <Accession database="GEO">GSM422039</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB037
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422039/GSM422039.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422039-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422040">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_RAD_day6_rep3</Title>
+    <Accession database="GEO">GSM422040</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB101
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422040/GSM422040.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422040-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422041">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_RAD_day6_rep1</Title>
+    <Accession database="GEO">GSM422041</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA092
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422041/GSM422041.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422041-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422042">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_RAD_day6_rep2</Title>
+    <Accession database="GEO">GSM422042</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB038
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422042/GSM422042.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422042-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422043">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_RAD_day6_rep3</Title>
+    <Accession database="GEO">GSM422043</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB102
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422043/GSM422043.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422043-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422044">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO_RAD_day6_rep1</Title>
+    <Accession database="GEO">GSM422044</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB132
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422044/GSM422044.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422044-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422045">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO_RAD_day6_rep2</Title>
+    <Accession database="GEO">GSM422045</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB133
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422045/GSM422045.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422045-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422046">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO_RAD_day6_rep3</Title>
+    <Accession database="GEO">GSM422046</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB134
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422046/GSM422046.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422046-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422047">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO+pdosT_RAD_day6_rep1</Title>
+    <Accession database="GEO">GSM422047</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T+pDosT, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T+pDosT
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA080
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422047/GSM422047.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422047-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422048">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO+pdosT_RAD_day6_rep2</Title>
+    <Accession database="GEO">GSM422048</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T+pDosT, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T+pDosT
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB058
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422048/GSM422048.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422048-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422049">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO+pdosT_RAD_day6_rep3</Title>
+    <Accession database="GEO">GSM422049</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T+pDosT, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T+pDosT
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, anaerobic dormancy model day 6</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+model is anaerobic at day 6
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB086
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422049/GSM422049.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422049-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422050">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_4_hour_Gaspak_rep1</Title>
+    <Accession database="GEO">GSM422050</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA023
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422050/GSM422050.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422050-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422051">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_4_hour_Gaspak_rep2</Title>
+    <Accession database="GEO">GSM422051</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA059
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422051/GSM422051.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422051-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422052">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_4_hour_Gaspak_rep3</Title>
+    <Accession database="GEO">GSM422052</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB087
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422052/GSM422052.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422052-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422053">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_4_hour_Gaspak_rep1</Title>
+    <Accession database="GEO">GSM422053</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA020
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422053/GSM422053.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422053-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422054">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_4_hour_Gaspak_rep2</Title>
+    <Accession database="GEO">GSM422054</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB056
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422054/GSM422054.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422054-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422055">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO_4_hour_Gaspak_rep1</Title>
+    <Accession database="GEO">GSM422055</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB213
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422055/GSM422055.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422055-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422056">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO_4_hour_Gaspak_rep2</Title>
+    <Accession database="GEO">GSM422056</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB214
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422056/GSM422056.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422056-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422057">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO_4_hour_Gaspak_rep3</Title>
+    <Accession database="GEO">GSM422057</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 4 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+4 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB215
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422057/GSM422057.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422057-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422058">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_24_hour_Gaspak_rep1</Title>
+    <Accession database="GEO">GSM422058</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA025
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422058/GSM422058.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422058-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422059">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_24_hour_Gaspak_rep2</Title>
+    <Accession database="GEO">GSM422059</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA060
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422059/GSM422059.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422059-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422060">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_24_hour_Gaspak_rep3</Title>
+    <Accession database="GEO">GSM422060</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB088
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422060/GSM422060.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422060-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422061">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_24_hour_Gaspak_rep1</Title>
+    <Accession database="GEO">GSM422061</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA022
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422061/GSM422061.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422061-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422062">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_24_hour_Gaspak_rep2</Title>
+    <Accession database="GEO">GSM422062</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVA057
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422062/GSM422062.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422062-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422063">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_24_hour_Gaspak_rep3</Title>
+    <Accession database="GEO">GSM422063</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB090
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422063/GSM422063.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422063-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422064">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO_24_hour_Gaspak_rep1</Title>
+    <Accession database="GEO">GSM422064</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB209
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422064/GSM422064.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422064-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422065">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO_24_hour_Gaspak_rep2</Title>
+    <Accession database="GEO">GSM422065</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB210
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422065/GSM422065.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422065-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422066">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSTKO_24_hour_Gaspak_rep3</Title>
+    <Accession database="GEO">GSM422066</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS/T, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS/T
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, 24 hours gaspak treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+24 hours in anaerobic chamber with anaerobic envelope
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB211
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422066/GSM422066.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422066-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422067">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_log_1_hour_NO_rep1</Title>
+    <Accession database="GEO">GSM422067</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB104
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422067/GSM422067.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422067-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422068">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_log_1_hour_NO_rep2</Title>
+    <Accession database="GEO">GSM422068</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB052
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422068/GSM422068.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422068-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422069">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_log_1_hour_NO_rep3</Title>
+    <Accession database="GEO">GSM422069</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB051
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422069/GSM422069.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422069-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422070">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosSKO_log_1_hour_NO_rep4</Title>
+    <Accession database="GEO">GSM422070</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosS, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosS
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB053
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422070/GSM422070.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422070-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422071">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_log_1_hour_NO_rep1</Title>
+    <Accession database="GEO">GSM422071</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB055
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422071/GSM422071.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422071-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422072">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_log_1_hour_NO_rep2</Title>
+    <Accession database="GEO">GSM422072</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB105
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422072/GSM422072.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422072-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM422073">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2009-06-25</Last-Update-Date>
+    </Status>
+    <Title>dosTKO_log_1_hour_NO_rep3</Title>
+    <Accession database="GEO">GSM422073</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ΔdosT, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+ΔdosT
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type, log 1 hour NO treatment</Source>
+      <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+      <Characteristics tag="strain">
+H37Rv
+      </Characteristics>
+      <Characteristics tag="mutation">
+wild type
+      </Characteristics>
+      <Characteristics tag="condition">
+log phase culture, 1 hour NO treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were flash frozen on dry ice, resuspended in Trizol, and bead-beaten 3 x 40 seconds. Resulting cell lysate was added to chloroform and nucleic acids were then precipitated in isopropanol, rehydrated in 75% ethanol, then DNAse treated. Fur further purification, Qiagen RNeasy kit was used according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+1.5 ug of RNA was primed with N6 primers, heated for two minutes at 98 C, then incubated 10 minutes at 25 C followed by 90 minutes at 42 C. 5mM A,G,C and 0.2mM T dNTP mix was used.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were prehybridized in water, SSC, BSA, and SDS. Labeling reaction was concentrated to 5ul in a microcon 10 filter tube, added to tRNA, SSC, formamide, and SDS, and heated to 98 C for two minutes. Samples were hybridzed overnight at 50 C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Molecular Device's Genepix 4000B.
+    </Scan-Protocol>
+    <Description>
+TVB127
+    </Description>
+    <Data-Processing>
+Spot intensities were obtained using GenePix Pro 6.0. Data analysis was performed as previously described in PMID: 12953092 (Voskuil M, et al., J Exp Med. 2003 Sep 1;198(5):705-13).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8768" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM422nnn/GSM422073/GSM422073.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized ratio of experimental/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Normalized ratio of experimental/reference</Description>
+      </Column>
+    <External-Data rows="4589">
+GSM422073-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE16811">
+    <Status database="GEO">
+      <Submission-Date>2009-06-25</Submission-Date>
+      <Release-Date>2009-06-26</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>The unique roles of DosT and DosS in DosR regulon induction and Mycobacterium tuberculosis dormancy</Title>
+    <Accession database="GEO">GSE16811</Accession>
+    <Pubmed-ID>19487478</Pubmed-ID>
+    <Summary>
+In Mycobacterium tuberculosis, the sensor kinases DosT and DosS activate the transcriptional regulator DosR, resulting in the induction of the DosR regulon, important for anaerobic survival and perhaps latent infection. The individual and collective roles of these sensors has been postulated biochemically, but their roles have remained unclear in vivo. This work demonstrates distinct and additive roles for each sensor during anaerobic dormancy. Both sensors are necessary for wild type levels of DosR regulon induction, and concomitantly, full induction of the regulon is required for wild type anaerobic survival. In the anaerobic model, DosT plays an early role, responding to hypoxia. DosT then induces the regulon and with it DosS, which sustains and further induces the regulon. DosT then loses its functionality as oxygen becomes limited, and DosS alone maintains induction of the genes from that point forward. Thus, M. tuberculosis has evolved a system whereby it responds to hypoxic conditions in a stepwise fashion as it enters an anaerobic state.
+    </Summary>
+    <Overall-Design>
+Various DosS and DosT mutant strains were analyzed against wild type (reference strain H37Rv, identical conditions as mutant) under various conditions: day 6 in an anaerobic dormancy model, 4 or 24 hours in a GasPak model, or log phase with the addition of a nitric oxide donor. Experiments were repeated in triplicate or quadruplicate.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM422038" />
+    <Sample-Ref ref="GSM422039" />
+    <Sample-Ref ref="GSM422040" />
+    <Sample-Ref ref="GSM422041" />
+    <Sample-Ref ref="GSM422042" />
+    <Sample-Ref ref="GSM422043" />
+    <Sample-Ref ref="GSM422044" />
+    <Sample-Ref ref="GSM422045" />
+    <Sample-Ref ref="GSM422046" />
+    <Sample-Ref ref="GSM422047" />
+    <Sample-Ref ref="GSM422048" />
+    <Sample-Ref ref="GSM422049" />
+    <Sample-Ref ref="GSM422050" />
+    <Sample-Ref ref="GSM422051" />
+    <Sample-Ref ref="GSM422052" />
+    <Sample-Ref ref="GSM422053" />
+    <Sample-Ref ref="GSM422054" />
+    <Sample-Ref ref="GSM422055" />
+    <Sample-Ref ref="GSM422056" />
+    <Sample-Ref ref="GSM422057" />
+    <Sample-Ref ref="GSM422058" />
+    <Sample-Ref ref="GSM422059" />
+    <Sample-Ref ref="GSM422060" />
+    <Sample-Ref ref="GSM422061" />
+    <Sample-Ref ref="GSM422062" />
+    <Sample-Ref ref="GSM422063" />
+    <Sample-Ref ref="GSM422064" />
+    <Sample-Ref ref="GSM422065" />
+    <Sample-Ref ref="GSM422066" />
+    <Sample-Ref ref="GSM422067" />
+    <Sample-Ref ref="GSM422068" />
+    <Sample-Ref ref="GSM422069" />
+    <Sample-Ref ref="GSM422070" />
+    <Sample-Ref ref="GSM422071" />
+    <Sample-Ref ref="GSM422072" />
+    <Sample-Ref ref="GSM422073" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE16811/GSE16811_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/117523" />
+  </Series>
+
+</MINiML>

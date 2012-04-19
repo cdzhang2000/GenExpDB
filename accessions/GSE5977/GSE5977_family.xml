@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>ChangMuk</First><Last>Lee</Last></Person>
+    <Email>changmuk@hotmail.com</Email>
+    <Phone>+82-31-299-1756</Phone>
+    <Fax>+82-31-299-1752</Fax>
+    <Department>Microbial Genetics Division</Department>
+    <Organization>National Institute of Agricultural Biotechnology</Organization>
+    <Address>
+      <Line>224, Suinro, Gwonseon-Gu</Line>
+      <City>Suwon</City>
+      <Postal-Code>441-707</Postal-Code>
+      <Country>South Korea</Country>
+    </Address>
+    <Web-Link>www.niab.go.kr</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Chang-Muk</First><Last>Lee</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Pappachan</First><Middle>E</Middle><Last>Kolattukudy</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Jaiyanth</First><Last>Daniel</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Tae-Jin</First><Last>Oh</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL4369">
+    <Status database="GEO">
+      <Submission-Date>2006-09-26</Submission-Date>
+      <Release-Date>2006-09-27</Release-Date>
+      <Last-Update-Date>2006-10-07</Last-Update-Date>
+    </Status>
+    <Title>UCF BMS M. tuberculosis v1.0</Title>
+    <Accession database="GEO">GPL4369</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+    <Manufacturer>TIGR PFGRC</Manufacturer>
+    <Manufacture-Protocol>
+The slides are printed on 48 grids wiith each grid containing 15 columns and 15 rows with following pattern;
+PinX metacol=4, PinY metarow=12, PinX spacing pixels=450, PinY spacing pixels=450, Spot spacing pixels=27, Spot size pixels =~15, Column number=15, Row number=15, 2QMT with arrayer LUCIDEA. 
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Description>
+The genome microarray consists of 4,750 70-mer oligonucleotides representing 4127 ORFs from Mycobacterium tuberculosis - reference strain H37Rv, and 623 unique ORFs from strain CDC1551 which are not present in the H37Rv strain's annotated gene complement. The full 70-mer complement is printed twice on the surface of the microarray. The microarray also contains 500 additional features which have been reserved for future use.
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>MetaRow</Name>
+        <Description>Meta row of slide</Description>
+      </Column>
+      <Column position="3">
+        <Name>MetaColumn</Name>
+        <Description>Meta column of slide</Description>
+      </Column>
+      <Column position="4">
+        <Name>SubRow</Name>
+        <Description>Row of block</Description>
+      </Column>
+      <Column position="5">
+        <Name>SubColumn</Name>
+        <Description>Row of cloumn</Description>
+      </Column>
+      <Column position="6">
+        <Name>ORF</Name>
+        <Description>Locus primarily hit by the oligo; primary target  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND 	Mycobacterium tuberculosis[organism]</Link-Suffix>
+      </Column>
+      <Column position="7">
+        <Name>GeneSymbol</Name>
+        <Description>Gene symbol</Description>
+      </Column>
+      <Column position="8">
+        <Name>CommonName</Name>
+        <Description>Primarily annotated function</Description>
+      </Column>
+      <Column position="9">
+        <Name>Strain</Name>
+        <Description>Target strain of oligo design</Description>
+      </Column>
+      <Column position="10">
+        <Name>SwissPROT_TrEMBL</Name>
+        <Description>SwissProt ID</Description>
+      </Column>
+      <Column position="11">
+        <Name>GenBank_ID</Name>
+        <Description>Protein ID</Description>
+      </Column>
+      <Column position="12">
+        <Name>SEQUENCE</Name>
+        <Description>Spotted 70-mer oligonucleotide sequence</Description>
+      </Column>
+      <Column position="13">
+        <Name>Well_ID</Name>
+        <Description>Oligomer well ID</Description>
+      </Column>
+    <External-Data rows="10800">
+GPL4369-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Platform iid="GPL4388">
+    <Status database="GEO">
+      <Submission-Date>2006-10-04</Submission-Date>
+      <Release-Date>2006-10-07</Release-Date>
+      <Last-Update-Date>2006-10-07</Last-Update-Date>
+    </Status>
+    <Title>UCF BMS M. tuberculosis ver 2.0</Title>
+    <Accession database="GEO">GPL4388</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+    <Manufacturer>TIGR PFGRC</Manufacturer>
+    <Manufacture-Protocol>
+The slides are printed on 96 grids with each grid containing 23 rows and 10 columns with following pattern;
+MetaRow=12, MetaColumn=8, Pix X(pix)=225, Pix Y(pix)=450, Row number=23, Column number=10, X Spacing(pix)=17, Y Spacing(pix)=17. 2QMT with arrayer LUCIDEA.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Description>
+The genome microarray consists of 4,750 70-mer oligonucleotides representing 3,417 oligonucleotides from M. tuberculosis reference strain H37Rv, and 1,333 oligonucleotides from strain CDC1551. Oligos are designed to provide coverage across the above organisms used in the design. The full 70-mer complement is printed 4 times on the surface of the microarray. The microarray also contains 500 A. thaliana 70-mer oligonucleotides for internal controls. 
+    </Description>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>MetaRow</Name>
+        <Description>Meta row of slide</Description>
+      </Column>
+      <Column position="3">
+        <Name>MetaColumn</Name>
+        <Description>Meta column of slide</Description>
+      </Column>
+      <Column position="4">
+        <Name>SubRow</Name>
+        <Description>Row of block</Description>
+      </Column>
+      <Column position="5">
+        <Name>SubColumn</Name>
+        <Description>Column of block</Description>
+      </Column>
+      <Column position="6">
+        <Name>ORF</Name>
+        <Description>Locus primarily hit by the oligo; primary target  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="7">
+        <Name>CommonName</Name>
+        <Description>Primarily annotated function</Description>
+      </Column>
+      <Column position="8">
+        <Name>Strain</Name>
+        <Description>Target strain of oligo design</Description>
+      </Column>
+      <Column position="9">
+        <Name>SEQUENCE</Name>
+        <Description>Spotted 70-mer oligonucleotide sequences</Description>
+      </Column>
+      <Column position="10">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="11">
+        <Name>Oligo_ID</Name>
+        <Description>Oligo well ID</Description>
+      </Column>
+    <External-Data rows="22080">
+GPL4388-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM138635">
+    <Status database="GEO">
+      <Submission-Date>2006-10-04</Submission-Date>
+      <Release-Date>2006-10-07</Release-Date>
+      <Last-Update-Date>2006-10-07</Last-Update-Date>
+    </Status>
+    <Title>Mtb late-log phase rep1</Title>
+    <Accession database="GEO">GSM138635</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference, M. tuberculosis H37Rv, mid-log, OD=0.53</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis viruence strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Growth day at 37 degree of Celsius">
+6 days
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors for this sample in terms of O2, Nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 0.5 in Middlebrook 7H9 medium (pH 7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly forzen in dry ice-ethanol bath. Total M. tuberculosis RNA was isolated using glass bead (Bio101, Lysing Matrix B), a TRIzol (Invitrogen) extraction, and RNeasy (Qiagen) purification following manufacturers' recommendation.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Sample, M. tuberculosis H37Rv, late-log, OD=1.17</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis viruence strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Growth day at 37 degree of Celsius">
+8 days
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors for this sample in terms of O2, Nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells at an approximately doubled optical density (A600=1.17) of in Middlebrook 7H9 medium (pH 7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly forzen in dry ice-ethanol bath. Total M. tuberculosis RNA was isolated using glass bead (Bio101, Lysing Matrix B), a TRIzol (Invitrogen) extraction, and RNeasy (Qiagen) purification following manufacturers' recommendation.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization, blocking and washing was performed following the procedure provided at TIGR, PFGRC; http://pfgrc.tigr.org/protocols/protocols.shtml
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+QuantArray (ver. 3.0, Perkin Elmer) was used for 16-bit TIFF image quantification and initial data visualization.
+    </Scan-Protocol>
+    <Description>
+The array hybridization was performed to compare general gene expression change between an exponential growth phase and late-log phase. Wild-type Mtb cells were directly inoculated from freezing stock until OD~0.5, which was chosen as a reference exponential growth stage. Samples were prepared after further growth until the OD values doubles in the same medium as was in the reference cells.
+    </Description>
+    <Data-Processing>
+scale pin MAD and ratio-intensity Quantile normalization using R (ver. 2.1.1) package (http://www.bioconductor.org) &amp; S-plus ArrayAnalyzer (ver2.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL4369" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM138nnn/GSM138635/GSM138635.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio between Sample / Reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Reference_Intensity</Name>
+        <Description>Average Reference forground intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>Reference_Background</Name>
+        <Description>Average Reference background intensity</Description>
+      </Column>
+      <Column position="5">
+        <Name>Sample_Intensity</Name>
+        <Description>Average Sample forground intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sample_Background</Name>
+        <Description>Average Sample background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>Filter</Name>
+        <Description>Filtering tags. 0== (Empty spots OR Bad spots OR (Intensity-Background) &lt; 0)</Description>
+      </Column>
+    <External-Data rows="10800">
+GSM138635-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM138639">
+    <Status database="GEO">
+      <Submission-Date>2006-10-04</Submission-Date>
+      <Release-Date>2006-10-07</Release-Date>
+      <Last-Update-Date>2006-10-07</Last-Update-Date>
+    </Status>
+    <Title>Mtb stationary phase rep1</Title>
+    <Accession database="GEO">GSM138639</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference signal, M. tuberculosis H37Rv, mid-log, OD=0.53</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 6 day in liquid Middlebook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors for this sample in terms of O2, nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 0.5 in Middlebrook 7H9 medium (pH 7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly forzen in dry ice-ethanol bath. Total M. tuberculosis RNA was isolated using glass beads (Bio101, Lysing Matrix B), a TRIzol (Invitrogen) extraction, and RNeasy (Qiagen) purification according to the manufacturers' recommendations.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Sample signal, M. tuberculosis H37Rv, stationary phase, OD=1.42</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 12 day in liquid Middlebook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors for this sample in terms of O2, Nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells at an approximately double culture time compared to mid-log phase (12 days, A600=1.42) in Middlebrook 7H9 medium (pH 7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly forzen in dry ice-ethanol bath. Total M. tuberculosis RNA was isolated using glass bead (Bio101, Lysing Matrix B), a TRIzol (Invitrogen) extraction, and RNeasy (Qiagen) purification following manufacturers' recommendation.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization, blocking and washing was performed following the procedure provided at TIGR, PFGRC; http://pfgrc.tigr.org/protocols/protocols.shtml
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+QuantArray (ver. 3.0, Perkin Elmer) was used for 16-bit TIFF image quantification and initial data visualization.
+    </Scan-Protocol>
+    <Description>
+The array hybridization was performed to compare general gene expression change between an exponential growth phase and late-log phase. Wild-type Mtb cells were directly inoculated from freezing stock until OD~0.5, which was chosen as a reference exponential growth stage. Samples were prepared after further growth until the OD values doubles in the same medium as was in the reference cells.
+    </Description>
+    <Data-Processing>
+scale pin MAD and ratio-intensity Quantile normalization by using R (ver. 2.1.1) package (http://www.bioconductor.org) &amp; S-plus ArrayAnalyzer (ver2.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL4369" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM138nnn/GSM138639/GSM138639.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio between Sample / Reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Reference_Intensity</Name>
+        <Description>Average Reference forground intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>Reference_Background</Name>
+        <Description>Average Reference background intensity</Description>
+      </Column>
+      <Column position="5">
+        <Name>Sample_Intensity</Name>
+        <Description>Average Sample forground intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sample_Background</Name>
+        <Description>Average Sample background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>Filter</Name>
+        <Description>Filtering tags. 0==(Empty spots OR Bad spots OR (Intensity-Background&lt;0)</Description>
+      </Column>
+    <External-Data rows="10800">
+GSM138639-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM139020">
+    <Status database="GEO">
+      <Submission-Date>2006-10-05</Submission-Date>
+      <Release-Date>2006-10-07</Release-Date>
+      <Last-Update-Date>2006-10-07</Last-Update-Date>
+    </Status>
+    <Title>Mtb late-log phase rep2</Title>
+    <Accession database="GEO">GSM139020</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference signal, M. tuberculosis H37Rv, mid-log, OD=0.65</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 6day in liquid Middlebrook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors applied for this sample in terms of O2, nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 0.5 in liquid Middlebrook 7H9 medium (pH7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly frozen in dry ice-ethanol bath. Total RNA was isolated using galss beads (Bio1010, Lysing matrix B), a TRIzol (InVitrogen) extraction and RNease (Qiagen) purification according to the manufacturers' recommendations.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Sample signal, M. tuberculosis H37Rv, late-log, OD=1.18</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 8day in liquid Middlebrook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors applied for this sample in terms of O2, nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 1.0 in liquid Middlebrook 7H9 medium (pH7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly frozen in dry ice-ethanol bath. Total RNA was isolated using galss beads (Bio1010, Lysing matrix B), a TRIzol (InVitrogen) extraction and RNease (Qiagen) purification according to the manufacturers' recommendations.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization, blocking and washing was performed following the procedure provided at TIGR, PFGRC; http://pfgrc.tigr.org/protocols/protocols.shtml
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+QuantArray (ver. 3.0, Perkin Elmer) was used for 16-bit TIFF image quantification and initial visualization.
+    </Scan-Protocol>
+    <Description>
+The array hybridization was performed to compare general gene expression change between an exponential growth phase and late-log phase. Wild-type Mtb cells were inoculated and grown until OD~0.5, which is chosen as a reference exponential growth stage. Samples were prepared after further growth until the OD values doubles in teh same medium as was in the reference cells.
+    </Description>
+    <Data-Processing>
+scale-pin MAD and ratio-intensity Quantile normalization using R (version 2.1.1) package (http://www.bioconductor.org) &amp; S-plus ArrayAnalyzer(ver. 2.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL4388" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM139nnn/GSM139020/GSM139020.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio between Sample / Reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Refernce_Intensity</Name>
+        <Description>Average Reference forground intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>Reference_Background</Name>
+        <Description>Average Reference background intensity</Description>
+      </Column>
+      <Column position="5">
+        <Name>Sample_Intensity</Name>
+        <Description>Average Sample forground intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sample_Background</Name>
+        <Description>Average Sample background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>Filter</Name>
+        <Description>Filtering tags. 0==(Empty spots OR Bad spots OR (Intensity-Background &lt;0)</Description>
+      </Column>
+    <External-Data rows="22080">
+GSM139020-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM139033">
+    <Status database="GEO">
+      <Submission-Date>2006-10-05</Submission-Date>
+      <Release-Date>2006-10-07</Release-Date>
+      <Last-Update-Date>2006-10-07</Last-Update-Date>
+    </Status>
+    <Title>Mtb late-log phase rep3</Title>
+    <Accession database="GEO">GSM139033</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference signal, M. tuberculosis H37Rv, mid-log, OD=0.65</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 6day in liquid Middlebrook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors applied for this sample in terms of O2, nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 0.5 in liquid Middlebrook 7H9 medium (pH7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly frozen in dry ice-ethanol bath. Total RNA was isolated using glass beads (Bio101, LysingMatrix B), a TRIzol (InVitrogen) extraction and RNeasy (Qiagen) purification according to the manufacturers' recommendations.
+      </Extract-Protocol>
+      <Label>Cy5 </Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Sample signal, M. tuberculosis H37Rv, late-log, OD=1.18</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 8 day in liquid Middlebrook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors applied for this sample in terms of O2, nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 1.0 in liquid Middlebrook 7H9 medium (pH7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly frozen in dry ice-ethanol bath. Total RNA was isolated using glass beads (Bio101, LysingMatrix B), a TRIzol (InVitrogen) extraction and RNeasy (Qiagen) purification according to the manufacturers' recommendations.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization, blocking and washing was performed following the procedure provided at TIGR, PFGRC; http://pfgrc.tigr.org/protocols/protocols.shtml
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+QuantArray (ver. 3.0, Perkin Elmer) was used for 16-bit TIFF image quantification and intial visualization.
+    </Scan-Protocol>
+    <Description>
+The microarray hybridization was performed to compare general gene expression changes between an exponential growth phase and late-log phase. Wild-type Mtb cells were inoculated in the complete liquid medium, and grown until OD~0.5, which is chosen as a reference exponential growth stage. Samples were prepared after further growth until the OD values doubles in the same medium as was in the reference culture. 
+    </Description>
+    <Data-Processing>
+scal pin MAD and ratio-intensity Quantile normalization using R (ver. 2.1.1) package (http://www.bioconductor.org) &amp; S-plus ArrayAnalyzer (ver.2.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL4388" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM139nnn/GSM139033/GSM139033.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio between Sample / Reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Reference_Intensity</Name>
+        <Description>Average Reference forground intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>Reference_Background</Name>
+        <Description>Average Reference background intensity</Description>
+      </Column>
+      <Column position="5">
+        <Name>Sample_Intensity</Name>
+        <Description>Average Sample forground intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sample_Background</Name>
+        <Description>Average Sample background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>Filter</Name>
+        <Description>Fitering tags. 0==(Empty spots OR Bad spots OR (Intensity-Background&lt;0))</Description>
+      </Column>
+    <External-Data rows="22080">
+GSM139033-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM139034">
+    <Status database="GEO">
+      <Submission-Date>2006-10-05</Submission-Date>
+      <Release-Date>2006-10-07</Release-Date>
+      <Last-Update-Date>2006-10-07</Last-Update-Date>
+    </Status>
+    <Title>Mtb late-log phase rep4</Title>
+    <Accession database="GEO">GSM139034</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference signal, M. tuberculosis H37Rv, mid-log, OD=0.64</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 6 day in liquid Middlebrook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors applied for this sample in terms of O2, nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 0.5 in liquid Middlebrook 7H9 medium (pH7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly frozen in dry ice-ethanol bath. Total RNA was isolated using glass beads (Bio101, LysingMatrix B), a TRIzol (InVitrogen) extraction and RNeasy (Qiagen) purification according to the manufacturers' recommendations.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Sample signal, M. tuberculosis H37Rv, late-log, OD=1.17</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 8 day in liquid Middlebrook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors applied for this sample in terms of O2, nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 1.0 in liquid Middlebrook 7H9 medium (pH7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly frozen in dry ice-ethanol bath. Total RNA was isolated using glass beads (Bio101, LysingMatrix B), a TRIzol (InVitrogen) extraction and RNeasy (Qiagen) purification according to the manufacturers' recommendations.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization, blocking and washing was performed following the procedure provided at TIGR, PFGRC; http://pfgrc.tigr.org/protocols/protocols.shtml
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+QuantArray (ver. 3.0, Perkin Elmer) was used for 16-bit TIFF image quantification and intial visualization.
+    </Scan-Protocol>
+    <Description>
+The microarray hybridization was performed to compare general gene expression changes between an exponential growth phase and late-log phase. Wild-type Mtb cells were inoculated in the complete liquid medium, and grown until OD~0.5, which is chosen as a reference exponential growth stage. Samples were prepared after further growth until the OD values doubles in the same medium as was in the reference culture. 
+    </Description>
+    <Data-Processing>
+scal-pin MAD and ratio-intensity Quantile normalization using R (ver. 2.1.1) package (http://www.bioconductor.org) &amp; S-plus ArrayAnalyzer (ver.2.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL4388" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM139nnn/GSM139034/GSM139034.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio between Sample / Reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Reference_Intensity</Name>
+        <Description>Average Reference foreground intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>Reference_Background</Name>
+        <Description>Average Reference background intensity</Description>
+      </Column>
+      <Column position="5">
+        <Name>Sample_Intensity</Name>
+        <Description>Average Sample foreground intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sample_Background</Name>
+        <Description>Average Sample background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>Filter</Name>
+        <Description>Filtering tags. 0== (Empty spots OR Bad spots OR (Intensity - Background &lt;0))</Description>
+      </Column>
+    <External-Data rows="22080">
+GSM139034-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM139035">
+    <Status database="GEO">
+      <Submission-Date>2006-10-05</Submission-Date>
+      <Release-Date>2006-10-07</Release-Date>
+      <Last-Update-Date>2006-10-07</Last-Update-Date>
+    </Status>
+    <Title>Mtb late-log phase rep5</Title>
+    <Accession database="GEO">GSM139035</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Reference signal, M. tuberculosis H37Rv, mid-log, OD=0.64</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 6 day in liquid Middlebrook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors applied for this sample in terms of O2, nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 0.5 in liquid Middlebrook 7H9 medium (pH7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly frozen in dry ice-ethanol bath. Total RNA was isolated using glass beads (Bio101, LysingMatrix B), a TRIzol (InVitrogen) extraction and RNeasy (Qiagen) purification according to the manufacturers' recommendations.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Sample signal, M. tuberculosis H37Rv, late-log, OD=1.17</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+Strain; M. tuberculosis virulent strain H37Rv
+      </Characteristics>
+      <Characteristics>
+Growth day; 8 day in liquid Middlebrook 7H9 at 37 degree of Celsius
+      </Characteristics>
+      <Biomaterial-Provider>Chang-Muk Lee
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+There is no specific stress factors applied for this sample in terms of O2, nutrient, temperature and pH. Cells were harvested based on the optical density.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+M. tuberculosis H37Rv was grown in Middlebrook 7H9 (supplemented with 0.05% Tween-80, 10% oleic acid-albumin-dextrose-catalase enrichment and 0.2% glycerol). RNA was extracted from cells growing exponentially at an optical density (A600) of approximately 1.0 in liquid Middlebrook 7H9 medium (pH7.0).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell was harvested and quickly frozen in dry ice-ethanol bath. Total RNA was isolated using glass beads (Bio101, LysingMatrix B), a TRIzol (InVitrogen) extraction and RNeasy (Qiagen) purification according to the manufacturers' recommendations.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared as follows: 10 μg of total RNA and 2 μg of random oligonucleotide hexamers (Invitrogen, CA) were incubated 15 min at 65 °C, cooled on ice, combined with Stratascript RTase buffer, 0.5 mM dATP, 0.5 mM dGTP, 0.5 mM dCTP, 0.02 mM dUTP, 1.5 nmol aminoallyl-dUTP (Amersham, NJ), and 2 μl Stratascript RTase II (Invitrogen, CA) in a total volume of 30 μl. This mixture was incubated 10 min at room temperature, and 42 °C overnight. Synthesized cDNA was purified by QIAquick PCR purification kit (Qiagen, CA) according to the manufacturer’s recommendation. The aminoallyl-dUTP-conjugated cDNA probes was spin-dried (SpeedVac, Savant), resuspended in 50 mM sodium carbonate buffer (pH 9.3) and cyanine monofunctional dyes (Amersham) for 1 h at room temperature followed by quenching with 4 M hydoxylamine. Cyanine-labeled probes were purified again by QIAquick PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization, blocking and washing was performed following the procedure provided at TIGR, PFGRC; http://pfgrc.tigr.org/protocols/protocols.shtml
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+QuantArray (ver. 3.0, Perkin Elmer) was used for 16-bit TIFF image quantification and intial visualization.
+    </Scan-Protocol>
+    <Description>
+The microarray hybridization was performed to compare general gene expression changes between an exponential growth phase and late-log phase. Wild-type Mtb cells were inoculated in the complete liquid medium, and grown until OD~0.5, which is chosen as a reference exponential growth stage. Samples were prepared after further growth until the OD values doubles in the same medium as was in the reference culture. 
+    </Description>
+    <Data-Processing>
+scale-pin MAD and ratio-intensity Quantile normalization using R (ver. 2.1.1) package (http://www.bioconductor.org) &amp; S-plus ArrayAnalyzer (ver.2.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL4388" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM139nnn/GSM139035/GSM139035.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio between Sample / Reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Reference_Intensity</Name>
+        <Description>Average Reference foreground intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>Reference_Background</Name>
+        <Description>Average Reference background intensity</Description>
+      </Column>
+      <Column position="5">
+        <Name>Sample_Intensity</Name>
+        <Description>Average Sample foreground intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sample_Background</Name>
+        <Description>Average Sample background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>Filter</Name>
+        <Description>Filtering tags. 0== (Empty spots OR Bad spots OR (Intensity - Background &lt;0))</Description>
+      </Column>
+    <External-Data rows="22080">
+GSM139035-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE5977">
+    <Status database="GEO">
+      <Submission-Date>2006-10-05</Submission-Date>
+      <Release-Date>2006-10-07</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Carboxyltransferase Subunit of the Acyl-CoA Carboxylase in Mycobacterium tuberculosis.</Title>
+    <Accession database="GEO">GSE5977</Accession>
+    <Pubmed-ID>17114269</Pubmed-ID>
+    <Summary>
+The Mycobacterium tuberculosis acyl-CoA carboxylases provide the building blocks for de novo fatty acid biosynthesis by fatty acid synthase (FAS) I and for the elongation of FAS I end-products by the FAS II complex to produce meromycolic acids. M. tuberculosis genome contains three biotin carboxylase subunits (AccA1-3) and 6 carboxyltransferase subunits (AccD1-6) of which AccD6 is located in a genetic locus that contains members of the FAS II complex. We found by microarray and quantitative real-time RT-PCR analysis that the transcripts of AccA3, AccD4, AccD5 and AccD6 are expressed at high levels during exponential growth phases of M. tuberculosis in vitro.
+Keywords: Time course, developmental stages
+    </Summary>
+    <Overall-Design>
+The microarray hybridization was performed to compare general gene expression changes along with Acyl-CoA carboxylase subunits between an exponential growth phase and late-log phase. Wild-type Mtb cells were inoculated in the complete liquid medium, and grown until OD~0.5, which is chosen as a reference exponential growth stage. Samples were prepared after further growth until the OD values doubles in the same medium as was in the reference culture.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib3" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM138635" />
+    <Sample-Ref ref="GSM138639" />
+    <Sample-Ref ref="GSM139020" />
+    <Sample-Ref ref="GSM139033" />
+    <Sample-Ref ref="GSM139034" />
+    <Sample-Ref ref="GSM139035" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE5977/GSE5977_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/97455" />
+  </Series>
+
+</MINiML>

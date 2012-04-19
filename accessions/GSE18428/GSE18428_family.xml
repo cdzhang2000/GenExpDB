@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Sacha</First><Last>Lucchini</Last></Person>
+    <Email>sacha.lucchini@bbsrc.ac.uk</Email>
+    <Department>Molecular Microbiology</Department>
+    <Organization>Institute of Food Research</Organization>
+    <Address>
+      <Line>Colney Lane</Line>
+      <City>Norwich</City>
+      <Postal-Code>NR4 7UA</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Arthur</First><Last>Thompson</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Jay</First><Middle>C</Middle><Last>Hinton</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Paul</First><Last>Mcdermott</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL9091">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-29</Release-Date>
+      <Last-Update-Date>2009-08-29</Last-Update-Date>
+    </Status>
+    <Title>IFR_Salmonella_5.3k_v1.1</Title>
+    <Accession database="GEO">GPL9091</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="28901">Salmonella enterica</Organism>
+    <Manufacturer>Institute of Food Research, Norwich, UK</Manufacturer>
+    <Manufacture-Protocol>
+PCR product array of whole ORF's from S. Typhimurium LT2. For description of PCR amplification and printing procedures see Eriksson et al., Molecular Microbiology(2003) 47(1): 103-118.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>METAROW</Name>
+      </Column>
+      <Column position="3">
+        <Name>METACOLUMN</Name>
+      </Column>
+      <Column position="4">
+        <Name>ROW</Name>
+      </Column>
+      <Column position="5">
+        <Name>COLUMN</Name>
+      </Column>
+      <Column position="6">
+        <Name>ORF</Name>
+        <Description>Locus tag or Gene name  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Salmonella enterica[organism]</Link-Suffix>
+      </Column>
+      <Column position="7">
+        <Name>SYNONYM</Name>
+      </Column>
+      <Column position="8">
+        <Name>SEQUENCE</Name>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+        <Description>control, empty, etc.</Description>
+      </Column>
+    <External-Data rows="5376">
+GPL9091-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM459121">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT_MEP_BR1</Title>
+    <Accession database="GEO">GSM459121</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT_MEP_BR1</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the early-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459121/GSM459121.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459121-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459122">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT_MEP_BR2</Title>
+    <Accession database="GEO">GSM459122</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT_MEP_BR2</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the early-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459122/GSM459122.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459122-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459123">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT_MEP_BR3</Title>
+    <Accession database="GEO">GSM459123</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT_MEP_BR3</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+wild type
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459123/GSM459123.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459123-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459124">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>StpA_MEP_BR1</Title>
+    <Accession database="GEO">GSM459124</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>StpA_MEP_BR1</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔstpA
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459124/GSM459124.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459124-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459125">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>StpA_MEP_BR2</Title>
+    <Accession database="GEO">GSM459125</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>StpA_MEP_BR2</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔstpA
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459125/GSM459125.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459125-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459126">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>StpA_MEP_BR3</Title>
+    <Accession database="GEO">GSM459126</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>StpA_MEP_BR3</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔstpA
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459126/GSM459126.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459126-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459127">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>RpoS_MEP_BR1</Title>
+    <Accession database="GEO">GSM459127</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RpoS_MEP_BR1</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔrpoS
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459127/GSM459127.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459127-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459128">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>RpoS_MEP_BR2</Title>
+    <Accession database="GEO">GSM459128</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RpoS_MEP_BR2</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔrpoS
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459128/GSM459128.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459128-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459129">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>RpoS_MEP_BR3</Title>
+    <Accession database="GEO">GSM459129</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RpoS_MEP_BR3</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔrpoS
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459129/GSM459129.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459129-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459130">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>StpARpoS_MEP_BR1</Title>
+    <Accession database="GEO">GSM459130</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>StpARpoS_MEP_BR1</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔrstpA ΔrpoS
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459130/GSM459130.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459130-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459131">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>StpARpoS_MEP_BR2</Title>
+    <Accession database="GEO">GSM459131</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>StpARpoS_MEP_BR2</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔrstpA ΔrpoS
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459131/GSM459131.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459131-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM459132">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2009-10-28</Last-Update-Date>
+    </Status>
+    <Title>StpARpoS_MEP_BR3</Title>
+    <Accession database="GEO">GSM459132</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>StpARpoS_MEP_BR3</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔrstpA ΔrpoS
+      </Characteristics>
+      <Growth-Protocol>
+Strain was grown in LB inoculated 1:1000 from an overnight culture for 160min to reach the mid-exponential phase of growth.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA isolation protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>Cy5-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="216597">Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344</Organism>
+      <Characteristics tag="strain">
+Salmonella enterica serovar Typhimurium SL1344
+      </Characteristics>
+      <Growth-Protocol>
+S. Typhimurium grown to stationary phase
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA isolated using the Qiagen 'Genomic DNA' Kit (Cat. No.: 19060 for the buffer kit; 10243 for the columns)
+      </Extract-Protocol>
+      <Label>Cy3-dCTP</Label>
+      <Label-Protocol>
+Labelling protocol at http://www.ifr.ac.uk/safety/Microarrays/protocols.html
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides blocked with DCE according to protocol at PMID 11266573. For hybridisation and washing protocols see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Axon GenePix4000A, 10um resolution scan &amp; see http://www.ifr.ac.uk/safety/Microarrays/default.html#protocols
+    </Scan-Protocol>
+    <Description>
+Intensity ratios of channel 1 (cDNA) divided by channel 2 (gDNA) signals minus respective background signals. Total array is 16 blocks arranged in 4X4 configuration.
+    </Description>
+    <Data-Processing>
+Data centring was performed by bringing the median ratio (Cy5/Cy3) for each of the 16 blocks to one using the following equation: (Ti) = (Cy5i/Cy3i) - c, where T is the centred ratio, i is the gene index, Cy5 and Cy3 are the red and green intensities and c is the 50th percentile of all Cy5/Cy3 ratios. Flagged features are omitted from the data centring process. Because we used a microarray based on S. Typhimurium strain LT2 to analyse the transcriptional response of a different strain (S. Typhimurium strain SL1344), we removed all the data corresponding to genes present in LT2, but absent from SL1344.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9091" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM459nnn/GSM459132/GSM459132.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>F635 Median - B635</Name>
+        <Description>Feature unnormalised signal (Cy5/test cDNA) minus background signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>F532 Median - B532</Name>
+        <Description>Feature unnormalised signal (Cy3/reference gDNA) minus background signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>PRE_VALUE</Name>
+        <Description>Unnormalised natural log of (F635 Median-B635)/(F532 Median-B532) ratio</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Normalised natural log of ratio test/reference</Description>
+      </Column>
+    <External-Data rows="5376">
+GSM459132-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE18428">
+    <Status database="GEO">
+      <Submission-Date>2009-10-06</Submission-Date>
+      <Release-Date>2009-10-28</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>StpA prevents RpoS-dependent transcription during mid-exponential growth in S. Typhimurium</Title>
+    <Accession database="GEO">GSE18428</Accession>
+    <Pubmed-ID>19843227</Pubmed-ID>
+    <Summary>
+StpA is a paralogue of the nucleoid associated protein H-NS that is conserved in a range of enteric bacteria and had no known function in Salmonella enterica serovar Typhimurium. Here, we show that 5% of the Salmonella genome is regulated by StpA, which contrasts with the situation in Escherichia coli where deletion of stpA only had minor effects on gene expression. The StpA-dependent genes of S. Typhimurium are a specific subset of the H-NS regulon that are predominantly under the positive control of sigma38 (RpoS), CRP-cAMP and PhoP. The regulatory role of StpA varied at different growth phases; StpA only controlled sigma38 levels at mid-exponential phase when it prevented inappropriate activation of sigma38 during rapid bacterial growth. In contrast, StpA only activated the CRP-cAMP regulon during late exponential phase. 
+    </Summary>
+    <Overall-Design>
+To test the hypothesis that stpA prevents Sigma38-dependent transcription during mid-exponential growth in S. Typhimurium, we analysed the effect of the stpA deletion on transcription in the presence and absence of rpoS. Three biological replicates were performed for each strain. For this study, we used Salmonella genomic DNA as the comparator which also acted as the control for spot quality.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib2" position="3" />
+    <Contributor-Ref ref="contrib3" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM459121" />
+    <Sample-Ref ref="GSM459122" />
+    <Sample-Ref ref="GSM459123" />
+    <Sample-Ref ref="GSM459124" />
+    <Sample-Ref ref="GSM459125" />
+    <Sample-Ref ref="GSM459126" />
+    <Sample-Ref ref="GSM459127" />
+    <Sample-Ref ref="GSM459128" />
+    <Sample-Ref ref="GSM459129" />
+    <Sample-Ref ref="GSM459130" />
+    <Sample-Ref ref="GSM459131" />
+    <Sample-Ref ref="GSM459132" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE18428/GSE18428_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE18452" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/123337" />
+  </Series>
+
+</MINiML>

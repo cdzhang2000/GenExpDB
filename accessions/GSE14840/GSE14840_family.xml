@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Petros</First><Last>Karakousis</Last></Person>
+    <Email>petros@jhmi.edu</Email>
+    <Phone>4105028233</Phone>
+    <Fax>4106148173</Fax>
+    <Laboratory> The center for tuberculosis research</Laboratory>
+    <Department>Medicine</Department>
+    <Organization>John Hopkins University school of medicine</Organization>
+    <Address>
+      <Line>1550 Orleans street</Line>
+      <City>Baltimore</City>
+      <State>MD</State>
+      <Zip-Code>21231</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Dalin</First><Last>Rifat</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL8189">
+    <Status database="GEO">
+      <Submission-Date>2009-02-12</Submission-Date>
+      <Release-Date>2009-09-22</Release-Date>
+      <Last-Update-Date>2009-09-22</Last-Update-Date>
+    </Status>
+    <Title>Colorado State University Mycobacterium tuberculosis V20071007</Title>
+    <Accession database="GEO">GPL8189</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="83332">Mycobacterium tuberculosis H37Rv</Organism>
+    <Manufacturer>Colorado State University TB Vaccine Testing and Research NIH, NIAID Contract No. HHSN266200400091C</Manufacturer>
+    <Manufacture-Protocol>
+Oligonucleotide 70mers were generated from whole genome sequence within coding regions. Features were designed to have similar hybridization temperatures. Samples were spotted and pre-processed using standard procedures from the lab of Rocky Mountain Regional Center of Excellence.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>other</Coating>
+    <Description>
+The Tuberculosis Genome Oligo Set consists of 70mer probes representing 4,269 M. tuberculosis (H37Rv and CDC1551) genes, plus 26 controls. The probes were designed from the predicted genomic sequence of the best-characterized M. tuberculosis strain, H37Rv, obtained from the Sanger Center (Cambridge, UK) and The Institute for Genomic Research (Rockville, MD, USA). An additional 371 probes were designed from the CDC1551 strain. The probes are Tm normalized to 79°C. 
+    </Description>
+    <Web-Link>http://www.cvmbs.colostate.edu/mip/tb/microarray.htm</Web-Link>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>Master grouping of rows and columns during spotting coinciding with spotting pins</Description>
+      </Column>
+      <Column position="3">
+        <Name>Row</Name>
+        <Description>Horizontally aligned spots</Description>
+      </Column>
+      <Column position="4">
+        <Name>Column</Name>
+        <Description>Vertically aligned spots</Description>
+      </Column>
+      <Column position="5">
+        <Name>type</Name>
+        <Description>Feature type(ORF, Negative_Control, Oligonucleotide_Control, No spot)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Name</Name>
+        <Description>Name of transcription product</Description>
+      </Column>
+      <Column position="7">
+        <Name>ORF</Name>
+        <Description>Gene number for NCBI Genome NC_000962</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORGANISM</Name>
+        <Description>Non-control spots represent organism Mycobacterium Tuberculosis H37Rv</Description>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="5168">
+GPL8189-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM371007">
+    <Status database="GEO">
+      <Submission-Date>2009-02-12</Submission-Date>
+      <Release-Date>2009-09-22</Release-Date>
+      <Last-Update-Date>2009-09-22</Last-Update-Date>
+    </Status>
+    <Title>24 hour phosphate starvation replicate 1</Title>
+    <Accession database="GEO">GSM371007</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Log phase culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25mM phosphate until log phase (OD600 ~0.4). 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Log phase culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>24 hour phosphate-starved culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25 mM phosphate until log phase (OD600 ~0.4). Then culture was pelleted, washed twice in modified Middlebrook phosphate-free broth by centrifugation at 3000 rpm for 5 min and resuspended in an equal volume of phosphate-free broth. Phosphate-starved cultures were incubated for 24 hours in a shaker at 37 °C.    
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+24 hour phosphate-starved culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+PolyA, yeast tRNA, bovine rRNA human COT1 DNA was added to combined labeled cDNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at  95°C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30µl water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55°C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in distilled water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel. 
+    </Scan-Protocol>
+    <Description>
+These data represent genes which were expressed  in 24 hour phosphate-starved culture versus log phase phosphate-replete cultures. 
+    </Description>
+    <Data-Processing>
+Collected microarray data were normalized as follows: the sum total measured intensity of all genes from the sample channel (24 hrs) was divided by that of the control channel, and each gene's intensity value from the control channel then was multiplied by this ratio (global normalization). Globally normalized expression values were log2-transformed in order to calculate mean log intensity and log ratios between sample and control values. Local mean normalization was performed using Stata 10 software (StataCorp LP, College Station, TX) across the range of expression levels. The &quot;residuals&quot; from this regression fit (i.e., the distance between observed data and the regression fit,) were used as corrected log ratio values and further analyzed using SAM (Significance Analysis of Microarrays, version 3.01) software to obtain q-values (false discovery rate).
+    </Data-Processing>
+    <Platform-Ref ref="GPL8189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM371nnn/GSM371007/GSM371007.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 2 versus channel 1</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="5168">
+GSM371007-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM371278">
+    <Status database="GEO">
+      <Submission-Date>2009-02-13</Submission-Date>
+      <Release-Date>2009-09-22</Release-Date>
+      <Last-Update-Date>2009-09-22</Last-Update-Date>
+    </Status>
+    <Title>24 hour phosphate starvation replicate 2</Title>
+    <Accession database="GEO">GSM371278</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Log phase culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25mM phosphate until log phase (OD600 ~0.4). 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Log phase culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>24 hour phosphate-starved culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25 mM phosphate until log phase (OD600 ~0.4). Then culture was pelleted, washed twice in modified Middlebrook phosphate-free broth by centrifugation at 3000 rpm for 5 min and resuspended in an equal volume of phosphate-free broth. Phosphate-starved cultures were incubated for 24 hours in a shaker at 37 °C. 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+24 hour phosphate-starved culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+PolyA, yeast tRNA, bovine rRNA human COT1 DNA was added to combined labeled cDNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95°C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30µl water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55°C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in distilled water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel. 
+    </Scan-Protocol>
+    <Description>
+These data represent genes which were expressed in 24 hour phosphate-starved culture versus log phase phosphate-replete cultures. 
+    </Description>
+    <Data-Processing>
+Collected microarray data were normalized as follows: the sum total measured intensity of all genes from the sample channel (24 hrs) was divided by that of the control channel, and each gene's intensity value from the control channel then was multiplied by this ratio (global normalization). Globally normalized expression values were log2-transformed in order to calculate mean log intensity and log ratios between sample and control values. Local mean normalization was performed using Stata 10 software (StataCorp LP, College Station, TX) across the range of expression levels. The &quot;residuals&quot; from this regression fit (i.e., the distance between observed data and the regression fit,) were used as corrected log ratio values and further analyzed using SAM (Significance Analysis of Microarrays, version 3.01) software to obtain q-values (false discovery rate).
+ 
+  
+    </Data-Processing>
+    <Platform-Ref ref="GPL8189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM371nnn/GSM371278/GSM371278.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 2 versus channel 1</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="5168">
+GSM371278-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM371280">
+    <Status database="GEO">
+      <Submission-Date>2009-02-13</Submission-Date>
+      <Release-Date>2009-09-22</Release-Date>
+      <Last-Update-Date>2009-09-22</Last-Update-Date>
+    </Status>
+    <Title>24 hour phosphate starvation replicate 3</Title>
+    <Accession database="GEO">GSM371280</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Log phase culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25mM phosphate until log phase (OD600 ~0.4). 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Log phase culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>24 hour phosphate-starved culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25 mM phosphate until log phase (OD600 ~0.4). Then culture was pelleted, washed twice in modified Middlebrook phosphate-free broth by centrifugation at 3000 rpm for 5 min and resuspended in an equal volume of phosphate-free broth. Phosphate-starved cultures were incubated for 24 hours in a shaker at 37 °C. 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+24 hour phosphate-starved culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+PolyA, yeast tRNA, bovine rRNA human COT1 DNA was added to combined labeled cDNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95°C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30µl water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55°C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in distilled water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel. 
+    </Scan-Protocol>
+    <Description>
+These data represent genes which were expressed in 24 hour phosphate-starved culture versus log phase phosphate-replete cultures. 
+    </Description>
+    <Data-Processing>
+Collected microarray data were normalized as follows: the sum total measured intensity of all genes from the sample channel (24 hrs) was divided by that of the control channel, and each gene's intensity value from the control channel then was multiplied by this ratio (global normalization). Globally normalized expression values were log2-transformed in order to calculate mean log intensity and log ratios between sample and control values. Local mean normalization was performed using Stata 10 software (StataCorp LP, College Station, TX) across the range of expression levels. The &quot;residuals&quot; from this regression fit (i.e., the distance between observed data and the regression fit,) were used as corrected log ratio values and further analyzed using SAM (Significance Analysis of Microarrays, version 3.01) software to obtain q-values (false discovery rate).
+ 
+  
+    </Data-Processing>
+    <Platform-Ref ref="GPL8189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM371nnn/GSM371280/GSM371280.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 2 versus channel 1</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="5168">
+GSM371280-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM371282">
+    <Status database="GEO">
+      <Submission-Date>2009-02-13</Submission-Date>
+      <Release-Date>2009-09-22</Release-Date>
+      <Last-Update-Date>2009-09-22</Last-Update-Date>
+    </Status>
+    <Title>72 hour phosphate starvation replicate 1</Title>
+    <Accession database="GEO">GSM371282</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Log phase culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25mM phosphate until log phase (OD600 ~0.4). 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Log phase culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>72 hour phosphate-starved culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25 mM phosphate until log phase (OD600 ~0.4). Then culture was pelleted, washed twice in modified Middlebrook phosphate-free broth by centrifugation at 3000 rpm for 5 min and resuspended in an equal volume of phosphate-free broth. Phosphate-starved cultures were incubated for 72 hours in a shaker at 37 °C. 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+72 hour phosphate-starved culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+PolyA, yeast tRNA, bovine rRNA human COT1 DNA was added to combined labeled cDNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95°C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30µl water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55°C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in distilled water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel. 
+    </Scan-Protocol>
+    <Description>
+These data represent genes which were expressed in 72 hour phosphate-starved culture versus log phase phosphate-replete cultures. 
+    </Description>
+    <Data-Processing>
+Collected microarray data were normalized as follows: the sum total measured intensity of all genes from the sample channel (72 hrs) was divided by that of the control channel, and each gene's intensity value from the control channel then was multiplied by this ratio (global normalization). Globally normalized expression values were log2-transformed in order to calculate mean log intensity and log ratios between sample and control values. Local mean normalization was performed using Stata 10 software (StataCorp LP, College Station, TX) across the range of expression levels. The &quot;residuals&quot; from this regression fit (i.e., the distance between observed data and the regression fit,) were used as corrected log ratio values and further analyzed using SAM (Significance Analysis of Microarrays, version 3.01) software to obtain q-values (false discovery rate).
+ 
+  
+    </Data-Processing>
+    <Platform-Ref ref="GPL8189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM371nnn/GSM371282/GSM371282.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 2 versus channel 1</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="5168">
+GSM371282-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM371284">
+    <Status database="GEO">
+      <Submission-Date>2009-02-13</Submission-Date>
+      <Release-Date>2009-09-22</Release-Date>
+      <Last-Update-Date>2009-09-22</Last-Update-Date>
+    </Status>
+    <Title>72 hour phosphate starvation replicate 2</Title>
+    <Accession database="GEO">GSM371284</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Log phase culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25mM phosphate until log phase (OD600 ~0.4). 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Log phase culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>72 hour phosphate-starved culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25 mM phosphate until log phase (OD600 ~0.4). Then culture was pelleted, washed twice in modified Middlebrook phosphate-free broth by centrifugation at 3000 rpm for 5 min and resuspended in an equal volume of phosphate-free broth. Phosphate-starved cultures were incubated for 72 hours in a shaker at 37 °C. 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+72 hour phosphate-starved culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+PolyA, yeast tRNA, bovine rRNA human COT1 DNA was added to combined labeled cDNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95°C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30µl water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55°C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in distilled water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel. 
+    </Scan-Protocol>
+    <Description>
+These data represent genes which were expressed in 72 hour phosphate-starved culture versus log phase phosphate-replete cultures. 
+    </Description>
+    <Data-Processing>
+Collected microarray data were normalized as follows: the sum total measured intensity of all genes from the sample channel (72 hrs) was divided by that of the control channel, and each gene's intensity value from the control channel then was multiplied by this ratio (global normalization). Globally normalized expression values were log2-transformed in order to calculate mean log intensity and log ratios between sample and control values. Local mean normalization was performed using Stata 10 software (StataCorp LP, College Station, TX) across the range of expression levels. The &quot;residuals&quot; from this regression fit (i.e., the distance between observed data and the regression fit,) were used as corrected log ratio values and further analyzed using SAM (Significance Analysis of Microarrays, version 3.01) software to obtain q-values (false discovery rate).
+ 
+  
+    </Data-Processing>
+    <Platform-Ref ref="GPL8189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM371nnn/GSM371284/GSM371284.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 2 versus channel 1</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="5168">
+GSM371284-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM371285">
+    <Status database="GEO">
+      <Submission-Date>2009-02-13</Submission-Date>
+      <Release-Date>2009-09-22</Release-Date>
+      <Last-Update-Date>2009-09-22</Last-Update-Date>
+    </Status>
+    <Title>72 hour phosphate starvation replicate 3</Title>
+    <Accession database="GEO">GSM371285</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Log phase culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25mM phosphate until log phase (OD600 ~0.4). 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Log phase culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>72 hour phosphate-starved culture</Source>
+      <Organism taxid="83331">Mycobacterium tuberculosis CDC1551</Organism>
+      <Characteristics>
+Mycobacterium tuberculosis CDC1551 was grown in modified Middlebrook broth containing 25 mM phosphate until log phase (OD600 ~0.4). Then culture was pelleted, washed twice in modified Middlebrook phosphate-free broth by centrifugation at 3000 rpm for 5 min and resuspended in an equal volume of phosphate-free broth. Phosphate-starved cultures were incubated for 72 hours in a shaker at 37 °C. 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+72 hour phosphate-starved culture was centrifuged at 3500 rpm for 10 minutes at 4˚C. The supernatants were removed and the pellets resuspended in 1 ml TriZOL reagent (GIBCO/BRL). Mycobacterial membranes were disrupted using 0.1 mm zirconia/silica beads in a Bio-Spec bead beater (8 cycles x 30 sec/cycle). Mycobacterial RNA was recovered by centrifugation, chloroform extraction, and isopropyl alcohol precipitation. Prior to reverse transcription, RNA was treated with RNase-free DNase (Ambion) and subjected to 40 cycles of PCR to assure that all DNA had been removed, as assessed by ethidium bromide-stained agarose gel analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescently-labeled cDNA was generated using Superscript III (Biorad) and fluorescent dyes Cy5 (Amersham). 
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+PolyA, yeast tRNA, bovine rRNA human COT1 DNA was added to combined labeled cDNA samples as a blocker. Samples were added to hybridization buffer (10XSSC, 30% formamide, 0.2% SDS), denatured at 95°C for 3 minutes, and snap cooled on ice. Samples were loaded onto the slide by capillary action under a Corning lifter slip and sealed into a corning hybridization chamber with 30µl water at each as a humidifier. Samples were hybridized to the slides for 18 hours at 55°C in a hybridization oven. Hybridized slides were washed for 10 minutes at room temperature in each of 2XSSC, 0.1%SDS; 1XSSC, 0.1%SDS; 1XSSC; 0.5XSSC; and rinsed for 10 seconds in distilled water.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Fluorescence intensity data were collected with a GenePix 4000B scanner (Axon Instruments) with GenePix Pro 4.0 software. Photomultiplier tube gains were set empirically for each channel to optomize intensity and to equalize intensities for control spots on each channel. 
+    </Scan-Protocol>
+    <Description>
+These data represent genes which were expressed in 72 hour phosphate-starved culture versus log phase phosphate-replete cultures. 
+    </Description>
+    <Data-Processing>
+Collected microarray data were normalized as follows: the sum total measured intensity of all genes from the sample channel (72 hrs) was divided by that of the control channel, and each gene's intensity value from the control channel then was multiplied by this ratio (global normalization). Globally normalized expression values were log2-transformed in order to calculate mean log intensity and log ratios between sample and control values. Local mean normalization was performed using Stata 10 software (StataCorp LP, College Station, TX) across the range of expression levels. The &quot;residuals&quot; from this regression fit (i.e., the distance between observed data and the regression fit,) were used as corrected log ratio values and further analyzed using SAM (Significance Analysis of Microarrays, version 3.01) software to obtain q-values (false discovery rate).
+ 
+  
+    </Data-Processing>
+    <Platform-Ref ref="GPL8189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM371nnn/GSM371285/GSM371285.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized LOG2 ratios of channel 2 versus channel 1</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_Sig_MED</Name>
+        <Description>Median intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MED</Name>
+        <Description>Median local background intensity of 635nm (Cy5) channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2_Sig_MED</Name>
+        <Description>Median intensity of 532nm (Cy3) channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_BKD_MED</Name>
+        <Description>Median local background intensity of 532nm (Cy3) channel</Description>
+      </Column>
+    <External-Data rows="5168">
+GSM371285-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE14840">
+    <Status database="GEO">
+      <Submission-Date>2009-02-13</Submission-Date>
+      <Release-Date>2009-09-22</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Phosphate depletion: A novel trigger for Mycobacterium tuberculosis persistence  </Title>
+    <Accession database="GEO">GSE14840</Accession>
+    <Pubmed-ID>19686042</Pubmed-ID>
+    <Summary>
+These data represent the global gene expression profile of Mycobacterium tuberculosis after 24 hrs and 72 hrs of inorganic phosphate starvation. Differentially regulated genes appear to include those encoding proteins involved in adaptation to phosphate starvation, namely those involved in phosphate regulation and phosphate assimilation, as well as those involved in the stringent response. 
+    </Summary>
+    <Overall-Design>
+To investigate genes involved in phosphate regulation and assimilation, as well as the stringent response, three biological replicates were prepared from log phase cultures in phosphate-replete medium (25mM phosphate),which served as control, and 24 and 72 hrs of phosphate-starved cultures served as sample replicates.  After purification of total RNA from above cultures, fluorescent labeled cDNAs were generated and used for dual channel hybridization to perform genome-wide  microarray studies. Three slides were used for each time point. Collected microarray data were normalized by global and local normalization. Genes with ≥ 2-fold change in expression in all three hybridizations and q-value ≤0.01 were defined as being significantly differentially regulated. our data showed  that genes related to phosphate regulation and assimilation as well as the stringent response were dramatically upregulated.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM371007" />
+    <Sample-Ref ref="GSM371278" />
+    <Sample-Ref ref="GSM371280" />
+    <Sample-Ref ref="GSM371282" />
+    <Sample-Ref ref="GSM371284" />
+    <Sample-Ref ref="GSM371285" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE14840/GSE14840 Fold changes and q values under 72hrs phosphatestarvation.txt
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE14840/GSE14840 fold changes and q-values under 24hr phosphatestarvation.txt
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE14840/GSE14840_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/112109" />
+  </Series>
+
+</MINiML>

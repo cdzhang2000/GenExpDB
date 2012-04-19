@@ -1,0 +1,22 @@
+{
+  "description": "Genome Database",
+  "db_adaptor": "Bio::DB::SeqFeature::Store",
+  "db_args": { "-adaptor": "memory",
+               "-dir": "/var/www/modperl/gdb/jbdata/annot" },
+
+  "TRACK DEFAULTS": {
+    "class": "feature",
+    "autocomplete": "all"
+  },
+
+   "tracks": [
+    {
+      "track": "gene",
+      "key": "Genes",      
+      "feature": ["gene"],
+      "autocomplete": "all",
+      "class": "feature",
+      "urlTemplate": "http://ec2-23-21-233-38.compute-1.amazonaws.com/gdb/?query={name}"
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Christina</First><Middle>Leigh</Middle><Last>Stallings</Last></Person>
+    <Laboratory>Stallings Laboratory</Laboratory>
+    <Department>Molecular Microbiology</Department>
+    <Organization>Washington University School of Medicine</Organization>
+    <Address>
+      <Line>660 South Euclid Avenue, Box 8230</Line>
+      <City>St Louis</City>
+      <State>Mo</State>
+      <Zip-Code>63110</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Christina</First><Last>Stallings</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Michael</First><Last>Glickman</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL13909">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>JCVI PFGRC Mycobacterium smegmatis 22K v3 array designed primarily based on strain MC2 155 [ORF-centered version]</Title>
+    <Accession database="GEO">GPL13909</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+    <Manufacturer>TIGR/J. Craig Venter Institute</Manufacturer>
+    <Manufacture-Protocol>
+4QMS, with arrayer GENETIX, machine cycles 0, pen id 0, pen cycles 0, operator 0, humidity control 0, humidity set point0.000
+Slides were cross-linked in a Stratalinker (Stratagene), using the “auto-link” function at 3000ujoulesx100. Prior to hybridization, slides were pre-hybridized for 2 hours at room temperature in 0.2% SDS then rinsed in filtered water (10 sec) then in 70%.EtOH (5sec). Slides were dried by centrifugation at 1000rpm for 3 min.
+    </Manufacture-Protocol>
+    <Description>
+This is an ORF-centered version of the GEO Platform GPL5862
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Relation type="Alternative to" target="GPL5862" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Gene name</Description>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>ORF Name  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>Description</Name>
+        <Description>common description of gene</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="7124">
+GPL13909-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM759797">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>Darr Site(+) with an empty vector compared to wild-type M. smegmatis Site(+)</Title>
+    <Accession database="GEO">GSM759797</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mgm3060 (Darr, vector control)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm3060 (Darr, vector control)
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains were grown in LB media to an OD600 of 0.7. Samples were collected for RNA extraction.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 or Cy3 dyes
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>mgm3020</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm3020
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains were grown in LB media to an OD600 of 0.7. Samples were collected for RNA extraction.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 or Cy3 dyes
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was mixed to 500ul of Ambion SlideHyb#3 hybridization buffer (cat# AM8863). Hybridization mix was spin at 15,000xg for 5 min, denatured at 98C for 2 min and kept at 70C until loading onto the slide. Hybridization was performed in the Agilent hybridization chambers and oven for 18hrs, at 50C, rotation setting at 7.  At the end of hybridization, slides were disassembled in 0.2xSSC/0.1%SDS, washed for 15 min at RT in 0.2xSSC/0.1%SDS, then 15min at RT in 0.1xSSC and dried by centrifugation at 1000rpm for 3 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4200AL scanner (Axon Instruments Inc) using the “autoscanning” function.
+    </Scan-Protocol>
+    <Description>
+3 biological replicates of each strain for each experiment.
+    </Description>
+    <Data-Processing>
+Images were analyzed using GenePix Pro 6.0 (Axon Instruments Inc) for background subtraction, quantile normalization and processing. Partek software was used for analysis
+average normalized Cy5/Cy3 log ratio of replicates. pValue for replicates also shown in the supplementary file on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL13909" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759797/GSM759797_60_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759797/GSM759797_60_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759797/GSM759797_60_3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>average normalized Cy5/Cy3 log ratio of replicates</Description>
+      </Column>
+    <External-Data rows="6744">
+GSM759797-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM759798">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>Darr Site(+) with a vector expressing WT Arr compared to wild-type M. smegmatis Site(+)</Title>
+    <Accession database="GEO">GSM759798</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mgm3061 (Darr, expressing WT Arr)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm3061 (Darr, expressing WT Arr)
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains were grown in LB media to an OD600 of 0.7. Samples were collected for RNA extraction.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 or Cy3 dyes
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>mgm3020</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm3020
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains were grown in LB media to an OD600 of 0.7. Samples were collected for RNA extraction.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 or Cy3 dyes
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was mixed to 500ul of Ambion SlideHyb#3 hybridization buffer (cat# AM8863). Hybridization mix was spin at 15,000xg for 5 min, denatured at 98C for 2 min and kept at 70C until loading onto the slide. Hybridization was performed in the Agilent hybridization chambers and oven for 18hrs, at 50C, rotation setting at 7.  At the end of hybridization, slides were disassembled in 0.2xSSC/0.1%SDS, washed for 15 min at RT in 0.2xSSC/0.1%SDS, then 15min at RT in 0.1xSSC and dried by centrifugation at 1000rpm for 3 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4200AL scanner (Axon Instruments Inc) using the “autoscanning” function.
+    </Scan-Protocol>
+    <Description>
+3 biological replicates of each strain for each experiment.
+    </Description>
+    <Data-Processing>
+Images were analyzed using GenePix Pro 6.0 (Axon Instruments Inc) for background subtraction, quantile normalization and processing. Partek software was used for analysis
+average normalized Cy5/Cy3 log ratio of replicates. pValue for replicates also shown in the supplementary file on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL13909" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759798/GSM759798_61_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759798/GSM759798_61_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759798/GSM759798_61_3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>average normalized Cy5/Cy3 log ratio of replicates</Description>
+      </Column>
+    <External-Data rows="6744">
+GSM759798-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM759799">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>Darr Site(+) with a vector expressing ArrH18A compared to wild-type M. smegmatis Site(+)</Title>
+    <Accession database="GEO">GSM759799</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mgm3062 (Darr, expressing ArrH18A)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm3062 (Darr, expressing ArrH18A)
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains were grown in LB media to an OD600 of 0.7. Samples were collected for RNA extraction.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 or Cy3 dyes
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>mgm3020</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm3020
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains were grown in LB media to an OD600 of 0.7. Samples were collected for RNA extraction.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 or Cy3 dyes
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was mixed to 500ul of Ambion SlideHyb#3 hybridization buffer (cat# AM8863). Hybridization mix was spin at 15,000xg for 5 min, denatured at 98C for 2 min and kept at 70C until loading onto the slide. Hybridization was performed in the Agilent hybridization chambers and oven for 18hrs, at 50C, rotation setting at 7.  At the end of hybridization, slides were disassembled in 0.2xSSC/0.1%SDS, washed for 15 min at RT in 0.2xSSC/0.1%SDS, then 15min at RT in 0.1xSSC and dried by centrifugation at 1000rpm for 3 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4200AL scanner (Axon Instruments Inc) using the “autoscanning” function.
+    </Scan-Protocol>
+    <Description>
+3 biological replicates of each strain for each experiment.
+    </Description>
+    <Data-Processing>
+Images were analyzed using GenePix Pro 6.0 (Axon Instruments Inc) for background subtraction, quantile normalization and processing. Partek software was used for analysis
+average normalized Cy5/Cy3 log ratio of replicates. pValue for replicates also shown in the supplementary file on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL13909" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759799/GSM759799_62_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759799/GSM759799_62_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759799/GSM759799_62_3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>average normalized Cy5/Cy3 log ratio of replicates</Description>
+      </Column>
+    <External-Data rows="6744">
+GSM759799-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM759800">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>Darr Site(+) with a vector expressing Arr D83A compared to wild-type M. smegmatis Site(+)</Title>
+    <Accession database="GEO">GSM759800</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mgm3064 (Darr, expressing D83A)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm3064 (Darr, expressing D83A)
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains were grown in LB media to an OD600 of 0.7. Samples were collected for RNA extraction.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 or Cy3 dyes
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>mgm3020</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm3020
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains were grown in LB media to an OD600 of 0.7. Samples were collected for RNA extraction.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 or Cy3 dyes
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was mixed to 500ul of Ambion SlideHyb#3 hybridization buffer (cat# AM8863). Hybridization mix was spin at 15,000xg for 5 min, denatured at 98C for 2 min and kept at 70C until loading onto the slide. Hybridization was performed in the Agilent hybridization chambers and oven for 18hrs, at 50C, rotation setting at 7.  At the end of hybridization, slides were disassembled in 0.2xSSC/0.1%SDS, washed for 15 min at RT in 0.2xSSC/0.1%SDS, then 15min at RT in 0.1xSSC and dried by centrifugation at 1000rpm for 3 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4200AL scanner (Axon Instruments Inc) using the “autoscanning” function.
+    </Scan-Protocol>
+    <Description>
+3 biological replicates of each strain for each experiment.
+    </Description>
+    <Data-Processing>
+Images were analyzed using GenePix Pro 6.0 (Axon Instruments Inc) for background subtraction, quantile normalization and processing. Partek software was used for analysis
+average normalized Cy5/Cy3 log ratio of replicates. pValue for replicates also shown in the supplementary file on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL13909" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759800/GSM759800_64_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759800/GSM759800_64_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759800/GSM759800_64_3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>average normalized Cy5/Cy3 log ratio of replicates</Description>
+      </Column>
+    <External-Data rows="6744">
+GSM759800-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE30635">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2012-03-23</Last-Update-Date>
+    </Status>
+    <Title>Mycobacterium smegmatis: I-SceI homing endonuclease generated genomic DNA damage in Darr strains expressing ArrWT, ArrH18A, ArrD83A, or an empty vector vs WT M. smegmatis Mc2155 (mgm182, site(+))</Title>
+    <Accession database="GEO">GSE30635</Accession>
+    <Pubmed-ID>21789183</Pubmed-ID>
+    <Summary>
+Transcriptional profiling of Mycobacterium smegmatis comparing strains undergoing I-SceI generated DNA damage at a single genomic locus
+Gene designations are the updated annotation
+    </Summary>
+    <Overall-Design>
+Four comparisons were made, all with log phase cultures and no ATc added. Darr Site(+) with an empty vector compared to wild-type M. smegmatis Site(+), Darr Site(+) with a vector expressing WT Arr compared to wild-type M. smegmatis Site(+), Darr Site(+) with a vector expressing ArrH18A compared to wild-type M. smegmatis Site(+), Darr Site(+) with a vector expressing Arr D83A compared to wild-type M. smegmatis Site(+). 3 biological replicates of each strain for each experiment.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM759797" />
+    <Sample-Ref ref="GSM759798" />
+    <Sample-Ref ref="GSM759799" />
+    <Sample-Ref ref="GSM759800" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE30635/GSE30635_RAW.tar
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE30635/GSE30635_p-values_matrix.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/144627" />
+  </Series>
+
+</MINiML>

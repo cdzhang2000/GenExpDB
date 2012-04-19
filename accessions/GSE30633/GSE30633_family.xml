@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Christina</First><Middle>Leigh</Middle><Last>Stallings</Last></Person>
+    <Laboratory>Stallings Laboratory</Laboratory>
+    <Department>Molecular Microbiology</Department>
+    <Organization>Washington University School of Medicine</Organization>
+    <Address>
+      <Line>660 South Euclid Avenue, Box 8230</Line>
+      <City>St Louis</City>
+      <State>Mo</State>
+      <Zip-Code>63110</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Christina</First><Last>Stallings</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Michael</First><Last>Glickman</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL13909">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>JCVI PFGRC Mycobacterium smegmatis 22K v3 array designed primarily based on strain MC2 155 [ORF-centered version]</Title>
+    <Accession database="GEO">GPL13909</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+    <Manufacturer>TIGR/J. Craig Venter Institute</Manufacturer>
+    <Manufacture-Protocol>
+4QMS, with arrayer GENETIX, machine cycles 0, pen id 0, pen cycles 0, operator 0, humidity control 0, humidity set point0.000
+Slides were cross-linked in a Stratalinker (Stratagene), using the “auto-link” function at 3000ujoulesx100. Prior to hybridization, slides were pre-hybridized for 2 hours at room temperature in 0.2% SDS then rinsed in filtered water (10 sec) then in 70%.EtOH (5sec). Slides were dried by centrifugation at 1000rpm for 3 min.
+    </Manufacture-Protocol>
+    <Description>
+This is an ORF-centered version of the GEO Platform GPL5862
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Relation type="Alternative to" target="GPL5862" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Gene name</Description>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>ORF Name  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>Description</Name>
+        <Description>common description of gene</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="7124">
+GPL13909-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM759792">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>Log phase cultures without induction of I-SceI expression (T=0, -Atc)</Title>
+    <Accession database="GEO">GSM759792</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Log phase cultures without induction of I-SceI expression (T=0, -Atc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm182 (site(+))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Log phase cultures without induction of I-SceI expression (T=0, -Atc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm181 (Site(-))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was mixed to 500ul of Ambion SlideHyb#3 hybridization buffer (cat# AM8863). Hybridization mix was spin at 15,000xg for 5 min, denatured at 98C for 2 min and kept at 70C until loading onto the slide. Hybridization was performed in the Agilent hybridization chambers and oven for 18hrs, at 50C, rotation setting at 7.  At the end of hybridization, slides were disassembled in 0.2xSSC/0.1%SDS, washed for 15 min at RT in 0.2xSSC/0.1%SDS, then 15min at RT in 0.1xSSC and dried by centrifugation at 1000rpm for 3 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4200AL scanner (Axon Instruments Inc) using the “autoscanning” function.
+    </Scan-Protocol>
+    <Description>
+Replicate 1, 2, and 3 combined and averaged
+No ATc added, Biological replicates 1, 2 and 3
+    </Description>
+    <Data-Processing>
+Images were analyzed using GenePix Pro 6.0 (Axon Instruments Inc) for background subtraction, lowess normalization and processing. GeneSpring software (v. 7.3.1) was used for analysis
+VALUE = average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates. pValue for replicates also shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL13909" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759792/GSM759792_logOB_res.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759792/GSM759792_logOC_res.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates</Description>
+      </Column>
+      <Column position="3">
+        <Name>t-test P-value</Name>
+      </Column>
+    <External-Data rows="7124">
+GSM759792-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM759793">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>Log phase cultures induced to express I-SceI for 45 minutes (T=45, +ATc)</Title>
+    <Accession database="GEO">GSM759793</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Log phase cultures induced to express I-SceI for 45 minutes (T=45, +ATc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm182 (site(+))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Log phase cultures induced to express I-SceI for 45 minutes (T=45, +ATc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm181 (Site(-))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was mixed to 500ul of Ambion SlideHyb#3 hybridization buffer (cat# AM8863). Hybridization mix was spin at 15,000xg for 5 min, denatured at 98C for 2 min and kept at 70C until loading onto the slide. Hybridization was performed in the Agilent hybridization chambers and oven for 18hrs, at 50C, rotation setting at 7.  At the end of hybridization, slides were disassembled in 0.2xSSC/0.1%SDS, washed for 15 min at RT in 0.2xSSC/0.1%SDS, then 15min at RT in 0.1xSSC and dried by centrifugation at 1000rpm for 3 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4200AL scanner (Axon Instruments Inc) using the “autoscanning” function.
+    </Scan-Protocol>
+    <Description>
+Replicate 1, 2, and 3 combined and averaged
+ATc added for 45 minutes, Biological replicates 1, 2 and 3
+    </Description>
+    <Data-Processing>
+Images were analyzed using GenePix Pro 6.0 (Axon Instruments Inc) for background subtraction, lowess normalization and processing. GeneSpring software (v. 7.3.1) was used for analysis
+VALUE = average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates. pValue for replicates also shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL13909" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759793/GSM759793_log45A_res.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759793/GSM759793_log45B_res.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759793/GSM759793_log45C_res.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates</Description>
+      </Column>
+      <Column position="3">
+        <Name>t-test P-value</Name>
+      </Column>
+    <External-Data rows="7124">
+GSM759793-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM759794">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>Stationary cultures control without induction of I-SceI expression (T=0, -Atc)</Title>
+    <Accession database="GEO">GSM759794</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Stationary cultures control without induction of I-SceI expression (T=0, -Atc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm182 (site(+))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Stationary cultures control without induction of I-SceI expression (T=0, -Atc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm181 (Site(-))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was mixed to 500ul of Ambion SlideHyb#3 hybridization buffer (cat# AM8863). Hybridization mix was spin at 15,000xg for 5 min, denatured at 98C for 2 min and kept at 70C until loading onto the slide. Hybridization was performed in the Agilent hybridization chambers and oven for 18hrs, at 50C, rotation setting at 7.  At the end of hybridization, slides were disassembled in 0.2xSSC/0.1%SDS, washed for 15 min at RT in 0.2xSSC/0.1%SDS, then 15min at RT in 0.1xSSC and dried by centrifugation at 1000rpm for 3 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4200AL scanner (Axon Instruments Inc) using the “autoscanning” function.
+    </Scan-Protocol>
+    <Description>
+Replicate 1, 2, and 3 combined and averaged
+No ATc added, Biological replicates 1, 2 and 3
+    </Description>
+    <Data-Processing>
+Images were analyzed using GenePix Pro 6.0 (Axon Instruments Inc) for background subtraction, lowess normalization and processing. GeneSpring software (v. 7.3.1) was used for analysis
+VALUE = average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates. pValue for replicates also shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL13909" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759794/GSM759794_stat0A_results.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759794/GSM759794_stat0B_results.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759794/GSM759794_stat0C_results.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates</Description>
+      </Column>
+      <Column position="3">
+        <Name>t-test P-value</Name>
+      </Column>
+    <External-Data rows="7124">
+GSM759794-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM759795">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>Stationary phase cultures induced to express I-SceI for 15 minutes (T=15, +ATc)</Title>
+    <Accession database="GEO">GSM759795</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Stationary phase cultures induced to express I-SceI for 15 minutes (T=15, +ATc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm182 (site(+))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Stationary phase cultures induced to express I-SceI for 15 minutes (T=15, +ATc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm181 (Site(-))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was mixed to 500ul of Ambion SlideHyb#3 hybridization buffer (cat# AM8863). Hybridization mix was spin at 15,000xg for 5 min, denatured at 98C for 2 min and kept at 70C until loading onto the slide. Hybridization was performed in the Agilent hybridization chambers and oven for 18hrs, at 50C, rotation setting at 7.  At the end of hybridization, slides were disassembled in 0.2xSSC/0.1%SDS, washed for 15 min at RT in 0.2xSSC/0.1%SDS, then 15min at RT in 0.1xSSC and dried by centrifugation at 1000rpm for 3 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4200AL scanner (Axon Instruments Inc) using the “autoscanning” function.
+    </Scan-Protocol>
+    <Description>
+Replicate 1, 2, and 3 combined and averaged
+ATc added for 15 minutes, Biological replicates 1, 2 and 3
+    </Description>
+    <Data-Processing>
+Images were analyzed using GenePix Pro 6.0 (Axon Instruments Inc) for background subtraction, lowess normalization and processing. GeneSpring software (v. 7.3.1) was used for analysis
+VALUE = average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates. pValue for replicates also shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL13909" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759795/GSM759795_stat15A_results.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759795/GSM759795_stat15B_results.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759795/GSM759795_stat15C_results.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates</Description>
+      </Column>
+      <Column position="3">
+        <Name>t-test P-value</Name>
+      </Column>
+    <External-Data rows="7124">
+GSM759795-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM759796">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2011-07-15</Last-Update-Date>
+    </Status>
+    <Title>Stationary cultures induced to express I-SceI for 45 minutes (T=45, +ATc)</Title>
+    <Accession database="GEO">GSM759796</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Stationary cultures induced to express I-SceI for 45 minutes (T=45, +ATc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm182 (site(+))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Stationary cultures induced to express I-SceI for 45 minutes (T=45, +ATc)</Source>
+      <Organism taxid="1772">Mycobacterium smegmatis</Organism>
+      <Characteristics tag="strain">
+mgm181 (Site(-))
+      </Characteristics>
+      <Growth-Protocol>
+Mycobacterium smegmatis strains mgm182 (site(+)) and mgm181 (site(-)) were grown to an OD600 of 0.7 (log) or &gt;2.0 (stationary). Samples were collected for the T=0 timepoint and then a final concentration of 50ng/ml of ATc was added. 15 minutes and 45 minutes later samples were collected (T=15 and T=45, respectively).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Trizol and bead beating
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 ug of RNA was reversed transcribed with Stratagene Fairplay kit and the cDNA was coupled to either Cy5 (mgm182) or Cy3 (mgm181) dyes
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was mixed to 500ul of Ambion SlideHyb#3 hybridization buffer (cat# AM8863). Hybridization mix was spin at 15,000xg for 5 min, denatured at 98C for 2 min and kept at 70C until loading onto the slide. Hybridization was performed in the Agilent hybridization chambers and oven for 18hrs, at 50C, rotation setting at 7.  At the end of hybridization, slides were disassembled in 0.2xSSC/0.1%SDS, washed for 15 min at RT in 0.2xSSC/0.1%SDS, then 15min at RT in 0.1xSSC and dried by centrifugation at 1000rpm for 3 min.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4200AL scanner (Axon Instruments Inc) using the “autoscanning” function.
+    </Scan-Protocol>
+    <Description>
+Replicate 1, 2, and 3 combined and averaged
+ATc added for 45 minutes, Biological replicates 1, 2 and 3
+    </Description>
+    <Data-Processing>
+Images were analyzed using GenePix Pro 6.0 (Axon Instruments Inc) for background subtraction, lowess normalization and processing. GeneSpring software (v. 7.3.1) was used for analysis
+VALUE = average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates. pValue for replicates also shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL13909" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759796/GSM759796_stat45A_results.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759796/GSM759796_stat45B_results.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM759nnn/GSM759796/GSM759796_stat45C_results.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>average normalized Cy5(mgm182)/Cy3(mgm181) log ratio of replicates</Description>
+      </Column>
+      <Column position="3">
+        <Name>t-test P-value</Name>
+      </Column>
+    <External-Data rows="7124">
+GSM759796-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE30633">
+    <Status database="GEO">
+      <Submission-Date>2011-07-13</Submission-Date>
+      <Release-Date>2011-07-15</Release-Date>
+      <Last-Update-Date>2012-03-23</Last-Update-Date>
+    </Status>
+    <Title>Mycobacterium smegmatis: I-SceI homing endonuclease generated genomic DNA damage (site(+), mgm182) vs control (site(-), mgm181)</Title>
+    <Accession database="GEO">GSE30633</Accession>
+    <Pubmed-ID>21789183</Pubmed-ID>
+    <Summary>
+Transcriptional profiling of Mycobacterium smegmatis comparing a strain undergoing I-SceI generated DNA damage at a single genomic locus versus a control strain with no I-SceI recognition sequence in its genome (and thus not undergoing double strand DNA breaks
+Gene designations are from the original annotation, not the updated
+    </Summary>
+    <Overall-Design>
+Five conditions investigated: Log phase cultures without induction of I-SceI expression (T=0, -Atc), Log phase cultures induced to express I-SceI by the addition of ATc for 45 minutes (T=45, +ATc), Stationary cultures control without induction of I-SceI expression (T=0, -Atc), Stationary phase cultures induced to express I-SceI by the addition of ATc for 15 minutes (T=15, +ATc), and Stationary cultures induced to express I-SceI for 45 minutes by the addition of ATc (T=45, +ATc). 3 biological replicates of each strain for each experiment.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM759792" />
+    <Sample-Ref ref="GSM759793" />
+    <Sample-Ref ref="GSM759794" />
+    <Sample-Ref ref="GSM759795" />
+    <Sample-Ref ref="GSM759796" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE30633/GSE30633_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/144623" />
+  </Series>
+
+</MINiML>

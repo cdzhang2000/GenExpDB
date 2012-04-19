@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Virginie</First><Middle>Marie</Middle><Last>Aris</Last></Person>
+    <Email>arisvm@umdnj.edu</Email>
+    <Phone>973-854-3455</Phone>
+    <Fax>973-854-3453</Fax>
+    <Laboratory>Soteropoulos</Laboratory>
+    <Department>Center For Applied Genomics</Department>
+    <Organization>PHRI-UMNDJ </Organization>
+    <Address>
+      <Line>W420M, 225 Warren St</Line>
+      <City>Newark</City>
+      <State>NJ</State>
+      <Zip-Code>07103</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.cag.icph.org/</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Patricia</First><Last>Soteropoulos</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Saleena</First><Middle>S</Middle><Last>Ghanny</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Virginie</First><Middle>M</Middle><Last>Aris</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Patricia</First><Last>Fontan</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Issar</First><Last>Smith</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL4057">
+    <Status database="GEO">
+      <Submission-Date>2006-08-02</Submission-Date>
+      <Release-Date>2006-08-04</Release-Date>
+      <Last-Update-Date>2006-08-04</Last-Update-Date>
+    </Status>
+    <Title>PHRI-UMNDJ Mycobacterium tuberculosis 4.8K CAG_Mtb</Title>
+    <Accession database="GEO">GPL4057</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+    <Manufacturer>Center for Applied Genomics</Manufacturer>
+    <Manufacture-Protocol>
+Oligonucleotide 70mer long from the OPERON TB set version 1.0 are spotted using an omnigrid arrayer at a concentration of 25uM in 3x SSC onto glass slides coated with Poly-L-Lysine.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Rv-ORF_ID</Name>
+        <Description>Rv or ORF number</Description>
+      </Column>
+      <Column position="3">
+        <Name>Name</Name>
+        <Description>Gene name</Description>
+      </Column>
+      <Column position="4">
+        <Name>ORF</Name>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="5">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="4800">
+GPL4057-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM143399">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 1 (A 4hrs)</Title>
+    <Accession database="GEO">GSM143399</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv 4hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+4hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 4 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 1
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143399/GSM143399.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143399-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM143400">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 2 (B 4hrs)</Title>
+    <Accession database="GEO">GSM143400</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv 4hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+4hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 4 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 2
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143400/GSM143400.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143400-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM143401">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 3 (C 4hrs)</Title>
+    <Accession database="GEO">GSM143401</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv 4hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+4hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 4 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 3
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143401/GSM143401.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143401-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM143402">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 4 (D 4hrs)</Title>
+    <Accession database="GEO">GSM143402</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv 4hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+4hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 4 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 4
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143402/GSM143402.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143402-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM143403">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 5 (E 4hrs)</Title>
+    <Accession database="GEO">GSM143403</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv 4hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+4hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 4 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 5
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143403/GSM143403.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143403-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM143404">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 1 (A 24hrs)</Title>
+    <Accession database="GEO">GSM143404</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv 24hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+24hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 24 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 1
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143404/GSM143404.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143404-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM143405">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 2 (B 24hrs)</Title>
+    <Accession database="GEO">GSM143405</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv 24hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+24hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 24 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 2
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143405/GSM143405.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143405-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM143406">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 3 (C 24hrs)</Title>
+    <Accession database="GEO">GSM143406</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv 24hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+24hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 24 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 3
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143406/GSM143406.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143406-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM143407">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 4 (D 24hrs)</Title>
+    <Accession database="GEO">GSM143407</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv 24hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+24hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 24 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 4
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143407/GSM143407.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143407-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM143408">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2008-03-27</Release-Date>
+      <Last-Update-Date>2008-03-27</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 5 (E 24hrs)</Title>
+    <Accession database="GEO">GSM143408</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv 24hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+24hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 24 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 24hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 5
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM143nnn/GSM143408/GSM143408.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM143408-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206719">
+    <Status database="GEO">
+      <Submission-Date>2007-06-29</Submission-Date>
+      <Release-Date>2007-12-18</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 6 (A 4hrs)</Title>
+    <Accession database="GEO">GSM206719</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>H37Rv grown in 7H9 media</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+Control exponentially growing H37Rv in 7H9 media
+      </Characteristics>
+      <Treatment-Protocol>
+NONE
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Mtb RNA from in vitro cultures:  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>H37Rv 4hrs after infection in macrophage (THP1)</Source>
+      <Organism taxid="1773">Mycobacterium tuberculosis</Organism>
+      <Characteristics>
+strain H37Rv
+      </Characteristics>
+      <Characteristics tag="Time">
+4hrs after infection
+      </Characteristics>
+      <Treatment-Protocol>
+Ten 175cm2 flasks were seeded with 100 ml of 106 THP-1 cells/ml.  THP-1 cells were differentiated with 40 nMolar PMA (phorbol myristate acetate) overnight at 37°C, 5%CO2 and 95% humidity.  Mtb cultures were grown exponentially in the usual 7H9ADCTW to an OD of 0.2 for the infection.  An appropriate volume of this culture was resuspended in RPMI with 20% FCS to obtain a bacterial suspension of 2x106 cfu/ml.  One hundred milliliters of bacterial suspension were added to each flask (MOI: 2). Macrophages and bacteria were incubated for 2 h.  After incubation macrophages were washed with warm PBS and 100ml of RPMI +20% FCS were added to each flask.   Infections were followed for 4 hours and cells from five flasks were processed  for bacterial RNA extraction.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The Mtb strains H37Rv was used for all the experiments.  Bacterial stocks were maintained at -80?C in 7H9ADCTW (Middlebrook 7H9 (Difco) supplemented with 1x ADC [0•5% bovine serum albumin, fraction V (Boehringer Manheim), 0•2% glucose and 0•085% NaCl], 0•2% glycerol and 0•1% Tween 80).   Aliquots of bacteria were thawed and cultured in solid media 7H10 ADCTW.   For preparation of liquid cultures bacteria growing in 7H10 agar plates were resuspended in 7H9ADCTW media at an OD: 0.05.  Liquid cultures were grown in plastic roller bottles in a roller apparatus until OD 0.2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Macrophages infected with Mtb were lysed with 20 ml per 175 cm2 flask of guanidinium thiocyanate -based buffer (25 mM sodium citrate/4 M guanidine thiocyanate/0.5% N-lauryl sarcosine/0.125 M mercaptoethanol, 0.5% Tween 80, pH 7.0) and eukaryotic DNA was sheared by homogenization of the samples for 5 min with a Vertis homogenizer  (Vertis).  Samples were spin down for 30 min at 4,000xg and bacterial pellets were washed with 10 ml of guanidinium thiocyanate -based buffer and spin down for 15 min at 4,000xg.  Bacterial cell pellets were resuspended in 1 ml TRI reagent  (Molecular Research Center,OH) and immediately transferred to a 2ml screw cap microcentrifuge tube with o-rings containing 0.5ml zirconia beads (0.1mm diameter, Biospec Products, Inc., OH).  Samples were disrupted by two 1-min pulses in a BeadBeater, keeping the samples on ice for 2 minutes in between the pulses.  The liquid was removed from the beads, incubated at room temperature for 10 min and centrifugated for 10 min at 12,000g.  The supernatant was transferred to a clean tube, 100µl BCP Reagent (Molecular Research Center) was added to 1ml samples in TRI, and then the tubes were shaken vigorously for 15 sec, incubated 10 min at room temperature and then centrifuged for 15 min at 12,000xg.  The supernatant was recovered and precipitated with 600µl isopropanol.  After washing with 75% ethanol the RNA was resuspended in 30-100µl of DEPC-treated H2O and then treated with RNAse-free DNAse (Ambion) for 30min at 37°c. After DNAse treatment samples were further purified using Rneasy columns (Quiagen).  The eluted RNA was kept at -80°C until further use.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was reversed transcribed into cDNA using Superscript II RT in the presence of Cyanine-3 or Cyanine-5 dUTP (PerkinElmer) by a modification of the procedure described by Voskuil et. al. (Voskuil et. al, 2003).  This was accomplished using a reaction mix with a final concentration of 0.17ug/ul random hexamers (IDT), 0.96x first strand buffer (Invitrogen), 9.6mM DTT (Invitrogen), 0.44mM dATP, dCTP and dGTP (Invitrogen), 0.02mM dTTP (Invitrogen), 0.06mM Cyanine 3 or 5 dUTP (PerkinElmer) and 9.4units Superscript II (Invitrogen).  The combination of reaction mix and total RNA was incubated for ten minutes at 25°C followed by ninety minutes at 42°C.  The labeled cDNA probes were then purified and concentrated using a Microcon YM10 filter (Millipore) and TE buffer pH 8.0 (Ambion).  Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Slides were blocked prior to hybridization using BSA The purified cDNA probes were added to the arrays together with a hybridization solution mix resulting in a final concentration of 0.5ug/ul tRNA (Invitrogen), 2.0X SSC (Ambion), 0.25% Formamide (Sigma) and 0.1% SDS (Ambion).  The probes were covered by a flat 22x22mm coverslip (Corning) and hybridized in sealed hybridization chambers (Genemachines) for sixteen hours in a 50°C water bath.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned using an Axon 4000B scanner
+    </Scan-Protocol>
+    <Description>
+H37Rv 4hrs after infection in macrophage vs. H37Rv grown in 7H9 media biological replicate 6
+    </Description>
+    <Data-Processing>
+The images were processed using GenePix 5.1 and resulting text files were exported to Microsoft Excel
+    </Data-Processing>
+    <Platform-Ref ref="GPL4057" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206719/GSM206719.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Print Tip Lowess Normalized Log 2 ratio test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>Flags</Name>
+        <Description>0 if good, -50 not found</Description>
+      </Column>
+      <Column position="4">
+        <Name>Dia.</Name>
+        <Description>spot diameter</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median</Name>
+        <Description>Cy5 Intensity</Description>
+      </Column>
+      <Column position="6">
+        <Name>B635</Name>
+        <Description>Cy5 Background intensity</Description>
+      </Column>
+      <Column position="7">
+        <Name>F532 Median</Name>
+        <Description>Cy3 Intensity</Description>
+      </Column>
+      <Column position="8">
+        <Name>B532</Name>
+        <Description>Cy3 Background intensity</Description>
+      </Column>
+    <External-Data rows="4800">
+GSM206719-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE6209">
+    <Status database="GEO">
+      <Submission-Date>2006-11-01</Submission-Date>
+      <Release-Date>2007-12-18</Release-Date>
+      <Last-Update-Date>2012-03-19</Last-Update-Date>
+    </Status>
+    <Title>The global transcriptional profile of Mycobacterium tuberculosis during human macrophages infection</Title>
+    <Accession database="GEO">GSE6209</Accession>
+    <Pubmed-ID>18657035</Pubmed-ID>
+    <Summary>
+During lung infection Mycobacterium tuberculosis (Mtb) resides in macrophages and subverts the bactericidal mechanisms of these professional phagocytes.
+In this work we have analyzed by DNA microarray technique the global transcription profile of Mtb infecting primary human macrophages in order to identify putative bacterial pathogenic factors that can be relevant for the intracellular survival of Mtb.
+Keywords: time course
+    </Summary>
+    <Overall-Design>
+We compared the global gene expression of the H37Rv strain of Mtb after 4 hours and 24 hours of infection of human macrophage-like THP-1 cells with the gene expression profile of the strain growing exponentially in broth cultures.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib5" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contributor-Ref ref="contrib2" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM143399" />
+    <Sample-Ref ref="GSM143400" />
+    <Sample-Ref ref="GSM143401" />
+    <Sample-Ref ref="GSM143402" />
+    <Sample-Ref ref="GSM143403" />
+    <Sample-Ref ref="GSM143404" />
+    <Sample-Ref ref="GSM143405" />
+    <Sample-Ref ref="GSM143406" />
+    <Sample-Ref ref="GSM143407" />
+    <Sample-Ref ref="GSM143408" />
+    <Sample-Ref ref="GSM206719" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE6209/GSE6209_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE7963" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/104989" />
+  </Series>
+
+</MINiML>
