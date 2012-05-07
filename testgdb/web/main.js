@@ -20,7 +20,7 @@ function ckloginKey(e) {
 function statbar(id) {
 	var rec = document.getElementById('stat');
 	if (id == 'show') {
-		rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
+		rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
 	}else{
 		rec.innerHTML = '';
 	}
@@ -48,8 +48,8 @@ function gm(id,aid) {
 	}else{
 		aid = (aid) ? aid : '';
 		rec = document.getElementById('ginfo');
-		rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-		sendRequest('/gdb/', 'ajax=ginfo&ginfo='+id+'&aid='+aid);
+		rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+		sendRequest('/testgdb/', 'ajax=ginfo&ginfo='+id+'&aid='+aid);
 		rec.className = 'showrec';
 		if (id=='expgenes') {
 			setTimeout("sorttable.makeSortable(document.getElementById('expgenes'))",20000);
@@ -66,8 +66,8 @@ function smfun(id) {
 	//multifun
 	rec = document.getElementById('mfun');
 	if (id == 'open') {
-		rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-		sendRequest('/gdb/', 'ajax=mfun&mfun=open');
+		rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+		sendRequest('/testgdb/', 'ajax=mfun&mfun=open');
 		rec.className = 'showrec';
 	}else if (id == 'close') {
 		document.getElementById('mfunck').checked=false;
@@ -82,11 +82,11 @@ function expand(id) {
 	var element = document.getElementById(id);
 	var sign = document.getElementById('sign'+id);
 	if (element.className == 'hidden') {
-		sign.src = '/modperl/gdb/web/minus.gif';
+		sign.src = '/modperl/testgdb/web/minus.gif';
 		sign.title = 'Collapse';
 		element.className = 'showrec';
 	}else{
-		sign.src = '/modperl/gdb/web/plus.gif';
+		sign.src = '/modperl/testgdb/web/plus.gif';
 		sign.title = 'Expand';
 		element.className = 'hidden';
 	}
@@ -103,13 +103,13 @@ function da(id) {
 	rec = document.getElementById(id);
 	var esign = document.getElementById(id+'sign');
 	if (rec.className == 'hidden') {
-		rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-		esign.src = '/modperl/gdb/web/minus.gif';
-		sendRequest('/gdb/', 'ajax=ginfo&ginfo='+id);
+		rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+		esign.src = '/modperl/testgdb/web/minus.gif';
+		sendRequest('/testgdb/', 'ajax=ginfo&ginfo='+id);
 		rec.className = 'showrec';
 	}else{
-		esign.src = '/modperl/gdb/web/plus.gif';
-		sendRequest('/gdb/', 'ajax=ginfo&ginfo='+id);
+		esign.src = '/modperl/testgdb/web/plus.gif';
+		sendRequest('/testgdb/', 'ajax=ginfo&ginfo='+id);
 		rec.className = 'hidden';
 	}
 }
@@ -133,12 +133,12 @@ function ckdlaccexp(id) {
 	rec = document.getElementById('dlexp'+id);
 	var esign=document.getElementById('dlesign'+id),ckdlaccn=document.getElementById('ckdlaccn'+id);
 	if (rec.className == 'hidden') {
-		esign.src = '/modperl/gdb/web/minus.gif';
-		rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-		sendRequest('/gdb/', 'ajax=ginfo&ginfo=showdlexpm&id='+id+'&ckdlaccn='+document.getElementById('ckdlaccn'+id).checked);
+		esign.src = '/modperl/testgdb/web/minus.gif';
+		rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+		sendRequest('/testgdb/', 'ajax=ginfo&ginfo=showdlexpm&id='+id+'&ckdlaccn='+document.getElementById('ckdlaccn'+id).checked);
 		rec.className = 'showrec';
 	}else{
-		esign.src = '/modperl/gdb/web/plus.gif';
+		esign.src = '/modperl/testgdb/web/plus.gif';
 		rec.className = 'hidden';
 	}	
 }
@@ -156,7 +156,7 @@ function download() {
 			}
 		}	
 	}	
-	window.open('/modperl/gdb/download.pl?type=accessions&ckdlaccn='+ckdlaccn+'&ckdlexpm='+ckdlexpm);
+	window.open('/modperl/testgdb/download.pl?type=accessions&ckdlaccn='+ckdlaccn+'&ckdlexpm='+ckdlexpm);
 }
 //===================================================================================
 function ckall(elem,id) {
@@ -196,12 +196,12 @@ function ckaccexp(id) {
 	rec = document.getElementById('expmt'+id);
 	var esign=document.getElementById('esign'+id),ckaccn=document.getElementById('ckaccn'+id);
 	if (rec.className == 'hidden') {
-		esign.src = '/modperl/gdb/web/minus.gif';
-		rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-		sendRequest('/gdb/', 'ajax=accinfo&accinfo=showexpm&id='+id+'&ckaccn='+ckaccn.checked);
+		esign.src = '/modperl/testgdb/web/minus.gif';
+		rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+		sendRequest('/testgdb/', 'ajax=accinfo&accinfo=showexpm&id='+id+'&ckaccn='+ckaccn.checked);
 		rec.className = 'showrec';
 	}else{
-		esign.src = '/modperl/gdb/web/plus.gif';
+		esign.src = '/modperl/testgdb/web/plus.gif';
 		rec.className = 'hidden';
 	}	
 }
@@ -218,11 +218,11 @@ function hmclk(hmcnt,expmID,gene,ltag,qryall,accnid,accession,nsd) {
 				rec = document.createElement('div');
 				var divIdName = 'pdiv'+expmID;
 				rec.setAttribute('id',divIdName);
-				rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-				sendRequest('/gdb/', 'ajax=plot&plot='+document.mainFrm.dopt[i].value+'&hmcnt='+hmcnt+'&id='+expmID+'&gene='+gene+'&selGene='+ltag+'&qryall='+qryall+'&nsd='+nsd);
+				rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+				sendRequest('/testgdb/', 'ajax=plot&plot='+document.mainFrm.dopt[i].value+'&hmcnt='+hmcnt+'&id='+expmID+'&gene='+gene+'&selGene='+ltag+'&qryall='+qryall+'&nsd='+nsd);
 				ni.appendChild(rec);	
 			}else if(document.mainFrm.dopt[i].value == 'jbrowse') {
-				window.open('http://genexpdb.ou.edu/modperl/gdb/jb_exps/jbrowse.pl?acc='+accession+'_'+expmID);
+				window.open('http://genexpdb.ou.edu/modperl/testgdb/jb_exps/jbrowse.pl?acc='+accession+'_'+expmID);
 			}		   
 		}
 	}
@@ -245,23 +245,23 @@ function replot(expid,gene,nsd) {
 function pdata(hmcnt,expid) {
 	//view plot data
 	rec = document.getElementById('pdata'+hmcnt);
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=plot&plot=pdata&hmcnt='+hmcnt+'&expid='+expid);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=plot&plot=pdata&hmcnt='+hmcnt+'&expid='+expid);
 	rec.className = 'showrec';
 }
 function supp(type,val,ltag) {
 	//get supplement info
 	rec = document.getElementById('supp'+ltag);
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=supp&supp='+type+'&sval='+val+'&ltag='+ltag);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=supp&supp='+type+'&sval='+val+'&ltag='+ltag);
 	rec.className = 'showrec';
 }
 function accinfo(type,id) {
 	//display accession information
 	rec = document.getElementById(type+id);
 	if (rec.className == 'hidden') {
-		rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-		sendRequest('/gdb/', 'ajax=accinfo&accinfo='+type+'&id='+id);
+		rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+		sendRequest('/testgdb/', 'ajax=accinfo&accinfo='+type+'&id='+id);
 		rec.className = 'showrec';
 	}else{
 		rec.className = 'hidden';
@@ -269,14 +269,14 @@ function accinfo(type,id) {
 }
 function chgchn(chan,id) {
 	rec = document.getElementById('expdata'+id);
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=accinfo&accinfo=expdata&id='+id+'&newchan='+chan);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=accinfo&accinfo=expdata&id='+id+'&newchan='+chan);
 	rec.className = 'showrec';
 }
 function sampdetail(id,sampID) {
 	rec = document.getElementById(id);
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=accinfo&accinfo=sampdetail&id='+id+'&sampID='+sampID);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=accinfo&accinfo=sampdetail&id='+id+'&sampID='+sampID);
 	rec.className = 'showrec';
 }
 function updcurated(id) {
@@ -296,8 +296,8 @@ function updcurated(id) {
 	p += document.mainFrm['substrain'+id].value.replace(/^\s+|\s+$/g,'') + '|~|';
 	p += document.mainFrm['info'+id].value.replace(/^\s+|\s+$/g,'') + '|~|';
 	rec = document.getElementById('curated'+id);
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=accinfo&accinfo=updcurated&id='+id+'&parms='+p);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=accinfo&accinfo=updcurated&id='+id+'&parms='+p);
 }
 function updexperiment(id,form) {
 	//update pexp experiment
@@ -325,8 +325,8 @@ function updexperiment(id,form) {
 		}
 	}
 	rec = document.getElementById('expinfo'+id);
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=accinfo&accinfo=updexperiment&id='+id+'&ed='+ed+'&eo='+eo+'&en='+en+'&et='+et);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=accinfo&accinfo=updexperiment&id='+id+'&ed='+ed+'&eo='+eo+'&en='+en+'&et='+et);
 }
 function selPlot1(id) {
 	//plot channel 1
@@ -370,8 +370,8 @@ function selPlot1(id) {
 	var testgenome='';
 	var cntlgenome='';
 	rec = document.getElementById('selPlot'+id);
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=accinfo&accinfo=sel1Plot&id='+id+'&log='+log+'&normalize='+normalize+'&antilog='+antilog+'&userma='+userma+'&plottype='+plottype+'&testname='+testnameArr+'&testgenome='+testgenome+'&cntlname='+cntlnameArr+'&cntlgenome='+cntlgenome+'&datacol='+datacol);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=accinfo&accinfo=sel1Plot&id='+id+'&log='+log+'&normalize='+normalize+'&antilog='+antilog+'&userma='+userma+'&plottype='+plottype+'&testname='+testnameArr+'&testgenome='+testgenome+'&cntlname='+cntlnameArr+'&cntlgenome='+cntlgenome+'&datacol='+datacol);
 	rec.className = 'showrec';
 }
 function selgenome(id,idx) {
@@ -424,8 +424,8 @@ function selPlot2(id) {
 	if (normalize && testcol.length <1) {alert('Test Value must be selected!');return false;}
 	if (cntlcol.length <1) {alert('Control Value must be selected!');return false;}
 	rec = document.getElementById('selPlot'+id);
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=accinfo&accinfo=sel2Plot&id='+id+'&log='+log+'&normalize='+normalize+'&antilog='+antilog+'&plottype='+plottype+'&sampname='+sampnameArr+'&cntlgenome='+cntlgenome+'&testcol='+testcol+'&testbkgd='+testbkgd+'&cntlcol='+cntlcol+'&cntlbkgd='+cntlbkgd);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=accinfo&accinfo=sel2Plot&id='+id+'&log='+log+'&normalize='+normalize+'&antilog='+antilog+'&plottype='+plottype+'&sampname='+sampnameArr+'&cntlgenome='+cntlgenome+'&testcol='+testcol+'&testbkgd='+testbkgd+'&cntlcol='+cntlcol+'&cntlbkgd='+cntlbkgd);
 	rec.className = 'showrec';
 }
 function swapcond(id) {
@@ -451,28 +451,28 @@ function savExptoDB(event,selid,inputid) {
 	if (expname.length <1) {alert('ExpName required!');return false;}
 	var info=document.getElementById('info'+inputid).value.replace(/^\s+|\s+$/g,'');
 	rec = document.getElementById('selPlot'+selid);
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=accinfo&accinfo=savExptoDB&expname='+expname+'&info='+info);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=accinfo&accinfo=savExptoDB&expname='+expname+'&info='+info);
 	rec.className = 'showrec';
 }
 //GeoUpdate-----------------------------------------------------------------------------
 function geo() {
 	//geoupdate
 	rec = document.getElementById('ginfo');
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=geoupdt&geoupdt=update');
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=geoupdt&geoupdt=update');
 	rec.className = 'showrec';
 }
 function geoEdit(id) {
 	rec = document.getElementById(id);
 	var esign=document.getElementById('esign'+id);
 	if (rec.className == 'hidden') {
-		esign.src = '/modperl/gdb/web/minus.gif';
-		rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-		sendRequest('/gdb/', 'ajax=geoupdt&geoupdt=geoedit&acc='+id);
+		esign.src = '/modperl/testgdb/web/minus.gif';
+		rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+		sendRequest('/testgdb/', 'ajax=geoupdt&geoupdt=geoedit&acc='+id);
 		rec.className = 'showrec';
 	}else{
-		esign.src = '/modperl/gdb/web/plus.gif';
+		esign.src = '/modperl/testgdb/web/plus.gif';
 		rec.className = 'hidden';
 	}	
 }
@@ -484,8 +484,8 @@ function geoSave(id) {
 	p += document.mainFrm['curSubStrain'+id].value.replace(/^\s+|\s+$/g,'') + '|~|';
 	p += document.mainFrm['curInfo'+id].value.replace(/^\s+|\s+$/g,'') + '|~|';
 	rec = document.getElementById('ginfo');
-	rec.innerHTML = '<div align="center"><img src="/modperl/gdb/web/running.gif" alt=""></div>';
-	sendRequest('/gdb/', 'ajax=geoupdt&geoupdt=geosave&acc='+id+'&parms='+p);
+	rec.innerHTML = '<div align="center"><img src="/modperl/testgdb/web/running.gif" alt=""></div>';
+	sendRequest('/testgdb/', 'ajax=geoupdt&geoupdt=geosave&acc='+id+'&parms='+p);
 }
 //ajax functions-----------------------------------------------------------------------------
 function sendRequest(url,parms) {

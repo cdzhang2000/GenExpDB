@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Dipen</First><Last>Sangurdekar</Last></Person>
+    <Email>dps@genomics.princeton.edu</Email>
+    <Department>Lewis-Sigler Institute for Integrative Genomics</Department>
+    <Organization>Princeton University</Organization>
+    <Address>
+      <Line>132 Carl Icahn laboratory, Princeton University</Line>
+      <City>Princeton</City>
+      <State>NJ</State>
+      <Zip-Code>08544</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Dipen</First><Middle>P</Middle><Last>Sangurdekar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Friedrich</First><Last>Srienc</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Arkady</First><Middle>B</Middle><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Arkady</First><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3503">
+    <Status database="GEO">
+      <Submission-Date>2006-03-02</Submission-Date>
+      <Release-Date>2006-03-06</Release-Date>
+      <Last-Update-Date>2006-03-06</Last-Update-Date>
+    </Status>
+    <Title>Khodursky Lab E. coli B 4290 ORFs Microarray</Title>
+    <Accession database="GEO">GPL3503</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Non-commercial</Manufacturer>
+    <Manufacture-Protocol>
+4290 amplified ORFs from primer pairs (from Sigma Genosys) were printed onto glass slides using a 16 tip robotic printer from 384-well microwell plates
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Description>
+A microarray with 4405 spot features.
+Tip Configuration: Standard 16-tip
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Open Reading Frame identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE_SYMBOL</Name>
+        <Description>Name of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+      <Column position="4">
+        <Name>GENE_DESC</Name>
+        <Description>Description of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+    <External-Data rows="4405">
+GPL3503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM99175">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Anaerobic growth in M9 + glucose, reference Genomic DNA T1</Title>
+    <Accession database="GEO">GSM99175</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling of DNA using DNA polymerase (Klenow fragment)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, OD 0.03, anaerobic growth in M9 + glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, OD 0.03, anaerobic growth in M9 + glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Anaerobic growth in glucose, OD 0.03 vs genomic DNA
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99175-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99176">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Anaerobic growth in M9 + glucose, reference Genomic DNA T2</Title>
+    <Accession database="GEO">GSM99176</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling of DNA using DNA polymerase (Klenow fragment)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, OD 0.2, anaerobic growth in M9 + glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, OD 0.2, anaerobic growth in M9 + glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Anaerobic growth in glucose, OD 0.2 vs genomic DNA
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99176-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99177">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Anaerobic growth in M9 + glucose, reference Genomic DNA T3</Title>
+    <Accession database="GEO">GSM99177</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling of DNA using DNA polymerase (Klenow fragment)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655,  OD 0.35, anaerobic growth in M9 + glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655,  OD 0.35, anaerobic growth in M9 + glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Anaerobic growth in glucose, OD 0.35 vs genomic DNA
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99177-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99178">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Anaerobic growth in M9 + glucose, reference Genomic DNA T4</Title>
+    <Accession database="GEO">GSM99178</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling of DNA using DNA polymerase (Klenow fragment)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, OD 0.6, anaerobic growth in M9 + glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, OD 0.6, anaerobic growth in M9 + glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Anaerobic growth in glucose, OD 0.6 vs genomic DNA
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99178-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99179">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Anaerobic growth in M9 + glucose, reference Genomic DNA T5</Title>
+    <Accession database="GEO">GSM99179</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling of DNA using DNA polymerase (Klenow fragment)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655,  OD 0.9, anaerobic growth in M9 + glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655,  OD 0.9, anaerobic growth in M9 + glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Anaerobic growth in glucose, OD 0.9 vs genomic DNA
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99179-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99180">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Anaerobic growth in M9 + glucose, reference Genomic DNA T6</Title>
+    <Accession database="GEO">GSM99180</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling of DNA using DNA polymerase (Klenow fragment)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655,  stationary phase anaerobic growth in M9 + glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655,  stationary phase anaerobic growth in M9 + glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Anaerobic growth in glucose, stationary vs genomic DNA
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99180-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4373">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Anaerobic growth in M9 + glucose, genomic DNA reference</Title>
+    <Accession database="GEO">GSE4373</Accession>
+    <Pubmed-ID>16626502</Pubmed-ID>
+    <Summary>
+Responses of Escherichia coli MG1655 as they grow anaerobically in M9 + glucose
+Keywords: time course
+    </Summary>
+    <Overall-Design>
+Escherichia coli cells sampled at several points (OD 0.03, 0.2, 0.35, 0.6, 0.9, stationary) in anaerobic growth in M9 + glucose, vs genomic DNA reference
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM99175" />
+    <Sample-Ref ref="GSM99176" />
+    <Sample-Ref ref="GSM99177" />
+    <Sample-Ref ref="GSM99178" />
+    <Sample-Ref ref="GSM99179" />
+    <Sample-Ref ref="GSM99180" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/94663" />
+  </Series>
+
+</MINiML>

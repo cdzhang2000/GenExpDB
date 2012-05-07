@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Peter</First><Middle>Christopher</Middle><Last>Turner</Last></Person>
+    <Email>pcturner@ufl.edu</Email>
+    <Phone>352-846-0955</Phone>
+    <Laboratory>Ingram</Laboratory>
+    <Department>Micro and Cell Science</Department>
+    <Organization>University of Florida</Organization>
+    <Address>
+      <Line>Bldg 981, Museum Road</Line>
+      <City>Gainesville</City>
+      <State>FL</State>
+      <Zip-Code>32611-0700</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Inc</First><Last>Nimblegen Systems</Last></Person>
+    <Email>geo@ncbi.nlm.nih.gov, kyle.munn@roche.com, Techsupport@nimblegen.com</Email>
+    <Phone>608-218-7600</Phone>
+    <Organization>NimbleGen Systems, Inc.</Organization>
+    <Address>
+      <Line>One Science Court</Line>
+      <City>Madison</City>
+      <State>WI</State>
+      <Zip-Code>53711</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.nimblegen.com/index.html</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Elliot</First><Middle>N</Middle><Last>Miller</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Laura</First><Middle>J</Middle><Last>Jarboe</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Peter</First><Middle>C</Middle><Last>Turner</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Lonnie</First><Middle>O</Middle><Last>Ingram</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL9088">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-24</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>NimbleGen Escherichia coli K12 TI83333 (385K)</Title>
+    <Accession database="GEO">GPL9088</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+    <Manufacturer>NimbleGen</Manufacturer>
+    <Manufacture-Protocol>
+High-density DNA array prepared with Maskless Array Synthesizer (MAS) technology. See manufacturer's website at http://www.nimblegen.com/.
+    </Manufacture-Protocol>
+    <Description>
+NimbleGen cat # A4516-00-01. Design name TI8333 60mer.  4,237 genes, with average of 18 probes per gene.  385,000 probes, 5 replicates.
+    </Description>
+    <Contact-Ref ref="contrib2" />
+    <Supplementary-Data type="NDF">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL9088/GPL9088_2006-07-27_TI83333_60mer.ndf.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="NGD">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL9088/GPL9088_2006-07-27_TI83333_60mer.ngd.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Unique identifier supplied by Nimblegen, from .ngd file</Description>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>b number for gene (based on E coli K-12 strain MG1655, accession # NC_000913)  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli str. K-12 substr. MG1655[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>Gene name</Name>
+        <Description>standard E coli gene name (EcoCyc)</Description>
+      </Column>
+      <Column position="4">
+        <Name>FUNCTION</Name>
+        <Description>Function of gene product, from .ngd file</Description>
+      </Column>
+    <External-Data rows="4237">
+GPL9088-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM443990">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>E coli LY180_rep1</Title>
+    <Accession database="GEO">GSM443990</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>LY180</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+LY180
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type (ethanologenic)
+      </Characteristics>
+      <Treatment-Protocol>
+Samples were taken at OD = 1.5, then furfural added to 0.5 g/L. Samples were taken at 15 min after furfural addition.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Strains were grown in AM1 medium with 10% xylose to OD 550 = 1.5 (0.66 g dcw/liter). 4 replicate 350 ml fermentors per strain.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were chilled in dry ice/ethanol, centrifuged, and the pellet resuspended in RNA Later (Qiagen) before storing at –80 C. Total RNA was extracted using the RNeasy Mini kit (Qiagen), and DNA was removed by digestion with RNase-Free DNase I. RNA quality and concentration was checked with an Agilent bioanalyzer at the University of Florida Gene Expression core before submitting the RNA to Roche Nimblegen in Iceland for analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Conversion of RNA to cDNA and labeling with Cy3 was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Scan-Protocol>
+    <Description>
+This data is the first of 2 replicates (OID 8641)
+    </Description>
+    <Data-Processing>
+The raw data (.pair file) was subjected to RMA (Robust Multi-Array Analysis; Irizarry et al. Biostatistics 4(2):249), quantile normalization (Bolstad et al. Bioinformatics 19(2):185), and background correction as implemented in the NimbleScan software package (Roche NimbleGen, Inc.).
+    </Data-Processing>
+    <Platform-Ref ref="GPL9088" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443990/GSM443990_2153802_532_pair.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA-normalized, averaged gene-level signal intensity. Note values are given in log 2 format.</Description>
+      </Column>
+    <External-Data rows="4237">
+GSM443990-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443991">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>E coli LY180_w 0.5g/L Furfural_rep1</Title>
+    <Accession database="GEO">GSM443991</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>LY180 + furfural</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+LY180
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type (ethanologenic)
+      </Characteristics>
+      <Treatment-Protocol>
+Samples were taken at OD = 1.5, then furfural added to 0.5 g/L. Samples were taken at 15 min after furfural addition.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Strains were grown in AM1 medium with 10% xylose to OD 550 = 1.5 (0.66 g dcw/liter). 4 replicate 350 ml fermentors per strain.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were chilled in dry ice/ethanol, centrifuged, and the pellet resuspended in RNA Later (Qiagen) before storing at –80 C. Total RNA was extracted using the RNeasy Mini kit (Qiagen), and DNA was removed by digestion with RNase-Free DNase I. RNA quality and concentration was checked with an Agilent bioanalyzer at the University of Florida Gene Expression core before submitting the RNA to Roche Nimblegen in Iceland for analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Conversion of RNA to cDNA and labeling with Cy3 was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Scan-Protocol>
+    <Description>
+This data is the first of 2 replicates (OID 8641)
+    </Description>
+    <Data-Processing>
+The raw data (.pair file) was subjected to RMA (Robust Multi-Array Analysis; Irizarry et al. Biostatistics 4(2):249), quantile normalization (Bolstad et al. Bioinformatics 19(2):185), and background correction as implemented in the NimbleScan software package (Roche NimbleGen, Inc.).
+    </Data-Processing>
+    <Platform-Ref ref="GPL9088" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443991/GSM443991_2154602_532_pair.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA-normalized, averaged gene-level signal intensity. Note values are given in log 2 format.</Description>
+      </Column>
+    <External-Data rows="4237">
+GSM443991-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443992">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>E coli EMFR9_rep1</Title>
+    <Accession database="GEO">GSM443992</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>EMFR9</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EMFR9
+      </Characteristics>
+      <Characteristics tag="genotype">
+furfural resistant mutant
+      </Characteristics>
+      <Treatment-Protocol>
+Samples were taken at OD = 1.5, then furfural added to 0.5 g/L. Samples were taken at 15 min after furfural addition.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Strains were grown in AM1 medium with 10% xylose to OD 550 = 1.5 (0.66 g dcw/liter). 4 replicate 350 ml fermentors per strain.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were chilled in dry ice/ethanol, centrifuged, and the pellet resuspended in RNA Later (Qiagen) before storing at –80 C. Total RNA was extracted using the RNeasy Mini kit (Qiagen), and DNA was removed by digestion with RNase-Free DNase I. RNA quality and concentration was checked with an Agilent bioanalyzer at the University of Florida Gene Expression core before submitting the RNA to Roche Nimblegen in Iceland for analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Conversion of RNA to cDNA and labeling with Cy3 was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Scan-Protocol>
+    <Description>
+This data is the first of 2 replicates (OID 8641)
+    </Description>
+    <Data-Processing>
+The raw data (.pair file) was subjected to RMA (Robust Multi-Array Analysis; Irizarry et al. Biostatistics 4(2):249), quantile normalization (Bolstad et al. Bioinformatics 19(2):185), and background correction as implemented in the NimbleScan software package (Roche NimbleGen, Inc.).
+    </Data-Processing>
+    <Platform-Ref ref="GPL9088" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443992/GSM443992_2153102_532_pair.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA-normalized, averaged gene-level signal intensity. Note values are given in log 2 format.</Description>
+      </Column>
+    <External-Data rows="4237">
+GSM443992-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443993">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>E coli EMFR9_w 0.5g/L Furfural_rep1</Title>
+    <Accession database="GEO">GSM443993</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>EMFR9 + furfural</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EMFR9
+      </Characteristics>
+      <Characteristics tag="genotype">
+furfural resistant mutant
+      </Characteristics>
+      <Treatment-Protocol>
+Samples were taken at OD = 1.5, then furfural added to 0.5 g/L. Samples were taken at 15 min after furfural addition.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Strains were grown in AM1 medium with 10% xylose to OD 550 = 1.5 (0.66 g dcw/liter). 4 replicate 350 ml fermentors per strain.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were chilled in dry ice/ethanol, centrifuged, and the pellet resuspended in RNA Later (Qiagen) before storing at –80 C. Total RNA was extracted using the RNeasy Mini kit (Qiagen), and DNA was removed by digestion with RNase-Free DNase I. RNA quality and concentration was checked with an Agilent bioanalyzer at the University of Florida Gene Expression core before submitting the RNA to Roche Nimblegen in Iceland for analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Conversion of RNA to cDNA and labeling with Cy3 was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Scan-Protocol>
+    <Description>
+This data is the first of 2 replicates (OID 8641)
+    </Description>
+    <Data-Processing>
+The raw data (.pair file) was subjected to RMA (Robust Multi-Array Analysis; Irizarry et al. Biostatistics 4(2):249), quantile normalization (Bolstad et al. Bioinformatics 19(2):185), and background correction as implemented in the NimbleScan software package (Roche NimbleGen, Inc.).
+    </Data-Processing>
+    <Platform-Ref ref="GPL9088" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443993/GSM443993_2153602_532_pair.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA-normalized, averaged gene-level signal intensity. Note values are given in log 2 format.</Description>
+      </Column>
+    <External-Data rows="4237">
+GSM443993-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443994">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>E coli LY180_rep2</Title>
+    <Accession database="GEO">GSM443994</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>LY180</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+LY180
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type (ethanologenic)
+      </Characteristics>
+      <Treatment-Protocol>
+Samples were taken at OD = 1.5, then furfural added to 0.5 g/L. Samples were taken at 15 min after furfural addition.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Strains were grown in AM1 medium with 10% xylose to OD 550 = 1.5 (0.66 g dcw/liter). 4 replicate 350 ml fermentors per strain.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were chilled in dry ice/ethanol, centrifuged, and the pellet resuspended in RNA Later (Qiagen) before storing at –80 C. Total RNA was extracted using the RNeasy Mini kit (Qiagen), and DNA was removed by digestion with RNase-Free DNase I. RNA quality and concentration was checked with an Agilent bioanalyzer at the University of Florida Gene Expression core before submitting the RNA to Roche Nimblegen in Iceland for analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Conversion of RNA to cDNA and labeling with Cy3 was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Scan-Protocol>
+    <Description>
+This data is the second of 2 replicates (OID 14117)
+    </Description>
+    <Data-Processing>
+The raw data (.pair file) was subjected to RMA (Robust Multi-Array Analysis; Irizarry et al. Biostatistics 4(2):249), quantile normalization (Bolstad et al. Bioinformatics 19(2):185), and background correction as implemented in the NimbleScan software package (Roche NimbleGen, Inc.).
+    </Data-Processing>
+    <Platform-Ref ref="GPL9088" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443994/GSM443994_11858302_532_pair.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA-normalized, averaged gene-level signal intensity. Note values are given in log 2 format.</Description>
+      </Column>
+    <External-Data rows="4237">
+GSM443994-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443995">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>E coli LY180_w 0.5g/L Furfural_rep2</Title>
+    <Accession database="GEO">GSM443995</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>LY180 + furfural</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+LY180
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type (ethanologenic)
+      </Characteristics>
+      <Treatment-Protocol>
+Samples were taken at OD = 1.5, then furfural added to 0.5 g/L. Samples were taken at 15 min after furfural addition.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Strains were grown in AM1 medium with 10% xylose to OD 550 = 1.5 (0.66 g dcw/liter). 4 replicate 350 ml fermentors per strain.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were chilled in dry ice/ethanol, centrifuged, and the pellet resuspended in RNA Later (Qiagen) before storing at –80 C. Total RNA was extracted using the RNeasy Mini kit (Qiagen), and DNA was removed by digestion with RNase-Free DNase I. RNA quality and concentration was checked with an Agilent bioanalyzer at the University of Florida Gene Expression core before submitting the RNA to Roche Nimblegen in Iceland for analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Conversion of RNA to cDNA and labeling with Cy3 was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Scan-Protocol>
+    <Description>
+This data is the second of 2 replicates (OID 14117)
+    </Description>
+    <Data-Processing>
+The raw data (.pair file) was subjected to RMA (Robust Multi-Array Analysis; Irizarry et al. Biostatistics 4(2):249), quantile normalization (Bolstad et al. Bioinformatics 19(2):185), and background correction as implemented in the NimbleScan software package (Roche NimbleGen, Inc.).
+    </Data-Processing>
+    <Platform-Ref ref="GPL9088" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443995/GSM443995_11861602_532_pair.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA-normalized, averaged gene-level signal intensity. Note values are given in log 2 format.</Description>
+      </Column>
+    <External-Data rows="4237">
+GSM443995-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443996">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>E coli EMFR9_rep2</Title>
+    <Accession database="GEO">GSM443996</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>EMFR9</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EMFR9
+      </Characteristics>
+      <Characteristics tag="genotype">
+furfural resistant mutant
+      </Characteristics>
+      <Treatment-Protocol>
+Samples were taken at OD = 1.5, then furfural added to 0.5 g/L. Samples were taken at 15 min after furfural addition.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Strains were grown in AM1 medium with 10% xylose to OD 550 = 1.5 (0.66 g dcw/liter). 4 replicate 350 ml fermentors per strain.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were chilled in dry ice/ethanol, centrifuged, and the pellet resuspended in RNA Later (Qiagen) before storing at –80 C. Total RNA was extracted using the RNeasy Mini kit (Qiagen), and DNA was removed by digestion with RNase-Free DNase I. RNA quality and concentration was checked with an Agilent bioanalyzer at the University of Florida Gene Expression core before submitting the RNA to Roche Nimblegen in Iceland for analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Conversion of RNA to cDNA and labeling with Cy3 was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Scan-Protocol>
+    <Description>
+This data is the second of 2 replicates (OID 14117)
+    </Description>
+    <Data-Processing>
+The raw data (.pair file) was subjected to RMA (Robust Multi-Array Analysis; Irizarry et al. Biostatistics 4(2):249), quantile normalization (Bolstad et al. Bioinformatics 19(2):185), and background correction as implemented in the NimbleScan software package (Roche NimbleGen, Inc.).
+    </Data-Processing>
+    <Platform-Ref ref="GPL9088" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443996/GSM443996_11862102_532_pair.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA-normalized, averaged gene-level signal intensity. Note values are given in log 2 format.</Description>
+      </Column>
+    <External-Data rows="4237">
+GSM443996-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443997">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>E coli EMFR9_w 0.5g/L Furfural_rep2</Title>
+    <Accession database="GEO">GSM443997</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>EMFR9 + furfural</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EMFR9
+      </Characteristics>
+      <Characteristics tag="genotype">
+furfural resistant mutant
+      </Characteristics>
+      <Treatment-Protocol>
+Samples were taken at OD = 1.5, then furfural added to 0.5 g/L. Samples were taken at 15 min after furfural addition.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Strains were grown in AM1 medium with 10% xylose to OD 550 = 1.5 (0.66 g dcw/liter). 4 replicate 350 ml fermentors per strain.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were chilled in dry ice/ethanol, centrifuged, and the pellet resuspended in RNA Later (Qiagen) before storing at –80 C. Total RNA was extracted using the RNeasy Mini kit (Qiagen), and DNA was removed by digestion with RNase-Free DNase I. RNA quality and concentration was checked with an Agilent bioanalyzer at the University of Florida Gene Expression core before submitting the RNA to Roche Nimblegen in Iceland for analysis.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Conversion of RNA to cDNA and labeling with Cy3 was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was performed by Roche NimbleGen following their standard operating protocol. See www.nimblegen.com.
+    </Scan-Protocol>
+    <Description>
+This data is the second of 2 replicates (OID 14117)
+    </Description>
+    <Data-Processing>
+The raw data (.pair file) was subjected to RMA (Robust Multi-Array Analysis; Irizarry et al. Biostatistics 4(2):249), quantile normalization (Bolstad et al. Bioinformatics 19(2):185), and background correction as implemented in the NimbleScan software package (Roche NimbleGen, Inc.).
+    </Data-Processing>
+    <Platform-Ref ref="GPL9088" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443997/GSM443997_11863502_532_pair.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA-normalized, averaged gene-level signal intensity. Note values are given in log 2 format.</Description>
+      </Column>
+    <External-Data rows="4237">
+GSM443997-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE17786">
+    <Status database="GEO">
+      <Submission-Date>2009-08-24</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Response of ethanologenic E coli strains LY180 and EMFR9 to furfural</Title>
+    <Accession database="GEO">GSE17786</Accession>
+    <Pubmed-ID>19684179</Pubmed-ID>
+    <Pubmed-ID>19429550</Pubmed-ID>
+    <Summary>
+The data explore the transcriptional response of strain LY180 and the furfural-resistant derivative EMFR9 to 0.5 g/L furfural
+LY180 and EMFR9 and differences in their expression profiles are described in Miller, E. N., L. R. Jarboe, L. P. Yomano, S. W. York, K. T. Shanmugam, and L. O. Ingram. 2009. Silencing of NADPH-dependent oxidoreductase genes (yqhD and dkgA) in furfural-resistant ethanologenic Escherichia coli. Appl Environ Microbiol 75:4315-23.  The response of LY180 to furfural is described in Miller, E. N., L. R. Jarboe, P. C. Turner, P. Pharkya, L. P. Yomano, S. W. York, D. Nunn, K. T. Shanmugam, and L. O. Ingram. 2009. Furfural Inhibits Growth by Limiting Sulfur Assimilation in Ethanologenic Escherichia coli strain LY180. Appl Environ Microbiol., 2009.
+    </Summary>
+    <Overall-Design>
+Total RNA was prepared from cultures of LY180 and EMFR9 immediately before and 15 min after addition of furfural to 0.5 g/L.  The Nimblegen TI83333 chip measures expression of 4,237 genes, with 5 replicates, and 18 probes average per gene.
+
+Data from replicate 1 (OID 8641) and replicate 2 (OID 14117) was analyzed independently.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM443990" />
+    <Sample-Ref ref="GSM443991" />
+    <Sample-Ref ref="GSM443992" />
+    <Sample-Ref ref="GSM443993" />
+    <Sample-Ref ref="GSM443994" />
+    <Sample-Ref ref="GSM443995" />
+    <Sample-Ref ref="GSM443996" />
+    <Sample-Ref ref="GSM443997" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE17786/GSE17786_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/117885" />
+  </Series>
+
+</MINiML>

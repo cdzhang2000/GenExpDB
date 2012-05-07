@@ -66,7 +66,9 @@ sub browser {
 	return if ! %data;
 	
 	my $genome = $gdb::util::gnom{$gdb::util::gnomacc{$genomeacc}}{sname};
+	
 	my $start  = $data{$ltag}{start} - 3000;
+	
 	$start = ($start < $astart) ? $astart : $start;
 	
 	my $stop   = $data{$ltag}{stop} + 3000;

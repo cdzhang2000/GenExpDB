@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Michelle</First><Last>Riehle</Last></Person>
+    <Email>mriehle@uci.edu</Email>
+    <Phone>949-824-5994</Phone>
+    <Organization>University of California Irvine</Organization>
+    <Address>
+      <City>Irvine</City>
+      <State>CA</State>
+      <Zip-Code>92612</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>Sigma-Genosys</Organization>
+    <Email>ginformation@sial.com</Email>
+    <Phone>800-234-5362</Phone>
+    <Fax>281-363-2212</Fax>
+    <Organization>Sigma-Genosys</Organization>
+    <Address>
+      <Line>1442 Lake Front Circle</Line>
+      <City>The Woodlands</City>
+      <State>TX</State>
+      <Zip-Code>77380</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.sigma-genosys.com/</Web-Link>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL189">
+    <Status database="GEO">
+      <Submission-Date>2002-06-13</Submission-Date>
+      <Release-Date>2002-12-20</Release-Date>
+      <Last-Update-Date>2007-04-06</Last-Update-Date>
+    </Status>
+    <Title>Sigma Genosys Panorama Escherichia coli Gene Array</Title>
+    <Accession database="GEO">GPL189</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Sigma Genosys</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+The Panorama Escherichia coli Gene Array was developed using E. coli ORFmers (PCR primers). The PCR primers were developed as part of a collaboration with the E. coli Genome Group, headed by Dr. Fred Blattner at the Department of Genetics, University of Wisconsin-Madison (http://www.genome.wisc.edu).  The array contains 4,290 PCR-amplified ORFs, representing all of the protein-encoding genes.
+    </Description>
+    <Web-Link>http://www.sigmagenosys.com/epp_microbia_ecoli_generalinfo.asp</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>spot number</Description>
+      </Column>
+      <Column position="2">
+        <Name>Array_Coord</Name>
+        <Description>array coordinate</Description>
+      </Column>
+      <Column position="3">
+        <Name>Gene_Name</Name>
+        <Description>gene symbol/name</Description>
+      </Column>
+      <Column position="4">
+        <Name>Gene_Desc</Name>
+        <Description>gene description</Description>
+      </Column>
+      <Column position="5">
+        <Name>GENOME ACC</Name>
+        <Description>GenBank accession number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&amp;db=Nucleotide&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="6">
+        <Name>Protein_GI</Name>
+        <Description>GenBank protein GI number</Description>
+      </Column>
+      <Column position="7">
+        <Name>ORF</Name>
+        <Description>Blattner number  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="8">
+        <Name>Func_Cat</Name>
+        <Description>revised functional category (46 groups)</Description>
+      </Column>
+      <Column position="9">
+        <Name>Func</Name>
+        <Description>revised general function (19 groups)</Description>
+      </Column>
+    <External-Data rows="4314">
+GPL189-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM7886">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>Ancestor replicate 1</Title>
+    <Accession database="GEO">GSM7886</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli Ancestor strain.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM7886-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8110">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>Ancestor replicate 2</Title>
+    <Accession database="GEO">GSM8110</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli Ancestor strain.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8110-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8111">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>Ancestor replicate 3</Title>
+    <Accession database="GEO">GSM8111</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli Ancestor strain.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8111-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8112">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>42-1, high temperature evolved line replicate 1</Title>
+    <Accession database="GEO">GSM8112</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli strain 42-1, high temperature evolved line.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8112-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8113">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>42-1, high temperature evolved line replicate 2</Title>
+    <Accession database="GEO">GSM8113</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli strain 42-1, high temperature evolved line.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8113-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8114">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>42-1, high temperature evolved line replicate 3</Title>
+    <Accession database="GEO">GSM8114</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli strain 42-1, high temperature evolved line.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8114-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8115">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>42-2, high temperature evolved line replicate 1</Title>
+    <Accession database="GEO">GSM8115</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli strain 42-2, high temperature evolved line.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8115-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8116">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>42-2, high temperature evolved line replicate 2</Title>
+    <Accession database="GEO">GSM8116</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli strain 42-2, high temperature evolved line.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8116-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8117">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>42-2, high temperature evolved line replicate 3</Title>
+    <Accession database="GEO">GSM8117</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli strain 42-2, high temperature evolved line.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8117-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8118">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>42-3, high temperature evolved line replicate 1</Title>
+    <Accession database="GEO">GSM8118</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli strain 42-3, high temperature evolved line.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8118-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8119">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>42-3, high temperature evolved line replicate 2</Title>
+    <Accession database="GEO">GSM8119</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli strain 42-3, high temperature evolved line.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8119-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM8120">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2005-05-27</Last-Update-Date>
+    </Status>
+    <Title>42-3, high temperature evolved line replicate 3</Title>
+    <Accession database="GEO">GSM8120</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mid log phase culture</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+Mid log phase culture of Escherichia coli strain 42-3, high temperature evolved line.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+    <External-Data rows="4290">
+GSM8120-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE533">
+    <Status database="GEO">
+      <Submission-Date>2003-07-14</Submission-Date>
+      <Release-Date>2003-07-14</Release-Date>
+      <Last-Update-Date>2012-02-23</Last-Update-Date>
+    </Status>
+    <Title>High temperature adapted coli expression</Title>
+    <Accession database="GEO">GSE533</Accession>
+    <Pubmed-ID>12672900</Pubmed-ID>
+    <Summary>
+Analysis of gene expression of mid log phase cultures of Escherichia coli Ancestor strain, and high temperature evolved lines 42-1, 42-2 and 42-3.
+Keywords: other
+    </Summary>
+    <Overall-Design>
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7886" />
+    <Sample-Ref ref="GSM8110" />
+    <Sample-Ref ref="GSM8111" />
+    <Sample-Ref ref="GSM8112" />
+    <Sample-Ref ref="GSM8113" />
+    <Sample-Ref ref="GSM8114" />
+    <Sample-Ref ref="GSM8115" />
+    <Sample-Ref ref="GSM8116" />
+    <Sample-Ref ref="GSM8117" />
+    <Sample-Ref ref="GSM8118" />
+    <Sample-Ref ref="GSM8119" />
+    <Sample-Ref ref="GSM8120" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/85275" />
+  </Series>
+
+</MINiML>

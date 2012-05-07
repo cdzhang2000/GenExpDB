@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Dipen</First><Last>Sangurdekar</Last></Person>
+    <Email>dps@genomics.princeton.edu</Email>
+    <Department>Lewis-Sigler Institute for Integrative Genomics</Department>
+    <Organization>Princeton University</Organization>
+    <Address>
+      <Line>132 Carl Icahn laboratory, Princeton University</Line>
+      <City>Princeton</City>
+      <State>NJ</State>
+      <Zip-Code>08544</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Dipen</First><Middle>P</Middle><Last>Sangurdekar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Friedrich</First><Last>Srienc</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Arkady</First><Middle>B</Middle><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Bree</First><Middle>L</Middle><Last>Hamann</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3503">
+    <Status database="GEO">
+      <Submission-Date>2006-03-02</Submission-Date>
+      <Release-Date>2006-03-06</Release-Date>
+      <Last-Update-Date>2006-03-06</Last-Update-Date>
+    </Status>
+    <Title>Khodursky Lab E. coli B 4290 ORFs Microarray</Title>
+    <Accession database="GEO">GPL3503</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Non-commercial</Manufacturer>
+    <Manufacture-Protocol>
+4290 amplified ORFs from primer pairs (from Sigma Genosys) were printed onto glass slides using a 16 tip robotic printer from 384-well microwell plates
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Description>
+A microarray with 4405 spot features.
+Tip Configuration: Standard 16-tip
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Open Reading Frame identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE_SYMBOL</Name>
+        <Description>Name of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+      <Column position="4">
+        <Name>GENE_DESC</Name>
+        <Description>Description of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+    <External-Data rows="4405">
+GPL3503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM496909">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLM-15</Title>
+    <Accession database="GEO">GSM496909</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 15 min after shift to limiting medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496909/GSM496909.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496909-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496910">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLM-30</Title>
+    <Accession database="GEO">GSM496910</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 30 min after shift to limiting medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496910/GSM496910.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496910-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496911">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLM-45</Title>
+    <Accession database="GEO">GSM496911</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 45 min after shift to limiting medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496911/GSM496911.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496911-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496912">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLM-60</Title>
+    <Accession database="GEO">GSM496912</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 60 min after shift to limiting medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496912/GSM496912.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496912-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496913">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLM-90</Title>
+    <Accession database="GEO">GSM496913</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 90 min after shift to limiting medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496913/GSM496913.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496913-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496914">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-15-rep1</Title>
+    <Accession database="GEO">GSM496914</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 15 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496914/GSM496914.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496914-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496915">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-30-rep1</Title>
+    <Accession database="GEO">GSM496915</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 30 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496915/GSM496915.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496915-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496916">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-45-rep1</Title>
+    <Accession database="GEO">GSM496916</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 45 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496916/GSM496916.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496916-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496917">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-60-rep1</Title>
+    <Accession database="GEO">GSM496917</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 60 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496917/GSM496917.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496917-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496918">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-90-rep1</Title>
+    <Accession database="GEO">GSM496918</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 90 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496918/GSM496918.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496918-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496919">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-15-rep2</Title>
+    <Accession database="GEO">GSM496919</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 15 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496919/GSM496919.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496919-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496920">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-30-rep2</Title>
+    <Accession database="GEO">GSM496920</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 30 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496920/GSM496920.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496920-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496921">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-45-rep2</Title>
+    <Accession database="GEO">GSM496921</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 45 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496921/GSM496921.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496921-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496922">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-60-rep2</Title>
+    <Accession database="GEO">GSM496922</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 60 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496922/GSM496922.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496922-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM496923">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2010-02-12</Last-Update-Date>
+    </Status>
+    <Title>TLD-90-rep2</Title>
+    <Accession database="GEO">GSM496923</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli - 0 min before nutrient shift</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli - 90 min after shift to thymineless medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655 thyA-
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested at mid-exponential phase, spun, washed twice with M9 medium and shifted to limiting or no thymine medium. Samples taken at listed intervals.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli MG1655 thyA- cells grown in M9 minimal medium + 0.2% glucose and 20 ug/ml thymine
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using QIAGEN RNeasy kit according to manufacturer's instructions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeling and hybing procedure according to Khodursky et al, Methods Mol Biol. 2003;224:61-78
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on Agilent GenePix scanner
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2
+    </Description>
+    <Data-Processing>
+Lowess normalized data. Resultant data is log2 normalized.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM496nnn/GSM496923/GSM496923.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4293">
+GSM496923-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE19879">
+    <Status database="GEO">
+      <Submission-Date>2010-01-13</Submission-Date>
+      <Release-Date>2010-02-12</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Thymine starvation and limitation in Escherichia coli thyA- cells</Title>
+    <Accession database="GEO">GSE19879</Accession>
+    <Pubmed-ID>20132444</Pubmed-ID>
+    <Summary>
+Transcriptional profiling of responses of E. coli thymine auxotrophs to i) growth under sub-optimal thymine concentration (TLM) and ii) lethal conditions under complete thymine starvation (TLD).
+    </Summary>
+    <Overall-Design>
+Thymine limitation: Time series following shift to limiting thymine concentrations (15, 30, 45, 60 and 90 mins) - single replicate. Thymine starvation: Time series following shift to zero thymine medium (15, 30, 45, 60 and 90 mins) - 2 biological replicates at each time point.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib5" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM496909" />
+    <Sample-Ref ref="GSM496910" />
+    <Sample-Ref ref="GSM496911" />
+    <Sample-Ref ref="GSM496912" />
+    <Sample-Ref ref="GSM496913" />
+    <Sample-Ref ref="GSM496914" />
+    <Sample-Ref ref="GSM496915" />
+    <Sample-Ref ref="GSM496916" />
+    <Sample-Ref ref="GSM496917" />
+    <Sample-Ref ref="GSM496918" />
+    <Sample-Ref ref="GSM496919" />
+    <Sample-Ref ref="GSM496920" />
+    <Sample-Ref ref="GSM496921" />
+    <Sample-Ref ref="GSM496922" />
+    <Sample-Ref ref="GSM496923" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE19879/GSE19879_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/121979" />
+  </Series>
+
+</MINiML>

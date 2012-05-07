@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Bernhard</First><Last>Palsson</Last></Person>
+    <Email>palsson@ucsd.edu</Email>
+    <Phone>858-534-5668</Phone>
+    <Fax>858-822-3120</Fax>
+    <Laboratory>Systems Biology Research Group</Laboratory>
+    <Department>Bioengineering</Department>
+    <Organization>UCSD</Organization>
+    <Address>
+      <Line>9500 Gilman Dr.</Line>
+      <City>La Jolla</City>
+      <State>CA</State>
+      <Zip-Code>92122</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://systemsbiology.ucsd.edu</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Vasiliy</First><Middle>A</Middle><Last>Portnoy</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>David</First><Last>Scott</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Nathan</First><Middle>E</Middle><Last>Lewis</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Yekaterina</First><Last>Tarasova</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Andrei</First><Middle>L</Middle><Last>Osterman</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM543453">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>WT +O2 1</Title>
+    <Accession database="GEO">GSM543453</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli MG1655, M9 media with 4 g/L glucose, aerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+E. coli MG1655, M9 media with 4 g/L glucose, aerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543453/GSM543453.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543453-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543454">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>WT +O2 2</Title>
+    <Accession database="GEO">GSM543454</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli MG1655, M9 media with 4 g/L glucose, aerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+E. coli MG1655, M9 media with 4 g/L glucose, aerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543454/GSM543454.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543454-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543455">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>WT +O2 3</Title>
+    <Accession database="GEO">GSM543455</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli MG1655, M9 media with 4 g/L glucose, aerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+E. coli MG1655, M9 media with 4 g/L glucose, aerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543455/GSM543455.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543455-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543456">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>WT -O2 1</Title>
+    <Accession database="GEO">GSM543456</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli MG1655, M9 media with 4 g/L glucose, anaerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+E. coli MG1655, M9 media with 4 g/L glucose, anaerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543456/GSM543456.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543456-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543457">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>WT -O2 2</Title>
+    <Accession database="GEO">GSM543457</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli MG1655, M9 media with 4 g/L glucose, anaerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+E. coli MG1655, M9 media with 4 g/L glucose, anaerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543457/GSM543457.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543457-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543458">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>WT -O2 3</Title>
+    <Accession database="GEO">GSM543458</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli MG1655, M9 media with 4 g/L glucose, anaerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+E. coli MG1655, M9 media with 4 g/L glucose, anaerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543458/GSM543458.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543458-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543459">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>E4 +O2 1</Title>
+    <Accession database="GEO">GSM543459</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+ECOM4
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543459/GSM543459.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543459-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543460">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>E4 +O2 2</Title>
+    <Accession database="GEO">GSM543460</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+ECOM4
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543460/GSM543460.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543460-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543461">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>E4 +O2 3</Title>
+    <Accession database="GEO">GSM543461</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+ECOM4
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543461/GSM543461.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543461-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543462">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>E4 -O2 1</Title>
+    <Accession database="GEO">GSM543462</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+ECOM4
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543462/GSM543462.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543462-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543463">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>E4 -O2 2</Title>
+    <Accession database="GEO">GSM543463</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+ECOM4
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543463/GSM543463.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543463-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM543464">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2010-05-17</Last-Update-Date>
+    </Status>
+    <Title>E4 -O2 3</Title>
+    <Accession database="GEO">GSM543464</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+ECOM4
+      </Characteristics>
+      <Treatment-Protocol>
+No specific treatment was done. Samples were collected in the mid-log growth phase for expression analysis
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Wild type and the mutant were grown on minimal M9 media with 4 g/L glucose as a sole carbon source at 37C with aeration (+O2) or nitrogen sparging (-O2)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extreacted using Quagen RNA mini kit. DNA was removed by DNase digestion. RNA quality and concentration was determined by analysis with an Thermo NanoDrop 1000.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 6 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip Escherichia coli 2.0 Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+Respiratory defecient E. coli mutant (ECOM4), M9 media with 4 g/L glucose, aerobic, log phase
+    </Description>
+    <Data-Processing>
+The data were analyzed with ArrayStar 3 (DNASTAR) using RMA normalization method. Genes with at least two-fold expression level change and FDR-adjusted P-value (T-test) of less than 0.05 were considered significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM543nnn/GSM543464/GSM543464.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Data is RMA normalized and presented in the log2 form</Description>
+      </Column>
+    <External-Data rows="10112">
+GSM543464-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE21839">
+    <Status database="GEO">
+      <Submission-Date>2010-05-14</Submission-Date>
+      <Release-Date>2010-10-15</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Transcriptome analysis of wild type E. coli (K-12 MG1655) comparing to mutant E. coli strain (ECOM4) under aerobic and anaerobic conditions</Title>
+    <Accession database="GEO">GSE21839</Accession>
+    <Pubmed-ID>20709841</Pubmed-ID>
+    <Summary>
+Cytochrome oxydases and quinol monooxygenase were removed from the E. coli genome resulting in oxygen-independent physiology
+We used microarray profiling to identify perturbed metabolic or regulatory functionality resulting in the inability to undergo aerobic-anaerobic shift.
+    </Summary>
+    <Overall-Design>
+Affimetrics E. coli Arrays 2.0, Experiment (ECOM4) under both conditions (+O2/-O2) were analyzed in triplicates and compared to control (MG1655) under same conditions in triplicates
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib1" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM543453" />
+    <Sample-Ref ref="GSM543454" />
+    <Sample-Ref ref="GSM543455" />
+    <Sample-Ref ref="GSM543456" />
+    <Sample-Ref ref="GSM543457" />
+    <Sample-Ref ref="GSM543458" />
+    <Sample-Ref ref="GSM543459" />
+    <Sample-Ref ref="GSM543460" />
+    <Sample-Ref ref="GSM543461" />
+    <Sample-Ref ref="GSM543462" />
+    <Sample-Ref ref="GSM543463" />
+    <Sample-Ref ref="GSM543464" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE21839/GSE21839_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/126925" />
+  </Series>
+
+</MINiML>

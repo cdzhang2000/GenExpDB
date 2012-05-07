@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Goutham</First><Middle>N</Middle><Last>Vemuri</Last></Person>
+    <Email>goutham@chalmers.se</Email>
+    <Phone>+46 031 772 3882</Phone>
+    <Fax>+46 031 772 3801</Fax>
+    <Laboratory>Systems Biology</Laboratory>
+    <Department>Chemical and Biological Engineering</Department>
+    <Organization>Chalmers University of Technology</Organization>
+    <Address>
+      <Line>Kemivagen 10</Line>
+      <City>Göteborg</City>
+      <Postal-Code>412 96</Postal-Code>
+      <Country>Sweden</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM510322">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2010-02-18</Last-Update-Date>
+    </Status>
+    <Title>Reference Strain rep1</Title>
+    <Accession database="GEO">GSM510322</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Reference Strain, mid exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+REF [MG1655/pAK80 (MG1655 transformed with a plasmid with no insert)]
+      </Characteristics>
+      <Characteristics tag="protocol">
+control
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested on ice and frozen in liquid nitrogen after separation from the media
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Growth on MOPS medium supplemented with glucose, cells harvested in mid-exponential phase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Qiagen Rneasy kits
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 5 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Affymetrix protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Affymetrix protocol.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+GCRMA for background correction and non-linear quantile normalization using qspline.
+The Sample table reports data for only those probes specific for MG1655 (the background strain we used).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM510nnn/GSM510322/GSM510322.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="4070">
+GSM510322-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM510323">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2010-02-18</Last-Update-Date>
+    </Status>
+    <Title>Reference Strain rep2</Title>
+    <Accession database="GEO">GSM510323</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Reference Strain, mid exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+REF [MG1655/pAK80 (MG1655 transformed with a plasmid with no insert)]
+      </Characteristics>
+      <Characteristics tag="protocol">
+control
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested on ice and frozen in liquid nitrogen after separation from the media
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Growth on MOPS medium supplemented with glucose, cells harvested in mid-exponential phase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Qiagen Rneasy kits
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 5 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Affymetrix protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Affymetrix protocol.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+GCRMA for background correction and non-linear quantile normalization using qspline.
+The Sample table reports data for only those probes specific for MG1655 (the background strain we used).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM510nnn/GSM510323/GSM510323.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="4070">
+GSM510323-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM510324">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2010-02-18</Last-Update-Date>
+    </Status>
+    <Title>Reference Strain rep3</Title>
+    <Accession database="GEO">GSM510324</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Reference Strain, mid exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+REF [MG1655/pAK80 (MG1655 transformed with a plasmid with no insert)]
+      </Characteristics>
+      <Characteristics tag="protocol">
+control
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested on ice and frozen in liquid nitrogen after separation from the media
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Growth on MOPS medium supplemented with glucose, cells harvested in mid-exponential phase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Qiagen Rneasy kits
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 5 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Affymetrix protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Affymetrix protocol.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+GCRMA for background correction and non-linear quantile normalization using qspline.
+The Sample table reports data for only those probes specific for MG1655 (the background strain we used).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM510nnn/GSM510324/GSM510324.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="4070">
+GSM510324-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM510325">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2010-02-18</Last-Update-Date>
+    </Status>
+    <Title>NOX strain rep1</Title>
+    <Accession database="GEO">GSM510325</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>NOX strain, mid exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+NOX [MG1655/pAC06 (MG1655 transformed with a plasmid containing NADH oxidase)]
+      </Characteristics>
+      <Characteristics tag="protocol">
+NADH reduction
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested on ice and frozen in liquid nitrogen after separation from the media
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Growth on MOPS medium supplemented with glucose, cells harvested in mid-exponential phase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Qiagen Rneasy kits
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 5 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Affymetrix protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Affymetrix protocol.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+GCRMA for background correction and non-linear quantile normalization using qspline.
+The Sample table reports data for only those probes specific for MG1655 (the background strain we used).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM510nnn/GSM510325/GSM510325.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="4070">
+GSM510325-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM510326">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2010-02-18</Last-Update-Date>
+    </Status>
+    <Title>NOX strain rep2</Title>
+    <Accession database="GEO">GSM510326</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>NOX strain, mid exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+NOX [MG1655/pAC06 (MG1655 transformed with a plasmid containing NADH oxidase)]
+      </Characteristics>
+      <Characteristics tag="protocol">
+NADH reduction
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested on ice and frozen in liquid nitrogen after separation from the media
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Growth on MOPS medium supplemented with glucose, cells harvested in mid-exponential phase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Qiagen Rneasy kits
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 5 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Affymetrix protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Affymetrix protocol.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+GCRMA for background correction and non-linear quantile normalization using qspline.
+The Sample table reports data for only those probes specific for MG1655 (the background strain we used).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM510nnn/GSM510326/GSM510326.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="4070">
+GSM510326-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM510327">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2010-02-18</Last-Update-Date>
+    </Status>
+    <Title>NOX strain rep3</Title>
+    <Accession database="GEO">GSM510327</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>NOX strain, mid exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+NOX [MG1655/pAC06 (MG1655 transformed with a plasmid containing NADH oxidase)]
+      </Characteristics>
+      <Characteristics tag="protocol">
+NADH reduction
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested on ice and frozen in liquid nitrogen after separation from the media
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Growth on MOPS medium supplemented with glucose, cells harvested in mid-exponential phase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Qiagen Rneasy kits
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 5 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Affymetrix protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Affymetrix protocol.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+GCRMA for background correction and non-linear quantile normalization using qspline.
+The Sample table reports data for only those probes specific for MG1655 (the background strain we used).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM510nnn/GSM510327/GSM510327.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="4070">
+GSM510327-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM510328">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2010-02-18</Last-Update-Date>
+    </Status>
+    <Title>ATPase strain rep1</Title>
+    <Accession database="GEO">GSM510328</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATPase strain, mid exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+ATPase [MG1655/pCP41 (MG1655 transformed with a plasmid containing soluble ATPase)]
+      </Characteristics>
+      <Characteristics tag="protocol">
+ATP reduction
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested on ice and frozen in liquid nitrogen after separation from the media
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Growth on MOPS medium supplemented with glucose, cells harvested in mid-exponential phase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Qiagen Rneasy kits
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 5 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Affymetrix protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Affymetrix protocol.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+GCRMA for background correction and non-linear quantile normalization using qspline.
+The Sample table reports data for only those probes specific for MG1655 (the background strain we used).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM510nnn/GSM510328/GSM510328.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="4070">
+GSM510328-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM510329">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2010-02-18</Last-Update-Date>
+    </Status>
+    <Title>ATPase strain rep2</Title>
+    <Accession database="GEO">GSM510329</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATPase strain, mid exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+ATPase [MG1655/pCP41 (MG1655 transformed with a plasmid containing soluble ATPase)]
+      </Characteristics>
+      <Characteristics tag="protocol">
+ATP reduction
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested on ice and frozen in liquid nitrogen after separation from the media
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Growth on MOPS medium supplemented with glucose, cells harvested in mid-exponential phase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Qiagen Rneasy kits
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 5 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Affymetrix protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Affymetrix protocol.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+GCRMA for background correction and non-linear quantile normalization using qspline.
+The Sample table reports data for only those probes specific for MG1655 (the background strain we used).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM510nnn/GSM510329/GSM510329.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="4070">
+GSM510329-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM510330">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2010-02-18</Last-Update-Date>
+    </Status>
+    <Title>ATPase strain rep3</Title>
+    <Accession database="GEO">GSM510330</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATPase strain, mid exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+ATPase [MG1655/pCP41 (MG1655 transformed with a plasmid containing soluble ATPase)]
+      </Characteristics>
+      <Characteristics tag="protocol">
+ATP reduction
+      </Characteristics>
+      <Treatment-Protocol>
+Cells harvested on ice and frozen in liquid nitrogen after separation from the media
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Growth on MOPS medium supplemented with glucose, cells harvested in mid-exponential phase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using Qiagen Rneasy kits
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 5 ug total RNA (Expression Analysis Technical Manual, 2001, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Affymetrix protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Affymetrix protocol.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+GCRMA for background correction and non-linear quantile normalization using qspline.
+The Sample table reports data for only those probes specific for MG1655 (the background strain we used).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM510nnn/GSM510330/GSM510330.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="4070">
+GSM510330-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE20374">
+    <Status database="GEO">
+      <Submission-Date>2010-02-17</Submission-Date>
+      <Release-Date>2010-02-18</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Metabolic and transcriptional response to cofactor perturbations in Escherichia coli</Title>
+    <Accession database="GEO">GSE20374</Accession>
+    <Pubmed-ID>20299454</Pubmed-ID>
+    <Summary>
+Metabolic cofactors such as NADH and ATP play important roles in a large number of cellular reactions and it is of great interest to dissect the role of these cofactors in different aspects of metabolism. Towards this goal, we overexpressed NADH oxidase and the soluble F1-ATPase in Escherichia coli to lower the level of NADH and ATP, respectively. We used a systems biology approach to study the response to these perturbations by measuring global transcription profiles, metabolic fluxes and the metabolite levels. We integrated information from the different measurements using network-based methods to identify high-scoring networks in a global interaction map that included protein interactions, transcriptional regulation and metabolism. The results revealed that the action of many global transcription factors such as ArcA, Fnr, CRP and IHF commonly involved both NADH and ATP while others were influential only in one of the pertubations. In general, overexpressing NADH oxidase invokes response in widespread aspects of metabolism involving the redox cofactors (NADH and NADPH) while ATPase has a more focused response to restore ATP level by enhancing proton translocation mechanisms and repressing biosynthesis. Interestingly, NADPH played a key role in restoring redox homeostasis through the concerted activity of isocitrate dehydrogenase and UdhA transhydrogenase. We present a reconciled network of regulation that illustrates the overlapping and distinct aspects of metabolism controlled by NADH and ATP. Our study contributes to the general understanding of redox and energy metabolism and should help in developing metabolic engineering strategies in E. coli.
+    </Summary>
+    <Overall-Design>
+The experimental design involves measuring transcriptome in three strains (in triplicates) of E. coli during mid-exponential phase of growth on MOPS media supplemented with glucose. The three strains are:  1. REF: MG1655/pAK80 (MG1655 transformed with a plasmid with no insert)  2. NOX: MG1655/pAC06 (MG1655 transformed with a plasmid containing NADH oxidase)  3. ATPase: MG1655/pCP41 (MG1655 transformed with a plasmid containing soluble ATPase)  RNA was extracted using Qiagen RNeasy kit and processes according to Affymetrix® guidelines. The quality of RNA was verified using BioAnalyzer (Agilent BioSystems) and the electropherograms are shown in the file “RNA quality.pdf”. Samples 1-3 are REF, Samples 4-6 are NOX and Samples 7-9 are ATPase. The fragmented cRNA was hybridized to E. coli Genome 2.0 chips.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM510322" />
+    <Sample-Ref ref="GSM510323" />
+    <Sample-Ref ref="GSM510324" />
+    <Sample-Ref ref="GSM510325" />
+    <Sample-Ref ref="GSM510326" />
+    <Sample-Ref ref="GSM510327" />
+    <Sample-Ref ref="GSM510328" />
+    <Sample-Ref ref="GSM510329" />
+    <Sample-Ref ref="GSM510330" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE20374/GSE20374_RAW.tar
+    </Supplementary-Data>
+    <Supplementary-Data type="PDF">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE20374/GSE20374_RNA_quality.pdf.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/125479" />
+  </Series>
+
+</MINiML>

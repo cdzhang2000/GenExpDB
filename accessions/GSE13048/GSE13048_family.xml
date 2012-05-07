@@ -1,0 +1,2342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Robert</First><Last>Poole</Last></Person>
+    <Email>R.poole@shef.ac.uk</Email>
+    <Phone>01142224447</Phone>
+    <Department>Molecular Biology &amp; Biotechnology</Department>
+    <Organization>University of Sheffield</Organization>
+    <Address>
+      <Line>Firth Court, Western Bank</Line>
+      <City>Sheffield</City>
+      <State>South Yorkshire</State>
+      <Postal-Code>S10 2TN</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>MWG Biotech</Organization>
+    <Email>array@mwgbiotech.com</Email>
+    <Phone>1-877-MWG-BTEC</Phone>
+    <Fax>1-336-812-9983</Fax>
+    <Organization>MWG Biotech</Organization>
+    <Address>
+      <Line>4170 Mendenhall Oaks Parkway, Suite 160</Line>
+      <City>High Point</City>
+      <State>NC</State>
+      <Zip-Code>27265</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL534">
+    <Status database="GEO">
+      <Submission-Date>2003-10-07</Submission-Date>
+      <Release-Date>2003-10-07</Release-Date>
+      <Last-Update-Date>2011-02-14</Last-Update-Date>
+    </Status>
+    <Title>MWG E. coli K12 Array</Title>
+    <Accession database="GEO">GPL534</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>MWG Biotech</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+4239 E. coli K12 specific oligonucleotide probes represent the complete Escherichia coli (K12)genome.
+    </Description>
+    <Web-Link>http://ecom2.mwgdna.com/services/array/download</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>metarow</Name>
+        <Description>number of subarray row</Description>
+      </Column>
+      <Column position="3">
+        <Name>metacolumn</Name>
+        <Description>number of subarray column</Description>
+      </Column>
+      <Column position="4">
+        <Name>row</Name>
+        <Description>number of row within subarray</Description>
+      </Column>
+      <Column position="5">
+        <Name>column</Name>
+        <Description>number of column within subarray</Description>
+      </Column>
+      <Column position="6">
+        <Name>oligo_name</Name>
+        <Description>MWG oligo id</Description>
+      </Column>
+      <Column position="7">
+        <Name>description</Name>
+        <Description>gene description</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORF</Name>
+        <Description>Locus name </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="4608">
+GPL534-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM322872">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to aerobically growing cells- Sample 4a</Title>
+    <Accession database="GEO">GSM322872</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy 3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background mean in Cy3 channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot area in Cy3 channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background area in Cy3 channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Backgroun mean in Cy5 channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot area in Cy5 channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background area in Cy5 channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in C5 channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy 5 channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322872-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322873">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to aerobically growing cells- Sample 4b</Title>
+    <Accession database="GEO">GSM322873</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 ul salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy5:Cy3 (test/control) ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+      <Column position="19">
+        <Name>INV_VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322873-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322937">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to aerobically growing cells- Sample 3a</Title>
+    <Accession database="GEO">GSM322937</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy5:Cy3 (test/control) ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+      <Column position="19">
+        <Name>INV_VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322937-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322938">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to aerobically growing cells- Sample 2b</Title>
+    <Accession database="GEO">GSM322938</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy5:Cy3 (test/control) ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+      <Column position="19">
+        <Name>INV_VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322938-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322939">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to aerobically growing cells- Sample 2a</Title>
+    <Accession database="GEO">GSM322939</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322939-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322940">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to aerobically growing cells- Sample 1b</Title>
+    <Accession database="GEO">GSM322940</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322940-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322941">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to aerobically growing cells- Sample 1a</Title>
+    <Accession database="GEO">GSM322941</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy5:Cy3 (test/control) ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+      <Column position="19">
+        <Name>INV_VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322941-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322942">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to aerobically growing cells- Sample 3b</Title>
+    <Accession database="GEO">GSM322942</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Aerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322942-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322943">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to anaerobically growing cells- Sample 1a</Title>
+    <Accession database="GEO">GSM322943</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Anaerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Anaerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322943-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322944">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to anaerobically growing cells- Sample 1b</Title>
+    <Accession database="GEO">GSM322944</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Anaerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Anaerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy5:Cy3 (test/control) ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+      <Column position="19">
+        <Name>INV_VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322944-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322945">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to anaerobically growing cells- Sample 2a</Title>
+    <Accession database="GEO">GSM322945</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Anaerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Anaerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322945-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322946">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to anaerobically growing cells- Sample 2b</Title>
+    <Accession database="GEO">GSM322946</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Anaerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Anaerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy5:Cy3 (test/control) ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+      <Column position="19">
+        <Name>INV_VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322946-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322947">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to anaerobically growing cells- Sample 3a</Title>
+    <Accession database="GEO">GSM322947</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Anaerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Anaerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322947-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322948">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to anaerobically growing cells- Sample 3b</Title>
+    <Accession database="GEO">GSM322948</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Anaerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Anaerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy5:Cy3 (test/control) ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+      <Column position="19">
+        <Name>INV_VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322948-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322949">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to anaerobically growing cells- Sample 4a</Title>
+    <Accession database="GEO">GSM322949</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Anaerobic E. coli exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Anaerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).  
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322949-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM322950">
+    <Status database="GEO">
+      <Submission-Date>2008-09-22</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2008-12-22</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli after addition of CO-RMs to anaerobically growing cells- Sample 4b</Title>
+    <Accession database="GEO">GSM322950</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Anaerobic E. coli not exposed to CO-RMs for 15 minutes (control cells)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 not exposed to CO-RMs for 15 minutes (control cells)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy3 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Anaerobic E. coli were exposed to CO-RMs for 15 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Anaerobic MG1655 were exposed to CO-RMs for 15 minutes
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples (30 ml) were harvested directly into cold phenol ethanol (187 µl phenol, 3.56 ml ethanol) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by suppliers. RNA was quantified using a BioPhotometer (Eppendorf).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Approximately 9 µg RNA was annealed to 4.5 µg pd(N)6 random hexamers (Amersham Biosciences) by heating at 65 oC for 10 min, followed by 10 min at 22 oC and cooling on ice for 2 min. This was supplemented with 6 µl of 5× First-strand buffer (Invitrogen), 2.5 µl dNTP mixture (5 mM each dATP, dTTP, dGTP and 2 mM dCTP), 3 µl 0.1 M DTT, 2 µl 1 mM Cy5 (Perkin Elmer) and 1.5 µl Superscript III reverse transcriptase (200 U) (Invitrogen).  This was incubated at 42 oC for 3 hours.  The reaction was terminated by the addition of NaOH (7.5 µl of 1M) and HCl (7.5 µl of 1M) before the addition of TE buffer (300 µl).  Labelled cDNA was purified using a Qiaquick purification kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The Cy3-dCTP-labelled sample was mixed with the Cy5-dCTP-labelled sample, vacuum-dried and re-suspended in 120 µl salt-based hybridisation buffer (supplied with the microarray slides).  This was heated at 95 oC for 3 min then cooled on ice for 3 min.  The mixture was pipetted onto a microarray slide, sealed with a GeneFrame and coverslip in a hybridization chamber and incubated for 18 h at 42 °C.  Following hybridization, microarray slides (minus GeneFrame and coverslip) were washed in a series of pre-warmed (37 °C) SSC buffers for 5 min each at 37oC: 2× SSC/0.1 % SDS, 1× SSC, 0.2× SSC and 0.01× SSC.  Microarray slides were dried by centrifugation at 1500 × g for 2 min before scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned on an Affymetrix 428 scanner.  The average signal intensity and local background correction were obtained using a commercially available software package from Biodiscovery, Inc (Imagene, version 4.0 and GeneSight, version 3.5).
+    </Scan-Protocol>
+    <Description>
+The labelling procedure uses equal quantities of RNA from adequate CO-RM and control cultures.
+    </Description>
+    <Data-Processing>
+Spots automatically flagged as bad, negative or poor in the Imagene software were removed before the statistical analysis was carried out in GeneSight.  The mean values from each channel were log2 transformed and normalised using the Lowess method to remove intensity-dependent effects in the log2(ratios) values.  The Cy3/Cy5 fluorescent ratios were calculated from the normalized values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Cy5:Cy3 (test/control) ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+      <Column position="19">
+        <Name>INV_VALUE</Name>
+        <Description>Cy3:Cy5 ratio following background correction, log2 transformation, Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM322950-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE13048">
+    <Status database="GEO">
+      <Submission-Date>2008-10-03</Submission-Date>
+      <Release-Date>2008-12-22</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional profiling of Escherichia coli</Title>
+    <Accession database="GEO">GSE13048</Accession>
+    <Pubmed-ID>19091747</Pubmed-ID>
+    <Summary>
+This SuperSeries is composed of the following subset Series:
+GSE12877: Transcriptional profiling of Escherichia coli after addition of CO-RMs to aerobically growing cells
+GSE12878: Transcriptional profiling of Escherichia coli after addition of CO-RMs to anaerobically growing cells
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM322872" />
+    <Sample-Ref ref="GSM322873" />
+    <Sample-Ref ref="GSM322937" />
+    <Sample-Ref ref="GSM322938" />
+    <Sample-Ref ref="GSM322939" />
+    <Sample-Ref ref="GSM322940" />
+    <Sample-Ref ref="GSM322941" />
+    <Sample-Ref ref="GSM322942" />
+    <Sample-Ref ref="GSM322943" />
+    <Sample-Ref ref="GSM322944" />
+    <Sample-Ref ref="GSM322945" />
+    <Sample-Ref ref="GSM322946" />
+    <Sample-Ref ref="GSM322947" />
+    <Sample-Ref ref="GSM322948" />
+    <Sample-Ref ref="GSM322949" />
+    <Sample-Ref ref="GSM322950" />
+    <Relation type="SuperSeries of" target="GSE12877" />
+    <Relation type="SuperSeries of" target="GSE12878" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/109961" />
+  </Series>
+
+</MINiML>

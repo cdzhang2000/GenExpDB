@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Toru</First><Last>Tobe</Last></Person>
+    <Email>torutobe@bact.med.osaka-u.ac.jp</Email>
+    <Phone>+81-6-6879-3301</Phone>
+    <Fax>+81-6-6879-3309</Fax>
+    <Laboratory>Applied bacteriology</Laboratory>
+    <Department>Graduate School of Medicine</Department>
+    <Organization>Osaka University</Organization>
+    <Address>
+      <Line>2-2 Yamadaoka</Line>
+      <City>Suita</City>
+      <State>Osaka</State>
+      <Postal-Code>565-0871</Postal-Code>
+      <Country>Japan</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Noriko</First><Last>Nakanishi</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL6228">
+    <Status database="GEO">
+      <Submission-Date>2007-12-03</Submission-Date>
+      <Release-Date>2008-02-01</Release-Date>
+      <Last-Update-Date>2008-02-01</Last-Update-Date>
+    </Status>
+    <Title>Osaka University E. coli O157 Sakai Oligo Array 5.5K ver2</Title>
+    <Accession database="GEO">GPL6228</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Molecular Gene Technics, Department of Genetic Resources Technology, Faculty of Agriculture, Kyushu University, Fukuoka, Japan.</Manufacturer>
+    <Manufacture-Protocol>
+Oligonucleotide probes were prepared for all the protein-coding genes on the O157 Sakai genome (5,447 genes in total).  Principles for the probe design were 60-mer in length and one probe per gene/CDS.  For each gene, we designed 60-mer probe except one 44 or 45-mer probes for 7 genes.  In total, 5447 probes were synthesized (Sigma-Aldrich Japan, Tokyo, Japan), and each probe was spotted onto poly-L-Lysine coated glass slides (SD10011; Matsunami Glass Ind., Osaka, Japan) using SPBIO (Hitachi Software Engineering, Tokyo, Japan).
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>ID_REF</Description>
+      </Column>
+      <Column position="2">
+        <Name>SEQUENCE</Name>
+        <Description>oligonucleotide probe sequence</Description>
+      </Column>
+      <Column position="3">
+        <Name>ORF</Name>
+        <Description>target ORF </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>GB_ACC</Name>
+        <Description>oligonucleotide probes were degined based on the genome sequence </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&amp;db=Nucleotide&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="5">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="5447">
+GPL6228-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM323570">
+    <Status database="GEO">
+      <Submission-Date>2008-09-23</Submission-Date>
+      <Release-Date>2008-11-01</Release-Date>
+      <Last-Update-Date>2008-09-24</Last-Update-Date>
+    </Status>
+    <Title>Acetate-rep1</Title>
+    <Accession database="GEO">GSM323570</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from wild type EHEC harboring pGEM vector labeled with Cy3.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with acetate
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Total RNA from wild type EHEC harboring pGEM-ler labeled with Cy5.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with NaCl
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The labeled cDNA probes were then dissolved in water, mixed with hybridization buffer (5x SSC, 0.5% SDS, 1 mg/ml yeast RNA), and heat-denatured. Hybridization was carried out at 50 °C for 16 h. Slides were washed with 2x SSC containing 0.2% SDS at 50 °C twice, then with 0.2x SSC containing 0.2% SDS at 20 °C twice.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned for fluorescence intensity using a GMS 418 array scanner (Genetic Microsystems), and the information was converted to 16-bit image files.
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+The signal density of each spot was quantified using IMAGENE software (BioDiscovery). We first corrected the intensity of each spot by subtracting the local background. The mean values of the negative control spots containing yeast oligo DNA and the spots containing spotting buffer alone were determined, with the standard deviation (SD). Normalization was performed using Intensity dependent (Lowess) normalization procedure in GeneSpring GX software.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6228" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM323nnn/GSM323570/GSM323570.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 of PRE_VALUE, i.e., normalized, log2 (test/wt EHEC harboring pGEM) ratios</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="5447">
+GSM323570-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM323571">
+    <Status database="GEO">
+      <Submission-Date>2008-09-23</Submission-Date>
+      <Release-Date>2008-11-01</Release-Date>
+      <Last-Update-Date>2008-09-24</Last-Update-Date>
+    </Status>
+    <Title>Acetate-rep2</Title>
+    <Accession database="GEO">GSM323571</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from wild type EHEC harboring pGEM vector labeled with Cy5.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with acetate
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Total RNA from wild type EHEC harboring pGEM-ler labeled with Cy3.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with NaCl
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The labeled cDNA probes were then dissolved in water, mixed with hybridization buffer (5x SSC, 0.5% SDS, 1 mg/ml yeast RNA), and heat-denatured. Hybridization was carried out at 50 °C for 16 h. Slides were washed with 2x SSC containing 0.2% SDS at 50 °C twice, then with 0.2x SSC containing 0.2% SDS at 20 °C twice.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned for fluorescence intensity using a GMS 418 array scanner (Genetic Microsystems), and the information was converted to 16-bit image files.
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+The signal density of each spot was quantified using IMAGENE software (BioDiscovery). We first corrected the intensity of each spot by subtracting the local background. The mean values of the negative control spots containing yeast oligo DNA and the spots containing spotting buffer alone were determined, with the standard deviation (SD). Normalization was performed using Intensity dependent (Lowess) normalization procedure in GeneSpring GX software.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6228" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM323nnn/GSM323571/GSM323571.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>-[INV_VALUE], i.e., normalized, log2 (test/wt EHEC harboring pGEM) ratios</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy5/Cy3)</Description>
+      </Column>
+      <Column position="4">
+        <Name>INV_VALUE</Name>
+        <Description>log2 of PRE_VALUE</Description>
+      </Column>
+    <External-Data rows="5447">
+GSM323571-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM323572">
+    <Status database="GEO">
+      <Submission-Date>2008-09-23</Submission-Date>
+      <Release-Date>2008-11-01</Release-Date>
+      <Last-Update-Date>2008-09-24</Last-Update-Date>
+    </Status>
+    <Title>Propionate-rep1</Title>
+    <Accession database="GEO">GSM323572</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from wild type EHEC harboring pGEM vector labeled with Cy3.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with propionate
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Total RNA from wild type EHEC harboring pGEM-PchA labeled with Cy5.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with NaCl
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The labeled cDNA probes were then dissolved in water, mixed with hybridization buffer (5x SSC, 0.5% SDS, 1 mg/ml yeast RNA), and heat-denatured. Hybridization was carried out at 50 °C for 16 h. Slides were washed with 2x SSC containing 0.2% SDS at 50 °C twice, then with 0.2x SSC containing 0.2% SDS at 20 °C twice.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned for fluorescence intensity using a GMS 418 array scanner (Genetic Microsystems), and the information was converted to 16-bit image files.
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+The signal density of each spot was quantified using IMAGENE software (BioDiscovery). We first corrected the intensity of each spot by subtracting the local background. The mean values of the negative control spots containing yeast oligo DNA and the spots containing spotting buffer alone were determined, with the standard deviation (SD). Normalization was performed using Intensity dependent (Lowess) normalization procedure in GeneSpring GX software.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6228" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM323nnn/GSM323572/GSM323572.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 of PRE_VALUE, i.e., normalized, log2 (test/wt EHEC harboring pGEM) ratios</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="5447">
+GSM323572-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM323573">
+    <Status database="GEO">
+      <Submission-Date>2008-09-23</Submission-Date>
+      <Release-Date>2008-11-01</Release-Date>
+      <Last-Update-Date>2008-09-24</Last-Update-Date>
+    </Status>
+    <Title>Propionate-rep2</Title>
+    <Accession database="GEO">GSM323573</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from wild type EHEC harboring pGEM vector labeled with Cy5.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with propionate
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Total RNA from wild type EHEC harboring pGEM-PchA labeled with Cy3.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with NaCl
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The labeled cDNA probes were then dissolved in water, mixed with hybridization buffer (5x SSC, 0.5% SDS, 1 mg/ml yeast RNA), and heat-denatured. Hybridization was carried out at 50 °C for 16 h. Slides were washed with 2x SSC containing 0.2% SDS at 50 °C twice, then with 0.2x SSC containing 0.2% SDS at 20 °C twice.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned for fluorescence intensity using a GMS 418 array scanner (Genetic Microsystems), and the information was converted to 16-bit image files.
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+The signal density of each spot was quantified using IMAGENE software (BioDiscovery). We first corrected the intensity of each spot by subtracting the local background. The mean values of the negative control spots containing yeast oligo DNA and the spots containing spotting buffer alone were determined, with the standard deviation (SD). Normalization was performed using Intensity dependent (Lowess) normalization procedure in GeneSpring GX software.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6228" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM323nnn/GSM323573/GSM323573.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>-[INV_VALUE], i.e., normalized, log2 (test/wt EHEC harboring pGEM) ratios</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy5/Cy3)</Description>
+      </Column>
+      <Column position="4">
+        <Name>INV_VALUE</Name>
+        <Description>log2 of PRE_VALUE</Description>
+      </Column>
+    <External-Data rows="5447">
+GSM323573-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM323574">
+    <Status database="GEO">
+      <Submission-Date>2008-09-23</Submission-Date>
+      <Release-Date>2008-11-01</Release-Date>
+      <Last-Update-Date>2008-09-24</Last-Update-Date>
+    </Status>
+    <Title>Butyrate-rep1</Title>
+    <Accession database="GEO">GSM323574</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from wild type EHEC harboring pGEM vector labeled with Cy3.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with butyrate
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Total RNA from ler mutant of EHEC harboring pGEM vector labeled with Cy5.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with NaCl
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The labeled cDNA probes were then dissolved in water, mixed with hybridization buffer (5x SSC, 0.5% SDS, 1 mg/ml yeast RNA), and heat-denatured. Hybridization was carried out at 50 °C for 16 h. Slides were washed with 2x SSC containing 0.2% SDS at 50 °C twice, then with 0.2x SSC containing 0.2% SDS at 20 °C twice.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned for fluorescence intensity using a GMS 418 array scanner (Genetic Microsystems), and the information was converted to 16-bit image files.
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+The signal density of each spot was quantified using IMAGENE software (BioDiscovery). We first corrected the intensity of each spot by subtracting the local background. The mean values of the negative control spots containing yeast oligo DNA and the spots containing spotting buffer alone were determined, with the standard deviation (SD). Normalization was performed using Intensity dependent (Lowess) normalization procedure in GeneSpring GX software.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6228" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM323nnn/GSM323574/GSM323574.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 of PRE_VALUE, i.e., normalized, log2 (test/wt EHEC harboring pGEM) ratios</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="5447">
+GSM323574-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM323575">
+    <Status database="GEO">
+      <Submission-Date>2008-09-23</Submission-Date>
+      <Release-Date>2008-11-01</Release-Date>
+      <Last-Update-Date>2008-09-24</Last-Update-Date>
+    </Status>
+    <Title>Butyrate-rep2</Title>
+    <Accession database="GEO">GSM323575</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from wild type EHEC harboring pGEM vector labeled with Cy5.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with butyrate
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Total RNA from ler mutant of EHEC harboring pGEM vector labeled with Cy3.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Enterohaemorrhagic E. coli O157">
+H7 Sakai grown with NaCl
+      </Characteristics>
+      <Treatment-Protocol>
+20 mM of NaCl, sodium acetate, sodium propionate, or sodium butyrate was added to DMEM
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Bacteria were grown in DMEM at 37C to logarithmic phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from bacteria harvested from 10 ml culture by using TRI reagent (Sigma) according to the manufacturer’s instruction.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescent-labeled cDNA probes were synthesized in a reverse-transcriptase reaction with AMVXL (XL Life Science) and Cy3-dUTP or Cy5-dUTP (Amersham Pharmacia) and the mixture of specific primers made from the total EHEC RNA. The specific primer was a 16-mer oligo DNA that was anti-sense to the downstream sequence of the spotted oligo DNA for each gene. Labeled cDNA probes were purified by Centri-sep (Princeton Separations), phenol-chloroform extraction, and ethanol precipitation.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The labeled cDNA probes were then dissolved in water, mixed with hybridization buffer (5x SSC, 0.5% SDS, 1 mg/ml yeast RNA), and heat-denatured. Hybridization was carried out at 50 °C for 16 h. Slides were washed with 2x SSC containing 0.2% SDS at 50 °C twice, then with 0.2x SSC containing 0.2% SDS at 20 °C twice.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned for fluorescence intensity using a GMS 418 array scanner (Genetic Microsystems), and the information was converted to 16-bit image files.
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+The signal density of each spot was quantified using IMAGENE software (BioDiscovery). We first corrected the intensity of each spot by subtracting the local background. The mean values of the negative control spots containing yeast oligo DNA and the spots containing spotting buffer alone were determined, with the standard deviation (SD). For each gene/CDS one of two probes was selected for further analysis.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6228" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM323nnn/GSM323575/GSM323575.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>-[INV_VALUE], i.e., normalized, log2 (test/wt EHEC harboring pGEM) ratios</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (Cy5/Cy3)</Description>
+      </Column>
+      <Column position="4">
+        <Name>INV_VALUE</Name>
+        <Description>log2 of PRE_VALUE</Description>
+      </Column>
+    <External-Data rows="5447">
+GSM323575-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE12903">
+    <Status database="GEO">
+      <Submission-Date>2008-09-23</Submission-Date>
+      <Release-Date>2008-11-01</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Transcriptomic analysis for response of EHEC  to short chain fatty acids</Title>
+    <Accession database="GEO">GSE12903</Accession>
+    <Pubmed-ID>19202100</Pubmed-ID>
+    <Summary>
+Enterohaemorrhagic Escherichia coli (EHEC) is an emerging pathogen that causes diarrhea and heamolytic uremic syndrome. Expression of genes associated to pathogenicity is strictly regulated by environmental factors. Since short chian fatty acids (SCFAs) are present in intestinal tract which is a target of EHEC infection, we investigated the response of EHEC genes to SCFAs, such as acetate, propionate and butyrate.
+
+Keywords: Culture condition
+    </Summary>
+    <Overall-Design>
+3 sets of comparison between transcription profiles in EHEC growing in the presence of acetate, propionate or butyrate against EHEC growing in the presence of NaCl. Labelling of cDNA and hybridization were performed twice with independently prepared RNAs.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM323570" />
+    <Sample-Ref ref="GSM323571" />
+    <Sample-Ref ref="GSM323572" />
+    <Sample-Ref ref="GSM323573" />
+    <Sample-Ref ref="GSM323574" />
+    <Sample-Ref ref="GSM323575" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE12903/GSE12903_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/110903" />
+  </Series>
+
+</MINiML>

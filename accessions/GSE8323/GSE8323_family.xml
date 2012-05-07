@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jason</First><Last>Ernst</Last></Person>
+    <Email>jernst@mit.edu</Email>
+    <Organization>Massachusetts Institute of Technology</Organization>
+    <Address>
+      <Line>32 Vassar St</Line>
+      <City>Cambridge</City>
+      <State>MA</State>
+      <Zip-Code>02141</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Qasim</First><Middle>K</Middle><Last>Beg</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Krin</First><Middle>A</Middle><Last>Kay</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Gabor</First><Last>Balazsi</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Zoltan</First><Middle>N</Middle><Last>Oltvai</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Ziv</First><Last>Bar-Joseph</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5435">
+    <Status database="GEO">
+      <Submission-Date>2007-06-26</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>IntegratedGenomics_Ecoli_14K_v1-12</Title>
+    <Accession database="GEO">GPL5435</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Integrated Genomics Chicago Illinois</Manufacturer>
+    <Manufacture-Protocol>
+As described in (Tong et al. 2004, Biochemical and Biophysical Research Communications, 322: 347-354): &quot;unique cDNA fragments corresponding to each predicted ORF of E. coli MG1655 were produced by PCR amplification from genomic DNA. To ensure that each primer pair would amplify the most unique 200–350 base pair region within each ORF, the PCR amplification product sequences were compared with all others in the genome by BLAST analysis. Sequences producing the minimum E values, relative to all other ORFs in E. coli, were selected. Of the 4485 E. coli ORFs listed in the ERGO database [Integrated Genomic, Chicago, IL], unique primers were found for 4442 ORFs (sequences available upon request). Most of the remaining ORFs represent genes that are shorter than 240 bp. Thus, each predicted ORF of E. coli MG1655 was represented by a fragment predicted to minimally cross-hybridize with other E. coli MG1655 sequences. These fragments varied in length from 200 to 350 bp, with a median length of ~300 bp. After two rounds of PCR amplification the final products were purified on 384-well format ArrayIt PCR purification Kits (TeleChem International). PCR products were resuspended in 15 μl spotting buffer (3× SSC (1× SSC is 0.15 M NaCl plus 0.015 M sodium citrate), 1.5 M betaine) and printed in triplicate onto amino-alkylsilane coated slides (Sigma) with an OmniGrid arrayer (Gene Machines) equipped with Telechem SMP3 split pins. The DNA was cross-linked to the slides with UV light and baked in a vacuum oven at 60 °C for at least two hours. Residual salt and unbound DNA were removed by rinsing the slides with 0.5% sodium dodecyl sulfate and water. The slides were stored desiccated at room temperature until use.&quot; Note that this array design is the same as IntegratedGenomics_Ecoli_14K_v12-1 except for a reordering of the location of the probes.
+    </Manufacture-Protocol>
+    <Coating>aminosilane</Coating>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL5435/GPL5435.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>the Blattner number for the gene if available  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix> AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE_SYMBOL</Name>
+        <Description>the standard gene symbol for the gene if available</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="4311">
+GPL5435-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Platform iid="GPL5436">
+    <Status database="GEO">
+      <Submission-Date>2007-06-26</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>IntegratedGenomics_Ecoli_14K_v12-1</Title>
+    <Accession database="GEO">GPL5436</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Integrated Genomics Chicago Illinois</Manufacturer>
+    <Manufacture-Protocol>
+As described in (Tong et al. 2004, Biochemical and Biophysical Research Communications, 322: 347-354): &quot;unique cDNA fragments corresponding to each predicted ORF of E. coli MG1655 were produced by PCR amplification from genomic DNA. To ensure that each primer pair would amplify the most unique 200–350 base pair region within each ORF, the PCR amplification product sequences were compared with all others in the genome by BLAST analysis. Sequences producing the minimum E values, relative to all other ORFs in E. coli, were selected. Of the 4485 E. coli ORFs listed in the ERGO database [Integrated Genomic, Chicago, IL], unique primers were found for 4442 ORFs (sequences available upon request). Most of the remaining ORFs represent genes that are shorter than 240 bp. Thus, each predicted ORF of E. coli MG1655 was represented by a fragment predicted to minimally cross-hybridize with other E. coli MG1655 sequences. These fragments varied in length from 200 to 350 bp, with a median length of ~300 bp. After two rounds of PCR amplification the final products were purified on 384-well format ArrayIt PCR purification Kits (TeleChem International). PCR products were resuspended in 15 μl spotting buffer (3× SSC (1× SSC is 0.15 M NaCl plus 0.015 M sodium citrate), 1.5 M betaine) and printed in triplicate onto amino-alkylsilane coated slides (Sigma) with an OmniGrid arrayer (Gene Machines) equipped with Telechem SMP3 split pins. The DNA was cross-linked to the slides with UV light and baked in a vacuum oven at 60 °C for at least two hours. Residual salt and unbound DNA were removed by rinsing the slides with 0.5% sodium dodecyl sulfate and water. The slides were stored desiccated at room temperature until use.&quot; Note that this array design is the same as IntegratedGenomics_Ecoli_14K_v1-12 except for a reordering of the location of the probes.
+    </Manufacture-Protocol>
+    <Coating>aminosilane</Coating>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL5436/GPL5436.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>the Blattner number for the gene if available  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix> AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE_SYMBOL</Name>
+        <Description>the standard gene symbol for the gene if available</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="4311">
+GPL5436-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM206026">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_0min</Title>
+    <Accession database="GEO">GSM206026</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E coli, 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E coli, immediately after turning off oxygen</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Immediately after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen, Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with ~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome  microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor, MI) 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array scanner (Molecular Devices, Union City, CA). 
+    </Scan-Protocol>
+    <Description>
+First time point in aerobic-anaerobic shift response. 
+Note: Aerobic standard was not consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that originate during array printing, as well as during the collection and processing of samples, fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al. 2003, PNAS).  To minimize the effect of such contributions, microarray data were normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from further analysis if the foreground intensity of less than 50% of the pixels within the spot were above 2 standard deviations of the background. We generated expression data tables in Microsoft Excel, containing the following information for each of the 14,352 entries: block (B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green foreground (f_g) and background (b_g) intensity. The position of each probe within a block, P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red) foreground and background, and the median Cy3 (green) foreground and background intensities, respectively.  In some cases, when the intensity of the background was higher than or equal to the intensity of the foreground, the resulting log ratios became complex or infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab. Next, data were normalized, by averaging the log ratios resulting from all spots printed by a print tip, and subtracting the resulting average from all the individual log ratios corresponding to the same tip. Finally, all the log ratios of the same gene from each slide were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5435" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206026/GSM206026.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of treatment/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206026-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206029">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_2min</Title>
+    <Accession database="GEO">GSM206029</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli, 2 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E coli, 2 min after turning off oxygen</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+2 min after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen, Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with ~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome  microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor, MI) 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array scanner (Molecular Devices, Union City, CA). 
+    </Scan-Protocol>
+    <Description>
+2 min time point in aerobic-anaerobic shift response. 
+Note: Aerobic standard was not consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that originate during array printing, as well as during the collection and processing of samples, fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al. 2003, PNAS).  To minimize the effect of such contributions, microarray data were normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from further analysis if the foreground intensity of less than 50% of the pixels within the spot were above 2 standard deviations of the background. We generated expression data tables in Microsoft Excel, containing the following information for each of the 14,352 entries: block (B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green foreground (f_g) and background (b_g) intensity. The position of each probe within a block, P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red) foreground and background, and the median Cy3 (green) foreground and background intensities, respectively.  In some cases, when the intensity of the background was higher than or equal to the intensity of the foreground, the resulting log ratios became complex or infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab. Next, data were normalized, by averaging the log ratios resulting from all spots printed by a print tip, and subtracting the resulting average from all the individual log ratios corresponding to the same tip. Finally, all the log ratios of the same gene from each slide were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206029/GSM206029.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of treatment/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206029-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206032">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_5min_Rep1</Title>
+    <Accession database="GEO">GSM206032</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E coli, 5 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E coli, 5 min after turning off oxygen first replicate</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+5 min after turning off oxygen first replicate
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen, Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with ~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome  microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor, MI) 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array scanner (Molecular Devices, Union City, CA). 
+    </Scan-Protocol>
+    <Description>
+5 min time point in aerobic-anaerobic shift response. 
+Note: Aerobic standard was not consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that originate during array printing, as well as during the collection and processing of samples, fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al. 2003, PNAS).  To minimize the effect of such contributions, microarray data were normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from further analysis if the foreground intensity of less than 50% of the pixels within the spot were above 2 standard deviations of the background. We generated expression data tables in Microsoft Excel, containing the following information for each of the 14,352 entries: block (B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green foreground (f_g) and background (b_g) intensity. The position of each probe within a block, P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red) foreground and background, and the median Cy3 (green) foreground and background intensities, respectively.  In some cases, when the intensity of the background was higher than or equal to the intensity of the foreground, the resulting log ratios became complex or infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab. Next, data were normalized, by averaging the log ratios resulting from all spots printed by a print tip, and subtracting the resulting average from all the individual log ratios corresponding to the same tip. Finally, all the log ratios of the same gene from each slide were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206032/GSM206032.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of treatment/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206032-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206035">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_5min_rep2</Title>
+    <Accession database="GEO">GSM206035</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli, 5 min after turning off oxygen</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+5 min after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Ecoli, completely aerobic conditions</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen, Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with ~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome  microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor, MI) 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array scanner (Molecular Devices, Union City, CA). 
+    </Scan-Protocol>
+    <Description>
+5 min time point in aerobic-anaerobic shift response. 
+Note: Aerobic standard was not consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that originate during array printing, as well as during the collection and processing of samples, fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al. 2003, PNAS).  To minimize the effect of such contributions, microarray data were normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from further analysis if the foreground intensity of less than 50% of the pixels within the spot were above 2 standard deviations of the background. We generated expression data tables in Microsoft Excel, containing the following information for each of the 14,352 entries: block (B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green foreground (f_g) and background (b_g) intensity. The position of each probe within a block, P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red) foreground and background, and the median Cy3 (green) foreground and background intensities, respectively.  In some cases, when the intensity of the background was higher than or equal to the intensity of the foreground, the resulting log ratios became complex or infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab. Next, data were normalized, by averaging the log ratios resulting from all spots printed by a print tip, and subtracting the resulting average from all the individual log ratios corresponding to the same tip. Finally, all the log ratios of the same gene from each slide were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206035/GSM206035.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206035-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206039">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_15min</Title>
+    <Accession database="GEO">GSM206039</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E coli, 15 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+15 min after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E coli, 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen, Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with ~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome  microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor, MI) 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array scanner (Molecular Devices, Union City, CA). 
+    </Scan-Protocol>
+    <Description>
+5 min time point in aerobic-anaerobic shift response. 
+Note: Aerobic standard was not consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that originate during array printing, as well as during the collection and processing of samples, fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al. 2003, PNAS).  To minimize the effect of such contributions, microarray data were normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from further analysis if the foreground intensity of less than 50% of the pixels within the spot were above 2 standard deviations of the background. We generated expression data tables in Microsoft Excel, containing the following information for each of the 14,352 entries: block (B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green foreground (f_g) and background (b_g) intensity. The position of each probe within a block, P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red) foreground and background, and the median Cy3 (green) foreground and background intensities, respectively.  In some cases, when the intensity of the background was higher than or equal to the intensity of the foreground, the resulting log ratios became complex or infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab. Next, data were normalized, by averaging the log ratios resulting from all spots printed by a print tip, and subtracting the resulting average from all the individual log ratios corresponding to the same tip. Finally, all the log ratios of the same gene from each slide were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206039/GSM206039.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>'normalized and averaged log base 10 ratio of Cy5 and Cy3'</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206039-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206042">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_25min_rep1</Title>
+    <Accession database="GEO">GSM206042</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E coli, 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E coli, 25 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E coli, 25 min after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen, Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with ~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome  microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor, MI) 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array scanner (Molecular Devices, Union City, CA). 
+    </Scan-Protocol>
+    <Description>
+5 min time point in aerobic-anaerobic shift response. 
+Note: Aerobic standard was not consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that originate during array printing, as well as during the collection and processing of samples, fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al. 2003, PNAS).  To minimize the effect of such contributions, microarray data were normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from further analysis if the foreground intensity of less than 50% of the pixels within the spot were above 2 standard deviations of the background. We generated expression data tables in Microsoft Excel, containing the following information for each of the 14,352 entries: block (B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green foreground (f_g) and background (b_g) intensity. The position of each probe within a block, P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red) foreground and background, and the median Cy3 (green) foreground and background intensities, respectively.  In some cases, when the intensity of the background was higher than or equal to the intensity of the foreground, the resulting log ratios became complex or infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab. Next, data were normalized, by averaging the log ratios resulting from all spots printed by a print tip, and subtracting the resulting average from all the individual log ratios corresponding to the same tip. Finally, all the log ratios of the same gene from each slide were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5435" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206042/GSM206042.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of treatment/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206042-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206047">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_25min_rep2</Title>
+    <Accession database="GEO">GSM206047</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E coli, 25 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E coli, 25 min after turning off oxygen</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+25 min after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen, Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with ~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome  microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor, MI) 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array scanner (Molecular Devices, Union City, CA). 
+    </Scan-Protocol>
+    <Description>
+5 min time point in aerobic-anaerobic shift response. 
+Note: Aerobic standard was not consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that originate during array printing, as well as during the collection and processing of samples, fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al. 2003, PNAS).  To minimize the effect of such contributions, microarray data were normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from further analysis if the foreground intensity of less than 50% of the pixels within the spot were above 2 standard deviations of the background. We generated expression data tables in Microsoft Excel, containing the following information for each of the 14,352 entries: block (B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green foreground (f_g) and background (b_g) intensity. The position of each probe within a block, P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red) foreground and background, and the median Cy3 (green) foreground and background intensities, respectively.  In some cases, when the intensity of the background was higher than or equal to the intensity of the foreground, the resulting log ratios became complex or infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab. Next, data were normalized, by averaging the log ratios resulting from all spots printed by a print tip, and subtracting the resulting average from all the individual log ratios corresponding to the same tip. Finally, all the log ratios of the same gene from each slide were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206047/GSM206047.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of treatment/control</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206047-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206051">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_35min</Title>
+    <Accession database="GEO">GSM206051</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E coli, 35 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E coli, 35 min after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Ecoli, completely aerobic conditions</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes. 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen, Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with ~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome  microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor, MI) 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array scanner (Molecular Devices, Union City, CA). 
+    </Scan-Protocol>
+    <Description>
+5 min time point in aerobic-anaerobic shift response. 
+Note: Aerobic standard was not consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that originate during array printing, as well as during the collection and processing of samples, fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al. 2003, PNAS).  To minimize the effect of such contributions, microarray data were normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from further analysis if the foreground intensity of less than 50% of the pixels within the spot were above 2 standard deviations of the background. We generated expression data tables in Microsoft Excel, containing the following information for each of the 14,352 entries: block (B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green foreground (f_g) and background (b_g) intensity. The position of each probe within a block, P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red) foreground and background, and the median Cy3 (green) foreground and background intensities, respectively.  In some cases, when the intensity of the background was higher than or equal to the intensity of the foreground, the resulting log ratios became complex or infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab. Next, data were normalized, by averaging the log ratios resulting from all spots printed by a print tip, and subtracting the resulting average from all the individual log ratios corresponding to the same tip. Finally, all the log ratios of the same gene from each slide were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206051/GSM206051.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206051-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206054">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_45min</Title>
+    <Accession database="GEO">GSM206054</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E coli, 45 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E coli, 45 min after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together
+with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the
+dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M
+hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E coli, 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together
+with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the
+dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M
+hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen,
+Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to
+each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was
+followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were
+eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with
+~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor,
+MI)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array
+scanner (Molecular Devices, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+First time point in aerobic-anaerobic shift response. Note: Aerobic standard was not
+consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that
+originate during array printing, as well as during the collection and processing of samples,
+fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al.
+2003, PNAS). To minimize the effect of such contributions, microarray data were
+normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from
+further analysis if the foreground intensity of less than 50% of the pixels within the spot
+were above 2 standard deviations of the background. We generated expression data tables
+in Microsoft Excel, containing the following information for each of the 14,352 entries: block
+(B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green
+foreground (f_g) and background (b_g) intensity. The position of each probe within a block,
+P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm
+of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red)
+foreground and background, and the median Cy3 (green) foreground and background
+intensities, respectively. In some cases, when the intensity of the background was higher
+than or equal to the intensity of the foreground, the resulting log ratios became complex or
+infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab.
+Next, data were normalized, by averaging the log ratios resulting from all spots printed by a
+print tip, and subtracting the resulting average from all the individual log ratios
+corresponding to the same tip. Finally, all the log ratios of the same gene from each slide
+were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206054/GSM206054.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206054-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206055">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_55min_rep1</Title>
+    <Accession database="GEO">GSM206055</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E coli, 55 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+55 min after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together
+with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the
+dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M
+hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E coli, 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together
+with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the
+dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M
+hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen,
+Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to
+each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was
+followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were
+eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with
+~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor,
+MI)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array
+scanner (Molecular Devices, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+First time point in aerobic-anaerobic shift response. Note: Aerobic standard was not
+consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that
+originate during array printing, as well as during the collection and processing of samples,
+fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al.
+2003, PNAS). To minimize the effect of such contributions, microarray data were
+normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from
+further analysis if the foreground intensity of less than 50% of the pixels within the spot
+were above 2 standard deviations of the background. We generated expression data tables
+in Microsoft Excel, containing the following information for each of the 14,352 entries: block
+(B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green
+foreground (f_g) and background (b_g) intensity. The position of each probe within a block,
+P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm
+of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red)
+foreground and background, and the median Cy3 (green) foreground and background
+intensities, respectively. In some cases, when the intensity of the background was higher
+than or equal to the intensity of the foreground, the resulting log ratios became complex or
+infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab.
+Next, data were normalized, by averaging the log ratios resulting from all spots printed by a
+print tip, and subtracting the resulting average from all the individual log ratios
+corresponding to the same tip. Finally, all the log ratios of the same gene from each slide
+were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5435" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206055/GSM206055.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206055-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM206056">
+    <Status database="GEO">
+      <Submission-Date>2007-06-27</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>ecoli_aerobicanaerobic_55min_rep2</Title>
+    <Accession database="GEO">GSM206056</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E coli, 55 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+55 min after turning off oxygen
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy5 by dissolving the pellets together
+with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the
+dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M
+hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E coli, 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+completely aerobic conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA isolation Kit, Madison, WI
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+The generated cDNAs from RNA were coupled with Cy3 by dissolving the pellets together
+with a dried aliquot of dye in 9μl of 0.1M Na-Bicarbonate pH 8.5-9 and incubation in the
+dark at room temperature for 1.5-3 hours. This reaction was quenched with 4.5μl 4M
+hydroxylamine pH 8.5-9 and incubation in the dark for 15 minutes.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Unincorporated Cy-dyes were removed with a QiaQuick PCR Purification Kit (Qiagen,
+Valencia, CA) as follows: 35μl 100mM Na-acetate pH 5.2 and 50 μl water were added to
+each sample, along with 500μl Buffer PB. Thereafter, the standard QiaQuick protocol was
+followed, with the exception that 75% EtOH was used in place of Buffer PE. Samples were
+eluted in water in place of Buffer EB. 0.5-1μg of cDNA from each sample was mixed with
+~125μl ArrayHyb microarray hybridization buffer (Sigma-Aldrich) and hybridized to full-genome microarray slides using a GeneTAC HybStation (Genomic Solutions, Ann Arbor,
+MI)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+images were scanned from the completed hybridization using a GenePix 4000B array
+scanner (Molecular Devices, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+First time point in aerobic-anaerobic shift response. Note: Aerobic standard was not
+consistently labeled across all time series.
+    </Description>
+    <Data-Processing>
+Two color cDNA microarray data are never devoid of spurious technical contributions that
+originate during array printing, as well as during the collection and processing of samples,
+fluorescent labeling and hybridization and scanning of the microarray images (Balazsi et al.
+2003, PNAS). To minimize the effect of such contributions, microarray data were
+normalized as described before (Tong et al. 2004 BBRC). Briefly, spots were excluded from
+further analysis if the foreground intensity of less than 50% of the pixels within the spot
+were above 2 standard deviations of the background. We generated expression data tables
+in Microsoft Excel, containing the following information for each of the 14,352 entries: block
+(B), column (X), and row (Y) number, red foreground (f_r) and background (b_r), green
+foreground (f_g) and background (b_g) intensity. The position of each probe within a block,
+P is defined by the pair of integers (X,Y). Log ratios were defined as the base 10 logarithm
+of (F_r-B_r)/(F_g-B_g), where F_r, B_r, F_g and B_g represent the median Cy5 (red)
+foreground and background, and the median Cy3 (green) foreground and background
+intensities, respectively. In some cases, when the intensity of the background was higher
+than or equal to the intensity of the foreground, the resulting log ratios became complex or
+infinity. These values were eliminated using the find, imag, and isfinite functions in Matlab.
+Next, data were normalized, by averaging the log ratios resulting from all spots printed by a
+print tip, and subtracting the resulting average from all the individual log ratios
+corresponding to the same tip. Finally, all the log ratios of the same gene from each slide
+were averaged and listed in a new file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="XLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM206nnn/GSM206056/GSM206056.xls.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized and averaged log base 10 ratio of Cy5 and Cy3</Description>
+      </Column>
+    <External-Data rows="4311">
+GSM206056-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE8323">
+    <Status database="GEO">
+      <Submission-Date>2007-06-28</Submission-Date>
+      <Release-Date>2008-02-19</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>Dynamics of Ecoli Aerobic to Anaerobic Switch Response </Title>
+    <Accession database="GEO">GSE8323</Accession>
+    <Pubmed-ID>18369434</Pubmed-ID>
+    <Web-Link>http://www.sb.cs.cmu.edu/ecoli</Web-Link>
+    <Summary>
+The experiment is a time course for the aerobic to anaerobic switch response in E. coli.  The data was used to validate the utility of a set of predicted transcription factor gene interactions for modeling the dynamic regulatory response networks of this response.  The transcription factor gene interaction predictions were generated by a semi-supervised classification method that takes advantage of a separate compendium of gene expression and a data set of curated interactions.
+Keywords: time course, environment change response
+    </Summary>
+    <Overall-Design>
+In total there are 11 samples measuring the gene expression response at the different time points from the change from aerobic to anaerobic conditions.  The control sample was based on completely aerobic conditions before shutting off oxygen. The test samples correspond to 0min, 2min, 5min, 15min, 25min, 35min, 45min, and 55min after shutting off Oxygen.  Technical replicates were taken for the 5min, 25min, and 55min time points.  Two channel microarray labeling was used with Cy5 and Cy3 labels. The standard aerobic was labeled with Cy5 in the 0min, 2min, 5min replicate 1, and both 25min replicates.  In all other experiments the standard was labeled with Cy3.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contributor-Ref ref="contrib4" position="4" />
+    <Contributor-Ref ref="contrib5" position="5" />
+    <Contributor-Ref ref="contrib6" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM206026" />
+    <Sample-Ref ref="GSM206029" />
+    <Sample-Ref ref="GSM206032" />
+    <Sample-Ref ref="GSM206035" />
+    <Sample-Ref ref="GSM206039" />
+    <Sample-Ref ref="GSM206042" />
+    <Sample-Ref ref="GSM206047" />
+    <Sample-Ref ref="GSM206051" />
+    <Sample-Ref ref="GSM206054" />
+    <Sample-Ref ref="GSM206055" />
+    <Sample-Ref ref="GSM206056" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE8323/GSE8323_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/101309" />
+  </Series>
+
+</MINiML>

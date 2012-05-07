@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Herb</First><Middle>E</Middle><Last>Schellhorn</Last></Person>
+    <Email>schell@mcmaster.ca</Email>
+    <Phone>9055259140-27316</Phone>
+    <Laboratory>405</Laboratory>
+    <Department>Biology</Department>
+    <Organization>McMaster University</Organization>
+    <Address>
+      <Line>1280 Main St. W.,</Line>
+      <City>Hamilton</City>
+      <State>ON</State>
+      <Postal-Code>L8S4K1</Postal-Code>
+      <Country>Canada</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Tao</First><Last>Dong</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM434734">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Exp-WT-rep1</Title>
+    <Accession database="GEO">GSM434734</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of EDL933 wild type in LB at OD600 of 0.3</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Exponential
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434734/GSM434734.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434734-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434735">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Exp-WT-rep2</Title>
+    <Accession database="GEO">GSM434735</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of EDL933 wild type in LB at OD600 of 0.3</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Exponential
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434735/GSM434735.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434735-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434736">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Exp-WT-rep3</Title>
+    <Accession database="GEO">GSM434736</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of EDL933 wild type in LB at OD600 of 0.3</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Exponential
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434736/GSM434736.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434736-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434737">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Exp-rpoS-rep1</Title>
+    <Accession database="GEO">GSM434737</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of EDL933 rpoS mutants in LB at OD600 of 0.3</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Exponential
+      </Characteristics>
+      <Characteristics tag="genotype">
+rpoS
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434737/GSM434737.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434737-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434738">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Exp-rpoS-rep2</Title>
+    <Accession database="GEO">GSM434738</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of EDL933 rpoS mutants in LB at OD600 of 0.3</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Exponential
+      </Characteristics>
+      <Characteristics tag="genotype">
+rpoS
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434738/GSM434738.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434738-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434739">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Exp-rpoS-rep3</Title>
+    <Accession database="GEO">GSM434739</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of EDL933 rpoS mutants in LB at OD600 of 0.3</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Exponential
+      </Characteristics>
+      <Characteristics tag="genotype">
+rpoS
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434739/GSM434739.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434739-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434740">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Stat-WT-rep1</Title>
+    <Accession database="GEO">GSM434740</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Stationary phase culture of EDL933 wild type in LB at OD600 of 1.5</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Stationary
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434740/GSM434740.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434740-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434741">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Stat-WT-rep2</Title>
+    <Accession database="GEO">GSM434741</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Stationary phase culture of EDL933 wild type in LB at OD600 of 1.5</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Stationary
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434741/GSM434741.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434741-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434742">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Stat-WT-rep3</Title>
+    <Accession database="GEO">GSM434742</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Stationary phase culture of EDL933 wild type in LB at OD600 of 1.5</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Stationary
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434742/GSM434742.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434742-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434743">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Stat-rpoS-rep1</Title>
+    <Accession database="GEO">GSM434743</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Stationary phase culture of EDL933 rpoS mutants in LB at OD600 of 1.5</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Stationary
+      </Characteristics>
+      <Characteristics tag="genotype">
+rpoS
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434743/GSM434743.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434743-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434744">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Stat-rpoS-rep2</Title>
+    <Accession database="GEO">GSM434744</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Stationary phase culture of EDL933 rpoS mutants in LB at OD600 of 1.5</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Stationary
+      </Characteristics>
+      <Characteristics tag="genotype">
+rpoS
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434744/GSM434744.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434744-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM434745">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2009-08-03</Last-Update-Date>
+    </Status>
+    <Title>Stat-rpoS-rep3</Title>
+    <Accession database="GEO">GSM434745</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Stationary phase culture of EDL933 rpoS mutants in LB at OD600 of 1.5</Source>
+      <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+      <Characteristics tag="growth phase">
+Stationary
+      </Characteristics>
+      <Characteristics tag="genotype">
+rpoS
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in Luria Bertani (LB) media at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase and at OD600 = 1.5 in stationary phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM434nnn/GSM434745/GSM434745.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM434745-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE17420">
+    <Status database="GEO">
+      <Submission-Date>2009-07-30</Submission-Date>
+      <Release-Date>2009-08-03</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Global effect of RpoS on gene expression in pathogenic Escherichia coli O157:H7 strain EDL933</Title>
+    <Accession database="GEO">GSE17420</Accession>
+    <Pubmed-ID>19650909</Pubmed-ID>
+    <Web-Link>http://www.biomedcentral.com/1471-2164/10/349</Web-Link>
+    <Summary>
+RpoS is a conserved stress regulator that plays a critical role in survival under stress conditions in Escherichia coli and other γ-proteobacteria. RpoS is also involved in virulence of many pathogens including Salmonella and Vibrio species. Though well characterized in non-pathogenic E. coli K12 strains, the effect of RpoS on transcriptome expression has not been examined in pathogenic isolates. E. coli O157:H7 is a serious human enteropathogen, possessing a genome 20% larger than that of E. coli K12, and many of the additional genes are required for virulence. The genomic difference may result in substantial changes in RpoS-regulated gene expression. To test this, we compared the transcriptional profile of wild type and rpoS mutants of the E. coli O157:H7 EDL933 type strain. The rpoS mutation had a pronounced effect on gene expression in stationary phase, and more than 1,000 genes were differentially expressed (two-fold, p&lt;0.05). By contrast, we found 11 genes expressed differently in exponential phase. Western blot analysis revealed that, as expected, RpoS level was low in exponential phase and substantially increased in stationary phase. The defect in rpoS resulted in impaired expression of genes responsible for stress response (e.g., gadA, katE and osmY), arginine degradation (astCADBE), putrescine degradation (puuABCD), fatty acid oxidation (fadBA and fadE), and virulence (ler, espI and cesF). For EDL933-specific genes on O-islands, we found 50 genes expressed higher in wild type EDL933 and 49 genes expressed higher in the rpoS mutants. The protein levels of Tir and EspA, two LEE-encoded virulence factors, were elevated in the rpoS mutants under LEE induction conditions. Our results show that RpoS has a profound effect on global gene expression in the pathogenic strain O157:H7 EDL933, and the identified RpoS regulon, including many EDL933-specific genes, differs substantially from that of laboratory K12 strains.
+In this study, we characterized the RpoS regulon of E. coli O157:H7 strain EDL933 using microarray analysis.
+    </Summary>
+    <Overall-Design>
+A precise rpoS deletion mutant of EDL933 was constructed and employed in this study. EDL933 wild type and rpoS mutants were inoculated in triplicate into LB media at a starting OD of 0.0001 and grown aerobically at 37C. Cultures were harvested at OD600 = 0.3 in exponential phase and OD600=1.5 in stationary phase. For RNA extraction, cultures were mixed directly with a boiling lysis buffer containing SDS and EDTA followed by acidic hot phenol to minimize RNA degradation. RNA samples were hybridized to Affymetrix E. coli Genome 2.0 Array according to Affymetrix's standard protocols.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM434734" />
+    <Sample-Ref ref="GSM434735" />
+    <Sample-Ref ref="GSM434736" />
+    <Sample-Ref ref="GSM434737" />
+    <Sample-Ref ref="GSM434738" />
+    <Sample-Ref ref="GSM434739" />
+    <Sample-Ref ref="GSM434740" />
+    <Sample-Ref ref="GSM434741" />
+    <Sample-Ref ref="GSM434742" />
+    <Sample-Ref ref="GSM434743" />
+    <Sample-Ref ref="GSM434744" />
+    <Sample-Ref ref="GSM434745" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE17420/GSE17420_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/118903" />
+  </Series>
+
+</MINiML>

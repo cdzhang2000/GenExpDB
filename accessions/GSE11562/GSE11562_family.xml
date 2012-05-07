@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Cornelia</First><Last>Große</Last></Person>
+    <Email>c.grosse@mikrobiologie.uni-halle.de</Email>
+    <Department>Faculty of Biology/Mikrobiology</Department>
+    <Organization>Martin-Luther-University Halle-Wittenberg</Organization>
+    <Address>
+      <Line>Kurt-Mothes-Str.3</Line>
+      <City>Halle/Saale</City>
+      <Zip-Code>06120</Zip-Code>
+      <Country>Germany</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>MWG Biotech</Organization>
+    <Email>array@mwgbiotech.com</Email>
+    <Phone>1-877-MWG-BTEC</Phone>
+    <Fax>1-336-812-9983</Fax>
+    <Organization>MWG Biotech</Organization>
+    <Address>
+      <Line>4170 Mendenhall Oaks Parkway, Suite 160</Line>
+      <City>High Point</City>
+      <State>NC</State>
+      <Zip-Code>27265</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Kerstin</First><Last>Helbig</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Dietrich</First><Middle>H</Middle><Last>Nies</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL534">
+    <Status database="GEO">
+      <Submission-Date>2003-10-07</Submission-Date>
+      <Release-Date>2003-10-07</Release-Date>
+      <Last-Update-Date>2011-02-14</Last-Update-Date>
+    </Status>
+    <Title>MWG E. coli K12 Array</Title>
+    <Accession database="GEO">GPL534</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>MWG Biotech</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+4239 E. coli K12 specific oligonucleotide probes represent the complete Escherichia coli (K12)genome.
+    </Description>
+    <Web-Link>http://ecom2.mwgdna.com/services/array/download</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>metarow</Name>
+        <Description>number of subarray row</Description>
+      </Column>
+      <Column position="3">
+        <Name>metacolumn</Name>
+        <Description>number of subarray column</Description>
+      </Column>
+      <Column position="4">
+        <Name>row</Name>
+        <Description>number of row within subarray</Description>
+      </Column>
+      <Column position="5">
+        <Name>column</Name>
+        <Description>number of column within subarray</Description>
+      </Column>
+      <Column position="6">
+        <Name>oligo_name</Name>
+        <Description>MWG oligo id</Description>
+      </Column>
+      <Column position="7">
+        <Name>description</Name>
+        <Description>gene description</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORF</Name>
+        <Description>Locus name </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="4608">
+GPL534-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM290826">
+    <Status database="GEO">
+      <Submission-Date>2008-05-23</Submission-Date>
+      <Release-Date>2008-05-31</Release-Date>
+      <Last-Update-Date>2008-05-29</Last-Update-Date>
+    </Status>
+    <Title>Ecoli incubation with 100 µM Cd(II) for 10 min</Title>
+    <Accession database="GEO">GSM290826</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli wildtype</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli W3110, culture in exponential phase (100 Klett)
+      </Characteristics>
+      <Biomaterial-Provider>strain collection Prof. Nies, University of Halle
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The wild type cells of E.coli (W3110: F-, LAM-, IN(rrnD-rrnE)1, rph-1) were grown at 37 °C in Mineral salt medium + 0.2 % Glycerol + 0.3 % casaminoacids. 
+At a cell turbidity of 100 Klett, cells were harvested by centrifugation for 1' in 2.0 ml Tubes. Quickly freezed in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Resuspend pellet of 10 ml cells in 0.5 ml buffer AE and transfer immediately to a mixture at 60 °C (6 ml lysisbuffer, 72 µl 20% SDS, 2.5 ml buffer AE) and mix. Incubate at 60 °C for 5 min with shaking, than incubate for 10 min in NaCl-ice-mix. Centrifuge for 20 min at 10 °C and transfer upper phase to 3 ml lysisbuffer, 300 µl sodium acetate. Mix well, centrifuge for 10 min at 4 °C, repeat this step three times. Precipitate with 2.5 volume of Ethanol at -20 °C, centrifuge 1 h at 4 °C and resuspend the pellet in 100 µl of DEPC-H2O.
+DNAse-treatment was performed followed by purification with RNeasy columns (Qiagen, Hilden, Germany). 
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+In an RT reaction, 50 µg of total RNA was labeled in a 40 µl labeling reaction using 9 µg hexamer primers, 50 µM either Cy3- or Cy5-labeled dCTP (Amersham, Freiburg, Germany), 0.5 mM each of dATP, dGTP, dTTP, 0.2 mM non-labeled dCTP, 10 mM DTT, and 200 U of reverse transcriptase in reaction buffer (Superscript II, Invitrogen, Karlsruhe, Germany). Primers and RNA were heated to 70 °C for 5 min and snap-cooled in ice. Reverse transcription proceeded for 10 min at room temperature, followed by 2 h at 42 °C. To denature the remaining RNA 10 µl of 1 M NaOH were added and incubated for 10 min at 65 °C followed by addition of 10 µl of 1 M HCl. Non-incorporated fluorescent nucleotides were removed using QIAquick PCR Purification kit (Qiagen, Hilden, Germany). 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Ecoli incubated with 100 µM Cd(II) for 10 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli W3110, culture in exponential phase (100 Klett) incubated with 100 µM Cd(II) for 10 min
+      </Characteristics>
+      <Biomaterial-Provider>strain collection Prof. Nies, University of Halle
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+At a cell turbidity of 100 Klett 100 µM CdCl2 were added and incubation was continued for 10 min. 
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The wild type cells of E.coli (W3110: F-, LAM-, IN(rrnD-rrnE)1, rph-1) were grown at 37 °C in Mineral salt medium + 0.2 % Glycerol + 0.3 % casaminoacids. 
+At a cell turbidity of 100 Klett 100 µM CdCl2 were added and incubation was continued for 10 min. Then cells were harvested by centrifugation for 1' in 2.0 ml Tubes. Quickly freezed in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Resuspend pellet of 10 ml cells in 0.5 ml buffer AE and transfer immediately to a mixture at 60 °C (6 ml lysisbuffer, 72 µl 20% SDS, 2.5 ml buffer AE) and mix. Incubate at 60 °C for 5 min with shaking, than incubate for 10 min in NaCl-ice-mix. Centrifuge for 20 min at 10 °C and transfer upper phase to 3 ml lysisbuffer, 300 µl sodium acetate. Mix well, centrifuge for 10 min at 4 °C, repeat this step three times. Precipitate with 2.5 volume of Ethanol at -20 °C, centrifuge 1 h at 4 °C and resuspend the pellet in 100 µl of DEPC-H2O.
+DNAse-treatment was performed followed by purification with RNeasy columns (Qiagen, Hilden, Germany). 
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+In an RT reaction, 50 µg of total RNA was labeled in a 40 µl labeling reaction using 9 µg hexamer primers, 50 µM either Cy3- or Cy5-labeled dCTP (Amersham, Freiburg, Germany), 0.5 mM each of dATP, dGTP, dTTP, 0.2 mM non-labeled dCTP, 10 mM DTT, and 200 U of reverse transcriptase in reaction buffer (Superscript II, Invitrogen, Karlsruhe, Germany). Primers and RNA were heated to 70 °C for 5 min and snap-cooled in ice. Reverse transcription proceeded for 10 min at room temperature, followed by 2 h at 42 °C. To denature the remaining RNA 10 µl of 1 M NaOH were added and incubated for 10 min at 65 °C followed by addition of 10 µl of 1 M HCl. Non-incorporated fluorescent nucleotides were removed using QIAquick PCR Purification kit (Qiagen, Hilden, Germany). 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Equal amounts of Cy3- and Cy5-labeled cDNA in 120 µl of hybridization buffer (salt based, Ocimum, Hyberabad, India) were denatured for 3 min at 94 °C and hybridized to the OciChip E.coli K12 V2 microarrays for 20 h at 42 °C in a shaking water bath. After hybridization the arrays were washed in 2 x SSC, 0.1 % SDS and then in 1 x SSC and 0.1 x SSC. 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned with a laser scanner (Array Scanner 428, Affymetrix, Santa Clara, USA) seven times per channel with increasing photomultiplier settings to expand the dynamic range of measurement. 
+    </Scan-Protocol>
+    <Description>
+Ecoli incubated with 100 µM Cd(II) for 10 min
+    </Description>
+    <Data-Processing>
+The number one minus the regression coefficient of the linear regression used to calculate the optimal photomultiplier sensitivity for image analysis was defined as the read error of a single data read. These single reads were normalized not against the overall brightness of the slide, but against a fictive but probable number of 3880 total gene-specific mRNAs per cell. This gave the expression level per experiment. The mean values of the expression levels of all four experiments of each data set were calculated. As deviation, the standard deviation of this mean value was added to the four read errors to obtain the experimental error. When the results of the different conditions were compared, Q was defined as the ratio of the mean expression levels condition 2/condition 1. Additionally, Q’ was used with Q’ = Q if Q&gt;1, otherwise Q’ = 1/Q. The significance was defined as “(condition 2 – condition 1)/(deviation 1 + deviation 2)”. Results with (significance &gt; 1 or a significance &lt; -1) and Q’ ≥ 2.0 were further considered, results with 1.5 ≥ Q’ &gt; 2.0 kept as additional results if the significance met the same conditions. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl40_c3_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl40_c3_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl40_c3_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl40_c3_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl40_c5_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl40_c5_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl40_c5_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl40_c5_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl57_c3_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl57_c3_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl57_c3_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl57_c3_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl57_c5_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl57_c5_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl57_c5_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl57_c5_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl62_c3_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl62_c3_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl62_c3_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl62_c3_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl62_c5_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl62_c5_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl62_c5_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM290nnn/GSM290826/GSM290826_sl62_c5_60.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 of PRE_VALUE</Description>
+      </Column>
+      <Column position="3">
+        <Name>MEAN WT_0</Name>
+        <Description>signal mean for control (average of three biological repeats)</Description>
+      </Column>
+      <Column position="4">
+        <Name>SDEV WT_0</Name>
+        <Description>standard deviation of MEAN for control</Description>
+      </Column>
+      <Column position="5">
+        <Name>MEAN WT_Cd</Name>
+        <Description>signal mean for experiment (average of three biological repeats)</Description>
+      </Column>
+      <Column position="6">
+        <Name>SDEV WT_Cd</Name>
+        <Description>standard deviation of MEAN for experiment</Description>
+      </Column>
+      <Column position="7">
+        <Name>RATIO</Name>
+        <Description>fold induction (average of three biological repeats, including one dye swap)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM290826-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM291135">
+    <Status database="GEO">
+      <Submission-Date>2008-05-26</Submission-Date>
+      <Release-Date>2008-05-31</Release-Date>
+      <Last-Update-Date>2008-05-29</Last-Update-Date>
+    </Status>
+    <Title>Ecoli mutant delta_gshA incubation with 100 µM Cd(II) for 10 min</Title>
+    <Accession database="GEO">GSM291135</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli delta_gshA </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli mutant delta_gshA, culture in exponential phase 
+      </Characteristics>
+      <Characteristics>
+(100 Klett)
+      </Characteristics>
+      <Biomaterial-Provider>Kerstin Helbig, University of Halle
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The mutant delta_gshA cells of E.coli were grown at 37 °C in Mineral salt medium + 0.2 % Glycerol + 0.3 % casaminoacids. 
+At a cell turbidity of 100 Klett, cells were harvested by centrifugation for 1' in 2.0 ml Tubes. Quickly freezed in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Resuspend pellet of 10 ml cells in 0.5 ml buffer AE and transfer immediately to a mixture at 60 °C (6 ml lysisbuffer, 72 µl 20% SDS, 2.5 ml buffer AE) and mix. Incubate at 60 °C for 5 min with shaking, than incubate for 10 min in NaCl-ice-mix. Centrifuge for 20 min at 10 °C and transfer upper phase to 3 ml lysisbuffer, 300 µl sodium acetate. Mix well, centrifuge for 10 min at 4 °C, repeat this step three times. Precipitate with 2.5 volume of Ethanol at -20 °C, centrifuge 1 h at 4 °C and resuspend the pellet in 100 µl of DEPC-H2O.
+DNAse-treatment was performed followed by purification with RNeasy columns (Qiagen, Hilden, Germany). 
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+In an RT reaction, 50 µg of total RNA was labeled in a 40 µl labeling reaction using 9 µg hexamer primers, 50 µM either Cy3- or Cy5-labeled dCTP (Amersham, Freiburg, Germany), 0.5 mM each of dATP, dGTP, dTTP, 0.2 mM non-labeled dCTP, 10 mM DTT, and 200 U of reverse transcriptase in reaction buffer (Superscript II, Invitrogen, Karlsruhe, Germany). Primers and RNA were heated to 70 °C for 5 min and snap-cooled in ice. Reverse transcription proceeded for 10 min at room temperature, followed by 2 h at 42 °C. To denature the remaining RNA 10 µl of 1 M NaOH were added and incubated for 10 min at 65 °C followed by addition of 10 µl of 1 M HCl. Non-incorporated fluorescent nucleotides were removed using QIAquick PCR Purification kit (Qiagen, Hilden, Germany). 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Ecoli delta_gshA incubated with 100 µM Cd(II) for 10 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli mutant delta_gshA, culture in exponential phase 
+      </Characteristics>
+      <Characteristics>
+(100 Klett) incubated with 100 µM Cd (II) for 10 min
+      </Characteristics>
+      <Biomaterial-Provider>Kerstin Helbig, University of Halle
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+At a cell turbidity of 100 Klett 100 µM CdCl2 were added and incubation was continued for 10 min. 
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The mutant delta_gshA cells of E.coli were grown at 37 °C in Mineral salt medium + 0.2 % Glycerol + 0.3 % casaminoacids. 
+At a cell turbidity of 100 Klett 100 µM CdCl2 were added and incubation was continued for 10 min. Then cells were harvested by centrifugation for 1' in 2.0 ml Tubes. Quickly freezed in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Resuspend pellet of 10 ml cells in 0.5 ml buffer AE and transfer immediately to a mixture at 60 °C (6 ml lysisbuffer, 72 µl 20% SDS, 2.5 ml buffer AE) and mix. Incubate at 60 °C for 5 min with shaking, than incubate for 10 min in NaCl-ice-mix. Centrifuge for 20 min at 10 °C and transfer upper phase to 3 ml lysisbuffer, 300 µl sodium acetate. Mix well, centrifuge for 10 min at 4 °C, repeat this step three times. Precipitate with 2.5 volume of Ethanol at -20 °C, centrifuge 1 h at 4 °C and resuspend the pellet in 100 µl of DEPC-H2O.
+DNAse-treatment was performed followed by purification with RNeasy columns (Qiagen, Hilden, Germany). 
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+In an RT reaction, 50 µg of total RNA was labeled in a 40 µl labeling reaction using 9 µg hexamer primers, 50 µM either Cy3- or Cy5-labeled dCTP (Amersham, Freiburg, Germany), 0.5 mM each of dATP, dGTP, dTTP, 0.2 mM non-labeled dCTP, 10 mM DTT, and 200 U of reverse transcriptase in reaction buffer (Superscript II, Invitrogen, Karlsruhe, Germany). Primers and RNA were heated to 70 °C for 5 min and snap-cooled in ice. Reverse transcription proceeded for 10 min at room temperature, followed by 2 h at 42 °C. To denature the remaining RNA 10 µl of 1 M NaOH were added and incubated for 10 min at 65 °C followed by addition of 10 µl of 1 M HCl. Non-incorporated fluorescent nucleotides were removed using QIAquick PCR Purification kit (Qiagen, Hilden, Germany). 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Equal amounts of Cy3- and Cy5-labeled cDNA in 120 µl of hybridization buffer (salt based, Ocimum, Hyberabad, India) were denatured for 3 min at 94 °C and hybridized to the OciChip E.coli K12 V2 microarrays for 20 h at 42 °C in a shaking water bath. After hybridization the arrays were washed in 2 x SSC, 0.1 % SDS and then in 1 x SSC and 0.1 x SSC. 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned with a laser scanner (Array Scanner 428, Affymetrix, Santa Clara, USA) seven times per channel with increasing photomultiplier settings to expand the dynamic range of measurement. 
+    </Scan-Protocol>
+    <Description>
+Ecoli mutant delta_gshA incubated with 100 µM Cd(II) for 10 min
+    </Description>
+    <Data-Processing>
+The number one minus the regression coefficient of the linear regression used to calculate the optimal photomultiplier sensitivity for image analysis was defined as the read error of a single data read. These single reads were normalized not against the overall brightness of the slide, but against a fictive but probable number of 3880 total gene-specific mRNAs per cell. This gave the expression level per experiment. The mean values of the expression levels of all four experiments of each data set were calculated. As deviation, the standard deviation of this mean value was added to the four read errors to obtain the experimental error. When the results of the different conditions were compared, Q was defined as the ratio of the mean expression levels condition 2/condition 1. Additionally, Q’ was used with Q’ = Q if Q&gt;1, otherwise Q’ = 1/Q. The significance was defined as “(condition 2 – condition 1)/(deviation 1 + deviation 2)”. Results with (significance &gt; 1 or a significance &lt; -1) and Q’ ≥ 2.0 were further considered, results with 1.5 ≥ Q’ &gt; 2.0 kept as additional results if the significance met the same conditions. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_neusl60_c3_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_neusl60_c3_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_neusl60_c3_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_neusl60_c3_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_neusl60_c5_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_neusl60_c5_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_neusl60_c5_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_neusl60_c5_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl56_c3_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl56_c3_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl56_c3_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl56_c3_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl56_c5_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl56_c5_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl56_c5_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl56_c5_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl65_c3_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl65_c3_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl65_c3_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl65_c5_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl65_c5_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl65_c5_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291135/GSM291135_sl65_c5_60.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 of PRE_VALUE</Description>
+      </Column>
+      <Column position="3">
+        <Name>MEAN delta gshA_0</Name>
+      </Column>
+      <Column position="4">
+        <Name>SDEV delta gshA_0</Name>
+      </Column>
+      <Column position="5">
+        <Name>MEAN delta gshA_Cd</Name>
+      </Column>
+      <Column position="6">
+        <Name>SDEV delta gshA_Cd</Name>
+      </Column>
+      <Column position="7">
+        <Name>RATIO</Name>
+        <Description>fold induction (average of three biological repeats, including one dye swap)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM291135-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM291137">
+    <Status database="GEO">
+      <Submission-Date>2008-05-26</Submission-Date>
+      <Release-Date>2008-05-31</Release-Date>
+      <Last-Update-Date>2008-05-29</Last-Update-Date>
+    </Status>
+    <Title>Ecoli mutant delta_gshB incubation with 100 µM Cd(II) for 10 min</Title>
+    <Accession database="GEO">GSM291137</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli delta_gshB</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli mutant delta_gshB, culture in exponential phase 
+      </Characteristics>
+      <Characteristics>
+(100 Klett)
+      </Characteristics>
+      <Biomaterial-Provider>Kerstin Helbig, University of Halle
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The mutant delta_gshB cells of E.coli were grown at 37 °C in Mineral salt medium + 0.2 % Glycerol + 0.3 % casaminoacids. 
+At a cell turbidity of 100 Klett, cells were harvested by centrifugation for 1' in 2.0 ml Tubes. Quickly freezed in liquid nitrogen
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Resuspend pellet of 10 ml cells in 0.5 ml buffer AE and transfer immediately to a mixture at 60 °C (6 ml lysisbuffer, 72 µl 20% SDS, 2.5 ml buffer AE) and mix. Incubate at 60 °C for 5 min with shaking, than incubate for 10 min in NaCl-ice-mix. Centrifuge for 20 min at 10 °C and transfer upper phase to 3 ml lysisbuffer, 300 µl sodium acetate. Mix well, centrifuge for 10 min at 4 °C, repeat this step three times. Precipitate with 2.5 volume of Ethanol at -20 °C, centrifuge 1 h at 4 °C and resuspend the pellet in 100 µl of DEPC-H2O.
+DNAse-treatment was performed followed by purification with RNeasy columns (Qiagen, Hilden, Germany). 
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+In an RT reaction, 50 µg of total RNA was labeled in a 40 µl labeling reaction using 9 µg hexamer primers, 50 µM either Cy3- or Cy5-labeled dCTP (Amersham, Freiburg, Germany), 0.5 mM each of dATP, dGTP, dTTP, 0.2 mM non-labeled dCTP, 10 mM DTT, and 200 U of reverse transcriptase in reaction buffer (Superscript II, Invitrogen, Karlsruhe, Germany). Primers and RNA were heated to 70 °C for 5 min and snap-cooled in ice. Reverse transcription proceeded for 10 min at room temperature, followed by 2 h at 42 °C. To denature the remaining RNA 10 µl of 1 M NaOH were added and incubated for 10 min at 65 °C followed by addition of 10 µl of 1 M HCl. Non-incorporated fluorescent nucleotides were removed using QIAquick PCR Purification kit (Qiagen, Hilden, Germany). 
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Ecoli delta_gshB incubated with 100 µM Cd(II) for 10 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli mutant delta_gshB, culture in exponential phase 
+      </Characteristics>
+      <Characteristics>
+(100 Klett) incubated with 100 µM Cd (II) for 10 min
+      </Characteristics>
+      <Biomaterial-Provider>Kerstin Helbig, University of Halle
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+At a cell turbidity of 100 Klett 100 µM CdCl2 were added and incubation was continued for 10 min. 
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The mutant delta_gshB cells of E.coli were grown at 37 °C in Mineral salt medium + 0.2 % Glycerol + 0.3 % casaminoacids. 
+At a cell turbidity of 100 Klett 100 µM CdCl2 were added and incubation was continued for 10 min. Then cells were harvested by centrifugation for 1' in 2.0 ml Tubes. Quickly freezed in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Resuspend pellet of 10 ml cells in 0.5 ml buffer AE and transfer immediately to a mixture at 60 °C (6 ml lysisbuffer, 72 µl 20% SDS, 2.5 ml buffer AE) and mix. Incubate at 60 °C for 5 min with shaking, than incubate for 10 min in NaCl-ice-mix. Centrifuge for 20 min at 10 °C and transfer upper phase to 3 ml lysisbuffer, 300 µl sodium acetate. Mix well, centrifuge for 10 min at 4 °C, repeat this step three times. Precipitate with 2.5 volume of Ethanol at -20 °C, centrifuge 1 h at 4 °C and resuspend the pellet in 100 µl of DEPC-H2O.
+DNAse-treatment was performed followed by purification with RNeasy columns (Qiagen, Hilden, Germany). 
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+In an RT reaction, 50 µg of total RNA was labeled in a 40 µl labeling reaction using 9 µg hexamer primers, 50 µM either Cy3- or Cy5-labeled dCTP (Amersham, Freiburg, Germany), 0.5 mM each of dATP, dGTP, dTTP, 0.2 mM non-labeled dCTP, 10 mM DTT, and 200 U of reverse transcriptase in reaction buffer (Superscript II, Invitrogen, Karlsruhe, Germany). Primers and RNA were heated to 70 °C for 5 min and snap-cooled in ice. Reverse transcription proceeded for 10 min at room temperature, followed by 2 h at 42 °C. To denature the remaining RNA 10 µl of 1 M NaOH were added and incubated for 10 min at 65 °C followed by addition of 10 µl of 1 M HCl. Non-incorporated fluorescent nucleotides were removed using QIAquick PCR Purification kit (Qiagen, Hilden, Germany). 
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Equal amounts of Cy3- and Cy5-labeled cDNA in 120 µl of hybridization buffer (salt based, Ocimum, Hyberabad, India) were denatured for 3 min at 94 °C and hybridized to the OciChip E.coli K12 V2 microarrays for 20 h at 42 °C in a shaking water bath. After hybridization the arrays were washed in 2 x SSC, 0.1 % SDS and then in 1 x SSC and 0.1 x SSC. 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The slides were scanned with a laser scanner (Array Scanner 428, Affymetrix, Santa Clara, USA) seven times per channel with increasing photomultiplier settings to expand the dynamic range of measurement. 
+    </Scan-Protocol>
+    <Description>
+Ecoli mutant delta_gshB incubated with 100 µM Cd(II) for 10 min
+    </Description>
+    <Data-Processing>
+The number one minus the regression coefficient of the linear regression used to calculate the optimal photomultiplier sensitivity for image analysis was defined as the read error of a single data read. These single reads were normalized not against the overall brightness of the slide, but against a fictive but probable number of 3880 total gene-specific mRNAs per cell. This gave the expression level per experiment. The mean values of the expression levels of all four experiments of each data set were calculated. As deviation, the standard deviation of this mean value was added to the four read errors to obtain the experimental error. When the results of the different conditions were compared, Q was defined as the ratio of the mean expression levels condition 2/condition 1. Additionally, Q’ was used with Q’ = Q if Q&gt;1, otherwise Q’ = 1/Q. The significance was defined as “(condition 2 – condition 1)/(deviation 1 + deviation 2)”. Results with (significance &gt; 1 or a significance &lt; -1) and Q’ ≥ 2.0 were further considered, results with 1.5 ≥ Q’ &gt; 2.0 kept as additional results if the significance met the same conditions. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_neusl63_c3_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_neusl63_c3_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_neusl63_c3_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_neusl63_c3_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_neusl63_c5_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_neusl63_c5_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_neusl63_c5_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_neusl63_c5_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl48_c3_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl48_c3_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl48_c3_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl48_c3_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl48_c5_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl48_c5_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl48_c5_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl48_c5_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl66_c3_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl66_c3_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl66_c3_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl66_c3_60.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl66_c5_30.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl66_c5_40.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl66_c5_50.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM291nnn/GSM291137/GSM291137_sl66_c5_60.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 of PRE_VALUE</Description>
+      </Column>
+      <Column position="3">
+        <Name>MEAN delta gshB_0</Name>
+      </Column>
+      <Column position="4">
+        <Name>SDEV delta gshB_0</Name>
+      </Column>
+      <Column position="5">
+        <Name>MEAN delta gshB_Cd</Name>
+      </Column>
+      <Column position="6">
+        <Name>SDEV delta gshB_Cd</Name>
+      </Column>
+      <Column position="7">
+        <Name>RATIO</Name>
+        <Description>signal mean (average of three biological repeats)</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM291137-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE11562">
+    <Status database="GEO">
+      <Submission-Date>2008-05-27</Submission-Date>
+      <Release-Date>2008-05-31</Release-Date>
+      <Last-Update-Date>2012-03-19</Last-Update-Date>
+    </Status>
+    <Title>response of Escherichia coli and glutathion mutants to Cadmium</Title>
+    <Accession database="GEO">GSE11562</Accession>
+    <Pubmed-ID>18539742</Pubmed-ID>
+    <Summary>
+We investigated the impact of cadmium on the global transcriptome of E. coli wild type, ∆gshA and ∆gshB mutant cells to evaluate the molecular basis of cadmium toxicity in the presence or absence of cellular thiols. This global transcriptome analysis were done with cells synthezising GSH (wild type), gamma-glutamyl-cysteine (∆gshB mutant) or neither of the two cellular thiols (∆gshA mutant) under the influence of 100 µM Cd(II).
+    </Summary>
+    <Overall-Design>
+E. coli cells, wild type, ∆gshA and ∆gshB mutant strain, were grown at 37 °C . At a cell turbidity of 100 Klett, cells were treated for 10 min with 100 µM Cd(II) or no metal as a control in TMM medium.
+Total RNA was extracted, DNAse digested and reverse-transcribed with either Cy3- or Cy5-labeled dCTP. Both labeled cDNA were hybridized to a slide at 42 °C. All experiments were performed with three independent biological repeats.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM290826" />
+    <Sample-Ref ref="GSM291135" />
+    <Sample-Ref ref="GSM291137" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE11562/GSE11562_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/106299" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Akinobu</First><Last>Ito</Last></Person>
+    <Email>akito@eng.hokudai.ac.jp</Email>
+    <Phone>+81-11-706-7588</Phone>
+    <Fax>+81-11-706-7588</Fax>
+    <Laboratory>Water Quality Control Engineering</Laboratory>
+    <Department>Graduate School of Engineering</Department>
+    <Organization>Hokkaido University</Organization>
+    <Address>
+      <Line>North-13, West-8, Kitaku</Line>
+      <City>Sapporo</City>
+      <Postal-Code>060-8628</Postal-Code>
+      <Country>Japan</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Asami</First><Last>Taniuchi</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Thithiwat</First><Last>May</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Koji</First><Last>Kawata</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Satoshi</First><Last>Okabe</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM341911">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Biofilm_Inside_rep1</Title>
+    <Accession database="GEO">GSM341911</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inside of biofilm in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Biofilm sample on glass surface
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341911/GSM341911.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341911/GSM341911.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341911-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341912">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Biofilm_Inside_rep2</Title>
+    <Accession database="GEO">GSM341912</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inside of biofilm in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Biofilm sample on glass surface
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341912/GSM341912.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341912/GSM341912.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341912-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341913">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Biofilm_Inside_rep3</Title>
+    <Accession database="GEO">GSM341913</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inside of biofilm in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Biofilm sample on glass surface
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341913/GSM341913.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341913/GSM341913.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341913-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341914">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Biofilm_Outside_rep1</Title>
+    <Accession database="GEO">GSM341914</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Outside of biofilm in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Biofilm sample on glass surface
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341914/GSM341914.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341914/GSM341914.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341914-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341915">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Biofilm_Outside_rep2</Title>
+    <Accession database="GEO">GSM341915</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Outside of biofilm in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Biofilm sample on glass surface
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341915/GSM341915.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341915/GSM341915.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341915-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341916">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Biofilm_Outside_rep3</Title>
+    <Accession database="GEO">GSM341916</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Outside of biofilm in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Biofilm sample on glass surface
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341916/GSM341916.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341916/GSM341916.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341916-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341917">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Planktonic_Exponential_rep1</Title>
+    <Accession database="GEO">GSM341917</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Planktonic exponential phase in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Planktonic sample
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341917/GSM341917.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341917/GSM341917.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341917-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341918">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Planktonic_Exponential_rep2</Title>
+    <Accession database="GEO">GSM341918</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Planktonic exponential phase in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Planktonic sample
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341918/GSM341918.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341918/GSM341918.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341918-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341919">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Planktonic_Exponential_rep3</Title>
+    <Accession database="GEO">GSM341919</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Planktonic exponential phase in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Planktonic sample
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341919/GSM341919.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341919/GSM341919.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341919-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341920">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Planktonic_Stationary_rep1</Title>
+    <Accession database="GEO">GSM341920</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Planktonic stationary phase in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Planktonic sample
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341920/GSM341920.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341920/GSM341920.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341920-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341921">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Planktonic_Stationary_rep2</Title>
+    <Accession database="GEO">GSM341921</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Planktonic stationary phase in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Planktonic sample
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341921/GSM341921.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341921/GSM341921.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341921-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM341922">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>Planktonic_Stationary_rep3</Title>
+    <Accession database="GEO">GSM341922</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Planktonic stationary phase in MOPS media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+Escherichia coli MG1655 pOX38Km
+      </Characteristics>
+      <Growth-Protocol>
+Samples were grown in MOPS minimal media with 0.2% glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Planktonic sample
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample Planktonic_Stationary_rep2 was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341922/GSM341922.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DCP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM341nnn/GSM341922/GSM341922.dcp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity with dchip</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM341922-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE13589">
+    <Status database="GEO">
+      <Submission-Date>2008-11-13</Submission-Date>
+      <Release-Date>2009-04-01</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Gene expression of E. coli MG1655 pOX38Km at the outside and inside of biofilms</Title>
+    <Accession database="GEO">GSE13589</Accession>
+    <Pubmed-ID>19288441</Pubmed-ID>
+    <Summary>
+Gene expression changes between outside and inside of biofilms were investigated. The gene expression was compared between the outside and inside of the biofilms. At the same time, the gene expressions were also compared with exponential phase and stationary phase in planktonic cells. The gene expression analysis showed that the physiological activities were higher at the outside of the biofilms than those at the inside of the biofilms. The genes induced at the ouside of the biofilms included genes involved in the stress responses and adhesions.
+
+Keywords: different growth phase
+    </Summary>
+    <Overall-Design>
+Affymetrix GeneChip E. coli Genome 2.0 Array was used to compare the gene expression among biofilms (outside and inside) and planktonic cells (exponential phase and stationary phase). All samples were grown in MOPS minimal media with 0.2% glucose at 37ºC. Biofilms were grown on glass surface in flow cells (1 x 4 x 40 mm), and samples were taken at 72 h. Planktonic cell were grown for 6 h (exponential phase) and 24 h (stationary phase). Experiments were repeated 3 times, which resulted in 3 replicates of 4 different samples.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM341911" />
+    <Sample-Ref ref="GSM341912" />
+    <Sample-Ref ref="GSM341913" />
+    <Sample-Ref ref="GSM341914" />
+    <Sample-Ref ref="GSM341915" />
+    <Sample-Ref ref="GSM341916" />
+    <Sample-Ref ref="GSM341917" />
+    <Sample-Ref ref="GSM341918" />
+    <Sample-Ref ref="GSM341919" />
+    <Sample-Ref ref="GSM341920" />
+    <Sample-Ref ref="GSM341921" />
+    <Sample-Ref ref="GSM341922" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE13589/GSE13589_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/110697" />
+  </Series>
+
+</MINiML>

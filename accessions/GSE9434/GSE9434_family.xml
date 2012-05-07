@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Sang Yup</First><Last>Lee</Last></Person>
+    <Email>jinhwan@kaist.ac.kr</Email>
+    <Organization>KAIST</Organization>
+    <Address>
+      <Line>Dept. of Chemical &amp; Biomolecular Engineering, KAIST, 373-1 Guseong-dong, Yuseong-gu </Line>
+      <City>Daejeon</City>
+      <Postal-Code>305-701, </Postal-Code>
+      <Country>South Korea</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5475">
+    <Status database="GEO">
+      <Submission-Date>2007-07-07</Submission-Date>
+      <Release-Date>2007-10-26</Release-Date>
+      <Last-Update-Date>2007-10-26</Last-Update-Date>
+    </Status>
+    <Title>TwinChip_EColi_6k</Title>
+    <Accession database="GEO">GPL5475</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Digital Genomics, Seoul, Korea</Manufacturer>
+    <Manufacture-Protocol>
+The arrays are of 3- by 3-mm size and have an active surface area of 2.4 by 2.4 mm mounted onto the bottom of standard 1.5-ml microreaction tubes. 
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>ARRAY_ID</Name>
+      </Column>
+    <External-Data rows="4289">
+GPL5475-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM208573">
+    <Status database="GEO">
+      <Submission-Date>2007-07-07</Submission-Date>
+      <Release-Date>2007-10-26</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>L-threonine producing strain vs control strain</Title>
+    <Accession database="GEO">GSM208573</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>W3110 (lacI-deleted) strain harboring pKK223-3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+control strain
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+using RNeasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+indirect labeling method: aminoallyl-modified nucleotides were incorporated during the reverse transcription
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>L-threonine producing strain</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+L-threonine producing strain
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+using RNeasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+indirect labeling method: aminoallyl-modified nucleotides were incorporated during the reverse transcription
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Cy3 and Cy5-labelled cDNA probes were concentrated by vacuum-drying, dissolved in 20 ul of hybridization solution (30% formamide, 5X SSC, 0.1% SDS, 0.1 mg/ml salmon sperm DNA) and combined. The microarray was incubated with pre-hybridization solution at 42 C for 1 hr, washed in water for 5 min, and finally centrifuged at 650 rpm for 5 min. The combined hybridization probes were denatured by incubation at 95 C for 5 min. Hybridization was performed under a cover slip with a final volume of 20 ul inside a hybridization chamber (Genomic Tree, Daejeon, Korea). After hybridization at 42 C for 16 hr, the microarray was washed for 5 min in 2 X SSC and 0.1% SDS at 42 C, 10 min in 0.1 X SSC and 0.1 % SDS at room temperature, and 4 times for 1 min in 0.1 X SSC at room temperature. Finally, the microarray was dried by centrifugation for 5 min at 650 rpm.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+using GenePix 4000B microarray scanner
+    </Scan-Protocol>
+    <Description>
+In the oligo chip, 5978 of 70 mer probes that cover the genomes of E. coli K12, O157:H7 (EDL933) and O157:H7 (Sakai) are spotted in duplicates. 
+    </Description>
+    <Data-Processing>
+The mean signal intensity values of the duplicate spots were averaged and then normalized by the global normalization method. The genes showing the p-values lower than 0.05 were considered to be significant.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5475" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM208nnn/GSM208573/GSM208573_Thr1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM208nnn/GSM208573/GSM208573_Thr2.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (L-threonine producing strain/control strain)</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>normalized ratio (L-threonine producing strain/control strain)</Description>
+      </Column>
+    <External-Data rows="4051">
+GSM208573-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE9434">
+    <Status database="GEO">
+      <Submission-Date>2007-10-26</Submission-Date>
+      <Release-Date>2007-10-26</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>Gene expression level during L-threonine production</Title>
+    <Accession database="GEO">GSE9434</Accession>
+    <Pubmed-ID>18059444</Pubmed-ID>
+    <Summary>
+The comparative transcriptome profiling of L-threonine producing strain (TH07 strain harboring pBRThrABC) and control W3110 (lacI-deleted) strain harboring pKK223-3 has been analyzed using oligo nucleotide microarray. 
+Keywords: comparative transcriptome analysis (between L-threonine producing strain and the control strain) 
+    </Summary>
+    <Overall-Design>
+Samples for transcriptome profiling were taken at the OD600 of 5.13 (TH07 harboring pBRThrABC) and 5.21 (control strain), replicate = 2 
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM208573" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE9434/GSE9434_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/103185" />
+  </Series>
+
+</MINiML>

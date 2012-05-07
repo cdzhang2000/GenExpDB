@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jintae</First><Last>Lee</Last></Person>
+    <Email>Jintae.Lee@chemail.tamu.edu</Email>
+    <Phone>1-979-845-1744</Phone>
+    <Fax>1-979-845-6446</Fax>
+    <Department>Chemical Engineering</Department>
+    <Organization>Texas A&amp;M University</Organization>
+    <Address>
+      <Line>MS 3122</Line>
+      <City>College Station</City>
+      <State>TX</State>
+      <Zip-Code>77843-3122</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Thomas</First><Middle>K</Middle><Last>Wood</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL199">
+    <Status database="GEO">
+      <Submission-Date>2002-07-01</Submission-Date>
+      <Release-Date>2002-07-18</Release-Date>
+      <Last-Update-Date>2010-07-08</Last-Update-Date>
+    </Status>
+    <Title>[Ecoli_ASv2] Affymetrix E. coli Antisense Genome Array</Title>
+    <Accession database="GEO">GPL199</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+Has 7312 entries and was indexed 20-May-2002.
+The GeneChip E. coli Antisense Genome Array can be used for examining expression of all known E. coli genes and discovering novel, uncharacterized intergenic transcripts. The array contains probe sets to detect the antisense strand of more than 4,200 known open reading frames. In addition, over 1,350 intergenic sequences can be interrogated in both directions permitting functional characterization of potentially important shorter expressed sequences.
+Sequence information for probes on the array correspond to the M49 version of the E. coli Genome Project database at the University of Wisconsin.
+
+
+Keywords = high density oligonucleotide array
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoliantisense</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Relation type="Alternative to" target="GPL10659" comment="Alternative CDF" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=ECOLI_ANTISENSE&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli K12[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="4">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="5">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="12">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="13">
+        <Name>RefSeq Transcript ID</Name>
+        <Description>References to multiple sequences in RefSeq. The field contains the ID and Description for each entry, and there can be multiple entries per ProbeSet.</Description>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="7312">
+GPL199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM101941">
+    <Status database="GEO">
+      <Submission-Date>2006-03-27</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2006-10-22</Last-Update-Date>
+    </Status>
+    <Title>E. coli K1 BW25113 delta yceP LB glu 24 hr biofilm cells with 0.06% DMF</Title>
+    <Accession database="GEO">GSM101941</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from biofilm cells of E. coli K12 BW25113 delta yceP grown in LB glu for 24 hr with 0.06% DMF with glass wool
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+To lyse the cells, 1.0 mL RLT buffer (Qiagen, Inc., Valencia, CA) and 0.2 mL 0.1 mm zirconia/silica beads (Biospec) were added to the frozen bead beater tubes containing the cell pellets. The tubes were closed tightly and beat for 50 seconds at the maximum speed in a mini bead beater (cat. no. 3110BX, Biospec). The total RNA was isolated by following the protocol of the RNeasy Mini Kit (Qiagen) including an on-column DNase digestion with RNase-free DNase I (Qiagen). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA samples were first converted into cDNA through a reverse transcription reaction with poly-A RNA controls spiked into the same reaction mixture to monitor the entire target labeling process.  The cDNA was then digested with DNase I (Amersham Biosciences) to produce 50-200 bp fragments, which was checked by running the fragmented cDNA on a 2% agarose gel.  The fragmented cDNA was labeled at the 3’ termini by the Enzo BioArray Terminal Labeling Kit with Biotin-ddUTP (Affymetrix, P/N 900181).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+he biotin-labeled target was hybridized to the Affymetrix GeneChip E. coli antisense array at 45°C for 16 hour at 60 rpm using the Hybridization Oven 640 (Affymetrix), then a three-step fluorescent staining was conducted using the Fluidics Station 450 (Affymetrix) during the washing and staining procedure.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarray was scanned at 570 nm to get an image file by the GeneChip Scanner 3000 (Affymetrix).  Using GeneChip® Operating Software, total cell intensity was scaled automatically in the software to an average value of 500.
+    </Scan-Protocol>
+    <Description>
+RNA extracted from biofilm cells of E. coli K12 BW25113 delta yceP grown in LB glu for 24 hr with 0.06% DMF with glass wool
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101941/GSM101941.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101941/GSM101941.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Stat Pairs</Name>
+        <Description>The number of probe pairs for a particular probe set on an array</Description>
+      </Column>
+      <Column position="3">
+        <Name>Stat Pairs Used</Name>
+        <Description>The number of probe pairs per probe set used in the analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probe set</Description>
+      </Column>
+      <Column position="5">
+        <Name>ABS_CALL</Name>
+        <Description>probe set signal: absent or prsent</Description>
+      </Column>
+      <Column position="6">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>probes et signal:p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM101941-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM101942">
+    <Status database="GEO">
+      <Submission-Date>2006-03-27</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2006-10-22</Last-Update-Date>
+    </Status>
+    <Title>E. coli K1 BW25113 delta yceP LB glu 24 hr biofilm cells with 600 microM indole</Title>
+    <Accession database="GEO">GSM101942</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from biofilm cell of E. coli K12 BW25113 delta yceP after 24 hours of growth in LB glu with glass wool with 600 microM indole 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+To lyse the cells, 1.0 mL RLT buffer (Qiagen, Inc., Valencia, CA) and 0.2 mL 0.1 mm zirconia/silica beads (Biospec) were added to the frozen bead beater tubes containing the cell pellets. The tubes were closed tightly and beat for 50 seconds at the maximum speed in a mini bead beater (cat. no. 3110BX, Biospec). The total RNA was isolated by following the protocol of the RNeasy Mini Kit (Qiagen) including an on-column DNase digestion with RNase-free DNase I (Qiagen). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA samples were first converted into cDNA through a reverse transcription reaction with poly-A RNA controls spiked into the same reaction mixture to monitor the entire target labeling process.  The cDNA was then digested with DNase I (Amersham Biosciences) to produce 50-200 bp fragments, which was checked by running the fragmented cDNA on a 2% agarose gel.  The fragmented cDNA was labeled at the 3’ termini by the Enzo BioArray Terminal Labeling Kit with Biotin-ddUTP (Affymetrix, P/N 900181).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The biotin-labeled target was hybridized to the Affymetrix GeneChip E. coli antisense array at 45°C for 16 hour at 60 rpm using the Hybridization Oven 640 (Affymetrix), then a three-step fluorescent staining was conducted using the Fluidics Station 450 (Affymetrix) during the washing and staining procedure.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarray was scanned at 570 nm to get an image file by the GeneChip Scanner 3000 (Affymetrix).  Using GeneChip® Operating Software, total cell intensity was scaled automatically in the software to an average value of 500.
+    </Scan-Protocol>
+    <Description>
+RNA extracted from biofilm cell of E. coli K12 BW25113 delta yceP after 24 hours of growth in LB glu with glass wool with 600 microM indole 
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101942/GSM101942.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101942/GSM101942.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Stat Pairs</Name>
+        <Description>The number of probe pairs for a particular probe set on an array</Description>
+      </Column>
+      <Column position="3">
+        <Name>Stat Pairs Used</Name>
+        <Description>The number of probe pairs per probe set used in the analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probe set</Description>
+      </Column>
+      <Column position="5">
+        <Name>ABS_CALL</Name>
+        <Description>probe set signal: absent or present</Description>
+      </Column>
+      <Column position="6">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>probes et signal:p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM101942-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM101943">
+    <Status database="GEO">
+      <Submission-Date>2006-03-27</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2006-10-22</Last-Update-Date>
+    </Status>
+    <Title>E. coli K1 BW25113 wild type LB glu 24 hr biofilm cells</Title>
+    <Accession database="GEO">GSM101943</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from biofilm cell of E. coli K12 BW25113 wild type after 24 hours of growth in LB glu with glass wool
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+To lyse the cells, 1.0 mL RLT buffer (Qiagen, Inc., Valencia, CA) and 0.2 mL 0.1 mm zirconia/silica beads (Biospec) were added to the frozen bead beater tubes containing the cell pellets. The tubes were closed tightly and beat for 50 seconds at the maximum speed in a mini bead beater (cat. no. 3110BX, Biospec). The total RNA was isolated by following the protocol of the RNeasy Mini Kit (Qiagen) including an on-column DNase digestion with RNase-free DNase I (Qiagen). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA samples were first converted into cDNA through a reverse transcription reaction with poly-A RNA controls spiked into the same reaction mixture to monitor the entire target labeling process.  The cDNA was then digested with DNase I (Amersham Biosciences) to produce 50-200 bp fragments, which was checked by running the fragmented cDNA on a 2% agarose gel.  The fragmented cDNA was labeled at the 3’ termini by the Enzo BioArray Terminal Labeling Kit with Biotin-ddUTP (Affymetrix, P/N 900181).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The biotin-labeled target was hybridized to the Affymetrix GeneChip E. coli antisense array at 45°C for 16 hour at 60 rpm using the Hybridization Oven 640 (Affymetrix), then a three-step fluorescent staining was conducted using the Fluidics Station 450 (Affymetrix) during the washing and staining procedure.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarray was scanned at 570 nm to get an image file by the GeneChip Scanner 3000 (Affymetrix).  Using GeneChip® Operating Software, total cell intensity was scaled automatically in the software to an average value of 500.
+    </Scan-Protocol>
+    <Description>
+RNA extracted from biofilm cell of E. coli K12 BW25113 wild type after 24 hours of growth in LB glu with glass wool
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101943/GSM101943.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101943/GSM101943.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Stat Pairs</Name>
+        <Description>The number of probe pairs for a particular probe set on an array</Description>
+      </Column>
+      <Column position="3">
+        <Name>Stat Pairs Used</Name>
+        <Description>The number of probe pairs per probe set used in the analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probe set</Description>
+      </Column>
+      <Column position="5">
+        <Name>ABS_CALL</Name>
+        <Description>probe set signal: absent or present</Description>
+      </Column>
+      <Column position="6">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>probes et signal:p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM101943-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM101944">
+    <Status database="GEO">
+      <Submission-Date>2006-03-27</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2006-10-22</Last-Update-Date>
+    </Status>
+    <Title>E. coli K1 BW25113 delta trpE LB glu 24 hr biofilm cells</Title>
+    <Accession database="GEO">GSM101944</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from biofilm cell of E. coli K12 BW25113 delta trpE after 24 hours of growth in LB glu with glass wool
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+To lyse the cells, 1.0 mL RLT buffer (Qiagen, Inc., Valencia, CA) and 0.2 mL 0.1 mm zirconia/silica beads (Biospec) were added to the frozen bead beater tubes containing the cell pellets. The tubes were closed tightly and beat for 50 seconds at the maximum speed in a mini bead beater (cat. no. 3110BX, Biospec). The total RNA was isolated by following the protocol of the RNeasy Mini Kit (Qiagen) including an on-column DNase digestion with RNase-free DNase I (Qiagen). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA samples were first converted into cDNA through a reverse transcription reaction with poly-A RNA controls spiked into the same reaction mixture to monitor the entire target labeling process.  The cDNA was then digested with DNase I (Amersham Biosciences) to produce 50-200 bp fragments, which was checked by running the fragmented cDNA on a 2% agarose gel.  The fragmented cDNA was labeled at the 3’ termini by the Enzo BioArray Terminal Labeling Kit with Biotin-ddUTP (Affymetrix, P/N 900181).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The biotin-labeled target was hybridized to the Affymetrix GeneChip E. coli antisense array at 45°C for 16 hour at 60 rpm using the Hybridization Oven 640 (Affymetrix), then a three-step fluorescent staining was conducted using the Fluidics Station 450 (Affymetrix) during the washing and staining procedure.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarray was scanned at 570 nm to get an image file by the GeneChip Scanner 3000 (Affymetrix).  Using GeneChip® Operating Software, total cell intensity was scaled automatically in the software to an average value of 500.
+    </Scan-Protocol>
+    <Description>
+RNA extracted from biofilm cell of E. coli K12 BW25113 delta trpE after 24 hours of growth in LB glu with glass wool
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101944/GSM101944.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101944/GSM101944.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Stat Pairs</Name>
+        <Description>The number of probe pairs for a particular probe set on an array</Description>
+      </Column>
+      <Column position="3">
+        <Name>Stat Pairs Used</Name>
+        <Description>The number of probe pairs per probe set used in the analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probe set</Description>
+      </Column>
+      <Column position="5">
+        <Name>ABS_CALL</Name>
+        <Description>probe set signal: absent or present</Description>
+      </Column>
+      <Column position="6">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>probes et signal:p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM101944-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM101945">
+    <Status database="GEO">
+      <Submission-Date>2006-03-27</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2006-10-22</Last-Update-Date>
+    </Status>
+    <Title>E. coli K1 BW25113 wild type LB 24 hr biofilm cells</Title>
+    <Accession database="GEO">GSM101945</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from biofilm cell of E. coli K12 BW25113 wild type after 24 hours of growth in LB with glass wool
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+To lyse the cells, 1.0 mL RLT buffer (Qiagen, Inc., Valencia, CA) and 0.2 mL 0.1 mm zirconia/silica beads (Biospec) were added to the frozen bead beater tubes containing the cell pellets. The tubes were closed tightly and beat for 50 seconds at the maximum speed in a mini bead beater (cat. no. 3110BX, Biospec). The total RNA was isolated by following the protocol of the RNeasy Mini Kit (Qiagen) including an on-column DNase digestion with RNase-free DNase I (Qiagen). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA samples were first converted into cDNA through a reverse transcription reaction with poly-A RNA controls spiked into the same reaction mixture to monitor the entire target labeling process.  The cDNA was then digested with DNase I (Amersham Biosciences) to produce 50-200 bp fragments, which was checked by running the fragmented cDNA on a 2% agarose gel.  The fragmented cDNA was labeled at the 3’ termini by the Enzo BioArray Terminal Labeling Kit with Biotin-ddUTP (Affymetrix, P/N 900181).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The biotin-labeled target was hybridized to the Affymetrix GeneChip E. coli antisense array at 45°C for 16 hour at 60 rpm using the Hybridization Oven 640 (Affymetrix), then a three-step fluorescent staining was conducted using the Fluidics Station 450 (Affymetrix) during the washing and staining procedure.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarray was scanned at 570 nm to get an image file by the GeneChip Scanner 3000 (Affymetrix).  Using GeneChip® Operating Software, total cell intensity was scaled automatically in the software to an average value of 500.
+    </Scan-Protocol>
+    <Description>
+RNA extracted from biofilm cell of E. coli K12 BW25113 wild type after 24 hours of growth in LB with glass wool
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101945/GSM101945.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101945/GSM101945.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Stat Pairs</Name>
+        <Description>The number of probe pairs for a particular probe set on an array</Description>
+      </Column>
+      <Column position="3">
+        <Name>Stat Pairs Used</Name>
+        <Description>The number of probe pairs per probe set used in the analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probe set</Description>
+      </Column>
+      <Column position="5">
+        <Name>ABS_CALL</Name>
+        <Description>probe set signal: absent or present</Description>
+      </Column>
+      <Column position="6">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>probes et signal:p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM101945-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM101946">
+    <Status database="GEO">
+      <Submission-Date>2006-03-27</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2006-10-22</Last-Update-Date>
+    </Status>
+    <Title>E. coli K1 BW25113 delta tnaA LB 24 hr biofilm cells</Title>
+    <Accession database="GEO">GSM101946</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from biofilm cell of E. coli K12 BW25113 delta tnaA after 24 hours of growth in LB with glass wool
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+To lyse the cells, 1.0 mL RLT buffer (Qiagen, Inc., Valencia, CA) and 0.2 mL 0.1 mm zirconia/silica beads (Biospec) were added to the frozen bead beater tubes containing the cell pellets. The tubes were closed tightly and beat for 50 seconds at the maximum speed in a mini bead beater (cat. no. 3110BX, Biospec). The total RNA was isolated by following the protocol of the RNeasy Mini Kit (Qiagen) including an on-column DNase digestion with RNase-free DNase I (Qiagen). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA samples were first converted into cDNA through a reverse transcription reaction with poly-A RNA controls spiked into the same reaction mixture to monitor the entire target labeling process.  The cDNA was then digested with DNase I (Amersham Biosciences) to produce 50-200 bp fragments, which was checked by running the fragmented cDNA on a 2% agarose gel.  The fragmented cDNA was labeled at the 3’ termini by the Enzo BioArray Terminal Labeling Kit with Biotin-ddUTP (Affymetrix, P/N 900181).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The biotin-labeled target was hybridized to the Affymetrix GeneChip E. coli antisense array at 45°C for 16 hour at 60 rpm using the Hybridization Oven 640 (Affymetrix), then a three-step fluorescent staining was conducted using the Fluidics Station 450 (Affymetrix) during the washing and staining procedure.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarray was scanned at 570 nm to get an image file by the GeneChip Scanner 3000 (Affymetrix).  Using GeneChip® Operating Software, total cell intensity was scaled automatically in the software to an average value of 500.
+    </Scan-Protocol>
+    <Description>
+RNA extracted from biofilm cell of E. coli K12 BW25113 delta tnaA after 24 hours of growth in LB with glass wool
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101946/GSM101946.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM101nnn/GSM101946/GSM101946.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Stat Pairs</Name>
+        <Description>The number of probe pairs for a particular probe set on an array</Description>
+      </Column>
+      <Column position="3">
+        <Name>Stat Pairs Used</Name>
+        <Description>The number of probe pairs per probe set used in the analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probe set</Description>
+      </Column>
+      <Column position="5">
+        <Name>ABS_CALL</Name>
+        <Description>probe set signal: absent or present</Description>
+      </Column>
+      <Column position="6">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>probes et signal:p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM101946-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM122728">
+    <Status database="GEO">
+      <Submission-Date>2006-07-23</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2006-10-22</Last-Update-Date>
+    </Status>
+    <Title>2nd BW25113 yceP 600 uM indole LB glu 24hr biofilm cells</Title>
+    <Accession database="GEO">GSM122728</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from biofilm cells of E. coli K12 yceP mutants after24 hours of growth in LB glu with 600 uM indole with glass wool.
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+To lyse the cells, 1.0 mL RLT buffer (Qiagen, Inc., Valencia, CA) and 0.2 mL 0.1 mm zirconia/silica beads (Biospec) were added to the frozen bead beater tubes containing the cell pellets. The tubes were closed tightly and beat for 50 seconds at the maximum speed in a mini bead beater (cat. no. 3110BX, Biospec). The total RNA was isolated by following the protocol of the RNeasy Mini Kit (Qiagen) including an on-column DNase digestion with RNase-free DNase I (Qiagen). 
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+The total RNA samples were first converted into cDNA through a reverse transcription reaction with poly-A RNA controls spiked into the same reaction mixture to monitor the entire target labeling process.  The cDNA was then digested with DNase I (Amersham Biosciences) to produce 50-200 bp fragments, which was checked by running the fragmented cDNA on a 2% agarose gel.  The fragmented cDNA was labeled at the 3’ termini by the Enzo BioArray Terminal Labeling Kit with Biotin-ddUTP (Affymetrix, P/N 900181).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The biotin-labeled target was hybridized to the Affymetrix GeneChip E. coli antisense array at 45°C for 16 hour at 60 rpm using the Hybridization Oven 640 (Affymetrix), then a three-step fluorescent staining was conducted using the Fluidics Station 450 (Affymetrix) during the washing and staining procedure.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarray was scanned at 570 nm to get an image file by the GeneChip Scanner 3000 (Affymetrix).  Using GeneChip® Operating Software, total cell intensity was scaled automatically in the software to an average value of 500.
+    </Scan-Protocol>
+    <Description>
+RNA extracted from biofilm cells of E. coli K12 yceP mutants after24 hours of growth in LB glu with 600 uM indole with glass wool.
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM122nnn/GSM122728/GSM122728.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM122nnn/GSM122728/GSM122728.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Stat Pairs</Name>
+        <Description>Number of perfect match probes for the probset</Description>
+      </Column>
+      <Column position="3">
+        <Name>Stat Pairs Used</Name>
+        <Description>Number of the mismatch probes for the probset</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probeset</Description>
+      </Column>
+      <Column position="5">
+        <Name>ABS_CALL</Name>
+        <Description>probeset signal: absent or present</Description>
+      </Column>
+      <Column position="6">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>probeset signal: p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM122728-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4562">
+    <Status database="GEO">
+      <Submission-Date>2006-03-27</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>E. coli K-12 mutants yceP, trpE, and tnaA biofilm cell 24 hr for indole paper</Title>
+    <Accession database="GEO">GSE4562</Accession>
+    <Pubmed-ID>17511876</Pubmed-ID>
+    <Summary>
+Gene expression of (i) K-12 yceP biofilms upon addition of 600 µM indole in LB glu medium, (ii) K-12 biofilms due to the trpE mutation in LB glu medium, and (iii) K-12 biofilms due to the tnaA mutation in LB medium.
+Keywords: indole effect and cell type comparison
+    </Summary>
+    <Overall-Design>
+Strains:E. coli K12 BW25113 delta yceP, trpE, tnaA and wild type
+Medium:LB glu or LB
+Biofilm cells grown on glass wool
+Harvest time:24hr 
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM101941" />
+    <Sample-Ref ref="GSM101942" />
+    <Sample-Ref ref="GSM101943" />
+    <Sample-Ref ref="GSM101944" />
+    <Sample-Ref ref="GSM101945" />
+    <Sample-Ref ref="GSM101946" />
+    <Sample-Ref ref="GSM122728" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE4562/GSE4562_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/94487" />
+  </Series>
+
+</MINiML>

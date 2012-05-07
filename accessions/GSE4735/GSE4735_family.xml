@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jonathan</First><Last>Partridge</Last></Person>
+    <Laboratory>F10</Laboratory>
+    <Department>Molecular Biology and Biotechnology</Department>
+    <Organization>The University of Sheffield</Organization>
+    <Address>
+      <Line>Firth Court, Western Bank</Line>
+      <City>Sheffield</City>
+      <Postal-Code>S10 2TN</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>MWG Biotech</Organization>
+    <Email>array@mwgbiotech.com</Email>
+    <Phone>1-877-MWG-BTEC</Phone>
+    <Fax>1-336-812-9983</Fax>
+    <Organization>MWG Biotech</Organization>
+    <Address>
+      <Line>4170 Mendenhall Oaks Parkway, Suite 160</Line>
+      <City>High Point</City>
+      <State>NC</State>
+      <Zip-Code>27265</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Jonathan</First><Middle>D</Middle><Last>Partridge</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Colin</First><Last>Scott</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Yue</First><Last>Tang</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Robert</First><Middle>K</Middle><Last>Poole</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Jeffrey</First><Last>Green</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL534">
+    <Status database="GEO">
+      <Submission-Date>2003-10-07</Submission-Date>
+      <Release-Date>2003-10-07</Release-Date>
+      <Last-Update-Date>2011-02-14</Last-Update-Date>
+    </Status>
+    <Title>MWG E. coli K12 Array</Title>
+    <Accession database="GEO">GPL534</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>MWG Biotech</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+4239 E. coli K12 specific oligonucleotide probes represent the complete Escherichia coli (K12)genome.
+    </Description>
+    <Web-Link>http://ecom2.mwgdna.com/services/array/download</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>metarow</Name>
+        <Description>number of subarray row</Description>
+      </Column>
+      <Column position="3">
+        <Name>metacolumn</Name>
+        <Description>number of subarray column</Description>
+      </Column>
+      <Column position="4">
+        <Name>row</Name>
+        <Description>number of row within subarray</Description>
+      </Column>
+      <Column position="5">
+        <Name>column</Name>
+        <Description>number of column within subarray</Description>
+      </Column>
+      <Column position="6">
+        <Name>oligo_name</Name>
+        <Description>MWG oligo id</Description>
+      </Column>
+      <Column position="7">
+        <Name>description</Name>
+        <Description>gene description</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORF</Name>
+        <Description>Locus name </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="4608">
+GPL534-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM106991">
+    <Status database="GEO">
+      <Submission-Date>2006-04-28</Submission-Date>
+      <Release-Date>2006-07-28</Release-Date>
+      <Last-Update-Date>2006-07-28</Last-Update-Date>
+    </Status>
+    <Title>E. coli Transcriptome Dynamics during the Transition from Anaerobic to Aerobic Conditions - 5 min exposure to air</Title>
+    <Accession database="GEO">GSM106991</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control samples in absence of oxygen </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3/5 dye swap</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured experimental samples after 5 min exposure to oxygen</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3/5 dye swap</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow 1000 fermentation vessels (1.8 l capacity) with culture agitation speed constant at 400 rpm and the temperature maintained at 37 °C. Oxygen levels were monitored using galvanic oxygen electrodes while the pH was maintained at 7.2 ±0.2 by automatic titration with sterile KOH. Evans defined medium was used as the growth medium with glucose (30 mM) as the carbon source with the dilution rate being 0.2 h-1.  Anaerobic cultures were maintained by sparging the chemostat with oxygen-free nitrogen (95 %) and carbon dioxide (5 %) (0.2 l min-1).  The switch to aerobic conditions was achieved by sparging the culture with air (2.0 l min-1) in place of the above gas mix. After a period of 5 min exposure to air cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. Data from control samples were used in indirect comparisons with 5 min, 10 min, 15 min and 60 min exposures. Dye swaps and biological repeats were carried out giving two biological repeats and two technical repeats (see supplementary files).
+    </Description>
+    <Data-Processing>
+Control (anaerobic) and 5 min oxygen exposure samples from two biological replicates and two dye swap experiments were compared, LOG2 LOWESS normalized data is shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106991/GSM106991_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106991/GSM106991_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106991/GSM106991_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106991/GSM106991_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106991/GSM106991_5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106991/GSM106991_6.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106991/GSM106991_7.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106991/GSM106991_8.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Comparison ratio of Control Vs Experiment following background correction, log2 transformation and Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM106991-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM107053">
+    <Status database="GEO">
+      <Submission-Date>2006-04-28</Submission-Date>
+      <Release-Date>2006-07-28</Release-Date>
+      <Last-Update-Date>2006-07-28</Last-Update-Date>
+    </Status>
+    <Title>E. coli Transcriptome Dynamics during the Transition from Anaerobic to Aerobic Conditions - 10 min exposure to air</Title>
+    <Accession database="GEO">GSM107053</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control samples in absence of oxygen </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3/5 dye swap</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured experimental samples after 10 min exposure to oxygen</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3/5 dye swap</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow 1000 fermentation vessels (1.8 l capacity) with culture agitation speed constant at 400 rpm and the temperature maintained at 37 °C. Oxygen levels were monitored using galvanic oxygen electrodes while the pH was maintained at 7.2 ±0.2 by automatic titration with sterile KOH. Evans defined medium was used as the growth medium with glucose (30 mM) as the carbon source with the dilution rate being 0.2 h-1.  Anaerobic cultures were maintained by sparging the chemostat with oxygen-free nitrogen (95 %) and carbon dioxide (5 %) (0.2 l min-1).  The switch to aerobic conditions was achieved by sparging the culture with air (2.0 l min-1) in place of the above gas mix. After a period of 5 min exposure to air cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. Data from control samples were used in indirect comparisons with 5 min, 10 min, 15 min and 60 min exposures. Dye swaps and biological repeats were carried out giving two biological repeats and two technical repeats (see supplementary files).
+    </Description>
+    <Data-Processing>
+Control (anaerobic) and 10 min oxygen exposure samples from two biological replicates and two dye swap experiments were compared, LOG2 LOWESS normalized data is shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107053/GSM107053_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107053/GSM107053_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107053/GSM107053_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107053/GSM107053_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107053/GSM107053_5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107053/GSM107053_6.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107053/GSM107053_7.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107053/GSM107053_8.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Comparison ratio of Control Vs Experiment following background correction, log2 transformation and Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM107053-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM107054">
+    <Status database="GEO">
+      <Submission-Date>2006-04-28</Submission-Date>
+      <Release-Date>2006-07-28</Release-Date>
+      <Last-Update-Date>2006-07-28</Last-Update-Date>
+    </Status>
+    <Title>E. coli Transcriptome Dynamics during the Transition from Anaerobic to Aerobic Conditions - 15 min exposure to air</Title>
+    <Accession database="GEO">GSM107054</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control samples in absence of oxygen </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3/5 dye swap</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured experimental samples after 15 min exposure to oxygen </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3/5 dye swap</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow 1000 fermentation vessels (1.8 l capacity) with culture agitation speed constant at 400 rpm and the temperature maintained at 37 °C. Oxygen levels were monitored using galvanic oxygen electrodes while the pH was maintained at 7.2 ±0.2 by automatic titration with sterile KOH. Evans defined medium was used as the growth medium with glucose (30 mM) as the carbon source with the dilution rate being 0.2 h-1.  Anaerobic cultures were maintained by sparging the chemostat with oxygen-free nitrogen (95 %) and carbon dioxide (5 %) (0.2 l min-1).  The switch to aerobic conditions was achieved by sparging the culture with air (2.0 l min-1) in place of the above gas mix. After a period of 15 min exposure to air cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. Data from control samples were used in indirect comparisons with 5 min, 10 min, 15 min and 60 min exposures. Dye swaps and biological repeats were carried out giving two biological repeats and two technical repeats (see supplementary files).
+    </Description>
+    <Data-Processing>
+Control (anaerobic) and 15 min oxygen exposure samples from two biological replicates and two dye swap experiments were compared, LOG2 LOWESS normalized data is shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107054/GSM107054_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107054/GSM107054_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107054/GSM107054_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107054/GSM107054_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107054/GSM107054_5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107054/GSM107054_6.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107054/GSM107054_7.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107054/GSM107054_8.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Comparison ratio of Control Vs Experiment following background correction, log2 transformation and Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM107054-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM107055">
+    <Status database="GEO">
+      <Submission-Date>2006-04-28</Submission-Date>
+      <Release-Date>2006-07-28</Release-Date>
+      <Last-Update-Date>2006-07-28</Last-Update-Date>
+    </Status>
+    <Title>E. coli Transcriptome Dynamics during the Transition from Anaerobic to Aerobic Conditions - 60 min exposure to air</Title>
+    <Accession database="GEO">GSM107055</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control samples in absence of oxygen </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3/5 dye swap</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured experimental samples after 60 min exposure to oxygen </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3/5 dye swap</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow 1000 fermentation vessels (1.8 l capacity) with culture agitation speed constant at 400 rpm and the temperature maintained at 37 °C. Oxygen levels were monitored using galvanic oxygen electrodes while the pH was maintained at 7.2 ±0.2 by automatic titration with sterile KOH. Evans defined medium was used as the growth medium with glucose (30 mM) as the carbon source with the dilution rate being 0.2 h-1.  Anaerobic cultures were maintained by sparging the chemostat with oxygen-free nitrogen (95 %) and carbon dioxide (5 %) (0.2 l min-1).  The switch to aerobic conditions was achieved by sparging the culture with air (2.0 l min-1) in place of the above gas mix. After a period of 60 min exposure to air cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. Data from control samples were used in indirect comparisons with 5 min, 10 min, 15 min and 60 min exposures. Dye swaps and biological repeats were carried out giving two biological repeats and two technical repeats (see supplementary files).
+    </Description>
+    <Data-Processing>
+Control (anaerobic) and 60 min oxygen exposure samples from two biological replicates and two dye swap experiments were compared, LOG2 LOWESS normalized data is shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107055/GSM107055_1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107055/GSM107055_2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107055/GSM107055_3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107055/GSM107055_4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107055/GSM107055_5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107055/GSM107055_6.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107055/GSM107055_7.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM107nnn/GSM107055/GSM107055_8.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Comparison ratio of Control Vs Experiment following background correction, log2 transformation and Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM107055-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4735">
+    <Status database="GEO">
+      <Submission-Date>2006-04-28</Submission-Date>
+      <Release-Date>2006-07-28</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>E. coli Transcriptome Dynamics during the Transition from Anaerobic to Aerobic Conditions</Title>
+    <Accession database="GEO">GSE4735</Accession>
+    <Pubmed-ID>16857675</Pubmed-ID>
+    <Summary>
+Escherichia coli is a metabolically versatile bacterium that is able to grow in the presence and absence of oxygen.  Several previous transcript-profiling experiments have compared separate anaerobic and aerobic cultures.  Here, for the first time, the process of adaptation was investigated by determining changes in transcript profiles when anaerobic steady-state cultures were perturbed by the introduction of air.  
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow 1000 fermentation vessels (1.8 l capacity) with culture agitation speed constant at 400 rpm and the temperature maintained at 37 °C. Oxygen levels were monitored using galvanic oxygen electrodes while the pH was maintained at 7.2 ±0.2 by automatic titration with sterile KOH. Evans defined medium was used as the growth medium with glucose (30 mM) as the carbon source with the dilution rate being 0.2 h-1.  Anaerobic cultures were maintained by sparging the chemostat with oxygen-free nitrogen (95 %) and carbon dioxide (5 %) (0.2 l min-1).  The switch to aerobic conditions was achieved by sparging the culture with air (2.0 l min-1) in place of the above gas mix. After a period of 5, 10, 15 and 60 min exposure to air, cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. 
+Keywords: time course response to air
+    </Summary>
+    <Overall-Design>
+Analysis used anaerobic steady state RNA as control samples for comparison to the experimental samples taken at 5, 10, 15 and 60 min. Indirect comparisons were made across multiple arrays with raw data pulled from different channels for data analysis and comparison to the control data. Data analysis was carried out using Imagene, version 5.1 and Genesight version 4 (Biodiscovery Inc). The mean values from each channel were log2 transformed and normalized using the LOWESS algorithm to remove intensity dependent effects within the calculated values.  Normalised values were used to calculate the Cy3/Cy5 fluorescence ratios from experimental and biological repeats (seperate chemostat runs)with all replicates combined. Data was compiled from two aerobic and two anaerobic cultures each with a dye-swap replicate, thus providing two biological repeats within four technical repeats.
+Presented is the LOG2 normalised data comparing the control (anaerobic) with the identified experimental (5, 10, 15, 60 min air exposure) with supplementary material provided in the form of Raw array files.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM106991" />
+    <Sample-Ref ref="GSM107053" />
+    <Sample-Ref ref="GSM107054" />
+    <Sample-Ref ref="GSM107055" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE4735/GSE4735_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/95671" />
+  </Series>
+
+</MINiML>

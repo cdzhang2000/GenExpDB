@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Ranno</First><Last>Nahku</Last></Person>
+    <Email>ranno@tftak.org</Email>
+    <Organization>TFTAK</Organization>
+    <Address>
+      <Line>Akadeemia tee 15b</Line>
+      <City>Tallinn</City>
+      <Zip-Code>12618</Zip-Code>
+      <Country>Estonia</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Kaspar</First><Last>Valgepea</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Kaarel</First><Last>Adamberg</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Petri-Jaan</First><Last>Lahtvee</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Liisa</First><Last>Arike</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Raivo</First><Last>Vilu</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL10306">
+    <Status database="GEO">
+      <Submission-Date>2010-04-10</Submission-Date>
+      <Release-Date>2010-04-11</Release-Date>
+      <Last-Update-Date>2010-04-11</Last-Update-Date>
+    </Status>
+    <Title>Agilent/CCFFT Escherichia coli K12 MG1655 8x15k v1.0</Title>
+    <Accession database="GEO">GPL10306</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+    <Manufacturer>Agilent</Manufacturer>
+    <Manufacture-Protocol>
+Described in: http://www.chem.agilent.com/en-us/products/instruments/dnamicroarrays/pages/gp557.aspx
+    </Manufacture-Protocol>
+    <Description>
+Steps/settings in Earray (http://www.chem.agilent.com/en-US/products/instruments/dnamicroarrays/pages/gp50660.aspx):
+a. Design Wizards - Create a Microarray Design from Target Transcripts
+b. Selected Method - Tm matching methodology
+c. Selected Parameters:
+Probe Length - 60bp
+Probes per Target - 3
+Probe Orientation - Sense
+Design Options - Best Distribution Methodology
+NO - &quot;Design with 3' Bias&quot; and &quot;Allow Probes to be Trimmed&quot;
+Preferred Probe Tm - 85C
+Target File Details - Upload Gene Sequence File
+Note: &quot;e.coli.nuc&quot; file was downloaded from the KEGG ftp site (ftp://ftp.genome.jp/pub/kegg/genes/organisms/eco/ )
+Transcriptome Details - Use Target File as Transcriptome
+d. 8x15K platform was used
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>PrimaryAccession</Name>
+        <Description>Kyoto Encyclopedia of Genes and Genomes (KEGG) identifier </Description>
+        <Link-Prefix>http://www.genome.jp/dbget-bin/www_bget?</Link-Prefix>
+      </Column>
+      <Column position="3">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="4">
+        <Name>SEQUENCE</Name>
+        <Description>Sequence of oligonucleotide</Description>
+      </Column>
+    <External-Data rows="12554">
+GPL10306-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM589790">
+    <Status database="GEO">
+      <Submission-Date>2010-09-01</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-12-02</Last-Update-Date>
+    </Status>
+    <Title>eco_0.21_0.11</Title>
+    <Accession database="GEO">GSM589790</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>specific growth rate 0.21 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, A-stat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>specific growth rate 0.11 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, chemostat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+For hybridization standard Agilent's kits, reagents and equipment were used (See http://www.chem.agilent.com/en-US/products/instruments/dnamicroarrays/Pages/default.aspx )
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Technologies Microarray Scanner G2565CA was used at 5 mm resolution
+    </Scan-Protocol>
+    <Description>
+Investigation of specific growth rate dependent gene expression changes of E. coli growing on glucose minimal medium
+    </Description>
+    <Data-Processing>
+Image was analized with Genepix 6 pro followed by background substration and global LOWESS normalization in R environment (KTH package). Spots with signal to noise ratio lower that 3 and/or relative standard deviation between parallel spots greater than 20% were removed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10306" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM589nnn/GSM589790/GSM589790_eco_0.21_0.11.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="3392">
+GSM589790-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM589791">
+    <Status database="GEO">
+      <Submission-Date>2010-09-01</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-12-02</Last-Update-Date>
+    </Status>
+    <Title>eco_0.26_0.11</Title>
+    <Accession database="GEO">GSM589791</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>specific growth rate 0.26 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, A-stat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>specific growth rate 0.11 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, chemostat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+For hybridization standard Agilent's kits, reagents and equipment were used (See http://www.chem.agilent.com/en-US/products/instruments/dnamicroarrays/Pages/default.aspx )
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Technologies Microarray Scanner G2565CA was used at 5 mm resolution
+    </Scan-Protocol>
+    <Description>
+Investigation of specific growth rate dependent gene expression changes of E. coli growing on glucose minimal medium
+    </Description>
+    <Data-Processing>
+Image was analized with Genepix 6 pro followed by background substration and global LOWESS normalization in R environment (KTH package). Spots with signal to noise ratio lower that 3 and/or relative standard deviation between parallel spots greater than 20% were removed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10306" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM589nnn/GSM589791/GSM589791_eco_0.26_0.11.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="3392">
+GSM589791-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM589792">
+    <Status database="GEO">
+      <Submission-Date>2010-09-01</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-12-02</Last-Update-Date>
+    </Status>
+    <Title>eco_0.31_0.11</Title>
+    <Accession database="GEO">GSM589792</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>specific growth rate 0.31 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, A-stat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>specific growth rate 0.11 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, chemostat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+For hybridization standard Agilent's kits, reagents and equipment were used (See http://www.chem.agilent.com/en-US/products/instruments/dnamicroarrays/Pages/default.aspx )
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Technologies Microarray Scanner G2565CA was used at 5 mm resolution
+    </Scan-Protocol>
+    <Description>
+Investigation of specific growth rate dependent gene expression changes of E. coli growing on glucose minimal medium
+    </Description>
+    <Data-Processing>
+Image was analized with Genepix 6 pro followed by background substration and global LOWESS normalization in R environment (KTH package). Spots with signal to noise ratio lower that 3 and/or relative standard deviation between parallel spots greater than 20% were removed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10306" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM589nnn/GSM589792/GSM589792_eco_0.31_0.11.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="3392">
+GSM589792-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM589793">
+    <Status database="GEO">
+      <Submission-Date>2010-09-01</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-12-02</Last-Update-Date>
+    </Status>
+    <Title>eco_0.36_0.11</Title>
+    <Accession database="GEO">GSM589793</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>specific growth rate 0.36 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, A-stat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>specific growth rate 0.11 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, chemostat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+For hybridization standard Agilent's kits, reagents and equipment were used (See http://www.chem.agilent.com/en-US/products/instruments/dnamicroarrays/Pages/default.aspx )
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Technologies Microarray Scanner G2565CA was used at 5 mm resolution
+    </Scan-Protocol>
+    <Description>
+Investigation of specific growth rate dependent gene expression changes of E. coli growing on glucose minimal medium
+    </Description>
+    <Data-Processing>
+Image was analized with Genepix 6 pro followed by background substration and global LOWESS normalization in R environment (KTH package). Spots with signal to noise ratio lower that 3 and/or relative standard deviation between parallel spots greater than 20% were removed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10306" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM589nnn/GSM589793/GSM589793_eco_0.36_0.11.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="3392">
+GSM589793-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM589794">
+    <Status database="GEO">
+      <Submission-Date>2010-09-01</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-12-02</Last-Update-Date>
+    </Status>
+    <Title>eco_0.40_0.11</Title>
+    <Accession database="GEO">GSM589794</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>specific growth rate 0.40 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, A-stat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>specific growth rate 0.11 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, chemostat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+For hybridization standard Agilent's kits, reagents and equipment were used (See http://www.chem.agilent.com/en-US/products/instruments/dnamicroarrays/Pages/default.aspx )
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Technologies Microarray Scanner G2565CA was used at 5 mm resolution
+    </Scan-Protocol>
+    <Description>
+Investigation of specific growth rate dependent gene expression changes of E. coli growing on glucose minimal medium
+    </Description>
+    <Data-Processing>
+Image was analized with Genepix 6 pro followed by background substration and global LOWESS normalization in R environment (KTH package). Spots with signal to noise ratio lower that 3 and/or relative standard deviation between parallel spots greater than 20% were removed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10306" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM589nnn/GSM589794/GSM589794_eco_0.40_0.11.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="3392">
+GSM589794-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM589795">
+    <Status database="GEO">
+      <Submission-Date>2010-09-01</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-12-02</Last-Update-Date>
+    </Status>
+    <Title>eco_0.48_0.11</Title>
+    <Accession database="GEO">GSM589795</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>specific growth rate 0.48 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, A-stat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>specific growth rate 0.11 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, chemostat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+For hybridization standard Agilent's kits, reagents and equipment were used (See http://www.chem.agilent.com/en-US/products/instruments/dnamicroarrays/Pages/default.aspx )
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Technologies Microarray Scanner G2565CA was used at 5 mm resolution
+    </Scan-Protocol>
+    <Description>
+Investigation of specific growth rate dependent gene expression changes of E. coli growing on glucose minimal medium
+    </Description>
+    <Data-Processing>
+Image was analized with Genepix 6 pro followed by background substration and global LOWESS normalization in R environment (KTH package). Spots with signal to noise ratio lower that 3 and/or relative standard deviation between parallel spots greater than 20% were removed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10306" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM589nnn/GSM589795/GSM589795_eco_0.48_0.11.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="3392">
+GSM589795-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM589796">
+    <Status database="GEO">
+      <Submission-Date>2010-09-01</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-12-02</Last-Update-Date>
+    </Status>
+    <Title>Astat_chemostat</Title>
+    <Accession database="GEO">GSM589796</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>A-stat, specific growth rate 0.48 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, A-stat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>chemostat, specific growth rate 0.51 1/h</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="cultivation">
+continuous cultivation, chemostat
+      </Characteristics>
+      <Treatment-Protocol>
+RNA degradation was stopped using Qiagen's RNAprotect reagent
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K12 MG1655 was cultivated using M9 minimal medium containing 4.5 g/L α-(D)-glucose, pH = 7, temperature 37 ºC, aerobic conditions
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted with Qiagen's Rneasy Mini Kit
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was synthesized from 15 μg of total RNA at 46ºC overnight using the following reagents per reaction: 1 μg random primers (Random decamers; Invitrogen, Carlsbad, CA), 6 μL 5 x first strand buffer (Invitrogen), 3 μL 0.1 MDTT (Invitrogen), 0.9 μL dNTPs (final concentrations: dATP 0.5 mM, dCTP 0.5 mM, dGTP 0.5 mM, dTTP 0.3 mM, aminoallyl-dUTP 0.2 mM), 1 μL RNase Inhibitor (Bioron, Ludwigshafen, Germany), 2 μL Superscript III (Invitrogen). RNA strands were hydrolyzed in the samples by adding 4.5 μL 1 M NaOH and incubating at 70ºC for 10 min, after incubation the samples were neutralized with 4.5 μL 1 M HCl. cDNA was purified with MinElute PCR purification kit (QIAGEN) and labeled with Cy3 (CyTM3 Mono Reactive Dye Pack, Amersham, Buckinghamshire, UK) or Cy5 (CyTM5 Mono Reactive Dye Pack, Amersham). Staining was carried out in 10 μL of NaHCO3 (pH 9) at room temperature in dark for 1 h and the samples were purified again with MinElute PCR purification kit.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+For hybridization standard Agilent's kits, reagents and equipment were used (See http://www.chem.agilent.com/en-US/products/instruments/dnamicroarrays/Pages/default.aspx )
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Technologies Microarray Scanner G2565CA was used at 5 mm resolution
+    </Scan-Protocol>
+    <Description>
+Comparison of A-stat and chemostat culture to study the gene expression bias caused by continuous change of dilution rate
+    </Description>
+    <Data-Processing>
+Image was analized with Genepix 6 pro followed by background substration and global LOWESS normalization in R environment (KTH package). Spots with signal to noise ratio lower that 3 and/or relative standard deviation between parallel spots greater than 20% were removed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10306" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM589nnn/GSM589796/GSM589796_Astatvschem.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing test/reference</Description>
+      </Column>
+    <External-Data rows="3392">
+GSM589796-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE23920">
+    <Status database="GEO">
+      <Submission-Date>2010-09-01</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Systems biology approach reveals that overflow metabolism of acetate in Escherichia coli is triggered by carbon catabolite repression of acetyl-CoA synthetase</Title>
+    <Accession database="GEO">GSE23920</Accession>
+    <Pubmed-ID>21122111</Pubmed-ID>
+    <Summary>
+Background: The biotechnology industry has extensively exploited Escherichia coli for producing recombinant proteins, biofuels etc. However, high growth rate aerobic E. coli cultivations are accompanied by acetate excretion i.e. overflow metabolism which is harmful as it inhibits growth, diverts valuable carbon from biomass formation and is detrimental for target product synthesis. Although overflow metabolism has been studied for decades, its regulation mechanisms still remain unclear. 
+Results: In the current work, growth rate dependent acetate overflow metabolism of E. coli was continuously monitored using advanced continuous cultivation methods (A-stat and D-stat). The first step in acetate overflow switch (at μ = 0.27 ± 0.02 1/h) is the repression of acetyl-CoA synthethase (Acs) activity triggered by carbon catabolite repression resulting in decreased assimilation of acetate produced by phosphotransacetylase (Pta), and disruption of the PTA-ACS node. This was indicated by acetate synthesis pathways PTA-ACKA and POXB component expression down-regulation before the overflow switch at μ = 0.27 ± 0.02 1/h with concurrent 5-fold stronger repression of acetate-consuming Acs. This in turn suggests insufficient Acs activity for consuming all the acetate produced by Pta, leading to disruption of the acetate cycling process in PTA-ACS node where constant acetyl phosphate or acetate regeneration is essential for E. coli chemotaxis, proteolysis, pathogenesis etc. regulation. In addition, two-substrate A-stat and D-stat experiments showed that acetate consumption capability of E. coli decreased drastically, just as Acs expression, before the start of overflow metabolism. The second step in overflow switch is the sharp decline in cAMP production at μ = 0.45 1/h leading to total Acs inhibition and fast accumulation of acetate. 
+Conclusion: This study is an example of how a systems biology approach allowed to propose a new regulation mechanism for overflow metabolism in E. coli shown by proteomic, transcriptomic and metabolomic levels coupled to two-phase acetate accumulation: acetate overflow metabolism in E. coli is triggered by Acs down-regulation resulting in decreased assimilation of acetic acid produced by Pta, and disruption of the PTA-ACS node.
+    </Summary>
+    <Overall-Design>
+Reference samples at specific growth rate (μ) 0.11 1/h were compared to the ones acquired at μ 0.21, 0.26, 0.31, 0.36, 0.40 and 0.48 1/h
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib1" position="3" />
+    <Contributor-Ref ref="contrib4" position="4" />
+    <Contributor-Ref ref="contrib5" position="5" />
+    <Contributor-Ref ref="contrib6" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM589790" />
+    <Sample-Ref ref="GSM589791" />
+    <Sample-Ref ref="GSM589792" />
+    <Sample-Ref ref="GSM589793" />
+    <Sample-Ref ref="GSM589794" />
+    <Sample-Ref ref="GSM589795" />
+    <Sample-Ref ref="GSM589796" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE23920/GSE23920_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/130523" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Joel</First><Last>Moxley</Last></Person>
+    <Email>jfmoxley@mit.edu</Email>
+    <Organization>MIT</Organization>
+    <Address>
+      <Line>77 Massachusettes Ave</Line>
+      <City>Cambridge</City>
+      <State>MA</State>
+      <Zip-Code>02139</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Joel</First><Middle>F</Middle><Last>Moxley</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Hal</First><Middle>S</Middle><Last>Alper</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Greg</First><Last>Stephanopoulos</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM85143">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>wild type, 0 g/L EtOH, replicate 1</Title>
+    <Accession database="GEO">GSM85143</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+wild type, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85143/GSM85143.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85143-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85144">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>wild type, 0 g/L EtOH, replicate 2</Title>
+    <Accession database="GEO">GSM85144</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+wild type, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85144/GSM85144.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85144-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85145">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>wild type, 0 g/L EtOH, replicate 3</Title>
+    <Accession database="GEO">GSM85145</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+wild type, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85145/GSM85145.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85145-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85146">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 1, 0 g/L EtOH, replicate 1</Title>
+    <Accession database="GEO">GSM85146</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 1, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85146/GSM85146.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85146-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85147">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 1, 0 g/L EtOH, replicate 2</Title>
+    <Accession database="GEO">GSM85147</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 1, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85147/GSM85147.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85147-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85148">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 1, 0 g/L EtOH, replicate 3</Title>
+    <Accession database="GEO">GSM85148</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 1, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85148/GSM85148.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85148-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85149">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 2, 0 g/L EtOH, replicate 1</Title>
+    <Accession database="GEO">GSM85149</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 2, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85149/GSM85149.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85149-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85150">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 2, 0 g/L EtOH, replicate 2</Title>
+    <Accession database="GEO">GSM85150</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 2, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85150/GSM85150.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85150-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85151">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 2, 0 g/L EtOH, replicate 3</Title>
+    <Accession database="GEO">GSM85151</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 2, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85151/GSM85151.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85151-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85152">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 3, 0 g/L EtOH, replicate 1</Title>
+    <Accession database="GEO">GSM85152</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 3, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85152/GSM85152.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85152-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85153">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 3, 0 g/L EtOH, replicate 2</Title>
+    <Accession database="GEO">GSM85153</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 3, 0 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85153/GSM85153.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85153-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 3, 20 g/L EtOH, replicate 1</Title>
+    <Accession database="GEO">GSM85154</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 3, 20 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85154/GSM85154.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85155">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 3, 20 g/L EtOH, replicate 2</Title>
+    <Accession database="GEO">GSM85155</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 3, 20 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85155/GSM85155.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85155-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85156">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 3, 20 g/L EtOH, replicate 3</Title>
+    <Accession database="GEO">GSM85156</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 3, 20 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85156/GSM85156.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85156-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85157">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 3, 40 g/L EtOH, replicate 1</Title>
+    <Accession database="GEO">GSM85157</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 3, 40 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85157/GSM85157.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85157-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85158">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 3, 40 g/L EtOH, replicate 2</Title>
+    <Accession database="GEO">GSM85158</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 3, 40 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85158/GSM85158.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85158-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85159">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>round 3, 40 g/L EtOH, replicate 3</Title>
+    <Accession database="GEO">GSM85159</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+round 3, 40 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85159/GSM85159.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85159-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85160">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>wild type, 20 g/L EtOH, replicate 1</Title>
+    <Accession database="GEO">GSM85160</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+wild type, 20 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85160/GSM85160.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85160-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85161">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>wild type, 20 g/L EtOH, replicate 2</Title>
+    <Accession database="GEO">GSM85161</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+wild type, 20 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85161/GSM85161.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85161-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM85162">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2006-09-26</Last-Update-Date>
+    </Status>
+    <Title>wild type, 20 g/L EtOH, replicate 3</Title>
+    <Accession database="GEO">GSM85162</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>DH5-alpha (Invitrogen)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+genetic and environmental variation indicated in Sample_title
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strains were cultured at 37C with 225 rpm orbital shaking in 30 mL LB medium supplemented with 34 ug/mL of chloramphenicol with the indicated ethanol concentration in 50 mL closed conical tubes.  The cultures harvested at approximately OD 0.5.  Protocols from RNAprotect Bacteria Reagent and RNeasy mini spin kit were followed.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The extracted RNA was processed by Ambion Services using the Affymetrix protocols with the exception of Ambion ArrayScript substituted for SuperScript and Vivaspin Concentrators substituted for Qiagen cleanup columns.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+standard Affymetrix procedures
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+standard Affymetrix procedures
+    </Scan-Protocol>
+    <Description>
+wild type, 20 g/L EtOH
+    </Description>
+    <Data-Processing>
+Bioconductor with RMA background correction, qspline normalization, and Li-Wong expression value summaries
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM85nnn/GSM85162/GSM85162.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Li-Wong summarized expression value</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM85162-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE3665">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2007-09-23</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Global transcriptional machinery engineering in E. coli in the presence and absence of ethanol</Title>
+    <Accession database="GEO">GSE3665</Accession>
+    <Pubmed-ID>17292651</Pubmed-ID>
+    <Summary>
+We measured transcriptional changes in an effort to understand mechanisms of action resulting from the introduction of global transcriptional machinery engineering in E. coli in the presence and absence of ethanol.
+Keywords: repeat
+    </Summary>
+    <Overall-Design>
+We explored two types of experimental factors: genetic variation (mutated transcriptional machinery) and environmental variation (ethanol concentration).
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM85143" />
+    <Sample-Ref ref="GSM85144" />
+    <Sample-Ref ref="GSM85145" />
+    <Sample-Ref ref="GSM85146" />
+    <Sample-Ref ref="GSM85147" />
+    <Sample-Ref ref="GSM85148" />
+    <Sample-Ref ref="GSM85149" />
+    <Sample-Ref ref="GSM85150" />
+    <Sample-Ref ref="GSM85151" />
+    <Sample-Ref ref="GSM85152" />
+    <Sample-Ref ref="GSM85153" />
+    <Sample-Ref ref="GSM85154" />
+    <Sample-Ref ref="GSM85155" />
+    <Sample-Ref ref="GSM85156" />
+    <Sample-Ref ref="GSM85157" />
+    <Sample-Ref ref="GSM85158" />
+    <Sample-Ref ref="GSM85159" />
+    <Sample-Ref ref="GSM85160" />
+    <Sample-Ref ref="GSM85161" />
+    <Sample-Ref ref="GSM85162" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE3665/GSE3665_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/93799" />
+  </Series>
+
+</MINiML>

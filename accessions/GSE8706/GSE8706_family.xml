@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Thomas</First><Last>Wood</Last></Person>
+    <Email>Thomas.Wood@chemail.tamu.edu</Email>
+    <Phone>979-862-1588</Phone>
+    <Laboratory>Dr. Wood's Lab</Laboratory>
+    <Department>Chemical Engineering</Department>
+    <Organization>Texas A&amp;M University</Organization>
+    <Address>
+      <Line>Room 502 Jack E. Brown building 3122 TAMU</Line>
+      <City>College Station</City>
+      <State>TX</State>
+      <Zip-Code>77843</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Xue-Song</First><Last>Zhang</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Rodolfo</First><Last>Garcia-Contreras</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Thomas</First><Middle>K</Middle><Last>Wood</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL199">
+    <Status database="GEO">
+      <Submission-Date>2002-07-01</Submission-Date>
+      <Release-Date>2002-07-18</Release-Date>
+      <Last-Update-Date>2010-07-08</Last-Update-Date>
+    </Status>
+    <Title>[Ecoli_ASv2] Affymetrix E. coli Antisense Genome Array</Title>
+    <Accession database="GEO">GPL199</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+Has 7312 entries and was indexed 20-May-2002.
+The GeneChip E. coli Antisense Genome Array can be used for examining expression of all known E. coli genes and discovering novel, uncharacterized intergenic transcripts. The array contains probe sets to detect the antisense strand of more than 4,200 known open reading frames. In addition, over 1,350 intergenic sequences can be interrogated in both directions permitting functional characterization of potentially important shorter expressed sequences.
+Sequence information for probes on the array correspond to the M49 version of the E. coli Genome Project database at the University of Wisconsin.
+
+
+Keywords = high density oligonucleotide array
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoliantisense</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Relation type="Alternative to" target="GPL10659" comment="Alternative CDF" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=ECOLI_ANTISENSE&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli K12[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="4">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="5">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="12">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="13">
+        <Name>RefSeq Transcript ID</Name>
+        <Description>References to multiple sequences in RefSeq. The field contains the ID and Description for each entry, and there can be multiple entries per ProbeSet.</Description>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="7312">
+GPL199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM215705">
+    <Status database="GEO">
+      <Submission-Date>2007-08-06</Submission-Date>
+      <Release-Date>2008-02-22</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>BW25113 w/t LB 15h 37C biofilm cells</Title>
+    <Accession database="GEO">GSM215705</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from biofilm cells of E. coli K-12 wild type BW25113 after 15 hours of growth at 37ºC in LB with glasswool
+      </Characteristics>
+      <Biomaterial-Provider>The Genome Analysis Project in Japan
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The overnight culture (2.5 ml) was used to inoculate 250 ml of fresh LB medium with 10 g of submerged glass wool (Corning Glass Works, Corning, NY) for forming biofilm. After incubation for 15 h at 37°C with shaking (250 rpm), the glass wool was carefully and quickly removed and rinsed with 100 ml of sterile 0.85% NaCl solution at 0°C. Biofilm cells were removed by sonicating the glass wool in 200 ml of sterile 0.85% NaCl solution at 0°C. After breaking the cells with a bead beater, and the total RNA was isolated with Qiagen RNeasy mini Kit (Cat# 74104). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Following affymetrix protocol.
+cDNA was synthesized first using Promega M-MLV Reverse transcriptase (cat# M1705). After removing RNA, DNA fragmentation was performed to obtain and 50-200 base cDNA fragments. The fragmented cDNA was labelled with Biotin-ddUTP using Enzo BioArray Terminal Labeling Kit  (Affymetrix, P/N 900181).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following affymetrix protocol. 
+Prepared hybridization cocktail for Single Probe Array (49 Format) with total 200 ul volume including 1X hybrization buffer, 50 pM B2 Control Oligo, 0.1 mg/mL Herring Sperm DNA, 0.5 mg/mL BSA, and at least 1 ug fragmented and labelled cDNA.
+After loading of hybridization cocktail in Affymetrix E. coli Antisense Genome Array, the hybridization was performed at 45ºC, with 60 rpm for 16 hours. 
+After hybridization, the probe array was washed and stained using Affymetrix Genechip Fluidics Station 450 and the software GenomeChipOperating Software (GCOS). 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Following affymetrix protocol. 
+After washing and staining, the probe array was scanned using Affymetrix Genechip scanner GCS3000 7G system and the software GenomeChipOperating Software (GCOS). 
+    </Scan-Protocol>
+    <Description>
+RNA extracted from biofilm cells of E. coli K-12 wild type after 15 hours of growth at 37C in LB with glasswool.
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM215nnn/GSM215705/GSM215705.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>(BW25113 LB biofilm 37C 15h) Stat Pairs</Name>
+        <Description>Number of perfect match probes for the probeset</Description>
+      </Column>
+      <Column position="3">
+        <Name>(BW25113 LB biofilm 37C 15h) Stat Pairs Used</Name>
+        <Description>Number of the mismatch probes for the probeset</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probset</Description>
+      </Column>
+      <Column position="5">
+        <Name>ABS_CALL</Name>
+        <Description>Probeset signal: absent or present</Description>
+      </Column>
+      <Column position="6">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>probeset signal: p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM215705-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM215706">
+    <Status database="GEO">
+      <Submission-Date>2007-08-06</Submission-Date>
+      <Release-Date>2008-02-22</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>BW25113 yncC deletion mutant LB 15h 37C biofilm cells</Title>
+    <Accession database="GEO">GSM215706</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from biofilm cells of E. coli K-12 yncC deletion mutant after 15 hours of growth at 37ºC in LB with glasswool
+      </Characteristics>
+      <Biomaterial-Provider>The Genome Analysis Project in Japan
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The overnight culture (2.5 ml) was used to inoculate 250 ml of fresh LB medium with 10 g of submerged glass wool (Corning Glass Works, Corning, NY) for forming biofilm. After incubation for 15 h at 37°C with shaking (250 rpm), the glass wool was carefully and quickly removed and rinsed with 100 ml of sterile 0.85% NaCl solution at 0°C. Biofilm cells were removed by sonicating the glass wool in 200 ml of sterile 0.85% NaCl solution at 0°C. After breaking the cells with a bead beater, and the total RNA was isolated with Qiagen RNeasy mini Kit (Cat# 74104). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Following affymetrix protocol.
+cDNA was synthesized first using Promega M-MLV Reverse transcriptase (cat# M1705). After removing RNA, DNA fragmentation was performed to obtain and 50-200 base cDNA fragments. The fragmented cDNA was labelled with Biotin-ddUTP using Enzo BioArray Terminal Labeling Kit  (Affymetrix, P/N 900181).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following affymetrix protocol. 
+Prepared hybridization cocktail for Single Probe Array (49 Format) with total 200 ul volume including 1X hybrization buffer, 50 pM B2 Control Oligo, 0.1 mg/mL Herring Sperm DNA, 0.5 mg/mL BSA, and at least 1 ug fragmented and labelled cDNA.
+After loading of hybridization cocktail in Affymetrix E. coli Antisense Genome Array, the hybridization was performed at 45ºC, with 60 rpm for 16 hours.  
+After hybridization, the probe array was washed and stained using Affymetrix Genechip Fluidics Station 450 and the software GenomeChipOperating Software (GCOS)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Following affymetrix protocol. 
+After washing and staining, the probe array was scanned using Affymetrix Genechip scanner GCS3000 7G system and the software GenomeChipOperating Software (GCOS). 
+    </Scan-Protocol>
+    <Description>
+RNA extracted from biofilm cells of E. coli K-12 yncC deletion mutant after 15 hours of growth at 37C in LB with glasswool
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM215nnn/GSM215706/GSM215706.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>(BW25113 del yncC LB biofilm 37C 15h) Stat Pairs</Name>
+        <Description>Number of perfect match probes for the probeset</Description>
+      </Column>
+      <Column position="3">
+        <Name>(BW25113 del yncC LB biofilm 37C 15h) Stat Pairs Used</Name>
+        <Description>Number of the mismatch probes for the probeset</Description>
+      </Column>
+      <Column position="4">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probset</Description>
+      </Column>
+      <Column position="5">
+        <Name>ABS_CALL</Name>
+        <Description>Probeset signal: absent or present</Description>
+      </Column>
+      <Column position="6">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>probeset signal: p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM215706-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM252012">
+    <Status database="GEO">
+      <Submission-Date>2007-12-19</Submission-Date>
+      <Release-Date>2008-02-22</Release-Date>
+      <Last-Update-Date>2008-02-22</Last-Update-Date>
+    </Status>
+    <Title>MG1655 WT colony 37C</Title>
+    <Accession database="GEO">GSM252012</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from colony cells of E. coli K-12  MG1655 wild type after 15 hours of growth in LB plates at 37ºC
+      </Characteristics>
+      <Biomaterial-Provider>we used the strain from our lab derived from Blattner lab stab culture
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Bacteria from frozen glycerols was used to streak plates of fresh LB medium  for forming colonies. After incubation for 15 h at 37°C a single colony was re streaked in fresh LB plates, regrowth 15 h at 37°C and after the growth about 0.05 g of the colony cultures on LB plate were quickly transferred to 2-mL collection tubes and frozen at -80°C, later the cells were broken with ca bead beater, and the total RNA was isolated with Qiagen RNeasy mini Kit (Cat# 74104).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria from frozen glycerols was used to streak plates of fresh LB medium  for forming colonies. After incubation for 15 h at 37°C a single colony was re streaked in fresh LB plates, regrowth 15 h at 37°C and after the growth about 0.05 g of the colony cultures on LB plate were quickly transferred to 2-mL collection tubes and frozen at -80°C, later the cells were broken with ca bead beater, and the total RNA was isolated with Qiagen RNeasy mini Kit (Cat# 74104).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Following affymetrix protocol.
+cDNA was synthesized first using Promega M-MLV Reverse transcriptase (cat# M1705). After removing RNA, DNA fragmentation was performed to obtain and 50-200 base cDNA fragments. The fragmented cDNA was labelled with Biotin-ddUTP using Enzo BioArray Terminal Labeling Kit (Affymetrix, P/N 900181)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following affymetrix protocol. 
+Prepared hybridization cocktail for Single Probe Array (49 Format) with total 200 ul volume including 1X hybrization buffer, 50 pM B2 Control Oligo, 0.1 mg/mL Herring Sperm DNA, 0.5 mg/mL BSA, and at least 1 ug fragmented and labelled cDNA.
+After loading of hybridization cocktail in Affymetrix E. coli Antisense Genome Array, the hybridization was performed at 45ºC, with 60 rpm for 16 hours.  
+After hybridization, the probe array was washed and stained using Affymetrix Genechip Fluidics Station 450 and the software GenomeChipOperating Software (GCOS).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Following affymetrix protocol. 
+After washing and staining, the probe array was scanned using Affymetrix Genechip scanner GCS3000 7G system and the software GenomeChipOperating Software (GCOS).
+    </Scan-Protocol>
+    <Description>
+RNA extracted from colony cells of E. coli K-12  MG1655 wild type after 15 hours of growth in LB plates at 37ºC
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM252nnn/GSM252012/GSM252012.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM252nnn/GSM252012/GSM252012.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probset</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Probeset signal: absent or present</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>Probeset signal: p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM252012-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM252013">
+    <Status database="GEO">
+      <Submission-Date>2007-12-19</Submission-Date>
+      <Release-Date>2008-02-22</Release-Date>
+      <Last-Update-Date>2008-02-22</Last-Update-Date>
+    </Status>
+    <Title>MG1655 delta yncC colony 37C</Title>
+    <Accession database="GEO">GSM252013</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Channel 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+RNA extracted from colony cells of E. coli K-12  MG1655 delta yncC after 15 hours of growth in LB plates at 37ºC
+      </Characteristics>
+      <Biomaterial-Provider>we made the strain with P1 phage transduction from KEIO clone
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Bacteria from frozen glycerols was used to streak plates of fresh LB medium  for forming colonies. After incubation for 15 h at 37°C a single colony was re streaked in fresh LB plates, regrowth 15 h at 37°C and after the growth about 0.05 g of the colony cultures on LB plate were quickly transferred to 2-mL collection tubes and frozen at -80°C, later the cells were broken with ca bead beater, and the total RNA was isolated with Qiagen RNeasy mini Kit (Cat# 74104).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacteria from frozen glycerols was used to streak plates of fresh LB medium  for forming colonies. After incubation for 15 h at 37°C a single colony was re streaked in fresh LB plates, regrowth 15 h at 37°C and after the growth about 0.05 g of the colony cultures on LB plate were quickly transferred to 2-mL collection tubes and frozen at -80°C, later the cells were broken with ca bead beater, and the total RNA was isolated with Qiagen RNeasy mini Kit (Cat# 74104).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Following affymetrix protocol.
+cDNA was synthesized first using Promega M-MLV Reverse transcriptase (cat# M1705). After removing RNA, DNA fragmentation was performed to obtain and 50-200 base cDNA fragments. The fragmented cDNA was labelled with Biotin-ddUTP using Enzo BioArray Terminal Labeling Kit (Affymetrix, P/N 900181)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following affymetrix protocol. 
+Prepared hybridization cocktail for Single Probe Array (49 Format) with total 200 ul volume including 1X hybrization buffer, 50 pM B2 Control Oligo, 0.1 mg/mL Herring Sperm DNA, 0.5 mg/mL BSA, and at least 1 ug fragmented and labelled cDNA.
+After loading of hybridization cocktail in Affymetrix E. coli Antisense Genome Array, the hybridization was performed at 45ºC, with 60 rpm for 16 hours.  
+After hybridization, the probe array was washed and stained using Affymetrix Genechip Fluidics Station 450 and the software GenomeChipOperating Software (GCOS).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Following affymetrix protocol. 
+After washing and staining, the probe array was scanned using Affymetrix Genechip scanner GCS3000 7G system and the software GenomeChipOperating Software (GCOS).
+    </Scan-Protocol>
+    <Description>
+RNA extracted from colony cells of E. coli K-12  MG1655 delta yncC after 15 hours of growth in LB plates at 37ºC
+    </Description>
+    <Data-Processing>
+MAS 5.0 Expression Analysis Default Setting
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM252nnn/GSM252013/GSM252013.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM252nnn/GSM252013/GSM252013.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal intensity accepted from the probset</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Probeset signal: absent or present</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>Probeset signal: p-value (shows the coherency of the results)</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM252013-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE8706">
+    <Status database="GEO">
+      <Submission-Date>2007-08-06</Submission-Date>
+      <Release-Date>2008-02-22</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>E. coli BW25113 yncC vs wt biofilm cells in LB 15h 37C and  MG1655 yncC vs wt colony cells in LB plates 15h 37C</Title>
+    <Accession database="GEO">GSE8706</Accession>
+    <Pubmed-ID>18309357</Pubmed-ID>
+    <Summary>
+E. coli K-12 BW25113 mutant strain yncC expression in biofilm cells relative to E. coli wild-type strain expression in biofilm cells. All samples were cultured in LB with glasswool at 37C for 15 hours and E. coli K-12 MG1655 mutant yncC colony cells vs wild type colony cells in LB plates 15h 37C.
+
+Quorum-sensing signal autoinducer 2 (AI-2) stimulates Escherichia coli biofilm formation through the motility regulator MqsR that induces expression of the putative transcription factor encoded by yncC. Here we show YncC increases biofilm formation by decreasing mucoidy (corroborated by decreased exopolysaccharide production and increased sensitivity to bacteriophage P1 infection).  Differential gene expression and gel shift assays demonstrated that YncC is a repressor of the predicted periplasmic protein-encoding gene ybiM which was corroborated by the isogenic yncC ybiM double mutation which repressed the yncC phenotypes (biofilm formation, mucoidy, and bacteriophage resistance). Through nickel-enrichment microarrays and additional gel shift assays, we found that the putative transcription factor B3023 (directly upstream of mqsR) binds the yncC promoter.  Overexpressing MqsR, AI-2 import regulators LsrR/LsrK, and AI-2 exporter TqsA induced yncC transcription whereas the AI-2 synthase LuxS and B3023 repressed yncC.  MqsR has a toxic effect on E. coli bacterial growth which is partially reduced by the b3023 mutation. Therefore, AI-2 quorum-sensing control of biofilm formation is mediated through regulator MqsR that induces expression of the transcription factor YncC which serves to inhibit the expression of periplasmic YbiM; this inhibition of YbiM prevents it from overexpressing exopolysaccharide (causing mucoidy) and prevents YbiM from inhibiting biofilm formation.
+Keywords: biofilm gene expression and colony gene expression
+    </Summary>
+    <Overall-Design>
+Strains: E. coli K-12 BW25113 wild-type, mutant yncC
+and E. coli K-12 MG1655 wild-type, mutant yncC
+Medium: LB
+Biofilm grown on glasswool or colony cells growth in LB plates
+Time: 15 hours
+Temperature: 37C
+Cell type: biofilm or colony
+
+For the biofilm arrays in BW25113 background:
+
+Overnight cultures (16 h, 2.5 mL) of wild type E. coli BW25113 and BW25113 yncC in LB and LB with kanamycin (50 μg/mL), respectively, were used to inoculate 250 mL LB with 10 g of glass wool (Corning Glass Works, Corning, NY) for forming biofilm.  After incubating at 37°C for 15 h with shaking (250 rpm), biofilm cells were prepared by rinsing and sonicating the glass wool in sterile 0.85% NaCl solution at 0°C as described before.  The total RNA was isolated from biofilm cells as described previously.
+	The E. coli Genechip antisense genome array (P/N 900381, Affymetrix, Santa Clara, CA) containing probes for more than 4200 open reading frames (ORFs) was used to analyze the complete E. coli transcriptome as described previously. Hybridizations were performed for 16 h and the total cell intensity was scaled automatically in the software to an average value of 630. The Gene Expression Technical Manual (Affymetrix) was followed for the procedures of DNA microarrays, and the GeneChip operating software (Affymetrix) was applied to analyze data of DNA microarrays. The data quality was assessed following the manufacturer's guidelines (GeneChip Expression Analysis: Data Analysis Fundamentals; Affymetrix) and also was based on the expected signals of E. coli BW25113 and the yncC mutant genotypes (e.g., signals of the deleted genes, araA and rhaA, were low for both BW25113 and BW25113 yncC, while the signal of yncC was low for the yncC mutant). A gene was identified as differentially-expressed when the P value based on the False Discovery Rate Method was less than 0.05 and the expression ratio was greater than threefold since the standard deviation for the expression ratio for all of genes was 2.
+
+for the colony arrays in MG1655 background:
+
+For the agar biofilm, fresh single colonies of wild-type E. coli MG1655 and MG1655 yncC were re-streaked on LB agar plates, incubated, and about 0.05 g of the colony cultures on LB plate were quickly transferred to 2-mL collection tubes. The total RNA was isolated from these colony cells as described previously. The E. coli GeneChip Genome 2.0 Array (Affymetrix, P/N 900551, Santa Clara, CA) containing 10,208 probe sets for open reading frames, rRNA, tRNA, and intergenic regions for four E. coli strains: MG1655, CFT073, O157:H7-Sakai, and O157:H7-EDL933, was used to analyze the complete E. coli transcriptome. A gene was identified as differentially-expressed when the P value based on the False Discovery Rate Method (Benjamini &amp; Hochberg, 1995) was less than 0.05 and the expression ratio was greater than threefold since the standard deviation for the expression ratio for all of MG1655 genes (except the deleted yncC gene) was 2.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM215705" />
+    <Sample-Ref ref="GSM215706" />
+    <Sample-Ref ref="GSM252012" />
+    <Sample-Ref ref="GSM252013" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE8706/GSE8706_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/101941" />
+  </Series>
+
+</MINiML>

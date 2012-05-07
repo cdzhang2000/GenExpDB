@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jeffrey</First><Middle>L</Middle><Last>Blanchard</Last></Person>
+    <Email>blanchard@microbio.umass.edu</Email>
+    <Phone>413-577-2130</Phone>
+    <Fax>413-545-1578</Fax>
+    <Department>Microbiology</Department>
+    <Organization>University of Massachusetts Amherst</Organization>
+    <Address>
+      <Line>203 Morrill Science Center IVN</Line>
+      <City>Amherst</City>
+      <State>MA</State>
+      <Zip-Code>01003</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.bio.umass.edu/micro/faculty/blanchard.html</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Wei-Yun</First><Last>Chen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Erin</First><Middle>M</Middle><Last>Conlon</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Pablo</First><Middle>J</Middle><Last>Pomposiello</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM161201">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 with deletion in soxR at t0, rep1</Title>
+    <Accession database="GEO">GSM161201</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 with a precise deletion in soxR before paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 before paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells before paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161201/GSM161201.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161201-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161202">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 with deletion in soxR at t2, rep1</Title>
+    <Accession database="GEO">GSM161202</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 with a precise deletion in soxR and 2 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 2 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 2 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161202/GSM161202.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161202-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161203">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 with deletion in soxR at t4, rep1</Title>
+    <Accession database="GEO">GSM161203</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 with a precise deletion in soxR and 4 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 4 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 4 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161203/GSM161203.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161203-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161204">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 with deletion in soxR at t6, rep1</Title>
+    <Accession database="GEO">GSM161204</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 with a precise deletion in soxR and 6 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 6 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 6 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161204/GSM161204.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161204-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161205">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 with deletion in soxR at t8, rep1</Title>
+    <Accession database="GEO">GSM161205</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 with a precise deletion in soxR and 8 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 8 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 8 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161205/GSM161205.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161205-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161206">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 with deletion in soxR at t10, rep1</Title>
+    <Accession database="GEO">GSM161206</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 with a precise deletion in soxR and 10 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 10 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 10 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161206/GSM161206.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161206-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161207">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t0, rep1</Title>
+    <Accession database="GEO">GSM161207</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 before paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 before paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells before paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161207/GSM161207.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161207-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161208">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t2, rep1</Title>
+    <Accession database="GEO">GSM161208</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 2 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 2 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 2 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161208/GSM161208.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161208-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161209">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t4, rep1</Title>
+    <Accession database="GEO">GSM161209</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 4 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 4 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 4 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161209/GSM161209.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161209-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161210">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t6, rep1</Title>
+    <Accession database="GEO">GSM161210</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 6 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 6 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 6 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161210/GSM161210.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161210-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161211">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t8, rep1</Title>
+    <Accession database="GEO">GSM161211</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 8 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 8 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells before paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161211/GSM161211.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161211-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161212">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t10, rep1</Title>
+    <Accession database="GEO">GSM161212</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 10 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 10 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 8 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161212/GSM161212.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161212-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161213">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t0, rep2</Title>
+    <Accession database="GEO">GSM161213</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 before paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 before paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells before paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161213/GSM161213.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161213-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161214">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t2, rep2</Title>
+    <Accession database="GEO">GSM161214</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 2 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 2 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 2 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161214/GSM161214.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161214-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161215">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t4, rep2</Title>
+    <Accession database="GEO">GSM161215</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 4 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 4 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 4 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161215/GSM161215.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161215-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161216">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t6, rep2</Title>
+    <Accession database="GEO">GSM161216</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 6 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 6 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 6 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161216/GSM161216.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161216-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161217">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t8, rep2</Title>
+    <Accession database="GEO">GSM161217</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 8 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 8 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 8 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161217/GSM161217.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161217-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM161218">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2007-02-09</Last-Update-Date>
+    </Status>
+    <Title>M1655 wild type at t10, rep2</Title>
+    <Accession database="GEO">GSM161218</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655 10 minutes paraquat treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655 10 minutes paraquat treatment
+      </Characteristics>
+      <Treatment-Protocol>
+Paraquat was added to growing cultures at a final concentration of 250 ?M. Samples (1.4ml) were taken every 2 minutes following paraquat treatment for the length of the time course, and flash-frozen by immersion of the tubes in liquid nitrogen.  The cells were collected by centrifugation for 1 minute at 13,000 rpm,
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Overnight cultures were inoculated 1:100 into 20ml of EZ Rich Defined Medium (Neidhardt et al., 1974) in 125 ml Erlenmeyer flasks and grown at 37oC and 250 rpm in a reciprocating water bath.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Qiagen RNeasy Mini Kit and treated with DNase I
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The total RNA from each sample was used as template to synthesize labeled cDNAs using Affymetrix GeneChip DNA Labeling Reagent Kits.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cDNA samples were hybridized with Affymetrix GeneChip E. coli genome 2.0 Arrays according to Affymetrix guidelines
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with a GeneChip Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data from growing Escherichia coli cells 10 minutes paraquat treatment
+    </Description>
+    <Data-Processing>
+The data were analyzed using Robust Multi-Array average as implemented in Bioconductor
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM161nnn/GSM161218/GSM161218.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA calculated signal intensity these values are log2</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM161218-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE6992">
+    <Status database="GEO">
+      <Submission-Date>2007-02-08</Submission-Date>
+      <Release-Date>2007-02-10</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Expression data from a paraquat time course experiment in wild type and SoxR deficient strains</Title>
+    <Accession database="GEO">GSE6992</Accession>
+    <Pubmed-ID>18000553</Pubmed-ID>
+    <Summary>
+SoxR and SoxS constitute an intracellular signal response system that rapidly detects changes in superoxide levels and modulates gene expression in E. coli.
+A time series microarray design was used to identify co-regulated SoxRS dependent and independent genes affected by superoxide
+Keywords: time course
+    </Summary>
+    <Overall-Design>
+To determine the immediate transcriptional response of E. coli to superoxide, we conducted a time series assay of mRNA levels immediately following the addition of paraquat.  The wild type strain MG1655 and a strain with a precise deletion in soxR was grown in EZ Rich Defined Medium, a modification of Neidhardt’s defined rich medium.  When cultures reached an OD600=0.5, 250µM paraquat (PQ) was added, a concentration that triggers the SoxRS transcriptional cascade, but only has a small effect on exponential growth rate in rich media. Samples were taken immediately before exposure to PQ, and every 2 minutes after exposure, for 10 minutes.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM161201" />
+    <Sample-Ref ref="GSM161202" />
+    <Sample-Ref ref="GSM161203" />
+    <Sample-Ref ref="GSM161204" />
+    <Sample-Ref ref="GSM161205" />
+    <Sample-Ref ref="GSM161206" />
+    <Sample-Ref ref="GSM161207" />
+    <Sample-Ref ref="GSM161208" />
+    <Sample-Ref ref="GSM161209" />
+    <Sample-Ref ref="GSM161210" />
+    <Sample-Ref ref="GSM161211" />
+    <Sample-Ref ref="GSM161212" />
+    <Sample-Ref ref="GSM161213" />
+    <Sample-Ref ref="GSM161214" />
+    <Sample-Ref ref="GSM161215" />
+    <Sample-Ref ref="GSM161216" />
+    <Sample-Ref ref="GSM161217" />
+    <Sample-Ref ref="GSM161218" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE6992/GSE6992_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/99267" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,2210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Tyrrell</First><Last>Conway</Last></Person>
+    <Email>tconway@ou.edu</Email>
+    <Department>Advanced Center for Genome Technology</Department>
+    <Organization>University of Oklahoma</Organization>
+    <Address>
+      <Line>101 David L. Boren Blvd.</Line>
+      <City>Norman</City>
+      <State>OK</State>
+      <Zip-Code>73019</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Matthew</First><Last>Traxler</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Joe</First><Last>Grissom</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Platform iid="GPL6702">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2008-09-16</Last-Update-Date>
+    </Status>
+    <Title>Affymetrix Custom Array - enterocha520147F</Title>
+    <Accession database="GEO">GPL6702</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1392">Bacillus anthracis</Organism>
+    <Organism taxid="99287">Salmonella enterica subsp. enterica serovar Typhimurium str. LT2</Organism>
+    <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+    <Organism taxid="199310">Escherichia coli CFT073</Organism>
+    <Organism taxid="226185">Enterococcus faecalis V583</Organism>
+    <Organism taxid="226186">Bacteroides thetaiotaomicron VPI-5482</Organism>
+    <Organism taxid="386585">Escherichia coli O157:H7 str. Sakai</Organism>
+    <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+    <Manufacturer>Affymetrix custom for Conway lab</Manufacturer>
+    <Manufacture-Protocol>
+Array with 511706 features, in 1 zones, with 24826 biosequences representing 254179 reporters and 24826 composite sequences, with surface type unknown
+    </Manufacture-Protocol>
+    <Description>
+This array is designed for use with the 7 listed genomes.  Associated with each Series is a supplementary filter file that was used for data analysis.  The filter file contains only the probeset ID's for the associated Samples.
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CDF">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL6702/GPL6702_enterocha520147F.CDF.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>CDF_ID</Name>
+        <Description>Corresponds to ID in GPL6702_enterocha520147F.CDF.gz</Description>
+      </Column>
+      <Column position="3">
+        <Name>MG1655_ORF</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="4">
+        <Name>MG1655_GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="5">
+        <Name>IG_GENE</Name>
+        <Description>MG1655 intergenic region</Description>
+      </Column>
+      <Column position="6">
+        <Name>EDL933_ORF</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="7">
+        <Name>EDL933_GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="8">
+        <Name>O157_ORF</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="9">
+        <Name>O157_GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="10">
+        <Name>CFT073_ORF</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="11">
+        <Name>CFT073_GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="12">
+        <Name>LT2_ORF</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="13">
+        <Name>LT2_GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="14">
+        <Name>V583_ORF</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="15">
+        <Name>V583_GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="16">
+        <Name>VPI_ORF</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="17">
+        <Name>VPI_GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="18">
+        <Name>pLT2_ORF</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="19">
+        <Name>pLT2_GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="20">
+        <Name>pO157_ORF</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="21">
+        <Name>pO157_GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="22">
+        <Name>ORF</Name>
+        <Description>ORF Name </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="23">
+        <Name>ORGANISM</Name>
+      </Column>
+      <Column position="24">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="24826">
+GPL6702-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM280103">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli WT +ile rep2</Title>
+    <Accession database="GEO">GSM280103</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, replete isoleucine, control</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977).  Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. For wildtype, ile replete control, total RNA was extracted in log phase (OD600 of ~0.4).  For ile starved wt and mutants, total RNA was extracted from cells ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM280nnn/GSM280103/GSM280103.cel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Values are log2 intensities normalized by RMA.</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM280103-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM280104">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli WT +ile rep1</Title>
+    <Accession database="GEO">GSM280104</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, replete isoleucine, control</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977).  Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. For wildtype, ile replete control, total RNA was extracted in log phase (OD600 of ~0.4).  For ile starved wt and mutants, total RNA was extracted from cells ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM280nnn/GSM280104/GSM280104.cel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Values are log2 intensities normalized by RMA.</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM280104-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM280105">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli relAspoT -ile rep1</Title>
+    <Accession database="GEO">GSM280105</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli relA spoT, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+relA
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977).  Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. For wildtype, ile replete control, total RNA was extracted in log phase (OD600 of ~0.4).  For ile starved wt and mutants, total RNA was extracted from cells ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM280nnn/GSM280105/GSM280105.cel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Values are log2 intensities normalized by RMA.</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM280105-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM280106">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli relAspoT -ile rep2</Title>
+    <Accession database="GEO">GSM280106</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli relA spoT, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+relA
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977).  Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. For wildtype, ile replete control, total RNA was extracted in log phase (OD600 of ~0.4).  For ile starved wt and mutants, total RNA was extracted from cells ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM280nnn/GSM280106/GSM280106.cel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Values are log2 intensities normalized by RMA.</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM280106-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM280107">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli relA -ile rep1</Title>
+    <Accession database="GEO">GSM280107</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli relA, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+relA spoT
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977).  Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. For wildtype, ile replete control, total RNA was extracted in log phase (OD600 of ~0.4).  For ile starved wt and mutants, total RNA was extracted from cells ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM280nnn/GSM280107/GSM280107.cel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Values are log2 intensities normalized by RMA.</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM280107-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM280108">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli relA -ile rep2</Title>
+    <Accession database="GEO">GSM280108</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli relA, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+relA spoT
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977).  Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. For wildtype, ile replete control, total RNA was extracted in log phase (OD600 of ~0.4).  For ile starved wt and mutants, total RNA was extracted from cells ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM280nnn/GSM280108/GSM280108.cel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Values are log2 intensities normalized by RMA.</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM280108-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM280109">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli WT -ile rep1</Title>
+    <Accession database="GEO">GSM280109</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977).  Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. For wildtype, ile replete control, total RNA was extracted in log phase (OD600 of ~0.4).  For ile starved wt and mutants, total RNA was extracted from cells ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM280nnn/GSM280109/GSM280109.cel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Values are log2 intensities normalized by RMA.</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM280109-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM280110">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli WT -ile rep2</Title>
+    <Accession database="GEO">GSM280110</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977).  Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. For wildtype, ile replete control, total RNA was extracted in log phase (OD600 of ~0.4).  For ile starved wt and mutants, total RNA was extracted from cells ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM280nnn/GSM280110/GSM280110.cel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Values are log2 intensities normalized by RMA.</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM280110-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585497">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli crp -ile rep1</Title>
+    <Accession database="GEO">GSM585497</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli crp, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+crp
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585497/GSM585497.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM585497-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585498">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli crp -ile rep2</Title>
+    <Accession database="GEO">GSM585498</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli crp, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+crp
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585498/GSM585498.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM585498-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585499">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli dksA -ile rep1</Title>
+    <Accession database="GEO">GSM585499</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dksA, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+dksA
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585499/GSM585499.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM585499-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585500">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli dksA -ile rep2</Title>
+    <Accession database="GEO">GSM585500</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dksA, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+dksA
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585500/GSM585500.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM585500-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585501">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli lrp -ile rep1</Title>
+    <Accession database="GEO">GSM585501</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli lrp, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+lrp
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585501/GSM585501.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM585501-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585502">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli lrp -ile rep2</Title>
+    <Accession database="GEO">GSM585502</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli lrp, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+lrp
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585502/GSM585502.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM585502-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585503">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli rpoS -ile rep1</Title>
+    <Accession database="GEO">GSM585503</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli rpoS, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+rpoS
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585503/GSM585503.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM585503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585504">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>Ecoli rpoS -ile rep2</Title>
+    <Accession database="GEO">GSM585504</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli rpoS, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+rpoS
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6702" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585504/GSM585504.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5610">
+GSM585504-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585505">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>WT_+ile_rep1</Title>
+    <Accession database="GEO">GSM585505</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, replete isoleucine, control</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585505/GSM585505.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585505-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585506">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>WT_+ile_rep2</Title>
+    <Accession database="GEO">GSM585506</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, replete isoleucine, control</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585506/GSM585506.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585506-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585507">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp1</Title>
+    <Accession database="GEO">GSM585507</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+340 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585507/GSM585507.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585507-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585508">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp2</Title>
+    <Accession database="GEO">GSM585508</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+370 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585508/GSM585508.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585508-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585509">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp3</Title>
+    <Accession database="GEO">GSM585509</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+380 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585509/GSM585509.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585509-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585510">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp4</Title>
+    <Accession database="GEO">GSM585510</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+390 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585510/GSM585510.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585510-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585511">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp5</Title>
+    <Accession database="GEO">GSM585511</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+395 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585511/GSM585511.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585511-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585512">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp6</Title>
+    <Accession database="GEO">GSM585512</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+400 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585512/GSM585512.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585512-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585513">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp7</Title>
+    <Accession database="GEO">GSM585513</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+410 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585513/GSM585513.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585513-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585514">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp8</Title>
+    <Accession database="GEO">GSM585514</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+420 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585514/GSM585514.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585514-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585515">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp9</Title>
+    <Accession database="GEO">GSM585515</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+430 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585515/GSM585515.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585515-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585516">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp10</Title>
+    <Accession database="GEO">GSM585516</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+445 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585516/GSM585516.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585516-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585517">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp11</Title>
+    <Accession database="GEO">GSM585517</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+460 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585517/GSM585517.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585517-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM585518">
+    <Status database="GEO">
+      <Submission-Date>2010-08-19</Submission-Date>
+      <Release-Date>2010-08-20</Release-Date>
+      <Last-Update-Date>2010-08-19</Last-Update-Date>
+    </Status>
+    <Title>wt_-ile_tp12</Title>
+    <Accession database="GEO">GSM585518</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wild-type, isoleucine starved</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+wild-type
+      </Characteristics>
+      <Characteristics tag="time point (post-inoculation)">
+493 min
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were allowed to starve for isoleucine in medium containing 60 uM ile.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cultures were grown in a fermentor with constant O2 saturation and pH was maintained at 7.4. Growth medium was MOPS+glucose+20 AAs (as described by Wanner 1977). Replete isoleucine was 400 um; isoleucine starvation was with 60 uM. The control was wildtype grown with replete ile from which total RNA was extracted in log phase (OD600 of ~0.4). For ile starved wt and mutants, total RNA was extracted ~40 min after growth arrest.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Qiagen RNeasy kit extraction with optional DNase step
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA converted to cDNA by random-hexamer primed first strand synthesis with Superscript II and biotinylated with Roche Enzo kit according to Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was at 60 degrees C for 16 h according to Affymetrix protocol ProkGE_WS2v2-450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GCOS scanner software and GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Data-Processing>
+RMA with quartile normalization according to method of Irizarry et al, 2003. The raw .cel files were processed in RMA using Bioconductor R package: affy Version:1.8.1 Date:2005-09-03, with the option Filter.genes corresponding to the MG1655 subset of probesets from the arrays, as reflected in the sample files. Replicates were averaged for ratio calculations. Ratio calculations are provided in the supplementary files on the Series record. For GPL3154, the probeset filter file was created by parsing Affymetrix  E_coli_2.na29.annot.csv  file (create_date=2009-06-30 PDT 20:45:08): 1. Selected all MG1655 locustags from Transcript ID(Array Design) (4070 locustags). 2. Selected all  IG intergenic regions from Transcript ID(Array Design) (1297 Igs). 3. Manually selected based on NC_000913 alignment value (250 locustags).
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM585nnn/GSM585518/GSM585518.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA normalized log2 intensity</Description>
+      </Column>
+    <External-Data rows="5617">
+GSM585518-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE11087">
+    <Status database="GEO">
+      <Submission-Date>2008-04-07</Submission-Date>
+      <Release-Date>2008-04-08</Release-Date>
+      <Last-Update-Date>2012-03-19</Last-Update-Date>
+    </Status>
+    <Title>E. coli Isoleucine starvation and stringent response network</Title>
+    <Accession database="GEO">GSE11087</Accession>
+    <Pubmed-ID>18430135</Pubmed-ID>
+    <Pubmed-ID>21299642</Pubmed-ID>
+    <Summary>
+Transcription profiling of wild type, relA-, and relA-spoT-, crp-, dksA-, rpoS-, lrp- mutant strains of E. coli starved for isoleucine
+Bacteria comprehensively reorganize their global gene expression when faced with nutrient exhaustion.  In Escherichia coli and other free-living bacteria, the alarmone ppGpp facilitates this massive response by directly or indirectly coordinating the down-regulation of genes of the translation apparatus, and the induction of biosynthetic genes and the general stress response.  Such a large reorientation likely requires the cooperative activities of many different genetic regulators, yet the structure of the transcription network below the level of ppGpp remains poorly defined.  Using isoleucine starvation as an experimental model system for amino acid starvation, we identified genes that required ppGpp, Lrp, and RpoS for their induction.  Surprisingly, despite the fact that the overwhelming majority of genes controlled by Lrp and RpoS required ppGpp for their activation, we found that these two regulons were not induced simultaneously.  The data reported here suggest that metabolic genes, such as those of the Lrp regulon, require only a low basal level of ppGpp for their efficient induction.  In contrast, the RpoS-dependent general stress response is not robustly induced until relatively high levels of ppGpp accumulate.  Here we describe a data-driven conceptual model that explains how bacterial cells allocate transcriptional resources between metabolic and stress survival processes by discretely tuning regulatory activities to a central indicator of cellular physiology.  The regulatory structure that emerges is consistent with a rheostatic model of the stringent response that allows cells to efficiently adapt to a wide range of nutritional environments.
+Keywords: genetic modification design; stress response; isoleucine starvation
+    </Summary>
+    <Overall-Design>
+Two experiments were run.
+First experiment: WT and several mutant strains were starved for isoleucine (exhaustion of 60 uM ile). 40 minutes after starvation, RNA was extracted. All samples were compared to RNA from rapidly growing WT cells in identical medium replete with isoleucine (400 uM).  16 samples were hybridized: duplicates of 8 strains/conditions.  Wildtype in log phase (OD = 0.4) with replete ile was control for ile starved samples.
+Second experiment: WT strain was starved for isoleucine (exhaustion of 60 uM ile).  RNA was extracted at 12 timepoints as the cells entered stationary phase. All samples were compared to RNA from rapidly growing WT cells in identical medium replete with isoleucine (400 uM).  14 samples were hybridized: duplicates of the control condition and single  timepoints during starvation.  Wildtype in log phase (OD = 0.4) with replete ile was control for ile starved samples.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib1" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM280103" />
+    <Sample-Ref ref="GSM280104" />
+    <Sample-Ref ref="GSM280105" />
+    <Sample-Ref ref="GSM280106" />
+    <Sample-Ref ref="GSM280107" />
+    <Sample-Ref ref="GSM280108" />
+    <Sample-Ref ref="GSM280109" />
+    <Sample-Ref ref="GSM280110" />
+    <Sample-Ref ref="GSM585497" />
+    <Sample-Ref ref="GSM585498" />
+    <Sample-Ref ref="GSM585499" />
+    <Sample-Ref ref="GSM585500" />
+    <Sample-Ref ref="GSM585501" />
+    <Sample-Ref ref="GSM585502" />
+    <Sample-Ref ref="GSM585503" />
+    <Sample-Ref ref="GSM585504" />
+    <Sample-Ref ref="GSM585505" />
+    <Sample-Ref ref="GSM585506" />
+    <Sample-Ref ref="GSM585507" />
+    <Sample-Ref ref="GSM585508" />
+    <Sample-Ref ref="GSM585509" />
+    <Sample-Ref ref="GSM585510" />
+    <Sample-Ref ref="GSM585511" />
+    <Sample-Ref ref="GSM585512" />
+    <Sample-Ref ref="GSM585513" />
+    <Sample-Ref ref="GSM585514" />
+    <Sample-Ref ref="GSM585515" />
+    <Sample-Ref ref="GSM585516" />
+    <Sample-Ref ref="GSM585517" />
+    <Sample-Ref ref="GSM585518" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE11087/GSE11087_Matrix_GPL3154.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE11087/GSE11087_Matrix_GPL6702.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE11087/GSE11087_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/107079" />
+    <Data-Table>
+        <Title>Log ratios</Title>
+      <Column position="1">
+        <Name>GENE</Name>
+        <Description>Gene name</Description>
+      </Column>
+      <Column position="2">
+        <Name>LOCUS_TAG</Name>
+        <Description>locus tag</Description>
+      </Column>
+      <Column position="3">
+        <Name>PROBESETS</Name>
+        <Description>Affymetrix probeset name in array description file</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT</Name>
+        <Description>log2 ratio of averaged replicates of WT_ILE*/E-COLI*</Description>
+      </Column>
+      <Column position="5">
+        <Name>relA</Name>
+        <Description>log2 ratio of averaged replicates of RELA_*_ILE/E-COLI*</Description>
+      </Column>
+      <Column position="6">
+        <Name>relAspoT</Name>
+        <Description>log2 ratio of averaged replicates of RELASPOT_*_ILE/E-COLI*</Description>
+      </Column>
+    <External-Data rows="5610">
+GSE11087-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Series>
+
+</MINiML>

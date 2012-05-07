@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Robert</First><Last>Dahl</Last></Person>
+    <Email>robdahl@berkeley.edu</Email>
+    <Laboratory>Keasling</Laboratory>
+    <Department>Chemical Engineering</Department>
+    <Organization>University of California-Berkeley</Organization>
+    <Address>
+      <Line>5885 Hollis St, JBEI</Line>
+      <City>Emeryville</City>
+      <State>CA</State>
+      <Zip-Code>94608</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Becky</First><Middle>J</Middle><Last>Rutherford</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Robert</First><Middle>H</Middle><Last>Dahl II</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Richard</First><Last>Price</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Peter</First><Middle>I</Middle><Last>Benke</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Aindrila</First><Last>Mukhopadhyay</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Jay</First><Middle>D</Middle><Last>Keasling</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL8811">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-10-01</Release-Date>
+      <Last-Update-Date>2009-10-01</Last-Update-Date>
+    </Status>
+    <Title>Keasling Lab_In-house spotted 70-mer oligo_E. coli array</Title>
+    <Accession database="GEO">GPL8811</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Keasling Lab, Berkeley, CA</Manufacturer>
+    <Manufacture-Protocol>
+1.  70-mer oligos (Operon - v.1.0.2) representing each ORF of E. coli were arrayed in 384 well plates, total of 600 pmol in each well.
+2.  Oligos were suspended in water to 40 uM, and 5 uL were transferred to a new 384 well plate.
+3.  The print plates were dried down in a speedvac and resuspended in 5 uL 3x SSC buffer, the day before printing.
+4.  Plates were sealed until just before use to prevent evaporation.
+5.  Super Amine 2 substrates (Telechem) were arrayed on a robotic spotter (Gene Machines).
+6.  The print run was designed to print each gene on a slide 3 times.
+7.  After printing, the print plates were dried in a speed-vac and stored at -80 C for storage.  For future printing, the plates were re-suspended in water.
+8.  Printed slides were rehydrated over water and UV cross-linked with 150 mJ/cm2.
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>E. coli b number</Description>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>Refseq_PT_ACC</Name>
+        <Description>RefSeq protein accession number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=protein&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>PT_GI</Name>
+        <Description>GI number</Description>
+      </Column>
+      <Column position="5">
+        <Name>Gene Name</Name>
+        <Description>common gene name</Description>
+      </Column>
+      <Column position="6">
+        <Name>SEQUENCE</Name>
+        <Description>the Oligo sequence from Operon</Description>
+      </Column>
+      <Column position="7">
+        <Name>Description</Name>
+        <Description>gene description of function</Description>
+      </Column>
+    <External-Data rows="4289">
+GPL8811-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM424867">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>0min-1</Title>
+    <Accession database="GEO">GSM424867</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>0 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+0 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>0 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424867/GSM424867.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424867-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424868">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>0min-2</Title>
+    <Accession database="GEO">GSM424868</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>0 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+0 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>0 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424868/GSM424868.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424868-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424869">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>0min-3</Title>
+    <Accession database="GEO">GSM424869</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>0 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+0 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>0 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424869/GSM424869.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424869-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424870">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>30min-1</Title>
+    <Accession database="GEO">GSM424870</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>30 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+30 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>30 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424870/GSM424870.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424870-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424871">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>30min-2</Title>
+    <Accession database="GEO">GSM424871</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>30 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+30 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>30 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424871/GSM424871.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424871-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424872">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>30min-3</Title>
+    <Accession database="GEO">GSM424872</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>30 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+30 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>30 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424872/GSM424872.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424872-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424873">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>80min-1</Title>
+    <Accession database="GEO">GSM424873</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>80 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+80 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>80 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424873/GSM424873.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424873-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424874">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>80min-2</Title>
+    <Accession database="GEO">GSM424874</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>80 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+80 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>80 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424874/GSM424874.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424874-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424875">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>80min-3</Title>
+    <Accession database="GEO">GSM424875</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>80 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+80 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>80 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424875/GSM424875.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424875-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424876">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>195min-1</Title>
+    <Accession database="GEO">GSM424876</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>195 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+195 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>195 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424876/GSM424876.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424876-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424877">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>195min-2</Title>
+    <Accession database="GEO">GSM424877</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>195 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+195 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>195 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424877/GSM424877.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424877-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM424878">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2009-09-24</Last-Update-Date>
+    </Status>
+    <Title>195min-3</Title>
+    <Accession database="GEO">GSM424878</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>195 min, 0.8% butanol</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.8% n-butanol was added at time 0
+      </Characteristics>
+      <Characteristics tag="time">
+195 min
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa555</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>195 min, unstressed</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+E. coli DH1
+      </Characteristics>
+      <Growth-Protocol>
+Individual clones of E. coli DH1 were grown in M9 MOPS media in 300 mL media in 1 L baffled flasks
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Biomass was snap frozen in liquid nitrogen and stored at -80 C prior to extraction with Qiagen RNeasy Midi kits.  RNA integrity was verified with a 2100 Bioanalyzer (Agilent).
+      </Extract-Protocol>
+      <Label>Alexa647</Label>
+      <Label-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Kizer, L., et al., 2008.  Application of Functional Genomics to Pathway Optimization for Increased Isoprenoid Production. Appl. Environ. Microbiol. 74: 3229-3241.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned with an Axon 4200 scanner and GenePix Pro 6.0 was used.
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3
+    </Description>
+    <Data-Processing>
+Feature fluorescence intensities [F532 media-B532 and F635media-B635] were extracted using GenePix Pro 6.0.  Local hybridization and intensity-dependent artifacts were removed with Lowess normalization using Standardization and Normalization of Microarray Data (SNOMAD, http://pevsnerlab.kennedykrieger.org/snomadinput.html).  The three replicate spots for each gene were averaged and variance was calculated.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8811" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424878/GSM424878.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (butanol stress/control)</Description>
+      </Column>
+    <External-Data rows="4289">
+GSM424878-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE16973">
+    <Status database="GEO">
+      <Submission-Date>2009-07-07</Submission-Date>
+      <Release-Date>2009-12-31</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Functional Genomic Study of Exogenous n-Butanol Stress in Escherichia coli</Title>
+    <Accession database="GEO">GSE16973</Accession>
+    <Pubmed-ID>20118358</Pubmed-ID>
+    <Summary>
+n-Butanol has been proposed as an alternative biofuel to ethanol, and both Escherichia coli and Saccharomyces cerevisiae have been engineered to produce it.  Unfortunately, n-butanol is more toxic than ethanol to these organisms.  To understand the basis for its toxicity, cell wide studies were conducted at the transcript, protein and metabolite levels to obtain a global view of the n-butanol stress response. Analysis of the data indicate that n-butanol stress has components common to other stress responses and includes perturbation in respiratory functions (nuo, cyo operons), oxidative stress (sodC, katG, yqhD), heat shock and cell envelope stress (rpoE, clpB, htpG, degP, cpxPR), metabolite transport (malE, opp operon) and biosynthesis. Inducible expression of the yqhD gene was found to improve the host’s tolerance to exogenous n-butanol and confirms the role of this gene in coping with butanol stress. To survey for other potential candidates that may serve to improve host tolerance, mutant strains in several candidates which show changes at the transcript and protein levels were examined for sensitivity during butanol exposure. Chassis engineering based on these cues may be required in a high production titer, butanol-producing host.
+    </Summary>
+    <Overall-Design>
+This comparison is between E. coli DH1 cells treated with 0.8% n-butanol and untreated cells at 0, 30, 80, and 195 minutes after addition.  3 biological replicates were grown, total RNA was extracted, labeled, and hybridized on 3 slides for each time point.
+
+http://www.microbesonline.org/cgi-bin/microarray/viewExp.cgi?expId=1266
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM424867" />
+    <Sample-Ref ref="GSM424868" />
+    <Sample-Ref ref="GSM424869" />
+    <Sample-Ref ref="GSM424870" />
+    <Sample-Ref ref="GSM424871" />
+    <Sample-Ref ref="GSM424872" />
+    <Sample-Ref ref="GSM424873" />
+    <Sample-Ref ref="GSM424874" />
+    <Sample-Ref ref="GSM424875" />
+    <Sample-Ref ref="GSM424876" />
+    <Sample-Ref ref="GSM424877" />
+    <Sample-Ref ref="GSM424878" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE16973/GSE16973_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/117267" />
+  </Series>
+
+</MINiML>

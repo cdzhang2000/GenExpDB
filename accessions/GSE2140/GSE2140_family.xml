@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Kai</First><Last>Zhao</Last></Person>
+    <Email>zhao@oncology.wis.edu</Email>
+    <Phone>608-263-3375</Phone>
+    <Fax>608-262-2824</Fax>
+    <Laboratory>Richard R. Burgess</Laboratory>
+    <Department>Oncology</Department>
+    <Organization>Mcardle Laboratory for Cancer Research</Organization>
+    <Address>
+      <Line>2100 University Avenue</Line>
+      <City>Madison</City>
+      <State>WI</State>
+      <Zip-Code>53705</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://mcardle.oncology.wisc.edu/burgess</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Mingzhu</First><Last>Liu</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Richard</First><Middle>R</Middle><Last>Burgess</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL199">
+    <Status database="GEO">
+      <Submission-Date>2002-07-01</Submission-Date>
+      <Release-Date>2002-07-18</Release-Date>
+      <Last-Update-Date>2010-07-08</Last-Update-Date>
+    </Status>
+    <Title>[Ecoli_ASv2] Affymetrix E. coli Antisense Genome Array</Title>
+    <Accession database="GEO">GPL199</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+Has 7312 entries and was indexed 20-May-2002.
+The GeneChip E. coli Antisense Genome Array can be used for examining expression of all known E. coli genes and discovering novel, uncharacterized intergenic transcripts. The array contains probe sets to detect the antisense strand of more than 4,200 known open reading frames. In addition, over 1,350 intergenic sequences can be interrogated in both directions permitting functional characterization of potentially important shorter expressed sequences.
+Sequence information for probes on the array correspond to the M49 version of the E. coli Genome Project database at the University of Wisconsin.
+
+
+Keywords = high density oligonucleotide array
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoliantisense</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Relation type="Alternative to" target="GPL10659" comment="Alternative CDF" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=ECOLI_ANTISENSE&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli K12[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="4">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="5">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="12">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="13">
+        <Name>RefSeq Transcript ID</Name>
+        <Description>References to multiple sequences in RefSeq. The field contains the ID and Description for each entry, and there can be multiple entries per ProbeSet.</Description>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="7312">
+GPL199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM38696">
+    <Status database="GEO">
+      <Submission-Date>2005-01-10</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2006-09-08</Last-Update-Date>
+    </Status>
+    <Title>control</Title>
+    <Accession database="GEO">GSM38696</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cell</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+This study examined the genes under the control of sigma32 in E. coli by moderate induction of a plasmid-borne rpoH gene under defined steady-state growth condition. Samples were taken from culture at mid log phase (OD=0.2) before or 5 minutes, 10 minutes or 15 minutes after induction. Samples were then RNA-stabilized using Qiagen RNAProtect Bacterial Reagent (Qiagen). Total RNA was then isolated using MasterPure kits (Epicentre Technologies). Purified RNA was reverse-transcribed to cDNA, labeled and hybridized to Affymetrix GeneChip E. coli Antisense Genome Arrays as recommended in the technical manual (www.affymetrix.com). Meanwhile, we measured the protein level of sigma32 during the time course. The changes of some sigma32?dependent genes were also determined in a DnaK null mutant to examine the anti-sigma function of the gene.
+This sample is taken from pre-induction culture to serve as control (0 munites induction).
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>'signal' a measure of the abundance of a transcript</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM38696-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM38697">
+    <Status database="GEO">
+      <Submission-Date>2005-01-10</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2006-09-08</Last-Update-Date>
+    </Status>
+    <Title>5min</Title>
+    <Accession database="GEO">GSM38697</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cell</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+This study examined the genes under the control of sigma32 in E. coli by moderate induction of a plasmid-borne rpoH gene under defined steady-state growth condition. Samples were taken from culture at mid log phase (OD=0.2) before or 5 minutes, 10 minutes or 15 minutes after induction. Samples were then RNA-stabilized using Qiagen RNAProtect Bacterial Reagent (Qiagen). Total RNA was then isolated using MasterPure kits (Epicentre Technologies). Purified RNA was reverse-transcribed to cDNA, labeled and hybridized to Affymetrix GeneChip E. coli Antisense Genome Arrays as recommended in the technical manual (www.affymetrix.com). Meanwhile, we measured the protein level of sigma32 during the time course. The changes of some sigma32?dependent genes were also determined in a DnaK null mutant to examine the anti-sigma function of the gene.
+This sample is taken from culture subject to 5 minutes induction by anhydrotetracycline.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>'signal' a measure of the abundance of a transcript</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM38697-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM38698">
+    <Status database="GEO">
+      <Submission-Date>2005-01-10</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2006-09-08</Last-Update-Date>
+    </Status>
+    <Title>10min</Title>
+    <Accession database="GEO">GSM38698</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cell</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+This study examined the genes under the control of sigma32 in E. coli by moderate induction of a plasmid-borne rpoH gene under defined steady-state growth condition. Samples were taken from culture at mid log phase (OD=0.2) before or 5 minutes, 10 minutes or 15 minutes after induction. Samples were then RNA-stabilized using Qiagen RNAProtect Bacterial Reagent (Qiagen). Total RNA was then isolated using MasterPure kits (Epicentre Technologies). Purified RNA was reverse-transcribed to cDNA, labeled and hybridized to Affymetrix GeneChip E. coli Antisense Genome Arrays as recommended in the technical manual (www.affymetrix.com). Meanwhile, we measured the protein level of sigma32 during the time course. The changes of some sigma32?dependent genes were also determined in a DnaK null mutant to examine the anti-sigma function of the gene.
+This sample is taken from culture subject to 10 minutes induction by anhydrotetracycline.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>'signal' a measure of the abundance of a transcript</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM38698-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM38699">
+    <Status database="GEO">
+      <Submission-Date>2005-01-10</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2006-09-08</Last-Update-Date>
+    </Status>
+    <Title>15min</Title>
+    <Accession database="GEO">GSM38699</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cell</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+This study examined the genes under the control of sigma32 in E. coli by moderate induction of a plasmid-borne rpoH gene under defined steady-state growth condition. Samples were taken from culture at mid log phase (OD=0.2) before or 5 minutes, 10 minutes or 15 minutes after induction. Samples were then RNA-stabilized using Qiagen RNAProtect Bacterial Reagent (Qiagen). Total RNA was then isolated using MasterPure kits (Epicentre Technologies). Purified RNA was reverse-transcribed to cDNA, labeled and hybridized to Affymetrix GeneChip E. coli Antisense Genome Arrays as recommended in the technical manual (www.affymetrix.com). Meanwhile, we measured the protein level of sigma32 during the time course. The changes of some sigma32?dependent genes were also determined in a DnaK null mutant to examine the anti-sigma function of the gene.
+This sample is taken from culture subject to 15 minutes induction by anhydrotetracycline.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>'signal' a measure of the abundance of a transcript</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM38699-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM38700">
+    <Status database="GEO">
+      <Submission-Date>2005-01-10</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2006-09-08</Last-Update-Date>
+    </Status>
+    <Title>control (additional)</Title>
+    <Accession database="GEO">GSM38700</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cell</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+This study examined the genes under the control of sigma32 in E. coli by moderate induction of a plasmid-borne rpoH gene under defined steady-state growth condition. Samples were taken from culture at mid log phase (OD=0.2) before or 5 minutes, 10 minutes or 15 minutes after induction. Samples were then RNA-stabilized using Qiagen RNAProtect Bacterial Reagent (Qiagen). Total RNA was then isolated using MasterPure kits (Epicentre Technologies). Purified RNA was reverse-transcribed to cDNA, labeled and hybridized to Affymetrix GeneChip E. coli Antisense Genome Arrays as recommended in the technical manual (www.affymetrix.com). Meanwhile, we measured the protein level of sigma32 during the time course. The changes of some sigma32?dependent genes were also determined in a DnaK null mutant to examine the anti-sigma function of the gene.
+This sample is taken from pre-induction culture to serve as control.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>'signal' a measure of the abundance of a transcript</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM38700-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM38701">
+    <Status database="GEO">
+      <Submission-Date>2005-01-10</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2006-09-08</Last-Update-Date>
+    </Status>
+    <Title>5min (additional)</Title>
+    <Accession database="GEO">GSM38701</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cell</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+This study examined the genes under the control of sigma32 in E. coli by moderate induction of a plasmid-borne rpoH gene under defined steady-state growth condition. Samples were taken from culture at mid log phase (OD=0.2) before or 5 minutes, 10 minutes or 15 minutes after induction. Samples were then RNA-stabilized using Qiagen RNAProtect Bacterial Reagent (Qiagen). Total RNA was then isolated using MasterPure kits (Epicentre Technologies). Purified RNA was reverse-transcribed to cDNA, labeled and hybridized to Affymetrix GeneChip E. coli Antisense Genome Arrays as recommended in the technical manual (www.affymetrix.com). Meanwhile, we measured the protein level of sigma32 during the time course. The changes of some sigma32?dependent genes were also determined in a DnaK null mutant to examine the anti-sigma function of the gene.
+This sample is taken from a seperate culture subject to 5 minutes induction by anhydrotetracycline.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>'signal' a measure of the abundance of a transcript</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM38701-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM38702">
+    <Status database="GEO">
+      <Submission-Date>2005-01-10</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2006-09-08</Last-Update-Date>
+    </Status>
+    <Title>10min (additional)</Title>
+    <Accession database="GEO">GSM38702</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cell</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+This study examined the genes under the control of sigma32 in E. coli by moderate induction of a plasmid-borne rpoH gene under defined steady-state growth condition. Samples were taken from culture at mid log phase (OD=0.2) before or 5 minutes, 10 minutes or 15 minutes after induction. Samples were then RNA-stabilized using Qiagen RNAProtect Bacterial Reagent (Qiagen). Total RNA was then isolated using MasterPure kits (Epicentre Technologies). Purified RNA was reverse-transcribed to cDNA, labeled and hybridized to Affymetrix GeneChip E. coli Antisense Genome Arrays as recommended in the technical manual (www.affymetrix.com). Meanwhile, we measured the protein level of sigma32 during the time course. The changes of some sigma32?dependent genes were also determined in a DnaK null mutant to examine the anti-sigma function of the gene.
+This sample is taken from a seperate culture subject to 10 minutes induction by anhydrotetracycline.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>'signal' a measure of the abundance of a transcript</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM38702-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM38703">
+    <Status database="GEO">
+      <Submission-Date>2005-01-10</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2006-09-08</Last-Update-Date>
+    </Status>
+    <Title>15min (additional)</Title>
+    <Accession database="GEO">GSM38703</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cell</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+none      </Characteristics>
+      <Molecule>total RNA</Molecule>
+    </Channel>
+    <Description>
+This study examined the genes under the control of sigma32 in E. coli by moderate induction of a plasmid-borne rpoH gene under defined steady-state growth condition. Samples were taken from culture at mid log phase (OD=0.2) before or 5 minutes, 10 minutes or 15 minutes after induction. Samples were then RNA-stabilized using Qiagen RNAProtect Bacterial Reagent (Qiagen). Total RNA was then isolated using MasterPure kits (Epicentre Technologies). Purified RNA was reverse-transcribed to cDNA, labeled and hybridized to Affymetrix GeneChip E. coli Antisense Genome Arrays as recommended in the technical manual (www.affymetrix.com). Meanwhile, we measured the protein level of sigma32 during the time course. The changes of some sigma32?dependent genes were also determined in a DnaK null mutant to examine the anti-sigma function of the gene.
+This sample is taken from a seperate culture subject to 15 minutes induction by anhydrotetracycline.
+    </Description>
+    <Data-Processing>
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>'signal' a measure of the abundance of a transcript</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM38703-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE2140">
+    <Status database="GEO">
+      <Submission-Date>2005-01-10</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>sigma32 over-expression in E. coli</Title>
+    <Accession database="GEO">GSE2140</Accession>
+    <Pubmed-ID>15757896</Pubmed-ID>
+    <Summary>
+This study examined the genes under the control of sigma32 in E. coli by moderate induction of a plasmid-borne rpoH gene under defined steady-state growth condition. Samples were taken from culture at mid log phase (OD=0.2) before or 5 minutes, 10 minutes or 15 minutes after induction. Samples were then RNA-stabilized using Qiagen RNAProtect Bacterial Reagent (Qiagen). Total RNA was then isolated using MasterPure kits (Epicentre Technologies). Purified RNA was reverse-transcribed to cDNA, labeled and hybridized to Affymetrix GeneChip E. coli Antisense Genome Arrays as recommended in the technical manual (www.affymetrix.com). Meanwhile, we measured the protein level of sigma32 during the time course. The changes of some sigma32 –dependent genes were also determined in a DnaK null mutant to examine the anti- sigma32 function of DnaK.
+Keywords = sigma factor
+Keywords = regulon
+Keywords = microarray
+Keywords = Western blot
+Keywords = E. coli
+Keywords = anti-sigma factor
+Keywords: time-course
+    </Summary>
+    <Overall-Design>
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM38696" />
+    <Sample-Ref ref="GSM38697" />
+    <Sample-Ref ref="GSM38698" />
+    <Sample-Ref ref="GSM38699" />
+    <Sample-Ref ref="GSM38700" />
+    <Sample-Ref ref="GSM38701" />
+    <Sample-Ref ref="GSM38702" />
+    <Sample-Ref ref="GSM38703" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/91269" />
+  </Series>
+
+</MINiML>

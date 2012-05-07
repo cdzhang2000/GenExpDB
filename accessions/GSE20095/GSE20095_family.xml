@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Herb</First><Middle>E</Middle><Last>Schellhorn</Last></Person>
+    <Email>schell@mcmaster.ca</Email>
+    <Phone>9055259140-27316</Phone>
+    <Laboratory>405</Laboratory>
+    <Department>Biology</Department>
+    <Organization>McMaster University</Organization>
+    <Address>
+      <Line>1280 Main St. W.,</Line>
+      <City>Hamilton</City>
+      <State>ON</State>
+      <Postal-Code>L8S4K1</Postal-Code>
+      <Country>Canada</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Tao</First><Last>Dong</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Rosemary</First><Last>Yu</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM502093">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2010-12-04</Last-Update-Date>
+    </Status>
+    <Title>WT_rep1</Title>
+    <Accession database="GEO">GSM502093</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of MG1655 wild type in M9 at OD600 of 0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in M9 minimal media (0.2% glucose) at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+none
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502093/GSM502093.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502093/GSM502093.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized values</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM502093-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM502094">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2010-12-04</Last-Update-Date>
+    </Status>
+    <Title>WT_rep2</Title>
+    <Accession database="GEO">GSM502094</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of MG1655 wild type in M9 at OD600 of 0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in M9 minimal media (0.2% glucose) at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+none
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502094/GSM502094.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502094/GSM502094.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized values</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM502094-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM502095">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2010-12-04</Last-Update-Date>
+    </Status>
+    <Title>WT_rep3</Title>
+    <Accession database="GEO">GSM502095</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of MG1655 wild type in M9 at OD600 of 0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in M9 minimal media (0.2% glucose) at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+none
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502095/GSM502095.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502095/GSM502095.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized values</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM502095-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM502096">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2010-12-04</Last-Update-Date>
+    </Status>
+    <Title>rpoS_rep1</Title>
+    <Accession database="GEO">GSM502096</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of MG1655 rpoS mutants in M9 at OD600 of 0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in M9 minimal media (0.2% glucose) at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+none
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502096/GSM502096.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502096/GSM502096.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized values</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM502096-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM502097">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2010-12-04</Last-Update-Date>
+    </Status>
+    <Title>rpoS_rep2</Title>
+    <Accession database="GEO">GSM502097</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of MG1655 rpoS mutants in M9 at OD600 of 0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in M9 minimal media (0.2% glucose) at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+none
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502097/GSM502097.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502097/GSM502097.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized values</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM502097-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM502098">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2010-12-04</Last-Update-Date>
+    </Status>
+    <Title>rpoS_rep3</Title>
+    <Accession database="GEO">GSM502098</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of MG1655 rpoS mutants in M9 at OD600 of 0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in M9 minimal media (0.2% glucose) at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+none
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502098/GSM502098.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502098/GSM502098.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized values</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM502098-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM502099">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2010-12-04</Last-Update-Date>
+    </Status>
+    <Title>rpoN_rep1</Title>
+    <Accession database="GEO">GSM502099</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of MG1655 rpoN mutants in M9 at OD600 of 0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in M9 minimal media (0.2% glucose) at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+none
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502099/GSM502099.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502099/GSM502099.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized values</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM502099-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM502100">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2010-12-04</Last-Update-Date>
+    </Status>
+    <Title>rpoN_rep2</Title>
+    <Accession database="GEO">GSM502100</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of MG1655 rpoN mutants in M9 at OD600 of 0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in M9 minimal media (0.2% glucose) at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+none
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502100/GSM502100.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502100/GSM502100.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized values</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM502100-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM502101">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2010-12-04</Last-Update-Date>
+    </Status>
+    <Title>rpoN_rep3</Title>
+    <Accession database="GEO">GSM502101</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Exponential phase culture of MG1655 rpoN mutants in M9 at OD600 of 0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="substrain">
+MG1655
+      </Characteristics>
+      <Growth-Protocol>
+Cultures were grown in M9 minimal media (0.2% glucose) at 37C at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at OD600 = 0.3 in exponential phase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+none
+    </Description>
+    <Data-Processing>
+GCRMA method
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502101/GSM502101.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM502nnn/GSM502101/GSM502101.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized values</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM502101-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE20095">
+    <Status database="GEO">
+      <Submission-Date>2010-01-29</Submission-Date>
+      <Release-Date>2010-12-04</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Antagonistic regulation of motility and other cellular functions by RpoN and RpoS in Escherichia coli</Title>
+    <Accession database="GEO">GSE20095</Accession>
+    <Pubmed-ID>21219458</Pubmed-ID>
+    <Web-Link>http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2958.2010.07449.x/abstract</Web-Link>
+    <Summary>
+Bacteria generally possess multiple σ factors that, based on structural and functional similarity, divide into two families: σD and σN. Among the seven σ factors in Escherichia coli, six belongs to the σD family. Each σ factor recognizes a group of promoters, providing effective control of differential gene expression. Many studies have shown that σ factors of the σD family compete with each other for function. In contrast, the competition between σN and σD families has yet to be fully explored. Here we report a global antagonistic effect on gene expression between two alternative σ factors, σN (RpoN) and σS (RpoS), a σD family protein. Mutations in rpoS and rpoN inversely affected a number of cellular traits, such as expression of flagellar genes, σN-controlled growth on poor nitrogen sources, and σS-directed expression of acid phosphatase AppA. Transcriptome analysis reveals that 40% of genes in the RpoN regulon were under reciprocal RpoS control. Furthermore, loss of RpoN led to increased levels of RpoS, while RpoN levels were unaffected by rpoS mutations. Expression of the flagellar σF factor (FliA), another σD family protein, was controlled positively by RpoN but negatively by RpoS. These findings unveil a complex regulatory interaction among σN, σS and σF, and underscore the need to employ systems biology approaches to assess the effect of such interaction of σ factors on cellular functions, including motility, nutrient utilization, and stress response.
+    </Summary>
+    <Overall-Design>
+Precise deletion mutants of rpoS or rpoN of MG1655 were constructed and employed in this study. Cultures were inoculated in triplicate in M9 minimal media (0.2% glucose) at a starting OD of 0.0001 and grown aerobically at 37C. Cultures were harvested at OD600 = 0.3 in exponential phase. For RNA extraction, cultures were mixed directly with a boiling lysis buffer containing SDS and EDTA followed by acidic hot phenol to minimize RNA degradation. RNA samples were hybridized to Affymetrix E. coli Genome 2.0 Array according to Affymetrix's standard protocols.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib1" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM502093" />
+    <Sample-Ref ref="GSM502094" />
+    <Sample-Ref ref="GSM502095" />
+    <Sample-Ref ref="GSM502096" />
+    <Sample-Ref ref="GSM502097" />
+    <Sample-Ref ref="GSM502098" />
+    <Sample-Ref ref="GSM502099" />
+    <Sample-Ref ref="GSM502100" />
+    <Sample-Ref ref="GSM502101" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE20095/GSE20095_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/124267" />
+  </Series>
+
+</MINiML>

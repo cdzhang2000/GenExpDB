@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Joan</First><Middle>Lyn</Middle><Last>Slonczewski</Last></Person>
+    <Email>slonczewski@kenyon.edu</Email>
+    <Phone>740-427-5397</Phone>
+    <Department>Biology Dept</Department>
+    <Organization>Kenyon College</Organization>
+    <Address>
+      <Line>202 N. College Rd</Line>
+      <City>Gambier</City>
+      <State>OH</State>
+      <Zip-Code>43022</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://biology.kenyon.edu/slonc/slonc.htm</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Geetha</First><Last>Kannan</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Jessica</First><Middle>C</Middle><Last>Wilks</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Sandra</First><Middle>S</Middle><Last>BonDurant</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Brian</First><Middle>D</Middle><Last>Jones</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Joan</First><Middle>L</Middle><Last>Slonczewski</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL199">
+    <Status database="GEO">
+      <Submission-Date>2002-07-01</Submission-Date>
+      <Release-Date>2002-07-18</Release-Date>
+      <Last-Update-Date>2010-07-08</Last-Update-Date>
+    </Status>
+    <Title>[Ecoli_ASv2] Affymetrix E. coli Antisense Genome Array</Title>
+    <Accession database="GEO">GPL199</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+Has 7312 entries and was indexed 20-May-2002.
+The GeneChip E. coli Antisense Genome Array can be used for examining expression of all known E. coli genes and discovering novel, uncharacterized intergenic transcripts. The array contains probe sets to detect the antisense strand of more than 4,200 known open reading frames. In addition, over 1,350 intergenic sequences can be interrogated in both directions permitting functional characterization of potentially important shorter expressed sequences.
+Sequence information for probes on the array correspond to the M49 version of the E. coli Genome Project database at the University of Wisconsin.
+
+
+Keywords = high density oligonucleotide array
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoliantisense</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Relation type="Alternative to" target="GPL10659" comment="Alternative CDF" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=ECOLI_ANTISENSE&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli K12[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="4">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="5">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="12">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="13">
+        <Name>RefSeq Transcript ID</Name>
+        <Description>References to multiple sequences in RefSeq. The field contains the ID and Description for each entry, and there can be multiple entries per ProbeSet.</Description>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="7312">
+GPL199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM105392">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift time 0 rep 1</Title>
+    <Accession database="GEO">GSM105392</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at  pH 7.6
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105392/GSM105392.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105392-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105393">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift time 0 rep 2</Title>
+    <Accession database="GEO">GSM105393</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at  pH 7.6
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105393/GSM105393.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105393-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105394">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift time 0 rep 3</Title>
+    <Accession database="GEO">GSM105394</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at  pH 7.6
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105394/GSM105394.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105394-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105395">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift time 0 rep 4</Title>
+    <Accession database="GEO">GSM105395</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at  pH 7.6
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105395/GSM105395.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105395-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105396">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift time 0 rep 5</Title>
+    <Accession database="GEO">GSM105396</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at  pH 7.6
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105396/GSM105396.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105396-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105397">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 1 min rep 1</Title>
+    <Accession database="GEO">GSM105397</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 1 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105397/GSM105397.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105397-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105398">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 1 min rep 2</Title>
+    <Accession database="GEO">GSM105398</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 1 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105398/GSM105398.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105398-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105399">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 1 min rep 3</Title>
+    <Accession database="GEO">GSM105399</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 1 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105399/GSM105399.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105399-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105400">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 1 min rep 4</Title>
+    <Accession database="GEO">GSM105400</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 1 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105400/GSM105400.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105400-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105401">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 1 min rep 5</Title>
+    <Accession database="GEO">GSM105401</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 1 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105401/GSM105401.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105401-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105402">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 5 min rep 1</Title>
+    <Accession database="GEO">GSM105402</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 5 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105402/GSM105402.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105402-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105403">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 5 min rep 2</Title>
+    <Accession database="GEO">GSM105403</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 5 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105403/GSM105403.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105403-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105404">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 5 min rep 3</Title>
+    <Accession database="GEO">GSM105404</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 5 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105404/GSM105404.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105404-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105405">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 5 min rep 4</Title>
+    <Accession database="GEO">GSM105405</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 5 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105405/GSM105405.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105405-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105406">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 5 min rep 5</Title>
+    <Accession database="GEO">GSM105406</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 5 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105406/GSM105406.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105406-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105407">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 10 min rep 1</Title>
+    <Accession database="GEO">GSM105407</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 10 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105407/GSM105407.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105407-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105408">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 10 min rep 2</Title>
+    <Accession database="GEO">GSM105408</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 10 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105408/GSM105408.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105408-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105409">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 10 min rep 3</Title>
+    <Accession database="GEO">GSM105409</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 10 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105409/GSM105409.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105409-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105410">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 10 min rep 4</Title>
+    <Accession database="GEO">GSM105410</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 10 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105410/GSM105410.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105410-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM105411">
+    <Status database="GEO">
+      <Submission-Date>2006-04-14</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2008-02-19</Last-Update-Date>
+    </Status>
+    <Title>Acid shift 10 min rep 5</Title>
+    <Accession database="GEO">GSM105411</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli K-12 W3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli K-12 W3110
+      </Characteristics>
+      <Treatment-Protocol>
+Growth at pH 5.5 for 10 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli K-12 strain W3110 was diluted 500- fold in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at pH 7.6.  The cultures were rotated at 225 rpm at 37ºC.  Cultures were grown to an optical density at 600 nm of 0.2.  External pH was lowered to 5.5 with 1 M HCl.  Four samples were taken from each of five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated using 10% saturated phenol-ethanol solution and the RNeasy Kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Labeled cDNA was prepared and hybridized to Affymetrix Antisense E. coli arrays by standard procedures.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix standard procedures
+    </Hybridization-Protocol>
+    <Description>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Description>
+    <Data-Processing>
+Affymetrix GCOS software
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM105nnn/GSM105411/GSM105411.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Affymetrix feature identification number</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Affymetrix measure of the abundance of a transcript</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM105411-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4778">
+    <Status database="GEO">
+      <Submission-Date>2006-05-05</Submission-Date>
+      <Release-Date>2008-02-20</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Acid-Shifted Time Course of Gene Expression Profiles of Aerobically Grown Escherichia coli K-12</Title>
+    <Accession database="GEO">GSE4778</Accession>
+    <Pubmed-ID>18302792</Pubmed-ID>
+    <Summary>
+The effect of an extracellular acid shift on gene expression profiles of Escherichia coli K-12 W3110 was observed using Affymetrix E. coli arrays. In order to maximize aeration and maintain logarithmic growth, the overnight culture (LBK broth medium) was diluted 500-fold into a 250-ml baffled flask containing 55 ml of 20mM HOMOPIPES buffered medium (pH 7.6). Cultures were grown to OD600=0.2. A shift to acid external pH was conducted by rapid addition of 840 µl 1M HCl, which lowered the pH of the medium to pH 5.5. For each of five biological replicates, 10-ml samples were taken at times 0, 1, 5, and 10 min post addition of HCl. Each sample was added to 1 ml 10% phenol-ethanol stop solution in &lt;5 sec. For each sample, cDNA synthesized from total RNA was hybridized onto Affymetrix E. coli arrays. Model-based gene expression intensities were determined using GCOS software. Gene-by-gene temporal differential expression was analyzed as a mixed-effects model using polynomial time functions as fixed effects and flask variation as a random effect. 
+Keywords: Time Course
+    </Summary>
+    <Overall-Design>
+Gene expression profiles of Escherichia coli K-12 W3110 were compared as a function of time versus change in external pH. Overnight cultures were diluted 1:500 in potassium-modified Luria-Bertani medium (LBK) buffered with 20 mM HOMOPIPES at 7.6. Bacteria were cultured in baffled flasks (less than 10% volume) with rotation at 225 rpm, incubated at 37°C to an optical density at 600 nm of 0.2. External pH was lowered to pH 5.5 by adding 840 µl of 1M HCl to 40 mls of culture within 5 seconds. Four samples were taken from each of  five replicate cultures, corresponding to time 0 (before HCl addition),1, 5, and 10 min post HCl addition.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM105392" />
+    <Sample-Ref ref="GSM105393" />
+    <Sample-Ref ref="GSM105394" />
+    <Sample-Ref ref="GSM105395" />
+    <Sample-Ref ref="GSM105396" />
+    <Sample-Ref ref="GSM105397" />
+    <Sample-Ref ref="GSM105398" />
+    <Sample-Ref ref="GSM105399" />
+    <Sample-Ref ref="GSM105400" />
+    <Sample-Ref ref="GSM105401" />
+    <Sample-Ref ref="GSM105402" />
+    <Sample-Ref ref="GSM105403" />
+    <Sample-Ref ref="GSM105404" />
+    <Sample-Ref ref="GSM105405" />
+    <Sample-Ref ref="GSM105406" />
+    <Sample-Ref ref="GSM105407" />
+    <Sample-Ref ref="GSM105408" />
+    <Sample-Ref ref="GSM105409" />
+    <Sample-Ref ref="GSM105410" />
+    <Sample-Ref ref="GSM105411" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE4778/GSE4778_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/95551" />
+  </Series>
+
+</MINiML>

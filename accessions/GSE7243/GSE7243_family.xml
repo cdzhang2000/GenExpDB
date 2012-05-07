@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Yanqin</First><Last>Yang</Last></Person>
+    <Organization>The Johns Hopkins University</Organization>
+    <Address>
+      <Line>600 N. Wolfe Street</Line>
+      <City>Baltimore</City>
+      <State>MD</State>
+      <Zip-Code>21287</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM174666">
+    <Status database="GEO">
+      <Submission-Date>2007-03-12</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2007-03-12</Last-Update-Date>
+    </Status>
+    <Title>WT3110_1</Title>
+    <Accession database="GEO">GSM174666</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>K12 WT 3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+wildtype strain; minimal medium
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+MasterPure RNA purification Kit
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+10 ug total RNA was processed according to the Affymetrix recommended protocol for prokaryotic targets.  cDNA was fragmented and endlabeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented, biotinylated cDNA was hybridized to E. coli Genome 2.0  GeneChips for 16hours at 45oC and 60rpm.  Washing/staining was performed according to Affymetrix recommended Prokaryotic protocol, in a FS450 automated fluidics station.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned in an Affymetrix GCS3000 scanner with autoloader.
+    </Scan-Protocol>
+    <Description>
+E.coli WT3110
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS 1.4 software.  All probe sets scaling was performed with a target signal value of 500.  No normalization was performed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM174nnn/GSM174666/GSM174666.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal intensity was calculated by GCOS 1.4 software.</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM174666-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM174667">
+    <Status database="GEO">
+      <Submission-Date>2007-03-12</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2007-03-12</Last-Update-Date>
+    </Status>
+    <Title>WT3110_2</Title>
+    <Accession database="GEO">GSM174667</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>K12 WT 3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+wildtype strain; minimal medium
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+MasterPure RNA purification Kit
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+10 ug total RNA was processed according to the Affymetrix recommended protocol for prokaryotic targets.  cDNA was fragmented and endlabeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented, biotinylated cDNA was hybridized to E. coli Genome 2.0  GeneChips for 16hours at 45oC and 60rpm.  Washing/staining was performed according to Affymetrix recommended Prokaryotic protocol, in a FS450 automated fluidics station.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned in an Affymetrix GCS3000 scanner with autoloader.
+    </Scan-Protocol>
+    <Description>
+E.coli WT3110
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS 1.4 software.  All probe sets scaling was performed with a target signal value of 500.  No normalization was performed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM174nnn/GSM174667/GSM174667.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal intensity was calculated by GCOS 1.4 software.</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM174667-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM174668">
+    <Status database="GEO">
+      <Submission-Date>2007-03-12</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2007-03-12</Last-Update-Date>
+    </Status>
+    <Title>WT3110_3</Title>
+    <Accession database="GEO">GSM174668</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>K12 WT 3110</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+wildtype strain; minimal medium
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+MasterPure RNA purification Kit
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+10 ug total RNA was processed according to the Affymetrix recommended protocol for prokaryotic targets.  cDNA was fragmented and endlabeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented, biotinylated cDNA was hybridized to E. coli Genome 2.0  GeneChips for 16hours at 45oC and 60rpm.  Washing/staining was performed according to Affymetrix recommended Prokaryotic protocol, in a FS450 automated fluidics station.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned in an Affymetrix GCS3000 scanner with autoloader.
+    </Scan-Protocol>
+    <Description>
+E.coli WT3110
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS 1.4 software.  All probe sets scaling was performed with a target signal value of 500.  No normalization was performed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM174nnn/GSM174668/GSM174668.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal intensity was calculated by GCOS 1.4 software.</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM174668-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM174669">
+    <Status database="GEO">
+      <Submission-Date>2007-03-12</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2007-03-12</Last-Update-Date>
+    </Status>
+    <Title>phoU_1</Title>
+    <Accession database="GEO">GSM174669</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>phoU gene mutant</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+phoU gene mutant; minimal medium
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+MasterPure RNA purification Kit
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+10 ug total RNA was processed according to the Affymetrix recommended protocol for prokaryotic targets.  cDNA was fragmented and endlabeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented, biotinylated cDNA was hybridized to E. coli Genome 2.0  GeneChips for 16hours at 45oC and 60rpm.  Washing/staining was performed according to Affymetrix recommended Prokaryotic protocol, in a FS450 automated fluidics station.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned in an Affymetrix GCS3000 scanner with autoloader.
+    </Scan-Protocol>
+    <Description>
+phoU gene mutant
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS 1.4 software.  All probe sets scaling was performed with a target signal value of 500.  No normalization was performed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM174nnn/GSM174669/GSM174669.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal intensity was calculated by GCOS 1.4 software.</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM174669-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM174670">
+    <Status database="GEO">
+      <Submission-Date>2007-03-12</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2007-03-12</Last-Update-Date>
+    </Status>
+    <Title>phoU_2</Title>
+    <Accession database="GEO">GSM174670</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>phoU gene mutant</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+phoU gene mutant; minimal medium
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+MasterPure RNA purification Kit
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+10 ug total RNA was processed according to the Affymetrix recommended protocol for prokaryotic targets.  cDNA was fragmented and endlabeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented, biotinylated cDNA was hybridized to E. coli Genome 2.0  GeneChips for 16hours at 45oC and 60rpm.  Washing/staining was performed according to Affymetrix recommended Prokaryotic protocol, in a FS450 automated fluidics station.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned in an Affymetrix GCS3000 scanner with autoloader.
+    </Scan-Protocol>
+    <Description>
+phoU gene mutant
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS 1.4 software.  All probe sets scaling was performed with a target signal value of 500.  No normalization was performed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM174nnn/GSM174670/GSM174670.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal intensity was calculated by GCOS 1.4 software.</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM174670-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM174671">
+    <Status database="GEO">
+      <Submission-Date>2007-03-12</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2007-03-12</Last-Update-Date>
+    </Status>
+    <Title>phoU_3</Title>
+    <Accession database="GEO">GSM174671</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>phoU gene mutant</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+phoU gene mutant; minimal medium
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+MasterPure RNA purification Kit
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+10 ug total RNA was processed according to the Affymetrix recommended protocol for prokaryotic targets.  cDNA was fragmented and endlabeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented, biotinylated cDNA was hybridized to E. coli Genome 2.0  GeneChips for 16hours at 45oC and 60rpm.  Washing/staining was performed according to Affymetrix recommended Prokaryotic protocol, in a FS450 automated fluidics station.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned in an Affymetrix GCS3000 scanner with autoloader.
+    </Scan-Protocol>
+    <Description>
+phoU gene mutant
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS 1.4 software.  All probe sets scaling was performed with a target signal value of 500.  No normalization was performed.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM174nnn/GSM174671/GSM174671.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal intensity was calculated by GCOS 1.4 software.</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM174671-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE7243">
+    <Status database="GEO">
+      <Submission-Date>2007-03-12</Submission-Date>
+      <Release-Date>2007-05-01</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Expression data from overnight minimal medium culture</Title>
+    <Accession database="GEO">GSE7243</Accession>
+    <Pubmed-ID>17420206</Pubmed-ID>
+    <Summary>
+Comparison of gene experission profiles of Ecoli WT3110 and phoU mutant
+Keywords: one time point
+    </Summary>
+    <Overall-Design>
+DNA microarray analysis of the PhoU mutant with the wild type strain W3110 as a control. The PhoU mutant and the wild type strain were grown in MOPS minimal medium overnight when the RNA was isolated using MasterPure RNA Purification Kit and reverse transcribed for making probes for array hybridization on Affymetrix microarrays.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM174666" />
+    <Sample-Ref ref="GSM174667" />
+    <Sample-Ref ref="GSM174668" />
+    <Sample-Ref ref="GSM174669" />
+    <Sample-Ref ref="GSM174670" />
+    <Sample-Ref ref="GSM174671" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE7243/GSE7243_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/97931" />
+  </Series>
+
+</MINiML>

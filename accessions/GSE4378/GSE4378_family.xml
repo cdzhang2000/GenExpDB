@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Dipen</First><Last>Sangurdekar</Last></Person>
+    <Email>dps@genomics.princeton.edu</Email>
+    <Department>Lewis-Sigler Institute for Integrative Genomics</Department>
+    <Organization>Princeton University</Organization>
+    <Address>
+      <Line>132 Carl Icahn laboratory, Princeton University</Line>
+      <City>Princeton</City>
+      <State>NJ</State>
+      <Zip-Code>08544</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Dipen</First><Middle>P</Middle><Last>Sangurdekar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Friedrich</First><Last>Srienc</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Arkady</First><Middle>B</Middle><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Arkady</First><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3503">
+    <Status database="GEO">
+      <Submission-Date>2006-03-02</Submission-Date>
+      <Release-Date>2006-03-06</Release-Date>
+      <Last-Update-Date>2006-03-06</Last-Update-Date>
+    </Status>
+    <Title>Khodursky Lab E. coli B 4290 ORFs Microarray</Title>
+    <Accession database="GEO">GPL3503</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Non-commercial</Manufacturer>
+    <Manufacture-Protocol>
+4290 amplified ORFs from primer pairs (from Sigma Genosys) were printed onto glass slides using a 16 tip robotic printer from 384-well microwell plates
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Description>
+A microarray with 4405 spot features.
+Tip Configuration: Standard 16-tip
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Open Reading Frame identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE_SYMBOL</Name>
+        <Description>Name of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+      <Column position="4">
+        <Name>GENE_DESC</Name>
+        <Description>Description of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+    <External-Data rows="4405">
+GPL3503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM99204">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Novobiocin treatment (5 ug/ml)</Title>
+    <Accession database="GEO">GSM99204</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli LE234 acrD-, LB, 0 min before treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli LE234 acrD-, 0 min before treatment in LB
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli LE234 acrD-, 5 min after Novobiocin (5 ug/ml) addition in LB</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli LE234 acrD-, 5 min after Novobiocin (5 ug/ml) addition in LB
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Novobiocin (5 ug/ml) in LB, 5 min timepoint vs 0 min
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99204-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99205">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Novobiocin treatment (20 ug/ml)</Title>
+    <Accession database="GEO">GSM99205</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli LE234 acrD-, LB, 0 min before treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli LE234 acrD-, 0 min before treatment in LB
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli LE234 acrD-, 5 min after Novobiocin (20 ug/ml) addition in LB</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli LE234 acrD-, 5 min after Novobiocin (20 ug/ml) addition in LB
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Novobiocin (20 ug/ml) in LB, 5 min timepoint vs 0 min
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99205-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99206">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Novobiocin treatment (50 ug/ml)</Title>
+    <Accession database="GEO">GSM99206</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli LE234 acrD-, LB, 0 min before treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli LE234 acrD-, 0 min before treatment in LB
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli LE234 acrD-, 5 min after Novobiocin (50 ug/ml) addition in LB</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli LE234 acrD-, 5 min after Novobiocin (50 ug/ml) addition in LB
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Novobiocin (50 ug/ml) in LB, 5 min timepoint vs 0 min
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99206-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99207">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Novobiocin treatment (200 ug/ml)</Title>
+    <Accession database="GEO">GSM99207</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli LE234 acrD-, LB, 0 min before treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli LE234 acrD-, 0 min before treatment in LB
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli LE234 acrD-, 5 min after Novobiocin (200 ug/ml) addition in LB</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli LE234 acrD-, 5 min after Novobiocin (200 ug/ml) addition in LB
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Novobiocin (200 ug/ml) in LB, 5 min timepoint vs 0 min
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99207-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4378">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Novobiocin treatment in LB</Title>
+    <Accession database="GEO">GSE4378</Accession>
+    <Pubmed-ID>16626502</Pubmed-ID>
+    <Summary>
+Responses of Escherichia coli at 5 mins as they are treated to different concentrations of Novobiocin in LB
+Keywords: dosage course
+    </Summary>
+    <Overall-Design>
+Escherichia coli LE234 acrD- treated with 5, 20, 50, 200 ug/ml Novobiocin in LB and response at 5 mins compared with 0 min untreated
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM99204" />
+    <Sample-Ref ref="GSM99205" />
+    <Sample-Ref ref="GSM99206" />
+    <Sample-Ref ref="GSM99207" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/94673" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Baochuan</First><Last>Lin</Last></Person>
+    <Email>baochuan.lin@nrl.navy.mil</Email>
+    <Phone>202-767-0289</Phone>
+    <Department>Center for Bio/Molecular Science &amp; Engineering</Department>
+    <Organization>US Naval Research Laboratory</Organization>
+    <Address>
+      <Line>4555 Overlook Avenue, S. W.</Line>
+      <City>Washington</City>
+      <State>DC</State>
+      <Zip-Code>20375</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Brandy</First><Middle>J</Middle><Last>Johnson</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Robert</First><Middle>A</Middle><Last>Rubin</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Anthony</First><Middle>P</Middle><Last>Malanoski</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Frances</First><Middle>S</Middle><Last>Ligler</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM315524">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>E. coli grown in LB, rep1</Title>
+    <Accession database="GEO">GSM315524</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, E. coli grown in LB, rep1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E. coli grown in LB, rep1
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli grown in LB broth
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315524/GSM315524.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315524-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315525">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>E. coli grown in LB, rep2</Title>
+    <Accession database="GEO">GSM315525</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, E. coli grown in LB, rep2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E. coli grown in LB, rep2
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli grown in LB broth
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315525/GSM315525.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315525-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315526">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>E. coli grown in LB, rep3</Title>
+    <Accession database="GEO">GSM315526</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, E. coli grown in LB, rep3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E. coli grown in LB, rep3
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli grown in LB broth
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315526/GSM315526.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315526-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315527">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 50 E. coli grown in LB broth + 10% cranberry juice, rep 1</Title>
+    <Accession database="GEO">GSM315527</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 50 E. coli grown in LB broth + 10% cranberry juice, rep 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 50 E. coli grown in LB broth + 10% cranberry juice, rep 1
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 50 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315527/GSM315527.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315527-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315528">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 50 E. coli grown in LB broth + 10% cranberry juice, rep 2</Title>
+    <Accession database="GEO">GSM315528</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 50 E. coli grown in LB broth + 10% cranberry juice, rep 2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 50 E. coli grown in LB broth + 10% cranberry juice, rep 2
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 50 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315528/GSM315528.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315528-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315529">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 50 E. coli grown in LB broth + 10% cranberry juice, rep 3</Title>
+    <Accession database="GEO">GSM315529</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 50 E. coli grown in LB broth + 10% cranberry juice, rep 3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 50 E. coli grown in LB broth + 10% cranberry juice, rep 3
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 50 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315529/GSM315529.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315529-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315530">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 160 E. coli grown in LB broth + 10% cranberry juice, rep 1</Title>
+    <Accession database="GEO">GSM315530</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 160 E. coli grown in LB broth + 10% cranberry juice, rep 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 160 E. coli grown in LB broth + 10% cranberry juice, rep 1
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 160 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315530/GSM315530.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315530-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315531">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 160 E. coli grown in LB broth + 10% cranberry juice, rep 2</Title>
+    <Accession database="GEO">GSM315531</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 160 E. coli grown in LB broth + 10% cranberry juice, rep 2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 160 E. coli grown in LB broth + 10% cranberry juice, rep 2
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 160 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315531/GSM315531.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315531-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315532">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 160 E. coli grown in LB broth + 10% cranberry juice, rep 3</Title>
+    <Accession database="GEO">GSM315532</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 160 E. coli grown in LB broth + 10% cranberry juice, rep 3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 160 E. coli grown in LB broth + 10% cranberry juice, rep 3
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 160 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315532/GSM315532.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315532-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315533">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 210 E. coli grown in LB broth + 10% cranberry juice, rep 1</Title>
+    <Accession database="GEO">GSM315533</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 210 E. coli grown in LB broth + 10% cranberry juice, rep 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 210 E. coli grown in LB broth + 10% cranberry juice, rep 1
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 210 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315533/GSM315533.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315533-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315534">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 210 E. coli grown in LB broth + 10% cranberry juice, rep 2</Title>
+    <Accession database="GEO">GSM315534</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 210 E. coli grown in LB broth + 10% cranberry juice, rep 2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 210 E. coli grown in LB broth + 10% cranberry juice, rep 2
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 210 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315534/GSM315534.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315534-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315535">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 210 E. coli grown in LB broth + 10% cranberry juice, rep 3</Title>
+    <Accession database="GEO">GSM315535</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 210 E. coli grown in LB broth + 10% cranberry juice, rep 3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 210 E. coli grown in LB broth + 10% cranberry juice, rep 3
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 210 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315535/GSM315535.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315535-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315536">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 230 E. coli grown in LB broth + 10% cranberry juice, rep 1</Title>
+    <Accession database="GEO">GSM315536</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 230 E. coli grown in LB broth + 10% cranberry juice, rep 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 230 E. coli grown in LB broth + 10% cranberry juice, rep 1
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 230 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315536/GSM315536.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315536-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315537">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 230 E. coli grown in LB broth + 10% cranberry juice, rep 2</Title>
+    <Accession database="GEO">GSM315537</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 230 E. coli grown in LB broth + 10% cranberry juice, rep 2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 230 E. coli grown in LB broth + 10% cranberry juice, rep 2
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 230 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315537/GSM315537.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315537-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM315538">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-08-26</Last-Update-Date>
+    </Status>
+    <Title>Generation 230 E. coli grown in LB broth + 10% cranberry juice, rep 3</Title>
+    <Accession database="GEO">GSM315538</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>ATCC 35218, Generation 230 E. coli grown in LB broth + 10% cranberry juice, rep 3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Generation 230 E. coli grown in LB broth + 10% cranberry juice, rep 3
+      </Characteristics>
+      <Treatment-Protocol>
+Juice-spiked broth was prepared through the addition of filter sterilized Mountain Sun 100% Cranberry Juice (neutralized to pH 7.4 through addition of sodium hydroxide) to concentrated LB broth.  The final juice concentration in the growth media was 10%.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Batch cultures of E. coli were grown in 50 mL polypropylene centrifuge tubes containing 12 mL of growth media and were incubated at 37°C with 250 rpm agitation.   Diploid strains MLY61 a/alpha (ura3-52/ura3-52 MATa/alpha) and MLY132 a/alpha (delta gpa2::G418/delta gpa2::G418 ura3-52/ura3-52 MATa/alpha) were obtained from J. Heitman, Duke University{Lorenz, 2000 #19; Lorenz, 1997 #33}. Standard YPM media were used as described{Sherman, 1991 #36}. Synthetic low ammonium media consisting of SLAM (0.17% Yeast Nitrogen Base without ammonium sulfate or amino acids, 50 µM ammonium sulfate, 2% maltose) were used when switching to low nitrogen pseudohyphal inducing conditions{Lorenz, 2000 #19; Lorenz, 1997 #33}. Similar to a previously described method{Pan, 2000 #37}, strains were grown to an OD600 of 1.0 in YPM media. Approximately 200 OD600 units were collected by filtering followed by resuspension in 10 mL RNAlater (Ambion) for &lt;30 min, pelleted by centrifugation, flash frozen and stored at –80 °C. Strains were also grown to an OD600 of 1.0 in YPM media and approximately 200 O.D. were collected by filtration and transferred to SLAM media for 2 h at 30 °C prior to collection as above.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA were extracted using RNeasy Protect Bacteria Mini Kit (Qiagen Inc., Valencia, CA) according to the manufacturer's instructions  RNA Isolation: The RibopureTM-Yeast kit (Ambion) was used to extract total RNA from yeast cells. Briefly, for each RNAlater-treated sample, cells were pelleted in a microtube and any remaining RNAlater removed. Then lysis buffer, 10% SDS, and 25:24:1 phenol:chloroform:isoamyl alcohol were used to resuspend the pellet, and the mixture was transferred to a screw cap microtube with Zirconia beads (BioSpec Products) to disrupt the yeast cells by vortexing. The lysate was centrifuged, and the upper aqueous layer transferred to 15 mL conical tubes with Binding Buffer and 100% ethanol. The mixture was drawn through a filter cartridge to capture the RNA, followed by washing and elution. To remove contaminating DNA, 50 µL of the eluted RNA was treated with 10 µL of 10X DNase I buffer and 4 µL of 8 units µL-1 DNase I. The reaction was mixed, incubated at 37 °C for 30 min, followed by addition of 0.1 volume DNase Inactivation Reagent. After 5 min at room temperature, the mixture was spun through a spin column (Qiagen) to remove the DNase binding beads in the DNase Inactivation Reagent. The quality/quantity of purified yeast total RNA was determined by separating 1 µL from each sample on a Bioanalyzer 2100 (Agilent).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Target Preparation and Hybridization to Arrays: 10 µg of total RNA contained RNA controls with known concentrations to monitor the quality of the procedures were transcribed to cDNAs using SuperScript II reverse transcriptase with random primers (Invitrogen Corp., Carlsbad, CA).  The first strand cDNAs synthesis was carried out at 25oC for 10 minutes, 37oC for 1 hour, then 42oC for 1 hour.  The cDNA was fragmented by DNase I and labeled with GeneChip® DNA labeling reagent and terminal deoxynucleotide transferase (Affymetrix) as described in the GeneChip Expression Analysis Technical Manual version 701029 Rev. 4 (Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The cocktail was hybridized onto the Affymetrix GeneChip E. coli Genome 2.0 arrays,  which contains probe sets for 20,366 genes of  Escherichia coli. Hybridization was carried out for 16 h at 45 °C with rotation at 60 rpm. The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The microarrays were then washed and stained using the Affymetrix GeneChip Fluidics Station 450 and scanned using the GeneChip Scanner 3000.   GeneChip Operating Software 1.2 (GCOS 1.2) (Affymetrix) was used to acquire and process array images, determine the quantity and presence or absence of a transcript using the Microarray Suite 5.0 (MAS5) algorithm, and generated the Report files summarizing the quality of target detection for each microarray.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from generation 230 of E. coli grown in LB broth with 10% cranberry juice
+    </Description>
+    <Data-Processing>
+CEL files were processed using the Bioconductor affy package. Because the second control array had significantly lower expression values, we ran two concurrent sets of analyses, one using all of the CEL files, and the other omitting the Control_2 CEL file.  (Files and results using the latter were given the suffix 14, since only 14 of the 15 CEL files were used.) In each case, MAS5, RMA, Li and Wong's MBEI (used in the dChip software package) and Huber's VSN (variance stabilizing normalization) gene expression values were obtained.  Using the Bioconductor limma package, the top 50 differentially expressed genes (all treatments relative to the control arrays) were obtained for each the expression methodologies.  Genes were then given an overall ranking based on their ranks within the various expression types.  More specifically,a gene was assigned the median of its ranks within the tables of expression methodolgies.
+VALUE = MAS5.0 signal intensity, RMA = Izarry's Robust Multichip Analysis, VSN = Huber's Variance Stabilization Normalization, MBEI = Li &amp; Wong's Model Based Expression Index (aka dChip), VSN14 = VSN with Control_2 dropped, MBEI14 = MBEI with Control_2 dropped.  All expression values were obtained using Bioconductor's affy package.  MAS5.0_14 and RMA14 values are not included since the MAS5 and RMA values are the same with Control_2 present and absent. VSN14 and MBE14 values were not determined for Control_2, since Control_2 was excluded from the calculations of VSN14 and MBE14.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM315nnn/GSM315538/GSM315538.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5.0 signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>RMA</Name>
+        <Description>Izarry's Robust Multichip Analysis</Description>
+      </Column>
+      <Column position="4">
+        <Name>VSN</Name>
+        <Description>Huber's Variance Stabilization Normalization</Description>
+      </Column>
+      <Column position="5">
+        <Name>MBEI</Name>
+        <Description>Li &amp; Wong's Model Based Expression Index</Description>
+      </Column>
+      <Column position="6">
+        <Name>VSN14</Name>
+        <Description>VSN with Control_2 dropped</Description>
+      </Column>
+      <Column position="7">
+        <Name>MBEI14</Name>
+        <Description>MBEI with Control_2 dropped</Description>
+      </Column>
+    <External-Data rows="10208">
+GSM315538-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE12554">
+    <Status database="GEO">
+      <Submission-Date>2008-08-26</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Transcript Analysis of E. coli ATCC 35218 suggest a Role of cranberry Juice in Inhibiting the growth of E. coli</Title>
+    <Accession database="GEO">GSE12554</Accession>
+    <Pubmed-ID>18957286</Pubmed-ID>
+    <Summary>
+Several different mechanisms have been proposed to explain the possible role of cranberries, cranberry juice, and cranberry extracts in inhibiting bacterial growth.  In this report, we showed that Escherichia coli showed slower growth rate in response to the presence of cranberry juice in the growth media. By compareing the global transcript profiles, significant modulation of several genes of E. coli grown in LB broth with 10% cranberry juice were identified and provided identification of the potential mechanisms involved in the inhibitory effects of cranberry juice.  The results presented clearly demonstrate that the inhibitory effect on bacterial growth observed in the presence of cranberry juice/extracts is primarily a result of the iron chelation capacity of PACs and direct disruption of metabolic enzymes.  The results are discussed with a focus on the genes associated with iron chelation capability.
+
+Keywords: growth inhibition of cranberry juice
+    </Summary>
+    <Overall-Design>
+For transcriptome profiling, there were 15 Affymetrix GeneChip® E. coli genome 2.0 arrays total.  There were five conditions:  E. coli grown in LB broth, E. coli grown in LB broth with 10% cranberry juice to generation 50, 160, 210, and 230.  Each condition was done in triplicate.  Five conditions done in triplicates resulted in 15 samples that went onto 15 microarrays.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM315524" />
+    <Sample-Ref ref="GSM315525" />
+    <Sample-Ref ref="GSM315526" />
+    <Sample-Ref ref="GSM315527" />
+    <Sample-Ref ref="GSM315528" />
+    <Sample-Ref ref="GSM315529" />
+    <Sample-Ref ref="GSM315530" />
+    <Sample-Ref ref="GSM315531" />
+    <Sample-Ref ref="GSM315532" />
+    <Sample-Ref ref="GSM315533" />
+    <Sample-Ref ref="GSM315534" />
+    <Sample-Ref ref="GSM315535" />
+    <Sample-Ref ref="GSM315536" />
+    <Sample-Ref ref="GSM315537" />
+    <Sample-Ref ref="GSM315538" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE12554/GSE12554_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/112623" />
+  </Series>
+
+</MINiML>

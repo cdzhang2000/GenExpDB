@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Kyung</First><Last>Moon</Last></Person>
+    <Email>moonky@mail.nih.gov</Email>
+    <Laboratory>LMB</Laboratory>
+    <Organization>National Cancer Institute</Organization>
+    <Address>
+      <Line>37 CONVENT DR, BLDG 37 ROOM 5132</Line>
+      <City>BETHESDA</City>
+      <State>MD </State>
+      <Zip-Code>20892</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Susan</First><Last>Gottesman</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM469137">
+    <Status database="GEO">
+      <Submission-Date>2009-11-09</Submission-Date>
+      <Release-Date>2009-11-10</Release-Date>
+      <Last-Update-Date>2009-11-09</Last-Update-Date>
+    </Status>
+    <Title>wild type; derivative of E. coli MG 1655, 1</Title>
+    <Accession database="GEO">GSM469137</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>wild type; derivative of E. coli MG 1655, 1</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype/variation">
+wild type; derivative of E. coli MG 1655
+      </Characteristics>
+      <Treatment-Protocol>
+To induce MgrR, IPTG was added into culture at a final concentration of 100uM for 15min.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+A fresh colony of each strain was innoculated in LB (with ampicilline if strains contain plasmids) and was grown at 37C with agitation. The cells were grown to OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Hot phenol extraction method was used for RNA purification according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 20 ug total RNA (Expression Analysis Technical Manual, 2007, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip E. coli Genome 2.0 Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression from Wild type E. coli K12 MG1655
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray software version 1.4 using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469137/GSM469137.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469137/GSM469137.CHP.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DAT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469137/GSM469137.DAT.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="JPG">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469137/GSM469137.JPG.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="XML">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469137/GSM469137.xml.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM469137-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM469138">
+    <Status database="GEO">
+      <Submission-Date>2009-11-09</Submission-Date>
+      <Release-Date>2009-11-10</Release-Date>
+      <Last-Update-Date>2009-11-09</Last-Update-Date>
+    </Status>
+    <Title>wild type; derivative of E. coli MG 1655, 2</Title>
+    <Accession database="GEO">GSM469138</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>wild type; derivative of E. coli MG 1655, 2</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype/variation">
+wild type; derivative of E. coli MG 1655
+      </Characteristics>
+      <Treatment-Protocol>
+To induce MgrR, IPTG was added into culture at a final concentration of 100uM for 15min.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+A fresh colony of each strain was innoculated in LB (with ampicilline if strains contain plasmids) and was grown at 37C with agitation. The cells were grown to OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Hot phenol extraction method was used for RNA purification according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 20 ug total RNA (Expression Analysis Technical Manual, 2007, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip E. coli Genome 2.0 Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression from Wild type E. coli K12 MG1655
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray software version 1.4 using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469138/GSM469138.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469138/GSM469138.CHP.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DAT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469138/GSM469138.DAT.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="JPG">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469138/GSM469138.JPG.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="XML">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469138/GSM469138.xml.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM469138-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM469139">
+    <Status database="GEO">
+      <Submission-Date>2009-11-09</Submission-Date>
+      <Release-Date>2009-11-10</Release-Date>
+      <Last-Update-Date>2009-11-09</Last-Update-Date>
+    </Status>
+    <Title>mgrR knockout mutation, 1</Title>
+    <Accession database="GEO">GSM469139</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mgrR knockout mutation, 1</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype/variation">
+mgrR knockout mutation
+      </Characteristics>
+      <Treatment-Protocol>
+To induce MgrR, IPTG was added into culture at a final concentration of 100uM for 15min.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+A fresh colony of each strain was innoculated in LB (with ampicilline if strains contain plasmids) and was grown at 37C with agitation. The cells were grown to OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Hot phenol extraction method was used for RNA purification according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 20 ug total RNA (Expression Analysis Technical Manual, 2007, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip E. coli Genome 2.0 Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression from mgrR mutant derived from  E. coli K12 MG1655
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray software version 1.4 using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469139/GSM469139.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469139/GSM469139.CHP.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DAT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469139/GSM469139.DAT.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="JPG">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469139/GSM469139.JPG.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="XML">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469139/GSM469139.xml.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM469139-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM469140">
+    <Status database="GEO">
+      <Submission-Date>2009-11-09</Submission-Date>
+      <Release-Date>2009-11-10</Release-Date>
+      <Last-Update-Date>2009-11-09</Last-Update-Date>
+    </Status>
+    <Title>mgrR knockout mutation, 2</Title>
+    <Accession database="GEO">GSM469140</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mgrR knockout mutation, 2</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype/variation">
+mgrR knockout mutation
+      </Characteristics>
+      <Treatment-Protocol>
+To induce MgrR, IPTG was added into culture at a final concentration of 100uM for 15min.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+A fresh colony of each strain was innoculated in LB (with ampicilline if strains contain plasmids) and was grown at 37C with agitation. The cells were grown to OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Hot phenol extraction method was used for RNA purification according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 20 ug total RNA (Expression Analysis Technical Manual, 2007, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip E. coli Genome 2.0 Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression from mgrR mutant derived from  E. coli K12 MG1655
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray software version 1.4 using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469140/GSM469140.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469140/GSM469140.CHP.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DAT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469140/GSM469140.DAT.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="JPG">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469140/GSM469140.JPG.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="XML">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469140/GSM469140.xml.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM469140-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM469141">
+    <Status database="GEO">
+      <Submission-Date>2009-11-09</Submission-Date>
+      <Release-Date>2009-11-10</Release-Date>
+      <Last-Update-Date>2009-11-09</Last-Update-Date>
+    </Status>
+    <Title>mgrR knockout mutation containing pBR Plac plasmid, 1</Title>
+    <Accession database="GEO">GSM469141</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mgrR knockout mutation containing pBR Plac plasmid, 1</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype/variation">
+mgrR knockout mutation containing pBR Plac plasmid
+      </Characteristics>
+      <Treatment-Protocol>
+To induce MgrR, IPTG was added into culture at a final concentration of 100uM for 15min.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+A fresh colony of each strain was innoculated in LB (with ampicilline if strains contain plasmids) and was grown at 37C with agitation. The cells were grown to OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Hot phenol extraction method was used for RNA purification according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 20 ug total RNA (Expression Analysis Technical Manual, 2007, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip E. coli Genome 2.0 Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression from mgrR mutant derived from  E. coli K12 MG1655 containing vector control pBR Plac
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray software version 1.4 using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469141/GSM469141.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469141/GSM469141.CHP.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DAT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469141/GSM469141.DAT.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="JPG">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469141/GSM469141.JPG.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="XML">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469141/GSM469141.xml.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM469141-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM469142">
+    <Status database="GEO">
+      <Submission-Date>2009-11-09</Submission-Date>
+      <Release-Date>2009-11-10</Release-Date>
+      <Last-Update-Date>2009-11-09</Last-Update-Date>
+    </Status>
+    <Title>mgrR knockout mutation containing pBR Plac plasmid, 2</Title>
+    <Accession database="GEO">GSM469142</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mgrR knockout mutation containing pBR Plac plasmid, 2</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype/variation">
+mgrR knockout mutation containing pBR Plac plasmid
+      </Characteristics>
+      <Treatment-Protocol>
+To induce MgrR, IPTG was added into culture at a final concentration of 100uM for 15min.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+A fresh colony of each strain was innoculated in LB (with ampicilline if strains contain plasmids) and was grown at 37C with agitation. The cells were grown to OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Hot phenol extraction method was used for RNA purification according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 20 ug total RNA (Expression Analysis Technical Manual, 2007, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip E. coli Genome 2.0 Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression from mgrR mutant derived from  E. coli K12 MG1655 containing vector control pBR Plac
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray software version 1.4 using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469142/GSM469142.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469142/GSM469142.CHP.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DAT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469142/GSM469142.DAT.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="JPG">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469142/GSM469142.JPG.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="XML">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469142/GSM469142.xml.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM469142-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM469143">
+    <Status database="GEO">
+      <Submission-Date>2009-11-09</Submission-Date>
+      <Release-Date>2009-11-10</Release-Date>
+      <Last-Update-Date>2009-11-09</Last-Update-Date>
+    </Status>
+    <Title>mgrR knockout mutation containing pBR Plac mgrR plasmid, 1</Title>
+    <Accession database="GEO">GSM469143</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mgrR knockout mutation containing pBR Plac mgrR plasmid, 1</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype/variation">
+mgrR knockout mutation containing pBR Plac mgrR plasmid
+      </Characteristics>
+      <Treatment-Protocol>
+To induce MgrR, IPTG was added into culture at a final concentration of 100uM for 15min.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+A fresh colony of each strain was innoculated in LB (with ampicilline if strains contain plasmids) and was grown at 37C with agitation. The cells were grown to OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Hot phenol extraction method was used for RNA purification according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 20 ug total RNA (Expression Analysis Technical Manual, 2007, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip E. coli Genome 2.0 Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression from mgrR mutant derived from  E. coli K12 MG1655 containing vector control pBR Plac-mgrR
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray software version 1.4 using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469143/GSM469143.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469143/GSM469143.CHP.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DAT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469143/GSM469143.DAT.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="JPG">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469143/GSM469143.JPG.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="XML">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469143/GSM469143.xml.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM469143-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM469144">
+    <Status database="GEO">
+      <Submission-Date>2009-11-09</Submission-Date>
+      <Release-Date>2009-11-10</Release-Date>
+      <Last-Update-Date>2009-11-09</Last-Update-Date>
+    </Status>
+    <Title>mgrR knockout mutation containing pBR Plac mgrR plasmid, 2</Title>
+    <Accession database="GEO">GSM469144</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mgrR knockout mutation containing pBR Plac mgrR plasmid, 2</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype/variation">
+mgrR knockout mutation containing pBR Plac mgrR plasmid
+      </Characteristics>
+      <Treatment-Protocol>
+To induce MgrR, IPTG was added into culture at a final concentration of 100uM for 15min.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+A fresh colony of each strain was innoculated in LB (with ampicilline if strains contain plasmids) and was grown at 37C with agitation. The cells were grown to OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Hot phenol extraction method was used for RNA purification according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared according to the standard Affymetrix protocol from 20 ug total RNA (Expression Analysis Technical Manual, 2007, Affymetrix).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 10 ug of cRNA were hybridized for 16 hr at 45C on GeneChip E. coli Genome 2.0 Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression from mgrR mutant derived from  E. coli K12 MG1655 containing vector control pBR Plac-mgrR
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray software version 1.4 using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469144/GSM469144.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469144/GSM469144.CHP.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="DAT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469144/GSM469144.DAT.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="JPG">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469144/GSM469144.JPG.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="XML">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM469nnn/GSM469144/GSM469144.xml.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM469144-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE18935">
+    <Status database="GEO">
+      <Submission-Date>2009-11-09</Submission-Date>
+      <Release-Date>2009-11-10</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Effects on small RNA MgrR in Escherichia coli</Title>
+    <Accession database="GEO">GSE18935</Accession>
+    <Pubmed-ID>19889087</Pubmed-ID>
+    <Summary>
+MgrR is a newly characterized Hfq dependent small RNA RNA.  The expression of MgrR is regulated by Two component system, PhoPQ regulon, which senses low Mg2+ in environment. It has been reported that  Hfq-binding sRNAs base pair with target RNAs, frequently leading to rapid degradation of target messages or, less frequently, to stabilization, both of which can be assayed by using microarrays.  In order to search for the target genes of MgrR, we therefore examined the consequences of MgrR expression on mRNA abundance under two conditions.  In condition 1, the chromosomal copy of mgrR was deleted and MgrR was expressed for 15’ from an induced plac-mgrR plasmid and compared to cells carrying a vector induced for the same period.  In condition 2, the expression of mRNAs was compared in wild-type cells (mgrR+) and the mgrR deletion strain, both grown in LB; because MgrR levels are fairly high under our normal growth conditions, this allowed analysis of both the direct and indirect (long-term) effects of MgrR.
+    </Summary>
+    <Overall-Design>
+The strains used are either wild type which is derivatives of MG1655 or mgrR::kn knockout to restrict MgrR expression to the inducible pBR Plac-mgrR vector.  The mgrR knockout mutants carried  either pBR Plac-mgrR or the control vector pBR Plac.  A Fresh colony of bacteria was inoculated in LB media with ampicilline at final concentration of 100ug/ml at 37°C with agitation.  To induce MgrR expression, cultures carrying the pBR Plac-mgrR construct were grown to an O.D.600 of 0.5 and IPTG was added to the culture at a final concentration of 100uM.  Both cultures for wild type and mgrR deletion mutant were grown to O.D. 600 of 0.5 and cells were collected.   Total RNA was extracted from cells at the indicated time using the hot phenol procedure.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM469137" />
+    <Sample-Ref ref="GSM469138" />
+    <Sample-Ref ref="GSM469139" />
+    <Sample-Ref ref="GSM469140" />
+    <Sample-Ref ref="GSM469141" />
+    <Sample-Ref ref="GSM469142" />
+    <Sample-Ref ref="GSM469143" />
+    <Sample-Ref ref="GSM469144" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE18935/GSE18935_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/121049" />
+  </Series>
+
+</MINiML>

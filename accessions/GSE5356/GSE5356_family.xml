@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Tara</First><Last>Sigdel</Last></Person>
+    <Email>tksigdel@stanford.edu</Email>
+    <Phone>650-724-3320</Phone>
+    <Laboratory>Sarwal</Laboratory>
+    <Department>Pediatrics</Department>
+    <Organization>Stanford University</Organization>
+    <Address>
+      <Line>269 Campus Dr.</Line>
+      <City>Stanford</City>
+      <State>CA</State>
+      <Zip-Code>94305</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Tara</First><Middle>K</Middle><Last>Sigdel</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>James</First><Middle>A</Middle><Last>Easton</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Michael</First><Middle>W</Middle><Last>Crowder</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3995">
+    <Status database="GEO">
+      <Submission-Date>2006-07-13</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-11-01</Last-Update-Date>
+    </Status>
+    <Title>MWG E. coli K12 V2 Array</Title>
+    <Accession database="GEO">GPL3995</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>MWG Biotech</Manufacturer>
+    <Manufacture-Protocol>
+MWG E. coli K12 V2 Array
+The MWG E. coli Array contains 4,288 gene specific
+oligonucleotide probes representing the complete E. coli (K12) genome. Specifications:
+Total number of genes: 4,288 ORFs of E. coli strain K12
+covered by 4239 oligos
+Information sources: NCBI/Genbank
+NC00913, U00096.1
+Strand analyzed: Sense strand
+Number of slides: 1
+Length of probes: 50 mer
+Number of oligonucleotides per gene:1
+Total number of spots: 4,608
+Replicated spots: 47
+Production control oligos (ara): 48
+Spot area: 1.8 x 1.8 cm
+    </Manufacture-Protocol>
+    <Catalog-Number>2140-000000 available through Ocimum Biosolutions</Catalog-Number>
+    <Support>glass</Support>
+    <Coating>unknown</Coating>
+    <Web-Link>http://ecom2.mwgdna.com/download/arrays/manuals/manual_bacteria.pdf</Web-Link>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Blattner number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="3">
+        <Name>gene name</Name>
+        <Description>according to ncbi</Description>
+      </Column>
+    <External-Data rows="4241">
+GPL3995-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM120166">
+    <Status database="GEO">
+      <Submission-Date>2006-07-13</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-11-01</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional response of E. coli to TPEN (m2)</Title>
+    <Accession database="GEO">GSM120166</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in minimal medium with added 5 μM TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli K12 grown in minimal medium without added TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+DNA microarray slides were scanned by using the Genepix® 4000B Microarray scanner. Image analyses of scanned microarrays were performed using GenePix® Pro 5.0. (Axon). Images were visually inspected and spots affected by irregularities were flagged manually. Resulting data were filtered according to the following criteria: (a) removal of flagged spots (b) removal of spots with diameter &lt;70 μm (average spot size on arrays is 120 μm), and (c) removal of spots with (% pixels 532 nm &gt; background + 1 standard deviation) + (% pixels 635 nm &gt; background + 1 standard deviation) &lt; 100. For the remaining values, log2 transformations were applied, and linear normalizations were used to correct the parameter “median of ratios” to median = 0. For each series a two-tailed t-test was performed on the data from one dye combination (e.g. control cDNA were labeled Cy5 and cDNA from the TPEN stressed cells were labeled Cy3) and the corresponding dye-swap experiments (e.g. control cDNA were labeled Cy3 and and cDNA from the TPEN stressed cells were labeled Cy5).
+    </Description>
+    <Data-Processing>
+As described in the description
+    </Data-Processing>
+    <Platform-Ref ref="GPL3995" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM120nnn/GSM120166/GSM120166.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4241">
+GSM120166-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM120192">
+    <Status database="GEO">
+      <Submission-Date>2006-07-13</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-11-01</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional response of E. coli to TPEN (m1)</Title>
+    <Accession database="GEO">GSM120192</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in minimal medium with added 5 μM TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli K12 grown in minimal medium without added TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+DNA microarray slides were scanned by using the Genepix? 4000B Microarray scanner. Image analyses of scanned microarrays were performed using GenePix? Pro 5.0. (Axon). Images were visually inspected and spots affected by irregularities were flagged manually. Resulting data were filtered according to the following criteria: (a) removal of flagged spots (b) removal of spots with diameter &lt;70 μm (average spot size on arrays is 120 μm), and (c) removal of spots with (% pixels 532 nm &gt; background + 1 standard deviation) + (% pixels 635 nm &gt; background + 1 standard deviation) &lt; 100. For the remaining values, log2 transformations were applied, and linear normalizations were used to correct the parameter ?median of ratios? to median = 0. For each series a two-tailed t-test was performed on the data from one dye combination (e.g. control cDNA were labeled Cy5 and cDNA from the TPEN stressed cells were labeled Cy3) and the corresponding dye-swap experiments (e.g. control cDNA were labeled Cy3 and and cDNA from the TPEN stressed cells were labeled Cy5).
+    </Description>
+    <Data-Processing>
+As described in description
+    </Data-Processing>
+    <Platform-Ref ref="GPL3995" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM120nnn/GSM120192/GSM120192.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4241">
+GSM120192-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM120193">
+    <Status database="GEO">
+      <Submission-Date>2006-07-13</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-11-01</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional response of E. coli to TPEN (m3)</Title>
+    <Accession database="GEO">GSM120193</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in minimal medium with added 5 μM TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli K12 grown in minimal medium without added TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+DNA microarray slides were scanned by using the Genepix? 4000B Microarray scanner. Image analyses of scanned microarrays were performed using GenePix? Pro 5.0. (Axon). Images were visually inspected and spots affected by irregularities were flagged manually. Resulting data were filtered according to the following criteria: (a) removal of flagged spots (b) removal of spots with diameter &lt;70 μm (average spot size on arrays is 120 μm), and (c) removal of spots with (% pixels 532 nm &gt; background + 1 standard deviation) + (% pixels 635 nm &gt; background + 1 standard deviation) &lt; 100. For the remaining values, log2 transformations were applied, and linear normalizations were used to correct the parameter ?median of ratios? to median = 0. For each series a two-tailed t-test was performed on the data from one dye combination (e.g. control cDNA were labeled Cy5 and cDNA from the TPEN stressed cells were labeled Cy3) and the corresponding dye-swap experiments (e.g. control cDNA were labeled Cy3 and and cDNA from the TPEN stressed cells were labeled Cy5).
+    </Description>
+    <Data-Processing>
+As described in description
+    </Data-Processing>
+    <Platform-Ref ref="GPL3995" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM120nnn/GSM120193/GSM120193.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4241">
+GSM120193-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM120194">
+    <Status database="GEO">
+      <Submission-Date>2006-07-13</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-11-01</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional response of E. coli to TPEN (t1)</Title>
+    <Accession database="GEO">GSM120194</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in minimal medium with added 5 μM TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli K12 grown in minimal medium without added TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+DNA microarray slides were scanned by using the Genepix® 4000B Microarray scanner. Image analyses of scanned microarrays were performed using GenePix® Pro 5.0. (Axon). Images were visually inspected and spots affected by irregularities were flagged manually. Resulting data were filtered according to the following criteria: (a) removal of flagged spots (b) removal of spots with diameter &lt;70 μm (average spot size on arrays is 120 μm), and (c) removal of spots with (% pixels 532 nm &gt; background + 1 standard deviation) + (% pixels 635 nm &gt; background + 1 standard deviation) &lt; 100. For the remaining values, log2 transformations were applied, and linear normalizations were used to correct the parameter “median of ratios” to median = 0. For each series a two-tailed t-test was performed on the data from one dye combination (e.g. control cDNA were labeled Cy5 and cDNA from the TPEN stressed cells were labeled Cy3) and the corresponding dye-swap experiments (e.g. control cDNA were labeled Cy3 and and cDNA from the TPEN stressed cells were labeled Cy5).
+    </Description>
+    <Data-Processing>
+As described in the description
+    </Data-Processing>
+    <Platform-Ref ref="GPL3995" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM120nnn/GSM120194/GSM120194.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4241">
+GSM120194-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM120196">
+    <Status database="GEO">
+      <Submission-Date>2006-07-13</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-11-01</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional response of E. coli to TPEN (t2)</Title>
+    <Accession database="GEO">GSM120196</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in minimal medium with added 5 μM TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli K12 grown in minimal medium without added TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+DNA microarray slides were scanned by using the Genepix? 4000B Microarray scanner. Image analyses of scanned microarrays were performed using GenePix? Pro 5.0. (Axon). Images were visually inspected and spots affected by irregularities were flagged manually. Resulting data were filtered according to the following criteria: (a) removal of flagged spots (b) removal of spots with diameter &lt;70 μm (average spot size on arrays is 120 μm), and (c) removal of spots with (% pixels 532 nm &gt; background + 1 standard deviation) + (% pixels 635 nm &gt; background + 1 standard deviation) &lt; 100. For the remaining values, log2 transformations were applied, and linear normalizations were used to correct the parameter ?median of ratios? to median = 0. For each series a two-tailed t-test was performed on the data from one dye combination (e.g. control cDNA were labeled Cy5 and cDNA from the TPEN stressed cells were labeled Cy3) and the corresponding dye-swap experiments (e.g. control cDNA were labeled Cy3 and and cDNA from the TPEN stressed cells were labeled Cy5).
+    </Description>
+    <Data-Processing>
+As described in the description
+    </Data-Processing>
+    <Platform-Ref ref="GPL3995" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM120nnn/GSM120196/GSM120196.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4241">
+GSM120196-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM120197">
+    <Status database="GEO">
+      <Submission-Date>2006-07-13</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-11-01</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional response of E. coli to TPEN (t3)</Title>
+    <Accession database="GEO">GSM120197</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in minimal medium with added 5 μM TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli K12 grown in minimal medium without added TPEN</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+mRNA
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+DNA microarray slides were scanned by using the Genepix? 4000B Microarray scanner. Image analyses of scanned microarrays were performed using GenePix? Pro 5.0. (Axon). Images were visually inspected and spots affected by irregularities were flagged manually. Resulting data were filtered according to the following criteria: (a) removal of flagged spots (b) removal of spots with diameter &lt;70 μm (average spot size on arrays is 120 μm), and (c) removal of spots with (% pixels 532 nm &gt; background + 1 standard deviation) + (% pixels 635 nm &gt; background + 1 standard deviation) &lt; 100. For the remaining values, log2 transformations were applied, and linear normalizations were used to correct the parameter ?median of ratios? to median = 0. For each series a two-tailed t-test was performed on the data from one dye combination (e.g. control cDNA were labeled Cy5 and cDNA from the TPEN stressed cells were labeled Cy3) and the corresponding dye-swap experiments (e.g. control cDNA were labeled Cy3 and and cDNA from the TPEN stressed cells were labeled Cy5).
+    </Description>
+    <Data-Processing>
+As described in the description
+    </Data-Processing>
+    <Platform-Ref ref="GPL3995" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM120nnn/GSM120197/GSM120197.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4241">
+GSM120197-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE5356">
+    <Status database="GEO">
+      <Submission-Date>2006-07-19</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional response of E. coli to TPEN</Title>
+    <Accession database="GEO">GSE5356</Accession>
+    <Pubmed-ID>16952965</Pubmed-ID>
+    <Summary>
+DNA microarrays were used to probe the transcriptional response of E. coli to N,N,N',N'-tetrakis(2-pyridylmethyl)ethylenediamine (TPEN). Fifty-five transcripts were significantly up-regulated including all of the genes that are regulated by Zur and many genes regulated by Fur.  In these same TPEN-treated cells, forty-six transcripts were significantly down-regulated.  
+Keywords: E. coli, TPEN, zinc 
+    </Summary>
+    <Overall-Design>
+To identify genes that are differentially-expressed in response to TPEN, E. coli BL21(DE3) cells grown in minimal medium until the cultures reached mid-log phase.  TPEN was introduced and the cells were cultured for 5 hours; this time was chosen so that the results would correspond to previous transcriptional response studies with excess Zn(II). The cultures containing 5 uM TPEN were analyzed with DNA microarrays (E. coli K12 V2 array slides from MWG-BIOTECH), and the results were compared to those from E. coli cells grown in minimal medium containing no TPEN. A minimum of six slides was used for each experiment (3 slides with one combination of Cy3 and Cy5 dyes and 3 slides with swapped dyes). 
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM120166" />
+    <Sample-Ref ref="GSM120192" />
+    <Sample-Ref ref="GSM120193" />
+    <Sample-Ref ref="GSM120194" />
+    <Sample-Ref ref="GSM120196" />
+    <Sample-Ref ref="GSM120197" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE5356/GSE5356_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/96249" />
+  </Series>
+
+</MINiML>

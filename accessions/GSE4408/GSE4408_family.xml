@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Kyeong Soo</First><Last>Jeong</Last></Person>
+    <Email>jeong009@umn.edu</Email>
+    <Phone>6126243204</Phone>
+    <Organization>University of Minnesota</Organization>
+    <Address>
+      <City>Saint Paul</City>
+      <State>MN</State>
+      <Zip-Code>55108</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL1436">
+    <Status database="GEO">
+      <Submission-Date>2004-09-04</Submission-Date>
+      <Release-Date>2004-09-09</Release-Date>
+      <Last-Update-Date>2005-05-26</Last-Update-Date>
+    </Status>
+    <Title>EcoliMG1655v1.0</Title>
+    <Accession database="GEO">GPL1436</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Description>
+Tip Configuration: Standard 16-tip
+Columns per Sector: 20
+Rows per Sector: 22
+
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Name</Name>
+        <Description>Name of the gene represented by the sequence in the spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>ORF</Name>
+        <Description>Open reading frame identifier</Description>
+      </Column>
+      <Column position="4">
+        <Name>Product</Name>
+        <Description>Description of the gene represented by the sequence in the spot</Description>
+      </Column>
+      <Column position="5">
+        <Name>TYPE</Name>
+      </Column>
+      <Column position="6">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="6144">
+GPL1436-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM99380">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (wild type, 5min)</Title>
+    <Accession database="GEO">GSM99380</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli for 5 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 5 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99380-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99384">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (Wild type 10 min treat)</Title>
+    <Accession database="GEO">GSM99384</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli for 10 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 10 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99384-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99386">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (wild type, 15 min treat)</Title>
+    <Accession database="GEO">GSM99386</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli for 15 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 15 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99386-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99389">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (wild type, 20min treatment)</Title>
+    <Accession database="GEO">GSM99389</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli for 20 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 20 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99389-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99390">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (recA-, 5min)</Title>
+    <Accession database="GEO">GSM99390</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli recA- mutant for 5 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, recA deletion mutant(KAN replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 5 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli recA- mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655 recA deletion mutant (Kan replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99390-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99391">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (recA-, 10min)</Title>
+    <Accession database="GEO">GSM99391</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli recA- mutant for 10 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, recA deletion mutant(KAN replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 5 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli recA- mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655 recA deletion mutant (Kan replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99391-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99392">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (recA-, 15min)</Title>
+    <Accession database="GEO">GSM99392</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli recA- mutant for 15 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, recA deletion mutant(KAN replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 15 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli recA- mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655 recA deletion mutant (Kan replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99392-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99393">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (recA-, 20min)</Title>
+    <Accession database="GEO">GSM99393</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli recA- mutant for 20 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, recA deletion mutant(KAN replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 20 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli recA- mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655 recA deletion mutant (Kan replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99393-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99394">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (topA-, 5min)</Title>
+    <Accession database="GEO">GSM99394</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli topA- mutant for 5 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, topA deletion mutant(Chloramphenicol replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 5 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli topA- mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655 topA deletion mutant (Chloramphenicol replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99394-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99395">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (topA-, 10min)</Title>
+    <Accession database="GEO">GSM99395</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli topA- mutant for 10 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, topA deletion mutant(Chloramphenicol replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 5 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli topA- mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655 topA deletion mutant (Chloramphenicol replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99395-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99396">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (topA-, 15min)</Title>
+    <Accession database="GEO">GSM99396</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli topA- mutant for 15 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, topA deletion mutant(Chloramphenicol replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 15 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli topA- mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655 topA deletion mutant (Chloramphenicol replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99396-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99397">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (topA-, 20min)</Title>
+    <Accession database="GEO">GSM99397</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli topA- mutant for 20 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, topA deletion mutant(Chloramphenicol replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 20 min
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli topA- mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655 topA deletion mutant (Chloramphenicol replacement)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+no treatment
+      </Characteristics>
+      <Characteristics>
+Reference channel
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99397-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99398">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (dnaC(Ts), 5min)</Title>
+    <Accession database="GEO">GSM99398</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli dnaC(Ts) mutant for 5min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, dnaC temperature-sensitive mutant (Tn10)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 5 min after 90 min inhibition of initiation of DNA replication
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli dnaC(Ts) mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, dnaC temperature-sensitive mutant (Tn10)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+no treatment after 90 min inhibition of initiation of DNA replication
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99398-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99399">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (dnaC(Ts), 10min)</Title>
+    <Accession database="GEO">GSM99399</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli dnaC(Ts) mutant for 10 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, dnaC temperature-sensitive mutant (Tn10)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 10 min after 90 min inhibition of initiation of DNA replication
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli dnaC(Ts) mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, dnaC temperature-sensitive mutant (Tn10)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+no treatment after 90 min inhibition of initiation of DNA replication
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99399-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99400">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (dnaC(Ts), 15min)</Title>
+    <Accession database="GEO">GSM99400</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli dnaC(Ts) mutant for 15min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, dnaC temperature-sensitive mutant (Tn10)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 15 min after 90 min inhibition of initiation of DNA replication
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli dnaC(Ts) mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, dnaC temperature-sensitive mutant (Tn10)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+no treatment after 90 min inhibition of initiation of DNA replication
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99400-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99401">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition (dnaC(Ts), 20min)</Title>
+    <Accession database="GEO">GSM99401</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Norfloxacin treated E. coli dnaC(Ts) mutant for 20min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, dnaC temperature-sensitive mutant (Tn10)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+1ug/ml for 20 min after 90 min inhibition of initiation of DNA replication
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Nontreated E. coli dnaC(Ts) mutant at 0 min</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+E coli MG1655, dnaC temperature-sensitive mutant (Tn10)
+      </Characteristics>
+      <Characteristics tag="Antibiotics">
+norfloxacin
+      </Characteristics>
+      <Characteristics tag="Dosage">
+no treatment after 90 min inhibition of initiation of DNA replication
+      </Characteristics>
+      <Characteristics tag="Medium">
+Minimal media (Vogel-Bonner) with 0.2% glucose
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Time course experiment (0, 5, 10, 15, 20 min)
+    </Description>
+    <Data-Processing>
+Lowess, Median normalization
+    </Data-Processing>
+    <Platform-Ref ref="GPL1436" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log ratio between treated sample and non-treated sample</Description>
+      </Column>
+    <External-Data rows="4060">
+GSM99401-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4408">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-03-10</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional consequences of DNA gyrase inhibition </Title>
+    <Accession database="GEO">GSE4408</Accession>
+    <Pubmed-ID>17009874</Pubmed-ID>
+    <Summary>
+DNA gyrase is an essential enzyme whose activity is required for DNA replication and chromosome maintenance. Inhibition of gyrase results in multiple physiological effects including changes in DNA superhelicity, replication arrest and DNA damage. Using genetic, genomic, statistical and biochemical techniques, we have untangled the contribution of individual effects, assessed their relative significance and concluded that: i) DNA replication is required for the formation of spatial transcriptional domains; ii) transcriptional response to gyrase inhibition is coordinated between at least two modules involved in DNA maintenance, relaxation and damage response; iii) genes whose transcriptional response to gyrase inhibition does not depend on the activity of topoisomerase I can be classified on the basis of the GC excess in their upstream and coding sequences into, respectively, activated and repressed by gyrase inhibition; iv) relaxation by topoisomerase I dominates the transcriptional response upon gyrase inhibition, followed by the effects of replication and RecA.
+Keywords: time course
+    </Summary>
+    <Overall-Design>
+Isogenic mutants (recA-, topA- and dnaC(Ts)) are deficient in one of cellular processes upon gyrase inhibition: DNA repair, DNA relaxation and DNA replication. With time course (0, 5, 10, 15 and 20 min) treatment of gyrase inhibitor, transcriptional responses are dissected in terms of three celluar processes. Reference samples are collected from non-treated cells at 0 min.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM99380" />
+    <Sample-Ref ref="GSM99384" />
+    <Sample-Ref ref="GSM99386" />
+    <Sample-Ref ref="GSM99389" />
+    <Sample-Ref ref="GSM99390" />
+    <Sample-Ref ref="GSM99391" />
+    <Sample-Ref ref="GSM99392" />
+    <Sample-Ref ref="GSM99393" />
+    <Sample-Ref ref="GSM99394" />
+    <Sample-Ref ref="GSM99395" />
+    <Sample-Ref ref="GSM99396" />
+    <Sample-Ref ref="GSM99397" />
+    <Sample-Ref ref="GSM99398" />
+    <Sample-Ref ref="GSM99399" />
+    <Sample-Ref ref="GSM99400" />
+    <Sample-Ref ref="GSM99401" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/94637" />
+  </Series>
+
+</MINiML>

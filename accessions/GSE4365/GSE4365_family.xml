@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Dipen</First><Last>Sangurdekar</Last></Person>
+    <Email>dps@genomics.princeton.edu</Email>
+    <Department>Lewis-Sigler Institute for Integrative Genomics</Department>
+    <Organization>Princeton University</Organization>
+    <Address>
+      <Line>132 Carl Icahn laboratory, Princeton University</Line>
+      <City>Princeton</City>
+      <State>NJ</State>
+      <Zip-Code>08544</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Dipen</First><Middle>P</Middle><Last>Sangurdekar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Friedrich</First><Last>Srienc</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Arkady</First><Middle>B</Middle><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Arkady</First><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3503">
+    <Status database="GEO">
+      <Submission-Date>2006-03-02</Submission-Date>
+      <Release-Date>2006-03-06</Release-Date>
+      <Last-Update-Date>2006-03-06</Last-Update-Date>
+    </Status>
+    <Title>Khodursky Lab E. coli B 4290 ORFs Microarray</Title>
+    <Accession database="GEO">GPL3503</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Non-commercial</Manufacturer>
+    <Manufacture-Protocol>
+4290 amplified ORFs from primer pairs (from Sigma Genosys) were printed onto glass slides using a 16 tip robotic printer from 384-well microwell plates
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Description>
+A microarray with 4405 spot features.
+Tip Configuration: Standard 16-tip
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Open Reading Frame identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE_SYMBOL</Name>
+        <Description>Name of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+      <Column position="4">
+        <Name>GENE_DESC</Name>
+        <Description>Description of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+    <External-Data rows="4405">
+GPL3503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM99132">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_NOX+_balanced growth at OD 0.13</Title>
+    <Accession database="GEO">GSM99132</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.13 in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.13 in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Balanced growth of Ecoli MG1655/pTrc99a(NOX+) in M9 + salts
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99132-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99133">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_NOX+_balanced growth at OD 0.21</Title>
+    <Accession database="GEO">GSM99133</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.21in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.21in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Balanced growth of Ecoli MG1655/pTrc99a(NOX+) in M9 + salts
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99133-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99134">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_NOX+_balanced growth at OD 0.28</Title>
+    <Accession database="GEO">GSM99134</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.28 in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.28 in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Balanced growth of Ecoli MG1655/pTrc99a(NOX+) in M9 + salts
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99134-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99135">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_NOX+_balanced growth at OD 0.34</Title>
+    <Accession database="GEO">GSM99135</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.34 in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.34 in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Balanced growth of Ecoli MG1655/pTrc99a(NOX+) in M9 + salts
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99135-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99136">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_NOX+_balanced growth at OD 0.4</Title>
+    <Accession database="GEO">GSM99136</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.06 in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.4 in M9 + salts</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655/pTrc99a (NOX+), Balanced growth OD 0.4 in M9 + salts
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Balanced growth of Ecoli MG1655/pTrc99a(NOX+) in M9 + salts
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99136-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4365">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Balanced growth of Ecoli MG1655/pTrc99a(NOX+) at different growth rates</Title>
+    <Accession database="GEO">GSE4365</Accession>
+    <Pubmed-ID>16626502</Pubmed-ID>
+    <Summary>
+Responses of Escherichia coli MG1655/pTrc99a(NOX+) grown at different growth rates in chemostat in M9 + salts
+NOX: NADH oxygenase converts NADH to NAD. Cells with NOX are able to recycle the excess NADH generated during rapid growth, leading to lesser accumulation of acetate
+Keywords: different growth rates in parallel
+    </Summary>
+    <Overall-Design>
+Escherichia coli MG1655/pTrc99a(NOX+) cells sampled at different growth rates ( 0.13,0.21,0.28,0.34,0.4 1/hr) vs balanced growth at 0.06 1/hr
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM99132" />
+    <Sample-Ref ref="GSM99133" />
+    <Sample-Ref ref="GSM99134" />
+    <Sample-Ref ref="GSM99135" />
+    <Sample-Ref ref="GSM99136" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/94823" />
+  </Series>
+
+</MINiML>

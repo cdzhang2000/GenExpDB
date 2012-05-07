@@ -1,0 +1,2888 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Carey</First><Last>Lambert</Last></Person>
+    <Email>carey.lambert@nottingham.ac.uk</Email>
+    <Laboratory>C15</Laboratory>
+    <Department>Genetics</Department>
+    <Organization>Nottingham University</Organization>
+    <Address>
+      <Line>Queen's Medical Centre</Line>
+      <City>Nottingham</City>
+      <State>Notts</State>
+      <Postal-Code>NG7 2UH</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>Sigma-Genosys</Organization>
+    <Email>ginformation@sial.com</Email>
+    <Phone>800-234-5362</Phone>
+    <Fax>281-363-2212</Fax>
+    <Organization>Sigma-Genosys</Organization>
+    <Address>
+      <Line>1442 Lake Front Circle</Line>
+      <City>The Woodlands</City>
+      <State>TX</State>
+      <Zip-Code>77380</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.sigma-genosys.com/</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Liz</First><Last>Sockett</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL189">
+    <Status database="GEO">
+      <Submission-Date>2002-06-13</Submission-Date>
+      <Release-Date>2002-12-20</Release-Date>
+      <Last-Update-Date>2007-04-06</Last-Update-Date>
+    </Status>
+    <Title>Sigma Genosys Panorama Escherichia coli Gene Array</Title>
+    <Accession database="GEO">GPL189</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Sigma Genosys</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+The Panorama Escherichia coli Gene Array was developed using E. coli ORFmers (PCR primers). The PCR primers were developed as part of a collaboration with the E. coli Genome Group, headed by Dr. Fred Blattner at the Department of Genetics, University of Wisconsin-Madison (http://www.genome.wisc.edu).  The array contains 4,290 PCR-amplified ORFs, representing all of the protein-encoding genes.
+    </Description>
+    <Web-Link>http://www.sigmagenosys.com/epp_microbia_ecoli_generalinfo.asp</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>spot number</Description>
+      </Column>
+      <Column position="2">
+        <Name>Array_Coord</Name>
+        <Description>array coordinate</Description>
+      </Column>
+      <Column position="3">
+        <Name>Gene_Name</Name>
+        <Description>gene symbol/name</Description>
+      </Column>
+      <Column position="4">
+        <Name>Gene_Desc</Name>
+        <Description>gene description</Description>
+      </Column>
+      <Column position="5">
+        <Name>GENOME ACC</Name>
+        <Description>GenBank accession number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&amp;db=Nucleotide&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="6">
+        <Name>Protein_GI</Name>
+        <Description>GenBank protein GI number</Description>
+      </Column>
+      <Column position="7">
+        <Name>ORF</Name>
+        <Description>Blattner number  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="8">
+        <Name>Func_Cat</Name>
+        <Description>revised functional category (46 groups)</Description>
+      </Column>
+      <Column position="9">
+        <Name>Func</Name>
+        <Description>revised general function (19 groups)</Description>
+      </Column>
+    <External-Data rows="4314">
+GPL189-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM240949">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 1</Title>
+    <Accession database="GEO">GSM240949</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240949/GSM240949_EC-1.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240949/GSM240949_ec1.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240949-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240950">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 2</Title>
+    <Accession database="GEO">GSM240950</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240950/GSM240950_EC-1.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240950/GSM240950_ec1.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240950-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240951">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 3</Title>
+    <Accession database="GEO">GSM240951</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240951/GSM240951_EC-2.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240951/GSM240951_ec2.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240951-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240952">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 4</Title>
+    <Accession database="GEO">GSM240952</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240952/GSM240952_EC-2.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240952/GSM240952_ec2.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240952-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240953">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 5</Title>
+    <Accession database="GEO">GSM240953</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240953/GSM240953_EC-3.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240953/GSM240953_ec3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240953-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240954">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 6</Title>
+    <Accession database="GEO">GSM240954</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240954/GSM240954_EC-3.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240954/GSM240954_ec3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240954-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240955">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 7</Title>
+    <Accession database="GEO">GSM240955</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240955/GSM240955_EC-4.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240955/GSM240955_ec4.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240955-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240956">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 8</Title>
+    <Accession database="GEO">GSM240956</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240956/GSM240956_EC-4.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240956/GSM240956_ec4.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240956-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240957">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 9</Title>
+    <Accession database="GEO">GSM240957</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240957/GSM240957_EC-5.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240957/GSM240957_ec5.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240957-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240958">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli sample 10</Title>
+    <Accession database="GEO">GSM240958</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from E. coli only control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Total RNA from pre-incubated E. coli cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240958/GSM240958_EC-5.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240958/GSM240958_ec5.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240958-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240959">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 1</Title>
+    <Accession database="GEO">GSM240959</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240959/GSM240959_t1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240959/GSM240959_test-1.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240959-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240960">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 2</Title>
+    <Accession database="GEO">GSM240960</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240960/GSM240960_t1.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240960/GSM240960_test-1.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240960-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240961">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 3</Title>
+    <Accession database="GEO">GSM240961</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240961/GSM240961_t2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240961/GSM240961_test-2.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240961-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240962">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 4</Title>
+    <Accession database="GEO">GSM240962</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240962/GSM240962_t2.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240962/GSM240962_test-2.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240962-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240963">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 5</Title>
+    <Accession database="GEO">GSM240963</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240963/GSM240963_t3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240963/GSM240963_test-3.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240963-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240964">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 6</Title>
+    <Accession database="GEO">GSM240964</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240964/GSM240964_t3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240964/GSM240964_test-3.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240964-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240965">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 7</Title>
+    <Accession database="GEO">GSM240965</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240965/GSM240965_t4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240965/GSM240965_test-4.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240965-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240966">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 8</Title>
+    <Accession database="GEO">GSM240966</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240966/GSM240966_t4.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240966/GSM240966_test-4.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240966-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240967">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 9</Title>
+    <Accession database="GEO">GSM240967</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240967/GSM240967_t5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240967/GSM240967_test-5.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240967-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240968">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Test sample 10</Title>
+    <Accession database="GEO">GSM240968</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio infection on E. coli sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from E. coli and Bdellovibrio cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240968/GSM240968_t5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240968/GSM240968_test-5.gel.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240968-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240969">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 1</Title>
+    <Accession database="GEO">GSM240969</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240969/GSM240969_BD-1.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240969/GSM240969_ec1.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240969-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240970">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 2</Title>
+    <Accession database="GEO">GSM240970</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240970/GSM240970_BD-1.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240970/GSM240970_ec1.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240970-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240971">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 3</Title>
+    <Accession database="GEO">GSM240971</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240971/GSM240971_BD-2.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240971/GSM240971_ec2.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240971-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240972">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 4</Title>
+    <Accession database="GEO">GSM240972</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240972/GSM240972_BD-2.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240972/GSM240972_ec2.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240972-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240973">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 5</Title>
+    <Accession database="GEO">GSM240973</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240973/GSM240973_BD-3.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240973/GSM240973_ec3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240973-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240974">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 6</Title>
+    <Accession database="GEO">GSM240974</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240974/GSM240974_BD-3.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240974/GSM240974_ec3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240974-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240975">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 7</Title>
+    <Accession database="GEO">GSM240975</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240975/GSM240975_BD-4.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240975/GSM240975_ec4.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240975-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240976">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 8</Title>
+    <Accession database="GEO">GSM240976</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 4 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240976/GSM240976_BD-4.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240976/GSM240976_ec4.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240976-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240977">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 9</Title>
+    <Accession database="GEO">GSM240977</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 5, technical replicate 1 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240977/GSM240977_BD-5.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240977/GSM240977_ec5.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240977-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM240978">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus 109J sample 10</Title>
+    <Accession database="GEO">GSM240978</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Total RNA from  Bdellovibrio only control</Source>
+      <Organism taxid="959">Bdellovibrio bacteriovorus</Organism>
+      <Characteristics>
+Total RNA from Bdellovibrio bacteriovorus 109J cells
+      </Characteristics>
+      <Treatment-Protocol>
+1) Grow the Bdellovibrio in a “prey lysate” of 1L Ca/HEPES, 75ml overnight E. coli YT culture and 50ml of a previous lysate in a 2L conical flask with 200rpm shaking in a 29°C incubator. Grow E. coli in 100ml YT in a 250ml flask overnight at 37°C in the shaking incubator.
+2) Check that the lysate is fully lysed by microscopy (i.e. that virtually all the E. coli and bdelloplasts are gone and there are lots of motile attack phase bdellovibrios).
+3) Pre-warm a benchtop centrifuge at 29°C.
+4) When lysate is fully lysed, spin 15,000g for 30 mins.
+5) Spin down the E. coli in the benchtop centrifuge in 50ml falcon tubes, 5,000g, 10 mins at 29°C
+6) Resuspend 100ml of E. coli in 100ml Ca/HEPES then incubate at 29ºC in a 500ml flask with 200rpm shaking for 3 hours to stabilise expression.
+7) Resuspend all of the bdellovibrios in 100ml Ca/HEPES buffer and incubate at 29°C in 500ml conical flask with 200rpm shaking for 3 hours to stabilise expression.
+8) After 2.5 hours incubation, remove 35ml from each, spin 5,000g for 5 minutes, filter 3 times through a 0.22µm filter to give supernatant which is returned to incubate at 29°C
+9) Pre-label 15ml falcon tubes for the samples and add 1ml Phenol/ethanol solution (5% phenol 95% ethanol, v/v).
+10) To start the infection, after 3 hours of pre-incubation, quickly add to the pre-incubated flasks:
+* the TEST with 25ml E. coli and 25ml bdellovibrios
+* the S17-1 ONLY with 25ml E. coli and 25ml bdellovibrio supernatant
+* the BDELLOVIBRIO ONLY with 25ml bdellovibrio and 25ml E. coli supernatant
+11) At 15 minutes quickly take 4ml samples from each flask and add them to the phenol/ethanol tubes. Mix tubes well by inversion and put on ice for at least 45mins.
+12) After the samples have been on ice for at least 45 minutes, spin 10 mins, 3320g
+15) Pour off the supernatant, leaving about 1ml to resuspend pellet carefully and transfer to microcentrifuge tube on ice.
+16) Spin 13K 2 mins at 4ºC and then pipette off remaining supernatant carefully.
+17) Store the tube containing the pellet at -80°C.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+IFR protocol, eluting in 50µl and DNase treating with Ambion DNA-free kit. http://www.ifr.ac.uk/Safety/Microarrays/protocols.html
+      </Extract-Protocol>
+      <Label>33P dCTP</Label>
+      <Label-Protocol>
+Add to a 0.5ml tube 4ul E. coli cDNA labeling primers (Sigma), reconstituted in 40ul sterile distilled water and RNA sample made up to 11ul
+Anneal the primers to the RNA template by heating to 90°C for 2 minutes, then ramp to 42°C over a period of 20 minutes.
+When the sample reaches 42°C, add 3ul 10X Reverse transcriptase buffer, 1ul 333uM dATP, 1ul 333uM dGTP, 1ul 333uM dTTP, 2ul 20uCi [alpha-33P] dCTP, 2ul AMV reverse transcriptase, final volume 30ul
+Incubate 42°C for 2-3 hours
+apply the sample to Bio-Rad Micro Bio-Spin Chromatography Columns for removal of unincorporated radiolabel
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Rinse the arrays in 50ml 2X SSPE for 5 minutes. Drain.
+Pre-Hybridise the array in 5ml hybridisation solution with 100ug/ml denatured salmon sperm DNA for at least 1 hour at 65°C.
+Add all labelled cDNA to 3ml hydridisation solution and denature for 10minutes at 95°C, add to array and hybridise overnight at 65°C
+Decant off hybridisation solution and wash 3 times in 40-50ml wash solution at room temperature
+Wash 3 times in 80-100ml wash solution at 65°C for 20 minutes
+Air dry array for 5 minutes
+Wrap in saran wrap
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were exposed to Molecular Dynamics phosphor screens for 2 days and scanned at 88um with Molecular Dynamics Phosphorimager 425 running Image Quant software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 5 of 5, technical replicate 2 of 2
+    </Description>
+    <Data-Processing>
+The ArayVision software was used to analyse the phosphorimages with the template provided by Sigma Genosys for the arrays. Background correction was by using the area surrounding the template, 2 pixels distance and thickness, and normalisation was against all spots in the array
+    </Data-Processing>
+    <Platform-Ref ref="GPL189" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240978/GSM240978_BD-5.gel.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM240nnn/GSM240978/GSM240978_ec5.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>Identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalised signal intensity</Description>
+      </Column>
+    <External-Data rows="4290">
+GSM240978-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE9495">
+    <Status database="GEO">
+      <Submission-Date>2007-11-01</Submission-Date>
+      <Release-Date>2009-12-09</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>Bdellovibrio bacteriovorus infection of E. coli</Title>
+    <Accession database="GEO">GSE9495</Accession>
+    <Pubmed-ID>20024656</Pubmed-ID>
+    <Summary>
+The transcriptional response of E. coli being predated by Bdellovibrio bacteriovorus
+Keywords: Transcriptional analysis
+    </Summary>
+    <Overall-Design>
+5 biological replicates with 2 technical replicates each of E. coli cells only and E. coli cells 15 minutes post-infection arrays 4 arrays, with samples swapped for each biological replicate.
+
+Gel image files generated by the ImageQuant scanning software.
+
+Each raw data txt file has the &quot;control&quot; samples which are the E. coli samples reading on the entire array and thus with the 2 technical replicates, and the &quot;data&quot; samples to which it is compared by Arrayvision. the &quot;data&quot; samples of ec1 to ec5 are Bdellovibrio only controls 2 technical replicates). The &quot;data&quot; samples of t1 to t5 are the test samples. Hence t1 to t5 are the raw data files for samples test1 to test10 and ec1 to ec5 are the raw data files for all of samples ec-1 to ec-10 and bd-1 to bd-10.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM240949" />
+    <Sample-Ref ref="GSM240950" />
+    <Sample-Ref ref="GSM240951" />
+    <Sample-Ref ref="GSM240952" />
+    <Sample-Ref ref="GSM240953" />
+    <Sample-Ref ref="GSM240954" />
+    <Sample-Ref ref="GSM240955" />
+    <Sample-Ref ref="GSM240956" />
+    <Sample-Ref ref="GSM240957" />
+    <Sample-Ref ref="GSM240958" />
+    <Sample-Ref ref="GSM240959" />
+    <Sample-Ref ref="GSM240960" />
+    <Sample-Ref ref="GSM240961" />
+    <Sample-Ref ref="GSM240962" />
+    <Sample-Ref ref="GSM240963" />
+    <Sample-Ref ref="GSM240964" />
+    <Sample-Ref ref="GSM240965" />
+    <Sample-Ref ref="GSM240966" />
+    <Sample-Ref ref="GSM240967" />
+    <Sample-Ref ref="GSM240968" />
+    <Sample-Ref ref="GSM240969" />
+    <Sample-Ref ref="GSM240970" />
+    <Sample-Ref ref="GSM240971" />
+    <Sample-Ref ref="GSM240972" />
+    <Sample-Ref ref="GSM240973" />
+    <Sample-Ref ref="GSM240974" />
+    <Sample-Ref ref="GSM240975" />
+    <Sample-Ref ref="GSM240976" />
+    <Sample-Ref ref="GSM240977" />
+    <Sample-Ref ref="GSM240978" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE9495/GSE9495_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/103281" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Dipen</First><Last>Sangurdekar</Last></Person>
+    <Email>dps@genomics.princeton.edu</Email>
+    <Department>Lewis-Sigler Institute for Integrative Genomics</Department>
+    <Organization>Princeton University</Organization>
+    <Address>
+      <Line>132 Carl Icahn laboratory, Princeton University</Line>
+      <City>Princeton</City>
+      <State>NJ</State>
+      <Zip-Code>08544</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Dipen</First><Middle>P</Middle><Last>Sangurdekar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Friedrich</First><Last>Srienc</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Arkady</First><Middle>B</Middle><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Arkady</First><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3503">
+    <Status database="GEO">
+      <Submission-Date>2006-03-02</Submission-Date>
+      <Release-Date>2006-03-06</Release-Date>
+      <Last-Update-Date>2006-03-06</Last-Update-Date>
+    </Status>
+    <Title>Khodursky Lab E. coli B 4290 ORFs Microarray</Title>
+    <Accession database="GEO">GPL3503</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Non-commercial</Manufacturer>
+    <Manufacture-Protocol>
+4290 amplified ORFs from primer pairs (from Sigma Genosys) were printed onto glass slides using a 16 tip robotic printer from 384-well microwell plates
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Description>
+A microarray with 4405 spot features.
+Tip Configuration: Standard 16-tip
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Open Reading Frame identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE_SYMBOL</Name>
+        <Description>Name of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+      <Column position="4">
+        <Name>GENE_DESC</Name>
+        <Description>Description of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+    <External-Data rows="4405">
+GPL3503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM99199">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Gamma treatment T1</Title>
+    <Accession database="GEO">GSM99199</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Davis, 0 min before treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 0 min before treatment, Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 5 min after Gamma treatment in Davis</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 5 min after Gamma treatment in Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Gamma treatment in Davis, 5 min timepoint vs 0 min untreated
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99200">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Gamma treatment T2</Title>
+    <Accession database="GEO">GSM99200</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Davis, 0 min before treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 0 min before treatment, Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 10 min after Gamma treatment in Davis</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 10 min after Gamma treatment in Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Gamma treatment in Davis, 10 min timepoint vs 0 min untreated
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99200-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99201">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Gamma treatment T3</Title>
+    <Accession database="GEO">GSM99201</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Davis, 0 min before treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 0 min before treatment, Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 20 min after Gamma treatment in Davis</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 20 min after Gamma treatment in Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Gamma treatment in Davis, 20 min timepoint vs 0 min untreated
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99201-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99202">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Gamma treatment T4</Title>
+    <Accession database="GEO">GSM99202</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Davis, 0 min before treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 0 min before treatment, Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 40min after Gamma treatment in Davis</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 40min after Gamma treatment in Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Gamma treatment in Davis, 40 min timepoint vs 0 min untreated
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99202-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99203">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Gamma treatment T5</Title>
+    <Accession database="GEO">GSM99203</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Davis, 0 min before treatment</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 0 min before treatment, Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 60 min after Gamma treatment in Davis</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 60 min after Gamma treatment in Davis
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Gamma treatment in Davis, 60 min timepoint vs 0 min untreated
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99203-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4377">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Gamma treatment in Davis, timecourse</Title>
+    <Accession database="GEO">GSE4377</Accession>
+    <Pubmed-ID>16626502</Pubmed-ID>
+    <Summary>
+Responses of Escherichia coli as they are treated to Gamma radiation in Davis medium
+Keywords: time course
+    </Summary>
+    <Overall-Design>
+Escherichia coli cells sampled at several time points (5, 10, 20, 40, 60 min) after Gamma treatment in Davis vs 0 min untreated
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM99199" />
+    <Sample-Ref ref="GSM99200" />
+    <Sample-Ref ref="GSM99201" />
+    <Sample-Ref ref="GSM99202" />
+    <Sample-Ref ref="GSM99203" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/94671" />
+  </Series>
+
+</MINiML>

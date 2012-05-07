@@ -399,15 +399,18 @@ sub c1data {
 			$id = lc($id);
 			
 			my $id_ref = '';
-			if (exists $dbplatformAnnot{ $id }) {
-				for my $ltag ( keys %{ $dbplatformAnnot{ $id } } ) {
-					$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_000913/) and ($ltag =~ /^b/i);		#genome is MG1655 only want B-numbers
-					$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_002655/) and ($ltag =~ /^z/i);		#genome is EDL933 only want Z-numbers
-					$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_002695/) and ($ltag =~ /^e/i);		#genome is Sakai only want Ecs-numbers
-					$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_004431/) and ($ltag =~ /^c/i);		#genome is CFT073 only want c-numbers
-					$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_007946/) and ($ltag =~ /^u/i);		#genome is UTI89 only want UTI89-numbers
-				}
-			}
+			#if (exists $dbplatformAnnot{ $id }) {
+			#	for my $ltag ( keys %{ $dbplatformAnnot{ $id } } ) {
+			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_000913/) and ($ltag =~ /^b/i);		#genome is MG1655 only want B-numbers
+			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_002655/) and ($ltag =~ /^z/i);		#genome is EDL933 only want Z-numbers
+			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_002695/) and ($ltag =~ /^e/i);		#genome is Sakai only want Ecs-numbers
+			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_004431/) and ($ltag =~ /^c/i);		#genome is CFT073 only want c-numbers
+			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_007946/) and ($ltag =~ /^u/i);		#genome is UTI89 only want UTI89-numbers
+			#	}
+			#}
+
+		  	 $id_ref=($dbplatformAnnot{ $id }) ? $dbplatformAnnot{ $id } : '';
+
 			next if ! $id_ref;
 			$id_ref =~ s/^://;	#remove leading ':'
 
@@ -527,15 +530,18 @@ sub c1data {
 			$id = lc($id);
 
 			my $id_ref = '';
-			if (exists $dbplatformAnnot{ $id }) {
-				for my $ltag ( keys %{ $dbplatformAnnot{ $id } } ) {
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_000913/) and ($ltag =~ /^b/i);		#genome is MG1655 only want B-numbers
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002655/) and ($ltag =~ /^z/i);		#genome is EDL933 only want Z-numbers
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002695/) and ($ltag =~ /^e/i);		#genome is Sakai only want Ecs-numbers
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_004431/) and ($ltag =~ /^c/i);		#genome is CFT073 only want c-numbers
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_007946/) and ($ltag =~ /^u/i);		#genome is UTI89 only want UTI89-numbers
-				}
-			}
+			#if (exists $dbplatformAnnot{ $id }) {
+			#	for my $ltag ( keys %{ $dbplatformAnnot{ $id } } ) {
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_000913/) and ($ltag =~ /^b/i);		#genome is MG1655 only want B-numbers
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002655/) and ($ltag =~ /^z/i);		#genome is EDL933 only want Z-numbers
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002695/) and ($ltag =~ /^e/i);		#genome is Sakai only want Ecs-numbers
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_004431/) and ($ltag =~ /^c/i);		#genome is CFT073 only want c-numbers
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_007946/) and ($ltag =~ /^u/i);		#genome is UTI89 only want UTI89-numbers
+			#	}
+			#}
+
+			  $id_ref=($dbplatformAnnot{ $id }) ? $dbplatformAnnot{ $id } : '';
+
 			next if ! $id_ref;
 			$id_ref =~ s/^://;	#remove leading ':'
 			
@@ -699,6 +705,7 @@ sub c1data {
 	my $stddev = sprintf( "%.3f", gdb::plot::stat_stdev( \@stddata ) );
 		
 	##================================================================================================================================
+	return ;
 
 	if ( ! delExistingExpm($exp{id}) ) {
 		# we need to delete the existing Experiment PEXP rec and PDATA recs before we add new ones.
@@ -899,7 +906,7 @@ sub c2data {
 		%plotTestdata = ();
 		%plotCntldata = ();
 
-		open( FILE, "/gdb/geo/accessions/$sample{$bioassays_id}{accession}/$sample{$bioassays_id}{fname}" );
+		open( FILE, "../accessions/$sample{$bioassays_id}{accession}/$sample{$bioassays_id}{fname}" );
 		my @data = <FILE>;
 		close(FILE);
 
@@ -919,15 +926,23 @@ sub c2data {
 			$id = lc($id);
 
 			my $id_ref = '';
-			if (exists $dbplatformAnnot{ $id }) {
-				for my $ltag ( keys %{ $dbplatformAnnot{ $id } } ) {
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_000913/) and ($ltag =~ /^b/i);		#genome is MG1655 only want B-numbers
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002655/) and ($ltag =~ /^z/i);		#genome is EDL933 only want Z-numbers
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002695/) and ($ltag =~ /^e/i);		#genome is Sakai only want Ecs-numbers
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_004431/) and ($ltag =~ /^c/i);		#genome is CFT073 only want c-numbers
-					$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_007946/) and ($ltag =~ /^u/i);		#genome is UTI89 only want UTI89-numbers
-				}
-			}
+			
+			#if (exists $dbplatformAnnot{ $id }) {
+				
+			#	print "id= $id \t $dbplatformAnnot{ $id }";
+				
+			#	for my $ltag ( keys %{ $dbplatformAnnot{ $id } } ) {
+					
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_000913/) and ($ltag =~ /^b/i);		#genome is MG1655 only want B-numbers
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002655/) and ($ltag =~ /^z/i);		#genome is EDL933 only want Z-numbers
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002695/) and ($ltag =~ /^e/i);		#genome is Sakai only want Ecs-numbers
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_004431/) and ($ltag =~ /^c/i);		#genome is CFT073 only want c-numbers
+			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_007946/) and ($ltag =~ /^u/i);		#genome is UTI89 only want UTI89-numbers
+			#	}
+			#}
+			
+			  $id_ref=($dbplatformAnnot{ $id }) ? $dbplatformAnnot{ $id } : '';
+
 			next if ! $id_ref;
 			$id_ref =~ s/^://;	#remove leading ':'
 			
@@ -1165,7 +1180,8 @@ sub c2data {
 
 	} #end average
 
-	
+	return;
+
 	##================================================================================================================================
 
 	if ( ! delExistingExpm($exp{id}) ) {
@@ -1304,7 +1320,7 @@ sub loess {
 	print RSCPT qq{write.table(output, file="$filedataOut", sep="\t", col.names=FALSE);\n};
 	close RSCPT;
 
-	my $cmd    = "/usr/local/bin/R CMD BATCH --no-save $fileR $filelog";
+	my $cmd    = "/usr/bin/R CMD BATCH --no-save $fileR $filelog";
 	my $result = `$cmd 2>&1`;                                              #-- capture STDERR as well as STDOUT
 
 	return $filedataOut;

@@ -731,19 +731,24 @@ sub dbgetExpmInfo {
 sub dbexpInfo {
 	my ($expid) = @_;
 
-	$sql =
-qq{ select id, expname, samples, timepoint, channels, testcolumn, testbkgd, controlcolumn, cntlbkgd, logarithm, normalize, antilog, userma, expstddev, exporder, platform, testgenome, cntlgenome, adduser, moduser,to_char(adddate, 'mm/dd/yy HH:MIam') as adate, to_char(moddate, 'mm/dd/yy HH:MIam') as mdate from pexp where expid = ? order by exporder, timepoint, samples };
+	#czhang, order by add date and modify date
+	#$sql =qq{ select id, expname, samples, timepoint, channels, testcolumn, testbkgd, controlcolumn, cntlbkgd, logarithm, normalize, antilog, userma, expstddev, exporder, platform, testgenome, cntlgenome, adduser, moduser,to_char(adddate, 'mm/dd/yy HH:MIam') as adate, to_char(moddate, 'mm/dd/yy HH:MIam') as mdate, expmean from pexp where expid = ? order by exporder, timepoint, samples };
+	$sql =qq{ select id, expname, samples, timepoint, channels, testcolumn, testbkgd, controlcolumn, cntlbkgd, logarithm, normalize, antilog, userma, expstddev, exporder, platform, testgenome, cntlgenome, adduser, moduser,to_char(adddate, 'mm/dd/yy HH:MIam') as adate, to_char(moddate, 'mm/dd/yy HH:MIam') as mdate, expmean from pexp where expid = ? order by timepoint, mdate, exporder };
+	
+	
 	$sth = $dbh->prepare($sql);
 	$sth->execute($expid);
 
 	my $i = 0;
+	
+	#czhang added my $expmean and column with $expmean
 	my (
 		$id,        $expname, $samples,   $timepoint, $channels, $testcolumn, $testbkgd, $controlcolumn, $cntlbkgd, $logarithm,
-		$normalize, $antilog, $userma,  $expstddev, $exporder,  $platform, $testgenome, $cntlgenome, $adduser,    $moduser,  $adate,         $mdate,    %dbexpInfo
+		$normalize, $antilog, $userma,  $expstddev, $exporder,  $platform, $testgenome, $cntlgenome, $adduser,    $moduser,  $adate,   $mdate,    %dbexpInfo, $expmean
 	);
 	$sth->bind_columns(
 		\$id,        \$expname, \$samples,   \$timepoint, \$channels, \$testcolumn, \$testbkgd, \$controlcolumn, \$cntlbkgd, \$logarithm,
-		\$normalize, \$antilog, \$userma,  \$expstddev, \$exporder,  \$platform, \$testgenome, \$cntlgenome, \$adduser,    \$moduser,  \$adate,         \$mdate
+		\$normalize, \$antilog, \$userma,  \$expstddev, \$exporder,  \$platform, \$testgenome, \$cntlgenome, \$adduser,    \$moduser,  \$adate,   \$mdate, \$expmean
 	);
 	while ( $row = $sth->fetchrow_arrayref ) {
 		$dbexpInfo{$i}{id}            = ($id);
@@ -768,6 +773,10 @@ qq{ select id, expname, samples, timepoint, channels, testcolumn, testbkgd, cont
 		$dbexpInfo{$i}{moduser}       = ($moduser) ? $moduser : '';
 		$dbexpInfo{$i}{adate}         = ($adate) ? $adate : '';
 		$dbexpInfo{$i}{mdate}         = ($mdate) ? $mdate : '';
+		
+		#czhang added exp mean
+		$dbexpInfo{$i}{expmean}         = ($expmean) ? $expmean : '';
+		
 		$i++;
 	}
 	$sth->finish;
@@ -988,9 +997,13 @@ sub dbplatformAnnot {
 
 	my %dbplatformAnnot;
 	my $vals = $dbh->selectall_arrayref( q{ select id_ref,locustag from platformannot where platform=? }, undef, $platformID );
+	
 	foreach my $val (@$vals) {
+	
 		my ($id_ref, $locustag) = @$val;
+		
 		$dbplatformAnnot{ lc($id_ref) } = $locustag;
+		
 	}
 	return ( \%dbplatformAnnot );
 }
@@ -1464,7 +1477,11 @@ sub dbsaveExptoDB {
 	}
 
 	#save info to pexp
-	$sql = qq{ insert into pexp (id,eid,expname,expid,accession,samples,channels,testcolumn,testbkgd,controlcolumn,cntlbkgd,logarithm,normalize,antilog,userma,plottype,info,expstddev,platform,testgenome,cntlgenome,adddate,adduser) values ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,sysdate,? ) };
+	#$sql = qq{ insert into pexp (id,eid,expname,expid,accession,samples,channels,testcolumn,testbkgd,controlcolumn,cntlbkgd,logarithm,normalize,antilog,userma,plottype,info,expstddev,platform,testgenome,cntlgenome,adddate,adduser) values ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,sysdate,? ) };
+	
+	#CZHANG added exp mean value
+	$sql = qq{ insert into pexp (id,eid,expname,expid,accession,samples,channels,testcolumn,testbkgd,controlcolumn,cntlbkgd,logarithm,normalize,antilog,userma,plottype,info,expstddev,platform,testgenome,cntlgenome,adddate,adduser, expmean) values ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,SYSTIMESTAMP,?, ?) };
+	
 	$sth = $dbh->prepare($sql);
 
 	my $testcolumn = ( $savExpInfo{testcolumn} ) ? $savExpInfo{testcolumn} : '';
@@ -1480,7 +1497,7 @@ sub dbsaveExptoDB {
 	my $antilog = ( $savExpInfo{antilog} ) ? $savExpInfo{antilog} : 0;
 	my $userma = ( $savExpInfo{userma} ) ? $savExpInfo{userma} : 0;
 
-	if ( !$sth->execute($pexp_id,$expEID,$gdb::webUtil::frmData{expname},$savExpInfo{expid},$savExpInfo{accession},$savExpInfo{samples},$savExpInfo{channels},$testcolumn,$testbkgd,$controlcolumn,$cntlbkgd,$logarithm,$normalize,$antilog,$userma,$savExpInfo{plottype},$gdb::webUtil::frmData{info},$savExpInfo{expstddev},$savExpInfo{platform},$savExpInfo{testgenome},$savExpInfo{cntlgenome},$gdb::webUtil::username) ) {
+	if ( !$sth->execute($pexp_id,$expEID,$gdb::webUtil::frmData{expname},$savExpInfo{expid},$savExpInfo{accession},$savExpInfo{samples},$savExpInfo{channels},$testcolumn,$testbkgd,$controlcolumn,$cntlbkgd,$logarithm,$normalize,$antilog,$userma,$savExpInfo{plottype},$gdb::webUtil::frmData{info},$savExpInfo{expstddev},$savExpInfo{platform},$savExpInfo{testgenome},$savExpInfo{cntlgenome},$gdb::webUtil::username, $savExpInfo{expmean}) ) {
 		print "Cannot insert experiment data.<br>";
 		return 0;
 	}
@@ -2681,7 +2698,7 @@ sub dbputgeoUpdate {
 	}
 
 	#add record if we do not have it...
-	$sql = qq{ insert into curated (id, accession, geodesc, geomatch, status, adddate, adduser)  values ( id_seq.nextval, ?, ?, ?, 1, sysdate, ? ) };
+	$sql = qq{ insert into curated (id, accession, geodesc, geomatch, status, adddate, adduser)  values ( id_seq.nextval, ?, ?, ?, 1, SYSTIMESTAMP, ? ) };
 	$sth = $dbh->prepare($sql);
 
 	my $numadded = 0;

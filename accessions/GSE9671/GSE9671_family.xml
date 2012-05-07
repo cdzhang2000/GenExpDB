@@ -1,0 +1,3388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Sébastien</First><Middle>P</Middle><Last>Faucher</Last></Person>
+    <Email>sebastien.faucher@umontreal.ca</Email>
+    <Phone>514-343-6111 #3135</Phone>
+    <Fax>514-343-5701</Fax>
+    <Department>Microbiology and Immunology</Department>
+    <Organization>University of Montreal</Organization>
+    <Address>
+      <Line>C.P. 6128 Succ. Centre-Ville</Line>
+      <City>Montreal</City>
+      <State>QUEBEC</State>
+      <Postal-Code>H3C 3J7</Postal-Code>
+      <Country>Canada</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL6178">
+    <Status database="GEO">
+      <Submission-Date>2007-11-22</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2010-12-14</Last-Update-Date>
+    </Status>
+    <Title>E. coli K12, Sakai and EDL933 genes (MGW oligonucleotide)</Title>
+    <Accession database="GEO">GPL6178</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Genomics Core Facility, National Microbiology Laboratory, Canadian Science Centre for Human and Animal Health, Public Health Agency of Canada.</Manufacturer>
+    <Manufacture-Protocol>
+Oligo set used is the E. coli O157 set commercially provided by MWG-Biotech and supplemented with 104 additional oligos requested by Vic Gannon's group. All were 50'mers resuspended in fresh 50%DMSO to a final concentration of 50uM using a Biomek 2000 robotic liquid handler (Beckman Coulter Inc). Print plates were sealed and stored at -20C when not in use. Prior to printing arrays the oligo plates were allowed to come to room temperature then heated for 5min at 60C. Once cooled they were centrifuged for 3min at 3000rpm to collect all liquid prior to arraying. Arrays were printed on Corning UltraGAPS slides using Telechem SMP3 pins in a BioRad ChipWriter Pro arrayer. Arrays were printed at room temperature (21-23C) and at 58-60% relative humidity. Arrays were printed with 24 pins in a 4x6 arrangement such that each subgrid contains 18x16 spots with an interspot distance of 245 microns centre to centre and a spot diameter of 100 microns. Duplicate supergrids were created lengthwise across the slide so that two spots per oligo exist at separate locations on the array. When spotting was complete, the chamber humidification was turned off and the arrays were allowed to &quot;dry&quot; in the print chamber for a minimum of 6 hours. The slides were then cross-linked at 600mJ and packaged in the original slide holders that they were received in from Corning. For shipping, arrays were packaged with dessicant in foil heat sealed bags.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>BLOCK</Name>
+        <Description>The number of the subarray starting left to right and up to down</Description>
+      </Column>
+      <Column position="3">
+        <Name>COLUMN</Name>
+        <Description>spot column</Description>
+      </Column>
+      <Column position="4">
+        <Name>ROW</Name>
+        <Description>spot row</Description>
+      </Column>
+      <Column position="5">
+        <Name>NUMBER</Name>
+        <Description>Oligonucleotide number</Description>
+      </Column>
+      <Column position="6">
+        <Name>ORF</Name>
+        <Description>gene name (B#, Z#, ECS#) </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="7">
+        <Name>DESCRIPTION</Name>
+        <Description>description of the gene product</Description>
+      </Column>
+      <Column position="8">
+        <Name>GENE</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="6912">
+GPL6178-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM244362">
+    <Status database="GEO">
+      <Submission-Date>2007-11-22</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>RPMI 1A, Microarray #1 first duplicate</Title>
+    <Accession database="GEO">GSM244362</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained in RPMI </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 in RPMI medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Genomic DNA E. coli EDL933
+      </Characteristics>
+      <Growth-Protocol>
+EDL933 from overnight culture in LB broth
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample was used as a reference to an experiment of the effect of human macrophages phagocytosis on the global transcriptome of EDL933
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE-VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244362-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244363">
+    <Status database="GEO">
+      <Submission-Date>2007-11-22</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>RPMI 1B, Microarray #1 second replicate</Title>
+    <Accession database="GEO">GSM244363</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained in RPMI medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 in RPMI medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Growth-Protocol>
+EDL933 from overnight culture in LB broth
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample was used as a reference to an experiment of the effect of human macrophages phagocytosis on the global transcriptome of EDL933
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE-VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244363-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244364">
+    <Status database="GEO">
+      <Submission-Date>2007-11-22</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>RPMI 2A, Microarray #2, first replicate</Title>
+    <Accession database="GEO">GSM244364</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained in RPMI medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 in RPMI medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Growth-Protocol>
+EDL933 from overnight culture in LB broth
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample was used as a reference to an experiment of the effect of human macrophages phagocytosis on the global transcriptome of EDL933
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1% of total / ch2% of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244364-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244365">
+    <Status database="GEO">
+      <Submission-Date>2007-11-22</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>RPMI 2B, Microarray #2 second replicate</Title>
+    <Accession database="GEO">GSM244365</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA in RPMI medium</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 in RPMI medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Genomic DNA of EDL933
+      </Characteristics>
+      <Growth-Protocol>
+EDL933 from overnight culture in LB broth
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample was used as a reference to an experiment of the effect of human macrophages phagocytosis on the global transcriptome of EDL933
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1% of total / ch2% of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244365-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244366">
+    <Status database="GEO">
+      <Submission-Date>2007-11-22</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T2 THP-1 infection, Microarray #1 first replicate</Title>
+    <Accession database="GEO">GSM244366</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 2h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 infection of THP-1 cells, recovered 2h post-infection
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Genomic DNA from EDL933
+      </Characteristics>
+      <Growth-Protocol>
+EDL933 from overnight culture in LB broth
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample was used as a reference to an experiment of the effect of human macrophages phagocytosis on the global transcriptome of EDL933
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1% of total / ch2% of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244366-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244367">
+    <Status database="GEO">
+      <Submission-Date>2007-11-22</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T2 THP-1 infection, Microarray #1 second replicate</Title>
+    <Accession database="GEO">GSM244367</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 2h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 infection of THP-1 cells, recovered 2h post-infection
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Growth-Protocol>
+EDL933 from overnight culture in LB broth
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample was used as a reference to an experiment of the effect of human macrophages phagocytosis on the global transcriptome of EDL933
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1% of total / ch2% of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244367-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244368">
+    <Status database="GEO">
+      <Submission-Date>2007-11-22</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T2 THP-1 infection, Microarray #2 first replicate</Title>
+    <Accession database="GEO">GSM244368</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 2h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 infection of THP-1 cells, recovered 2h post-infection
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Growth-Protocol>
+EDL933 from overnight culture in LB broth
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample was used as a reference to an experiment of the effect of human macrophages phagocytosis on the global transcriptome of EDL933
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1% of total / ch2% of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244368-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244369">
+    <Status database="GEO">
+      <Submission-Date>2007-11-22</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T2 THP-1 infection, Microarray #2 second replicate</Title>
+    <Accession database="GEO">GSM244369</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 2h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 infection of THP-1 cells, recovered 2 h post-infection
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA 
+      </Characteristics>
+      <Growth-Protocol>
+EDL933 from overnight culture in LB broth
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample was used as a reference to an experiment of the effect of human macrophages phagocytosis on the global transcriptome of EDL933
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1% of total / ch2% of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244369-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244370">
+    <Status database="GEO">
+      <Submission-Date>2007-11-23</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T8 THP-1 infection, Microarray #1 first replicate</Title>
+    <Accession database="GEO">GSM244370</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained after 8h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 8h post-infection in THP-1 human cells
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference DNA genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 from overnight culture in LB broth
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labelin kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample to study the effect of human macrophages phagocytosis on the global transcriptome of EDL933 at different time
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 2 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244370-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244371">
+    <Status database="GEO">
+      <Submission-Date>2007-11-23</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T8 THP-1 infection, Microarray #1 second replicate</Title>
+    <Accession database="GEO">GSM244371</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 8h post-infection </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 in humans macrophages 8h post-infection
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>REference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labelin kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample to study the effect of human macrophages phagocytosis on the global transcriptome of EDL933 at different time
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 2 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244371-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244372">
+    <Status database="GEO">
+      <Submission-Date>2007-11-23</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T8 THP-1 infection, Microarray #2 first replicate</Title>
+    <Accession database="GEO">GSM244372</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 8h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 in THP-1 cells 8h post-infection
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labelin kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample to study the effect of human macrophages phagocytosis on the global transcriptome of EDL933 at different time
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 2 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244372-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244373">
+    <Status database="GEO">
+      <Submission-Date>2007-11-23</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T8 THP-1 infection, Microarray #2 second replicate</Title>
+    <Accession database="GEO">GSM244373</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 8h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 8h post THP-1 infection
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genommic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labelin kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample to study the effect of human macrophages phagocytosis on the global transcriptome of EDL933 at different time
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 2 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244373-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244374">
+    <Status database="GEO">
+      <Submission-Date>2007-11-23</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T24 THP-1 infection, Microarray #1 first replicate</Title>
+    <Accession database="GEO">GSM244374</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 24 h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 24 h post infection in THP-1 humans cells
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labelin kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample to study the effect of human macrophages phagocytosis on the global transcriptome of EDL933 at different time
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 2 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244374-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244375">
+    <Status database="GEO">
+      <Submission-Date>2007-11-23</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T24 THP-1 infection, Microarray #1 second replicate</Title>
+    <Accession database="GEO">GSM244375</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 24 h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 cDNA obtained 24 h post- infection of THP-1 human cells
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labelin kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample to study the effect of human macrophages phagocytosis on the global transcriptome of EDL933 at different time
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 2 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244375-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244376">
+    <Status database="GEO">
+      <Submission-Date>2007-11-23</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T24 THP-1 infection, Microarray #2 first replicate</Title>
+    <Accession database="GEO">GSM244376</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA obtained 24 h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 cDNA obtained 24h post-infection of THP-1 human cells
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Reference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labelin kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample to study the effect of human macrophages phagocytosis on the global transcriptome of EDL933 at different time
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 2 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244376-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM244377">
+    <Status database="GEO">
+      <Submission-Date>2007-11-23</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2008-11-13</Last-Update-Date>
+    </Status>
+    <Title>T24 THP-1 infection, Microarray #2 second replicate</Title>
+    <Accession database="GEO">GSM244377</Accession>
+    <Type>mixed</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>3XSCOTS cDNA 24 h post-infection</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 cDNA 24 h post-infcetion of THP-1 human cells
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+TRIzol reagent (Gibco BRL) was used according to the manufacturer instruction. RNA was treated with DNase (Ambion). RNA sample was converted to cDNA in 5 independent reverse-transcription reactions as described previously (Graham, J. 1999. PNAS 96:11554-559). Bacterial transcript were purified from host transcript by using 3 round of the SCOTS procedure (Daigle, F. 2002. Methods Enzymol. 358:108-122).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Bioprime DNA labeling kit Invitrogen
+ 
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>REference genomic DNA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+EDL933 genomic DNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted by standard phenol-chloroform method (Sambrook, J, Molecular Cloning, 3rd Edition)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Bioprime DNA labelin kit Invitrogen
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Dry the probe and then resuspend in 80ul of DIG 37°C for the Cy3 and Cy5 sample.
+Place the mixed probe at 95°C, 5 min and then chilled on ice 5 min.
+Depose the mixed probe on the microarray, cover with a cover-slip and place in an corning hybridation chamber.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned with Scan Array Lite (Perkin-Elmer) using Scan Array Express 2.1 software.
+    </Scan-Protocol>
+    <Description>
+This sample to study the effect of human macrophages phagocytosis on the global transcriptome of EDL933 at different time
+    </Description>
+    <Data-Processing>
+After backgroud correction and total intensity normalization, ratio to reference were calculated and log base 2 transformed
+    </Data-Processing>
+    <Platform-Ref ref="GPL6178" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>X Location</Name>
+        <Description>X-coordinate of spot</Description>
+      </Column>
+      <Column position="3">
+        <Name>Y Location</Name>
+        <Description>Y-coordinate of spot</Description>
+      </Column>
+      <Column position="4">
+        <Name>ch1 Intensity</Name>
+        <Description>Channel 1 mean</Description>
+      </Column>
+      <Column position="5">
+        <Name>ch1 Background</Name>
+        <Description>Channel 1 mean background</Description>
+      </Column>
+      <Column position="6">
+        <Name>ch1 Intensity Std Dev</Name>
+        <Description>Channel 1 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="7">
+        <Name>ch1 Background Std Dev</Name>
+        <Description>Channel 1 background standard deviationv</Description>
+      </Column>
+      <Column position="8">
+        <Name>ch1 Diameter</Name>
+        <Description>Channel 1 diameter</Description>
+      </Column>
+      <Column position="9">
+        <Name>ch1 Area</Name>
+        <Description>Channel 1 area</Description>
+      </Column>
+      <Column position="10">
+        <Name>ch1 Footprint</Name>
+        <Description>Channel 1 footprint</Description>
+      </Column>
+      <Column position="11">
+        <Name>ch1 Circularity</Name>
+        <Description>Channel 1 circularity</Description>
+      </Column>
+      <Column position="12">
+        <Name>ch1 Spot Uniformity</Name>
+        <Description>Channel 1 spot uniformity</Description>
+      </Column>
+      <Column position="13">
+        <Name>ch1 Bkg. Uniformity</Name>
+        <Description>Channel 1 background uniformity</Description>
+      </Column>
+      <Column position="14">
+        <Name>ch1 Signal Noise Ratio</Name>
+        <Description>Channel 1 signal to noise ratio</Description>
+      </Column>
+      <Column position="15">
+        <Name>ch1 Confidence</Name>
+        <Description>Channel 1 confidence</Description>
+      </Column>
+      <Column position="16">
+        <Name>ch2 Intensity</Name>
+        <Description>Channel 2 mean</Description>
+      </Column>
+      <Column position="17">
+        <Name>ch2 Background</Name>
+        <Description>Channel 2 mean background</Description>
+      </Column>
+      <Column position="18">
+        <Name>ch2 Intensity Std Dev</Name>
+        <Description>Channel 2 mean intensity standard deviation</Description>
+      </Column>
+      <Column position="19">
+        <Name>ch2 Background Std Dev</Name>
+        <Description>Channel 2 background standard deviation</Description>
+      </Column>
+      <Column position="20">
+        <Name>ch2 Diameter</Name>
+        <Description>Channel 2 diameter</Description>
+      </Column>
+      <Column position="21">
+        <Name>ch2 Area</Name>
+        <Description>Channel 2 area</Description>
+      </Column>
+      <Column position="22">
+        <Name>ch2 Footprint</Name>
+        <Description>Channel 2 footprint</Description>
+      </Column>
+      <Column position="23">
+        <Name>ch2 Circularity</Name>
+        <Description>Channel 2 circularity</Description>
+      </Column>
+      <Column position="24">
+        <Name>ch2 Spot Uniformity</Name>
+        <Description>Channel 2 spot uniformity</Description>
+      </Column>
+      <Column position="25">
+        <Name>ch2 Bkg. Uniformity</Name>
+        <Description>Channel 2 background uniformity</Description>
+      </Column>
+      <Column position="26">
+        <Name>ch2 Signal Noise Ratio</Name>
+        <Description>Channel 2 signal to noise ratio</Description>
+      </Column>
+      <Column position="27">
+        <Name>ch2 Confidence</Name>
+        <Description>Channel 2 confidence</Description>
+      </Column>
+      <Column position="28">
+        <Name>Ignore Filter</Name>
+        <Description>Ignore filter</Description>
+      </Column>
+      <Column position="29">
+        <Name>Ch1-bkg</Name>
+        <Description>Channel 1 background correction</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ch2-bkg</Name>
+        <Description>Channel 2 background correction</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ch1 total</Name>
+        <Description>Channel 1 % of total</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ch2 total</Name>
+        <Description>Channel 2 % of total</Description>
+      </Column>
+      <Column position="33">
+        <Name>PRE_VALUE</Name>
+        <Description>ch1 % of total / ch2 % of total</Description>
+      </Column>
+      <Column position="34">
+        <Name>VALUE</Name>
+        <Description>log base 2 of ch1 % of total / ch2 % of total</Description>
+      </Column>
+    <External-Data rows="6912">
+GSM244377-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE9671">
+    <Status database="GEO">
+      <Submission-Date>2007-11-23</Submission-Date>
+      <Release-Date>2008-11-13</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>EDL933 in human macrophage THP-1 cells at different time point</Title>
+    <Accession database="GEO">GSE9671</Accession>
+    <Pubmed-ID>18725421</Pubmed-ID>
+    <Summary>
+Effect of human macrophages phagocytosis on the global transcriptome of EDL933 at different time.
+Infection of THP-1 with EDL933. Application of SCOTS technique to have cDNA. Hybridation on microarray.
+Reference: EDL933 in RPMI medium
+Keywords: stres response, host-bacteria response, time-course
+    </Summary>
+    <Overall-Design>
+For each time point, 2 microarray are analysed and on each microarray there is 2 replicate
+Total of 4 replicate for each time point (including reference medium)
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM244362" />
+    <Sample-Ref ref="GSM244363" />
+    <Sample-Ref ref="GSM244364" />
+    <Sample-Ref ref="GSM244365" />
+    <Sample-Ref ref="GSM244366" />
+    <Sample-Ref ref="GSM244367" />
+    <Sample-Ref ref="GSM244368" />
+    <Sample-Ref ref="GSM244369" />
+    <Sample-Ref ref="GSM244370" />
+    <Sample-Ref ref="GSM244371" />
+    <Sample-Ref ref="GSM244372" />
+    <Sample-Ref ref="GSM244373" />
+    <Sample-Ref ref="GSM244374" />
+    <Sample-Ref ref="GSM244375" />
+    <Sample-Ref ref="GSM244376" />
+    <Sample-Ref ref="GSM244377" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/103555" />
+  </Series>
+
+</MINiML>

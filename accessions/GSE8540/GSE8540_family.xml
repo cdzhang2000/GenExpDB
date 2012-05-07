@@ -1,0 +1,3785 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Laura</First><Middle>R</Middle><Last>Jarboe</Last></Person>
+    <Email>laura.jarboe@ucla.edu</Email>
+    <Department>Chemical and Biomolecular Engineering</Department>
+    <Organization>University of California, Los Angeles</Organization>
+    <Address>
+      <Line>420 Westwood Pl</Line>
+      <City>Los Angeles</City>
+      <State>CA</State>
+      <Zip-Code>90095</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Daniel</First><Middle>R</Middle><Last>Hyduke</Last></Person>
+    <Email>danielhyduke@gmail.com</Email>
+    <Department>Bioengineering</Department>
+    <Organization>University of California, San Diego</Organization>
+    <Address>
+      <Line>PFBH/EBU3a, Rm 417; 9500 Gilman Dr</Line>
+      <City>La Jolla</City>
+      <State>CA</State>
+      <Zip-Code>92093-0412</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>danielhyduke.com</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>James</First><Middle>C</Middle><Last>Liao</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Linh</First><Middle>M</Middle><Last>Tran</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Katherine</First><Middle>J</Middle><Last>Chou</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5113">
+    <Status database="GEO">
+      <Submission-Date>2007-04-22</Submission-Date>
+      <Release-Date>2007-04-26</Release-Date>
+      <Last-Update-Date>2007-04-26</Last-Update-Date>
+    </Status>
+    <Title>JCL_Ecoli_1</Title>
+    <Accession database="GEO">GPL5113</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>James C. Liao's Metabolic Engineering Laboratory, UCLA</Manufacturer>
+    <Manufacture-Protocol>
+Oligonucleotides from Operon AROS E. coli set, were printed on Corning UltraGAPS slides.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>METAROW</Name>
+        <Description>meta row on printed array</Description>
+      </Column>
+      <Column position="3">
+        <Name>METACOLUMN</Name>
+        <Description>meta column on printed array</Description>
+      </Column>
+      <Column position="4">
+        <Name>SUBROW</Name>
+        <Description>sub row on printed array</Description>
+      </Column>
+      <Column position="5">
+        <Name>SUBCOLUMN</Name>
+        <Description>sub column on printed array</Description>
+      </Column>
+      <Column position="6">
+        <Name>GENE_SYMBOL</Name>
+        <Description>Common name for gene</Description>
+      </Column>
+      <Column position="7">
+        <Name>ORF</Name>
+        <Description>Open reading frame identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix> AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="8">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="13440">
+GPL5113-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM211557">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt control DPTA Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211557</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol choloroform folled by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli 5 minutes after the addition of DPTA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Added DPTA
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol choloroform folled by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8368">
+GSM211557-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211558">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt control DPTA Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211558</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli 5 minutes after the addition of DPTA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Added DPTA
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8197">
+GSM211558-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211559">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt control DPTA Sample2 TechRep1</Title>
+    <Accession database="GEO">GSM211559</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli 5 minutes after the addition of DPTA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Added DPTA
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7904">
+GSM211559-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211560">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt control DPTA Sample2 TechRep2</Title>
+    <Accession database="GEO">GSM211560</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli 5 minutes after the addition of DPTA</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Added DPTA
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8230">
+GSM211560-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211562">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli cysB GSNO Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211562</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cysB- mid-log aerobic 37C in cys-supplemented MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/cysB-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cysB- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/cysB-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7341">
+GSM211562-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211563">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli cysB GSNO Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211563</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cysB- mid-log aerobic 37C in cys-supplemented MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/cysB-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cysB- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/cysB-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8639">
+GSM211563-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211564">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli nsrR GSNO Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211564</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli nsrR- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/nsrR-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli nsrR- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/nsrR-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="6738">
+GSM211564-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211565">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli nsrR GSNO Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211565</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli nsrR- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/nsrR-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli nsrR- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/nsrR-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7244">
+GSM211565-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211566">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli nsrR GSNO Sample2 TechRep1</Title>
+    <Accession database="GEO">GSM211566</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli nsrR- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/nsrR-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli nsrR- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/nsrR-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7902">
+GSM211566-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211567">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli nsrR GSNO Sample2 TechRep2</Title>
+    <Accession database="GEO">GSM211567</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli nsrR- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/nsrR-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli nsrR- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/nsrR-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7042">
+GSM211567-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211568">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli flhDC GSNO Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211568</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli flhDC- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/flhDC-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli flhDC- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/flhDC-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7445">
+GSM211568-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211569">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli flhDC GSNO Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211569</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli flhDC- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/flhDC-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli flhDC- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/flhDC-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8102">
+GSM211569-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211570">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt met GSNO Sample2 TechRep2</Title>
+    <Accession database="GEO">GSM211570</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in methionine-supplemented MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>met-supplemented E. coli 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8000">
+GSM211570-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211571">
+    <Status database="GEO">
+      <Submission-Date>2007-07-18</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt met GSNO Sample2 TechRep1</Title>
+    <Accession database="GEO">GSM211571</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in methionine-supplemented MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>met-supplemented E. coli 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7597">
+GSM211571-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211575">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt cys GSNO Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211575</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in cysteine-supplemented MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>cys-supplemented E. coli 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity for cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="6709">
+GSM211575-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211576">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt cys GSNO Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211576</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in cysteine-supplemented MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>cys-supplemented E. coli 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7308">
+GSM211576-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211728">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli flhDC GSNO Sample2 TechRep1</Title>
+    <Accession database="GEO">GSM211728</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli flhDC- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/flhDC-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli flhDC- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/flhDC-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8594">
+GSM211728-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211729">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli flhDC GSNO Sample2 TechRep2</Title>
+    <Accession database="GEO">GSM211729</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli flhDC- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/flhDC-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli flhDC- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/flhDC-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7599">
+GSM211729-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211740">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 100 GSNO Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211740</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7818">
+GSM211740-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211741">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 100 GSNO Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211741</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8084">
+GSM211741-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211742">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 100 GSNO Sample2 TechRep1</Title>
+    <Accession database="GEO">GSM211742</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7585">
+GSM211742-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211743">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 100 GSNO Sample2 TechRep2</Title>
+    <Accession database="GEO">GSM211743</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7871">
+GSM211743-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211744">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 100 GSNO Sample3 TechRep1</Title>
+    <Accession database="GEO">GSM211744</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8463">
+GSM211744-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211745">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 100 GSNO Sample3 TechRep2</Title>
+    <Accession database="GEO">GSM211745</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8255">
+GSM211745-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211776">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli dpp 100 GSNO Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211776</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dpp- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/dppABCDF
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli dpp- 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/dppABCDF-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8673">
+GSM211776-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211777">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli dpp 100 GSNO Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211777</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dpp- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/dppABCDF-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli dpp- 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/dppABCDF-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8306">
+GSM211777-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211778">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli dpp 100 GSNO Sample2 TechRep1</Title>
+    <Accession database="GEO">GSM211778</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dpp- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/dppABCDF-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli dpp- 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/dppABCDF-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="4368">
+GSM211778-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211779">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli dpp 100 GSNO Sample2 TechRep2</Title>
+    <Accession database="GEO">GSM211779</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dpp- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/dppABCDF-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli dpp- 5 minutes after the addition of 100uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/dppABCDF-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 100 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8182">
+GSM211779-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211794">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 500 GSNO Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211794</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="6250">
+GSM211794-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211795">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 500 GSNO Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211795</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7745">
+GSM211795-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211796">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 500 GSNO Sample2 TechRep1</Title>
+    <Accession database="GEO">GSM211796</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8591">
+GSM211796-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211797">
+    <Status database="GEO">
+      <Submission-Date>2007-07-19</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt 500 GSNO Sample2 TechRep2</Title>
+    <Accession database="GEO">GSM211797</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wt mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli wt 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="6955">
+GSM211797-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211873">
+    <Status database="GEO">
+      <Submission-Date>2007-07-20</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt met GSNO Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211873</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in methionine-supplemented MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>met-supplemented E. coli 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7896">
+GSM211873-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211874">
+    <Status database="GEO">
+      <Submission-Date>2007-07-20</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli wt met GSNO Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211874</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mid-log aerobic 37C in methionine-supplemented MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>met-supplemented E. coli 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7519">
+GSM211874-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211875">
+    <Status database="GEO">
+      <Submission-Date>2007-07-20</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli metJ GSNO Sample1 TechRep1</Title>
+    <Accession database="GEO">GSM211875</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli metJ- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli metJ- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8757">
+GSM211875-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211876">
+    <Status database="GEO">
+      <Submission-Date>2007-07-20</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli metJ GSNO Sample1 TechRep2</Title>
+    <Accession database="GEO">GSM211876</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli metJ- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli metJ- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8710">
+GSM211876-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211877">
+    <Status database="GEO">
+      <Submission-Date>2007-07-20</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli metJ GSNO Sample1 TechRep3</Title>
+    <Accession database="GEO">GSM211877</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli metJ- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli metJ- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8592">
+GSM211877-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211879">
+    <Status database="GEO">
+      <Submission-Date>2007-07-20</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli metJ GSNO Sample1 TechRep4</Title>
+    <Accession database="GEO">GSM211879</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli metJ- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli metJ- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="8987">
+GSM211879-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211880">
+    <Status database="GEO">
+      <Submission-Date>2007-07-20</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli metJ GSNO Sample2 TechRep1</Title>
+    <Accession database="GEO">GSM211880</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli metJ- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli metJ- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="6093">
+GSM211880-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM211881">
+    <Status database="GEO">
+      <Submission-Date>2007-07-20</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2007-07-25</Last-Update-Date>
+    </Status>
+    <Title>E. coli metJ GSNO Sample2 TechRep2</Title>
+    <Accession database="GEO">GSM211881</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli metJ- mid-log aerobic 37C in MOPS glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli metJ- 5 minutes after the addition of 500uM GSNO</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+BW25113/metJ-
+      </Characteristics>
+      <Treatment-Protocol>
+Treated with 500 micromolar GSNO for 5 minutes prior to harvesting
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted by hot phenol chloroform followed by Qiagen RNA Midi column.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Samples were directly labeled by direct incorporation of labeled dCTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized as specified in the Corning UltraGAPS manual. Slides were blocked and washed as specified in the Corning UltraGAPS manual.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing with a Virtek/BioRad scanner.
+    </Scan-Protocol>
+    <Description>
+Cells were grown in MOPS media/0.5% glucose and aerobic conditions.
+    </Description>
+    <Data-Processing>
+Quantification of the scans were performed with ImaGene (Version 6.0.1; BioDiscovery; El Segundo, CA; www.biodiscovery.com); with the results presented in the associated text files. The normalized data VALUE was generated using LOWESS normalization with rank invariant selection, as implemented in lcDNA (receptor.seas.ucla.edu/lcDNA; Hyduke DR, Rohlin L, Kao KC, Liao JC. 2003 A software package for cDNA microarray data normalization and assessing confidence intervals. OMICS 7(3):227-234.)
+    </Data-Processing>
+    <Platform-Ref ref="GPL5113" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log base 10 of (CH2 - CH2_bg)/(CH1-CH1_bg))</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1</Name>
+        <Description>median signal intensity cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_bg</Name>
+        <Description>median background intensity for CH1</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH2</Name>
+        <Description>median signal intensity cy5</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_bg</Name>
+        <Description>median background intensity for CH2</Description>
+      </Column>
+    <External-Data rows="7093">
+GSM211881-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE8540">
+    <Status database="GEO">
+      <Submission-Date>2007-07-20</Submission-Date>
+      <Release-Date>2007-07-26</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>Identification of GSNO response network in E. coli</Title>
+    <Accession database="GEO">GSE8540</Accession>
+    <Pubmed-ID>18070885</Pubmed-ID>
+    <Summary>
+This project used transcriptomic analysis of the S-nitrosoglutathione (GSNO) response in E. coli, and associated regulatory mutants, to identified the molecular targets of and response to GSNO during aerobic growth in minimal media.
+
+Keywords: Comparative genomic response
+    </Summary>
+    <Overall-Design>
+Samples were treated with either 100 or 500 micromolar GSNO and the 5-minute response was analyzed.  The resulting transcriptome data was analyzed with network component analysis (NCA) to identify perturbed regulators and pathways.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib3" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM211557" />
+    <Sample-Ref ref="GSM211558" />
+    <Sample-Ref ref="GSM211559" />
+    <Sample-Ref ref="GSM211560" />
+    <Sample-Ref ref="GSM211562" />
+    <Sample-Ref ref="GSM211563" />
+    <Sample-Ref ref="GSM211564" />
+    <Sample-Ref ref="GSM211565" />
+    <Sample-Ref ref="GSM211566" />
+    <Sample-Ref ref="GSM211567" />
+    <Sample-Ref ref="GSM211568" />
+    <Sample-Ref ref="GSM211569" />
+    <Sample-Ref ref="GSM211570" />
+    <Sample-Ref ref="GSM211571" />
+    <Sample-Ref ref="GSM211575" />
+    <Sample-Ref ref="GSM211576" />
+    <Sample-Ref ref="GSM211728" />
+    <Sample-Ref ref="GSM211729" />
+    <Sample-Ref ref="GSM211740" />
+    <Sample-Ref ref="GSM211741" />
+    <Sample-Ref ref="GSM211742" />
+    <Sample-Ref ref="GSM211743" />
+    <Sample-Ref ref="GSM211744" />
+    <Sample-Ref ref="GSM211745" />
+    <Sample-Ref ref="GSM211776" />
+    <Sample-Ref ref="GSM211777" />
+    <Sample-Ref ref="GSM211778" />
+    <Sample-Ref ref="GSM211779" />
+    <Sample-Ref ref="GSM211794" />
+    <Sample-Ref ref="GSM211795" />
+    <Sample-Ref ref="GSM211796" />
+    <Sample-Ref ref="GSM211797" />
+    <Sample-Ref ref="GSM211873" />
+    <Sample-Ref ref="GSM211874" />
+    <Sample-Ref ref="GSM211875" />
+    <Sample-Ref ref="GSM211876" />
+    <Sample-Ref ref="GSM211877" />
+    <Sample-Ref ref="GSM211879" />
+    <Sample-Ref ref="GSM211880" />
+    <Sample-Ref ref="GSM211881" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/101681" />
+  </Series>
+
+</MINiML>

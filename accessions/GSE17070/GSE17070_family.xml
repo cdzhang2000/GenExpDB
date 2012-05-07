@@ -1,0 +1,2409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Scot</First><Last>Dowd</Last></Person>
+    <Email>sdowd@pathogenresearch.org</Email>
+    <Phone>806-789-6879</Phone>
+    <Fax>806-771-1168</Fax>
+    <Laboratory>Microbiology</Laboratory>
+    <Department>MBRI</Department>
+    <Organization>MBRI</Organization>
+    <Address>
+      <Line>4321 Marsha Sharp Fwy</Line>
+      <City>Lubbock</City>
+      <State>TX</State>
+      <Zip-Code>79407</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.medicalbiofilm.org</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Scot</First><Middle>E</Middle><Last>Dowd</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL8845">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-07-16</Release-Date>
+      <Last-Update-Date>2009-07-16</Last-Update-Date>
+    </Status>
+    <Title>E coli O157:H7 agilent array full genome based upon EDL933</Title>
+    <Accession database="GEO">GPL8845</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>agilent</Manufacturer>
+    <Manufacture-Protocol>
+sure print 8 x 15K array
+    </Manufacture-Protocol>
+    <Catalog-Number>016348</Catalog-Number>
+    <Support>glass</Support>
+    <Coating>other</Coating>
+    <Description>
+sure print 8 x 15K array E coli O157:H7 agilent array full genome based upon EDL933 designed using custom scripts
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GAL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL8845/GPL8845_016348_D_20070525.gal.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>8 x 15 array each array replicated as a block</Description>
+      </Column>
+      <Column position="3">
+        <Name>Column</Name>
+        <Description>column designation of element</Description>
+      </Column>
+      <Column position="4">
+        <Name>Row</Name>
+        <Description>row designation of element</Description>
+      </Column>
+      <Column position="5">
+        <Name>Name</Name>
+        <Description>name of gene gb accession of genome followed by locus ID</Description>
+      </Column>
+      <Column position="6">
+        <Name>RefNumber</Name>
+      </Column>
+      <Column position="7">
+        <Name>ControlType</Name>
+        <Description>all elements of array</Description>
+      </Column>
+      <Column position="8">
+        <Name>GENOME_ACC</Name>
+        <Description>genome accession</Description>
+      </Column>
+      <Column position="9">
+        <Name>ORF</Name>
+        <Description>gene  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+    <External-Data rows="10335">
+GPL8845-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM427056">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-09-01</Release-Date>
+      <Last-Update-Date>2009-07-15</Last-Update-Date>
+    </Status>
+    <Title>FRIK966 Cy3 rep1 vs EDL933 pool Cy5</Title>
+    <Accession database="GEO">GSM427056</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RNA from late log phase E coli FRIK966 rep 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="isolate">
+bovine isolate of e coli o157: H7 FRIK966 lineage II
+      </Characteristics>
+      <Characteristics tag="strain">
+FRIK966
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli 966 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>RNA from late log phase E coli EDL933 pooled reference</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EDL933
+      </Characteristics>
+      <Characteristics tag="isolate">
+clinical isolate e coli o157: H7 lineage I
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli EDL933 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to the Agilent microarrays using the Gene Expression Hybridization kit (Agilent Technologies Inc.) following manufacturer’s protocols. Arrays were washed with Gene Expression Wash Buffer kit (Agilent Technologies Inc.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray images were captured using a Genepix 4000B (Molecular Devices Corporation, Union City, CA) laser scanner and images processed using Genepix 6.0 software (Molecular Devices Corporation).
+    </Scan-Protocol>
+    <Description>
+na
+    </Description>
+    <Data-Processing>
+Microarray data analyses were performed using Acuity 4.0 software. Slides were normalized using standard ratio-based methods. Data were analyzed based upon Log ratio (635/532) values. Genes were included in the final dataset that exhibit significance based upon a very conservative FDR less than 2.5% [27] and at least 2.0-fold comparative regulation.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8845" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM427nnn/GSM427056/GSM427056_Frik966_1cy3vspooled43895cy5_0001.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log ratio (reference/pooled)</Description>
+      </Column>
+      <Column position="3">
+        <Name>X</Name>
+        <Description>X coordinate</Description>
+      </Column>
+      <Column position="4">
+        <Name>Y</Name>
+        <Description>Y coordinate</Description>
+      </Column>
+      <Column position="5">
+        <Name>Dia.</Name>
+        <Description>size of spot</Description>
+      </Column>
+      <Column position="6">
+        <Name>F635 Median</Name>
+        <Description>F635 Median</Description>
+      </Column>
+      <Column position="7">
+        <Name>F635 Mean</Name>
+        <Description>F635 Mean</Description>
+      </Column>
+      <Column position="8">
+        <Name>F635 SD</Name>
+        <Description>F635 SD</Description>
+      </Column>
+      <Column position="9">
+        <Name>F635 CV</Name>
+        <Description>F635 CV</Description>
+      </Column>
+      <Column position="10">
+        <Name>B635</Name>
+        <Description>B635</Description>
+      </Column>
+      <Column position="11">
+        <Name>B635 Median</Name>
+        <Description>B635 Median</Description>
+      </Column>
+      <Column position="12">
+        <Name>B635 Mean</Name>
+        <Description>B635 Mean</Description>
+      </Column>
+      <Column position="13">
+        <Name>B635 SD</Name>
+        <Description>B635 SD</Description>
+      </Column>
+      <Column position="14">
+        <Name>B635 CV</Name>
+        <Description>B635 CV</Description>
+      </Column>
+      <Column position="15">
+        <Name>% &gt; B635+1SD</Name>
+        <Description>% &gt; B635+1SD</Description>
+      </Column>
+      <Column position="16">
+        <Name>% &gt; B635+2SD</Name>
+        <Description>% &gt; B635+2SD</Description>
+      </Column>
+      <Column position="17">
+        <Name>F635 % Sat.</Name>
+        <Description>F635 % Sat.</Description>
+      </Column>
+      <Column position="18">
+        <Name>F532 Median</Name>
+        <Description>F532 Median</Description>
+      </Column>
+      <Column position="19">
+        <Name>F532 Mean</Name>
+        <Description>F532 Mean</Description>
+      </Column>
+      <Column position="20">
+        <Name>F532 SD</Name>
+        <Description>F532 SD</Description>
+      </Column>
+      <Column position="21">
+        <Name>F532 CV</Name>
+        <Description>F532 CV</Description>
+      </Column>
+      <Column position="22">
+        <Name>B532</Name>
+        <Description>B532</Description>
+      </Column>
+      <Column position="23">
+        <Name>B532 Median</Name>
+        <Description>B532 Median</Description>
+      </Column>
+      <Column position="24">
+        <Name>B532 Mean</Name>
+        <Description>B532 Mean</Description>
+      </Column>
+      <Column position="25">
+        <Name>B532 SD</Name>
+        <Description>B532 SD</Description>
+      </Column>
+      <Column position="26">
+        <Name>B532 CV</Name>
+        <Description>B532 CV</Description>
+      </Column>
+      <Column position="27">
+        <Name>% &gt; B532+1SD</Name>
+        <Description>% &gt; B532+1SD</Description>
+      </Column>
+      <Column position="28">
+        <Name>% &gt; B532+2SD</Name>
+        <Description>% &gt; B532+2SD</Description>
+      </Column>
+      <Column position="29">
+        <Name>F532 % Sat.</Name>
+        <Description>F532 % Sat.</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ratio of Medians (635/532)</Name>
+        <Description>Ratio of Medians (635/532)</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ratio of Means (635/532)</Name>
+        <Description>Ratio of Means (635/532)</Description>
+      </Column>
+      <Column position="32">
+        <Name>Median of Ratios (635/532)</Name>
+        <Description>Median of Ratios (635/532)</Description>
+      </Column>
+      <Column position="33">
+        <Name>Mean of Ratios (635/532)</Name>
+        <Description>Mean of Ratios (635/532)</Description>
+      </Column>
+      <Column position="34">
+        <Name>Ratios SD (635/532)</Name>
+        <Description>Ratios SD (635/532)</Description>
+      </Column>
+      <Column position="35">
+        <Name>Rgn Ratio (635/532)</Name>
+        <Description>Rgn Ratio (635/532)</Description>
+      </Column>
+      <Column position="36">
+        <Name>Rgn R2 (635/532)</Name>
+        <Description>Rgn R2 (635/532)</Description>
+      </Column>
+      <Column position="37">
+        <Name>F Pixels</Name>
+        <Description>F Pixels</Description>
+      </Column>
+      <Column position="38">
+        <Name>B Pixels</Name>
+        <Description>B Pixels</Description>
+      </Column>
+      <Column position="39">
+        <Name>Circularity</Name>
+        <Description>Circularity</Description>
+      </Column>
+      <Column position="40">
+        <Name>Sum of Medians (635/532)</Name>
+        <Description>Sum of Medians (635/532)</Description>
+      </Column>
+      <Column position="41">
+        <Name>Sum of Means (635/532)</Name>
+        <Description>Sum of Means (635/532)</Description>
+      </Column>
+      <Column position="42">
+        <Name>Log Ratio (635/532)</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="43">
+        <Name>F635 Median - B635</Name>
+        <Description>F635 Median - B635</Description>
+      </Column>
+      <Column position="44">
+        <Name>F532 Median - B532</Name>
+        <Description>F532 Median - B532</Description>
+      </Column>
+      <Column position="45">
+        <Name>F635 Mean - B635</Name>
+        <Description>F635 Mean - B635</Description>
+      </Column>
+      <Column position="46">
+        <Name>F532 Mean - B532</Name>
+        <Description>F532 Mean - B532</Description>
+      </Column>
+      <Column position="47">
+        <Name>F635 Total Intensity</Name>
+        <Description>F635 Total Intensity</Description>
+      </Column>
+      <Column position="48">
+        <Name>F532 Total Intensity</Name>
+        <Description>F532 Total Intensity</Description>
+      </Column>
+      <Column position="49">
+        <Name>SNR 635</Name>
+        <Description>SNR 635</Description>
+      </Column>
+      <Column position="50">
+        <Name>SNR 532</Name>
+        <Description>SNR 532</Description>
+      </Column>
+      <Column position="51">
+        <Name>Flags</Name>
+        <Description>Flags</Description>
+      </Column>
+      <Column position="52">
+        <Name>Normalize</Name>
+        <Description>Normalize</Description>
+      </Column>
+      <Column position="53">
+        <Name>Autoflag</Name>
+        <Description>Autoflag</Description>
+      </Column>
+      <Column position="54">
+        <Name>INV_VALUE</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+    <External-Data rows="10332">
+GSM427056-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM427075">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-09-01</Release-Date>
+      <Last-Update-Date>2009-07-15</Last-Update-Date>
+    </Status>
+    <Title>FRIK966 Cy5 rep2 vs EDL933 pool Cy3</Title>
+    <Accession database="GEO">GSM427075</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RNA from late log phase E coli FRIK966 rep 2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="isolate">
+bovine isolate of e coli o157: H7 FRIK966 lineage II
+      </Characteristics>
+      <Characteristics tag="strain">
+FRIK966
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli 966 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>RNA from late log phase E coli EDL933 pooled reference</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EDL933
+      </Characteristics>
+      <Characteristics tag="isolate">
+clinical isolate e coli o157: H7 lineage I
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli EDL933 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to the Agilent microarrays using the Gene Expression Hybridization kit (Agilent Technologies Inc.) following manufacturer’s protocols. Arrays were washed with Gene Expression Wash Buffer kit (Agilent Technologies Inc.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray images were captured using a Genepix 4000B (Molecular Devices Corporation, Union City, CA) laser scanner and images processed using Genepix 6.0 software (Molecular Devices Corporation).
+    </Scan-Protocol>
+    <Description>
+na
+    </Description>
+    <Data-Processing>
+Microarray data analyses were performed using Acuity 4.0 software. Slides were normalized using standard ratio-based methods. Data were analyzed based upon Log ratio (635/532) values. Genes were included in the final dataset that exhibit significance based upon a very conservative FDR less than 2.5% [27] and at least 2.0-fold comparative regulation.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8845" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM427nnn/GSM427075/GSM427075_Frik966_2cy5vspooled43895_0001.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="3">
+        <Name>NAME</Name>
+        <Description>gene bank accession of EDL933 genome and locus ID</Description>
+      </Column>
+      <Column position="4">
+        <Name>X</Name>
+        <Description>X coordinate</Description>
+      </Column>
+      <Column position="5">
+        <Name>Y</Name>
+        <Description>Y coordinate</Description>
+      </Column>
+      <Column position="6">
+        <Name>Dia.</Name>
+        <Description>size of spot</Description>
+      </Column>
+      <Column position="7">
+        <Name>F635 Median</Name>
+        <Description>F635 Median</Description>
+      </Column>
+      <Column position="8">
+        <Name>F635 Mean</Name>
+        <Description>F635 Mean</Description>
+      </Column>
+      <Column position="9">
+        <Name>F635 SD</Name>
+        <Description>F635 SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>F635 CV</Name>
+        <Description>F635 CV</Description>
+      </Column>
+      <Column position="11">
+        <Name>B635</Name>
+        <Description>B635</Description>
+      </Column>
+      <Column position="12">
+        <Name>B635 Median</Name>
+        <Description>B635 Median</Description>
+      </Column>
+      <Column position="13">
+        <Name>B635 Mean</Name>
+        <Description>B635 Mean</Description>
+      </Column>
+      <Column position="14">
+        <Name>B635 SD</Name>
+        <Description>B635 SD</Description>
+      </Column>
+      <Column position="15">
+        <Name>B635 CV</Name>
+        <Description>B635 CV</Description>
+      </Column>
+      <Column position="16">
+        <Name>% &gt; B635+1SD</Name>
+        <Description>% &gt; B635+1SD</Description>
+      </Column>
+      <Column position="17">
+        <Name>% &gt; B635+2SD</Name>
+        <Description>% &gt; B635+2SD</Description>
+      </Column>
+      <Column position="18">
+        <Name>F635 % Sat.</Name>
+        <Description>F635 % Sat.</Description>
+      </Column>
+      <Column position="19">
+        <Name>F532 Median</Name>
+        <Description>F532 Median</Description>
+      </Column>
+      <Column position="20">
+        <Name>F532 Mean</Name>
+        <Description>F532 Mean</Description>
+      </Column>
+      <Column position="21">
+        <Name>F532 SD</Name>
+        <Description>F532 SD</Description>
+      </Column>
+      <Column position="22">
+        <Name>F532 CV</Name>
+        <Description>F532 CV</Description>
+      </Column>
+      <Column position="23">
+        <Name>B532</Name>
+        <Description>B532</Description>
+      </Column>
+      <Column position="24">
+        <Name>B532 Median</Name>
+        <Description>B532 Median</Description>
+      </Column>
+      <Column position="25">
+        <Name>B532 Mean</Name>
+        <Description>B532 Mean</Description>
+      </Column>
+      <Column position="26">
+        <Name>B532 SD</Name>
+        <Description>B532 SD</Description>
+      </Column>
+      <Column position="27">
+        <Name>B532 CV</Name>
+        <Description>B532 CV</Description>
+      </Column>
+      <Column position="28">
+        <Name>% &gt; B532+1SD</Name>
+        <Description>% &gt; B532+1SD</Description>
+      </Column>
+      <Column position="29">
+        <Name>% &gt; B532+2SD</Name>
+        <Description>% &gt; B532+2SD</Description>
+      </Column>
+      <Column position="30">
+        <Name>F532 % Sat.</Name>
+        <Description>F532 % Sat.</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ratio of Medians (635/532)</Name>
+        <Description>Ratio of Medians (635/532)</Description>
+      </Column>
+      <Column position="32">
+        <Name>Ratio of Means (635/532)</Name>
+        <Description>Ratio of Means (635/532)</Description>
+      </Column>
+      <Column position="33">
+        <Name>Median of Ratios (635/532)</Name>
+        <Description>Median of Ratios (635/532)</Description>
+      </Column>
+      <Column position="34">
+        <Name>Mean of Ratios (635/532)</Name>
+        <Description>Mean of Ratios (635/532)</Description>
+      </Column>
+      <Column position="35">
+        <Name>Ratios SD (635/532)</Name>
+        <Description>Ratios SD (635/532)</Description>
+      </Column>
+      <Column position="36">
+        <Name>Rgn Ratio (635/532)</Name>
+        <Description>Rgn Ratio (635/532)</Description>
+      </Column>
+      <Column position="37">
+        <Name>Rgn R2 (635/532)</Name>
+        <Description>Rgn R2 (635/532)</Description>
+      </Column>
+      <Column position="38">
+        <Name>F Pixels</Name>
+        <Description>F Pixels</Description>
+      </Column>
+      <Column position="39">
+        <Name>B Pixels</Name>
+        <Description>B Pixels</Description>
+      </Column>
+      <Column position="40">
+        <Name>Circularity</Name>
+        <Description>Circularity</Description>
+      </Column>
+      <Column position="41">
+        <Name>Sum of Medians (635/532)</Name>
+        <Description>Sum of Medians (635/532)</Description>
+      </Column>
+      <Column position="42">
+        <Name>Sum of Means (635/532)</Name>
+        <Description>Sum of Means (635/532)</Description>
+      </Column>
+      <Column position="43">
+        <Name>Log Ratio (635/532)</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="44">
+        <Name>F635 Median - B635</Name>
+        <Description>F635 Median - B635</Description>
+      </Column>
+      <Column position="45">
+        <Name>F532 Median - B532</Name>
+        <Description>F532 Median - B532</Description>
+      </Column>
+      <Column position="46">
+        <Name>F635 Mean - B635</Name>
+        <Description>F635 Mean - B635</Description>
+      </Column>
+      <Column position="47">
+        <Name>F532 Mean - B532</Name>
+        <Description>F532 Mean - B532</Description>
+      </Column>
+      <Column position="48">
+        <Name>F635 Total Intensity</Name>
+        <Description>F635 Total Intensity</Description>
+      </Column>
+      <Column position="49">
+        <Name>F532 Total Intensity</Name>
+        <Description>F532 Total Intensity</Description>
+      </Column>
+      <Column position="50">
+        <Name>SNR 635</Name>
+        <Description>SNR 635</Description>
+      </Column>
+      <Column position="51">
+        <Name>SNR 532</Name>
+        <Description>SNR 532</Description>
+      </Column>
+      <Column position="52">
+        <Name>Flags</Name>
+        <Description>Flags</Description>
+      </Column>
+      <Column position="53">
+        <Name>Normalize</Name>
+        <Description>Normalize</Description>
+      </Column>
+      <Column position="54">
+        <Name>Autoflag</Name>
+        <Description>Autoflag</Description>
+      </Column>
+    <External-Data rows="10298">
+GSM427075-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM427076">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-09-01</Release-Date>
+      <Last-Update-Date>2009-07-15</Last-Update-Date>
+    </Status>
+    <Title>FRIK966 Cy3 rep3 vs EDL933 pool Cy5</Title>
+    <Accession database="GEO">GSM427076</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RNA from late log phase E coli FRIK966 rep 3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="isolate">
+bovine isolate of e coli o157: H7 FRIK966 lineage II
+      </Characteristics>
+      <Characteristics tag="strain">
+FRIK966
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli 966 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>RNA from late log phase E coli EDL933 pooled reference</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EDL933
+      </Characteristics>
+      <Characteristics tag="isolate">
+clinical isolate e coli o157: H7 lineage I
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli EDL933 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to the Agilent microarrays using the Gene Expression Hybridization kit (Agilent Technologies Inc.) following manufacturer’s protocols. Arrays were washed with Gene Expression Wash Buffer kit (Agilent Technologies Inc.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray images were captured using a Genepix 4000B (Molecular Devices Corporation, Union City, CA) laser scanner and images processed using Genepix 6.0 software (Molecular Devices Corporation).
+    </Scan-Protocol>
+    <Description>
+na
+    </Description>
+    <Data-Processing>
+Microarray data analyses were performed using Acuity 4.0 software. Slides were normalized using standard ratio-based methods. Data were analyzed based upon Log ratio (635/532) values. Genes were included in the final dataset that exhibit significance based upon a very conservative FDR less than 2.5% [27] and at least 2.0-fold comparative regulation.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8845" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM427nnn/GSM427076/GSM427076_Frik966_3cy3vspooled43895cy5_0001.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log ratio (reference/pooled)</Description>
+      </Column>
+      <Column position="3">
+        <Name>X</Name>
+        <Description>X coordinate</Description>
+      </Column>
+      <Column position="4">
+        <Name>Y</Name>
+        <Description>Y coordinate</Description>
+      </Column>
+      <Column position="5">
+        <Name>Dia.</Name>
+        <Description>size of spot</Description>
+      </Column>
+      <Column position="6">
+        <Name>F635 Median</Name>
+        <Description>F635 Median</Description>
+      </Column>
+      <Column position="7">
+        <Name>F635 Mean</Name>
+        <Description>F635 Mean</Description>
+      </Column>
+      <Column position="8">
+        <Name>F635 SD</Name>
+        <Description>F635 SD</Description>
+      </Column>
+      <Column position="9">
+        <Name>F635 CV</Name>
+        <Description>F635 CV</Description>
+      </Column>
+      <Column position="10">
+        <Name>B635</Name>
+        <Description>B635</Description>
+      </Column>
+      <Column position="11">
+        <Name>B635 Median</Name>
+        <Description>B635 Median</Description>
+      </Column>
+      <Column position="12">
+        <Name>B635 Mean</Name>
+        <Description>B635 Mean</Description>
+      </Column>
+      <Column position="13">
+        <Name>B635 SD</Name>
+        <Description>B635 SD</Description>
+      </Column>
+      <Column position="14">
+        <Name>B635 CV</Name>
+        <Description>B635 CV</Description>
+      </Column>
+      <Column position="15">
+        <Name>% &gt; B635+1SD</Name>
+        <Description>% &gt; B635+1SD</Description>
+      </Column>
+      <Column position="16">
+        <Name>% &gt; B635+2SD</Name>
+        <Description>% &gt; B635+2SD</Description>
+      </Column>
+      <Column position="17">
+        <Name>F635 % Sat.</Name>
+        <Description>F635 % Sat.</Description>
+      </Column>
+      <Column position="18">
+        <Name>F532 Median</Name>
+        <Description>F532 Median</Description>
+      </Column>
+      <Column position="19">
+        <Name>F532 Mean</Name>
+        <Description>F532 Mean</Description>
+      </Column>
+      <Column position="20">
+        <Name>F532 SD</Name>
+        <Description>F532 SD</Description>
+      </Column>
+      <Column position="21">
+        <Name>F532 CV</Name>
+        <Description>F532 CV</Description>
+      </Column>
+      <Column position="22">
+        <Name>B532</Name>
+        <Description>B532</Description>
+      </Column>
+      <Column position="23">
+        <Name>B532 Median</Name>
+        <Description>B532 Median</Description>
+      </Column>
+      <Column position="24">
+        <Name>B532 Mean</Name>
+        <Description>B532 Mean</Description>
+      </Column>
+      <Column position="25">
+        <Name>B532 SD</Name>
+        <Description>B532 SD</Description>
+      </Column>
+      <Column position="26">
+        <Name>B532 CV</Name>
+        <Description>B532 CV</Description>
+      </Column>
+      <Column position="27">
+        <Name>% &gt; B532+1SD</Name>
+        <Description>% &gt; B532+1SD</Description>
+      </Column>
+      <Column position="28">
+        <Name>% &gt; B532+2SD</Name>
+        <Description>% &gt; B532+2SD</Description>
+      </Column>
+      <Column position="29">
+        <Name>F532 % Sat.</Name>
+        <Description>F532 % Sat.</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ratio of Medians (635/532)</Name>
+        <Description>Ratio of Medians (635/532)</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ratio of Means (635/532)</Name>
+        <Description>Ratio of Means (635/532)</Description>
+      </Column>
+      <Column position="32">
+        <Name>Median of Ratios (635/532)</Name>
+        <Description>Median of Ratios (635/532)</Description>
+      </Column>
+      <Column position="33">
+        <Name>Mean of Ratios (635/532)</Name>
+        <Description>Mean of Ratios (635/532)</Description>
+      </Column>
+      <Column position="34">
+        <Name>Ratios SD (635/532)</Name>
+        <Description>Ratios SD (635/532)</Description>
+      </Column>
+      <Column position="35">
+        <Name>Rgn Ratio (635/532)</Name>
+        <Description>Rgn Ratio (635/532)</Description>
+      </Column>
+      <Column position="36">
+        <Name>Rgn R2 (635/532)</Name>
+        <Description>Rgn R2 (635/532)</Description>
+      </Column>
+      <Column position="37">
+        <Name>F Pixels</Name>
+        <Description>F Pixels</Description>
+      </Column>
+      <Column position="38">
+        <Name>B Pixels</Name>
+        <Description>B Pixels</Description>
+      </Column>
+      <Column position="39">
+        <Name>Circularity</Name>
+        <Description>Circularity</Description>
+      </Column>
+      <Column position="40">
+        <Name>Sum of Medians (635/532)</Name>
+        <Description>Sum of Medians (635/532)</Description>
+      </Column>
+      <Column position="41">
+        <Name>Sum of Means (635/532)</Name>
+        <Description>Sum of Means (635/532)</Description>
+      </Column>
+      <Column position="42">
+        <Name>Log Ratio (635/532)</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="43">
+        <Name>F635 Median - B635</Name>
+        <Description>F635 Median - B635</Description>
+      </Column>
+      <Column position="44">
+        <Name>F532 Median - B532</Name>
+        <Description>F532 Median - B532</Description>
+      </Column>
+      <Column position="45">
+        <Name>F635 Mean - B635</Name>
+        <Description>F635 Mean - B635</Description>
+      </Column>
+      <Column position="46">
+        <Name>F532 Mean - B532</Name>
+        <Description>F532 Mean - B532</Description>
+      </Column>
+      <Column position="47">
+        <Name>F635 Total Intensity</Name>
+        <Description>F635 Total Intensity</Description>
+      </Column>
+      <Column position="48">
+        <Name>F532 Total Intensity</Name>
+        <Description>F532 Total Intensity</Description>
+      </Column>
+      <Column position="49">
+        <Name>SNR 635</Name>
+        <Description>SNR 635</Description>
+      </Column>
+      <Column position="50">
+        <Name>SNR 532</Name>
+        <Description>SNR 532</Description>
+      </Column>
+      <Column position="51">
+        <Name>Flags</Name>
+        <Description>Flags</Description>
+      </Column>
+      <Column position="52">
+        <Name>Normalize</Name>
+        <Description>Normalize</Description>
+      </Column>
+      <Column position="53">
+        <Name>Autoflag</Name>
+        <Description>Autoflag</Description>
+      </Column>
+      <Column position="54">
+        <Name>INV_VALUE</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+    <External-Data rows="10333">
+GSM427076-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM427077">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-09-01</Release-Date>
+      <Last-Update-Date>2009-07-15</Last-Update-Date>
+    </Status>
+    <Title>FRIK966 Cy5 rep4 vs EDL933 pool Cy3</Title>
+    <Accession database="GEO">GSM427077</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RNA from late log phase E coli FRIK966 rep 4</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="isolate">
+bovine isolate of e coli o157: H7 FRIK966 lineage II
+      </Characteristics>
+      <Characteristics tag="strain">
+FRIK966
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli 966 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>RNA from late log phase E coli EDL933 pooled reference</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EDL933
+      </Characteristics>
+      <Characteristics tag="isolate">
+clinical isolate e coli o157: H7 lineage I
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli EDL933 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to the Agilent microarrays using the Gene Expression Hybridization kit (Agilent Technologies Inc.) following manufacturer’s protocols. Arrays were washed with Gene Expression Wash Buffer kit (Agilent Technologies Inc.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray images were captured using a Genepix 4000B (Molecular Devices Corporation, Union City, CA) laser scanner and images processed using Genepix 6.0 software (Molecular Devices Corporation).
+    </Scan-Protocol>
+    <Description>
+na
+    </Description>
+    <Data-Processing>
+Microarray data analyses were performed using Acuity 4.0 software. Slides were normalized using standard ratio-based methods. Data were analyzed based upon Log ratio (635/532) values. Genes were included in the final dataset that exhibit significance based upon a very conservative FDR less than 2.5% [27] and at least 2.0-fold comparative regulation.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8845" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM427nnn/GSM427077/GSM427077_Frik966_4cy5vspooled43895cy3_0001.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="3">
+        <Name>X</Name>
+        <Description>X coordinate</Description>
+      </Column>
+      <Column position="4">
+        <Name>Y</Name>
+        <Description>Y coordinate</Description>
+      </Column>
+      <Column position="5">
+        <Name>Dia.</Name>
+        <Description>size of spot</Description>
+      </Column>
+      <Column position="6">
+        <Name>F635 Median</Name>
+        <Description>F635 Median</Description>
+      </Column>
+      <Column position="7">
+        <Name>F635 Mean</Name>
+        <Description>F635 Mean</Description>
+      </Column>
+      <Column position="8">
+        <Name>F635 SD</Name>
+        <Description>F635 SD</Description>
+      </Column>
+      <Column position="9">
+        <Name>F635 CV</Name>
+        <Description>F635 CV</Description>
+      </Column>
+      <Column position="10">
+        <Name>B635</Name>
+        <Description>B635</Description>
+      </Column>
+      <Column position="11">
+        <Name>B635 Median</Name>
+        <Description>B635 Median</Description>
+      </Column>
+      <Column position="12">
+        <Name>B635 Mean</Name>
+        <Description>B635 Mean</Description>
+      </Column>
+      <Column position="13">
+        <Name>B635 SD</Name>
+        <Description>B635 SD</Description>
+      </Column>
+      <Column position="14">
+        <Name>B635 CV</Name>
+        <Description>B635 CV</Description>
+      </Column>
+      <Column position="15">
+        <Name>% &gt; B635+1SD</Name>
+        <Description>% &gt; B635+1SD</Description>
+      </Column>
+      <Column position="16">
+        <Name>% &gt; B635+2SD</Name>
+        <Description>% &gt; B635+2SD</Description>
+      </Column>
+      <Column position="17">
+        <Name>F635 % Sat.</Name>
+        <Description>F635 % Sat.</Description>
+      </Column>
+      <Column position="18">
+        <Name>F532 Median</Name>
+        <Description>F532 Median</Description>
+      </Column>
+      <Column position="19">
+        <Name>F532 Mean</Name>
+        <Description>F532 Mean</Description>
+      </Column>
+      <Column position="20">
+        <Name>F532 SD</Name>
+        <Description>F532 SD</Description>
+      </Column>
+      <Column position="21">
+        <Name>F532 CV</Name>
+        <Description>F532 CV</Description>
+      </Column>
+      <Column position="22">
+        <Name>B532</Name>
+        <Description>B532</Description>
+      </Column>
+      <Column position="23">
+        <Name>B532 Median</Name>
+        <Description>B532 Median</Description>
+      </Column>
+      <Column position="24">
+        <Name>B532 Mean</Name>
+        <Description>B532 Mean</Description>
+      </Column>
+      <Column position="25">
+        <Name>B532 SD</Name>
+        <Description>B532 SD</Description>
+      </Column>
+      <Column position="26">
+        <Name>B532 CV</Name>
+        <Description>B532 CV</Description>
+      </Column>
+      <Column position="27">
+        <Name>% &gt; B532+1SD</Name>
+        <Description>% &gt; B532+1SD</Description>
+      </Column>
+      <Column position="28">
+        <Name>% &gt; B532+2SD</Name>
+        <Description>% &gt; B532+2SD</Description>
+      </Column>
+      <Column position="29">
+        <Name>F532 % Sat.</Name>
+        <Description>F532 % Sat.</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ratio of Medians (635/532)</Name>
+        <Description>Ratio of Medians (635/532)</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ratio of Means (635/532)</Name>
+        <Description>Ratio of Means (635/532)</Description>
+      </Column>
+      <Column position="32">
+        <Name>Median of Ratios (635/532)</Name>
+        <Description>Median of Ratios (635/532)</Description>
+      </Column>
+      <Column position="33">
+        <Name>Mean of Ratios (635/532)</Name>
+        <Description>Mean of Ratios (635/532)</Description>
+      </Column>
+      <Column position="34">
+        <Name>Ratios SD (635/532)</Name>
+        <Description>Ratios SD (635/532)</Description>
+      </Column>
+      <Column position="35">
+        <Name>Rgn Ratio (635/532)</Name>
+        <Description>Rgn Ratio (635/532)</Description>
+      </Column>
+      <Column position="36">
+        <Name>Rgn R2 (635/532)</Name>
+        <Description>Rgn R2 (635/532)</Description>
+      </Column>
+      <Column position="37">
+        <Name>F Pixels</Name>
+        <Description>F Pixels</Description>
+      </Column>
+      <Column position="38">
+        <Name>B Pixels</Name>
+        <Description>B Pixels</Description>
+      </Column>
+      <Column position="39">
+        <Name>Circularity</Name>
+        <Description>Circularity</Description>
+      </Column>
+      <Column position="40">
+        <Name>Sum of Medians (635/532)</Name>
+        <Description>Sum of Medians (635/532)</Description>
+      </Column>
+      <Column position="41">
+        <Name>Sum of Means (635/532)</Name>
+        <Description>Sum of Means (635/532)</Description>
+      </Column>
+      <Column position="42">
+        <Name>Log Ratio (635/532)</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="43">
+        <Name>F635 Median - B635</Name>
+        <Description>F635 Median - B635</Description>
+      </Column>
+      <Column position="44">
+        <Name>F532 Median - B532</Name>
+        <Description>F532 Median - B532</Description>
+      </Column>
+      <Column position="45">
+        <Name>F635 Mean - B635</Name>
+        <Description>F635 Mean - B635</Description>
+      </Column>
+      <Column position="46">
+        <Name>F532 Mean - B532</Name>
+        <Description>F532 Mean - B532</Description>
+      </Column>
+      <Column position="47">
+        <Name>F635 Total Intensity</Name>
+        <Description>F635 Total Intensity</Description>
+      </Column>
+      <Column position="48">
+        <Name>F532 Total Intensity</Name>
+        <Description>F532 Total Intensity</Description>
+      </Column>
+      <Column position="49">
+        <Name>SNR 635</Name>
+        <Description>SNR 635</Description>
+      </Column>
+      <Column position="50">
+        <Name>SNR 532</Name>
+        <Description>SNR 532</Description>
+      </Column>
+      <Column position="51">
+        <Name>Flags</Name>
+        <Description>Flags</Description>
+      </Column>
+      <Column position="52">
+        <Name>Normalize</Name>
+        <Description>Normalize</Description>
+      </Column>
+      <Column position="53">
+        <Name>Autoflag</Name>
+        <Description>Autoflag</Description>
+      </Column>
+    <External-Data rows="10292">
+GSM427077-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM427078">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-09-01</Release-Date>
+      <Last-Update-Date>2009-07-15</Last-Update-Date>
+    </Status>
+    <Title>FRIK2000 Cy3 rep1 vs EDL933 pool Cy5</Title>
+    <Accession database="GEO">GSM427078</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RNA from late log phase E coli FRIK2000 rep 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="isolate">
+bovine isolate of e coli o157: H7 FRIK2000 lineage II
+      </Characteristics>
+      <Characteristics tag="strain">
+FRIK2000
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli 966 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>RNA from late log phase E coli EDL933 pooled reference</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EDL933
+      </Characteristics>
+      <Characteristics tag="isolate">
+clinical isolate e coli o157: H7 lineage I
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli EDL933 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to the Agilent microarrays using the Gene Expression Hybridization kit (Agilent Technologies Inc.) following manufacturer’s protocols. Arrays were washed with Gene Expression Wash Buffer kit (Agilent Technologies Inc.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray images were captured using a Genepix 4000B (Molecular Devices Corporation, Union City, CA) laser scanner and images processed using Genepix 6.0 software (Molecular Devices Corporation).
+    </Scan-Protocol>
+    <Description>
+na
+    </Description>
+    <Data-Processing>
+Microarray data analyses were performed using Acuity 4.0 software. Slides were normalized using standard ratio-based methods. Data were analyzed based upon Log ratio (635/532) values. Genes were included in the final dataset that exhibit significance based upon a very conservative FDR less than 2.5% [27] and at least 2.0-fold comparative regulation.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8845" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM427nnn/GSM427078/GSM427078_Frik2000_1cy3vspooled43895cy5_0001.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log ratio (reference/pooled)</Description>
+      </Column>
+      <Column position="3">
+        <Name>X</Name>
+        <Description>X coordinate</Description>
+      </Column>
+      <Column position="4">
+        <Name>Y</Name>
+        <Description>Y coordinate</Description>
+      </Column>
+      <Column position="5">
+        <Name>Dia.</Name>
+        <Description>size of spot</Description>
+      </Column>
+      <Column position="6">
+        <Name>F635 Median</Name>
+        <Description>F635 Median</Description>
+      </Column>
+      <Column position="7">
+        <Name>F635 Mean</Name>
+        <Description>F635 Mean</Description>
+      </Column>
+      <Column position="8">
+        <Name>F635 SD</Name>
+        <Description>F635 SD</Description>
+      </Column>
+      <Column position="9">
+        <Name>F635 CV</Name>
+        <Description>F635 CV</Description>
+      </Column>
+      <Column position="10">
+        <Name>B635</Name>
+        <Description>B635</Description>
+      </Column>
+      <Column position="11">
+        <Name>B635 Median</Name>
+        <Description>B635 Median</Description>
+      </Column>
+      <Column position="12">
+        <Name>B635 Mean</Name>
+        <Description>B635 Mean</Description>
+      </Column>
+      <Column position="13">
+        <Name>B635 SD</Name>
+        <Description>B635 SD</Description>
+      </Column>
+      <Column position="14">
+        <Name>B635 CV</Name>
+        <Description>B635 CV</Description>
+      </Column>
+      <Column position="15">
+        <Name>% &gt; B635+1SD</Name>
+        <Description>% &gt; B635+1SD</Description>
+      </Column>
+      <Column position="16">
+        <Name>% &gt; B635+2SD</Name>
+        <Description>% &gt; B635+2SD</Description>
+      </Column>
+      <Column position="17">
+        <Name>F635 % Sat.</Name>
+        <Description>F635 % Sat.</Description>
+      </Column>
+      <Column position="18">
+        <Name>F532 Median</Name>
+        <Description>F532 Median</Description>
+      </Column>
+      <Column position="19">
+        <Name>F532 Mean</Name>
+        <Description>F532 Mean</Description>
+      </Column>
+      <Column position="20">
+        <Name>F532 SD</Name>
+        <Description>F532 SD</Description>
+      </Column>
+      <Column position="21">
+        <Name>F532 CV</Name>
+        <Description>F532 CV</Description>
+      </Column>
+      <Column position="22">
+        <Name>B532</Name>
+        <Description>B532</Description>
+      </Column>
+      <Column position="23">
+        <Name>B532 Median</Name>
+        <Description>B532 Median</Description>
+      </Column>
+      <Column position="24">
+        <Name>B532 Mean</Name>
+        <Description>B532 Mean</Description>
+      </Column>
+      <Column position="25">
+        <Name>B532 SD</Name>
+        <Description>B532 SD</Description>
+      </Column>
+      <Column position="26">
+        <Name>B532 CV</Name>
+        <Description>B532 CV</Description>
+      </Column>
+      <Column position="27">
+        <Name>% &gt; B532+1SD</Name>
+        <Description>% &gt; B532+1SD</Description>
+      </Column>
+      <Column position="28">
+        <Name>% &gt; B532+2SD</Name>
+        <Description>% &gt; B532+2SD</Description>
+      </Column>
+      <Column position="29">
+        <Name>F532 % Sat.</Name>
+        <Description>F532 % Sat.</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ratio of Medians (635/532)</Name>
+        <Description>Ratio of Medians (635/532)</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ratio of Means (635/532)</Name>
+        <Description>Ratio of Means (635/532)</Description>
+      </Column>
+      <Column position="32">
+        <Name>Median of Ratios (635/532)</Name>
+        <Description>Median of Ratios (635/532)</Description>
+      </Column>
+      <Column position="33">
+        <Name>Mean of Ratios (635/532)</Name>
+        <Description>Mean of Ratios (635/532)</Description>
+      </Column>
+      <Column position="34">
+        <Name>Ratios SD (635/532)</Name>
+        <Description>Ratios SD (635/532)</Description>
+      </Column>
+      <Column position="35">
+        <Name>Rgn Ratio (635/532)</Name>
+        <Description>Rgn Ratio (635/532)</Description>
+      </Column>
+      <Column position="36">
+        <Name>Rgn R2 (635/532)</Name>
+        <Description>Rgn R2 (635/532)</Description>
+      </Column>
+      <Column position="37">
+        <Name>F Pixels</Name>
+        <Description>F Pixels</Description>
+      </Column>
+      <Column position="38">
+        <Name>B Pixels</Name>
+        <Description>B Pixels</Description>
+      </Column>
+      <Column position="39">
+        <Name>Circularity</Name>
+        <Description>Circularity</Description>
+      </Column>
+      <Column position="40">
+        <Name>Sum of Medians (635/532)</Name>
+        <Description>Sum of Medians (635/532)</Description>
+      </Column>
+      <Column position="41">
+        <Name>Sum of Means (635/532)</Name>
+        <Description>Sum of Means (635/532)</Description>
+      </Column>
+      <Column position="42">
+        <Name>Log Ratio (635/532)</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="43">
+        <Name>F635 Median - B635</Name>
+        <Description>F635 Median - B635</Description>
+      </Column>
+      <Column position="44">
+        <Name>F532 Median - B532</Name>
+        <Description>F532 Median - B532</Description>
+      </Column>
+      <Column position="45">
+        <Name>F635 Mean - B635</Name>
+        <Description>F635 Mean - B635</Description>
+      </Column>
+      <Column position="46">
+        <Name>F532 Mean - B532</Name>
+        <Description>F532 Mean - B532</Description>
+      </Column>
+      <Column position="47">
+        <Name>F635 Total Intensity</Name>
+        <Description>F635 Total Intensity</Description>
+      </Column>
+      <Column position="48">
+        <Name>F532 Total Intensity</Name>
+        <Description>F532 Total Intensity</Description>
+      </Column>
+      <Column position="49">
+        <Name>SNR 635</Name>
+        <Description>SNR 635</Description>
+      </Column>
+      <Column position="50">
+        <Name>SNR 532</Name>
+        <Description>SNR 532</Description>
+      </Column>
+      <Column position="51">
+        <Name>Flags</Name>
+        <Description>Flags</Description>
+      </Column>
+      <Column position="52">
+        <Name>Normalize</Name>
+        <Description>Normalize</Description>
+      </Column>
+      <Column position="53">
+        <Name>Autoflag</Name>
+        <Description>Autoflag</Description>
+      </Column>
+      <Column position="54">
+        <Name>INV_VALUE</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+    <External-Data rows="10334">
+GSM427078-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM427079">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-09-01</Release-Date>
+      <Last-Update-Date>2009-07-15</Last-Update-Date>
+    </Status>
+    <Title>FRIK2000 Cy5 rep2 vs EDL933 pool Cy3</Title>
+    <Accession database="GEO">GSM427079</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RNA from late log phase E coli FRIK2000 rep 2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="isolate">
+bovine isolate of e coli o157: H7 FRIK2000 lineage II
+      </Characteristics>
+      <Characteristics tag="strain">
+FRIK2000
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli 966 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>RNA from late log phase E coli EDL933 pooled reference</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EDL933
+      </Characteristics>
+      <Characteristics tag="isolate">
+clinical isolate e coli o157: H7 lineage I
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli EDL933 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to the Agilent microarrays using the Gene Expression Hybridization kit (Agilent Technologies Inc.) following manufacturer’s protocols. Arrays were washed with Gene Expression Wash Buffer kit (Agilent Technologies Inc.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray images were captured using a Genepix 4000B (Molecular Devices Corporation, Union City, CA) laser scanner and images processed using Genepix 6.0 software (Molecular Devices Corporation).
+    </Scan-Protocol>
+    <Description>
+na
+    </Description>
+    <Data-Processing>
+Microarray data analyses were performed using Acuity 4.0 software. Slides were normalized using standard ratio-based methods. Data were analyzed based upon Log ratio (635/532) values. Genes were included in the final dataset that exhibit significance based upon a very conservative FDR less than 2.5% [27] and at least 2.0-fold comparative regulation.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8845" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM427nnn/GSM427079/GSM427079_Frik2000_2cy5vspooled43895cy3_0001.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="3">
+        <Name>X</Name>
+        <Description>X coordinate</Description>
+      </Column>
+      <Column position="4">
+        <Name>Y</Name>
+        <Description>Y coordinate</Description>
+      </Column>
+      <Column position="5">
+        <Name>Dia.</Name>
+        <Description>size of spot</Description>
+      </Column>
+      <Column position="6">
+        <Name>F635 Median</Name>
+        <Description>F635 Median</Description>
+      </Column>
+      <Column position="7">
+        <Name>F635 Mean</Name>
+        <Description>F635 Mean</Description>
+      </Column>
+      <Column position="8">
+        <Name>F635 SD</Name>
+        <Description>F635 SD</Description>
+      </Column>
+      <Column position="9">
+        <Name>F635 CV</Name>
+        <Description>F635 CV</Description>
+      </Column>
+      <Column position="10">
+        <Name>B635</Name>
+        <Description>B635</Description>
+      </Column>
+      <Column position="11">
+        <Name>B635 Median</Name>
+        <Description>B635 Median</Description>
+      </Column>
+      <Column position="12">
+        <Name>B635 Mean</Name>
+        <Description>B635 Mean</Description>
+      </Column>
+      <Column position="13">
+        <Name>B635 SD</Name>
+        <Description>B635 SD</Description>
+      </Column>
+      <Column position="14">
+        <Name>B635 CV</Name>
+        <Description>B635 CV</Description>
+      </Column>
+      <Column position="15">
+        <Name>% &gt; B635+1SD</Name>
+        <Description>% &gt; B635+1SD</Description>
+      </Column>
+      <Column position="16">
+        <Name>% &gt; B635+2SD</Name>
+        <Description>% &gt; B635+2SD</Description>
+      </Column>
+      <Column position="17">
+        <Name>F635 % Sat.</Name>
+        <Description>F635 % Sat.</Description>
+      </Column>
+      <Column position="18">
+        <Name>F532 Median</Name>
+        <Description>F532 Median</Description>
+      </Column>
+      <Column position="19">
+        <Name>F532 Mean</Name>
+        <Description>F532 Mean</Description>
+      </Column>
+      <Column position="20">
+        <Name>F532 SD</Name>
+        <Description>F532 SD</Description>
+      </Column>
+      <Column position="21">
+        <Name>F532 CV</Name>
+        <Description>F532 CV</Description>
+      </Column>
+      <Column position="22">
+        <Name>B532</Name>
+        <Description>B532</Description>
+      </Column>
+      <Column position="23">
+        <Name>B532 Median</Name>
+        <Description>B532 Median</Description>
+      </Column>
+      <Column position="24">
+        <Name>B532 Mean</Name>
+        <Description>B532 Mean</Description>
+      </Column>
+      <Column position="25">
+        <Name>B532 SD</Name>
+        <Description>B532 SD</Description>
+      </Column>
+      <Column position="26">
+        <Name>B532 CV</Name>
+        <Description>B532 CV</Description>
+      </Column>
+      <Column position="27">
+        <Name>% &gt; B532+1SD</Name>
+        <Description>% &gt; B532+1SD</Description>
+      </Column>
+      <Column position="28">
+        <Name>% &gt; B532+2SD</Name>
+        <Description>% &gt; B532+2SD</Description>
+      </Column>
+      <Column position="29">
+        <Name>F532 % Sat.</Name>
+        <Description>F532 % Sat.</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ratio of Medians (635/532)</Name>
+        <Description>Ratio of Medians (635/532)</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ratio of Means (635/532)</Name>
+        <Description>Ratio of Means (635/532)</Description>
+      </Column>
+      <Column position="32">
+        <Name>Median of Ratios (635/532)</Name>
+        <Description>Median of Ratios (635/532)</Description>
+      </Column>
+      <Column position="33">
+        <Name>Mean of Ratios (635/532)</Name>
+        <Description>Mean of Ratios (635/532)</Description>
+      </Column>
+      <Column position="34">
+        <Name>Ratios SD (635/532)</Name>
+        <Description>Ratios SD (635/532)</Description>
+      </Column>
+      <Column position="35">
+        <Name>Rgn Ratio (635/532)</Name>
+        <Description>Rgn Ratio (635/532)</Description>
+      </Column>
+      <Column position="36">
+        <Name>Rgn R2 (635/532)</Name>
+        <Description>Rgn R2 (635/532)</Description>
+      </Column>
+      <Column position="37">
+        <Name>F Pixels</Name>
+        <Description>F Pixels</Description>
+      </Column>
+      <Column position="38">
+        <Name>B Pixels</Name>
+        <Description>B Pixels</Description>
+      </Column>
+      <Column position="39">
+        <Name>Circularity</Name>
+        <Description>Circularity</Description>
+      </Column>
+      <Column position="40">
+        <Name>Sum of Medians (635/532)</Name>
+        <Description>Sum of Medians (635/532)</Description>
+      </Column>
+      <Column position="41">
+        <Name>Sum of Means (635/532)</Name>
+        <Description>Sum of Means (635/532)</Description>
+      </Column>
+      <Column position="42">
+        <Name>Log Ratio (635/532)</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="43">
+        <Name>F635 Median - B635</Name>
+        <Description>F635 Median - B635</Description>
+      </Column>
+      <Column position="44">
+        <Name>F532 Median - B532</Name>
+        <Description>F532 Median - B532</Description>
+      </Column>
+      <Column position="45">
+        <Name>F635 Mean - B635</Name>
+        <Description>F635 Mean - B635</Description>
+      </Column>
+      <Column position="46">
+        <Name>F532 Mean - B532</Name>
+        <Description>F532 Mean - B532</Description>
+      </Column>
+      <Column position="47">
+        <Name>F635 Total Intensity</Name>
+        <Description>F635 Total Intensity</Description>
+      </Column>
+      <Column position="48">
+        <Name>F532 Total Intensity</Name>
+        <Description>F532 Total Intensity</Description>
+      </Column>
+      <Column position="49">
+        <Name>SNR 635</Name>
+        <Description>SNR 635</Description>
+      </Column>
+      <Column position="50">
+        <Name>SNR 532</Name>
+        <Description>SNR 532</Description>
+      </Column>
+      <Column position="51">
+        <Name>Flags</Name>
+        <Description>Flags</Description>
+      </Column>
+      <Column position="52">
+        <Name>Normalize</Name>
+        <Description>Normalize</Description>
+      </Column>
+      <Column position="53">
+        <Name>Autoflag</Name>
+        <Description>Autoflag</Description>
+      </Column>
+    <External-Data rows="10306">
+GSM427079-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM427081">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-09-01</Release-Date>
+      <Last-Update-Date>2009-07-15</Last-Update-Date>
+    </Status>
+    <Title>FRIK2000 Cy3 rep3 vs EDL933 pool Cy5</Title>
+    <Accession database="GEO">GSM427081</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RNA from late log phase E coli FRIK2000 rep 3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="isolate">
+bovine isolate of e coli o157: H7 FRIK2000 lineage II
+      </Characteristics>
+      <Characteristics tag="strain">
+FRIK2000
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli 966 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>RNA from late log phase E coli EDL933 pooled reference</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EDL933
+      </Characteristics>
+      <Characteristics tag="isolate">
+clinical isolate e coli o157: H7 lineage I
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli EDL933 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to the Agilent microarrays using the Gene Expression Hybridization kit (Agilent Technologies Inc.) following manufacturer’s protocols. Arrays were washed with Gene Expression Wash Buffer kit (Agilent Technologies Inc.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray images were captured using a Genepix 4000B (Molecular Devices Corporation, Union City, CA) laser scanner and images processed using Genepix 6.0 software (Molecular Devices Corporation).
+    </Scan-Protocol>
+    <Description>
+na
+    </Description>
+    <Data-Processing>
+Microarray data analyses were performed using Acuity 4.0 software. Slides were normalized using standard ratio-based methods. Data were analyzed based upon Log ratio (635/532) values. Genes were included in the final dataset that exhibit significance based upon a very conservative FDR less than 2.5% [27] and at least 2.0-fold comparative regulation.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8845" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM427nnn/GSM427081/GSM427081_Frik2000_3cy3vspooled43895cy5_0001.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log ratio (reference/pooled)</Description>
+      </Column>
+      <Column position="3">
+        <Name>X</Name>
+        <Description>X</Description>
+      </Column>
+      <Column position="4">
+        <Name>Y</Name>
+        <Description>Y</Description>
+      </Column>
+      <Column position="5">
+        <Name>Dia.</Name>
+        <Description>DIa</Description>
+      </Column>
+      <Column position="6">
+        <Name>F635 Median</Name>
+        <Description>F635 Median</Description>
+      </Column>
+      <Column position="7">
+        <Name>F635 Mean</Name>
+        <Description>F635 Mean</Description>
+      </Column>
+      <Column position="8">
+        <Name>F635 SD</Name>
+        <Description>F635 SD</Description>
+      </Column>
+      <Column position="9">
+        <Name>F635 CV</Name>
+        <Description>F635 CV</Description>
+      </Column>
+      <Column position="10">
+        <Name>B635</Name>
+        <Description>B635</Description>
+      </Column>
+      <Column position="11">
+        <Name>B635 Median</Name>
+        <Description>B635 Median</Description>
+      </Column>
+      <Column position="12">
+        <Name>B635 Mean</Name>
+        <Description>B635 Mean</Description>
+      </Column>
+      <Column position="13">
+        <Name>B635 SD</Name>
+        <Description>B635 SD</Description>
+      </Column>
+      <Column position="14">
+        <Name>B635 CV</Name>
+        <Description>B635 CV</Description>
+      </Column>
+      <Column position="15">
+        <Name>% &gt; B635+1SD</Name>
+        <Description>% &gt; B635+1SD</Description>
+      </Column>
+      <Column position="16">
+        <Name>% &gt; B635+2SD</Name>
+        <Description>% &gt; B635+2SD</Description>
+      </Column>
+      <Column position="17">
+        <Name>F635 % Sat.</Name>
+        <Description>F635 % Sat.</Description>
+      </Column>
+      <Column position="18">
+        <Name>F532 Median</Name>
+        <Description>F532 Median</Description>
+      </Column>
+      <Column position="19">
+        <Name>F532 Mean</Name>
+        <Description>F532 Mean</Description>
+      </Column>
+      <Column position="20">
+        <Name>F532 SD</Name>
+        <Description>F532 SD</Description>
+      </Column>
+      <Column position="21">
+        <Name>F532 CV</Name>
+        <Description>F532 CV</Description>
+      </Column>
+      <Column position="22">
+        <Name>B532</Name>
+        <Description>B532</Description>
+      </Column>
+      <Column position="23">
+        <Name>B532 Median</Name>
+        <Description>B532 Median</Description>
+      </Column>
+      <Column position="24">
+        <Name>B532 Mean</Name>
+        <Description>B532 Mean</Description>
+      </Column>
+      <Column position="25">
+        <Name>B532 SD</Name>
+        <Description>B532 SD</Description>
+      </Column>
+      <Column position="26">
+        <Name>B532 CV</Name>
+        <Description>B532 CV</Description>
+      </Column>
+      <Column position="27">
+        <Name>% &gt; B532+1SD</Name>
+        <Description>% &gt; B532+1SD</Description>
+      </Column>
+      <Column position="28">
+        <Name>% &gt; B532+2SD</Name>
+        <Description>% &gt; B532+2SD</Description>
+      </Column>
+      <Column position="29">
+        <Name>F532 % Sat.</Name>
+        <Description>F532 % Sat.</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ratio of Medians (635/532)</Name>
+        <Description>Ratio of Medians (635/532)</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ratio of Means (635/532)</Name>
+        <Description>Ratio of Means (635/532)</Description>
+      </Column>
+      <Column position="32">
+        <Name>Median of Ratios (635/532)</Name>
+        <Description>Median of Ratios (635/532)</Description>
+      </Column>
+      <Column position="33">
+        <Name>Mean of Ratios (635/532)</Name>
+        <Description>Mean of Ratios (635/532)</Description>
+      </Column>
+      <Column position="34">
+        <Name>Ratios SD (635/532)</Name>
+        <Description>Ratios SD (635/532)</Description>
+      </Column>
+      <Column position="35">
+        <Name>Rgn Ratio (635/532)</Name>
+        <Description>Rgn Ratio (635/532)</Description>
+      </Column>
+      <Column position="36">
+        <Name>Rgn R2 (635/532)</Name>
+        <Description>Rgn R2 (635/532)</Description>
+      </Column>
+      <Column position="37">
+        <Name>F Pixels</Name>
+        <Description>F Pixels</Description>
+      </Column>
+      <Column position="38">
+        <Name>B Pixels</Name>
+        <Description>B Pixels</Description>
+      </Column>
+      <Column position="39">
+        <Name>Circularity</Name>
+        <Description>Circularity</Description>
+      </Column>
+      <Column position="40">
+        <Name>Sum of Medians (635/532)</Name>
+        <Description>Sum of Medians (635/532)</Description>
+      </Column>
+      <Column position="41">
+        <Name>Sum of Means (635/532)</Name>
+        <Description>Sum of Means (635/532)</Description>
+      </Column>
+      <Column position="42">
+        <Name>Log Ratio (635/532)</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="43">
+        <Name>F635 Median - B635</Name>
+        <Description>F635 Median - B635</Description>
+      </Column>
+      <Column position="44">
+        <Name>F532 Median - B532</Name>
+        <Description>F532 Median - B532</Description>
+      </Column>
+      <Column position="45">
+        <Name>F635 Mean - B635</Name>
+        <Description>F635 Mean - B635</Description>
+      </Column>
+      <Column position="46">
+        <Name>F532 Mean - B532</Name>
+        <Description>F532 Mean - B532</Description>
+      </Column>
+      <Column position="47">
+        <Name>F635 Total Intensity</Name>
+        <Description>F635 Total Intensity</Description>
+      </Column>
+      <Column position="48">
+        <Name>F532 Total Intensity</Name>
+        <Description>F532 Total Intensity</Description>
+      </Column>
+      <Column position="49">
+        <Name>SNR 635</Name>
+        <Description>SNR 635</Description>
+      </Column>
+      <Column position="50">
+        <Name>SNR 532</Name>
+        <Description>SNR 532</Description>
+      </Column>
+      <Column position="51">
+        <Name>Flags</Name>
+        <Description>Flags</Description>
+      </Column>
+      <Column position="52">
+        <Name>Normalize</Name>
+        <Description>Normalize</Description>
+      </Column>
+      <Column position="53">
+        <Name>Autoflag</Name>
+        <Description>Autoflag</Description>
+      </Column>
+      <Column position="54">
+        <Name>INV_VALUE</Name>
+        <Description>log ratio</Description>
+      </Column>
+    <External-Data rows="10331">
+GSM427081-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM427082">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-09-01</Release-Date>
+      <Last-Update-Date>2009-07-15</Last-Update-Date>
+    </Status>
+    <Title>FRIK2000 Cy5 rep4 vs EDL933 pool Cy3</Title>
+    <Accession database="GEO">GSM427082</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>RNA from late log phase E coli FRIK2000 rep 4</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="isolate">
+bovine isolate of e coli o157: H7 FRIK2000 lineage II
+      </Characteristics>
+      <Characteristics tag="strain">
+FRIK2000
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli 966 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>RNA from late log phase E coli EDL933 pooled reference</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+EDL933
+      </Characteristics>
+      <Characteristics tag="isolate">
+clinical isolate e coli o157: H7 lineage I
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+late log phase grown e coli EDL933 into RNAprotect solution, RNA extracted with qiagen RNA bacteria kits
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+label star kit with random nonamers
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to the Agilent microarrays using the Gene Expression Hybridization kit (Agilent Technologies Inc.) following manufacturer’s protocols. Arrays were washed with Gene Expression Wash Buffer kit (Agilent Technologies Inc.)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Microarray images were captured using a Genepix 4000B (Molecular Devices Corporation, Union City, CA) laser scanner and images processed using Genepix 6.0 software (Molecular Devices Corporation).
+    </Scan-Protocol>
+    <Description>
+na
+    </Description>
+    <Data-Processing>
+Microarray data analyses were performed using Acuity 4.0 software. Slides were normalized using standard ratio-based methods. Data were analyzed based upon Log ratio (635/532) values. Genes were included in the final dataset that exhibit significance based upon a very conservative FDR less than 2.5% [27] and at least 2.0-fold comparative regulation.
+    </Data-Processing>
+    <Platform-Ref ref="GPL8845" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM427nnn/GSM427082/GSM427082_Frik2000_4cy5vspooled43895cy3_0001.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log ratio</Description>
+      </Column>
+      <Column position="3">
+        <Name>X</Name>
+        <Description>X</Description>
+      </Column>
+      <Column position="4">
+        <Name>Y</Name>
+        <Description>Y</Description>
+      </Column>
+      <Column position="5">
+        <Name>Dia.</Name>
+        <Description>DIa</Description>
+      </Column>
+      <Column position="6">
+        <Name>F635 Median</Name>
+        <Description>F635 Median</Description>
+      </Column>
+      <Column position="7">
+        <Name>F635 Mean</Name>
+        <Description>F635 Mean</Description>
+      </Column>
+      <Column position="8">
+        <Name>F635 SD</Name>
+        <Description>F635 SD</Description>
+      </Column>
+      <Column position="9">
+        <Name>F635 CV</Name>
+        <Description>F635 CV</Description>
+      </Column>
+      <Column position="10">
+        <Name>B635</Name>
+        <Description>B635</Description>
+      </Column>
+      <Column position="11">
+        <Name>B635 Median</Name>
+        <Description>B635 Median</Description>
+      </Column>
+      <Column position="12">
+        <Name>B635 Mean</Name>
+        <Description>B635 Mean</Description>
+      </Column>
+      <Column position="13">
+        <Name>B635 SD</Name>
+        <Description>B635 SD</Description>
+      </Column>
+      <Column position="14">
+        <Name>B635 CV</Name>
+        <Description>B635 CV</Description>
+      </Column>
+      <Column position="15">
+        <Name>% &gt; B635+1SD</Name>
+        <Description>% &gt; B635+1SD</Description>
+      </Column>
+      <Column position="16">
+        <Name>% &gt; B635+2SD</Name>
+        <Description>% &gt; B635+2SD</Description>
+      </Column>
+      <Column position="17">
+        <Name>F635 % Sat.</Name>
+        <Description>F635 % Sat.</Description>
+      </Column>
+      <Column position="18">
+        <Name>F532 Median</Name>
+        <Description>F532 Median</Description>
+      </Column>
+      <Column position="19">
+        <Name>F532 Mean</Name>
+        <Description>F532 Mean</Description>
+      </Column>
+      <Column position="20">
+        <Name>F532 SD</Name>
+        <Description>F532 SD</Description>
+      </Column>
+      <Column position="21">
+        <Name>F532 CV</Name>
+        <Description>F532 CV</Description>
+      </Column>
+      <Column position="22">
+        <Name>B532</Name>
+        <Description>B532</Description>
+      </Column>
+      <Column position="23">
+        <Name>B532 Median</Name>
+        <Description>B532 Median</Description>
+      </Column>
+      <Column position="24">
+        <Name>B532 Mean</Name>
+        <Description>B532 Mean</Description>
+      </Column>
+      <Column position="25">
+        <Name>B532 SD</Name>
+        <Description>B532 SD</Description>
+      </Column>
+      <Column position="26">
+        <Name>B532 CV</Name>
+        <Description>B532 CV</Description>
+      </Column>
+      <Column position="27">
+        <Name>% &gt; B532+1SD</Name>
+        <Description>% &gt; B532+1SD</Description>
+      </Column>
+      <Column position="28">
+        <Name>% &gt; B532+2SD</Name>
+        <Description>% &gt; B532+2SD</Description>
+      </Column>
+      <Column position="29">
+        <Name>F532 % Sat.</Name>
+        <Description>F532 % Sat.</Description>
+      </Column>
+      <Column position="30">
+        <Name>Ratio of Medians (635/532)</Name>
+        <Description>Ratio of Medians (635/532)</Description>
+      </Column>
+      <Column position="31">
+        <Name>Ratio of Means (635/532)</Name>
+        <Description>Ratio of Means (635/532)</Description>
+      </Column>
+      <Column position="32">
+        <Name>Median of Ratios (635/532)</Name>
+        <Description>Median of Ratios (635/532)</Description>
+      </Column>
+      <Column position="33">
+        <Name>Mean of Ratios (635/532)</Name>
+        <Description>Mean of Ratios (635/532)</Description>
+      </Column>
+      <Column position="34">
+        <Name>Ratios SD (635/532)</Name>
+        <Description>Ratios SD (635/532)</Description>
+      </Column>
+      <Column position="35">
+        <Name>Rgn Ratio (635/532)</Name>
+        <Description>Rgn Ratio (635/532)</Description>
+      </Column>
+      <Column position="36">
+        <Name>Rgn R2 (635/532)</Name>
+        <Description>Rgn R2 (635/532)</Description>
+      </Column>
+      <Column position="37">
+        <Name>F Pixels</Name>
+        <Description>F Pixels</Description>
+      </Column>
+      <Column position="38">
+        <Name>B Pixels</Name>
+        <Description>B Pixels</Description>
+      </Column>
+      <Column position="39">
+        <Name>Circularity</Name>
+        <Description>Circularity</Description>
+      </Column>
+      <Column position="40">
+        <Name>Sum of Medians (635/532)</Name>
+        <Description>Sum of Medians (635/532)</Description>
+      </Column>
+      <Column position="41">
+        <Name>Sum of Means (635/532)</Name>
+        <Description>Sum of Means (635/532)</Description>
+      </Column>
+      <Column position="42">
+        <Name>Log Ratio (635/532)</Name>
+        <Description>Log Ratio (635/532)</Description>
+      </Column>
+      <Column position="43">
+        <Name>F635 Median - B635</Name>
+        <Description>F635 Median - B635</Description>
+      </Column>
+      <Column position="44">
+        <Name>F532 Median - B532</Name>
+        <Description>F532 Median - B532</Description>
+      </Column>
+      <Column position="45">
+        <Name>F635 Mean - B635</Name>
+        <Description>F635 Mean - B635</Description>
+      </Column>
+      <Column position="46">
+        <Name>F532 Mean - B532</Name>
+        <Description>F532 Mean - B532</Description>
+      </Column>
+      <Column position="47">
+        <Name>F635 Total Intensity</Name>
+        <Description>F635 Total Intensity</Description>
+      </Column>
+      <Column position="48">
+        <Name>F532 Total Intensity</Name>
+        <Description>F532 Total Intensity</Description>
+      </Column>
+      <Column position="49">
+        <Name>SNR 635</Name>
+        <Description>SNR 635</Description>
+      </Column>
+      <Column position="50">
+        <Name>SNR 532</Name>
+        <Description>SNR 532</Description>
+      </Column>
+      <Column position="51">
+        <Name>Flags</Name>
+        <Description>Flags</Description>
+      </Column>
+      <Column position="52">
+        <Name>Normalize</Name>
+        <Description>Normalize</Description>
+      </Column>
+      <Column position="53">
+        <Name>Autoflag</Name>
+        <Description>Autoflag</Description>
+      </Column>
+    <External-Data rows="10289">
+GSM427082-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE17070">
+    <Status database="GEO">
+      <Submission-Date>2009-07-13</Submission-Date>
+      <Release-Date>2009-09-01</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>FRIK966 and FRIK2000 comparison to pooled EDL933 reference</Title>
+    <Accession database="GEO">GSE17070</Accession>
+    <Pubmed-ID>20156085</Pubmed-ID>
+    <Summary>
+The existence of two separate lineages of Escherichia coli O157:H7 has previously been reported, and research indicates that  one of these lineages (lineage I) might be more pathogenic towards human hosts. We have previously shown that the more pathogenic lineage expresses higher levels of Shiga toxin 2 (Stx2) than the non-pathogenic lineage II.  To evaluate why lineage 2 isolates do not express appreciable levels of toxin, two lineage 2 isolates (FRIK966 and FRIK2000) were chosen as representatives of lineage 2 and whole genome microarrays were performed using Agilent microarrays using the E. coli O157:H7 EDL933 lineage I clinical type isolate as a reference.  Microarray results were utilized to evaluate what genes and pathways might be missing or differentially expressed.  Quantitative RT-PCR was utilized to validate the microarray data.
+    </Summary>
+    <Overall-Design>
+Based upon the transcriptome of Escherichia coli O157:H7 EDL933 an oligonucleotide microarray, made up of 60 mers was designed.  A total of 4873 genes in an 8 x 15K Agilent microarray design.  Designed using a custom script, specifications for gene specific oligos were based upon various design characteristics such as temperature of melting, 3’ location, specificity, lack of repeat nucleotides, etc. (Charbonnier et al., 2005).  Arrays were manufactured using Agilent Sure-print technology.  Each array consisted of duplicate elements for each gene randomly distributed with Agilent control elements included.
+All procedures were performed according to respective manufacturer protocols.  Lineage I and lineage II strains were grown overnight as described, a total of 10e7 cells were washed twice in fresh media, normalized based upon optical density,  inoculated into fresh media, incubated at 37oC shaking 120 x g for 3 hours and then suspended in RNAprotect bacteria reagent (Qiagen Inc., Valencia, CA.).  Total RNA was extracted using RNeasy Bacteria Mini Kit (Qiagen Inc., Valencia, CA.) and trace amounts of DNA were removed using RNase-Free DNase Set (Qiagen Inc., Valencia, CA.).  RNA was quantified using Nanodrop system (NanoDrop Technologies, Wilmington, DE) and quality confirmed by electrophoresis on a Bio-rad Experion system (BioRad XXX).  For each sample, 10 ug of RNA were labeled with either CyDye3-dCTP or CyDye5-dCTP (Perkin Elmer) using the LabelStar kit (Qiagen Inc., Valencia, CA.) and Random nonamers (Integrated DNA Technologies ).  Labeled cDNA were hybridized to the microarray using Agilent Hi-RPM hybridization solution in an Agilent Hybridization chamber (Agilent.). A total of 8 arrays, each with duplicate elements for each gene, alternating dye swap for each replicate (4 biological replicates), were analyzed to obtain genes that were consistently and differentially regulated in comparison to EDL933, while limiting false discover rate (FDR) below a stringent 5% (Benjamini and Hochberg, 1995).
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM427056" />
+    <Sample-Ref ref="GSM427075" />
+    <Sample-Ref ref="GSM427076" />
+    <Sample-Ref ref="GSM427077" />
+    <Sample-Ref ref="GSM427078" />
+    <Sample-Ref ref="GSM427079" />
+    <Sample-Ref ref="GSM427081" />
+    <Sample-Ref ref="GSM427082" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE17070/GSE17070_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/119781" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Dipen</First><Last>Sangurdekar</Last></Person>
+    <Email>dps@genomics.princeton.edu</Email>
+    <Department>Lewis-Sigler Institute for Integrative Genomics</Department>
+    <Organization>Princeton University</Organization>
+    <Address>
+      <Line>132 Carl Icahn laboratory, Princeton University</Line>
+      <City>Princeton</City>
+      <State>NJ</State>
+      <Zip-Code>08544</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Dipen</First><Middle>P</Middle><Last>Sangurdekar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Friedrich</First><Last>Srienc</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Arkady</First><Middle>B</Middle><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Arkady</First><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3503">
+    <Status database="GEO">
+      <Submission-Date>2006-03-02</Submission-Date>
+      <Release-Date>2006-03-06</Release-Date>
+      <Last-Update-Date>2006-03-06</Last-Update-Date>
+    </Status>
+    <Title>Khodursky Lab E. coli B 4290 ORFs Microarray</Title>
+    <Accession database="GEO">GPL3503</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Non-commercial</Manufacturer>
+    <Manufacture-Protocol>
+4290 amplified ORFs from primer pairs (from Sigma Genosys) were printed onto glass slides using a 16 tip robotic printer from 384-well microwell plates
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Description>
+A microarray with 4405 spot features.
+Tip Configuration: Standard 16-tip
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Open Reading Frame identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE_SYMBOL</Name>
+        <Description>Name of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+      <Column position="4">
+        <Name>GENE_DESC</Name>
+        <Description>Description of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+    <External-Data rows="4405">
+GPL3503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM99164">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Recovery in 10mM Na-P + 0.2 % glucose T1</Title>
+    <Accession database="GEO">GSM99164</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Bonner-Vogel OD~0.5</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, Bonner-Vogel OD~0.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 0 min recovery in 10mM Na-P + 0.2 % glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 0 min recovery in 10 mM Na-P + 0.2 % glucose (pH 7.5) at OD 0.4
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Recovery in 10mM Na-P + 0.2 % glucose, 0 min
+
+Recovery from stationary phase of Escherichia coli MG1655 cells 10 mM Na-P + 0.2 % glucose (pH 7.5) vs Bogel-Vonner OD 0.5
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99164-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99165">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Recovery in 10mM Na-P + 0.2 % glucose T2</Title>
+    <Accession database="GEO">GSM99165</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Bonner-Vogel OD~0.5</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, Bonner-Vogel OD~0.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 15 min recovery in 10mM Na-P + 0.2 % glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 15 min recovery in 10 mM Na-P + 0.2 % glucose (pH 7.5) at OD 0.4
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Recovery in 10mM Na-P + 0.2 % glucose, 15 min
+
+Recovery from stationary phase of Escherichia coli MG1655 cells 10 mM Na-P + 0.2 % glucose (pH 7.5) vs Bogel-Vonner OD 0.5
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99165-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99166">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Recovery in 10mM Na-P + 0.2 % glucose T3</Title>
+    <Accession database="GEO">GSM99166</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Bonner-Vogel OD~0.5</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, Bonner-Vogel OD~0.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 30 min recovery in 10mM Na-P + 0.2 % glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 30 min recovery in 10 mM Na-P + 0.2 % glucose (pH 7.5) at OD 0.4
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Recovery in 10mM Na-P + 0.2 % glucose, 30 min
+
+Recovery from stationary phase of Escherichia coli MG1655 cells 10 mM Na-P + 0.2 % glucose (pH 7.5) vs Bogel-Vonner OD 0.5
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99166-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99167">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Recovery in 10mM Na-P + 0.2 % glucose T4</Title>
+    <Accession database="GEO">GSM99167</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Bonner-Vogel OD~0.5</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, Bonner-Vogel OD~0.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 45min recovery in 10mM Na-P + 0.2 % glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 45min recovery in 10 mM Na-P + 0.2 % glucose (pH 7.5) at OD 0.4
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Recovery in 10mM Na-P + 0.2 % glucose, 45 min
+
+Recovery from stationary phase of Escherichia coli MG1655 cells 10 mM Na-P + 0.2 % glucose (pH 7.5) vs Bogel-Vonner OD 0.5
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99167-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99168">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Recovery in 10mM Na-P + 0.2 % glucose T5</Title>
+    <Accession database="GEO">GSM99168</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Bonner-Vogel OD~0.5</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, Bonner-Vogel OD~0.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 60 min recovery in 10mM Na-P + 0.2 % glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 60 min recovery in 10 mM Na-P + 0.2 % glucose (pH 7.5) at OD 0.4
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Recovery in 10mM Na-P + 0.2 % glucose, 60 min
+
+Recovery from stationary phase of Escherichia coli MG1655 cells 10 mM Na-P + 0.2 % glucose (pH 7.5) vs Bogel-Vonner OD 0.5
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99168-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99169">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Recovery in 10mM Na-P + 0.2 % glucose T6</Title>
+    <Accession database="GEO">GSM99169</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Bonner-Vogel OD~0.5</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, Bonner-Vogel OD~0.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 75 min recovery in 10mM Na-P + 0.2 % glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 75 min recovery in 10 mM Na-P + 0.2 % glucose (pH 7.5) at OD 0.4
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Recovery in 10mM Na-P + 0.2 % glucose, 75 min
+
+Recovery from stationary phase of Escherichia coli MG1655 cells 10 mM Na-P + 0.2 % glucose (pH 7.5) vs Bogel-Vonner OD 0.5
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99169-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99170">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2006-03-07</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_Recovery in 10mM Na-P + 0.2 % glucose T7</Title>
+    <Accession database="GEO">GSM99170</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli MG1655, Bonner-Vogel OD~0.5</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, Bonner-Vogel OD~0.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli MG1655, 90 min recovery in 10mM Na-P + 0.2 % glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Escherichia coli MG1655, 90 min recovery in 10 mM Na-P + 0.2 % glucose (pH 7.5) at OD 0.4
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Recovery in 10mM Na-P + 0.2 % glucose,90 min
+
+Recovery from stationary phase of Escherichia coli MG1655 cells 10 mM Na-P + 0.2 % glucose (pH 7.5) vs Bogel-Vonner OD 0.5
+    </Description>
+    <Data-Processing>
+Normalized log (2) ratio of Cy5/Cy3, normalized using lowess
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log (2) ratio of Cy5/Cy3</Description>
+      </Column>
+    <External-Data rows="4405">
+GSM99170-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4371">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-03-08</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Recovery from stationary phase in 10 mM Na-P (pH 7.5) + 0.2 % glucose</Title>
+    <Accession database="GEO">GSE4371</Accession>
+    <Pubmed-ID>16626502</Pubmed-ID>
+    <Summary>
+Responses of Escherichia coli as they recover from one stationary phase in 10 mM Na-P + 0.2 % glucose at OD 0.4
+Keywords: time course
+    </Summary>
+    <Overall-Design>
+Escherichia coli cells sampled at several time points (0, 15, 30, 45, 60, 75, 90 min) as they recover from stationary phase in 10 mM Na-P (pH 7.5) + 0.2 % glucose at OD 0.4vs Bonner-Vogel medium OD 0.5
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM99164" />
+    <Sample-Ref ref="GSM99165" />
+    <Sample-Ref ref="GSM99166" />
+    <Sample-Ref ref="GSM99167" />
+    <Sample-Ref ref="GSM99168" />
+    <Sample-Ref ref="GSM99169" />
+    <Sample-Ref ref="GSM99170" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/94659" />
+  </Series>
+
+</MINiML>

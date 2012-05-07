@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Michael</First><Middle>James</Middle><Last>Allen</Last></Person>
+    <Email>mija@pml.ac.uk</Email>
+    <Organization>Plymouth Marine Laboratory</Organization>
+    <Address>
+      <Line>Prospect Place</Line>
+      <City>Plymouth</City>
+      <Postal-Code>PL1 3DH</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Michael</First><Middle>J</Middle><Last>Allen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Graham</First><Middle>F</Middle><Last>White</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Andrew</First><Middle>P</Middle><Last>Morby</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL2568">
+    <Status database="GEO">
+      <Submission-Date>2005-06-23</Submission-Date>
+      <Release-Date>2006-02-01</Release-Date>
+      <Last-Update-Date>2007-02-08</Last-Update-Date>
+    </Status>
+    <Title>Sigma Genosys Panorama Escherichia coli Gene Array</Title>
+    <Accession database="GEO">GPL2568</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Sigma Genosys</Manufacturer>
+    <Manufacture-Protocol>
+The Panorama Escherichia coli Gene Array was developed using E. coli ORFmers (PCR primers). The PCR primers were developed as part of a collaboration with the E. coli Genome Group, headed by Dr. Fred Blattner at the Department of Genetics, University of Wisconsin-Madison (http://www.genome.wisc.edu). The array contains 4,290 PCR-amplified ORFs, representing all of the protein-encoding genes.
+
+Note: two spots per ORF
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Gene Name</Name>
+        <Description>Gene name</Description>
+      </Column>
+      <Column position="3">
+        <Name>GENOME ACC</Name>
+        <Description>GenBank accession number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&amp;db=Nucleotide&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>ORF</Name>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+    <External-Data rows="9216">
+GPL2568-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM62194">
+    <Status database="GEO">
+      <Submission-Date>2005-06-23</Submission-Date>
+      <Release-Date>2006-02-01</Release-Date>
+      <Last-Update-Date>2006-03-13</Last-Update-Date>
+    </Status>
+    <Title>E. coli unexposed replicate 1</Title>
+    <Accession database="GEO">GSM62194</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli unexposed 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.coli W3110
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+37oC, LB.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+QIAGEN RNA mini prep.
+      </Extract-Protocol>
+      <Label>P33</Label>
+      <Label-Protocol>
+as manual
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+as manual
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+BIORAD
+    </Scan-Protocol>
+    <Description>
+E. coli growing in exponential phase. control culture replicate 1
+    </Description>
+    <Data-Processing>
+none
+    </Data-Processing>
+    <Platform-Ref ref="GPL2568" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>spot intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>Std. Deviation</Name>
+        <Description>standard deviation of spot intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>X location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+      <Column position="5">
+        <Name>Y location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+    <External-Data rows="9216">
+GSM62194-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM62195">
+    <Status database="GEO">
+      <Submission-Date>2005-06-23</Submission-Date>
+      <Release-Date>2006-02-01</Release-Date>
+      <Last-Update-Date>2006-03-13</Last-Update-Date>
+    </Status>
+    <Title>E. coli unexposed replicate 2</Title>
+    <Accession database="GEO">GSM62195</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli unexposed 2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.colie W3110
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+37oC, LB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+QIAGEN RNA mini prep.
+      </Extract-Protocol>
+      <Label>P33</Label>
+      <Label-Protocol>
+as manual
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+as manual
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+BIORAD
+    </Scan-Protocol>
+    <Description>
+E. coli growing in exponential phase. control culture replicate 2.
+    </Description>
+    <Data-Processing>
+none
+    </Data-Processing>
+    <Platform-Ref ref="GPL2568" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>spot intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>Std. Deviation</Name>
+        <Description>standard deviation of spot intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>X location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+      <Column position="5">
+        <Name>Y location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+    <External-Data rows="9216">
+GSM62195-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM62196">
+    <Status database="GEO">
+      <Submission-Date>2005-06-23</Submission-Date>
+      <Release-Date>2006-02-01</Release-Date>
+      <Last-Update-Date>2006-03-13</Last-Update-Date>
+    </Status>
+    <Title>E. coli unexposed replicate 3</Title>
+    <Accession database="GEO">GSM62196</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli unexposed 3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.coli W3110
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+37oC, LB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+QIAGEN RNA mini prep.
+      </Extract-Protocol>
+      <Label>P33</Label>
+      <Label-Protocol>
+as manual
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+as manual
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+BIORAD
+    </Scan-Protocol>
+    <Description>
+E. coli growing in exponential phase. control culture replicate 3.
+    </Description>
+    <Data-Processing>
+none
+    </Data-Processing>
+    <Platform-Ref ref="GPL2568" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>spot intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>Std. Deviation</Name>
+        <Description>standard deviation of spot intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>X location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+      <Column position="5">
+        <Name>Y location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+    <External-Data rows="9216">
+GSM62196-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM62197">
+    <Status database="GEO">
+      <Submission-Date>2005-06-23</Submission-Date>
+      <Release-Date>2006-02-01</Release-Date>
+      <Last-Update-Date>2006-03-13</Last-Update-Date>
+    </Status>
+    <Title>E. coli exposed replicate 1</Title>
+    <Accession database="GEO">GSM62197</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.coli PHMB exposed 1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.coli W3110
+      </Characteristics>
+      <Treatment-Protocol>
+PHMB (7.5 mg/l) exposed at d600=0.2
+      </Treatment-Protocol>
+      <Growth-Protocol>
+37oC, LB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+QIAGEN RNA mini prep.
+      </Extract-Protocol>
+      <Label>P33</Label>
+      <Label-Protocol>
+as manual
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+as manual
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+BIORAD
+    </Scan-Protocol>
+    <Description>
+E. coli growing in exponential phase exposed to 7.5 mg/l PHMB (polyhexamethylene biguanide). test replicate 1.
+    </Description>
+    <Data-Processing>
+none
+    </Data-Processing>
+    <Platform-Ref ref="GPL2568" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>GPL2568</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>spot intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>Std. Deviation</Name>
+        <Description>standard deviation of spot intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>X location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+      <Column position="5">
+        <Name>Y location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+    <External-Data rows="9216">
+GSM62197-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM62198">
+    <Status database="GEO">
+      <Submission-Date>2005-06-23</Submission-Date>
+      <Release-Date>2006-02-01</Release-Date>
+      <Last-Update-Date>2006-03-13</Last-Update-Date>
+    </Status>
+    <Title>E. coli exposed replicate 2</Title>
+    <Accession database="GEO">GSM62198</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.coli exposed 2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.COLI W3110
+      </Characteristics>
+      <Treatment-Protocol>
+PHMB (7.5 mg/l) exposed at d600=0.2
+      </Treatment-Protocol>
+      <Growth-Protocol>
+37oC, LB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+QIAGEN RNA mini prep.
+      </Extract-Protocol>
+      <Label>P33</Label>
+      <Label-Protocol>
+as manual
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+as manual
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+BIORAD
+    </Scan-Protocol>
+    <Description>
+E.c oli growing in exponential phase exposed to 7.5 mg/l PHMB (polyhexamethylene biguanide). test replicate 2.
+    </Description>
+    <Data-Processing>
+none
+    </Data-Processing>
+    <Platform-Ref ref="GPL2568" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>spot intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>Std. Deviation</Name>
+        <Description>standard deviation of spot intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>X location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+      <Column position="5">
+        <Name>Y location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+    <External-Data rows="9216">
+GSM62198-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM62199">
+    <Status database="GEO">
+      <Submission-Date>2005-06-23</Submission-Date>
+      <Release-Date>2006-02-01</Release-Date>
+      <Last-Update-Date>2006-03-13</Last-Update-Date>
+    </Status>
+    <Title>E. coli exposed replicate 3</Title>
+    <Accession database="GEO">GSM62199</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.coli exposed 3</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.COLI W3110
+      </Characteristics>
+      <Treatment-Protocol>
+PHMB (7.5 mg/l) exposed at d600=0.2
+      </Treatment-Protocol>
+      <Growth-Protocol>
+37oC, LB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+QIAGEN RNA mini prep.
+      </Extract-Protocol>
+      <Label>P33</Label>
+      <Label-Protocol>
+as manual
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+as manual
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+BIORAD
+    </Scan-Protocol>
+    <Description>
+E. coli growing in exponential phase exposed to 7.5 mg/l PHMB (polyhexamethylene biguanide). test replicate 3.
+    </Description>
+    <Data-Processing>
+none
+    </Data-Processing>
+    <Platform-Ref ref="GPL2568" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>spot intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>Std. Deviation</Name>
+        <Description>standard deviation of spot intensity</Description>
+      </Column>
+      <Column position="4">
+        <Name>X location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+      <Column position="5">
+        <Name>Y location</Name>
+        <Description>physical location of scanned image</Description>
+      </Column>
+    <External-Data rows="9216">
+GSM62199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE2827">
+    <Status database="GEO">
+      <Submission-Date>2005-06-20</Submission-Date>
+      <Release-Date>2006-02-01</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>The response of E. coli to exposure to the biocide polyhexamethylene biguanide</Title>
+    <Accession database="GEO">GSE2827</Accession>
+    <Pubmed-ID>16549663</Pubmed-ID>
+    <Summary>
+The global response of E. coli tot he broad spectrum biocide polyhexamethyelene biguanide (PHMB) was investigated using transcriptional profiling.
+Keywords: dose response
+    </Summary>
+    <Overall-Design>
+E. coli was grown until early exponential phase and (t=2.5 hrs) then exposed to PHMB (7.5 mg/l). RNA was extracted (3.75 hrs) from triplicate exposed cultures and triplicate unexposed cultures.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM62194" />
+    <Sample-Ref ref="GSM62195" />
+    <Sample-Ref ref="GSM62196" />
+    <Sample-Ref ref="GSM62197" />
+    <Sample-Ref ref="GSM62198" />
+    <Sample-Ref ref="GSM62199" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/92451" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Christopher</First><Middle>Swanson</Middle><Last>Reigstad</Last></Person>
+    <Email>reigstad@wustl.edu</Email>
+    <Phone>314-518-5021</Phone>
+    <Fax>314-362-2156</Fax>
+    <Laboratory>Jeffrey I. Gordon</Laboratory>
+    <Department>Center for Genome Sciences</Department>
+    <Organization>Washington University in St. Louis</Organization>
+    <Address>
+      <Line>4444 Forest Park Blvd.</Line>
+      <City>Saint Louis</City>
+      <State>MO</State>
+      <Zip-Code>63108</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Christopher</First><Middle>S</Middle><Last>Reigstad</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Scott</First><Middle>J</Middle><Last>Hultgren</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Jeffrey</First><Middle>I</Middle><Last>Gordon</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL199">
+    <Status database="GEO">
+      <Submission-Date>2002-07-01</Submission-Date>
+      <Release-Date>2002-07-18</Release-Date>
+      <Last-Update-Date>2010-07-08</Last-Update-Date>
+    </Status>
+    <Title>[Ecoli_ASv2] Affymetrix E. coli Antisense Genome Array</Title>
+    <Accession database="GEO">GPL199</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+Has 7312 entries and was indexed 20-May-2002.
+The GeneChip E. coli Antisense Genome Array can be used for examining expression of all known E. coli genes and discovering novel, uncharacterized intergenic transcripts. The array contains probe sets to detect the antisense strand of more than 4,200 known open reading frames. In addition, over 1,350 intergenic sequences can be interrogated in both directions permitting functional characterization of potentially important shorter expressed sequences.
+Sequence information for probes on the array correspond to the M49 version of the E. coli Genome Project database at the University of Wisconsin.
+
+
+Keywords = high density oligonucleotide array
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoliantisense</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Relation type="Alternative to" target="GPL10659" comment="Alternative CDF" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=ECOLI_ANTISENSE&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli K12[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="4">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="5">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="12">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="13">
+        <Name>RefSeq Transcript ID</Name>
+        <Description>References to multiple sequences in RefSeq. The field contains the ID and Description for each entry, and there can be multiple entries per ProbeSet.</Description>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="7312">
+GPL199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM148125">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_MG1655_14d_gnotobiotic_mouse_cecum1</Title>
+    <Accession database="GEO">GSM148125</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli MG1655 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli MG1655 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148125/GSM148125.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148125-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148126">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_MG1655_14d_gnotobiotic_mouse_cecum2</Title>
+    <Accession database="GEO">GSM148126</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli MG1655 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli MG1655 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148126/GSM148126.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148126-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148127">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_MG1655_14d_gnotobiotic_mouse_cecum3</Title>
+    <Accession database="GEO">GSM148127</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli MG1655 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli MG1655 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148127/GSM148127.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148127-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148128">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_MG1655_14d_gnotobiotic_mouse_cecum4</Title>
+    <Accession database="GEO">GSM148128</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli MG1655 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli MG1655 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148128/GSM148128.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148128-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148129">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_MG1655_14d_gnotobiotic_mouse_cecum5</Title>
+    <Accession database="GEO">GSM148129</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli MG1655 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+MG1655
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli MG1655 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148129/GSM148129.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148129-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148130">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_UTI89_14d_gnotobiotic_mouse_cecum1</Title>
+    <Accession database="GEO">GSM148130</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli UTI89 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+UTI89
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli UTI89 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148130/GSM148130.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148130-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148131">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_UTI89_14d_gnotobiotic_mouse_cecum2</Title>
+    <Accession database="GEO">GSM148131</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli UTI89 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+UTI89
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli UTI89 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148131/GSM148131.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148131-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148132">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_UTI89_14d_gnotobiotic_mouse_cecum3</Title>
+    <Accession database="GEO">GSM148132</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli UTI89 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+UTI89
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli UTI89 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148132/GSM148132.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148132-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148133">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_UTI89_14d_gnotobiotic_mouse_cecum4</Title>
+    <Accession database="GEO">GSM148133</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli UTI89 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+UTI89
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli UTI89 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148133/GSM148133.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148133-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148134">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2006-12-05</Last-Update-Date>
+    </Status>
+    <Title>Ecoli_UTI89_14d_gnotobiotic_mouse_cecum5</Title>
+    <Accession database="GEO">GSM148134</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Ecoli UTI89 gnotobiotic cecum 14d post-inoculation</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Genotype">
+UTI89
+      </Characteristics>
+      <Treatment-Protocol>
+RNA isolation using RNAprotect and RNeasy kit (Qiagen),
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA (RNeasy kit; Qiagen) was performed according to the manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA isolated using RNeasy kit (Qiagen), reverse transcribed and labeled using BioArray Terminal Labeling Kit (Enzo).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 2-5 microg of cDNA were hybridized for 16 hr at 45C on GeneChip Antisense Genome Arrays. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Affymetrix GeneChip Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+Gene expression data from E. coli UTI89 harvested from gnotobiotic cecum 14d post-inoculation
+    </Description>
+    <Data-Processing>
+The data were analyzed with Microarray Suite version 5.0 (MAS 5.0) after electronic masking; scaling = 500
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148134/GSM148134.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>MAS5-calculated Signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM148134-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE6426">
+    <Status database="GEO">
+      <Submission-Date>2006-12-04</Submission-Date>
+      <Release-Date>2007-02-02</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>E. coli expression data from gnotobiotic ceca 14d post-inoculation</Title>
+    <Accession database="GEO">GSE6426</Accession>
+    <Pubmed-ID>17504765</Pubmed-ID>
+    <Summary>
+Transcriptional expression of MG1655 and UTI89 harvested from monoassociated gnotobiotic mouse ceca (female C57Bl/6)
+Keywords: strain comparison analysis
+    </Summary>
+    <Overall-Design>
+Transcriptional profiling of genes shared between two different E. coli strains (after application of electronic probe mask on raw data)
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM148125" />
+    <Sample-Ref ref="GSM148126" />
+    <Sample-Ref ref="GSM148127" />
+    <Sample-Ref ref="GSM148128" />
+    <Sample-Ref ref="GSM148129" />
+    <Sample-Ref ref="GSM148130" />
+    <Sample-Ref ref="GSM148131" />
+    <Sample-Ref ref="GSM148132" />
+    <Sample-Ref ref="GSM148133" />
+    <Sample-Ref ref="GSM148134" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE6426/GSE6426_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/99501" />
+  </Series>
+
+</MINiML>

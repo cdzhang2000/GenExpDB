@@ -1,0 +1,2533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Robert</First><Last>Poole</Last></Person>
+    <Email>R.poole@shef.ac.uk</Email>
+    <Phone>01142224447</Phone>
+    <Department>Molecular Biology &amp; Biotechnology</Department>
+    <Organization>University of Sheffield</Organization>
+    <Address>
+      <Line>Firth Court, Western Bank</Line>
+      <City>Sheffield</City>
+      <State>South Yorkshire</State>
+      <Postal-Code>S10 2TN</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>MWG Biotech</Organization>
+    <Email>array@mwgbiotech.com</Email>
+    <Phone>1-877-MWG-BTEC</Phone>
+    <Fax>1-336-812-9983</Fax>
+    <Organization>MWG Biotech</Organization>
+    <Address>
+      <Line>4170 Mendenhall Oaks Parkway, Suite 160</Line>
+      <City>High Point</City>
+      <State>NC</State>
+      <Zip-Code>27265</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL534">
+    <Status database="GEO">
+      <Submission-Date>2003-10-07</Submission-Date>
+      <Release-Date>2003-10-07</Release-Date>
+      <Last-Update-Date>2011-02-14</Last-Update-Date>
+    </Status>
+    <Title>MWG E. coli K12 Array</Title>
+    <Accession database="GEO">GPL534</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>MWG Biotech</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+4239 E. coli K12 specific oligonucleotide probes represent the complete Escherichia coli (K12)genome.
+    </Description>
+    <Web-Link>http://ecom2.mwgdna.com/services/array/download</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>metarow</Name>
+        <Description>number of subarray row</Description>
+      </Column>
+      <Column position="3">
+        <Name>metacolumn</Name>
+        <Description>number of subarray column</Description>
+      </Column>
+      <Column position="4">
+        <Name>row</Name>
+        <Description>number of row within subarray</Description>
+      </Column>
+      <Column position="5">
+        <Name>column</Name>
+        <Description>number of column within subarray</Description>
+      </Column>
+      <Column position="6">
+        <Name>oligo_name</Name>
+        <Description>MWG oligo id</Description>
+      </Column>
+      <Column position="7">
+        <Name>description</Name>
+        <Description>gene description</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORF</Name>
+        <Description>Locus name </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="4608">
+GPL534-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM114368">
+    <Status database="GEO">
+      <Submission-Date>2006-06-14</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO Chemostat Run 1</Title>
+    <Accession database="GEO">GSM114368</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control aerobic samples in absence of NOC compounds.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Growth-Protocol>
+stirring rate.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured aerobic experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken immediately prior to the addition of NOCs and after a period of 5 min exposure to NOCs for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+
+
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation performed using GeneSight 4.1 software, Copyright Biodiscovery.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114368-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114370">
+    <Status database="GEO">
+      <Submission-Date>2006-06-14</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO Chemostat Run 1, dye-swap</Title>
+    <Accession database="GEO">GSM114370</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured aerobic experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured control aerobic samples in absence of NOC compounds</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken immediately prior to the addition of NOCs and after a period of 5 min exposure to NOCs for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation performed using GeneSight 4.1 software, Copyright Biodiscovery.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114370-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114371">
+    <Status database="GEO">
+      <Submission-Date>2006-06-14</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO Chemostat Run 2</Title>
+    <Accession database="GEO">GSM114371</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control aerobic samples in absence of NOC compounds</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured aerobic experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken immediately prior to the addition of NOCs and after a period of 5 min exposure to NOCs for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation performed using GeneSight 4.1 software, Copyright Biodiscovery.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114371-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114372">
+    <Status database="GEO">
+      <Submission-Date>2006-06-14</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO Chemostat Run 2, dye swap</Title>
+    <Accession database="GEO">GSM114372</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured aerobic experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+
+      </Characteristics>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Characteristics>
+
+      </Characteristics>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured control aerobic samples in absence of NOC compounds</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+
+      </Characteristics>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Characteristics>
+
+      </Characteristics>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken immediately prior to the addition of NOCs and after a period of 5 min exposure to NOCs for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation performed using GeneSight 4.1 software, Copyright Biodiscovery.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114372-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114383">
+    <Status database="GEO">
+      <Submission-Date>2006-06-14</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Anaerobic NO Chemostat Run 1</Title>
+    <Accession database="GEO">GSM114383</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control anaerobic samples in absence of NOC compounds</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured anaerobic experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 54 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. In order to establish anaerobic growth, nitrogen was sparged through the chemostat medium prior to inoculation and throughout the course of the experiment at a rate of 0.2 l/min. No dissolved oxygen was detectable using the OxyProbe. Sodium fumarate was added to anaerobic medium at a final concentration of 50 mM to act as a terminal electron acceptor. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 were added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each, unless otherwise stated. Samples were taken immediately prior to the addition of NOCs and after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114383-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114384">
+    <Status database="GEO">
+      <Submission-Date>2006-06-14</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Anaerobic NO Chemostat Run 1, dye swap</Title>
+    <Accession database="GEO">GSM114384</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured anaerobic experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured control anaerobic samples in absence of NOC compounds</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 54 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. In order to establish anaerobic growth, nitrogen was sparged through the chemostat medium prior to inoculation and throughout the course of the experiment at a rate of 0.2 l/min. No dissolved oxygen was detectable using the OxyProbe. Sodium fumarate was added to anaerobic medium at a final concentration of 50 mM to act as a terminal electron acceptor. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 were added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each, unless otherwise stated. Samples were taken immediately prior to the addition of NOCs and after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114384-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114385">
+    <Status database="GEO">
+      <Submission-Date>2006-06-14</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Anaerobic NO Chemostat Run 2</Title>
+    <Accession database="GEO">GSM114385</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control anaerobic samples in absence of NOC compounds</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured anaerobic experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 54 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. In order to establish anaerobic growth, nitrogen was sparged through the chemostat medium prior to inoculation and throughout the course of the experiment at a rate of 0.2 l/min. No dissolved oxygen was detectable using the OxyProbe. Sodium fumarate was added to anaerobic medium at a final concentration of 50 mM to act as a terminal electron acceptor. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 were added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each, unless otherwise stated. Samples were taken immediately prior to the addition of NOCs and after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114385-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114386">
+    <Status database="GEO">
+      <Submission-Date>2006-06-14</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Anaerobic NO Chemostat Run 2, dye swap</Title>
+    <Accession database="GEO">GSM114386</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured anaerobic experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured control anaerobic samples in absence of NOC compounds</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 54 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. In order to establish anaerobic growth, nitrogen was sparged through the chemostat medium prior to inoculation and throughout the course of the experiment at a rate of 0.2 l/min. No dissolved oxygen was detectable using the OxyProbe. Sodium fumarate was added to anaerobic medium at a final concentration of 50 mM to act as a terminal electron acceptor. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 were added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each, unless otherwise stated. Samples were taken immediately prior to the addition of NOCs and after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114386-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114612">
+    <Status database="GEO">
+      <Submission-Date>2006-06-15</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Anaerobic NO exposed Chemostat Comparison of Wt &amp; norR mutant, Run 1</Title>
+    <Accession database="GEO">GSM114612</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>anaerobic norR::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, norR">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic norR::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 54 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. In order to establish anaerobic growth, nitrogen was sparged through the chemostat medium prior to inoculation and throughout the course of the experiment at a rate of 0.2 l/min. No dissolved oxygen was detectable using the OxyProbe. Sodium fumarate was added at a final concentration of 50 mM to act as a terminal electron acceptor. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 were added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114612-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114613">
+    <Status database="GEO">
+      <Submission-Date>2006-06-15</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Anaerobic NO exposed Chemostat Comparison of Wt &amp; norR mutant, Run 1 dye swap</Title>
+    <Accession database="GEO">GSM114613</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic norR::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, norR">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>anaerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic norR::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 54 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. In order to establish anaerobic growth, nitrogen was sparged through the chemostat medium prior to inoculation and throughout the course of the experiment at a rate of 0.2 l/min. No dissolved oxygen was detectable using the OxyProbe. Sodium fumarate was added at a final concentration of 50 mM to act as a terminal electron acceptor. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 were added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114613-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114614">
+    <Status database="GEO">
+      <Submission-Date>2006-06-15</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Anaerobic NO exposed Chemostat Comparison of Wt &amp; norR mutant, Run 2</Title>
+    <Accession database="GEO">GSM114614</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>anaerobic norR::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+
+      </Characteristics>
+      <Characteristics tag="Strain MG1655, norR">
+:Tn5
+      </Characteristics>
+      <Characteristics>
+
+      </Characteristics>
+      <Characteristics tag="Strain MG1655, norR">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic norR::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 54 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. In order to establish anaerobic growth, nitrogen was sparged through the chemostat medium prior to inoculation and throughout the course of the experiment at a rate of 0.2 l/min. No dissolved oxygen was detectable using the OxyProbe. Sodium fumarate was added at a final concentration of 50 mM to act as a terminal electron acceptor. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 were added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114614-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM114615">
+    <Status database="GEO">
+      <Submission-Date>2006-06-15</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-20</Last-Update-Date>
+    </Status>
+    <Title>Anaerobic NO exposed Chemostat Comparison of Wt &amp; norR mutant, Run 2 dye swap</Title>
+    <Accession database="GEO">GSM114615</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>anaerobic norR::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, norR">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>anaerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic norR::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions. Cells were grown in defined media containing 54 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. In order to establish anaerobic growth, nitrogen was sparged through the chemostat medium prior to inoculation and throughout the course of the experiment at a rate of 0.2 l/min. No dissolved oxygen was detectable using the OxyProbe. Sodium fumarate was added at a final concentration of 50 mM to act as a terminal electron acceptor. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 were added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM114615-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM116024">
+    <Status database="GEO">
+      <Submission-Date>2006-06-23</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-26</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO exposed Chemostat Comparison of Wt &amp; norR mutant, Run 1</Title>
+    <Accession database="GEO">GSM116024</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic norR::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, norR">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic norR::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions.. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM116024-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM116025">
+    <Status database="GEO">
+      <Submission-Date>2006-06-23</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-26</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO exposed Chemostat Comparison of Wt &amp; norR mutant, Run 1 dye swap</Title>
+    <Accession database="GEO">GSM116025</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic norR::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, norR">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>aerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic norR::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions.. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM116025-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM116026">
+    <Status database="GEO">
+      <Submission-Date>2006-06-23</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-26</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO exposed Chemostat Comparison of Wt &amp; norR mutant, Run 2</Title>
+    <Accession database="GEO">GSM116026</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>aerobic norR::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, norR">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic norR::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions.. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM116026-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM116027">
+    <Status database="GEO">
+      <Submission-Date>2006-06-23</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-26</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO exposed Chemostat Comparison of Wt &amp; norR mutant, Run 2 dye swap</Title>
+    <Accession database="GEO">GSM116027</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>aerobic norR::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, norR">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>aerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic norR::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions.. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM116027-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM116028">
+    <Status database="GEO">
+      <Submission-Date>2006-06-23</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-26</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO exposed Chemostat Comparison of Wt &amp; hmp mutant, Run 1</Title>
+    <Accession database="GEO">GSM116028</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic hmp::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, hmp">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic hmp::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions.. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM116028-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM116029">
+    <Status database="GEO">
+      <Submission-Date>2006-06-23</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-26</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO exposed Chemostat Comparison of Wt &amp; hmp mutant, Run 1 dye swap</Title>
+    <Accession database="GEO">GSM116029</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic hmp::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, hmp">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic hmp::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions.. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM116029-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM116030">
+    <Status database="GEO">
+      <Submission-Date>2006-06-23</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-26</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO exposed Chemostat Comparison of Wt &amp; hmp mutant, Run 2</Title>
+    <Accession database="GEO">GSM116030</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic hmp::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, hmp">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic hmp::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions.. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM116030-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM116031">
+    <Status database="GEO">
+      <Submission-Date>2006-06-23</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2006-06-26</Last-Update-Date>
+    </Status>
+    <Title>Aerobic NO exposed Chemostat Comparison of Wt &amp; hmp mutant, Run 2 dye swap</Title>
+    <Accession database="GEO">GSM116031</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Aerobic hmp::Tn5 mutant experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain MG1655, hmp">
+:Tn5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>Aerobic wild type experiment samples in presence of 10 uM each of NOC-5 and NOC-7 for 5 minutes</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+Wild Type Strain MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+Escherichia coli strains MG1655 and an isogenic hmp::Tn5 mutant were grown in a New Brunswick Scientific Bioflow III Biofermentor under continuous culture (chemostat) conditions.. Cells were grown in defined media containing 8 mM glycerol as the sole and limiting source of energy and carbon. The working volume was 1 litre, and the dilution rate 0.1 h-1. For aerobic growth, the air-flow rate was 1 l/min, and the dissolved oxygen tension was maintained at 40% air saturation by measuring oxygen dissolved in the culture using a Broadley James D140 OxyProbe® electrode and automated adjustment of stirring rate. Cells were grown as above to steady-state, At steady-state, NOC-5 and NOC-7 was added to the chemostat culture and to the nutrient feed at a final concentration of 10 uM of each unless stated otherwise. Samples were taken after a period of 5 min exposure to NOC for subsequent analysis using microarrays. Cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA, and total RNA was purified using Qiagen’s RNeasy Mini kit as recommended by the suppliers.
+    </Description>
+    <Data-Processing>
+background correction, log2 transformation and Loess normalisation were performed using Genesight 4.1 software, copyright BioDiscovery
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>test:reference ratio following background correction, log2 transformation, Loess normalisation</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_MEAN</Name>
+        <Description>Mean data in Cy3 Channel</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Background Mean in Cy3 Channel</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_AREA</Name>
+        <Description>Spot Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH1_BKD_AREA</Name>
+        <Description>Background Area in Cy3 Channel</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH1_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm Cy3 Channel</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH1_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy3 Channel</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH1_SD</Name>
+        <Description>Standard Deviation obtained in Cy3 Channel</Description>
+      </Column>
+      <Column position="10">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy3 Channel</Description>
+      </Column>
+      <Column position="11">
+        <Name>CH2_MEAN</Name>
+        <Description>Mean data in Cy5 Channel</Description>
+      </Column>
+      <Column position="12">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Background Mean in Cy5 Channel</Description>
+      </Column>
+      <Column position="13">
+        <Name>CH2_AREA</Name>
+        <Description>Spot Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="14">
+        <Name>CH2_BKD_AREA</Name>
+        <Description>Background Area in Cy5 Channel</Description>
+      </Column>
+      <Column position="15">
+        <Name>CH2_RAW</Name>
+        <Description>Raw signal output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="16">
+        <Name>CH2_BKD_RAW</Name>
+        <Description>Raw background output data obtained from image analysis algorithm in Cy5 Channel</Description>
+      </Column>
+      <Column position="17">
+        <Name>CH2_SD</Name>
+        <Description>Standard Deviation obtained in Cy5 Channel</Description>
+      </Column>
+      <Column position="18">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Background Standard Deviation in Cy5 Channel</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM116031-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE5098">
+    <Status database="GEO">
+      <Submission-Date>2006-06-19</Submission-Date>
+      <Release-Date>2006-09-01</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Aerobic and anaerobic transcriptional responses of wild type, hmp and norR to strains to NO in a chemostat</Title>
+    <Accession database="GEO">GSE5098</Accession>
+    <Pubmed-ID>17189370</Pubmed-ID>
+    <Summary>
+This SuperSeries is composed of the following subset Series:
+GSE5075: Aerobic transcriptional responses of Escherichia coli to NO under defined chemostat conditions.
+GSE5076: Anaerobic transcriptional responses of Escherichia coli to NO under defined chemostat conditions.
+GSE5084: Anaerobic NO-exposed Chemostat Comparison of Wt &amp; norR mutant Responses
+GSE5137: Aerobic NO-exposed Chemostat Comparison of Wt &amp; norR mutant Responses
+GSE5139: Aerobic NO-exposed Chemostat Comparison of Wt &amp; hmp mutant Responses
+Keywords: SuperSeries
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM114368" />
+    <Sample-Ref ref="GSM114370" />
+    <Sample-Ref ref="GSM114371" />
+    <Sample-Ref ref="GSM114372" />
+    <Sample-Ref ref="GSM114383" />
+    <Sample-Ref ref="GSM114384" />
+    <Sample-Ref ref="GSM114385" />
+    <Sample-Ref ref="GSM114386" />
+    <Sample-Ref ref="GSM114612" />
+    <Sample-Ref ref="GSM114613" />
+    <Sample-Ref ref="GSM114614" />
+    <Sample-Ref ref="GSM114615" />
+    <Sample-Ref ref="GSM116024" />
+    <Sample-Ref ref="GSM116025" />
+    <Sample-Ref ref="GSM116026" />
+    <Sample-Ref ref="GSM116027" />
+    <Sample-Ref ref="GSM116028" />
+    <Sample-Ref ref="GSM116029" />
+    <Sample-Ref ref="GSM116030" />
+    <Sample-Ref ref="GSM116031" />
+    <Relation type="SuperSeries of" target="GSE5075" />
+    <Relation type="SuperSeries of" target="GSE5076" />
+    <Relation type="SuperSeries of" target="GSE5084" />
+    <Relation type="SuperSeries of" target="GSE5137" />
+    <Relation type="SuperSeries of" target="GSE5139" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/95351" />
+  </Series>
+
+</MINiML>

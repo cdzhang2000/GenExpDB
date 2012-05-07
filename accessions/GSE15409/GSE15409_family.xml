@@ -1,0 +1,2101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Dipen</First><Last>Sangurdekar</Last></Person>
+    <Email>dps@genomics.princeton.edu</Email>
+    <Department>Lewis-Sigler Institute for Integrative Genomics</Department>
+    <Organization>Princeton University</Organization>
+    <Address>
+      <Line>132 Carl Icahn laboratory, Princeton University</Line>
+      <City>Princeton</City>
+      <State>NJ</State>
+      <Zip-Code>08544</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Dipen</First><Middle>P</Middle><Last>Sangurdekar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Friedrich</First><Last>Srienc</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Arkady</First><Middle>B</Middle><Last>Khodursky</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3503">
+    <Status database="GEO">
+      <Submission-Date>2006-03-02</Submission-Date>
+      <Release-Date>2006-03-06</Release-Date>
+      <Last-Update-Date>2006-03-06</Last-Update-Date>
+    </Status>
+    <Title>Khodursky Lab E. coli B 4290 ORFs Microarray</Title>
+    <Accession database="GEO">GPL3503</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Non-commercial</Manufacturer>
+    <Manufacture-Protocol>
+4290 amplified ORFs from primer pairs (from Sigma Genosys) were printed onto glass slides using a 16 tip robotic printer from 384-well microwell plates
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>polysine</Coating>
+    <Description>
+A microarray with 4405 spot features.
+Tip Configuration: Standard 16-tip
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Open Reading Frame identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GENE_SYMBOL</Name>
+        <Description>Name of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+      <Column position="4">
+        <Name>GENE_DESC</Name>
+        <Description>Description of the gene represented by the sequence in the spot/feature</Description>
+      </Column>
+    <External-Data rows="4405">
+GPL3503-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM386765">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Adenosine addition</Title>
+    <Accession database="GEO">GSM386765</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Adenosine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Adenosine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386765/GSM386765_EcP3_013_cy5ade10min_cy3ade0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386765/GSM386765_EcP3_014_2_cy5ade0min_cy3ade10min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386765/GSM386765_EcP3_014_cy5ade10min_cy3ade0min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386765-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386766">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Alanine addition</Title>
+    <Accession database="GEO">GSM386766</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Alanine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Alanine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386766/GSM386766_EcP1_013_cy5ala10min_cy3ala0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386766/GSM386766_EcP1_024_cy5ala10min_cy3ala0min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386766-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386767">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Arginine addition</Title>
+    <Accession database="GEO">GSM386767</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Arginine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Arginine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386767/GSM386767_EcP1_02_cy5arg10min_cy3arg0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386767/GSM386767_EcP1_05_cy5arg10min_cy3arg0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386767/GSM386767_EcP1_06_cy5arg10min_cy3arg0min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386767-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386768">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Aspartate addition</Title>
+    <Accession database="GEO">GSM386768</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Aspartate addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Aspartate
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386768/GSM386768_EcP2_037_cy5aspt10min_cy3aspt0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386768/GSM386768_EcP2_038_cy5aspt0min_cy3aspt10min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386768/GSM386768_EcP2_039_cy5aspt10min_cy3aspt0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386768-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386769">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Cysteine addition</Title>
+    <Accession database="GEO">GSM386769</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Cysteine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Cysteine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386769/GSM386769_EcP1_026_cy5cys10min_cy3cys0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386769/GSM386769_EcP1_027_cy5cys0min_cy3cys10min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386769/GSM386769_EcP1_028_cy5cys10min_cy3cys0min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386769-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386770">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Cytidine addition</Title>
+    <Accession database="GEO">GSM386770</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Cytidine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Cytidine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386770/GSM386770_EcP3_016_cy5cyt10min_cy3cyt0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386770/GSM386770_EcP3_017_cy5cyt0min_cy3cyt10min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386770-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386771">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Glutamate addition</Title>
+    <Accession database="GEO">GSM386771</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Glutamate addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Glutamate
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386771/GSM386771_EcP1_012_cy5glt10min_cy3glt0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386771/GSM386771_EcP1_03_cy5glt10min_cy3glt0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386771/GSM386771_EcP1_07_cy5glt10min_cy3glt0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386771/GSM386771_EcP1_08_cy5glt10min_cy3glt0min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386771-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386772">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Glutamine addition</Title>
+    <Accession database="GEO">GSM386772</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Glutamine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Glutamine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386772/GSM386772_EcP1_011_cy5gln10min_cy3gln0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386772/GSM386772_EcP1_04_cy5gln10min_cy3gln0min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386772-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386773">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Glycine addition</Title>
+    <Accession database="GEO">GSM386773</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Glycine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Glycine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386773/GSM386773_EcP2_009_cy5gly10min_cy3gly0min_2_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386773/GSM386773_EcP2_021_cy5gly0min_cy3gly10min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386773/GSM386773_EcP2_023_cy5gly10min_cy3gly0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386773-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386774">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Guanosine addition</Title>
+    <Accession database="GEO">GSM386774</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Guanosine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Guanosine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386774/GSM386774_EcP3_023_cy5gua10min_cy3gua0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386774/GSM386774_EcP3_024_cy5gua10min_cy3gua0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386774/GSM386774_EcP3_025_cy5gua0min_cy3gua10min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386774-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386775">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Histidine addition</Title>
+    <Accession database="GEO">GSM386775</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Histidine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Histidine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386775/GSM386775_EcP1_029_cy5his10min_cy3his0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386775/GSM386775_EcP1_031_cy5his0min_cy3his10min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386775/GSM386775_EcP1_039_cy5his10min_cy3his0min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386775-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386776">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Isoleucine addition</Title>
+    <Accession database="GEO">GSM386776</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Isoleucine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Isoleucine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386776/GSM386776_EcP2_031_cy5Ile10min_cy3Ile0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386776/GSM386776_EcP2_032_cy5Ile0min_cy3Ile10min_635_nm_2.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386776-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386777">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Lysine addition</Title>
+    <Accession database="GEO">GSM386777</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Lysine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Lysine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386777/GSM386777_EcP1_033_cy5lys10min_cy3lys0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386777/GSM386777_EcP1_034_cy5lys0min_cy3lys10min_good_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386777/GSM386777_EcP1_035_cy5lys10min_cy3lys0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386777-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386778">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Methionine addition</Title>
+    <Accession database="GEO">GSM386778</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Methionine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Methionine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386778/GSM386778_EcP1_036_cy5met10min_cy3met0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386778/GSM386778_EcP1_037_cy5met0min_cy3met10min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386778/GSM386778_EcP1_038_cy5met10min_cy3met0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386778-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386779">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Phenylalanine addition</Title>
+    <Accession database="GEO">GSM386779</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Phenylalanine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Phenylalanine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386779/GSM386779_EcP2_034_cy5phe10min_cy3phe0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386779/GSM386779_EcP2_035_cy5phe0min_cy3phe10min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386779/GSM386779_EcP2_036_cy5phe10min_cy3phe0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386779-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386780">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Proline addition</Title>
+    <Accession database="GEO">GSM386780</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Proline addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Proline
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386780/GSM386780_EcP2_024_cy5pro10min_cy3pro0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386780-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386781">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Serine addition</Title>
+    <Accession database="GEO">GSM386781</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Serine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Serine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386781/GSM386781_EcP1_019_cy5ser0min_cy3ser10min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386781/GSM386781_EcP1_020_cy5ser10min_cy3ser0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386781/GSM386781_EcP1_025_cy5ser10min_cy3ser0min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386781-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386782">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Threonine addition</Title>
+    <Accession database="GEO">GSM386782</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Threonine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Threonine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386782/GSM386782_EcP1_016_cy5thr10min_cy3thr0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386782/GSM386782_EcP1_017_cy5thr10min_cy3thr0min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386782/GSM386782_EcP1_018_cy5thr0min_cy3thr10min.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386782-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386783">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Thymidine addition</Title>
+    <Accession database="GEO">GSM386783</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Thymidine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Thymidine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386783/GSM386783_EcP3_007_cy5thym0min_cy3thym10min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386783/GSM386783_EcP3_008_cy5thym10min_cy3thym0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386783/GSM386783_EcP3_009_cy5thym10min_cy3thym0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386783-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386784">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Tryptophan addition</Title>
+    <Accession database="GEO">GSM386784</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Tryptophan addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Tryptophan
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386784/GSM386784_EcP2_012_cy5trp10min_cy3trp0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386784/GSM386784_EcP2_018_cy5trp0min_cy3trp10min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386784/GSM386784_EcP2_030_cy5trp10min_cy3trp0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386784-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386785">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Uridine addition</Title>
+    <Accession database="GEO">GSM386785</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Uridine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Uridine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386785/GSM386785_EcP3_010_cy5urid10min_cy3urid0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386785/GSM386785_EcP3_011_cy5urid0min_cy3urid10min.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386785/GSM386785_EcP3_012_cy5urid10min_cy3urid0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386785-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM386786">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2009-03-26</Last-Update-Date>
+    </Status>
+    <Title>Valine addition</Title>
+    <Accession database="GEO">GSM386786</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli cells 0 min before perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+control (before perturbation)
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>E. coli cells 10 min after specific perturbation</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="stress">
+Valine addition
+      </Characteristics>
+      <Treatment-Protocol>
+Amino acid or nucleotide added to final concentration of 1 mM not exceeding 1/100th volume of culture. After 10 mins, samples were spun down and snap frozen in liquid nitrogen and stored at -80 C
+      </Treatment-Protocol>
+      <Growth-Protocol>
+E. coli cells grown to mid-exponential phase after 6-8 generations after stationary phase in M9 minimal medium + 0.4 % glucose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Qiagen RNEASY kit according to directions
+      </Extract-Protocol>
+      <Label>Cy3, Cy5</Label>
+      <Label-Protocol>
+10 µg of total RNA were primed with 1 µl of Random hexamers at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), according to Khodursky et al (PMID 12710666)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were loaded onto cDNA microarrays and hybridized at 65 C for 5-7 hours. according to Khodursky et al (PMID 12710666)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on GenePix4000B scanner.
+    </Scan-Protocol>
+    <Description>
+2-3 biological replicates. Comparison of total RNA abundance 10 min after and before addition of Valine
+    </Description>
+    <Data-Processing>
+Images were quantified using GenePix Pro software
+Median of intensity data was extracted, LOESS normalized and an ANOVA model was fit using the MAANOVA package in R. The Log (Cy5/Cy3) values were extracted from the VG matrix of the model fit.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3503" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386786/GSM386786_EcP2_026_cy5val10min_cy3val0min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM386nnn/GSM386786/GSM386786_EcP2_027_cy5val0min_cy3val10min_635_nm.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized, log2 (after_perturbation/before_perturbation) ratio</Description>
+      </Column>
+    <External-Data rows="4065">
+GSM386786-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE15409">
+    <Status database="GEO">
+      <Submission-Date>2009-03-26</Submission-Date>
+      <Release-Date>2009-03-26</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Amino acid/Nucleotide perturbation in Escherichia coli</Title>
+    <Accession database="GEO">GSE15409</Accession>
+    <Pubmed-ID>19366454</Pubmed-ID>
+    <Summary>
+Wild-type E. coli are prototrophic for all amino acid and nucleotides. These are synthesized by a network of interconnected metabolic pathways from a handful precursors molecules, which are regulated at the level of gene expression. It was hypothesized in this study, that since metabolic pathways are interconnected, transcriptional regulation should be shared across multiple pathways. To uncover these regulatory interactions, cells growing at steady state were perturbed by the addition of an end-metabolite (aa or nt), and were allowed to recover. The adjustments in biochemical pathways to the perturbation were sampled by profiling mRNA abundance 10 minutes after the perturbation. By limiting the scope and magnitude of the perturbation, mRNA changes are expected to be limited to specific responses to the perturbation and not genome-wide changes associated with larger perturbations such as nutritional shifts and stresses.
+    </Summary>
+    <Overall-Design>
+Exponentially growing E. coli cells in M9 minimal medium + 0.4 % glucose were perturbed by the addition of 1 mM amino acid or nucleotide individually, and the transcriptional responses were tracked after 10 minutes. In total, 22 metabolites were tested, including 2-4 biological replicates for each including dye-swaps. In each experiment, the reference channel for the dual channel hybridization were cells at 0 minutes before perturbation.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM386765" />
+    <Sample-Ref ref="GSM386766" />
+    <Sample-Ref ref="GSM386767" />
+    <Sample-Ref ref="GSM386768" />
+    <Sample-Ref ref="GSM386769" />
+    <Sample-Ref ref="GSM386770" />
+    <Sample-Ref ref="GSM386771" />
+    <Sample-Ref ref="GSM386772" />
+    <Sample-Ref ref="GSM386773" />
+    <Sample-Ref ref="GSM386774" />
+    <Sample-Ref ref="GSM386775" />
+    <Sample-Ref ref="GSM386776" />
+    <Sample-Ref ref="GSM386777" />
+    <Sample-Ref ref="GSM386778" />
+    <Sample-Ref ref="GSM386779" />
+    <Sample-Ref ref="GSM386780" />
+    <Sample-Ref ref="GSM386781" />
+    <Sample-Ref ref="GSM386782" />
+    <Sample-Ref ref="GSM386783" />
+    <Sample-Ref ref="GSM386784" />
+    <Sample-Ref ref="GSM386785" />
+    <Sample-Ref ref="GSM386786" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE15409/GSE15409_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/117083" />
+  </Series>
+
+</MINiML>

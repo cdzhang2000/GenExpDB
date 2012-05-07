@@ -22,6 +22,9 @@ our $urlpath    = "$ServerName$webloc";
 
 our $datapath   = "/var/www/modperl/accessions";
 
+use Scalar::Util qw(looks_like_number);
+
+
 our %gnom = (
 	1  => { 'acc' => 'NC_000913', 'lname' => 'E. coli MG1655',           'sname' => 'MG1655' },
 	2  => { 'acc' => 'NC_002655', 'lname' => 'E. coli EDL933 (O157:H7)', 'sname' => 'EDL933' },
@@ -36,6 +39,7 @@ our %gnom = (
 	11  => { 'acc' => 'NC_000962', 'lname' => 'Mycobacterium tuberculosis H37Rv',   'sname' => 'Mycobacterium, H37Rv' },
 	12  => { 'acc' => 'NC_002755', 'lname' => 'Mycobacterium tuberculosis CDC1551',   'sname' => 'Mycobacterium, CDC1551' }
 );
+
 our %gnomacc = ( "NC_000913", 1, "NC_002655", 2, "NC_002695", 3, "NC_004431", 4, "NC_007946", 5, "NC_003317",6, "NC_003318", 7);
 
 #----------------------------------------------------------------------
@@ -670,6 +674,20 @@ sub qryannot {
 sub siggenes {
 
 	my $parms = gdb::webUtil::getSessVar( 'parms' );
+}
+
+
+
+sub transformArray{
+	my @nums=@_;
+	my @numArray=();
+	foreach my $expr (@nums) {
+    	if (looks_like_number($expr)){
+        	push @numArray, $expr;
+		}
+	}
+
+        return @numArray;
 }
 
 1;    # return a true value

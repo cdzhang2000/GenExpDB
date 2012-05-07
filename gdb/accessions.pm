@@ -19,7 +19,9 @@ use List::Util qw(sum min max);
 
 use Data::Dumper;    # print "<pre>" . Dumper( %frmData ) . "</pre>";
 
-#this is another test
+#czhang
+use Scalar::Util qw(looks_like_number);
+
 
 #----------------------------------------------------------------------
 # Display Accessions
@@ -917,6 +919,10 @@ qq{<td valign="top"><a class="exmp" onclick="accinfo('expinfo',$gdb::webUtil::fr
 	  qq{<th class="thc">ANTILOG</th>\n},
 	  qq{<th class="thc">RMA DATA</th>\n},
 	  qq{<th class="thc">STDDEV</th>\n},
+	  
+	  #czhang
+	  qq{<th class="thc">EXP MEAN</th>\n},
+	  
 	  qq{<th class="thc">PLATFORM</th>\n},
 	  qq{<th class="thc">TESTGENOME</th>\n},
 	  qq{<th class="thc">CNTLGENOME</th>\n};
@@ -926,7 +932,12 @@ qq{<td valign="top"><a class="exmp" onclick="accinfo('expinfo',$gdb::webUtil::fr
 	}
 	print qq{</tr>\n};
 
-	for my $id ( sort { $a <=> $b } keys %dbexpInfo ) {
+	#czhang no more sorting by expid 
+	
+	for my $id ( keys %dbexpInfo ){
+		
+	#for my $id ( sort { $a <=> $b } keys %dbexpInfo ) {
+		
 		my $expmID = $dbexpInfo{$id}{id};
 		
 		#next if ($dbexpInfo{$id}{cntlgenome} !~ /$gdb::util::gnom{$parms->{genome}}{acc}/i);
@@ -969,6 +980,10 @@ qq{<td valign="top"><a class="exmp" onclick="accinfo('expinfo',$gdb::webUtil::fr
 		  qq{<td class="tdc">$dbexpInfo{$id}{antilog}</td>\n},
 		  qq{<td class="tdc">$dbexpInfo{$id}{userma}</td>\n},
 		  qq{<td class="tdr">$dbexpInfo{$id}{expstddev}</td>\n},
+		  
+		  #czhang
+		  qq{<td class="tdr">$dbexpInfo{$id}{expmean}</td>\n},
+		  
 		  qq{<td class="tdr">$dbexpInfo{$id}{platform}</td>\n},
 		  qq{<td class="tdc">$testgenome</td>\n},
 		  qq{<td class="tdc">$cntlgenome</td>\n};
@@ -1267,12 +1282,7 @@ qq{ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Plot Type:</b> <input type="radio" id="plot
 		}
 		print qq{</select>\n}, qq{</td>\n},
 
-		#test genome
-#		  qq{<td>\n}, qq{<select class="small" id="testgenome$selid" size="$selsize" onChange="selgenome('cntlgenome$selid',this.selectedIndex)">\n};
-#		for my $i ( sort { $a <=> $b } keys %gdb::util::gnom ) {
-#			print qq{<option value="$gdb::util::gnom{$i}{acc}">$gdb::util::gnom{$i}{sname}</option>\n};
-#		}
-#		print qq{</select>\n}, qq{</td>\n},
+		
 
 		  #control
 		  qq{<td>\n}, qq{<select class="small" id="cntlname$selid" size="$selsize" MULTIPLE>\n};
@@ -1451,7 +1461,9 @@ sub sel1Plot {
 
 
 	my $dbplatformAnnotRef = gdb::oracle::dbplatformAnnot($platform);
+	
 	my %dbplatformAnnot    = %$dbplatformAnnotRef;
+	
 	if ( !%dbplatformAnnot ) {
 		print qq{<font color="red">No Platform available!  Please contact administrator.</font>};
 		return;
@@ -1528,20 +1540,9 @@ sub sel1Plot {
 			$id =~ s/^\s+//;
 			$id =~ s/\s+$//;
 			$id = lc($id);
-			
+						
 			my $id_ref = '';
-			#if (exists $dbplatformAnnot{ $id }) {
-			#	for my $ltag ( keys %{ $dbplatformAnnot{ $id } } ) {
-			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_000913/) and ($ltag =~ /^b/i);		#genome is MG1655 only want B-numbers
-			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_002655/) and ($ltag =~ /^z/i);		#genome is EDL933 only want Z-numbers
-			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_002695/) and ($ltag =~ /^e/i);		#genome is Sakai only want Ecs-numbers
-			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_004431/) and ($ltag =~ /^c/i);		#genome is CFT073 only want c-numbers
-			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_007946/) and ($ltag =~ /^u/i);		#genome is UTI89 only want UTI89-numbers
-
-			#		$id_ref .= ":$ltag"	if ($testgenomeacc =~ /NC_003317|NC_003318/) and ($ltag =~ /^bme/i);		#genome is Brucella M16 only want M16-numbers
-			#	}
-			#}
-			
+					
 			$id_ref=($dbplatformAnnot{ $id }) ? $dbplatformAnnot{ $id } : '';
 			
 			
@@ -1551,6 +1552,7 @@ sub sel1Plot {
 			$dataVal = ( $datacol and defined $lineArr[$datacol] ) ? $lineArr[$datacol] : '';
 			$dataVal =~ s/null|n\/a//gi;
 			$dataVal =~ s/\,//g;	#remove ','
+		
 			
 			if ($dataVal =~ /e/i) {		#data in scientific notation	(GSE5333)
 				$dataVal =~ s/\-/+/;	#change sign
@@ -1667,22 +1669,9 @@ sub sel1Plot {
 
 			my $id_ref = '';
 
-		#	if (exists $dbplatformAnnot{ $id }) {
-		#		for my $ltag ( keys %{ $dbplatformAnnot{ $id } } ) {
-		#			$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_000913/) and ($ltag =~ /^b/i);		#genome is MG1655 only want B-numbers
-		#			$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002655/) and ($ltag =~ /^z/i);		#genome is EDL933 only want Z-numbers
-		#			$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002695/) and ($ltag =~ /^e/i);		#genome is Sakai only want Ecs-numbers
-		#			$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_004431/) and ($ltag =~ /^c/i);		#genome is CFT073 only want c-numbers
-		#			$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_007946/) and ($ltag =~ /^u/i);		#genome is UTI89 only want UTI89-numbers
-		#		}
-		#	}
-
-
 
 			$id_ref=($dbplatformAnnot{ $id } ) ? $dbplatformAnnot{ $id } : '';
 			
-			
-
 			next if ! $id_ref;
 			
 			$id_ref =~ s/^://;	#remove leading ':'
@@ -1711,21 +1700,12 @@ sub sel1Plot {
 		}
 
 		my $pcnt = scalar keys %pfids;
-		#check ckltag and add all genome Cntl ltags not in sample
-#		for my $ltag ( keys %cntlGenomeLtags ) {
-#			if ( ! exists $ckltag{$ltag}) {
-#				$pcnt++;
-#				$pfids{$pcnt}{ltag} = $ltag;
-#				$pfids{$pcnt}{dataVal} = '';
-#			}
-#		}
+		
 		
 		#we have all ltags and values
 		for my $i ( sort { $a <=> $b } keys %pfids ) {	
 			my $id_ref = $pfids{$i}{ltag};		
 		
-			next if ($id_ref =~ /:/ and $platform =~ /GPL7714/);		#Tiling platform, skip multiple ltags per id_ref
-
 			$dataVal = ( $pfids{$i}{dataVal} ) ? $pfids{$i}{dataVal} : '';
 		
 			if ($antilog) {
@@ -1736,7 +1716,10 @@ sub sel1Plot {
 
 			#average duplicate test spots
 			if ( defined $cntldata{$id_ref} ) {
-				if ( $dataVal ne '' ) {
+				
+				#czhang
+				if ( $dataVal ne ''){ 
+				#if ( $dataVal ne '' and $dataVal =~ /^-?(?:\d+(?:\.\d*)?&\.\d+)$/ ) {	
 					$cntldata{$id_ref}{cnt}++;
 					$cntldata{$id_ref}{val} = ( $cntldata{$id_ref}{val} ) ? $cntldata{$id_ref}{val} + $dataVal : $dataVal;
 				}
@@ -1767,6 +1750,13 @@ sub sel1Plot {
 
 	print "<hr>";
 
+	#czhang
+	if(!@maxval){
+			print qq{<font color="red">ID refs are inconsistent between platform and soft xml !</font>\n};
+			return;
+			
+	}
+		
 	my $needtoLog = ( max(@maxval) > 24 ) ? 1 : 0;
 	if ( !$log and $needtoLog ) {
 		print qq{<font color="red">Data does not seem to be Log values? (maximum value > 24)</font>\n};
@@ -1875,6 +1865,9 @@ sub sel1Plot {
 
 	$savExpInfo{samples} = join( ',', @testSampname ) . "/" . join( ',', @cntlSampname );
 	$savExpInfo{expstddev} = $stddev;
+	
+	#czhang
+	$savExpInfo{expmean} = $mean;
 
 	print qq{<table align="center" cellpadding="1"  cellspacing="1">\n},
 	  qq{<tr><th class="thc" colspan="8">Test($avgTestsname) / Control($avgCntlsname) </th></tr>\n},
@@ -2027,11 +2020,15 @@ sub sel2Plot {
 		return;
 	}
 	
-#	my $genomeLtagsRef = gdb::oracle::dbgenomeLtags($cntlgenomeacc);
-#	my %genomeLtags = %$genomeLtagsRef;
 	
 	my $dbplatformAnnotRef = gdb::oracle::dbplatformAnnot($platform);
+	
+	#print "platform= $platform ";
+	
 	my %dbplatformAnnot    = %$dbplatformAnnotRef;
+	
+	
+	
 	if ( !%dbplatformAnnot ) {
 		print qq{<font color="red">No Platform available!  Please contact administrator.</font>};
 		return;
@@ -2073,6 +2070,7 @@ sub sel2Plot {
 	my %avgCntlArr = ();
 	my @sampname = ();
 	my %chanSource = ();
+	
 	for my $bioassays_id ( sort keys %sample ) {
 		print "<hr>";
 
@@ -2090,9 +2088,11 @@ sub sel2Plot {
 		}
 
 		my ( $testVal, $cntlVal, $testbkgdVal, $cntlbkgdVal ) = undef;
+		
 		my ( %testdata, %cntldata, @maxval, %plotTestdata, %plotCntldata, @stddata ) = ();
 
 		open( FILE, "$gdb::util::datapath/$sample{$bioassays_id}{accession}/$sample{$bioassays_id}{fname}" );
+		
 		my @data = <FILE>;
 		close(FILE);
 
@@ -2110,8 +2110,10 @@ sub sel2Plot {
 			$id =~ s/^\s+//;
 			$id =~ s/\s+$//;
 			$id = lc($id);
-
+			
+			#print " $i = $line  <br>";
 			my $id_ref = '';
+			
 			#if (exists $dbplatformAnnot{ $id }) {
 			#	for my $ltag ( keys %{ $dbplatformAnnot{ $id } } ) {
 			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_000913/) and ($ltag =~ /^b/i);		#genome is MG1655 only want B-numbers
@@ -2119,13 +2121,16 @@ sub sel2Plot {
 			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_002695/) and ($ltag =~ /^e/i);		#genome is Sakai only want Ecs-numbers
 			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_004431/) and ($ltag =~ /^c/i);		#genome is CFT073 only want c-numbers
 			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_007946/) and ($ltag =~ /^u/i);		#genome is UTI89 only want UTI89-numbers
-
 			#		$id_ref .= ":$ltag"	if ($cntlgenomeacc =~ /NC_003317|NC_003318/) and ($ltag =~ /^bme/i);		#genome is Brucella M16 only want Brucella M16-numbers
 			#	}
 			#}
+			
 			$id_ref=($dbplatformAnnot{ $id }) ? $dbplatformAnnot{ $id } : '';
 
-			next if ! $id_ref;
+			#print " $id = $id_ref <br>";
+			
+			next if ! $id_ref;	# if there is no id, go to foreach 
+			
 			$id_ref =~ s/^://;	#remove leading ':'
 			
 			$testVal = ( $testcol and defined $lineArr[$testcol] ) ? $lineArr[$testcol] : '';
@@ -2135,6 +2140,8 @@ sub sel2Plot {
 			$testVal =~ s/\,//g;	#remove ','
 			$cntlVal =~ s/\,//g;	#remove ','
 			
+			
+		#	print " $testVal := $cntlVal <br>";
 			#background subtraction
 			$testbkgdVal = ( $testbkgd and $lineArr[$testbkgd] ) ? $lineArr[$testbkgd] : '';
 			$cntlbkgdVal = ( $cntlbkgd and $lineArr[$cntlbkgd] ) ? $lineArr[$cntlbkgd] : '';
@@ -2142,6 +2149,7 @@ sub sel2Plot {
 			$cntlbkgdVal =~ s/null|n\/a//gi;
 			$testbkgdVal =~ s/\,//g;	#remove ','
 			$cntlbkgdVal =~ s/\,//g;	#remove ','
+	
 			
 			$pfids{$i}{ltag}    = $id_ref;
 			$pfids{$i}{testVal} = $testVal;
@@ -2163,32 +2171,24 @@ sub sel2Plot {
 		}
 
 		my $pcnt = scalar keys %pfids;
-		#check ckltag and add all genome ltags not in sample
-#		for my $ltag ( keys %genomeLtags ) {
-#			if ( ! exists $ckltag{$ltag}) {
-#				$pcnt++;
-#				$pfids{$pcnt}{ltag} = $ltag;
-#				$pfids{$pcnt}{testVal} = '';
-#				$pfids{$pcnt}{cntlVal} = '';
-#				$pfids{$pcnt}{testbkgdVal} = '';
-#				$pfids{$pcnt}{cntlbkgdVal} = '';
-#			}
-#		}
+	
 		
 		#we have all ltags and values
 		for my $i ( sort { $a <=> $b } keys %pfids ) {	
 			my $id_ref = $pfids{$i}{ltag};
 
-			next if ($id_ref =~ /:/ and $platform =~ /GPL7714/);		#Tiling platform, skip multiple ltags per id_ref
+			#next if ($id_ref =~ /:/ and $platform =~ /GPL7714/);		#Tiling platform, skip multiple ltags per id_ref
 
 			$testVal = ( $pfids{$i}{testVal} ) ? $pfids{$i}{testVal} : '';
 			$cntlVal = ( $pfids{$i}{cntlVal} ) ? $pfids{$i}{cntlVal} : '';
+
+	#		print " $testVal = $cntlVal <br>";
 
 			if ($antilog) {
 				#antilog - convert log 10 to base number, log10(num)=val  antilog== 10^val = num
 				$testVal = ( $testVal ne '' ) ? pow( 10, $testVal ) : $testVal;
 				$cntlVal = ( $cntlVal ne '' ) ? pow( 10, $cntlVal ) : $cntlVal;
-			}
+			} #end if antilog
 
 			#background subtraction
 			$testbkgdVal = ( $pfids{$i}{testbkgdVal} ) ? $pfids{$i}{testbkgdVal} : '';
@@ -2197,12 +2197,18 @@ sub sel2Plot {
 			$testVal -= $testbkgdVal if ( $testVal ne '' and $testbkgdVal ne '' );
 			$cntlVal -= $cntlbkgdVal if ( $cntlVal ne '' and $cntlbkgdVal ne '' );
 
+			#czhang
+			#push @maxval, $testVal if ($testVal ne '' and looks_like_number($testVal));
+			#push @maxval, $cntlVal if ($cntlVal ne ''and looks_like_number($testVal) ) ;
+
 			push @maxval, $testVal if $testVal ne '';
 			push @maxval, $cntlVal if $cntlVal ne '';
 
 			#average duplicate test spots
 			if ( defined $testdata{$id_ref} ) {
-				if ( $testVal ne '' ) {
+				
+				if ( $testVal ne ''){
+				#if ( $testVal ne '' and $testVal =~ /^-?(?:\d+(?:\.\d*)?&\.\d+)$/ ) {
 					$testdata{$id_ref}{cnt}++;
 					$testdata{$id_ref}{val} = ( $testdata{$id_ref}{val} ) ? $testdata{$id_ref}{val} + $testVal : $testVal;
 				}
@@ -2213,9 +2219,14 @@ sub sel2Plot {
 
 			#average duplicate control spots
 			if ( defined $cntldata{$id_ref} ) {
-				if ( $cntlVal ne '' ) {
-					$cntldata{$id_ref}{cnt}++;
+				
+				#czhang
+				if ( $cntlVal ne ''  and looks_like_number($cntlVal) ){
+				#if ( $cntlVal ne '' and $cntlVal=~ /^-?(?:\d+(?:\.\d*)?&\.\d+)$/ ) {
+					
+					$cntldata{$id_ref}{cnt}++;		
 					$cntldata{$id_ref}{val} = ( $cntldata{$id_ref}{val} ) ? $cntldata{$id_ref}{val} + $cntlVal : $cntlVal;
+					
 				}
 			} else {
 				$cntldata{$id_ref}{cnt} = ( $cntlVal ne '' ) ? 1 : 0;
@@ -2226,8 +2237,15 @@ sub sel2Plot {
 			print qq{<font color="red">Configuration returned no data!</font>\n};
 			return;
 		}
-
-		my $needtoLog = ( max(@maxval) > 24 ) ? 1 : 0;
+		
+		
+		if(!@maxval){
+			print qq{<font color="red">ID refs are inconsistent between platform and soft xml !</font>\n};
+			return;
+			
+		}
+		
+		my $needtoLog =( max(@maxval) > 24 ) ? 1 : 0;			
 		if ( !$log and $needtoLog ) {
 			print qq{<font color="red">Data does not seem to be Log values? (maximum value > 24)</font>\n};
 			return if ( !$testcol );
@@ -2385,6 +2403,9 @@ qq{<input class="ebtn" type="button" value="Download data" onclick="window.open(
 			@sampname = sort(@sampname);
 			$savExpInfo{samples} = join( ',', @sampname );
 			$savExpInfo{expstddev} = $stddev;
+			
+			#czhang; save individual experiment mean 
+			$savExpInfo{expmean} = $mean;
 			savExp( $gdb::webUtil::frmData{id}, $bioassays_id, $dataFilename, \%chanSource, \%savExpInfo );
 		}
 	}    #end of all samples
@@ -2465,6 +2486,9 @@ qq{<input class="ebtn" type="button" value="Download data" onclick="window.open(
 			@sampname = sort(@sampname);
 			$savExpInfo{samples} = join( ',', @sampname );
 			$savExpInfo{expstddev} = $stddev;
+						
+			#czhang; save individual experiment mean 
+			$savExpInfo{expmean} = $mean;
 			savExp( $gdb::webUtil::frmData{id}, $gdb::webUtil::frmData{id}, $dataFilename, \%chanSource, \%savExpInfo );
 		}
 	} #end average

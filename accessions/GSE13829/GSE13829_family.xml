@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Gard</First><Last>Thomassen</Last></Person>
+    <Email>gardt@ifi.uio.no</Email>
+    <Phone>+4793674926</Phone>
+    <Laboratory>Bioinformatics</Laboratory>
+    <Department>Molecular microbiology</Department>
+    <Organization>Centre for Molecular Biology and Neuroscience (CMBN) and Institute of Medical Microbiology </Organization>
+    <Address>
+      <Line>Rikshospitalet University Hospital</Line>
+      <City>Oslo</City>
+      <State>Oslo</State>
+      <Postal-Code>0027</Postal-Code>
+      <Country>Norway</Country>
+    </Address>
+    <Web-Link>cmbn.no/rognes</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Gard</First><Middle>O</Middle><Last>Thomassen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Jessica</First><Middle>M</Middle><Last>Lindvall</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Karin</First><Last>Lagesen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Torbjørn</First><Last>Rognes</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Ragnhild</First><Last>Weel-Sneve</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>James</First><Middle>A</Middle><Last>Booth</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Knut</First><Middle>I</Middle><Last>Kristiansen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Magnar</First><Last>Bjørås</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib10">
+    <Person><First>Alexander</First><Middle>D</Middle><Last>Rowe</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL7714">
+    <Status database="GEO">
+      <Submission-Date>2008-12-01</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2009-08-18</Last-Update-Date>
+    </Status>
+    <Title>Custom made Escherichia coli K12 MG1655 tiling array</Title>
+    <Accession database="GEO">GPL7714</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+    <Manufacturer>Nimblegen for Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+Photolitography
+    </Manufacture-Protocol>
+    <Catalog-Number>No catalog number as it is custom</Catalog-Number>
+    <Support>unknown</Support>
+    <Coating>unknown</Coating>
+    <Description>
+This is a custom made tiling array, with probes for almost all genes and all intergenic regions. Intergenic regions have much denser coverage than coding regions, and a uniform probe affinity has been strived after. The array design is described in Thomassen et al. (submitted)
+The genome used is:NC_000913
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>RANGE_START</Name>
+        <Description>Start coordinate of the probe sequence (see column SEQUENCE)</Description>
+      </Column>
+      <Column position="3">
+        <Name>RANGE_END</Name>
+        <Description>End coordinate of the probe sequence (see column SEQUENCE)</Description>
+      </Column>
+      <Column position="4">
+        <Name>RANGE_STRAND</Name>
+        <Description>Strand from which the probe sequence is derived (see column SEQUENCE)</Description>
+      </Column>
+      <Column position="5">
+        <Name>SEQUENCE</Name>
+        <Description>Probe sequence ordered from Affymetric</Description>
+      </Column>
+      <Column position="6">
+        <Name>GB_RANGE</Name>
+        <Description>Accession.version[Start..End]</Description>
+      </Column>
+      <Column position="7">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="276563">
+GPL7714-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM347947">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_MOCK_1</Title>
+    <Accession database="GEO">GSM347947</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after mock treatment parallel to induction of the SOS response, unirradiated</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was treated as to be irradiated by UV 0 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after non-exposure to UV.(Samples 1-5)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_UV_1 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347947/GSM347947.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347947-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM347948">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_MOCK_2</Title>
+    <Accession database="GEO">GSM347948</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after mock treatment parallel to induction of the SOS response, unirradiated</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was treated as to be irradiated by UV 0 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after non-exposure to UV.(Samples 1-5)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_UV_2 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347948/GSM347948.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347948-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM347949">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_MOCK_3</Title>
+    <Accession database="GEO">GSM347949</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after mock treatment parallel to induction of the SOS response, unirradiated</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was treated as to be irradiated by UV 0 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after non-exposure to UV.(Samples 1-5)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_UV_3 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347949/GSM347949.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347949-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM347950">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_MOCK_4</Title>
+    <Accession database="GEO">GSM347950</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after mock treatment parallel to induction of the SOS response, unirradiated</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was treated as to be irradiated by UV 0 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after non-exposure to UV.(Samples 1-5)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_UV_4 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347950/GSM347950.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347950-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM347951">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_MOCK_5</Title>
+    <Accession database="GEO">GSM347951</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after mock treatment parallel to induction of the SOS response, unirradiated</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was treated as to be irradiated by UV 0 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after non-exposure to UV.(Samples 1-5)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_UV_5 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347951/GSM347951.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347951-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM347952">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_UV_1</Title>
+    <Accession database="GEO">GSM347952</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after induction of the SOS response by UV irradiation (50 J/m2)</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was irradiated by UV 50 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after exposure to UV. (Samples 6-10)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_MOCK_1 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347952/GSM347952.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347952-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM347953">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_UV_2</Title>
+    <Accession database="GEO">GSM347953</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after induction of the SOS response by UV irradiation (50 J/m2)</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was irradiated by UV 50 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after exposure to UV. (Samples 6-10)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_MOCK_2 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347953/GSM347953.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347953-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM347954">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_UV_3</Title>
+    <Accession database="GEO">GSM347954</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after induction of the SOS response by UV irradiation (50 J/m2)</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was irradiated by UV 50 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after exposure to UV. (Samples 6-10)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_MOCK_3 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347954/GSM347954.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347954-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM347955">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_UV_4</Title>
+    <Accession database="GEO">GSM347955</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after induction of the SOS response by UV irradiation (50 J/m2)</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was irradiated by UV 50 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after exposure to UV. (Samples 6-10)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_MOCK_4 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347955/GSM347955.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347955-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM347956">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2010-09-24</Last-Update-Date>
+    </Status>
+    <Title>totRNA_UV_5</Title>
+    <Accession database="GEO">GSM347956</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>total RNA extracted 20 min after induction of the SOS response by UV irradiation (50 J/m2)</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+K-12 MG1655
+      </Characteristics>
+      <Characteristics tag="cell culture">
+mid-log phase
+      </Characteristics>
+      <Treatment-Protocol>
+50 ml culture of Escherichia coli K-12 MG1655 was irradiated by UV 50 J/m2 OD600 = 0.5. The culture was further harvested by centrifugation 20 minutes after exposure to UV. (Samples 6-10)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Escherichia coli K-12 MG1655 single colony from overnight cultures were diluted 1:500 in 100 ml K-medium (1xM9, 1.2% glucose, 1.25% casamino acids (dCAA), 1 mM MgSO4, 0.1 mM CaCl2) and grown at 37°C with aeration by rotary shaking until OD600=0.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+1 ml trizol was added pr 106 cells and incubated at room temperature for 5 minutes. 0.2 ml chloroform was added pr ml Trizol and the sample was mixed for 15 seconds before 15 minutes centrifutgation (12000 g 4°C). The aqueous phase was slowly added 1:1(vol) to 70% EtOH and further loaded to a RNeasy column (QIAGEN), washed and DNase treated according to RNeasy protocol (QIAGEN).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Fragmented cDNA was terminal labelled with Biotin according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Fragmented and labelled cDNA were hybridized to arrays overnight at 45°C according to the Affymetrix 'Prokaryotic sample and array processing' protocol version 701029 Rev. 4.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned using GeneChip Skanner 3000 7G with settings appropriate to the array type.
+    </Scan-Protocol>
+    <Description>
+single colony and culture parallell to totRNA_MOCK_5 (the culture was split in two, half induced by UV irradiation the other half as reference was not induced)
+    </Description>
+    <Data-Processing>
+Details on the analysis methods applied is found in the connected paper: Custom design and analysis of high-density oligonucleotide bacterial tiling microarrays. Thomassen GO, Rowe AD, Lagesen K, Lindvall JM, Rognes T. PLoS One. 2009 Jun 17;4(6):e5943. PMID: 19536279
+Results of analysis of the reference dataset (the 5 MOCK E. coli arrays,) and the treated dataset (the 5 UV treated E. coli arrays) are provided in the &quot;MOCKvsUVresults.tar&quot; supplementary file available on the Series record.
+    </Data-Processing>
+    <Platform-Ref ref="GPL7714" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM347nnn/GSM347956/GSM347956.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalised, base-line shifted and in log2, values set to null have been removed</Description>
+      </Column>
+    <External-Data rows="276563">
+GSM347956-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE13829">
+    <Status database="GEO">
+      <Submission-Date>2008-12-04</Submission-Date>
+      <Release-Date>2009-08-18</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>UV treated Escherichia coli reveals a high number of differentially expressed regions and many novel transcripts</Title>
+    <Accession database="GEO">GSE13829</Accession>
+    <Pubmed-ID>19536279</Pubmed-ID>
+    <Pubmed-ID>21203457</Pubmed-ID>
+    <Summary>
+The transcriptional changes in Escherichia coli upon induction of the SOS response are investigated by utilizing custom designed oligonucleotide microarrays.
+
+Keywords: Gene expression during the SOS response in Escherichia coli
+    </Summary>
+    <Overall-Design>
+Escherichia coli K-12 MG1655 single colony in five parallells was grown to mid-log phase and exposed to UV to induce the SOS response. Total RNA was extracted from induced and uninduced cells and cDNA was prepared, fragmented and labelled prior to hybridizing to arrays.
+The arrays was designed to maximize the genomic coverage whilst simultaneous including only probes estimated to give an approximately uniform binding affinity. Regions coding for non-hypothetical proteins or RNAs where covered less densely than the intergenic parts.
+    </Overall-Design>
+    <Type>Expression profiling by genome tiling array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib6" position="2" />
+    <Contributor-Ref ref="contrib7" position="3" />
+    <Contributor-Ref ref="contrib3" position="4" />
+    <Contributor-Ref ref="contrib4" position="5" />
+    <Contributor-Ref ref="contrib8" position="6" />
+    <Contributor-Ref ref="contrib9" position="7" />
+    <Contributor-Ref ref="contrib5" position="8" />
+    <Contributor-Ref ref="contrib10" position="9" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM347947" />
+    <Sample-Ref ref="GSM347948" />
+    <Sample-Ref ref="GSM347949" />
+    <Sample-Ref ref="GSM347950" />
+    <Sample-Ref ref="GSM347951" />
+    <Sample-Ref ref="GSM347952" />
+    <Sample-Ref ref="GSM347953" />
+    <Sample-Ref ref="GSM347954" />
+    <Sample-Ref ref="GSM347955" />
+    <Sample-Ref ref="GSM347956" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE13829/GSE13829_MOCKvsUVresults.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE13829/GSE13829_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/110503" />
+  </Series>
+
+</MINiML>

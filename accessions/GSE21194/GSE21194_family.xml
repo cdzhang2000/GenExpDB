@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Hani</First><Last>Goodarzi</Last></Person>
+    <Organization>Columbia University</Organization>
+    <Address>
+      <Line>1150 St. Nicholas Ave. </Line>
+      <City>New York</City>
+      <State>NY</State>
+      <Zip-Code>10032</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Bryson</First><Middle>D</Middle><Last>Bennett</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Sasan</First><Last>Amini</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Marshall</First><Middle>L</Middle><Last>Reaves</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Alison</First><Middle>K</Middle><Last>Hottes</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Joshua</First><Middle>D</Middle><Last>Rabinowitz</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Saeed</First><Last>Tavazoie</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL10286">
+    <Status database="GEO">
+      <Submission-Date>2010-04-05</Submission-Date>
+      <Release-Date>2010-06-15</Release-Date>
+      <Last-Update-Date>2010-06-15</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli whole-genome tiling array (2 x 105K)</Title>
+    <Accession database="GEO">GPL10286</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Agilent</Manufacturer>
+    <Manufacture-Protocol>
+Agilent customer-designed arrays
+    </Manufacture-Protocol>
+    <Description>
+The Platform data table reflects a condensed representation of the array's replicate features. The full array layout representing all of the individual features is linked as a supplementary file at the foot of this record.
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL10286/GPL10286_full_array_layout.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>E. coli locus tags (b-numbers)  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+    <External-Data rows="4093">
+GPL10286-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM530258">
+    <Status database="GEO">
+      <Submission-Date>2010-04-05</Submission-Date>
+      <Release-Date>2010-06-15</Release-Date>
+      <Last-Update-Date>2010-06-15</Last-Update-Date>
+    </Status>
+    <Title>HG228_vs_MG1655_rep1</Title>
+    <Accession database="GEO">GSM530258</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cells in exponential phase</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+HG228
+      </Characteristics>
+      <Characteristics tag="sample type">
+test (Ethanol-tolerant)
+      </Characteristics>
+      <Growth-Protocol>
+The cells are grown upto mid-log phase in minimal media plus 0.04% (w/v) glucose and 1.5% (v/v) ethanol.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from each sample using Norgen's Total RNA purification kit (cat# 17200) per manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were poly adenylated for 30 min (NEB, cat# M0276L) and labeled using Agilent's quick-amp lebeling kit according to the manufacturer's protocol.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Control cells in exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+MG1655
+      </Characteristics>
+      <Characteristics tag="sample type">
+reference
+      </Characteristics>
+      <Growth-Protocol>
+The cells are grown upto mid-log phase in minimal media plus 0.04% (w/v) glucose and 1.5% (v/v) ethanol.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from each sample using Norgen's Total RNA purification kit (cat# 17200) per manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were poly adenylated for 30 min (NEB, cat# M0276L) and labeled using Agilent's quick-amp lebeling kit according to the manufacturer's protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized using gene-expression hybridization kit from Agilent. Hybridization was performed overnight for 18 hr in 65C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Technologies Scanner G2505B US22502626 was used to scan the slide.
+    </Scan-Protocol>
+    <Description>
+Ethanol tolerant and control cells are grown in minimal media plus 0.04% (w/v) glucose plus 1.5% (v/v) ethanol
+    </Description>
+    <Data-Processing>
+LOWESS normalized, condensed, background subtracted data obtained from processed Green signal/processed Red signal. Agilent Feature Extractionv 9.5 software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10286" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM530nnn/GSM530258/GSM530258.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 (Cy3/Cy5) ratio representing test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Ratio (Cy3/Cy5) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4093">
+GSM530258-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM530259">
+    <Status database="GEO">
+      <Submission-Date>2010-04-05</Submission-Date>
+      <Release-Date>2010-06-15</Release-Date>
+      <Last-Update-Date>2010-06-15</Last-Update-Date>
+    </Status>
+    <Title>HG228_vs_MG1655_rep2</Title>
+    <Accession database="GEO">GSM530259</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cells in exponential phase</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+HG228
+      </Characteristics>
+      <Characteristics tag="sample type">
+test (Ethanol-tolerant)
+      </Characteristics>
+      <Growth-Protocol>
+The cells are grown upto mid-log phase in minimal media plus 0.04% (w/v) glucose and 1.5% (v/v) ethanol.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from each sample using Norgen's Total RNA purification kit (cat# 17200) per manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were poly adenylated for 30 min (NEB, cat# M0276L) and labeled using Agilent's quick-amp lebeling kit according to the manufacturer's protocol.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Control cells in exponential phase</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="strain">
+MG1655
+      </Characteristics>
+      <Characteristics tag="sample type">
+reference
+      </Characteristics>
+      <Growth-Protocol>
+The cells are grown upto mid-log phase in minimal media plus 0.04% (w/v) glucose and 1.5% (v/v) ethanol.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from each sample using Norgen's Total RNA purification kit (cat# 17200) per manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were poly adenylated for 30 min (NEB, cat# M0276L) and labeled using Agilent's quick-amp lebeling kit according to the manufacturer's protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized using gene-expression hybridization kit from Agilent. Hybridization was performed overnight for 18 hr in 65C.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Agilent Technologies Scanner G2505B US22502626 was used to scan the slide.
+    </Scan-Protocol>
+    <Description>
+Ethanol tolerant and control cells are grown in minimal media plus 0.04% (w/v) glucose plus 1.5% (v/v) ethanol
+    </Description>
+    <Data-Processing>
+LOWESS normalized, condensed, background subtracted data obtained from processed Green signal/processed Red signal. Agilent Feature Extractionv 9.5 software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10286" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM530nnn/GSM530259/GSM530259.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 (Cy3/Cy5) ratio representing test/reference</Description>
+      </Column>
+      <Column position="3">
+        <Name>PRE_VALUE</Name>
+        <Description>Ratio (Cy3/Cy5) representing test/reference</Description>
+      </Column>
+    <External-Data rows="4093">
+GSM530259-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE21194">
+    <Status database="GEO">
+      <Submission-Date>2010-04-05</Submission-Date>
+      <Release-Date>2010-06-15</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Gene expression profiling of the ethanol tolerant strain HG228 in comparison to its parental strain Escherichia coli MG1655</Title>
+    <Accession database="GEO">GSE21194</Accession>
+    <Pubmed-ID>20531407</Pubmed-ID>
+    <Summary>
+The goal of this experiment is to identify the pathways that are deregulated as part of an adaptive response to high levels of ethanol in the media.
+    </Summary>
+    <Overall-Design>
+Ethanol tolerant cells (HG228) grown in minimal media plus 1.5% (v/v) ethanol were hybridized against E. coli MG1655 grown under similar conditions. The experiment was done in duplicates using biological replicates.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contributor-Ref ref="contrib4" position="4" />
+    <Contributor-Ref ref="contrib5" position="5" />
+    <Contributor-Ref ref="contrib6" position="6" />
+    <Contributor-Ref ref="contrib7" position="7" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM530258" />
+    <Sample-Ref ref="GSM530259" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE21194/GSE21194_HG228_vs_MG1655_LogAveraged.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE21194/GSE21194_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/126319" />
+  </Series>
+
+</MINiML>

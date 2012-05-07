@@ -1,0 +1,1854 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Thomas</First><Middle>S</Middle><Last>Whittam</Last></Person>
+    <Email>whittam@msu.edu</Email>
+    <Phone>517-381-3100</Phone>
+    <Laboratory>Microbial Evolution</Laboratory>
+    <Department>Microbiology</Department>
+    <Organization>Michigan State University</Organization>
+    <Address>
+      <Line>165 Food Safety &amp; Tox</Line>
+      <City>East Lansing</City>
+      <State>MI</State>
+      <Zip-Code>48824</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://foodsafe.msu.edu/Whittam/</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Sivapriya</First><Last>Kailasan Vanaja</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Teresa</First><Middle>M</Middle><Last>Bergholz</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL7445">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-11</Last-Update-Date>
+    </Status>
+    <Title>MSU E. coli 6.1.K Ver. 1.0.2</Title>
+    <Accession database="GEO">GPL7445</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Operon</Manufacturer>
+    <Manufacture-Protocol>
+70-mer oligos spotted in duplicate onto Corning UltraGaps slides.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Name</Name>
+        <Description>Gene description</Description>
+      </Column>
+      <Column position="3">
+        <Name>Symbol</Name>
+        <Description>ORF number corresponding to the Sakai O157:H7 genome</Description>
+      </Column>
+      <Column position="4">
+        <Name>Spot ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Aliases</Name>
+        <Description>ORF number corresponding to the K-12 MG1655 genome</Description>
+      </Column>
+      <Column position="6">
+        <Name>ORFS</Name>
+      </Column>
+      <Column position="7">
+        <Name>LLID</Name>
+        <Description>ORF number corresponding to the EDL-933 O157:H7 genome</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORF</Name>
+        <Description>Sakai O157:H7 genome  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Delimiter>,</Link-Delimiter>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="10">
+        <Name>Sum Func</Name>
+        <Description>summary function</Description>
+      </Column>
+      <Column position="11">
+        <Name>GO</Name>
+        <Description>COG number</Description>
+      </Column>
+    <External-Data rows="6100">
+GPL7445-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM328772">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs gadE mutant at stationary phase, rep1</Title>
+    <Accession database="GEO">GSM328772</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 1
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase- culture replicate 1
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328772/GSM328772.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Mutant stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328772-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328773">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs gadE mutant at stationary phase, rep2</Title>
+    <Accession database="GEO">GSM328773</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 2.
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase- culture replicate 2.
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328773/GSM328773.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Mutant stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328773-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328774">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs gadE mutant at stationary phase, rep3</Title>
+    <Accession database="GEO">GSM328774</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase- culture replicate 3
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 3
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328774/GSM328774.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Mutant stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328774-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328775">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs gadE mutant at stationary phase, rep4</Title>
+    <Accession database="GEO">GSM328775</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase- culture replicate 4
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 4
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328775/GSM328775.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Mutant stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328775-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328776">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs gadE mutant at stationary phase, rep5</Title>
+    <Accession database="GEO">GSM328776</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase- culture replicate 4
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 4
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328776/GSM328776.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Mutant stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328776-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328777">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs wild type at exponential phase, rep1</Title>
+    <Accession database="GEO">GSM328777</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase - culture replicate 1
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential phase- culture replicate 1
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto exponential phase (OD600=.25,~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328777/GSM328777.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Wild type exp</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression value for wild type cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328777-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328778">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs wild type at exponential phase, rep2</Title>
+    <Accession database="GEO">GSM328778</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential phase - culture replicate 2
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase- culture replicate 2
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=.25,~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328778/GSM328778.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Wild type exp</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression value for wild type cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328778-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328779">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs wild type at exponential phase, rep3</Title>
+    <Accession database="GEO">GSM328779</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase- culture replicate 3
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential phase- culture replicate 3
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=.25,~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328779/GSM328779.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Wild type exp</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression value for wild type cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328779-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328781">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs wild type at exponential phase, rep4</Title>
+    <Accession database="GEO">GSM328781</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential phase - culture replicate 4
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase- culture replicate 4
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=.25,~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328781/GSM328781.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Wild type exp</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression value for wild type cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328781-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328782">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at exponential phase vs wild type at exponential phase, rep5</Title>
+    <Accession database="GEO">GSM328782</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at exponential phase- culture replicate 5
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential phase- culture replicate 5
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto exponential phase (OD600=.25,~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328782/GSM328782.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant exp/Wild type exp</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-exp</Name>
+        <Description>log2 normalized expression value for gadE mutant cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression value for wild type cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328782-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328783">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at stationary phase vs wild type at stationary phase, rep1</Title>
+    <Accession database="GEO">GSM328783</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase- culture replicate 1
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 1
+      </Characteristics>
+      <Growth-Protocol>
+gadE muatant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0,5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328783/GSM328783.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant stat/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression of mutant cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328783-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328784">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at stationary phase vs wild type at stationary phase, rep2</Title>
+    <Accession database="GEO">GSM328784</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 2
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase- culture replicate 2
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0,5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328784/GSM328784.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant stat/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression of mutant cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328784-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328785">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at stationary phase vs wild type at stationary phase, rep3</Title>
+    <Accession database="GEO">GSM328785</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase- culture replicate 3
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 3
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0,5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328785/GSM328785.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant stat/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression of mutant cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328785-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328786">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at stationary phase vs wild type at stationary phase, rep4</Title>
+    <Accession database="GEO">GSM328786</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase- culture replicate 4
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 4
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0,5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328786/GSM328786.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant stat/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression of mutant cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328786-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328787">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>gadE mutant at stationary phase vs wild type at stationary phase, rep5</Title>
+    <Accession database="GEO">GSM328787</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>gadE mutant cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) gadE mutant at stationary phase- culture replicate 5
+      </Characteristics>
+      <Growth-Protocol>
+gadE mutant cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase - culture replicate 5
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0,5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328787/GSM328787.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Mutant stat/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>Mutant-stat</Name>
+        <Description>log2 normalized expression of mutant cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328787-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328788">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>wild type at exponential phase vs wild type at stationary phase, rep1</Title>
+    <Accession database="GEO">GSM328788</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential phase- culture replicate 1
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto exponential phase (OD600=0.25, ~2.5h after inoculation)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase- culture replicate 1
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0,5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328788/GSM328788.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Wild type exp/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression of wild type cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328788-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328789">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>wild type at exponential phase vs wild type at stationary phase, rep2</Title>
+    <Accession database="GEO">GSM328789</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase- culture replicate2
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential phase- culture replicate 2
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto exponential phase (OD600=0.25,~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328789/GSM328789.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Wild type exp/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression of wild type cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328789-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328790">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>wild type at exponential phase vs wild type at stationary phase, rep3</Title>
+    <Accession database="GEO">GSM328790</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase - culture replicate 3
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential- culture replicate 3
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto exponential phase (OD600=0.25,~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328790/GSM328790.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Wild type exp/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression of wild type cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328790-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328791">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>wild type at exponential phase vs wild type at stationary phase, rep4</Title>
+    <Accession database="GEO">GSM328791</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase- culture replicate 4
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0, 5.5h after inoculation)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential phase- culture replicate 6
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto exponential phase (OD600=0.25,~2.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328791/GSM328791.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Wild type exp/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression of wild type cells at exponential phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328791-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM328792">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2008-10-10</Last-Update-Date>
+    </Status>
+    <Title>wild type at exponential phase vs wild type at stationary phase, rep5</Title>
+    <Accession database="GEO">GSM328792</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells grown to exponential phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at exponential phase- culture replicate 5
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto sexponential phase (OD600=0.25, ~2.5h after inoculation)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells grown to stationary phase of growth</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="E. coli O157">
+H7 RIMD0509952 (Sakai) at stationary phase- culture replicate 5
+      </Characteristics>
+      <Growth-Protocol>
+O157:H7 wild type cells were grown in MOPS minimal media upto stationary phase (OD600=1.0,5.5h after inoculation).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5mL of culture was mixed with 5mL of hot acid phenol:chloroform. Samples were held at 65ºC with periodic shaking for at least 10 minutes before centrifuging at 4000 rpm for 20 min. Supernatant was extracted again with acid-phenol:chloroform and then with chloroform:isoamyl alcohol (24.1). RNA was precipitated overnight at –80ºC in 2.5V 100% ethanol and 1/10V 3M sodium acetate pH 5.2. RNA samples were purified and treated with DNase using the Rneasy kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Reverse transcription reactions contained 6ug RNA, 2ug random primers (Invitrogen, Carlsbad, Calif.), 1x first strand buffer (Invitrogen), 10mM DTT, 400U Superscript II (Invitrogen), 0.5mM each dATP, dCTP, and dGTP, 0.3mM dTTP, and 0.2mM amino-allyl dUTP. 30uL C. cDNA was purified using PCRreactions were incubated overnight at 42 cleanup columns (Qiagen) with Phosphate wash buffer (5mM K2HPO4, pH 8.0, 80%EtOH) and phosphate elution buffer (4mM K2HPO4, pH 8.5). Amino-allyl labeled cDNA was dried and resuspended in 0.1M sodium carbonate pH 9.3 and coupled with either Cy3 or Cy5 (Amersham Biosciences, Piscataway, N.J.). Uncoupled dye was removed by another purfication using the PCR cleanup kit. Concentration of cDNA and amount of incoporated dye was measured for each sample using a Nanodrop spectrophotometer (Ambion).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Arrays were cross-linked by exposure to 600 mJ UV before blocking in 1% SDS, 5× SSC, and 1 mg/mL BSA at 42°C for 1 hour. After blocking, arrays were washed 2× 5 min in 0.1× SSC and 2× 30 s in H2O. Dried arrays were placed into hybridization cassettes (TeleChem International, Sunnyvale, Calif.) and the cDNA samples were suspended in 10 mM EDTA, denatured at 95°C for 5 min and then mixed with 40 uL of SlideHyb buffer 1 (Ambion) and loaded under a coverslip onto the array. Hybridizations were carried out at 47°C for 16–18 h. After hybridization, arrays were washed in 2× SSC, 0.5% SDS 37C for 5 min, followed by 2× 5 min in 0.1× SSC, 0.1% SDS 37°C, and then 2 × 2.5 min in room temperature 0.1× SSC. Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays were scanned using an Axon 4000b scanner (Molecular Devices, Sunnyvale, Calif) and images were analyzed using GenePix 6.0 (Molecular Devices).
+    </Scan-Protocol>
+    <Description>
+There are probes on the array that target three different E. coli genomes. Those that were specific for genomes other than Sakai were excluded from the analysis.
+    </Description>
+    <Data-Processing>
+The microarray data were analyzed using R (v. 2.2.1) and the MAANOVA (v. 0.98.8) package.  Raw intensity values from replicate probes were averaged and log2 transformed after normalization with the pin-tip LOWESS method.  The normalized intensity values were fitted to a mixed model ANOVA considering array and biological replicates as random factors and dye, strain and growth phase as fixed factors.  The linear model tested was Y (intensity) = array + dye + strain (wild type or mutant) + growth phase (exponential or stationary) + strain*growth phase + sample (biological replicate) + error.  Significant differences in expression due to strain, growth phase and strain*growth phase were determined using the Fs test in MAANOVA which uses a shrinkage estimator for gene-specific variance components that makes no assumption about the variances across genes with 500 random permutations to estimate the p-values.  The q-value package in R was used for determining the false discovery rate (FDR).
+    </Data-Processing>
+    <Platform-Ref ref="GPL7445" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM328nnn/GSM328792/GSM328792.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 normalized expression ratio Wild type exp/Wild type stat</Description>
+      </Column>
+      <Column position="3">
+        <Name>WT-exp</Name>
+        <Description>log2 normalized expression of wild type cells at exponential phase</Description>
+      </Column>
+      <Column position="4">
+        <Name>WT-stat</Name>
+        <Description>log2 normalized expression of wild type cells at stationary phase</Description>
+      </Column>
+    <External-Data rows="6088">
+GSM328792-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE13132">
+    <Status database="GEO">
+      <Submission-Date>2008-10-08</Submission-Date>
+      <Release-Date>2008-10-11</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Identification of genes regulated by gadE in E. coli O157:H7</Title>
+    <Accession database="GEO">GSE13132</Accession>
+    <Pubmed-ID>19114477</Pubmed-ID>
+    <Summary>
+Integrating laterally acquired virulence genes into the backbone regulatory network is important for the pathogenesis of Escherichia coli O157:H7, which has captured many virulence genes through horizontal transfer during evolution. GadE is an essential transcriptional activator of glutamate decarboxylase (GAD) system, the most efficient acid resistance mechanism in E. coli. The full contribution of GadE to the acid resistance and virulence of pathogenic E. coli O157:H7 remains largely unknown. We inactivated gadE in E. coli O157:H7 Sakai and compared global transcription profiles with that of wild type in exponential and stationary phases of growth using microarrays containing 6088 ORFs from three E. coli genomes. gadE inactivation significantly altered the expression of 60 genes independent of growth phase and 122 genes in a growth phase-dependent manner. Inactivation of gadE markedly down-regulated the expression of gadA, gadB, gadC and many acid fitness island genes in a growth phase-dependent manner. Nineteen genes encoded on the locus of enterocyte effacement (LEE), including ler, showed a significant increase in expression upon gadE inactivation. Altogether, our data indicate that GadE is critical for acid resistance of E. coli O157:H7 and plays an important role in virulence by down-regulating expression of LEE.   
+    </Summary>
+    <Overall-Design>
+The results are based on O157:H7 Sakai wild type and gadE mutant exponential and stationary phase cultures grown in MOPS minimal medium. Differences in transcript levels were determined using a mixed model ANOVA in R/MAANOVA which tested for significant differences due to growth phase (exponential or stationary), strain (wild type or mutant) and the interaction of these two factors using the following linear model: array+dye+sample (biological replicate)+ phase+strain+phase*strain. We incorporated the dye-swaps among the biological replicates.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib1" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM328772" />
+    <Sample-Ref ref="GSM328773" />
+    <Sample-Ref ref="GSM328774" />
+    <Sample-Ref ref="GSM328775" />
+    <Sample-Ref ref="GSM328776" />
+    <Sample-Ref ref="GSM328777" />
+    <Sample-Ref ref="GSM328778" />
+    <Sample-Ref ref="GSM328779" />
+    <Sample-Ref ref="GSM328781" />
+    <Sample-Ref ref="GSM328782" />
+    <Sample-Ref ref="GSM328783" />
+    <Sample-Ref ref="GSM328784" />
+    <Sample-Ref ref="GSM328785" />
+    <Sample-Ref ref="GSM328786" />
+    <Sample-Ref ref="GSM328787" />
+    <Sample-Ref ref="GSM328788" />
+    <Sample-Ref ref="GSM328789" />
+    <Sample-Ref ref="GSM328790" />
+    <Sample-Ref ref="GSM328791" />
+    <Sample-Ref ref="GSM328792" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE13132/GSE13132_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/109681" />
+  </Series>
+
+</MINiML>

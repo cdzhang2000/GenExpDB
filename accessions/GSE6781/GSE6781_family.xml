@@ -1,0 +1,1805 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Chrystala</First><Last>Constantinidou</Last></Person>
+    <Email>C.Constantinidou@bham.ac.uk</Email>
+    <Phone>+44 (0)121  414 5564</Phone>
+    <Laboratory>UBEC</Laboratory>
+    <Department>School of Biosciences</Department>
+    <Organization>University of Birmingham</Organization>
+    <Address>
+      <City>Birmingham</City>
+      <Postal-Code>B15 2TT</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Jon</First><Middle>L</Middle><Last>Hobman</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Charles</First><Middle>W</Middle><Last>Penn</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Mala</First><Last>Patel</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Antony</First><Middle>C</Middle><Last>Jones</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Nina</First><Last>Filenko</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Stephen</First><Last>Spiro</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Douglas</First><Middle>F</Middle><Last>Browning</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Derrick</First><Last>Squire</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib10">
+    <Person><First>Tim</First><Middle>W</Middle><Last>Overton</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib11">
+    <Person><First>Jeff</First><Middle>A</Middle><Last>Cole</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3051">
+    <Status database="GEO">
+      <Submission-Date>2005-11-07</Submission-Date>
+      <Release-Date>2006-01-07</Release-Date>
+      <Last-Update-Date>2011-04-26</Last-Update-Date>
+    </Status>
+    <Title>UBEC Array3</Title>
+    <Accession database="GEO">GPL3051</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>UBEC, School of Biosciences, University of Birmingham, Birmingham, UK</Manufacturer>
+    <Manufacture-Protocol>
+The 70-mer oligonucleotide array was constructed, containing 6112 oligonucleotides that sampled chromosomal genes identified in the genome sequences of E. coli strains K-12 MG1655, O157:H7 VT2 Sakai, and O157:H7 EDL933 and plasmid genes from the two genome-sequenced O157:H7 strains (the Operon Array Ready E. coli Oligonucleotide™ set 1.0, Qiagen- Operon, Hilden, Germany). 12 positive and 12 negative control oligonucleotides were also included. The oligonucleotides were resuspended in Corning Pronto! buffer and printed on to Corning UltraGAPS™ slides (Corning B.V Life Sciences, Schiphol-Rijk, Netherlands ) using a Biorobotics Microgrid TAS array printer. Amersham Lucidea  Universal Scorecard™ controls (GE Healthcare, Little Chalfont, UK) were printed in each subarray. Slides were desiccated under vacuum for 48 hours and then U.V. cross-linked with a dose of 600mJ using a Stratalinker (Stratagene limited, U.K.). Slides were stored under desiccating conditions in the dark until use
+    </Manufacture-Protocol>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contributor-Ref ref="contrib4" position="4" />
+    <Contributor-Ref ref="contrib5" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Array Block</Name>
+        <Description>Block (subarray) number</Description>
+      </Column>
+      <Column position="3">
+        <Name>Array Col</Name>
+        <Description>Column number (within subarray)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Array Row</Name>
+        <Description>Row number (within subarray)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Operon Oligo_ID</Name>
+        <Description>ID of Operon Array_Ready Oligo</Description>
+      </Column>
+      <Column position="6">
+        <Name>PT_GI</Name>
+        <Description>Protein GenBank Identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=protein&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[GI]</Link-Suffix>
+      </Column>
+      <Column position="7">
+        <Name>SPOT_ID</Name>
+        <Description>identifier for control spots</Description>
+      </Column>
+      <Column position="8">
+        <Name>Control ID</Name>
+        <Description>Name of control spots</Description>
+      </Column>
+      <Column position="9">
+        <Name>Plate</Name>
+        <Description>Source plate number</Description>
+      </Column>
+      <Column position="10">
+        <Name>Plate Row</Name>
+        <Description>Row in source plate</Description>
+      </Column>
+      <Column position="11">
+        <Name>Plate Column</Name>
+        <Description>Column in source plate</Description>
+      </Column>
+      <Column position="12">
+        <Name>SEQUENCE</Name>
+        <Description>Operon Oligonucleotide Sequence</Description>
+      </Column>
+      <Column position="13">
+        <Name>MG1655 K12 ORF Name</Name>
+        <Description>E.coli K12 MG1655 ORF name</Description>
+      </Column>
+      <Column position="14">
+        <Name>MG1655 K12 Gene Symbol</Name>
+        <Description>E.coli K12 MG1655 gene name</Description>
+      </Column>
+      <Column position="15">
+        <Name>MG1655 K12 Map</Name>
+        <Description>E.coli K12 MG1655 chromosome gene coordinates</Description>
+      </Column>
+      <Column position="16">
+        <Name>MG1655 K12 DBid</Name>
+        <Description>E.coli K12 MG1655 database ID information</Description>
+      </Column>
+      <Column position="17">
+        <Name>MG1655 K12 Product</Name>
+        <Description>E.coli K12 MG1655 gene product description</Description>
+      </Column>
+      <Column position="18">
+        <Name>O157 EDL933 ORF Name</Name>
+        <Description>E.coli O157 EDL 933 ORF name</Description>
+      </Column>
+      <Column position="19">
+        <Name>O157 EDL933 Gene Symbol</Name>
+        <Description>E.coli O157 EDL 933 gene name</Description>
+      </Column>
+      <Column position="20">
+        <Name>O157 EDL933 Map</Name>
+        <Description>E.coli O157 EDL 933 chromosome gene coordinates</Description>
+      </Column>
+      <Column position="21">
+        <Name>O157 EDL933 DBid</Name>
+        <Description>E.coli O157 EDL 933 database ID information</Description>
+      </Column>
+      <Column position="22">
+        <Name>O157 EDL933 Product</Name>
+        <Description>E.coli O157 EDL 933 gene product description</Description>
+      </Column>
+      <Column position="23">
+        <Name>O157 Sakai ORF Name</Name>
+        <Description>E.coli O157 Sakai ORF name</Description>
+      </Column>
+      <Column position="24">
+        <Name>O157 Sakai  Gene Symbol</Name>
+        <Description>E.coli O157 Sakai gene name</Description>
+      </Column>
+      <Column position="25">
+        <Name>O157 Sakai Map</Name>
+        <Description>E.coli O157 Sakai chromosome gene coordinates</Description>
+      </Column>
+      <Column position="26">
+        <Name>O157 Sakai DBid</Name>
+        <Description>E.coli O157 Sakai database ID information</Description>
+      </Column>
+      <Column position="27">
+        <Name>O157 Sakai Product</Name>
+        <Description>E.coli O157 Sakai gene product description</Description>
+      </Column>
+      <Column position="28">
+        <Name>pO157 ORF Name</Name>
+        <Description>E.coli O157 Sakai pO157 ORF name</Description>
+      </Column>
+      <Column position="29">
+        <Name>pO157     Gene Symbol</Name>
+        <Description>E.coli O157 Sakai pO157 gene name</Description>
+      </Column>
+      <Column position="30">
+        <Name>pO157 Map</Name>
+        <Description>E.coli O157 Sakai pO157 chromosome gene coordinates</Description>
+      </Column>
+      <Column position="31">
+        <Name>pO157 DBid</Name>
+        <Description>E.coli O157 Sakai pO157 database ID information</Description>
+      </Column>
+      <Column position="32">
+        <Name>pO157 Product</Name>
+        <Description>E.coli O157 Sakai pO157 gene product description</Description>
+      </Column>
+    <External-Data rows="14400">
+GPL3051-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM156729">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT1.2 + NO2</Title>
+    <Accession database="GEO">GSM156729</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT1 + NO2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT1 (carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation)
+      </Characteristics>
+      <Characteristics tag="Growth">
+Anaerobic to early exponential growth
+      </Characteristics>
+      <Characteristics tag="Media">
+Minimal salts + 20 mM trimethylamine-N-oxide +2.5 mM sodium nitrite
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy5 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter)
+      </Characteristics>
+      <Characteristics tag="Growth">
+Anaerobic to early exponential growth
+      </Characteristics>
+      <Characteristics tag="Media">
+Minimal salts + 20 mM trimethylamine-N-oxide
+      </Characteristics>
+      <Characteristics>
+Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy3 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a
+Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR.
+Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with either pGIT1 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the presence of nitrite.  A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156729/GSM156729.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156729-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156732">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT1.1 + NO2</Title>
+    <Accession database="GEO">GSM156732</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT1 + NO2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide +2.5 mM sodium nitrite
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy5 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT1 (carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide
+      </Characteristics>
+      <Characteristics>
+Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy3 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a
+Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR.
+Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with either pGIT1 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the presence of nitrite.  A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156732/GSM156732.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156732-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156733">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT1.3 + NO2</Title>
+    <Accession database="GEO">GSM156733</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT1 + NO2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT1 (carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide +2.5 mM sodium nitrite
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy5 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy3 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a
+Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR.
+Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with either pGIT1 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the presence of nitrite.  A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156733/GSM156733.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156733-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156734">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT1.4 + NO2</Title>
+    <Accession database="GEO">GSM156734</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT1 + NO2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT1 (carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide +2.5 mM sodium nitrite
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy5 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy3 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a
+Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR.
+Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with either pGIT1 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the presence of nitrite.  A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156734/GSM156734.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156734-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156737">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT1.1</Title>
+    <Accession database="GEO">GSM156737</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT1 (carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy5 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy3 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a
+Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR.
+Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with either pGIT1 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the absence of nitrite.  A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156737/GSM156737.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156737-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156738">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT1.3</Title>
+    <Accession database="GEO">GSM156738</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT1 (carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide 
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy5 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy3 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a
+Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR.
+Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with either pGIT1 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the absence of nitrite.  A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156738/GSM156738.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156738-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156741">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT1.4</Title>
+    <Accession database="GEO">GSM156741</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT1 (carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide 
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy5 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy3 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a
+Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR.
+Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with either pGIT1 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the absence of nitrite.  A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156741/GSM156741.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156741-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156743">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT1.2</Title>
+    <Accession database="GEO">GSM156743</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT1</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT1 (carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide 
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy5 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA
+using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE
+Healthcare) according to manufacturer’s instructions. Amino-allyllabelled
+nucleotides were incorporated into the cDNA by reverse
+transcription of the total RNA, followed by a direct chemical coupling
+of Cy3 NHS-dye esters to the amino-allyl-labelled
+cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a
+Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR.
+Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with either pGIT1 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the absence of nitrite.  A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156743/GSM156743.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156743-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156745">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT8.1 + NO2</Title>
+    <Accession database="GEO">GSM156745</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT8 + NO2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide + 2.5 mM sodium nitrite
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE Healthcare) according to manufacturer’s instructions. Amino-allyllabelled nucleotides were incorporated into the cDNA by reverse transcription of the total RNA, followed by a direct chemical coupling of Cy5 NHS-dye esters to the amino-allyl-labelled cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE Healthcare) according to manufacturer’s instructions. Amino-allyllabelled nucleotides were incorporated into the cDNA by reverse transcription of the total RNA, followed by a direct chemical coupling of Cy5 NHS-dye esters to the amino-allyl-labelled cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Prior to hybridization, the slides were treated with the background-reducing Pronto! Pre-Soak System (Corning Life Sciences). The slides were incubated for 20 min in prewarmed Universal Pre-Soak solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution. The cDNA probes were denatured at 95 °C for 3 min and hybridized for 16 h at 42 °C in an Advalytix Hyb station. After hybridization was complete, the slides were washed in an Advalytix Wash station with 2xSSC, 0.1% SDS at 42 °C, followed with 0.1xSSC, 0.1% SDS at room temperature, and finally twice in 0.1xSSC at room temperature. The microarray slides were dried by centrifugation for 5min at 800g.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR. Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with pGIT8 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the presence of nitrite. A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156745/GSM156745.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156745-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156746">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT8.2 + NO2</Title>
+    <Accession database="GEO">GSM156746</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT8 + NO2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide +2.5 mM sodium nitrite
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE Healthcare) according to manufacturer’s instructions. Amino-allyllabelled nucleotides were incorporated into the cDNA by reverse transcription of the total RNA, followed by a direct chemical coupling of Cy5 NHS-dye esters to the amino-allyl-labelled cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE Healthcare) according to manufacturer’s instructions. Amino-allyllabelled nucleotides were incorporated into the cDNA by reverse transcription of the total RNA, followed by a direct chemical coupling of Cy5 NHS-dye esters to the amino-allyl-labelled cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Prior to hybridization, the slides were treated with the background-reducing Pronto! Pre-Soak System (Corning Life Sciences). The slides were incubated for 20 min in prewarmed Universal Pre-Soak solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution. The cDNA probes were denatured at 95 °C for 3 min and hybridized for 16 h at 42 °C in an Advalytix Hyb station. After hybridization was complete, the slides were washed in an Advalytix Wash station with 2xSSC, 0.1% SDS at 42 °C, followed with 0.1xSSC, 0.1% SDS at room temperature, and finally twice in 0.1xSSC at room temperature. The microarray slides were dried by centrifugation for 5min at 800g.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR. Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with pGIT8 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the presence of nitrite. A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156746/GSM156746.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156746-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156747">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT8.3 + NO2</Title>
+    <Accession database="GEO">GSM156747</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT8 + NO2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide + 2.5 mM sodium nitrite
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE Healthcare) according to manufacturer’s instructions. Amino-allyllabelled nucleotides were incorporated into the cDNA by reverse transcription of the total RNA, followed by a direct chemical coupling of Cy5 NHS-dye esters to the amino-allyl-labelled cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE Healthcare) according to manufacturer’s instructions. Amino-allyllabelled nucleotides were incorporated into the cDNA by reverse transcription of the total RNA, followed by a direct chemical coupling of Cy5 NHS-dye esters to the amino-allyl-labelled cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Prior to hybridization, the slides were treated with the background-reducing Pronto! Pre-Soak System (Corning Life Sciences). The slides were incubated for 20 min in prewarmed Universal Pre-Soak solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution. The cDNA probes were denatured at 95 °C for 3 min and hybridized for 16 h at 42 °C in an Advalytix Hyb station. After hybridization was complete, the slides were washed in an Advalytix Wash station with 2xSSC, 0.1% SDS at 42 °C, followed with 0.1xSSC, 0.1% SDS at room temperature, and finally twice in 0.1xSSC at room temperature. The microarray slides were dried by centrifugation for 5min at 800g.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR. Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with pGIT8 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the presence of nitrite. A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156747/GSM156747.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156747-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM156748">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2007-01-25</Last-Update-Date>
+    </Status>
+    <Title>pGIT8.4 + NO2</Title>
+    <Accession database="GEO">GSM156748</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>pGIT8 + NO2</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide + .5 mM sodium nitrite
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy5-labelled cDNA using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE Healthcare) according to manufacturer’s instructions. Amino-allyllabelled nucleotides were incorporated into the cDNA by reverse transcription of the total RNA, followed by a direct chemical coupling of Cy5 NHS-dye esters to the amino-allyl-labelled cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pGIT8</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="Strain">
+MG1655 pGIT8 (carries 1 base pair deletion in the NsrR-binding site of the ytfE promoter) Growth: Anaerobic to early exponential growth Media:Minimal salts + 20 mM trimethylamine-N-oxide Pool of eight independent cultures
+      </Characteristics>
+      <Biomaterial-Provider>Lesley Griffiths, J.A.Cole laboratory
+</Biomaterial-Provider>
+      <Treatment-Protocol>
+15 ml of culture was mixed with 30 ml of RNAprotect bacterial reagent (QIAGEN Ltd).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+An RNeasy midikit was used to prepare total RNA according to the manufacturer’s instructions (QIAGEN Ltd.). Any contaminating DNA was removed using a DNAase column kit (QIAGEN Ltd).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+20 ug total RNA was converted to Cy3-labelled cDNA using the CyScribe Post-Labelling Kit (Amersham Biosciences/GE Healthcare) according to manufacturer’s instructions. Amino-allyllabelled nucleotides were incorporated into the cDNA by reverse transcription of the total RNA, followed by a direct chemical coupling of Cy5 NHS-dye esters to the amino-allyl-labelled cDNAs
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Prior to hybridization, the slides were treated with the background-reducing Pronto! Pre-Soak System (Corning Life Sciences). The slides were incubated for 20 min in prewarmed Universal Pre-Soak solution at 42 °C and washed twice in 0.1xSSC, 0.1% SDS for 30 s at room temperature. Slides were immediately transferred into prewarmed prehybridization solution (5xSSC, 0.1% SDS, and 0.1% bovine serum albumin) and incubated for 2–4 h at 42 °C. The microarray slides were finally washed at room temperature once in 0.1xSSC, 0.1% SDS for 1 min and twice in 0.1xSSC for 30 s, briefly dipped in water and then ethanol, and dried by centrifugation for 5 min at 800xg. For each experiment, equal quantities (80 pmol) of each Cy5- and Cy3-labeled cDNA were added to a final volume of 80 microlitre of hybridization solution containing 25% formamide, 10 mg of bovine serum albumin (fraction V) per ml, 5xSSC (1xSSC is 0.15 M NaCl, 0.015 M sodium citrate), 0.1% SDS, 8 micrograms of poly(A), and 1xDenhardt’s solution. The cDNA probes were denatured at 95 °C for 3 min and hybridized for 16 h at 42 °C in an Advalytix Hyb station. After hybridization was complete, the slides were washed in an Advalytix Wash station with 2xSSC, 0.1% SDS at 42 °C, followed with 0.1xSSC, 0.1% SDS at room temperature, and finally twice in 0.1xSSC at room temperature. The microarray slides were dried by centrifugation for 5min at 800g.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slide was scanned at 532 and 630 nm by using a Genepix 4000A scanner (Axon Instruments, Union City, CA).
+    </Scan-Protocol>
+    <Description>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was utilised to reveal the full role of NsrR. Regulation by NsrR is known to be extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with pGIT8 was grown anaerobically and RNA was isolated from early exponential phase cultures grown in the presence of nitrite. A pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included as a common reference.
+    </Description>
+    <Data-Processing>
+Data was analysed using GeneSpring
+    </Data-Processing>
+    <Platform-Ref ref="GPL3051" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM156nnn/GSM156748/GSM156748.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>CH1_MEAN</Name>
+        <Description>Cy5 Mean Foreground</Description>
+      </Column>
+      <Column position="3">
+        <Name>CH1_SD</Name>
+        <Description>Cy5 Foreground SD</Description>
+      </Column>
+      <Column position="4">
+        <Name>CH1_BKD_MEAN</Name>
+        <Description>Cy5 Mean Backgound</Description>
+      </Column>
+      <Column position="5">
+        <Name>CH1_BKD_SD</Name>
+        <Description>Cy5 Background SD</Description>
+      </Column>
+      <Column position="6">
+        <Name>CH2_MEAN</Name>
+        <Description>Cy3 Mean Foreground</Description>
+      </Column>
+      <Column position="7">
+        <Name>CH2_SD</Name>
+        <Description>Cy3 Foreground SD</Description>
+      </Column>
+      <Column position="8">
+        <Name>CH2_BKD_MEAN</Name>
+        <Description>Cy3 Mean Backgound</Description>
+      </Column>
+      <Column position="9">
+        <Name>CH2_BKD_SD</Name>
+        <Description>Cy3 Background SD</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log ratio (log2 of PRE_VALUE)</Description>
+      </Column>
+      <Column position="11">
+        <Name>PRE_VALUE</Name>
+        <Description>(Cy5 Foreground - Background) / (Cy3 Foreground -Background)</Description>
+      </Column>
+    <External-Data rows="14400">
+GSM156748-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE6781">
+    <Status database="GEO">
+      <Submission-Date>2007-01-18</Submission-Date>
+      <Release-Date>2007-05-18</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>The NsrR regulon of Escherichia coli K-12</Title>
+    <Accession database="GEO">GSE6781</Accession>
+    <Pubmed-ID>17449618</Pubmed-ID>
+    <Summary>
+Successful pathogens must be able to protect themselves against reactive nitrogen species generated either as part of host defence mechanisms, or as products of their own metabolism. The regulatory protein, NsrR (a member of the Rrf2 family of transcription factors), plays key roles in this stress response. Microarray analysis was carried out to reveal the regulon of NsrR.
+Keywords: Response to repressor titration and different growth conditions
+    </Summary>
+    <Overall-Design>
+The nsrR gene of E. coli MG1655 is located immediately upstream of, and is co-transcribed with, the rnr gene encoding RNase R. Expression of this transcription unit is cold-shock inducible, which may well involve secondary structures in the mRNA in the vicinity of the nsrR coding region. Deletion of the nsrR gene might therefore perturb rnr expression by a simple consequence of polarity, or by disruption of mRNA structural elements involved in post-transcriptional regulation. The consequence would likely be secondary effects on global RNA stability, hence comparison of the transcriptomes of an nsrR mutant and its parent would be difficult to interpret. To avoid such potential artifacts, we exploited the observation that regulation by NsrR is extremely sensitive to repressor titration by NsrR-binding sites provided on a multicopy plasmid. Transformation of an nsrR+ strain with plasmid pGIT1, which carries the ytfE promoter in multicopy, titrates out NsrR to phenocopy an NsrR- mutation. As a control, pGIT8 carries the same promoter fragment, but a 1 bp deletion mutation in the NsrR binding site eliminates repressor titration in vivo. Strain MG1655 transformed with either pGIT1 or pGIT8 was grown anaerobically under the carefully controlled conditions described previously, so that growth rates were almost identical, and RNA was isolated from early exponential phase cultures grown in the presence or absence of nitrite. For each growth condition, four independent biological replicates were completed, and to validate comparisons between different plasmids and growth conditions, a pool of RNA from the control strain (MG1655 transformed with pGIT8 and grown in the absence of nitrite) was included in every microarray to provide a common reference.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib6" position="1" />
+    <Contributor-Ref ref="contrib7" position="2" />
+    <Contributor-Ref ref="contrib8" position="3" />
+    <Contributor-Ref ref="contrib9" position="4" />
+    <Contributor-Ref ref="contrib10" position="5" />
+    <Contributor-Ref ref="contrib11" position="6" />
+    <Contributor-Ref ref="contrib1" position="7" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM156729" />
+    <Sample-Ref ref="GSM156732" />
+    <Sample-Ref ref="GSM156733" />
+    <Sample-Ref ref="GSM156734" />
+    <Sample-Ref ref="GSM156737" />
+    <Sample-Ref ref="GSM156738" />
+    <Sample-Ref ref="GSM156741" />
+    <Sample-Ref ref="GSM156743" />
+    <Sample-Ref ref="GSM156745" />
+    <Sample-Ref ref="GSM156746" />
+    <Sample-Ref ref="GSM156747" />
+    <Sample-Ref ref="GSM156748" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE6781/GSE6781_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/98925" />
+  </Series>
+
+</MINiML>

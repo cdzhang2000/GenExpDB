@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jonathan</First><Last>Partridge</Last></Person>
+    <Laboratory>F10</Laboratory>
+    <Department>Molecular Biology and Biotechnology</Department>
+    <Organization>The University of Sheffield</Organization>
+    <Address>
+      <Line>Firth Court, Western Bank</Line>
+      <City>Sheffield</City>
+      <Postal-Code>S10 2TN</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>MWG Biotech</Organization>
+    <Email>array@mwgbiotech.com</Email>
+    <Phone>1-877-MWG-BTEC</Phone>
+    <Fax>1-336-812-9983</Fax>
+    <Organization>MWG Biotech</Organization>
+    <Address>
+      <Line>4170 Mendenhall Oaks Parkway, Suite 160</Line>
+      <City>High Point</City>
+      <State>NC</State>
+      <Zip-Code>27265</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Jonathan</First><Middle>D</Middle><Last>Partridge</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Jeffrey</First><Last>Green</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL534">
+    <Status database="GEO">
+      <Submission-Date>2003-10-07</Submission-Date>
+      <Release-Date>2003-10-07</Release-Date>
+      <Last-Update-Date>2011-02-14</Last-Update-Date>
+    </Status>
+    <Title>MWG E. coli K12 Array</Title>
+    <Accession database="GEO">GPL534</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>MWG Biotech</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+4239 E. coli K12 specific oligonucleotide probes represent the complete Escherichia coli (K12)genome.
+    </Description>
+    <Web-Link>http://ecom2.mwgdna.com/services/array/download</Web-Link>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>metarow</Name>
+        <Description>number of subarray row</Description>
+      </Column>
+      <Column position="3">
+        <Name>metacolumn</Name>
+        <Description>number of subarray column</Description>
+      </Column>
+      <Column position="4">
+        <Name>row</Name>
+        <Description>number of row within subarray</Description>
+      </Column>
+      <Column position="5">
+        <Name>column</Name>
+        <Description>number of column within subarray</Description>
+      </Column>
+      <Column position="6">
+        <Name>oligo_name</Name>
+        <Description>MWG oligo id</Description>
+      </Column>
+      <Column position="7">
+        <Name>description</Name>
+        <Description>gene description</Description>
+      </Column>
+      <Column position="8">
+        <Name>ORF</Name>
+        <Description>Locus name </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="9">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="4608">
+GPL534-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM153973">
+    <Status database="GEO">
+      <Submission-Date>2007-01-04</Submission-Date>
+      <Release-Date>2007-05-10</Release-Date>
+      <Last-Update-Date>2007-05-10</Last-Update-Date>
+    </Status>
+    <Title>5 min oxygen depletion</Title>
+    <Accession database="GEO">GSM153973</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control samples in presence of oxygen </Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacterial cultures flushed directly into QIAGEN RNAprotect before total RNA isolation using QIAGEN RNEasy Midi kit with on column DNAse digestion.
+      </Extract-Protocol>
+      <Label>Cy3/5 dye swap</Label>
+      <Label-Protocol>
+Labelled with Cy3/Cy5 during cDNA synthesis from total RNA using Superscript II Kit (Invitrogen) as manufacturers instructions. Samples purified using QIAGEN PCR purification kit before hybridization.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured experimental samples after 5 min oxygen depletion.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacterial cultures flushed directly into QIAGEN RNAprotect before total RNA isolation using QIAGEN RNEasy Midi kit with on column DNAse digestion.
+      </Extract-Protocol>
+      <Label>Cy3/5 dye swap</Label>
+      <Label-Protocol>
+Labelled with Cy3/Cy5 during cDNA synthesis from total RNA using Superscript II Kit (Invitrogen) as manufacturers instructions. Samples purified using QIAGEN PCR purification kit before hybridization.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labelled cDNA hybridised using the MWG Gene-Frame system. Slides placed in shaking water bath for 16 h at 42 °C.
+Arrays then washed in 2x SSC (+0.1 % SDS), 1x SSC, 0.2x SSC and 0.1x SSC, each at 37 °C for 5 min prior to drying and scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays scanned using an Affymetrix 428 scanner and Imagene version 4 software.
+    </Scan-Protocol>
+    <Description>
+Aerobic cultures were maintained by sparging the chemostat with air (0.4 l min-1). The switch to micro-aerobic conditions was achieved by switching off the air sparging the culture. After a period of 5 min exposure to air cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. Data from control samples (aerobic) were used in indirect comparisons with 5 min, 10 min, 15 min and 60 min of oxygen depletion. Dye swaps and biological repeats were carried out giving two biological repeats and two technical repeats (see supplementary files).
+    </Description>
+    <Data-Processing>
+Control (aerobic) and 5 min oxygen depletion samples from two biological replicates and two dye swap experiments were compared, LOG2 LOWESS normalized data is shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153973/GSM153973_CTRL_Slide_23_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153973/GSM153973_CTRL_Slide_24_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153973/GSM153973_CTRL_Slide_26_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153973/GSM153973_CTRL_Slide_39_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153973/GSM153973_EXPT_Slide_17_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153973/GSM153973_EXPT_Slide_23_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153973/GSM153973_EXPT_Slide_24_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153973/GSM153973_EXPT_Slide_39_Cy5.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Comparison ratio of Control Vs Experiment following background correction, log2 transformation and Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM153973-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM153983">
+    <Status database="GEO">
+      <Submission-Date>2007-01-04</Submission-Date>
+      <Release-Date>2007-05-10</Release-Date>
+      <Last-Update-Date>2007-05-10</Last-Update-Date>
+    </Status>
+    <Title>10 min oxygen depletion</Title>
+    <Accession database="GEO">GSM153983</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control samples in presence of oxygen</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacterial cultures flushed directly into QIAGEN RNAprotect before total RNA isolation using QIAGEN RNEasy Midi kit with on column DNAse digestion.
+      </Extract-Protocol>
+      <Label>Cy3/5 dye swap</Label>
+      <Label-Protocol>
+Labelled with Cy3/Cy5 during cDNA synthesis from total RNA using Superscript II Kit (Invitrogen) as manufacturers instructions. Samples purified using QIAGEN PCR purification kit before hybridization.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured experimental samples after 10 min oxygen depletion.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacterial cultures flushed directly into QIAGEN RNAprotect before total RNA isolation using QIAGEN RNEasy Midi kit with on column DNAse digestion.
+      </Extract-Protocol>
+      <Label>Cy3/5 dye swap</Label>
+      <Label-Protocol>
+Labelled with Cy3/Cy5 during cDNA synthesis from total RNA using Superscript II Kit (Invitrogen) as manufacturers instructions. Samples purified using QIAGEN PCR purification kit before hybridization.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labelled cDNA hybridised using the MWG Gene-Frame system. Slides placed in shaking water bath for 16 h at 42 °C.
+Arrays then washed in 2x SSC (+0.1 % SDS), 1x SSC, 0.2x SSC and 0.1x SSC, each at 37 °C for 5 min prior to drying and scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays scanned using an Affymetrix 428 scanner and Imagene version 4 software.
+    </Scan-Protocol>
+    <Description>
+Aerobic cultures were maintained by sparging the chemostat with air (0.4 l min-1). The switch to micro-aerobic conditions was achieved by switching off the air sparging the culture. After a period of 10 min exposure to air cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. Data from control samples (aerobic) were used in indirect comparisons with 5 min, 10 min, 15 min and 60 min of oxygen depletion. Dye swaps and biological repeats were carried out giving two biological repeats and two technical repeats (see supplementary files).
+    </Description>
+    <Data-Processing>
+Control (aerobic) and 10 min oxygen depletion samples from two biological replicates and two dye swap experiments were compared, LOG2 LOWESS normalized data is shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153983/GSM153983_CTRL_Slide_23_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153983/GSM153983_CTRL_Slide_24_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153983/GSM153983_CTRL_Slide_26_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153983/GSM153983_CTRL_Slide_39_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153983/GSM153983_EXPT_Slide_15_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153983/GSM153983_EXPT_Slide_17_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153983/GSM153983_EXPT_Slide_21_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153983/GSM153983_EXPT_Slide_29_cy5.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Comparison ratio of Control Vs Experiment following background correction, log2 transformation and Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM153983-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM153988">
+    <Status database="GEO">
+      <Submission-Date>2007-01-04</Submission-Date>
+      <Release-Date>2007-05-10</Release-Date>
+      <Last-Update-Date>2007-05-10</Last-Update-Date>
+    </Status>
+    <Title>15 min oxygen depletion</Title>
+    <Accession database="GEO">GSM153988</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control samples in presence of oxygen MG1655</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacterial cultures flushed directly into QIAGEN RNAprotect before total RNA isolation using QIAGEN RNEasy Midi kit with on column DNAse digestion.
+      </Extract-Protocol>
+      <Label>Cy3/5 dye swap</Label>
+      <Label-Protocol>
+Labelled with Cy3/Cy5 during cDNA synthesis from total RNA using Superscript II Kit (Invitrogen) as manufacturers instructions. Samples purified using QIAGEN PCR purification kit before hybridization.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured experimental samples after 15 min oxygen depletion.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacterial cultures flushed directly into QIAGEN RNAprotect before total RNA isolation using QIAGEN RNEasy Midi kit with on column DNAse digestion.
+      </Extract-Protocol>
+      <Label>Cy3/5 dye swap</Label>
+      <Label-Protocol>
+Labelled with Cy3/Cy5 during cDNA synthesis from total RNA using Superscript II Kit (Invitrogen) as manufacturers instructions. Samples purified using QIAGEN PCR purification kit before hybridization.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labelled cDNA hybridised using the MWG Gene-Frame system. Slides placed in shaking water bath for 16 h at 42 °C.
+Arrays then washed in 2x SSC (+0.1 % SDS), 1x SSC, 0.2x SSC and 0.1x SSC, each at 37 °C for 5 min prior to drying and scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays scanned using an Affymetrix 428 scanner and Imagene version 4 software.
+    </Scan-Protocol>
+    <Description>
+Aerobic cultures were maintained by sparging the chemostat with air (0.4 l min-1). The switch to micro-aerobic conditions was achieved by switching off the air sparging the culture. After a period of 15 min exposure to air cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. Data from control samples (aerobic) were used in indirect comparisons with 5 min, 10 min, 15 min and 60 min of oxygen depletion. Dye swaps and biological repeats were carried out giving two biological repeats and two technical repeats (see supplementary files).
+    </Description>
+    <Data-Processing>
+Control (aerobic) and 15 min oxygen depletion samples from two biological replicates and two dye swap experiments were compared, LOG2 LOWESS normalized data is shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153988/GSM153988_CTRL_Slide_23_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153988/GSM153988_CTRL_Slide_24_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153988/GSM153988_CTRL_Slide_26_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153988/GSM153988_CTRL_Slide_39_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153988/GSM153988_EXPT_Slide_15_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153988/GSM153988_EXPT_Slide_21_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153988/GSM153988_EXPT_Slide_22_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153988/GSM153988_EXPT_Slide_25_Cy3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Comparison ratio of Control Vs Experiment following background correction, log2 transformation and Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM153988-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM153990">
+    <Status database="GEO">
+      <Submission-Date>2007-01-04</Submission-Date>
+      <Release-Date>2007-05-10</Release-Date>
+      <Last-Update-Date>2007-05-10</Last-Update-Date>
+    </Status>
+    <Title>60 min oxygen depletion</Title>
+    <Accession database="GEO">GSM153990</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Steady-state continuous cultured control samples in presence of oxygen</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacterial cultures flushed directly into QIAGEN RNAprotect before total RNA isolation using QIAGEN RNEasy Midi kit with on column DNAse digestion.
+      </Extract-Protocol>
+      <Label>Cy3/5 dye swap</Label>
+      <Label-Protocol>
+Labelled with Cy3/Cy5 during cDNA synthesis from total RNA using Superscript II Kit (Invitrogen) as manufacturers instructions. Samples purified using QIAGEN PCR purification kit before hybridization.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Steady-state continuous cultured experimental samples after 60 min oxygen depletion.</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Bacterial cultures flushed directly into QIAGEN RNAprotect before total RNA isolation using QIAGEN RNEasy Midi kit with on column DNAse digestion.
+      </Extract-Protocol>
+      <Label>Cy3/5 dye swap</Label>
+      <Label-Protocol>
+Labelled with Cy3/Cy5 during cDNA synthesis from total RNA using Superscript II Kit (Invitrogen) as manufacturers instructions. Samples purified using QIAGEN PCR purification kit before hybridization.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labelled cDNA hybridised using the MWG Gene-Frame system. Slides placed in shaking water bath for 16 h at 42 °C.
+Arrays then washed in 2x SSC (+0.1 % SDS), 1x SSC, 0.2x SSC and 0.1x SSC, each at 37 °C for 5 min prior to drying and scanning.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Arrays scanned using an Affymetrix 428 scanner and Imagene version 5.1 software.
+    </Scan-Protocol>
+    <Description>
+Aerobic cultures were maintained by sparging the chemostat with air (0.4 l min-1). The switch to micro-aerobic conditions was achieved by switching off the air sparging the culture. After a period of 60 min exposure to air cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. Data from control samples (aerobic) were used in indirect comparisons with 5 min, 10 min, 15 min and 60 min of oxygen depletion. Dye swaps and biological repeats were carried out giving two biological repeats and two technical repeats (see supplementary files).
+    </Description>
+    <Data-Processing>
+Control (aerobic) and 60 min oxygen depletion samples from two biological replicates and two dye swap experiments were compared, LOG2 LOWESS normalized data is shown.
+    </Data-Processing>
+    <Platform-Ref ref="GPL534" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153990/GSM153990_CTRL_Slide_23_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153990/GSM153990_CTRL_Slide_24_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153990/GSM153990_CTRL_Slide_26_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153990/GSM153990_CTRL_Slide_39_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153990/GSM153990_EXPT_Slide_22_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153990/GSM153990_EXPT_Slide_25_Cy5.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153990/GSM153990_EXPT_Slide_26_Cy3.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM153nnn/GSM153990/GSM153990_EXPT_Slide_29_Cy3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Comparison ratio of Control Vs Experiment following background correction, log2 transformation and Lowess normalisation</Description>
+      </Column>
+    <External-Data rows="4608">
+GSM153990-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE6644">
+    <Status database="GEO">
+      <Submission-Date>2007-01-04</Submission-Date>
+      <Release-Date>2007-05-10</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>E. coli Transcriptome Dynamics during the Transition from Aerobic to Micro-aerobic Conditions</Title>
+    <Accession database="GEO">GSE6644</Accession>
+    <Pubmed-ID>17307737</Pubmed-ID>
+    <Summary>
+Escherichia coli is a metabolically versatile bacterium that is able to grow in the presence and absence of oxygen. Here, the process of adaptation was investigated by determining changes in transcript profiles when aerobic steady-state cultures were depleted of air.
+Escherichia coli strain MG1655 was grown in a New Brunswick Scientific Bioflow 1000 fermentation vessels (1.8 l capacity) with culture agitation speed constant at 300 rpm and the temperature maintained at 37 °C. Oxygen levels were monitored using galvanic oxygen electrodes while the pH was maintained at 7.2 ±0.2 by automatic titration with sterile KOH. Evans defined medium was used as the growth medium with glucose (15 mM) as the carbon source with the dilution rate being 0.2 h-1. Aerobic cultures were maintained by sparging the chemostat with air (0.4 l min-1). The switch to micro-aerobic conditions was achieved by switching off the air sparging the culture. After a period of 5, 10, 15 and 60 min exposure to air, cells were harvested directly into RNA Protect (Qiagen) to stabilize RNA before total RNA purification using Qiagen’s Rneasy Midi kit as recommended by manufacturer’s instructions. 
+Keywords: time-course, oxygen-depletion
+    </Summary>
+    <Overall-Design>
+Analysis used aerobic steady state RNA as control samples for comparison to the experimental samples taken at 5, 10, 15 and 60 min. Indirect comparisons were made across multiple arrays with raw data pulled from different channels for data analysis and comparison to the control data. Data analysis was carried out using Imagene, version 5.1 and Genesight version 4 (Biodiscovery Inc). The mean values from each channel were log2 transformed and normalized using the LOWESS algorithm to remove intensity dependent effects within the calculated values. Normalised values were used to calculate the Cy3/Cy5 fluorescence ratios from experimental and biological repeats (seperate chemostat runs)with all replicates combined. Data was compiled from two aerobic and two anaerobic cultures each with a dye-swap replicate, thus providing two biological repeats within four technical repeats.
+Presented is the LOG2 normalised data comparing the control (aerobic) with the identified experimental (5, 10, 15, 60 min air depletion) with supplementary material provided in the form of Raw array files.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM153973" />
+    <Sample-Ref ref="GSM153983" />
+    <Sample-Ref ref="GSM153988" />
+    <Sample-Ref ref="GSM153990" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE6644/GSE6644_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/98839" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jennifer</First><Last>Robbins</Last></Person>
+    <Email>jrobbins@mit.edu</Email>
+    <Laboratory>John Essigmann</Laboratory>
+    <Department>Biological Engineering</Department>
+    <Organization>Massachusetts Institute of Technology</Organization>
+    <Address>
+      <Line>77 Massachusetts Ave.</Line>
+      <City>Cambridge</City>
+      <State>MA</State>
+      <Zip-Code>02139</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Zoran</First><Last>Zdraveski</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Martin</First><Last>Marinus</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>John</First><Last>Essigmann</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL73">
+    <Status database="GEO">
+      <Submission-Date>2002-02-19</Submission-Date>
+      <Release-Date>2002-03-11</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[Ecoli] Affymetrix E. coli Genome Array</Title>
+    <Accession database="GEO">GPL73</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+Has 7312 entries and was indexed 29-Jan-2002.
+Contains probes for more than 4,200 known open reading frames of E. coli.  Also contains probe sets for stable RNA species as well as intergenic regions that do not correspond to known ORFs.
+Sequence information for probes corresponds to the M54 version of E. coli Genome Project database at the University of Wisconsin.  Sequences corresponding to both characterized genes and those whose function is unknown can be identified according to the numbering convention used by the E. coli Genome Project database.
+Keywords = high density oligonucleotide array
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecolisense</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=ECOLI&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+        <Description>identifies controls and intergenic regions</Description>
+      </Column>
+      <Column position="4">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="5">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="12">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="13">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="7312">
+GPL73-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM65588">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam mock replicate 1</Title>
+    <Accession database="GEO">GSM65588</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutant strain GM3819</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="dam-16">
+:Kan thr-1 leuB6 thi-1 argE3 hisG4 proA2 lacY1 galK2 mtl-1 xyl-5 ara-14 rpsL31 tsx-33 supE44 rfbD1 kdgK51 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight cultures were diluted 1000-fold with fresh LB medium and cultured further.  Log phase cultures were diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which they were resuspended in LB broth for 90 minutes.  
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using Array Analyzer version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam mock replicate 1</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65588-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65589">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam mock replicate 2</Title>
+    <Accession database="GEO">GSM65589</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutant strain GM3819</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="dam-16">
+:Kan thr-1 leuB6 thi-1 argE3 hisG4 proA2 lacY1 galK2 mtl-1 xyl-5 ara-14 rpsL31 tsx-33 supE44 rfbD1 kdgK51 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight cultures were diluted 1000-fold with fresh LB medium and cultured further.  Log phase cultures were diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which they were resuspended in LB broth for 90 minutes.  
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using Array Analyzer version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam mock replicate 2</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65589-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65590">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam mock replicate 3</Title>
+    <Accession database="GEO">GSM65590</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutant strain GM3819</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="dam-16">
+:Kan thr-1 leuB6 thi-1 argE3 hisG4 proA2 lacY1 galK2 mtl-1 xyl-5 ara-14 rpsL31 tsx-33 supE44 rfbD1 kdgK51 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight cultures were diluted 1000-fold with fresh LB medium and cultured further.  Log phase cultures were diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which they were resuspended in LB broth for 90 minutes.  
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using Array Analyzer version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam mock replicate 3</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65590-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65591">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam mutS mock replicate 1</Title>
+    <Accession database="GEO">GSM65591</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutS mutant strain GM5556</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As GM3819  dam-16">
+:Kan but mutS215::Tn10 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight cultures were diluted 1000-fold with fresh LB medium and cultured further.  Log phase cultures were diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which they were resuspended in LB broth for 90 minutes.  
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using Array Analyzer version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam mutS mock replicate 1</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65591-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65593">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam mutS mock replicate 2</Title>
+    <Accession database="GEO">GSM65593</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutS mutant strain GM5556</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As GM3819  dam-16">
+:Kan but mutS215::Tn10 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight cultures were diluted 1000-fold with fresh LB medium and cultured further.  Log phase cultures were diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which they were resuspended in LB broth for 90 minutes.  
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using Array Analyzer version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam mutS mock replicate 2</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65593-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65594">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam mutS mock replicate 3</Title>
+    <Accession database="GEO">GSM65594</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutS mutant strain GM5556</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As GM3819  dam-16">
+:Kan but mutS215::Tn10 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight cultures were diluted 1000-fold with fresh LB medium and cultured further.  Log phase cultures were diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which they were resuspended in LB broth for 90 minutes.  
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using Array Analyzer version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam mutS mock 3</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65594-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65596">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>mutS mock replicate 1</Title>
+    <Accession database="GEO">GSM65596</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mutS mutant strain GM5555</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As AB1157 but mutS215">
+:Tn10
+      </Characteristics>
+      <Growth-Protocol>
+Overnight cultures were diluted 1000-fold with fresh LB medium and cultured further.  Log phase cultures were diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which they were resuspended in LB broth for 90 minutes.  
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using Array Analyzer version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>mutS mock replicate 1</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65596-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65597">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>mutS mock replicate 2</Title>
+    <Accession database="GEO">GSM65597</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mutS mutant strain GM5555</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As AB1157 but mutS215">
+:Tn10
+      </Characteristics>
+      <Characteristics>
+
+      </Characteristics>
+      <Growth-Protocol>
+Overnight cultures were diluted 1000-fold with fresh LB medium and cultured further.  Log phase cultures were diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which they were resuspended in LB broth for 90 minutes.  
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using Array Analyzer version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>mutS mock replicate 2</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65597-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65598">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>mutS mock replicate 3</Title>
+    <Accession database="GEO">GSM65598</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mutS mutant strain GM5555</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As AB1157 but mutS215">
+:Tn10
+      </Characteristics>
+      <Characteristics>
+
+      </Characteristics>
+      <Growth-Protocol>
+Overnight cultures were diluted 1000-fold with fresh LB medium and cultured further.  Log phase cultures were diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which they were resuspended in LB broth for 90 minutes.  
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using Array Analyzer version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>mutS mock replicate 3</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65598-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65600">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT mock replicate 1</Title>
+    <Accession database="GEO">GSM65600</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>WT E. coli strain AB1157</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+F- thr-1 araC14 leuB6(Am)Δ (gpt-proA)62 lacY1 tsx-33 supE44(AS) galK2(Oc) hisG4(Oc) rfbD1 mgl-51 rpoS396(Am) rpsL31(StrR) kdgK51 xylA5 mtl-1 argE3(Oc) thi-1
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>WT mock replicate 1</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65600-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65601">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT mock replicate 2</Title>
+    <Accession database="GEO">GSM65601</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli WT strain AB1157</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+F- thr-1 araC14 leuB6(Am)Δ (gpt-proA)62 lacY1 tsx-33 supE44(AS) galK2(Oc) hisG4(Oc) rfbD1 mgl-51 rpoS396(Am) rpsL31(StrR) kdgK51 xylA5 mtl-1 argE3(Oc) thi-1
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>WT mock replicate 2</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65601-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65622">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT mock replicate 3</Title>
+    <Accession database="GEO">GSM65622</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli WT strain AB1157</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+F- thr-1 araC14 leuB6(Am)Δ (gpt-proA)62 lacY1 tsx-33 supE44(AS) galK2(Oc) hisG4(Oc) rfbD1 mgl-51 rpoS396(Am) rpsL31(StrR) kdgK51 xylA5 mtl-1 argE3(Oc) thi-1
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. This treatment served as a mock treatment for cultures incubated with a chemical (cisplatin). Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>WT mock replicate 3</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65622-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65623">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam mutS treat replicate 1</Title>
+    <Accession database="GEO">GSM65623</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutS mutant strain GM5556</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As GM3819  dam-16">
+:Kan but mutS215::Tn10 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam mutS treated replicate 1</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65623-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65624">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam mutS treat replicate 2 </Title>
+    <Accession database="GEO">GSM65624</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutS mutant strain GM5556</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As GM3819  dam-16">
+:Kan but mutS215::Tn10 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam mutS treat replicate 2</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65624-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65626">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam mutS treat replicate 3</Title>
+    <Accession database="GEO">GSM65626</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutS mutant strain GM5556</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As GM3819  dam-16">
+:Kan but mutS215::Tn10 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam mutS treat replicate 3</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65626-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65628">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam treat replicate 1</Title>
+    <Accession database="GEO">GSM65628</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutant strain GM3819</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="dam-16">
+:Kan thr-1 leuB6 thi-1 argE3 hisG4 proA2 lacY1 galK2 mtl-1 xyl-5 ara-14 rpsL31 tsx-33 supE44 rfbD1 kdgK51 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam treat replicate 1</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65628-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65629">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam treat replicate 2</Title>
+    <Accession database="GEO">GSM65629</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutant strain GM3819</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="dam-16">
+:Kan thr-1 leuB6 thi-1 argE3 hisG4 proA2 lacY1 galK2 mtl-1 xyl-5 ara-14 rpsL31 tsx-33 supE44 rfbD1 kdgK51 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam treat replicate 2</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65629-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65630">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>dam treat replicate 3</Title>
+    <Accession database="GEO">GSM65630</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli dam mutant strain GM3819</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="dam-16">
+:Kan thr-1 leuB6 thi-1 argE3 hisG4 proA2 lacY1 galK2 mtl-1 xyl-5 ara-14 rpsL31 tsx-33 supE44 rfbD1 kdgK51 
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dam treat replicate 3</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65630-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65632">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>mutS treated replicate 1</Title>
+    <Accession database="GEO">GSM65632</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mutS mutant strain GM5555</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As AB1157 but mutS215">
+:Tn10
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>mutS treat replicate 1</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65632-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65634">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>mutS treated replicate 2</Title>
+    <Accession database="GEO">GSM65634</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mutS mutant strain GM5555</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As AB1157 but mutS215">
+:Tn10
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>mutS treat replicate 2</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65634-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65636">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>mutS treated replicate 3</Title>
+    <Accession database="GEO">GSM65636</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli mutS mutant strain GM5555</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="As AB1157 but mutS215">
+:Tn10
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>mutS treat replicate 3</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65636-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65638">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT treated replicate 1</Title>
+    <Accession database="GEO">GSM65638</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wildtype strain AB1157</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+F- thr-1 araC14 leuB6(Am)Δ (gpt-proA)62 lacY1 tsx-33 supE44(AS) galK2(Oc) hisG4(Oc) rfbD1 mgl-51 rpoS396(Am) rpsL31(StrR) kdgK51 xylA5 mtl-1 argE3(Oc) thi-1
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>WT treat replicate 1</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65638-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65639">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT treated replicate 2</Title>
+    <Accession database="GEO">GSM65639</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli wildtype strain AB1157</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+F- thr-1 araC14 leuB6(Am)Δ (gpt-proA)62 lacY1 tsx-33 supE44(AS) galK2(Oc) hisG4(Oc) rfbD1 mgl-51 rpoS396(Am) rpsL31(StrR) kdgK51 xylA5 mtl-1 argE3(Oc) thi-1
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>WT treated replicate 2</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65639-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM65641">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2005-10-28</Last-Update-Date>
+    </Status>
+    <Title>WT treated replicate 3</Title>
+    <Accession database="GEO">GSM65641</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli WT strain AB1157</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+F- thr-1 araC14 leuB6(Am)Δ (gpt-proA)62 lacY1 tsx-33 supE44(AS) galK2(Oc) hisG4(Oc) rfbD1 mgl-51 rpoS396(Am) rpsL31(StrR) kdgK51 xylA5 mtl-1 argE3(Oc) thi-1
+      </Characteristics>
+      <Growth-Protocol>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Epicentre MasterPure RNA Purification kit
+      </Extract-Protocol>
+      <Label>PEO-iodeacetyl-Biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol for E. coli sense genome arrays
+      </Label-Protocol>
+    </Channel>
+    <Description>
+Overnight culture was diluted 1000-fold with fresh LB medium and cultured further. Log phase culture was diluted to a cell density of 2 X 108 cells/ml in M9 salts containing 150 uM cisplatin and incubated at 37°C for two hours, after which it was resuspended in LB broth for 90 minutes. Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) followed by DNAse digestion according to the manufacturer’s protocol. The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm. RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20 mM 3-[N-morpholino]propanesulfonic acid, 5 mM sodium acetate, 1 mM ethylenadiaminetetraacetic acide (EDTA))) or by analysis on an Agilent 2100 Bioanalyzer. All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure. mRNA was enriched from total RNA as described in the Affymetrix GeneChip Expression Analysis Technical Manual for GeneChip E. coli Sense Genome Arrays. 
+    </Description>
+    <Data-Processing>
+GCRMA normalization using the Array Analyzer module version 2.0.2 in S-Plus version 6.2 (Insightful)
+    </Data-Processing>
+    <Platform-Ref ref="GPL73" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>WT treated replicate 3</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM65641-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE2999">
+    <Status database="GEO">
+      <Submission-Date>2005-07-25</Submission-Date>
+      <Release-Date>2005-07-27</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Cisplatin-induced gene expression in DNA adenine methyltransferase (dam) and mismatch repair deficient E. coli</Title>
+    <Accession database="GEO">GSE2999</Accession>
+    <Summary>
+We used Affymetrix microarrays to determine the cisplatin-induced gene expression changes in E. coli deficient in dam and mismatch repair (dam, dam mutS, and mutS mutant strains).  E. coli deficient in dam are hypersensitive to cisplatin.  However introducing an additional mutation in mismatch repair (i.e., a mutation in mutS or mutL) abrogates this sensitivity and essentially restores wildtype levels of resistance.
+Keywords: Drug-induced expression
+    </Summary>
+    <Overall-Design>
+Overnight cultures were diluted 1000-fold and grown in Luria-Bertani (LB) medium until the cells reached exponential growth as determined by OD600.  The exponentially growing cells were resuspended in M9 minimal medium at a cell density of 2 X 108 cells/ml in a volume of 15 ml and treated with 150 uM cisplatin for 2 hours at 37°C. Following treatment cultures were resuspended in 15 ml LB and allowed to recover for 90 minutes at 37°C.  OD600 readings were taken after the recovery period, when RNA isolation began.  Total RNA was isolated from cells by extraction using the MasterPure RNA Purification Kit (Epicentre Technologies) according to the manufacture’s protocol.   The isolated total RNA was quantitated by absorption at 260 nm (typical yield from a 15 ml culture was 250-500 µg of total RNA), and the purity was determined by the ratio of absorption values at 260/280nm.  RNA quality was determined by formaldehyde agarose gel electrophoresis (1.2% agarose in FA Buffer pH 7.0 (20mM 3-[N-morpholino]propanesulfonic  acid, 5mM sodium acetate, 1mM ethylenadiaminetetraacetic acide (EDTA)) or by analysis on an Agilent 2100 Bioanalyzer.    All samples visualized by gel electrophoresis or by the bioanalyzer electropherogram showed clear distinct bands correlating to 16S and 23S ribosomal RNA, indicating that no detectable RNA degradation occurred and that RNA integrity was maintained throughout the RNA isolation procedure.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM65588" />
+    <Sample-Ref ref="GSM65589" />
+    <Sample-Ref ref="GSM65590" />
+    <Sample-Ref ref="GSM65591" />
+    <Sample-Ref ref="GSM65593" />
+    <Sample-Ref ref="GSM65594" />
+    <Sample-Ref ref="GSM65596" />
+    <Sample-Ref ref="GSM65597" />
+    <Sample-Ref ref="GSM65598" />
+    <Sample-Ref ref="GSM65600" />
+    <Sample-Ref ref="GSM65601" />
+    <Sample-Ref ref="GSM65622" />
+    <Sample-Ref ref="GSM65623" />
+    <Sample-Ref ref="GSM65624" />
+    <Sample-Ref ref="GSM65626" />
+    <Sample-Ref ref="GSM65628" />
+    <Sample-Ref ref="GSM65629" />
+    <Sample-Ref ref="GSM65630" />
+    <Sample-Ref ref="GSM65632" />
+    <Sample-Ref ref="GSM65634" />
+    <Sample-Ref ref="GSM65636" />
+    <Sample-Ref ref="GSM65638" />
+    <Sample-Ref ref="GSM65639" />
+    <Sample-Ref ref="GSM65641" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/91913" />
+  </Series>
+
+</MINiML>

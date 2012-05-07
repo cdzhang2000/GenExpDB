@@ -26,8 +26,8 @@ my $parm = ( $ARGV[0] ) ? $ARGV[0] : '';
 
 if ( $parm !~ /^query/ ) {
 	print "\n\tUsage: $0  <query>	
-	#Query GEO for ORGANISM=Escherichia
-	Query GEO for ORGANISM=Mycobacterium
+	Query GEO for ORGANISM=Escherichia
+	#Query GEO for ORGANISM=Mycobacterium
 	\n\n";
 	exit(-1);
 }
@@ -35,9 +35,9 @@ if ( $parm !~ /^query/ ) {
 my $curl = WWW::Curl::Easy->new;
 
 $curl->setopt( CURLOPT_HEADER, 0 );                                                                                                                     #no header
-#$curl->setopt( CURLOPT_URL,    'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&retmax=1&usehistory=y&term=Escherichia[ORGANISM]' );
+$curl->setopt( CURLOPT_URL,    'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&retmax=1&usehistory=y&term=Escherichia[ORGANISM]' );
 
-$curl->setopt( CURLOPT_URL,    'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&retmax=1&usehistory=y&term=Mycobacterium[ORGANISM]' );
+#$curl->setopt( CURLOPT_URL,    'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&retmax=1&usehistory=y&term=Mycobacterium[ORGANISM]' );
 
 my $esearch;
 $curl->setopt( CURLOPT_WRITEDATA, \$esearch );

@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Akinobu</First><Last>Ito</Last></Person>
+    <Email>akito@eng.hokudai.ac.jp</Email>
+    <Phone>+81-11-706-7588</Phone>
+    <Fax>+81-11-706-7588</Fax>
+    <Laboratory>Water Quality Control Engineering</Laboratory>
+    <Department>Graduate School of Engineering</Department>
+    <Organization>Hokkaido University</Organization>
+    <Address>
+      <Line>North-13, West-8, Kitaku</Line>
+      <City>Sapporo</City>
+      <Postal-Code>060-8628</Postal-Code>
+      <Country>Japan</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Thithiwat</First><Last>May</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Koji</First><Last>Kawata</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Satoshi</First><Last>Okabe</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL199">
+    <Status database="GEO">
+      <Submission-Date>2002-07-01</Submission-Date>
+      <Release-Date>2002-07-18</Release-Date>
+      <Last-Update-Date>2010-07-08</Last-Update-Date>
+    </Status>
+    <Title>[Ecoli_ASv2] Affymetrix E. coli Antisense Genome Array</Title>
+    <Accession database="GEO">GPL199</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+Has 7312 entries and was indexed 20-May-2002.
+The GeneChip E. coli Antisense Genome Array can be used for examining expression of all known E. coli genes and discovering novel, uncharacterized intergenic transcripts. The array contains probe sets to detect the antisense strand of more than 4,200 known open reading frames. In addition, over 1,350 intergenic sequences can be interrogated in both directions permitting functional characterization of potentially important shorter expressed sequences.
+Sequence information for probes on the array correspond to the M49 version of the E. coli Genome Project database at the University of Wisconsin.
+
+
+Keywords = high density oligonucleotide array
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoliantisense</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Relation type="Alternative to" target="GPL10659" comment="Alternative CDF" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=ECOLI_ANTISENSE&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli K12[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="4">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="5">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="12">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="13">
+        <Name>RefSeq Transcript ID</Name>
+        <Description>References to multiple sequences in RefSeq. The field contains the ID and Description for each entry, and there can be multiple entries per ProbeSet.</Description>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="7312">
+GPL199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM194046">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>rpoS_biofilm_rep1</Title>
+    <Accession database="GEO">GSM194046</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>biofilm of rpoS knock-out strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 rpoS knock-out strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols 
+    </Scan-Protocol>
+    <Description>
+biofilm were grown for 72 hours. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194046/GSM194046.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194046-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194047">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>rpoS_biofilm_rep2</Title>
+    <Accession database="GEO">GSM194047</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>biofilm of rpoS knock-out strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 rpoS knock-out strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+biofilm were grown for 72 hours.
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194047/GSM194047.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194047-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194048">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>rpoS_biofilm_rep3</Title>
+    <Accession database="GEO">GSM194048</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>biofilm of rpoS knock-out strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 rpoS knock-out strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+biofilm were grown for 72 hours.
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194048/GSM194048.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194048-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194049">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>wild type_biofilm_rep1</Title>
+    <Accession database="GEO">GSM194049</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>biofilm of wild type strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 wild type strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+biofilm were grown for 72 hours.
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194049/GSM194049.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194049-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194050">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>wild type_biofilm_rep2</Title>
+    <Accession database="GEO">GSM194050</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>biofilm of wild type strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 wild type strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols 
+    </Scan-Protocol>
+    <Description>
+biofilm were grown for 72 hours. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194050/GSM194050.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194050-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194051">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>wild type_biofilm_rep3</Title>
+    <Accession database="GEO">GSM194051</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>biofilm of wild type strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 wild type strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen). 
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols 
+    </Scan-Protocol>
+    <Description>
+biofilm were grown for 72 hours. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194051/GSM194051.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194051-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194052">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>rpoS_exponential_rep1</Title>
+    <Accession database="GEO">GSM194052</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic exponential phase of rpoS knock-out strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 rpoS knock-out strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 8 hours for exponential phase. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194052/GSM194052.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194052-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194053">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>rpoS_exponential_rep2</Title>
+    <Accession database="GEO">GSM194053</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic exponential phase of rpoS knock-out strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 rpoS knock-out strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 8 hours for exponential phase. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194053/GSM194053.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194053-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194054">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>rpoS_exponential_rep3</Title>
+    <Accession database="GEO">GSM194054</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic exponential phase of rpoS knock-out strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 rpoS knock-out strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 8 hours for exponential phase. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194054/GSM194054.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194054-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194055">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>wild type_exponential_rep1</Title>
+    <Accession database="GEO">GSM194055</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic exponential phase of wild type strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 wild type strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 8 hours for exponential phase. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194055/GSM194055.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194055-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194056">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>wild type_exponential_rep2</Title>
+    <Accession database="GEO">GSM194056</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic exponential phase of wild type strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 wild type strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 8 hours for exponential phase. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194056/GSM194056.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194056-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194057">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>wild type_exponential_rep3</Title>
+    <Accession database="GEO">GSM194057</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic exponential phase of wild type strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 wild type strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 8 hours for exponential phase. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194057/GSM194057.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194057-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194058">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>wild type_stationary_rep1</Title>
+    <Accession database="GEO">GSM194058</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic stationary phase of wild type strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 wild type strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 12 hours for stationary phase. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194058/GSM194058.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194058-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194059">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>wild type_stationary_rep2</Title>
+    <Accession database="GEO">GSM194059</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic stationary phase of wild type strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 wild type strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 12 hours for stationary phase. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194059/GSM194059.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194059-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194060">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>wild type_stationary_rep3</Title>
+    <Accession database="GEO">GSM194060</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic stationary phase of wild type strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 wild type strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 12 hours for stationary phase. 
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194060/GSM194060.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194060-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194061">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>rpoS_stationary_rep1</Title>
+    <Accession database="GEO">GSM194061</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic stationary phase of rpoS knock-out strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 rpoS knock-out strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 12 hours for stationary phase
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194061/GSM194061.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194061-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194062">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>rpoS_stationary_rep2</Title>
+    <Accession database="GEO">GSM194062</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic stationary phase of rpoS knock-out strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 rpoS knock-out strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 12 hours for stationary phase
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194062/GSM194062.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194062-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM194063">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2007-05-25</Last-Update-Date>
+    </Status>
+    <Title>rpoS_stationary_rep3</Title>
+    <Accession database="GEO">GSM194063</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>plannktonic stationary phase of rpoS knock-out strain in MOPS minimal media with 0.2% glucose</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="'Strain">
+Escherichia coli MG1655 rpoS knock-out strain'
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Samples were RNA-stabilized with Qiagen RNAProtect Bacterial Reagent, and total RNA was isolated with Qiagen RNeasy mini kit (Qiagen).
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+The isolated RNA was converted to cDNA, and the synthesized cDNA was fragmented and labeled with GeneChip® DNA Labeling Reagent according to Affymetrix protocols.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocols
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocols
+    </Scan-Protocol>
+    <Description>
+Cells were grown for 12 hours for stationary phase
+    </Description>
+    <Data-Processing>
+Normalization was performed with dchip software using the Invariant Set Normalization method. Sample GSM194057 (wild type_exponential_rep3) was used as the baseline array.
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM194nnn/GSM194063/GSM194063.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>dChip's normalized value</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM194063-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE7885">
+    <Status database="GEO">
+      <Submission-Date>2007-05-24</Submission-Date>
+      <Release-Date>2008-05-23</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Gene expression of E. coli MG1655 wild type and rpoS knock-out strains</Title>
+    <Accession database="GEO">GSE7885</Accession>
+    <Pubmed-ID>17979199</Pubmed-ID>
+    <Summary>
+The role of rpoS gene in the formation of Escherichia coli biofilms were investigated. The gene expression was compared among E. coli MG1655 wild type strain and rpoS knock-out strain in the biofilms, the planktonic exponential phase, and the planktonic stationary phase. The analysis revealed that the wild type bilfilms (WBF) showed similar pattern of gene expression with the WT planktonic stationary phase (WS), whereas the rpoS knock-out biofilms (MBF) showed similar pattern of gene expression with the wild type planktonic exponential phase (WE). Genes involved in the energy metabolism and the flagella synthesis showed higher expression in the rpoS knock-out biofilms (MBF), but not in the wild type biofilms (WBF). Moreover, genes involved in the stress responses showed higher expression in the wild type biofilms (WBF), but not in the rpoS knock-out biofilms (MBF). 
+Keywords: cell type comparison (biofilms vs planktonic cells, wild type vs rpoS knock-out strains)
+    </Summary>
+    <Overall-Design>
+Affymetrix E. coli antisense genome array was used to compare the gene expression among E. coli wild type and rpoS konck-out strains in the biofilms, the planktonic exponential phase, and the planktonic stationary phase. All samples were grown in MOPS minimal media with 0.2% glucose. Biofilms were grown for 72 hours on glass surface in flow cells (1x4x40 mm), and planktonic cells were grown for 8 hours (exponential phase) and 12 hours (stationary phase). Experiments were repeated 3 times, which resulted in 3 replicates of 6 different samples. 
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM194046" />
+    <Sample-Ref ref="GSM194047" />
+    <Sample-Ref ref="GSM194048" />
+    <Sample-Ref ref="GSM194049" />
+    <Sample-Ref ref="GSM194050" />
+    <Sample-Ref ref="GSM194051" />
+    <Sample-Ref ref="GSM194052" />
+    <Sample-Ref ref="GSM194053" />
+    <Sample-Ref ref="GSM194054" />
+    <Sample-Ref ref="GSM194055" />
+    <Sample-Ref ref="GSM194056" />
+    <Sample-Ref ref="GSM194057" />
+    <Sample-Ref ref="GSM194058" />
+    <Sample-Ref ref="GSM194059" />
+    <Sample-Ref ref="GSM194060" />
+    <Sample-Ref ref="GSM194061" />
+    <Sample-Ref ref="GSM194062" />
+    <Sample-Ref ref="GSM194063" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE7885/GSE7885_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/99921" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Sylvain</First><Last>Durand</Last></Person>
+    <Email>durandsy@mail.nih.gov, durandsylv1@gmail.com</Email>
+    <Organization>NICHD</Organization>
+    <Address>
+      <Line>5000 Rockville Pike</Line>
+      <City>Bethesda</City>
+      <State>MD</State>
+      <Zip-Code>20892</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Gisela</First><Last>Storz</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM490261">
+    <Status database="GEO">
+      <Submission-Date>2009-12-24</Submission-Date>
+      <Release-Date>2009-12-30</Release-Date>
+      <Last-Update-Date>2009-12-24</Last-Update-Date>
+    </Status>
+    <Title>MG1655 pAZ3#1 + arabinose</Title>
+    <Accession database="GEO">GSM490261</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli with empty vector (pAZ3)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using hot phenol.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol from 6 µg total RNA (Section 3 Prokaryotic sample and array processing).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 6 µg of cDNA was hybridized for 16 hr at 45˚C on GeneChip E.coli Genome 2.0 Array.  GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix GeneChip operating software (1.4.0.036) using the following expression analysis settings:  1. Scaling: All probe set with target intensity of each array arbitrarily set to 500   2. Normalization: All probe set
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490261/GSM490261_pAZ3_150708.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490261/GSM490261_pAZ3_150708.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM490261-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM490262">
+    <Status database="GEO">
+      <Submission-Date>2009-12-24</Submission-Date>
+      <Release-Date>2009-12-30</Release-Date>
+      <Last-Update-Date>2009-12-24</Last-Update-Date>
+    </Status>
+    <Title>MG1655 pFnrS#1 + arabinose</Title>
+    <Accession database="GEO">GSM490262</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli with pFnrS</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using hot phenol.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol from 6 µg total RNA (Section 3 Prokaryotic sample and array processing).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 6 µg of cDNA was hybridized for 16 hr at 45˚C on GeneChip E.coli Genome 2.0 Array.  GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix GeneChip operating software (1.4.0.036) using the following expression analysis settings:  1. Scaling: All probe set with target intensity of each array arbitrarily set to 500   2. Normalization: All probe set
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490262/GSM490262_pFnrS_150708.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490262/GSM490262_pFnrS_150708.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM490262-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM490263">
+    <Status database="GEO">
+      <Submission-Date>2009-12-24</Submission-Date>
+      <Release-Date>2009-12-30</Release-Date>
+      <Last-Update-Date>2009-12-24</Last-Update-Date>
+    </Status>
+    <Title>MG1655 pAZ3#2 + arabinose</Title>
+    <Accession database="GEO">GSM490263</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli with empty vector (pAZ3)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using hot phenol.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol from 6 µg total RNA (Section 3 Prokaryotic sample and array processing).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 6 µg of cDNA was hybridized for 16 hr at 45˚C on GeneChip E.coli Genome 2.0 Array.  GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix GeneChip operating software (1.4.0.036) using the following expression analysis settings:  1. Scaling: All probe set with target intensity of each array arbitrarily set to 500   2. Normalization: All probe set
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490263/GSM490263_pAZ3_090808.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490263/GSM490263_pAZ3_090808.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM490263-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM490264">
+    <Status database="GEO">
+      <Submission-Date>2009-12-24</Submission-Date>
+      <Release-Date>2009-12-30</Release-Date>
+      <Last-Update-Date>2009-12-24</Last-Update-Date>
+    </Status>
+    <Title>MG1655 pFnrS#2 + arabinose</Title>
+    <Accession database="GEO">GSM490264</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli with pFnrS</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using hot phenol.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol from 6 µg total RNA (Section 3 Prokaryotic sample and array processing).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 6 µg of cDNA was hybridized for 16 hr at 45˚C on GeneChip E.coli Genome 2.0 Array.  GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix GeneChip operating software (1.4.0.036) using the following expression analysis settings:  1. Scaling: All probe set with target intensity of each array arbitrarily set to 500   2. Normalization: All probe set
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490264/GSM490264_pFnrS_090808.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490264/GSM490264_pFnrS_090808.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM490264-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM490265">
+    <Status database="GEO">
+      <Submission-Date>2009-12-24</Submission-Date>
+      <Release-Date>2009-12-30</Release-Date>
+      <Last-Update-Date>2009-12-24</Last-Update-Date>
+    </Status>
+    <Title>MG1655 pAZ3#3 + arabinose</Title>
+    <Accession database="GEO">GSM490265</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli with empty vector (pAZ3)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using hot phenol.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol from 6 µg total RNA (Section 3 Prokaryotic sample and array processing).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 6 µg of cDNA was hybridized for 16 hr at 45˚C on GeneChip E.coli Genome 2.0 Array.  GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix GeneChip operating software (1.4.0.036) using the following expression analysis settings:  1. Scaling: All probe set with target intensity of each array arbitrarily set to 500   2. Normalization: All probe set
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490265/GSM490265_pAZ3_240908.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490265/GSM490265_pAZ3_240908.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM490265-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM490266">
+    <Status database="GEO">
+      <Submission-Date>2009-12-24</Submission-Date>
+      <Release-Date>2009-12-30</Release-Date>
+      <Last-Update-Date>2009-12-24</Last-Update-Date>
+    </Status>
+    <Title>MG1655 pFnrS#3 + arabinose</Title>
+    <Accession database="GEO">GSM490266</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli with pFnrS</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="strain">
+MG1655
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using hot phenol.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol from 6 µg total RNA (Section 3 Prokaryotic sample and array processing).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 6 µg of cDNA was hybridized for 16 hr at 45˚C on GeneChip E.coli Genome 2.0 Array.  GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneArray Scanner 3000.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix GeneChip operating software (1.4.0.036) using the following expression analysis settings:  1. Scaling: All probe set with target intensity of each array arbitrarily set to 500   2. Normalization: All probe set
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490266/GSM490266_pFnrS_240908.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM490nnn/GSM490266/GSM490266_pFnrS_240908.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>indicating whether the transcript was present (P), absent (A), or marginal (M)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM490266-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE19655">
+    <Status database="GEO">
+      <Submission-Date>2009-12-24</Submission-Date>
+      <Release-Date>2009-12-30</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Reprogramming of anaerobic metabolism by the FnrS Small RNA</Title>
+    <Accession database="GEO">GSE19655</Accession>
+    <Pubmed-ID>20070527</Pubmed-ID>
+    <Summary>
+Small RNAs (sRNA) that act by base pairing with trans-encoded mRNAs modulate metabolism in response to a variety of environmental stimuli.  Here, we describe an Hfq-binding sRNA (FnrS) whose expression is induced upon a shift from aerobic to anaerobic conditions and which acts to down regulate the levels of a variety of mRNAs encoding metabolic enzymes.  Anaerobic induction in minimal medium depends strongly on FNR but is also affected by ArcA and CRP.  Whole genome expression analysis showed that the levels of at least 32 mRNAs are down regulated upon FnrS overexpression, 15 of which are predicted to base pair with FnrS by TargetRNA.  The sRNA is highly conserved across its entire length in numerous enterobacteria, and mutation analysis revealed that two separate regions of FnrS base pair with different sets of target mRNAs.  The majority of the target genes previously reported to be down regulated in an FNR-dependent manner lack recognizable FNR binding sites.  We thus suggest that FnrS extends the FNR regulon and increases the efficiency of anaerobic metabolism by repressing the synthesis of enzymes that are not needed under these conditions.
+    </Summary>
+    <Overall-Design>
+MG1655 carrying either pFnrS or the control vector pAZ3 was used in all experiments.  Overnight bacterial cultures grown with shaking at 37˚C in LB media with ampicillin at a final concentration of 50 ug/mL were diluted 1000-fold into 10 ml of LB-ampicillin media and grown with shaking at 37˚C.  When cultures reached an O.D.600 of 0.5, arabinose was added at a final concentration of 0.2%. Total RNA was extracted from cells at the indicated times using the hot phenol procedure.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM490261" />
+    <Sample-Ref ref="GSM490262" />
+    <Sample-Ref ref="GSM490263" />
+    <Sample-Ref ref="GSM490264" />
+    <Sample-Ref ref="GSM490265" />
+    <Sample-Ref ref="GSM490266" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE19655/GSE19655_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/122555" />
+  </Series>
+
+</MINiML>

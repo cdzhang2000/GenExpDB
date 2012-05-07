@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------------------
-# FileName    : gdb/plot.pm
+# FileName    : testgdb/plot.pm
 #
 # Description : Plot utils
 # Author      : jgrissom

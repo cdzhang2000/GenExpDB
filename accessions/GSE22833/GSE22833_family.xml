@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Henry</First><Middle>H</Middle><Last>Lee</Last></Person>
+    <Email>hhlee@bu.edu</Email>
+    <Laboratory>Applied Biodynamics Lab (Collins)</Laboratory>
+    <Department>Biomedical Engineering</Department>
+    <Organization>Boston University</Organization>
+    <Address>
+      <Line>36 Cummington St</Line>
+      <City>Boston</City>
+      <State>MA</State>
+      <Zip-Code>02215</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Michael</First><Middle>N</Middle><Last>Molla</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL10659">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-09-02</Last-Update-Date>
+    </Status>
+    <Title>Affymetrix E. coli Antisense Genome Array</Title>
+    <Accession database="GEO">GPL10659</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CDF">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL10659/GPL10659_Ecoli_ASv2_c20090127.cdf.gz
+    </Supplementary-Data>
+    <Relation type="Alternative to" target="GPL199" comment="Alternative CDF [official]" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>gene  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli K12[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="7459">
+GPL10659-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM564477">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-09-02</Last-Update-Date>
+    </Status>
+    <Title>1655 delta tnaA exposed to low levels of norfloxacin, t0</Title>
+    <Accession database="GEO">GSM564477</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>MG1655_delta_tnaA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+tnaA knockout
+      </Characteristics>
+      <Treatment-Protocol>
+50ng/mL norfloxacin, 200uM indole and 50ng/mL norfloxacin, 50ng/mL norfloxacin
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Continuous culture (0.48/hr) of MG1655∆tnaA in LB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was obtained using the RNEasy Protect Bacterial Mini Kit (Qiagen) according to manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared using an Enzo Bioarray Terminal Labeling Kit with Biotin-ddUTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, biotinylated cDNA was hybridized to Affymetrix E. coli Antisense Genome arrays for 16h at 45C and 60rpm.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Genechips were scanned at 532nm using an Affymetrix Gene Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data for 1655 delta tnaA exposed to low levels of norfloxacin, t0
+    </Description>
+    <Data-Processing>
+Data were normalized with FARMS and updated CDF (custom)
+    </Data-Processing>
+    <Platform-Ref ref="GPL10659" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM564nnn/GSM564477/GSM564477.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>FARMS normalized data</Description>
+      </Column>
+    <External-Data rows="7459">
+GSM564477-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM564478">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-09-02</Last-Update-Date>
+    </Status>
+    <Title>1655 delta tnaA exposed to low levels of indole and norfloxacin, t2</Title>
+    <Accession database="GEO">GSM564478</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>MG1655_delta_tnaA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+tnaA knockout
+      </Characteristics>
+      <Treatment-Protocol>
+50ng/mL norfloxacin, 200uM indole and 50ng/mL norfloxacin, 50ng/mL norfloxacin
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Continuous culture (0.48/hr) of MG1655∆tnaA in LB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was obtained using the RNEasy Protect Bacterial Mini Kit (Qiagen) according to manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared using an Enzo Bioarray Terminal Labeling Kit with Biotin-ddUTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, biotinylated cDNA was hybridized to Affymetrix E. coli Antisense Genome arrays for 16h at 45C and 60rpm.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Genechips were scanned at 532nm using an Affymetrix Gene Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data for 1655 delta tnaA exposed to low levels of indole and norfloxacin, t2
+    </Description>
+    <Data-Processing>
+Data were normalized with FARMS and updated CDF (custom)
+    </Data-Processing>
+    <Platform-Ref ref="GPL10659" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM564nnn/GSM564478/GSM564478.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>FARMS normalized data</Description>
+      </Column>
+    <External-Data rows="7459">
+GSM564478-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM564479">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2010-09-02</Last-Update-Date>
+    </Status>
+    <Title>1655 delta tnaA reexposed to low levels of norfloxacin, t3</Title>
+    <Accession database="GEO">GSM564479</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>MG1655_delta_tnaA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="genotype/variation">
+tnaA knockout
+      </Characteristics>
+      <Treatment-Protocol>
+50ng/mL norfloxacin, 200uM indole and 50ng/mL norfloxacin, 50ng/mL norfloxacin
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Continuous culture (0.48/hr) of MG1655∆tnaA in LB
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was obtained using the RNEasy Protect Bacterial Mini Kit (Qiagen) according to manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared using an Enzo Bioarray Terminal Labeling Kit with Biotin-ddUTP.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, biotinylated cDNA was hybridized to Affymetrix E. coli Antisense Genome arrays for 16h at 45C and 60rpm.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Genechips were scanned at 532nm using an Affymetrix Gene Scanner 3000
+    </Scan-Protocol>
+    <Description>
+Gene expression data for 1655 delta tnaA reexposed to low levels of norfloxacin, t3
+    </Description>
+    <Data-Processing>
+Data were normalized with FARMS and updated CDF (custom)
+    </Data-Processing>
+    <Platform-Ref ref="GPL10659" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM564nnn/GSM564479/GSM564479.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>FARMS normalized data</Description>
+      </Column>
+    <External-Data rows="7459">
+GSM564479-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE22833">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2010-09-02</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Expression data from indole deficient E.coli (MG1655∆tnaA) exposed to indole and norfloxacin during continuous culture</Title>
+    <Accession database="GEO">GSE22833</Accession>
+    <Pubmed-ID>20811456</Pubmed-ID>
+    <Summary>
+We sought to determine the effect of indole on cells under antibiotic stress.
+    </Summary>
+    <Overall-Design>
+To determine the effects of indole during norfloxacin treatment, we continuously cultured MG1655_delta_tnaA and exposed the culture to three conditions: 1. initial exposure to norfloxacin, 2. exposure to indole and norfloxacin, and 3. reexposure to norfloxacin
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM564477" />
+    <Sample-Ref ref="GSM564478" />
+    <Sample-Ref ref="GSM564479" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE22833/GSE22833_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/127887" />
+  </Series>
+
+</MINiML>

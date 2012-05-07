@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Joke</First><Last>Allemeersch</Last></Person>
+    <Email>nucleomics.bioinformatics@vib.be</Email>
+    <Phone>+32(0)16 37 31 26</Phone>
+    <Fax>+32(0)16 37 31 29</Fax>
+    <Department>Nucleomics Core</Department>
+    <Organization>Flanders Institute for Biotechnology (VIB)</Organization>
+    <Address>
+      <Line>Herestraat 49 Box 816</Line>
+      <City>Leuven</City>
+      <Postal-Code>B-3000</Postal-Code>
+      <Country>Belgium</Country>
+    </Address>
+    <Web-Link>http://www.nucleomics.be</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Marina</First><Last>Caldara</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Daniel</First><Last>Charlier</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Raymond</First><Last>Cunin</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3154">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2005-11-23</Release-Date>
+      <Last-Update-Date>2009-06-03</Last-Update-Date>
+    </Status>
+    <Title>[E_coli_2] Affymetrix E. coli Genome 2.0 Array</Title>
+    <Accession database="GEO">GPL3154</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+The GeneChip® E. coli Genome 2.0 Array contains probe sets to detect transcripts from the K12 strain of E. coli and three pathogenic strains of E. coli. Using the new E. coli Genome 2.0 Array, researchers can gain a comprehensive view of three pathogenic forms of E. coli while continuing ongoing research projects with the K12 strain.
+
+The GeneChip E. coli Genome 2.0 Array includes approximately 10,000 probe sets for all 20,366 genes present in four strains of E. coli. Due to the high degree of similarity between the E. coli strains, whenever possible, a single probe set is tiled to represent the equivalent ortholog in all four strains. The GeneChip E. coli Genome 2.0 Array tiles probe sets over the entire open reading frame (ORF) of E. coli, includes over 700 intergenic regions, probes for various antibiotic resistance markers, and incorporates additional control and reporter genes from the previous generation E. coli array.
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoli-20</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=E_coli_2&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Locus  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>GB_ACC</Name>
+        <Description>GenBank Accession Number </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="5">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="12">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="13">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="10208">
+GPL3154-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM106504">
+    <Status database="GEO">
+      <Submission-Date>2006-04-25</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-09-06</Last-Update-Date>
+    </Status>
+    <Title>P4X Wild Type (1753) Reference</Title>
+    <Accession database="GEO">GSM106504</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Strain P4X, grown on minimal medium, reference sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.Coli, strain P4X, grown on minimal medium, reference sample
+      </Characteristics>
+      <Biomaterial-Provider>Marina Caldara, VUB Pleinlaan 2, 1050 Brussels,Belgium.
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Cells used for expression analysis were grown in minimal medium (Glansdorff, 1965) supplemented with 0.5% glucose (w/v), L-methionine (100ug ml-1). For expression analysis, cells were grown in a rotary shaker at 37°C and harvested by centrifugation at mid-log phase ( (OD) 660nm = 0.5) and the metabolism was quenched in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using a RNeasy® RNA isolation kit, according to the manufacturer’s specifications (QIAGEN, Germany) and stored in RNase-free water at –80°C. RNA concentration was determined by UV-spectrometry and its quality controlled by agarose gel electrophoresis.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Total RNA was controlled for its integrity and purity using a Bioanalyzer 2100 (Agilent) and a Nanodrop spectrophotometer. Total RNA (10µg) showing no signs of degradation or impurities, was supplemented with Poly-A RNA controls and reverse transcribed to cDNA using random primers. After RNA degradation with NaOH, cDNA was purified (MinElute PCR Purification Kit®, QIAGEN), analyzed for yield (30-120µg) and purity (260nm/280nm and 260nm/230nm absorption ratios &gt;1.8), then fragmented using DNase-I (Amersham Pharmacia Biosciences) and labelled terminally with biotinylated GeneChipÒ DNA Labeling Reagent (Affymetrix, UK).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A minimum of 1mg fragmented probe was resuspended in 80 ml hybridization buffer containing 3nM of control oligo B2 (Affymetrix, UK). Hybridization was performed in a rotisserie oven at 45°C for 16 hours. The chips were washed and stained in a GeneChip® Fluidics Station 400™ (Affymetrix, UK) using the Mini_prok2v1 protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The chips were scanned with the GeneChip® Scanner 3000 (Affymetrix, UK).
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+Initial data analysis was performed using the GeneChip® Operating Software. Microarray quality control parameters were as follow: noise (RawQ) less than 5, background signal less than 40 (100 target intensity for array scaling), consistent numbers of genes detected as present across arrays.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106504/GSM106504.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106504/GSM106504.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM106504-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM106751">
+    <Status database="GEO">
+      <Submission-Date>2006-04-26</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-09-06</Last-Update-Date>
+    </Status>
+    <Title>P4X Wild Type (1765) Reference</Title>
+    <Accession database="GEO">GSM106751</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.Coli, strain P4X, grown on minimal medium, reference sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.Coli, strain P4X, grown on minimal medium, reference sample
+      </Characteristics>
+      <Biomaterial-Provider>Marina Caldara VUB Pleinlaan 2, 1050 Brussels,Belgium.
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Cells used for expression analysis were grown in minimal medium (Glansdorff, 1965) supplemented with 0.5% glucose (w/v), L-methionine (100ug ml-1). For expression analysis, cells were grown in a rotary shaker at 37°C and harvested by centrifugation at mid-log phase ( (OD) 660nm = 0.5) and the metabolism was quenched in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using a RNeasy® RNA isolation kit, according to the manufacturer’s specifications (QIAGEN, Germany) and stored in RNase-free water at –80°C. RNA concentration was determined by UV-spectrometry and its quality controlled by agarose gel electrophoresis.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Total RNA was controlled for its integrity and purity using a Bioanalyzer 2100 (Agilent) and a Nanodrop spectrophotometer. Total RNA (10µg) showing no signs of degradation or impurities, was supplemented with Poly-A RNA controls and reverse transcribed to cDNA using random primers. After RNA degradation with NaOH, cDNA was purified (MinElute PCR Purification Kit®, QIAGEN), analyzed for yield (30-120µg) and purity (260nm/280nm and 260nm/230nm absorption ratios &gt;1.8), then fragmented using DNase-I (Amersham Pharmacia Biosciences) and labelled terminally with biotinylated GeneChipÒ DNA Labeling Reagent (Affymetrix, UK).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A minimum of 1mg fragmented probe was resuspended in 80 ml hybridization buffer containing 3nM of control oligo B2 (Affymetrix, UK). Hybridization was performed in a rotisserie oven at 45°C for 16 hours. The chips were washed and stained in a GeneChip® Fluidics Station 400™ (Affymetrix, UK) using the Mini_prok2v1 protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The chips were scanned with the GeneChip® Scanner 3000 (Affymetrix, UK).
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+Initial data analysis was performed using the GeneChip® Operating Software. Microarray quality control parameters were as follow: noise (RawQ) less than 5, background signal less than 40 (100 target intensity for array scaling), consistent numbers of genes detected as present across arrays.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106751/GSM106751.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106751/GSM106751.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM106751-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM106752">
+    <Status database="GEO">
+      <Submission-Date>2006-04-26</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-09-06</Last-Update-Date>
+    </Status>
+    <Title>P4X Wild Type (1989) Reference</Title>
+    <Accession database="GEO">GSM106752</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.Coli, strain P4X, grown on minimal medium, reference sample</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.Coli, strain P4X, grown on minimal medium, reference sample
+      </Characteristics>
+      <Biomaterial-Provider>Marina Caldara VUB Pleinlaan 2, 1050 Brussels,Belgium.
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Cells used for expression analysis were grown in minimal medium (Glansdorff, 1965) supplemented with 0.5% glucose (w/v), L-methionine (100ug ml-1). For expression analysis, cells were grown in a rotary shaker at 37°C and harvested by centrifugation at mid-log phase ( (OD) 660nm = 0.5) and the metabolism was quenched in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using a RNeasy® RNA isolation kit, according to the manufacturer’s specifications (QIAGEN, Germany) and stored in RNase-free water at –80°C. RNA concentration was determined by UV-spectrometry and its quality controlled by agarose gel electrophoresis.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Total RNA was controlled for its integrity and purity using a Bioanalyzer 2100 (Agilent) and a Nanodrop spectrophotometer. Total RNA (10µg) showing no signs of degradation or impurities, was supplemented with Poly-A RNA controls and reverse transcribed to cDNA using random primers. After RNA degradation with NaOH, cDNA was purified (MinElute PCR Purification Kit®, QIAGEN), analyzed for yield (30-120µg) and purity (260nm/280nm and 260nm/230nm absorption ratios &gt;1.8), then fragmented using DNase-I (Amersham Pharmacia Biosciences) and labelled terminally with biotinylated GeneChipÒ DNA Labeling Reagent (Affymetrix, UK).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A minimum of 1mg fragmented probe was resuspended in 80 ml hybridization buffer containing 3nM of control oligo B2 (Affymetrix, UK). Hybridization was performed in a rotisserie oven at 45°C for 16 hours. The chips were washed and stained in a GeneChip® Fluidics Station 400™ (Affymetrix, UK) using the Mini_prok2v1 protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The chips were scanned with the GeneChip® Scanner 3000 (Affymetrix, UK).
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+Initial data analysis was performed using the GeneChip® Operating Software. Microarray quality control parameters were as follow: noise (RawQ) less than 5, background signal less than 40 (100 target intensity for array scaling), consistent numbers of genes detected as present across arrays.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106752/GSM106752.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106752/GSM106752.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM106752-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM106753">
+    <Status database="GEO">
+      <Submission-Date>2006-04-26</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-09-06</Last-Update-Date>
+    </Status>
+    <Title>P4X Wild Type (1754) in Arginine</Title>
+    <Accession database="GEO">GSM106753</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.Coli, strain P4X, grown in presence of arginine(100 ug/ml)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.Coli, strain P4X, grown in presence of arginine(100 ug/ml)
+      </Characteristics>
+      <Biomaterial-Provider>Marina Caldara VUB Pleinlaan 2, 1050 Brussels,Belgium.
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Cells used for expression analysis were grown in minimal medium (Glansdorff, 1965) supplemented with 0.5% glucose (w/v), L-methionine (100mg ml-1) and with L-arginine (100ug ml-1). For expression analysis, cells were grown in a rotary shaker at 37°C and harvested by centrifugation at mid-log phase ( (OD) 660nm = 0.5) and the metabolism was quenched in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using a RNeasy® RNA isolation kit, according to the manufacturer’s specifications (QIAGEN, Germany) and stored in RNase-free water at –80°C. RNA concentration was determined by UV-spectrometry and its quality controlled by agarose gel electrophoresis.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Total RNA was controlled for its integrity and purity using a Bioanalyzer 2100 (Agilent) and a Nanodrop spectrophotometer. Total RNA (10µg) showing no signs of degradation or impurities, was supplemented with Poly-A RNA controls and reverse transcribed to cDNA using random primers. After RNA degradation with NaOH, cDNA was purified (MinElute PCR Purification Kit®, QIAGEN), analyzed for yield (30-120µg) and purity (260nm/280nm and 260nm/230nm absorption ratios &gt;1.8), then fragmented using DNase-I (Amersham Pharmacia Biosciences) and labelled terminally with biotinylated GeneChipÒ DNA Labeling Reagent (Affymetrix, UK).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A minimum of 1mg fragmented probe was resuspended in 80 ml hybridization buffer containing 3nM of control oligo B2 (Affymetrix, UK). Hybridization was performed in a rotisserie oven at 45°C for 16 hours. The chips were washed and stained in a GeneChip® Fluidics Station 400™ (Affymetrix, UK) using the Mini_prok2v1 protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The chips were scanned with the GeneChip® Scanner 3000 (Affymetrix, UK).
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+Initial data analysis was performed using the GeneChip® Operating Software. Microarray quality control parameters were as follow: noise (RawQ) less than 5, background signal less than 40 (100 target intensity for array scaling), consistent numbers of genes detected as present across arrays.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106753/GSM106753.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106753/GSM106753.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM106753-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM106755">
+    <Status database="GEO">
+      <Submission-Date>2006-04-26</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-09-06</Last-Update-Date>
+    </Status>
+    <Title>P4X Wild Type (1766) in Arginine</Title>
+    <Accession database="GEO">GSM106755</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.Coli, strain P4X, grown in presence of arginine(100 ug/ml)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.Coli, strain P4X, grown in presence of arginine(100 ug/ml)
+      </Characteristics>
+      <Biomaterial-Provider>Marina Caldara VUB Pleinlaan 2, 1050 Brussels,Belgium.
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Cells used for expression analysis were grown in minimal medium (Glansdorff, 1965) supplemented with 0.5% glucose (w/v), L-methionine (100ug ml-1) and with L-arginine (100ug ml-1). For expression analysis, cells were grown in a rotary shaker at 37°C and harvested by centrifugation at mid-log phase ( (OD) 660nm = 0.5) and the metabolism was quenched in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using a RNeasy® RNA isolation kit, according to the manufacturer’s specifications (QIAGEN, Germany) and stored in RNase-free water at –80°C. RNA concentration was determined by UV-spectrometry and its quality controlled by agarose gel electrophoresis.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Total RNA was controlled for its integrity and purity using a Bioanalyzer 2100 (Agilent) and a Nanodrop spectrophotometer. Total RNA (10µg) showing no signs of degradation or impurities, was supplemented with Poly-A RNA controls and reverse transcribed to cDNA using random primers. After RNA degradation with NaOH, cDNA was purified (MinElute PCR Purification Kit®, QIAGEN), analyzed for yield (30-120µg) and purity (260nm/280nm and 260nm/230nm absorption ratios &gt;1.8), then fragmented using DNase-I (Amersham Pharmacia Biosciences) and labelled terminally with biotinylated GeneChipÒ DNA Labeling Reagent (Affymetrix, UK).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A minimum of 1mg fragmented probe was resuspended in 80 ml hybridization buffer containing 3nM of control oligo B2 (Affymetrix, UK). Hybridization was performed in a rotisserie oven at 45°C for 16 hours. The chips were washed and stained in a GeneChip® Fluidics Station 400™ (Affymetrix, UK) using the Mini_prok2v1 protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The chips were scanned with the GeneChip® Scanner 3000 (Affymetrix, UK).
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+Initial data analysis was performed using the GeneChip® Operating Software. Microarray quality control parameters were as follow: noise (RawQ) less than 5, background signal less than 40 (100 target intensity for array scaling), consistent numbers of genes detected as present across arrays.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106755/GSM106755.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106755/GSM106755.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM106755-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM106756">
+    <Status database="GEO">
+      <Submission-Date>2006-04-26</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-09-06</Last-Update-Date>
+    </Status>
+    <Title>P4X Wild Type (1990) in Arginine</Title>
+    <Accession database="GEO">GSM106756</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.Coli, strain P4X, grown in presence of arginine(100 ug/ml)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.Coli, strain P4X, grown in presence of arginine(100 ug/ml)
+      </Characteristics>
+      <Biomaterial-Provider>Marina Caldara VUB Pleinlaan 2, 1050 Brussels,Belgium.
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Cells used for expression analysis were grown in minimal medium (Glansdorff, 1965) supplemented with 0.5% glucose (w/v), L-methionine (100ug ml-1) and with L-arginine (100ug ml-1). For expression analysis, cells were grown in a rotary shaker at 37°C and harvested by centrifugation at mid-log phase ( (OD) 660nm = 0.5) and the metabolism was quenched in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using a RNeasy® RNA isolation kit, according to the manufacturer’s specifications (QIAGEN, Germany) and stored in RNase-free water at –80°C. RNA concentration was determined by UV-spectrometry and its quality controlled by agarose gel electrophoresis.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Total RNA was controlled for its integrity and purity using a Bioanalyzer 2100 (Agilent) and a Nanodrop spectrophotometer. Total RNA (10µg) showing no signs of degradation or impurities, was supplemented with Poly-A RNA controls and reverse transcribed to cDNA using random primers. After RNA degradation with NaOH, cDNA was purified (MinElute PCR Purification Kit®, QIAGEN), analyzed for yield (30-120µg) and purity (260nm/280nm and 260nm/230nm absorption ratios &gt;1.8), then fragmented using DNase-I (Amersham Pharmacia Biosciences) and labelled terminally with biotinylated GeneChipÒ DNA Labeling Reagent (Affymetrix, UK).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A minimum of 1mg fragmented probe was resuspended in 80 ml hybridization buffer containing 3nM of control oligo B2 (Affymetrix, UK). Hybridization was performed in a rotisserie oven at 45°C for 16 hours. The chips were washed and stained in a GeneChip® Fluidics Station 400™ (Affymetrix, UK) using the Mini_prok2v1 protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The chips were scanned with the GeneChip® Scanner 3000 (Affymetrix, UK).
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+Initial data analysis was performed using the GeneChip® Operating Software. Microarray quality control parameters were as follow: noise (RawQ) less than 5, background signal less than 40 (100 target intensity for array scaling), consistent numbers of genes detected as present across arrays.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106756/GSM106756.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106756/GSM106756.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM106756-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM106757">
+    <Status database="GEO">
+      <Submission-Date>2006-04-26</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-09-06</Last-Update-Date>
+    </Status>
+    <Title>P4XB2 Mutant (1992) in Arginine</Title>
+    <Accession database="GEO">GSM106757</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.Coli, strain P4XB2 mutant, grown in presence of arginine(100 ug/ml)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.Coli, strain P4XB2 mutant, grown in presence of arginine(100 ug/ml)
+      </Characteristics>
+      <Biomaterial-Provider>Marina Caldara VUB Pleinlaan 2, 1050 Brussels,Belgium.
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Cells used for expression analysis were grown in minimal medium (Glansdorff, 1965) supplemented with 0.5% glucose (w/v), L-methionine (100ug ml-1) and with L-arginine (100ug ml-1). For expression analysis, cells were grown in a rotary shaker at 37°C and harvested by centrifugation at mid-log phase ( (OD) 660nm = 0.5) and the metabolism was quenched in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using a RNeasy® RNA isolation kit, according to the manufacturer’s specifications (QIAGEN, Germany) and stored in RNase-free water at –80°C. RNA concentration was determined by UV-spectrometry and its quality controlled by agarose gel electrophoresis.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Total RNA was controlled for its integrity and purity using a Bioanalyzer 2100 (Agilent) and a Nanodrop spectrophotometer. Total RNA (10µg) showing no signs of degradation or impurities, was supplemented with Poly-A RNA controls and reverse transcribed to cDNA using random primers. After RNA degradation with NaOH, cDNA was purified (MinElute PCR Purification Kit®, QIAGEN), analyzed for yield (30-120µg) and purity (260nm/280nm and 260nm/230nm absorption ratios &gt;1.8), then fragmented using DNase-I (Amersham Pharmacia Biosciences) and labelled terminally with biotinylated GeneChipÒ DNA Labeling Reagent (Affymetrix, UK).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A minimum of 1mg fragmented probe was resuspended in 80 ml hybridization buffer containing 3nM of control oligo B2 (Affymetrix, UK). Hybridization was performed in a rotisserie oven at 45°C for 16 hours. The chips were washed and stained in a GeneChip® Fluidics Station 400™ (Affymetrix, UK) using the Mini_prok2v1 protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The chips were scanned with the GeneChip® Scanner 3000 (Affymetrix, UK).
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+Initial data analysis was performed using the GeneChip® Operating Software. Microarray quality control parameters were as follow: noise (RawQ) less than 5, background signal less than 40 (100 target intensity for array scaling), consistent numbers of genes detected as present across arrays.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106757/GSM106757.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106757/GSM106757.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM106757-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM106758">
+    <Status database="GEO">
+      <Submission-Date>2006-04-26</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-09-06</Last-Update-Date>
+    </Status>
+    <Title>P4XB2 Mutant (1993) in Arginine</Title>
+    <Accession database="GEO">GSM106758</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.Coli, strain P4XB2 mutant, grown in presence of arginine(100 ug/ml)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.Coli, strain P4XB2 mutant, grown in presence of arginine(100 ug/ml)
+      </Characteristics>
+      <Biomaterial-Provider>Marina Caldara VUB Pleinlaan 2, 1050 Brussels,Belgium.
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Cells used for expression analysis were grown in minimal medium (Glansdorff, 1965) supplemented with 0.5% glucose (w/v), L-methionine (100ug ml-1) and with L-arginine (100ug ml-1). For expression analysis, cells were grown in a rotary shaker at 37°C and harvested by centrifugation at mid-log phase ( (OD) 660nm = 0.5) and the metabolism was quenched in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using a RNeasy® RNA isolation kit, according to the manufacturer’s specifications (QIAGEN, Germany) and stored in RNase-free water at –80°C. RNA concentration was determined by UV-spectrometry and its quality controlled by agarose gel electrophoresis.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Total RNA was controlled for its integrity and purity using a Bioanalyzer 2100 (Agilent) and a Nanodrop spectrophotometer. Total RNA (10µg) showing no signs of degradation or impurities, was supplemented with Poly-A RNA controls and reverse transcribed to cDNA using random primers. After RNA degradation with NaOH, cDNA was purified (MinElute PCR Purification Kit®, QIAGEN), analyzed for yield (30-120µg) and purity (260nm/280nm and 260nm/230nm absorption ratios &gt;1.8), then fragmented using DNase-I (Amersham Pharmacia Biosciences) and labelled terminally with biotinylated GeneChipÒ DNA Labeling Reagent (Affymetrix, UK).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A minimum of 1mg fragmented probe was resuspended in 80 ml hybridization buffer containing 3nM of control oligo B2 (Affymetrix, UK). Hybridization was performed in a rotisserie oven at 45°C for 16 hours. The chips were washed and stained in a GeneChip® Fluidics Station 400™ (Affymetrix, UK) using the Mini_prok2v1 protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The chips were scanned with the GeneChip® Scanner 3000 (Affymetrix, UK).
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+Initial data analysis was performed using the GeneChip® Operating Software. Microarray quality control parameters were as follow: noise (RawQ) less than 5, background signal less than 40 (100 target intensity for array scaling), consistent numbers of genes detected as present across arrays.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106758/GSM106758.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106758/GSM106758.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM106758-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM106759">
+    <Status database="GEO">
+      <Submission-Date>2006-04-26</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2006-09-06</Last-Update-Date>
+    </Status>
+    <Title>P4XB2 Mutant (1994) in Arginine</Title>
+    <Accession database="GEO">GSM106759</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E.Coli, strain P4XB2 mutant, grown in presence of arginine(100 ug/ml)</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics>
+E.Coli, strain P4XB2 mutant, grown in presence of arginine(100 ug/ml)
+      </Characteristics>
+      <Biomaterial-Provider>Marina Caldara VUB Pleinlaan 2, 1050 Brussels,Belgium.
+</Biomaterial-Provider>
+      <Growth-Protocol>
+Cells used for expression analysis were grown in minimal medium (Glansdorff, 1965) supplemented with 0.5% glucose (w/v), L-methionine (100ug ml-1) and with L-arginine (100ug ml-1). For expression analysis, cells were grown in a rotary shaker at 37°C and harvested by centrifugation at mid-log phase ( (OD) 660nm = 0.5) and the metabolism was quenched in liquid nitrogen.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using a RNeasy® RNA isolation kit, according to the manufacturer’s specifications (QIAGEN, Germany) and stored in RNase-free water at –80°C. RNA concentration was determined by UV-spectrometry and its quality controlled by agarose gel electrophoresis.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Total RNA was controlled for its integrity and purity using a Bioanalyzer 2100 (Agilent) and a Nanodrop spectrophotometer. Total RNA (10µg) showing no signs of degradation or impurities, was supplemented with Poly-A RNA controls and reverse transcribed to cDNA using random primers. After RNA degradation with NaOH, cDNA was purified (MinElute PCR Purification Kit®, QIAGEN), analyzed for yield (30-120µg) and purity (260nm/280nm and 260nm/230nm absorption ratios &gt;1.8), then fragmented using DNase-I (Amersham Pharmacia Biosciences) and labelled terminally with biotinylated GeneChipÒ DNA Labeling Reagent (Affymetrix, UK).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+A minimum of 1mg fragmented probe was resuspended in 80 ml hybridization buffer containing 3nM of control oligo B2 (Affymetrix, UK). Hybridization was performed in a rotisserie oven at 45°C for 16 hours. The chips were washed and stained in a GeneChip® Fluidics Station 400™ (Affymetrix, UK) using the Mini_prok2v1 protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The chips were scanned with the GeneChip® Scanner 3000 (Affymetrix, UK).
+    </Scan-Protocol>
+    <Description>
+no additional information
+    </Description>
+    <Data-Processing>
+Initial data analysis was performed using the GeneChip® Operating Software. Microarray quality control parameters were as follow: noise (RawQ) less than 5, background signal less than 40 (100 target intensity for array scaling), consistent numbers of genes detected as present across arrays.
+    </Data-Processing>
+    <Platform-Ref ref="GPL3154" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106759/GSM106759.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM106nnn/GSM106759/GSM106759.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="10208">
+GSM106759-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4724">
+    <Status database="GEO">
+      <Submission-Date>2006-04-26</Submission-Date>
+      <Release-Date>2006-11-01</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Transcriptome analysis of the arginine regulon in E.coli</Title>
+    <Accession database="GEO">GSE4724</Accession>
+    <Pubmed-ID>17074904</Pubmed-ID>
+    <Summary>
+Analysis of the response to arginine of the Escherichia coli K-12 transcriptome by microarray hybridization and real-time quantitative PCR provides a first coherent quantitative picture of the ArgR-mediated repression of arginine biosynthesis and uptake genes. Transcriptional repression was shown to be the major control mechanism of the biosynthetic genes, leaving only limited room for additional transcriptional or post-transcriptional regulations. The art genes coding for the specific arginine uptake system are subject to ArgR-mediated repression, 
+with a strong repression of artJ, coding for the periplasmic binding protein of the system. The hisJQMP genes of the histidine transporter (part of the LAO uptake system) were discovered to be a part of the arginine regulon. Analysis of their control region with reporter gene fusions and electrophoretic mobility shift in the presence of pure ArgR repressor showed the involvement in repression of the ArgR protein and of an ARG box 120 bp upstream of hisJ. 
+No repression of the genes of the AO uptake system was observed. Finally, comparing the time course of arginine repression of gene transcription with the evolution of the specific 
+activities of the cognate enzymes showed that while full genetic repression was achieved two minutes after arginine addition, enzyme concentrations were diluted at the rate of cell 
+division. This emphasizes the importance of the feedback-inhibition of the first enzymatic 
+step of the pathway in controlling the metabolic flow through the biosynthesis in the period following the onset of repression. 
+Keywords: dose response, replicate design, genetic modification design
+    </Summary>
+    <Overall-Design>
+3 groups of 3 replicate samples were analyzed:
+(1) Wild type on minimal medium (strain P4X, slides 1753, 1765, 1989), this created a reference condition
+
+(2) Wild type grown in the presence of arginine (strain P4X plus 100µg/ml of arginine, slides 1754, 1766, 1990), this gave a list of all the genes repressed by the system: ArgR+arginine
+
+(3) Mutant where no active repressor is present; grown in the presence of arginine (strain P4XB2 (argR-) plus 100µg/ml arginine, slides 1992, 1993, 1994). This condition told us which genes are indeed regulated by the system: ArgR+arginine. Those genes are in this case derepressed.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM106504" />
+    <Sample-Ref ref="GSM106751" />
+    <Sample-Ref ref="GSM106752" />
+    <Sample-Ref ref="GSM106753" />
+    <Sample-Ref ref="GSM106755" />
+    <Sample-Ref ref="GSM106756" />
+    <Sample-Ref ref="GSM106757" />
+    <Sample-Ref ref="GSM106758" />
+    <Sample-Ref ref="GSM106759" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE4724/GSE4724_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/95701" />
+  </Series>
+
+</MINiML>

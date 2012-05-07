@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Chris</First><Last>Minion</Last></Person>
+    <Email>fcminion@iastate.edu</Email>
+    <Phone>515-294-6347</Phone>
+    <Fax>515-294-8500</Fax>
+    <Department>VMPM</Department>
+    <Organization>Iowa State University</Organization>
+    <Address>
+      <Line>1130 Vet Med</Line>
+      <City>Ames</City>
+      <State>IA</State>
+      <Zip-Code>50011</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Melissa</First><Middle>L</Middle><Last>Madsen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Michael</First><Middle>D</Middle><Last>Carruthers</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL6272">
+    <Status database="GEO">
+      <Submission-Date>2007-12-12</Submission-Date>
+      <Release-Date>2009-03-31</Release-Date>
+      <Last-Update-Date>2009-03-31</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Spotted PCR Array</Title>
+    <Accession database="GEO">GPL6272</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="155864">Escherichia coli O157:H7 str. EDL933</Organism>
+    <Manufacturer>Chris Minion Laboratory at Iowa State University</Manufacturer>
+    <Manufacture-Protocol>
+The Escherichia coli O157:H7 EDL933 microarray consists of PCR products (100-500 bp) spotted to Corning UltraGAPS™ substrates. Each probe was printed in duplicate, in non-adjacent spots to reduce non-uniform substrate errors in replicated probes. The array consisted of 48 subarrays, with a 15-column x 15-row configuration.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Description>
+Corning UltraGAPS substrates (catalog #40016)
+    </Description>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>unique open reading frame identifier</Description>
+      </Column>
+      <Column position="2">
+        <Name>Lprimer</Name>
+        <Description>Forward or Left primer used in amplification of DNA for spotting</Description>
+      </Column>
+      <Column position="3">
+        <Name>Rprimer</Name>
+        <Description>Reverse or Right primer used in amplification of DNA for spotting</Description>
+      </Column>
+      <Column position="4">
+        <Name>Size</Name>
+        <Description>size of product from primers that was spotted on array</Description>
+      </Column>
+      <Column position="5">
+        <Name>GENOME_ACC</Name>
+        <Description>Genbank or Refseq accession</Description>
+      </Column>
+      <Column position="6">
+        <Name>SEQUENCE</Name>
+        <Description>sequence of PCR product spotted on array</Description>
+      </Column>
+      <Column position="7">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli O157:H7 EDL933[organism]</Link-Suffix>
+      </Column>
+    <External-Data rows="4761">
+GPL6272-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM420170">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2011-03-02</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba vs. Control Slide 1</Title>
+    <Accession database="GEO">GSM420170</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Inside Acanthamoeba
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli O157:H7 EDL933 Outside Control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Outside Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+From each paired sample, 1.5 μg of labeled cDNA was combined, dried-down, resuspended in 60 μl Pronto! cDNA/long oligonucleotide hybridization solution (Corning), incubated at 95°C for 5 min and centrifuged at 13,000 × g for 2 min at room temperature. This solution was then pipetted on a freshly pre-hybridized microarray slide, covered with a 22 x 60 mm HybriSlip (Grace Bio Labs, Bend, OR), placed in a Corning hybridization chamber, and incubated in a 42°C water bath for 12 to 16 h. Array pre-hybridization was conducted using sodium borohydride as previously described (Raghavachari, et al., 2003). Slides were washed according to Corning’s UltraGAPS protocol and dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning, image segmentation, and normalization were conducted as previously described (Madsen, et al., 2006). 
+    </Scan-Protocol>
+    <Description>
+To better understand the impact of intracellular carriage of E. coli O157:H7 within a ruminant protozoa, global transcript levels of strain EDL933 cells grown under within Acanthamoeba were compared to cells grown in ATCC PYG712 using microarrays.
+    </Description>
+    <Data-Processing>
+Mixed model analysis was conducted as previously described (Madsen, et al., 2006) excluding slide region and slide-by-region interaction effects. The value column was not used for analysis or in publication. The normalized values for duplicate spots were averaged within each array to produce one normalized measure of expression for each of the probe sequences and each of the RNA samples. [mean log transformed median centered lowess normalized signal intensity]
+    </Data-Processing>
+    <Platform-Ref ref="GPL6272" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM420nnn/GSM420170/GSM420170.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>n</Name>
+        <Description>number of spots from which spot mean intenstiy was generated</Description>
+      </Column>
+      <Column position="3">
+        <Name>X1</Name>
+        <Description>Slide 1, background subtracted log transformed median centered Lowess normalized signal intensity,inside acanthamoeba, Cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>X2</Name>
+        <Description>Slide 1, background subtracted log transformed median centered Lowess normalized signal intensity,outside control, Cy5</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Gene expression Ratio log(Inside Acanthamoeba trt)-log(outside control)</Description>
+      </Column>
+    <External-Data rows="4761">
+GSM420170-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM420171">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2010-04-21</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba vs. Control Slide 2</Title>
+    <Accession database="GEO">GSM420171</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli O157:H7 EDL933 Outside Control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Outside Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+  
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Inside Acanthamoeba
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+  
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+From each paired sample, 1.5 μg of labeled cDNA was combined, dried-down, resuspended in 60 μl Pronto! cDNA/long oligonucleotide hybridization solution (Corning), incubated at 95°C for 5 min and centrifuged at 13,000 × g for 2 min at room temperature. This solution was then pipetted on a freshly pre-hybridized microarray slide, covered with a 22 x 60 mm HybriSlip (Grace Bio Labs, Bend, OR), placed in a Corning hybridization chamber, and incubated in a 42°C water bath for 12 to 16 h. Array pre-hybridization was conducted using sodium borohydride as previously described (Raghavachari, et al., 2003). Slides were washed according to Corning’s UltraGAPS protocol and dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning, image segmentation, and normalization were conducted as previously described (Madsen, et al., 2006). 
+    </Scan-Protocol>
+    <Description>
+To better understand the impact of intracellular carriage of E. coli O157:H7 within a ruminant protozoa, global transcript levels of strain EDL933 cells grown under within Acanthamoeba were compared to cells grown in ATCC PYG712 using microarrays.
+    </Description>
+    <Data-Processing>
+Mixed model analysis was conducted as previously described (Madsen, et al., 2006) excluding slide region and slide-by-region interaction effects. The value column was not used for analysis or in publication. The normalized values for duplicate spots were averaged within each array to produce one normalized measure of expression for each of the probe sequences and each of the RNA samples. [mean log transformed median centered lowess normalized signal intensity]
+    </Data-Processing>
+    <Platform-Ref ref="GPL6272" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM420nnn/GSM420171/GSM420171.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>n</Name>
+        <Description>number of spots from which spot mean intenstiy was generated</Description>
+      </Column>
+      <Column position="3">
+        <Name>X3</Name>
+        <Description>Slide 2, background subtracted log transformed median centered Lowess normalized signal intensity,outside control, Cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>X4</Name>
+        <Description>Slide 2, background subtracted log transformed median centered Lowess normalized signal intensity,inside acanthamoeba, Cy5</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Gene expression Ratio log(Inside Acanthamoeba trt)-log(outside control)</Description>
+      </Column>
+    <External-Data rows="4761">
+GSM420171-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM420175">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2010-04-21</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba vs. Control Slide 3</Title>
+    <Accession database="GEO">GSM420175</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Inside Acanthamoeba
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli O157:H7 EDL933 Outside Control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Outside Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+From each paired sample, 1.5 μg of labeled cDNA was combined, dried-down, resuspended in 60 μl Pronto! cDNA/long oligonucleotide hybridization solution (Corning), incubated at 95°C for 5 min and centrifuged at 13,000 × g for 2 min at room temperature. This solution was then pipetted on a freshly pre-hybridized microarray slide, covered with a 22 x 60 mm HybriSlip (Grace Bio Labs, Bend, OR), placed in a Corning hybridization chamber, and incubated in a 42°C water bath for 12 to 16 h. Array pre-hybridization was conducted using sodium borohydride as previously described (Raghavachari, et al., 2003). Slides were washed according to Corning’s UltraGAPS protocol and dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning, image segmentation, and normalization were conducted as previously described (Madsen, et al., 2006). 
+    </Scan-Protocol>
+    <Description>
+To better understand the impact of intracellular carriage of E. coli O157:H7 within a ruminant protozoa, global transcript levels of strain EDL933 cells grown under within Acanthamoeba were compared to cells grown in ATCC PYG712 using microarrays.
+    </Description>
+    <Data-Processing>
+Mixed model analysis was conducted as previously described (Madsen, et al., 2006) excluding slide region and slide-by-region interaction effects. The value column was not used for analysis or in publication. The normalized values for duplicate spots were averaged within each array to produce one normalized measure of expression for each of the probe sequences and each of the RNA samples. [mean log transformed median centered lowess normalized signal intensity]
+    </Data-Processing>
+    <Platform-Ref ref="GPL6272" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM420nnn/GSM420175/GSM420175.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>n</Name>
+        <Description>number of spots from which spot mean intenstiy was generated</Description>
+      </Column>
+      <Column position="3">
+        <Name>X5</Name>
+        <Description>Slide 3, background subtracted log transformed median centered Lowess normalized signal intensity,inside acanthamoeba, Cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>X6</Name>
+        <Description>Slide 3, background subtracted log transformed median centered Lowess normalized signal intensity,outside control, Cy5</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Gene expression Ratio log(Inside Acanthamoeba trt)-log(outside control)</Description>
+      </Column>
+    <External-Data rows="4761">
+GSM420175-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM420176">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2010-04-21</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba vs. Control Slide 4</Title>
+    <Accession database="GEO">GSM420176</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli O157:H7 EDL933 Outside Control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Outside Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Inside Acanthamoeba
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+From each paired sample, 1.5 μg of labeled cDNA was combined, dried-down, resuspended in 60 μl Pronto! cDNA/long oligonucleotide hybridization solution (Corning), incubated at 95°C for 5 min and centrifuged at 13,000 × g for 2 min at room temperature. This solution was then pipetted on a freshly pre-hybridized microarray slide, covered with a 22 x 60 mm HybriSlip (Grace Bio Labs, Bend, OR), placed in a Corning hybridization chamber, and incubated in a 42°C water bath for 12 to 16 h. Array pre-hybridization was conducted using sodium borohydride as previously described (Raghavachari, et al., 2003). Slides were washed according to Corning’s UltraGAPS protocol and dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning, image segmentation, and normalization were conducted as previously described (Madsen, et al., 2006). 
+    </Scan-Protocol>
+    <Description>
+To better understand the impact of intracellular carriage of E. coli O157:H7 within a ruminant protozoa, global transcript levels of strain EDL933 cells grown under within Acanthamoeba were compared to cells grown in ATCC PYG712 using microarrays.
+    </Description>
+    <Data-Processing>
+Mixed model analysis was conducted as previously described (Madsen, et al., 2006) excluding slide region and slide-by-region interaction effects. The value column was not used for analysis or in publication. The normalized values for duplicate spots were averaged within each array to produce one normalized measure of expression for each of the probe sequences and each of the RNA samples. [mean log transformed median centered lowess normalized signal intensity]
+    </Data-Processing>
+    <Platform-Ref ref="GPL6272" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM420nnn/GSM420176/GSM420176.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>n</Name>
+        <Description>number of spots from which spot mean intenstiy was generated</Description>
+      </Column>
+      <Column position="3">
+        <Name>X7</Name>
+        <Description>Slide 4, background subtracted log transformed median centered Lowess normalized signal intensity,outside control, Cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>X8</Name>
+        <Description>Slide 4, background subtracted log transformed median centered Lowess normalized signal intensity,inside acanthamoeba, Cy5</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Gene expression Ratio log(Inside Acanthamoeba trt)-log(outside control)</Description>
+      </Column>
+    <External-Data rows="4761">
+GSM420176-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM420177">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2010-04-21</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba vs. Control Slide 5</Title>
+    <Accession database="GEO">GSM420177</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Inside Acanthamoeba
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli O157:H7 EDL933 Outside Control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Outside Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+From each paired sample, 1.5 μg of labeled cDNA was combined, dried-down, resuspended in 60 μl Pronto! cDNA/long oligonucleotide hybridization solution (Corning), incubated at 95°C for 5 min and centrifuged at 13,000 × g for 2 min at room temperature. This solution was then pipetted on a freshly pre-hybridized microarray slide, covered with a 22 x 60 mm HybriSlip (Grace Bio Labs, Bend, OR), placed in a Corning hybridization chamber, and incubated in a 42°C water bath for 12 to 16 h. Array pre-hybridization was conducted using sodium borohydride as previously described (Raghavachari, et al., 2003). Slides were washed according to Corning’s UltraGAPS protocol and dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning, image segmentation, and normalization were conducted as previously described (Madsen, et al., 2006). 
+    </Scan-Protocol>
+    <Description>
+To better understand the impact of intracellular carriage of E. coli O157:H7 within a ruminant protozoa, global transcript levels of strain EDL933 cells grown under within Acanthamoeba were compared to cells grown in ATCC PYG712 using microarrays.
+    </Description>
+    <Data-Processing>
+Mixed model analysis was conducted as previously described (Madsen, et al., 2006) excluding slide region and slide-by-region interaction effects. The value column was not used for analysis or in publication. The normalized values for duplicate spots were averaged within each array to produce one normalized measure of expression for each of the probe sequences and each of the RNA samples. [mean log transformed median centered lowess normalized signal intensity]
+    </Data-Processing>
+    <Platform-Ref ref="GPL6272" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM420nnn/GSM420177/GSM420177.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>n</Name>
+        <Description>number of spots from which spot mean intenstiy was generated</Description>
+      </Column>
+      <Column position="3">
+        <Name>X9</Name>
+        <Description>Slide 5, background subtracted log transformed median centered Lowess normalized signal intensity,inside acanthamoeba, Cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>X10</Name>
+        <Description>Slide 5, background subtracted log transformed median centered Lowess normalized signal intensity,outside control, Cy5</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Gene expression Ratio log(Inside Acanthamoeba trt)-log(outside control)</Description>
+      </Column>
+    <External-Data rows="4761">
+GSM420177-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM420178">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2010-04-21</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba vs. Control Slide 6</Title>
+    <Accession database="GEO">GSM420178</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli O157:H7 EDL933 Outside Control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Outside Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Inside Acanthamoeba
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+From each paired sample, 1.5 μg of labeled cDNA was combined, dried-down, resuspended in 60 μl Pronto! cDNA/long oligonucleotide hybridization solution (Corning), incubated at 95°C for 5 min and centrifuged at 13,000 × g for 2 min at room temperature. This solution was then pipetted on a freshly pre-hybridized microarray slide, covered with a 22 x 60 mm HybriSlip (Grace Bio Labs, Bend, OR), placed in a Corning hybridization chamber, and incubated in a 42°C water bath for 12 to 16 h. Array pre-hybridization was conducted using sodium borohydride as previously described (Raghavachari, et al., 2003). Slides were washed according to Corning’s UltraGAPS protocol and dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning, image segmentation, and normalization were conducted as previously described (Madsen, et al., 2006). 
+    </Scan-Protocol>
+    <Description>
+To better understand the impact of intracellular carriage of E. coli O157:H7 within a ruminant protozoa, global transcript levels of strain EDL933 cells grown under within Acanthamoeba were compared to cells grown in ATCC PYG712 using microarrays.
+    </Description>
+    <Data-Processing>
+Mixed model analysis was conducted as previously described (Madsen, et al., 2006) excluding slide region and slide-by-region interaction effects. The value column was not used for analysis or in publication. The normalized values for duplicate spots were averaged within each array to produce one normalized measure of expression for each of the probe sequences and each of the RNA samples. [mean log transformed median centered lowess normalized signal intensity]
+    </Data-Processing>
+    <Platform-Ref ref="GPL6272" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM420nnn/GSM420178/GSM420178.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>n</Name>
+        <Description>number of spots from which spot mean intenstiy was generated</Description>
+      </Column>
+      <Column position="3">
+        <Name>X11</Name>
+        <Description>Slide 6, background subtracted log transformed median centered Lowess normalized signal intensity,outside control, Cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>X12</Name>
+        <Description>Slide 6, background subtracted log transformed median centered Lowess normalized signal intensity,inside acanthamoeba, Cy5</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Gene expression Ratio log(Inside Acanthamoeba trt)-log(outside control)</Description>
+      </Column>
+    <External-Data rows="4761">
+GSM420178-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM420180">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2010-04-21</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba vs. Control Slide 7</Title>
+    <Accession database="GEO">GSM420180</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Inside Acanthamoeba
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli O157:H7 EDL933 Outside Control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Outside Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+From each paired sample, 1.5 μg of labeled cDNA was combined, dried-down, resuspended in 60 μl Pronto! cDNA/long oligonucleotide hybridization solution (Corning), incubated at 95°C for 5 min and centrifuged at 13,000 × g for 2 min at room temperature. This solution was then pipetted on a freshly pre-hybridized microarray slide, covered with a 22 x 60 mm HybriSlip (Grace Bio Labs, Bend, OR), placed in a Corning hybridization chamber, and incubated in a 42°C water bath for 12 to 16 h. Array pre-hybridization was conducted using sodium borohydride as previously described (Raghavachari, et al., 2003). Slides were washed according to Corning’s UltraGAPS protocol and dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning, image segmentation, and normalization were conducted as previously described (Madsen, et al., 2006). 
+    </Scan-Protocol>
+    <Description>
+To better understand the impact of intracellular carriage of E. coli O157:H7 within a ruminant protozoa, global transcript levels of strain EDL933 cells grown under within Acanthamoeba were compared to cells grown in ATCC PYG712 using microarrays.
+    </Description>
+    <Data-Processing>
+Mixed model analysis was conducted as previously described (Madsen, et al., 2006) excluding slide region and slide-by-region interaction effects. The value column was not used for analysis or in publication. The normalized values for duplicate spots were averaged within each array to produce one normalized measure of expression for each of the probe sequences and each of the RNA samples. [mean log transformed median centered lowess normalized signal intensity]
+    </Data-Processing>
+    <Platform-Ref ref="GPL6272" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM420nnn/GSM420180/GSM420180.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>n</Name>
+        <Description>number of spots from which spot mean intenstiy was generated</Description>
+      </Column>
+      <Column position="3">
+        <Name>X13</Name>
+        <Description>Slide 7, background subtracted log transformed median centered Lowess normalized signal intensity,inside acanthamoeba, Cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>X14</Name>
+        <Description>Slide 7, background subtracted log transformed median centered Lowess normalized signal intensity,outside control, Cy5</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Gene expression Ratio log(Inside Acanthamoeba trt)-log(outside control)</Description>
+      </Column>
+    <External-Data rows="4761">
+GSM420180-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM420181">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2010-04-21</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba vs. Control Slide 8</Title>
+    <Accession database="GEO">GSM420181</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli O157:H7 EDL933 Outside Control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Outside Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Inside Acanthamoeba
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+From each paired sample, 1.5 μg of labeled cDNA was combined, dried-down, resuspended in 60 μl Pronto! cDNA/long oligonucleotide hybridization solution (Corning), incubated at 95°C for 5 min and centrifuged at 13,000 × g for 2 min at room temperature. This solution was then pipetted on a freshly pre-hybridized microarray slide, covered with a 22 x 60 mm HybriSlip (Grace Bio Labs, Bend, OR), placed in a Corning hybridization chamber, and incubated in a 42°C water bath for 12 to 16 h. Array pre-hybridization was conducted using sodium borohydride as previously described (Raghavachari, et al., 2003). Slides were washed according to Corning’s UltraGAPS protocol and dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning, image segmentation, and normalization were conducted as previously described (Madsen, et al., 2006). 
+    </Scan-Protocol>
+    <Description>
+To better understand the impact of intracellular carriage of E. coli O157:H7 within a ruminant protozoa, global transcript levels of strain EDL933 cells grown under within Acanthamoeba were compared to cells grown in ATCC PYG712 using microarrays.
+    </Description>
+    <Data-Processing>
+Mixed model analysis was conducted as previously described (Madsen, et al., 2006) excluding slide region and slide-by-region interaction effects. The value column was not used for analysis or in publication. The normalized values for duplicate spots were averaged within each array to produce one normalized measure of expression for each of the probe sequences and each of the RNA samples. [mean log transformed median centered lowess normalized signal intensity]
+    </Data-Processing>
+    <Platform-Ref ref="GPL6272" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM420nnn/GSM420181/GSM420181.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>n</Name>
+        <Description>number of spots from which spot mean intenstiy was generated</Description>
+      </Column>
+      <Column position="3">
+        <Name>X15</Name>
+        <Description>Slide 8, background subtracted log transformed median centered Lowess normalized signal intensity,outside control, Cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>X16</Name>
+        <Description>Slide 8, background subtracted log transformed median centered Lowess normalized signal intensity,inside acanthamoeba, Cy5</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Gene expression Ratio log(Inside Acanthamoeba trt)-log(outside control)</Description>
+      </Column>
+    <External-Data rows="4761">
+GSM420181-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM420182">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2010-04-21</Last-Update-Date>
+    </Status>
+    <Title>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba vs. Control Slide 9</Title>
+    <Accession database="GEO">GSM420182</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Escherichia coli O157:H7 EDL933 Inside Acanthamoeba</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Inside Acanthamoeba
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Escherichia coli O157:H7 EDL933 Outside Control</Source>
+      <Organism taxid="562">Escherichia coli</Organism>
+      <Characteristics tag="growth condition">
+Outside Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from samples using the RNeasy Mini Kit (Qiagen). Prior to lysis all samples were incubated for 30 min on ice in RNA stop solution (0.1% SDS, 1% Acidic phenol, 19% ethanol, ice cold). The lysis and digestion protocol was followed with two 50 μl ddH20 elutions. Each sample was treated with 2 μl of DNase (Ambion, Austin, TX) at 37°C for 30 min. Samples were purified and concentrated using Microcon YM-30 columns (Millipore, Billerica, MA), and the quantity and purity were determined using an ND-1000 spectrophotometer (Nanodrop, Wilmington, DE). Samples were determined to be free of contaminating genomic DNA by absence of a band on a DNA electrophoresis gel after 30 rounds of PCR.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Targets were generated from 10 µg of DNase treated total RNA as follows. Ten µg of total RNA was combined with 1 μl of 10 µg/μl random hexamers (Integrated DNA Technologies) and ddH20 was added to bring the total reaction volume to 15.5 μl. Samples were incubated at 70°C for 10 min followed by 10 min incubation on ice. After incubation, 14.5 μl of a reaction mix (6 μl of 5x First Strand Buffer, 1.2 μl of 25x aa-dUTP/dNTP mix (Fermentas, Glen Burnie, MD), 3 μl 0.1M DTT, 2 μl Superscript III 200U/ μl (Invitrogen Corp., Carlsbad, CA), 2.4 μl RNase-free water) was added and reactions were incubated at 42°C for at least 2 hrs. After incubation, RNA was immediately hydrolyzed by incubation with 3 μl 0.1 M ETDA and 3.5 μl 0.1 M NaOH at 65°C for 10 min. The pH was neutralized with the addition of 36.5 μl of 500 mM HEPES (pH 7.0). Reactions were purified using the Mo Bio UltraClean PCR Clean-Up Kit (MO BIO Laboratories, Inc., Carlsbad, CA), quantified using the ND-1000 spectrophotometer, dried-down, and resuspended in 10 μl RNase-free water and 1.5 μl sodium bicarbonate (pH 8.7). After 10 min, 6 μl of Cy 3 (catalog number PA25001) or Cy 5 (catalog number PA23001) (GE Healthcare, Piscataway, NJ) were added according the microarray experimental design, and samples were incubated at room temperature for 3 h. Dyes were prepared by resuspending a single tube of dye in 72 μl of DMSO and storing in 6 μl aliquots at -70°C until use. Dye coupled reactions were purified in the same manner as cDNA synthesis reactions. Frequency of dye incorporation and yield was determined using the ND-1000 spectrophotometer.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+From each paired sample, 1.5 μg of labeled cDNA was combined, dried-down, resuspended in 60 μl Pronto! cDNA/long oligonucleotide hybridization solution (Corning), incubated at 95°C for 5 min and centrifuged at 13,000 × g for 2 min at room temperature. This solution was then pipetted on a freshly pre-hybridized microarray slide, covered with a 22 x 60 mm HybriSlip (Grace Bio Labs, Bend, OR), placed in a Corning hybridization chamber, and incubated in a 42°C water bath for 12 to 16 h. Array pre-hybridization was conducted using sodium borohydride as previously described (Raghavachari, et al., 2003). Slides were washed according to Corning’s UltraGAPS protocol and dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning, image segmentation, and normalization were conducted as previously described (Madsen, et al., 2006). 
+    </Scan-Protocol>
+    <Description>
+To better understand the impact of intracellular carriage of E. coli O157:H7 within a ruminant protozoa, global transcript levels of strain EDL933 cells grown under within Acanthamoeba were compared to cells grown in ATCC PYG712 using microarrays.
+    </Description>
+    <Data-Processing>
+Mixed model analysis was conducted as previously described (Madsen, et al., 2006) excluding slide region and slide-by-region interaction effects. The value column was not used for analysis or in publication. The normalized values for duplicate spots were averaged within each array to produce one normalized measure of expression for each of the probe sequences and each of the RNA samples. [mean log transformed median centered lowess normalized signal intensity]
+    </Data-Processing>
+    <Platform-Ref ref="GPL6272" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM420nnn/GSM420182/GSM420182.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>n</Name>
+        <Description>number of spots from which spot mean intenstiy was generated</Description>
+      </Column>
+      <Column position="3">
+        <Name>X17</Name>
+        <Description>Slide 9, background subtracted log transformed median centered Lowess normalized signal intensity,inside acanthamoeba, Cy3</Description>
+      </Column>
+      <Column position="4">
+        <Name>X18</Name>
+        <Description>Slide 9, background subtracted log transformed median centered Lowess normalized signal intensity,outside control, Cy5</Description>
+      </Column>
+      <Column position="5">
+        <Name>VALUE</Name>
+        <Description>Gene expression Ratio log(Inside Acanthamoeba trt)-log(outside control)</Description>
+      </Column>
+    <External-Data rows="4761">
+GSM420182-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE16762">
+    <Status database="GEO">
+      <Submission-Date>2009-06-23</Submission-Date>
+      <Release-Date>2010-12-01</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Transcriptome analysis of Escherichia coli O157:H7 EDL933 inside Acanthamoeba using microarrays</Title>
+    <Accession database="GEO">GSE16762</Accession>
+    <Pubmed-ID>20831595</Pubmed-ID>
+    <Summary>
+The transcriptome of Escherichia coli K-12 has been widely studied over a variety of conditions for the past decade while such studies involving E. coli O157:H7, its pathogenic cousin, are just now being conducted. To better understand the impact of intracellular life within a ruminant and environmental protozoan on E. coli O157:H7, global transcript levels of strain EDL933 cells inside Acanthamoeba were compared to cell grown in the protozoan media (ATCC PYG712) by microarray.
+    </Summary>
+    <Overall-Design>
+Nine independent RNA samples from cell from within Acanthamoeba were paired with seven independent RNA samples from control cultures for hybridization to nine two-color microarrays. For four arrays, the control RNA sample was labeled with Cy3 dye and the experimental RNA sample was labeled with Cy5 dye, the dyes were reversed for the other five arrays to overcome dye bias.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM420170" />
+    <Sample-Ref ref="GSM420171" />
+    <Sample-Ref ref="GSM420175" />
+    <Sample-Ref ref="GSM420176" />
+    <Sample-Ref ref="GSM420177" />
+    <Sample-Ref ref="GSM420178" />
+    <Sample-Ref ref="GSM420180" />
+    <Sample-Ref ref="GSM420181" />
+    <Sample-Ref ref="GSM420182" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE16762/GSE16762_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/117413" />
+  </Series>
+
+</MINiML>

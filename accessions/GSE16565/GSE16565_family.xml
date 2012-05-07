@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>JongHwan</First><Last>Baek</Last></Person>
+    <Laboratory>LBMB BLDG 37 RM6044</Laboratory>
+    <Department>NCI</Department>
+    <Organization>NIH</Organization>
+    <Address>
+      <Line>37 Convent Dr</Line>
+      <City>Bethesda</City>
+      <State>MD</State>
+      <Zip-Code>20892</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Sang Yup</First><Last>Lee</Last></Person>
+    <Email>jinhwan@kaist.ac.kr</Email>
+    <Organization>KAIST</Organization>
+    <Address>
+      <Line>Dept. of Chemical &amp; Biomolecular Engineering, KAIST, 373-1 Guseong-dong, Yuseong-gu </Line>
+      <City>Daejeon</City>
+      <Postal-Code>305-701, </Postal-Code>
+      <Country>South Korea</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>SangYup</First><Last>Lee</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5475">
+    <Status database="GEO">
+      <Submission-Date>2007-07-07</Submission-Date>
+      <Release-Date>2007-10-26</Release-Date>
+      <Last-Update-Date>2007-10-26</Last-Update-Date>
+    </Status>
+    <Title>TwinChip_EColi_6k</Title>
+    <Accession database="GEO">GPL5475</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="562">Escherichia coli</Organism>
+    <Manufacturer>Digital Genomics, Seoul, Korea</Manufacturer>
+    <Manufacture-Protocol>
+The arrays are of 3- by 3-mm size and have an active surface area of 2.4 by 2.4 mm mounted onto the bottom of standard 1.5-ml microreaction tubes. 
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>ARRAY_ID</Name>
+      </Column>
+    <External-Data rows="4289">
+GPL5475-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM417049">
+    <Status database="GEO">
+      <Submission-Date>2009-06-13</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-25</Last-Update-Date>
+    </Status>
+    <Title>ada mutant vs. wildtype</Title>
+    <Accession database="GEO">GSM417049</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cy5 mutant</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+ada deletion mutant
+      </Characteristics>
+      <Characteristics tag="sampling point">
+0.5 h
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cy3 wildtype</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="sampling point">
+0.5 h
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.	Dissolve the dried labeled sample in a reasonable volume of hybridization buffer depending on the area to be covered. (Typically, 22X22mm cover-slip requires 25 ㎕ of hybridization buffer. 22X60mm cover-slip requires 60 ㎕).
+2.	Heat the labeled sample preparation for 5min at 95℃.
+3.	Spin down for 30 sec. Do not put on ice!!!
+4.	Place slide in the hybridization chamber. Put 20㎕ of 3XSSC to the chamber at both ends of the slide.
+5.	Pipette the labeled target onto the slide surface.
+6.	Carefully place the cover-slip on top of the slide. Try to reduce the formation of air bubbles.
+7.	Seal the hybridization chamber and incubate in 42℃. Water-bath or hybridization oven for more than 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+DNA chips were scanned using an Axon GenePix 4000B Scanner(Axon Instruments, Union City, CA, USA) with the laser set to 532 and 635 nm, the photomultiplier tube (PMT) voltage to 600 and the scan resolution to 10 µm.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+Scanned images were analyzed with GenePix Pro 3.0 software (Axon Instruments, Union City, CA) to obtain gene expression ratios. The signal intensities higher than the mean background intensities by 3-fold greater than the overall standard deviation were chosen. Global normalization was carried out by dividing each of fluorescence intensities by their sums. The expression level of each gene was normalized to the variance of 1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5475" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM417nnn/GSM417049/GSM417049.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (ada mutant strain / wildtype strain)</Description>
+      </Column>
+    <External-Data rows="4276">
+GSM417049-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM417435">
+    <Status database="GEO">
+      <Submission-Date>2009-06-15</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-25</Last-Update-Date>
+    </Status>
+    <Title>wildtype MMS at 0.5</Title>
+    <Accession database="GEO">GSM417435</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cy5 wildtype with MMS at 0.5 h</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="sampling point">
+0.5 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+MMS
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cy3 wildtype without MMS at 0.5</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="sampling point">
+0.5 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.	Dissolve the dried labeled sample in a reasonable volume of hybridization buffer depending on the area to be covered. (Typically, 22X22mm cover-slip requires 25 ㎕ of hybridization buffer. 22X60mm cover-slip requires 60 ㎕).
+2.	Heat the labeled sample preparation for 5min at 95℃.
+3.	Spin down for 30 sec. Do not put on ice!!!
+4.	Place slide in the hybridization chamber. Put 20㎕ of 3XSSC to the chamber at both ends of the slide.
+5.	Pipette the labeled target onto the slide surface.
+6.	Carefully place the cover-slip on top of the slide. Try to reduce the formation of air bubbles.
+7.	Seal the hybridization chamber and incubate in 42℃. Water-bath or hybridization oven for more than 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+DNA chips were scanned using an Axon GenePix 4000B Scanner(Axon Instruments, Union City, CA, USA) with the laser set to 532 and 635 nm, the photomultiplier tube (PMT) voltage to 600 and the scan resolution to 10 µm.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+Scanned images were analyzed with GenePix Pro 3.0 software (Axon Instruments, Union City, CA) to obtain gene expression ratios. The signal intensities higher than the mean background intensities by 3-fold greater than the overall standard deviation were chosen. Global normalization was carried out by dividing each of fluorescence intensities by their sums. The expression level of each gene was normalized to the variance of 1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5475" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM417nnn/GSM417435/GSM417435.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (wildtype + MMS at 0.5 h / wildtype - MMS at 0.5 h)</Description>
+      </Column>
+    <External-Data rows="4043">
+GSM417435-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM417436">
+    <Status database="GEO">
+      <Submission-Date>2009-06-15</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-25</Last-Update-Date>
+    </Status>
+    <Title>wildtype MMS at 1.5 h</Title>
+    <Accession database="GEO">GSM417436</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cy5 wildtype with MMS</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="sampling point">
+1.5 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+MMS
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cy3 wildtype without MMS</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="sampling point">
+1.5 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.	Dissolve the dried labeled sample in a reasonable volume of hybridization buffer depending on the area to be covered. (Typically, 22X22mm cover-slip requires 25 ㎕ of hybridization buffer. 22X60mm cover-slip requires 60 ㎕).
+2.	Heat the labeled sample preparation for 5min at 95℃.
+3.	Spin down for 30 sec. Do not put on ice!!!
+4.	Place slide in the hybridization chamber. Put 20㎕ of 3XSSC to the chamber at both ends of the slide.
+5.	Pipette the labeled target onto the slide surface.
+6.	Carefully place the cover-slip on top of the slide. Try to reduce the formation of air bubbles.
+7.	Seal the hybridization chamber and incubate in 42℃. Water-bath or hybridization oven for more than 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+DNA chips were scanned using an Axon GenePix 4000B Scanner(Axon Instruments, Union City, CA, USA) with the laser set to 532 and 635 nm, the photomultiplier tube (PMT) voltage to 600 and the scan resolution to 10 µm.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+Scanned images were analyzed with GenePix Pro 3.0 software (Axon Instruments, Union City, CA) to obtain gene expression ratios. The signal intensities higher than the mean background intensities by 3-fold greater than the overall standard deviation were chosen. Global normalization was carried out by dividing each of fluorescence intensities by their sums. The expression level of each gene was normalized to the variance of 1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5475" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM417nnn/GSM417436/GSM417436.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (wildtype + MMS at 1.5 h / wildtype - MMS at 1.5 h)</Description>
+      </Column>
+    <External-Data rows="4043">
+GSM417436-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM417437">
+    <Status database="GEO">
+      <Submission-Date>2009-06-15</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-25</Last-Update-Date>
+    </Status>
+    <Title>wildtype MMS 3.9 h</Title>
+    <Accession database="GEO">GSM417437</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cy5 wildtype with MMS at 3.9 h</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="sampling point">
+3.9 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+MMS
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wildtype without MMS at 3.9 h</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="sampling point">
+3.9 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.	Dissolve the dried labeled sample in a reasonable volume of hybridization buffer depending on the area to be covered. (Typically, 22X22mm cover-slip requires 25 ㎕ of hybridization buffer. 22X60mm cover-slip requires 60 ㎕).
+2.	Heat the labeled sample preparation for 5min at 95℃.
+3.	Spin down for 30 sec. Do not put on ice!!!
+4.	Place slide in the hybridization chamber. Put 20㎕ of 3XSSC to the chamber at both ends of the slide.
+5.	Pipette the labeled target onto the slide surface.
+6.	Carefully place the cover-slip on top of the slide. Try to reduce the formation of air bubbles.
+7.	Seal the hybridization chamber and incubate in 42℃. Water-bath or hybridization oven for more than 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+DNA chips were scanned using an Axon GenePix 4000B Scanner(Axon Instruments, Union City, CA, USA) with the laser set to 532 and 635 nm, the photomultiplier tube (PMT) voltage to 600 and the scan resolution to 10 µm.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+Scanned images were analyzed with GenePix Pro 3.0 software (Axon Instruments, Union City, CA) to obtain gene expression ratios. The signal intensities higher than the mean background intensities by 3-fold greater than the overall standard deviation were chosen. Global normalization was carried out by dividing each of fluorescence intensities by their sums. The expression level of each gene was normalized to the variance of 1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5475" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM417nnn/GSM417437/GSM417437.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (wildtype + MMS at 3.9 h / wildtype - MMS at 3.9 h)</Description>
+      </Column>
+    <External-Data rows="4043">
+GSM417437-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM417438">
+    <Status database="GEO">
+      <Submission-Date>2009-06-15</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-25</Last-Update-Date>
+    </Status>
+    <Title>ada mutant MMS at 0.5 h</Title>
+    <Accession database="GEO">GSM417438</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cy5 ada mutant with MMS at 0.5 h</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+ada deletion mutant
+      </Characteristics>
+      <Characteristics tag="sampling point">
+0.5 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+MMS
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cy3 ada mutant without MMS at 0.5 h</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+ada deletion mutant
+      </Characteristics>
+      <Characteristics tag="sampling point">
+0.5 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.	Dissolve the dried labeled sample in a reasonable volume of hybridization buffer depending on the area to be covered. (Typically, 22X22mm cover-slip requires 25 ㎕ of hybridization buffer. 22X60mm cover-slip requires 60 ㎕).
+2.	Heat the labeled sample preparation for 5min at 95℃.
+3.	Spin down for 30 sec. Do not put on ice!!!
+4.	Place slide in the hybridization chamber. Put 20㎕ of 3XSSC to the chamber at both ends of the slide.
+5.	Pipette the labeled target onto the slide surface.
+6.	Carefully place the cover-slip on top of the slide. Try to reduce the formation of air bubbles.
+7.	Seal the hybridization chamber and incubate in 42℃. Water-bath or hybridization oven for more than 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+DNA chips were scanned using an Axon GenePix 4000B Scanner(Axon Instruments, Union City, CA, USA) with the laser set to 532 and 635 nm, the photomultiplier tube (PMT) voltage to 600 and the scan resolution to 10 µm.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+Scanned images were analyzed with GenePix Pro 3.0 software (Axon Instruments, Union City, CA) to obtain gene expression ratios. The signal intensities higher than the mean background intensities by 3-fold greater than the overall standard deviation were chosen. Global normalization was carried out by dividing each of fluorescence intensities by their sums. The expression level of each gene was normalized to the variance of 1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5475" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM417nnn/GSM417438/GSM417438.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (ada mutant + MMS at 0.5 h / ada mutant - MMS at 0.5 h)</Description>
+      </Column>
+    <External-Data rows="4022">
+GSM417438-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM417439">
+    <Status database="GEO">
+      <Submission-Date>2009-06-15</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-25</Last-Update-Date>
+    </Status>
+    <Title>ada mutant MMS 1.5 h</Title>
+    <Accession database="GEO">GSM417439</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cy5 ada mutant with MMS at 1.5 h</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+ada deletion mutant
+      </Characteristics>
+      <Characteristics tag="sampling point">
+1.5 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+MMS
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cy3 ada mutant without MMS at 1.5 h</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+ada deletion mutant
+      </Characteristics>
+      <Characteristics tag="sampling point">
+1.5 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.	Dissolve the dried labeled sample in a reasonable volume of hybridization buffer depending on the area to be covered. (Typically, 22X22mm cover-slip requires 25 ㎕ of hybridization buffer. 22X60mm cover-slip requires 60 ㎕).
+2.	Heat the labeled sample preparation for 5min at 95℃.
+3.	Spin down for 30 sec. Do not put on ice!!!
+4.	Place slide in the hybridization chamber. Put 20㎕ of 3XSSC to the chamber at both ends of the slide.
+5.	Pipette the labeled target onto the slide surface.
+6.	Carefully place the cover-slip on top of the slide. Try to reduce the formation of air bubbles.
+7.	Seal the hybridization chamber and incubate in 42℃. Water-bath or hybridization oven for more than 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+DNA chips were scanned using an Axon GenePix 4000B Scanner(Axon Instruments, Union City, CA, USA) with the laser set to 532 and 635 nm, the photomultiplier tube (PMT) voltage to 600 and the scan resolution to 10 µm.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+Scanned images were analyzed with GenePix Pro 3.0 software (Axon Instruments, Union City, CA) to obtain gene expression ratios. The signal intensities higher than the mean background intensities by 3-fold greater than the overall standard deviation were chosen. Global normalization was carried out by dividing each of fluorescence intensities by their sums. The expression level of each gene was normalized to the variance of 1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5475" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM417nnn/GSM417439/GSM417439.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (ada mutant + MMS at 1.5 h / ada mutant - MMS at 1.5 h)</Description>
+      </Column>
+    <External-Data rows="4022">
+GSM417439-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM417440">
+    <Status database="GEO">
+      <Submission-Date>2009-06-15</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-25</Last-Update-Date>
+    </Status>
+    <Title>ada mutant MMS at 3.9 h</Title>
+    <Accession database="GEO">GSM417440</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Cy5 ada mutant with MMS at 3.9 h</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+ada deletion mutant
+      </Characteristics>
+      <Characteristics tag="sampling point">
+3.9 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+MMS
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Cy3 ada mutant without MMS at 3.9 h</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics tag="genotype">
+ada deletion mutant
+      </Characteristics>
+      <Characteristics tag="sampling point">
+3.9 h
+      </Characteristics>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Growth-Protocol>
+100 ml LB medium, 37 degree C, 250 rpm shaking
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extraction kit (RNeasy mini kit, Qiagen, USA) was used according to the manufacturer's protocol
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Indirectly labelled using the recommended protocol provided by Digital genomics (Korea)
+1.	To 45 ug of total RNA, add necessary control RNA mixture and 2ul of oligo(dT) primer (0.5ug/ul ). Make the final volume up to 31uL with RNase-free water. For human and mouse RNA samples, 20ug of total RNA is sufficient for hybridization in ASP. For Drosophila RNA sample, 50 ug of total RNA is needed for ASP. For less amount of RNA, hybridization should be performed mannually in a smaller volume of hybridization buffer.
+2.	Mix well and incubate at 70 degrees C for 10 minutes. Chill on ice for 1 min. Spin briefly.
+3.	Add followings to the RNA solution:
+5X First Strand buffer	 10uL
+0.1 M DTT	 5uL
+Rnasin	 1uL
+50X aminoallyl-dNTP mix	1uL
+SuperScript II (200U/uL)	 2uL
+4.	Mix and incubate at 42 °C for 1 hr. Add additional 1ul of superscript II and incubate for another 1 hr.
+5.	To hydrolyze RNA, add 16.5ul of 1 M NaOH and 16.5ul of 0.5 M EDTA. Mix and incubate at 65 °C for 15 minutes. Add 16.5uL of 1 M HCl to neutralize pH.
+6.	Clean-up the cDNA reaction with Microcon YM-30 (Cat No. 42409)
+7.	Dry sample in a speed vac. Add D.W. and 1M sodium carbonate buffer to resuspend cDNA pellet in 9.0ul of 0.1M sodium carbonate buffer
+8.	Add 2.0uL of the appropriate NHS-ester Cy dye
+9.	Incubate the reaction for 1 hour in the dark at room temperature.
+10.	Clean up the coupling reaction with QIAquick PCR purification kit. Repeat the elution step twice with 30uL elution buffer to get 60uL of elution volumn.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.	Dissolve the dried labeled sample in a reasonable volume of hybridization buffer depending on the area to be covered. (Typically, 22X22mm cover-slip requires 25 ㎕ of hybridization buffer. 22X60mm cover-slip requires 60 ㎕).
+2.	Heat the labeled sample preparation for 5min at 95℃.
+3.	Spin down for 30 sec. Do not put on ice!!!
+4.	Place slide in the hybridization chamber. Put 20㎕ of 3XSSC to the chamber at both ends of the slide.
+5.	Pipette the labeled target onto the slide surface.
+6.	Carefully place the cover-slip on top of the slide. Try to reduce the formation of air bubbles.
+7.	Seal the hybridization chamber and incubate in 42℃. Water-bath or hybridization oven for more than 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+DNA chips were scanned using an Axon GenePix 4000B Scanner(Axon Instruments, Union City, CA, USA) with the laser set to 532 and 635 nm, the photomultiplier tube (PMT) voltage to 600 and the scan resolution to 10 µm.
+    </Scan-Protocol>
+    <Description>
+n/a
+    </Description>
+    <Data-Processing>
+Scanned images were analyzed with GenePix Pro 3.0 software (Axon Instruments, Union City, CA) to obtain gene expression ratios. The signal intensities higher than the mean background intensities by 3-fold greater than the overall standard deviation were chosen. Global normalization was carried out by dividing each of fluorescence intensities by their sums. The expression level of each gene was normalized to the variance of 1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5475" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM417nnn/GSM417440/GSM417440.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (ada mutant + MMS at 3.9 h / ada mutant - MMS at 3.9 h)</Description>
+      </Column>
+    <External-Data rows="4022">
+GSM417440-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE16565">
+    <Status database="GEO">
+      <Submission-Date>2009-06-11</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Transcriptome analysis of Escherichia coli K-12 and ada mutant</Title>
+    <Accession database="GEO">GSE16565</Accession>
+    <Pubmed-ID>19728878</Pubmed-ID>
+    <Summary>
+Alkylation damage to DNA occurs when cells encounter alkylating agents in the environment or when active alkylators are generated by nitrosation of amino acids in metabolic pathways. To cope with DNA alkylation damage, cells have evolved genes that encode proteins with alkylation-specific DNA repair activities. It is notable that these repair systems are conserved from bacteria to humans.  In Escherichia coli, cells exposed to a low concentration of an alkylating agent, such as N-methyl-N’-nitro-N-nitrosoguanidine (MNNG) or methyl methanesulfonate (MMS), show a remarkable increase in resistance to both the lethal and mutagenic effects of subsequent high-level challenge treatments with the same or other alkylating agents. This increased resistance has been known as “adaptive response” to alkylation damage in DNA. To date, four genes have been identified as components of this response, ada, alkA, alkB and aidB. The ada gene encodes the Ada protein, which has the dual function of a transcriptional regulator for the genes involved in the adaptive response, and a methyltransferase that demethylates two methylated bases (O6meG and O4meT) and methylphosphotriesters produced by methylating agents in the sugar phosphate backbone. The differences between the wild-type and mutant strains were characterized at transcriptome levels. In addition, the global changes in gene expressions in response to alkylating agents (MMS), in E. coli K-12 W3110 and ada mutant strains were also analyzed. The analysis of time- and strain-dependent adaptive responses revealed the regulatory and physiological characteristics of the Ada-dependent adaptive response in E. coli.  
+    </Summary>
+    <Overall-Design>
+In order to examine the intracellular changes that are induced by the ada gene deletion in the MMS-untreated, normal growth condition, the expression levels of genes of ada mutant cells were compared with those of wild-type cells at the mid-log growth phase (at 0.5 h sampling point). Cells were cultivated at 37oC and 250 rpm in 100 mL of Luria-Bertani (LB) medium (10 g/L tryptone, 5 g/L yeast extract, and 5 g/L NaCl) in 250-mL Erlenmeyer flasks. Transcriptome analysis were also performed for the samples (E. coli wildtype and ada mutant strains) taken at 0.5, 1.5 and 3.9 h following MMS treatment for both MMS-treated and -untreated control cultures, and the expression levels were compared. 
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM417049" />
+    <Sample-Ref ref="GSM417435" />
+    <Sample-Ref ref="GSM417436" />
+    <Sample-Ref ref="GSM417437" />
+    <Sample-Ref ref="GSM417438" />
+    <Sample-Ref ref="GSM417439" />
+    <Sample-Ref ref="GSM417440" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE16565/GSE16565_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/116205" />
+  </Series>
+
+</MINiML>

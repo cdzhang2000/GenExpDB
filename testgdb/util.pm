@@ -14,6 +14,8 @@ package testgdb::util;
 use strict;
 use warnings FATAL => 'all', NONFATAL => 'redefine';
 
+use Scalar::Util qw(looks_like_number);
+
 our $ServerName = "http://ec2-23-21-233-38.compute-1.amazonaws.com";
 our $url        = "$ServerName/testgdb";
 our $webloc     = "/modperl/testgdb";
@@ -671,5 +673,20 @@ sub siggenes {
 
 	my $parms = testgdb::webUtil::getSessVar( 'parms' );
 }
+
+
+
+sub transformArray{
+	my @nums=@_;
+	my @numArray=();
+	foreach my $expr (@nums) {
+    	if (looks_like_number($expr)){
+        	push @numArray, $expr;
+		}
+	}
+
+        return @numArray;
+}
+
 
 1;    # return a true value

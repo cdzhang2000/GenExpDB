@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jue</First><Middle>D.</Middle><Last>Wang</Last></Person>
+    <Phone>7137988182</Phone>
+    <Laboratory>Wang</Laboratory>
+    <Department>Molecular and Human Genetics</Department>
+    <Organization>Baylor College of Medicine</Organization>
+    <Address>
+      <Line>1 Baylor Plaza, Rm S911</Line>
+      <City>Houston</City>
+      <State>TX</State>
+      <Zip-Code>77030</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Yan</First><Last>Zhang</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Jue</First><Middle>D</Middle><Last>Wang</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL9855">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-06-01</Last-Update-Date>
+    </Status>
+    <Title>Custom Agilent Escherichia coli 4 x 44k Gene Expression Array</Title>
+    <Accession database="GEO">GPL9855</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+    <Manufacturer>Agilent</Manufacturer>
+    <Manufacture-Protocol>
+Please refer to the manufacturer's web site at http://www.agilent.com/
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Agilent probe name</Description>
+      </Column>
+      <Column position="2">
+        <Name>Column</Name>
+        <Description>Column designation of element</Description>
+      </Column>
+      <Column position="3">
+        <Name>Row</Name>
+        <Description>Row designation of element</Description>
+      </Column>
+      <Column position="4">
+        <Name>SEQUENCE</Name>
+        <Description>Probe sequence</Description>
+      </Column>
+      <Column position="5">
+        <Name>ORF</Name>
+        <Description>Gene name  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND txid511145[Organism:exp]</Link-Suffix>
+      </Column>
+      <Column position="6">
+        <Name>RefNumber</Name>
+      </Column>
+    <External-Data rows="42291">
+GPL9855-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM493002">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>Wild-type Cells Replicate 1</Title>
+    <Accession database="GEO">GSM493002</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Wild-type Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3. MG1655 delta lac cells untreated
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493002/GSM493002.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493002-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493003">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>Wild-type Cells Replicate 2</Title>
+    <Accession database="GEO">GSM493003</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Wild-type Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3. MG1655 delta lac cells untreated
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493003/GSM493003.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493003-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493004">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>Wild-type Cells Replicate 3</Title>
+    <Accession database="GEO">GSM493004</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Wild-type Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3. MG1655 delta lac cells untreated
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493004/GSM493004.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493004-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493005">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>SHX-treated Wild-type Cells Replicate 1</Title>
+    <Accession database="GEO">GSM493005</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SHX-treated Wild-type Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.5mg/ml SHX for 40min
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3. MG1655 delta lac cells treated with SHX
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493005/GSM493005.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493005-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493006">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>SHX-treated Wild-type Cells Replicate 2</Title>
+    <Accession database="GEO">GSM493006</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SHX-treated Wild-type Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.5mg/ml SHX for 40min
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3. MG1655 delta lac cells treated with SHX
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493006/GSM493006.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493006-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493007">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>SHX-treated Wild-type Cells Replicate 3</Title>
+    <Accession database="GEO">GSM493007</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SHX-treated Wild-type Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.5mg/ml SHX for 40min
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3. MG1655 delta lac cells treated with SHX
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493007/GSM493007.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493007-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493008">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>Delta dksA Cells Replicate 1</Title>
+    <Accession database="GEO">GSM493008</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta dksA Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3. MG1655 delta lac delta dksA cells untreated
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493008/GSM493008.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493008-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493009">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>Delta dksA Cells Replicate 2</Title>
+    <Accession database="GEO">GSM493009</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta dksA Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3. MG1655 delta lac delta dksA cells untreated
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493009/GSM493009.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493009-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493010">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>Delta dksA Cells Replicate 3</Title>
+    <Accession database="GEO">GSM493010</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta dksA Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3. MG1655 delta lac delta dksA cells untreated
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493010/GSM493010.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493010-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493011">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>SHX-treated Delta dksA Cells Replicate 1</Title>
+    <Accession database="GEO">GSM493011</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SHX-treated Delta dksA Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.5mg/ml SHX for 40min
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3. MG1655 delta lac delta dksA cells treated with SHX
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493011/GSM493011.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493011-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493012">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>SHX-treated Delta dksA Cells Replicate 2</Title>
+    <Accession database="GEO">GSM493012</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SHX-treated Delta dksA Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.5mg/ml SHX for 40min
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3. MG1655 delta lac delta dksA cells treated with SHX
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493012/GSM493012.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493012-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM493013">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2010-01-05</Last-Update-Date>
+    </Status>
+    <Title>SHX-treated Delta dksA Cells Replicate 3</Title>
+    <Accession database="GEO">GSM493013</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>SHX-treated Delta dksA Cells</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+0.5mg/ml SHX for 40min
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference RNA</Source>
+      <Organism taxid="511145">Escherichia coli str. K-12 substr. MG1655</Organism>
+      <Characteristics tag="growth stage">
+log phase
+      </Characteristics>
+      <Characteristics tag="strain">
+MG1655 delta lac + MG1655 delta lac delta dksA
+      </Characteristics>
+      <Characteristics tag="treatment">
+Pooled RNA from mixture of the same amount of wt, wt+SHX, dksA, dksA+SHX RNA samples
+      </Characteristics>
+      <Treatment-Protocol>
+At OD600~0.3, serine hydroxamate was added to a final concentration of 0.5mg/ml, cells were collected 40 minutes later.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown in M9 medium supplemented with 0.2% glucose and 0.4% casamino acid at 37℃
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using QIAGEN RNeasy Mini Kit following manufacturer's instructions.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+15 µg of RNA were primed with 2.5 µg of random hexamer at 70°C for 10 min, and reversed transcribed at 50°C for 1 h in the presence of 300 U SuperScript III RTase (Invitrogen), 5xRT Buffer, 10mM DTT, 20U RNaseOut (Invitrogen) and 500 µM each dATP, dCTP, dGTP, with 200 µM dTTP, 600 µM aa-dUTP. cDNA samples were incubated with Cy3 (reference) or Cy5 (sample) for 2hrs.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Hybridization was performed following Agilent Two-Color Microarray-Based Prokaryote Analysis Protocol.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanned on a GenePix 4000B Scanner (Axon Instruments).
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3. MG1655 delta lac delta dksA cells treated with SHX
+    </Description>
+    <Data-Processing>
+GenePix Pro (v 6.1) was used for background subtraction and normalization.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9855" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM493nnn/GSM493013/GSM493013.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized log2 ratio (Cy5/Cy3) representing test/reference.</Description>
+      </Column>
+    <External-Data rows="42291">
+GSM493013-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE19742">
+    <Status database="GEO">
+      <Submission-Date>2010-01-05</Submission-Date>
+      <Release-Date>2010-06-01</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Expression profiling of E.coli K-12 wild-type vs. delta dksA cells upon amino acid starvation</Title>
+    <Accession database="GEO">GSE19742</Accession>
+    <Pubmed-ID>20478253</Pubmed-ID>
+    <Summary>
+Actively dividing cells perform robust and accurate DNA replication during fluctuating nutrient availability, yet factors that prevent disruption of replication remain largely unknown. Here we report that DksA, a nutrient-responsive transcription factor, ensures replication completion in Escherichia coli. In the absence of DksA, replication is rapidly arrested upon amino acid starvation. This replication arrest occurs independently of exogenous DNA damage, yet it induces the DNA damage response and recruits the main recombination protein RecA. This microarray experiment compares the transcriptional responses to amino acid starvation in wild-type and delta dksA cells. The SOS-regulated genes are highly induced in delta dksA cells.
+    </Summary>
+    <Overall-Design>
+Four-condition experiment: wt, wt+SHX, delta dksA, delta dksA+SHX. Biological replicates: 3 for each sample. Reference: a mixture of the same amount of the four RNA samples.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM493002" />
+    <Sample-Ref ref="GSM493003" />
+    <Sample-Ref ref="GSM493004" />
+    <Sample-Ref ref="GSM493005" />
+    <Sample-Ref ref="GSM493006" />
+    <Sample-Ref ref="GSM493007" />
+    <Sample-Ref ref="GSM493008" />
+    <Sample-Ref ref="GSM493009" />
+    <Sample-Ref ref="GSM493010" />
+    <Sample-Ref ref="GSM493011" />
+    <Sample-Ref ref="GSM493012" />
+    <Sample-Ref ref="GSM493013" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE19742/GSE19742_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/122209" />
+  </Series>
+
+</MINiML>

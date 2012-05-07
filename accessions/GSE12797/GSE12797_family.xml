@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Herb</First><Middle>E</Middle><Last>Schellhorn</Last></Person>
+    <Email>schell@mcmaster.ca</Email>
+    <Phone>9055259140-27316</Phone>
+    <Laboratory>405</Laboratory>
+    <Department>Biology</Department>
+    <Organization>McMaster University</Organization>
+    <Address>
+      <Line>1280 Main St. W.,</Line>
+      <City>Hamilton</City>
+      <State>ON</State>
+      <Postal-Code>L8S4K1</Postal-Code>
+      <Country>Canada</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Tao</First><Last>Dong</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL199">
+    <Status database="GEO">
+      <Submission-Date>2002-07-01</Submission-Date>
+      <Release-Date>2002-07-18</Release-Date>
+      <Last-Update-Date>2010-07-08</Last-Update-Date>
+    </Status>
+    <Title>[Ecoli_ASv2] Affymetrix E. coli Antisense Genome Array</Title>
+    <Accession database="GEO">GPL199</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="83333">Escherichia coli K-12</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+Has 7312 entries and was indexed 20-May-2002.
+The GeneChip E. coli Antisense Genome Array can be used for examining expression of all known E. coli genes and discovering novel, uncharacterized intergenic transcripts. The array contains probe sets to detect the antisense strand of more than 4,200 known open reading frames. In addition, over 1,350 intergenic sequences can be interrogated in both directions permitting functional characterization of potentially important shorter expressed sequences.
+Sequence information for probes on the array correspond to the M49 version of the E. coli Genome Project database at the University of Wisconsin.
+
+
+Keywords = high density oligonucleotide array
+    </Description>
+    <Web-Link>http://www.affymetrix.com/support/technical/byproduct.affx?product=ecoliantisense</Web-Link>
+    <Web-Link>http://www.affymetrix.com/analysis/index.affx</Web-Link>
+    <Relation type="Alternative to" target="GPL10659" comment="Alternative CDF" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Affymetrix Probe Set ID </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=ECOLI_ANTISENSE&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Escherichia coli K12[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="4">
+        <Name>Species Scientific Name</Name>
+        <Description>The genus and species of the organism represented by the probe set.</Description>
+      </Column>
+      <Column position="5">
+        <Name>Annotation Date</Name>
+        <Description>The date that the annotations for this probe array were last updated. It will generally be earlier than the date when the annotations were posted on the Affymetrix web site.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Sequence Type</Name>
+        <Description>Indicates whether the sequence is an Exemplar, Consensus or Control sequence. An Exemplar is a single nucleotide sequence taken directly from a public database. This sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide sequence assembled by Affymetrix, based on one or more sequence taken from a public database.</Description>
+      </Column>
+      <Column position="7">
+        <Name>Representative Public ID</Name>
+        <Description>The accession number of a representative sequence. Note that for consensus-based probe sets, the representative sequence is only one of several sequences (sequence sub-clusters) used to build the consensus sequence and it is not directly used to derive the probe sequences. The representative sequence is chosen during array design as a sequence that is best associated with the transcribed region being interrogated by the probe set. Refer to the &quot;Sequence Source&quot; field to determine the database used.</Description>
+      </Column>
+      <Column position="8">
+        <Name>Sequence Source</Name>
+        <Description>The database from which the sequence used to design this probe set was taken.</Description>
+      </Column>
+      <Column position="9">
+        <Name>Target Description</Name>
+        <Description>GenBank description associated with the representative public identifier. Blank for some probe sets.</Description>
+      </Column>
+      <Column position="10">
+        <Name>Gene Title</Name>
+        <Description>Title of Gene represented by the probe set.</Description>
+      </Column>
+      <Column position="11">
+        <Name>Gene Symbol</Name>
+        <Description>A gene symbol, when one is available (from UniGene).</Description>
+      </Column>
+      <Column position="12">
+        <Name>ENTREZ_GENE_ID</Name>
+        <Description>Entrez Gene Database UID  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=</Link-Prefix>
+        <Link-Delimiter> /// </Link-Delimiter>
+      </Column>
+      <Column position="13">
+        <Name>RefSeq Transcript ID</Name>
+        <Description>References to multiple sequences in RefSeq. The field contains the ID and Description for each entry, and there can be multiple entries per ProbeSet.</Description>
+      </Column>
+      <Column position="14">
+        <Name>Gene Ontology Biological Process</Name>
+        <Description>Gene Ontology Consortium Biological Process derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="15">
+        <Name>Gene Ontology Cellular Component</Name>
+        <Description>Gene Ontology Consortium Cellular Component derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+      <Column position="16">
+        <Name>Gene Ontology Molecular Function</Name>
+        <Description>Gene Ontology Consortium Molecular Function derived from LocusLink.  Each annotation consists of three parts: &quot;Accession Number // Description // Evidence&quot;. The description corresponds directly to the GO ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;.</Description>
+      </Column>
+    <External-Data rows="7312">
+GPL199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM320945">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Exp-WT-Rep3</Title>
+    <Accession database="GEO">GSM320945</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in exponential phase OD600=0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 0.3 after being maintained in exponential phase for at least eight generations.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320945/GSM320945.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320945/GSM320945.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM320945-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM320946">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Stat-WT-Rep1</Title>
+    <Accession database="GEO">GSM320946</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in stationary phase OD600=1.5</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 1.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320946/GSM320946.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320946/GSM320946.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM320946-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM320947">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Stat-WT-Rep2</Title>
+    <Accession database="GEO">GSM320947</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in stationary phase OD600=1.5</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 1.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320947/GSM320947.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320947/GSM320947.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM320947-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM320948">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Stat-WT-Rep3</Title>
+    <Accession database="GEO">GSM320948</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in stationary phase OD600=1.5</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 1.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320948/GSM320948.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320948/GSM320948.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM320948-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM320949">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Exp-rpoS-Rep1</Title>
+    <Accession database="GEO">GSM320949</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in exponential phase OD600=0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 rpoS mutants
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 0.3 after being maintained in exponential phase for at least eight generations.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320949/GSM320949.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320949/GSM320949.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM320949-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM320950">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Exp-rpoS-Rep2</Title>
+    <Accession database="GEO">GSM320950</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in exponential phase OD600=0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 rpoS mutants
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 0.3 after being maintained in exponential phase for at least eight generations.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320950/GSM320950.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM320nnn/GSM320950/GSM320950.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM320950-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM321238">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Exp-rpoS-Rep3</Title>
+    <Accession database="GEO">GSM321238</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in exponential phase OD600=0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 rpoS mutants
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 0.3 after being maintained in exponential phase for at least eight generations.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321238/GSM321238.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321238/GSM321238.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM321238-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM321239">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Stat-rpoS-Rep1</Title>
+    <Accession database="GEO">GSM321239</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in stationary phase OD600=1.5</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 rpoS mutants
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 1.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321239/GSM321239.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321239/GSM321239.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM321239-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM321240">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Stat-rpoS-Rep2</Title>
+    <Accession database="GEO">GSM321240</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in stationary phase OD600=1.5</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 rpoS mutants
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 1.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321240/GSM321240.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321240/GSM321240.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM321240-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM321241">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Stat-rpoS-Rep3</Title>
+    <Accession database="GEO">GSM321241</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in stationary phase OD600=1.5</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 rpoS mutants
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 1.5.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321241/GSM321241.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321241/GSM321241.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM321241-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM321242">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Exp-WT-Rep1</Title>
+    <Accession database="GEO">GSM321242</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in exponential phase OD600=0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 0.3 after being maintained in exponential phase for at least eight generations.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321242/GSM321242.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321242/GSM321242.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM321242-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM321244">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2008-10-09</Last-Update-Date>
+    </Status>
+    <Title>Exp-WT-Rep2</Title>
+    <Accession database="GEO">GSM321244</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E. coli K12 grown in M63 glucose (0.2%) minimal media, sampled in exponential phase OD600=0.3</Source>
+      <Organism taxid="83333">Escherichia coli K-12</Organism>
+      <Characteristics>
+MG1655 wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown in M63 glucose (0.2%) minimal media at 37oC at 200 rpm. Overnight cultures were inoculated with single, independent colonies in triplicate, incubated aerobically overnight at 37oC, and sub-cultured to a starting OD600 of 0.0001. Cultures were harvested at an OD600 = 0.3 after being maintained in exponential phase for at least eight generations.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Acidic Hot Phenol
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix protocol
+    </Scan-Protocol>
+    <Description>
+This study is to identify the RpoS regulon in MG1655 grown in M63 glucose (0.2%) minimal media in exponential growth (OD600=0.3) and stationary phase (OD600=1.5). RNA samples from wild type or rpoS mutants were extracted using acidic hot phenol method and hybridized to Affymetrix E. coli Antisense Genome Array.
+    </Description>
+    <Data-Processing>
+GCRMA normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL199" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321244/GSM321244.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM321nnn/GSM321244/GSM321244.CHP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCRMA normalized</Description>
+      </Column>
+    <External-Data rows="7312">
+GSM321244-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE12797">
+    <Status database="GEO">
+      <Submission-Date>2008-09-16</Submission-Date>
+      <Release-Date>2008-10-10</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Control of RpoS in global gene expression of Escherichia coli in minimal media</Title>
+    <Accession database="GEO">GSE12797</Accession>
+    <Pubmed-ID>18843507</Pubmed-ID>
+    <Web-Link>http://www.springerlink.com/content/j379017536127427/</Web-Link>
+    <Summary>
+RpoS, an alternative sigma factor, is critical for stress response in Escherichia coli. The RpoS regulon expression has been well characterized in rich media that support fast growth and high growth yields. In contrast, though RpoS levels are high in minimal media, how RpoS functions under such conditions has not been clearly resolved. In this study, we compared the global transcriptional profiles of wild type and an rpoS mutant of E. coli grown in glucose minimal media using microarray analyses. The expression of over 200 genes was altered by loss of RpoS in exponential and stationary phases, with only 48 genes common to both conditions. The nature of the RpoS-controlled regulon in minimal media was substantially different from that expressed in rich media. Specifically, the expression of many genes encoding regulatory factors (e.g., hfq, csrA and rpoE) and genes in metabolic pathways (e.g., lysA, lysC and hisD) were regulated by RpoS in minimal media. In early exponential phase, protein levels of RpoS in minimal media were much higher than that in LB media, which may at least partly account for the observed difference in the expression of RpoS-controlled genes. Expression of genes required for flagellar function and chemotaxis was elevated in the rpoS mutant. Western blot analyses show that the flagella sigma factor FliA was expressed much higher in rpoS mutants than in WT in all phase of growth. Consistent with this, the motility of rpoS mutants was enhanced relative to WT. In conclusion, RpoS and its controlled regulators form a complex regulatory network that mediates the expression of a large regulon in minimal media.
+    </Summary>
+    <Overall-Design>
+A precise rpoS deletion mutant of MG1655 was constructed using the red recombinase method. Wild type and rpoS mutants were inoculated in triplicate into M63 glucose (0.2%) minimal media at a starting OD of 0.0001 and grown aerobically at 37oC. Cultures were harvested at OD600= 0.3 in exponential phase and at OD600= 1.5 in stationary phase. For RNA extraction, cultures were mixed directly with a boiling lysis buffer containing SDS and EDTA followed by acidic hot phenol (65C) to minimize RNA degradation. RNA samples were hybridized to Affymetrix E. coli Antisense Genome Array according to Affymetrix's standard protocols.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM320945" />
+    <Sample-Ref ref="GSM320946" />
+    <Sample-Ref ref="GSM320947" />
+    <Sample-Ref ref="GSM320948" />
+    <Sample-Ref ref="GSM320949" />
+    <Sample-Ref ref="GSM320950" />
+    <Sample-Ref ref="GSM321238" />
+    <Sample-Ref ref="GSM321239" />
+    <Sample-Ref ref="GSM321240" />
+    <Sample-Ref ref="GSM321241" />
+    <Sample-Ref ref="GSM321242" />
+    <Sample-Ref ref="GSM321244" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE12797/GSE12797_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/110989" />
+  </Series>
+
+</MINiML>
