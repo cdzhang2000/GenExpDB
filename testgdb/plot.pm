@@ -18,6 +18,10 @@ use GD;
 use List::Util qw(sum min max);
 use POSIX;
 
+use Scalar::Util qw(looks_like_number);
+
+use Data::Dumper;  
+
 #----------------------------------------------------------------------
 # display scatter plot
 # input: none
@@ -268,14 +272,32 @@ sub createExpPlot {
 		
 		my $xdval = ($plottype =~ /mbplot/) ? $gLoc : $testVal;
 		
-		push @Xdata, $xdval;
-		push @Ydata, $cntlVal if (  $cntlVal ne '' );
+		#czhang
+		#print "xdval = $xdval \n";
+				
+		if (looks_like_number($xdval)){ # $xdval is a numeric
+			push @Xdata, $xdval;
+			push @Ydata, $cntlVal if (  $cntlVal ne '' );
+		}
 	}
 
-	#--find min/max X value(bNum or A)
+	#--find min/max X value(bNum or A)	
+	#print "<pre>" . Dumper( @Xdata ) . "</pre>";
+		
+		
+	#czhang	
+	foreach my $expr (@Xdata) {
+    	if (!looks_like_number($expr)){
+        	return ;
+        	}
+		}
+	
+	
 	my $minX = $Xdata[0];
 	$minX = $_ < $minX ? $_ : $minX foreach (@Xdata);
-	my $maxX = $Xdata[0];
+	
+	
+	my $maxX = $Xdata[0];	
 	$maxX = $_ > $maxX ? $_ : $maxX foreach (@Xdata);
 
 	#--find min/max Y value(ratio)
@@ -390,6 +412,9 @@ sub createExpPlot {
 			
 		my $xval = ($plottype =~ /mbplot/) ? $plotData{$ltag}{gLoc} : $plotData{$ltag}{test};
 		
+		#czhang remove no-numeric characters
+		$xval =~ s/[^\d.]//g;
+		 
 		my $xt = $xoff + ( $xval - $minX ) / ( $maxX - $minX ) * $width;
 		my $yt = $yoff + $height - ( ( ( $plotData{$ltag}{ratio} ) * 1.0 - $minY ) / ( $maxY - $minY ) * $height );
 

@@ -1464,20 +1464,23 @@ sub expdata
 
 	#print "sample info= %dbsampInfo <br>";
 	
-	print "<pre>" . Dumper(%dbsampInfo) . "</pre>";
+	#print "<pre>" . Dumper(%dbsampInfo) . "</pre>";
 
 	my $dbchannelCountsRef = testgdb::oracle::dbchannelCounts();
 	my %dbchannelCounts    = %$dbchannelCountsRef;
-
-	print "dbchannelCounts= %dbchannelCounts <br> ";
-	print "<pre>" . Dumper(%dbchannelCounts) . "</pre>";
+	
+	#czhang
+	#while (my ($key, $value) = each(%dbchannelCounts)){
+    #print $key.", ".$value."<br />";
+	#}
 
 	my $dbcolumnPosNameRef = testgdb::oracle::dbcolumnPosName($selid);
 	my %dbcolumnPosName    = %$dbcolumnPosNameRef;
 
-	print "dbcolumnPosName= %dbcolumnPosName  <br> ";
-
-	print "<pre>" . Dumper(%dbcolumnPosName) . "</pre>";
+	#czhang
+	#while (my ($key, $value) = each( %dbcolumnPosName)){
+    #print $key.", ".$value."<br />";
+	#}
 
 	my ( %c1data, %c2data, $numchannel, $chgNumchan );
 
@@ -1485,7 +1488,7 @@ sub expdata
 	{
 		$numchannel = $dbchannelCounts{ $dbsampInfo{$i}{bioassays_id} };
 
-		print "Dumper( $numchannel) <br> ";
+		#print "Dumper( $numchannel) <br> ";
 
 		$numchannel = $testgdb::webUtil::frmData{newchan}
 		  if $testgdb::webUtil::frmData{newchan};    #changed default channel
@@ -2995,6 +2998,17 @@ qq{<tr><td class="tdc" colspan="8"><font color="red">\tCounts are not equal!</fo
 												 $cntlgenomeacc, \%plotTestdata,
 												 \%plotCntldata
 		);
+		
+		#czhang
+				
+		if ( defined $plotFile){
+			#print "the plotfile is $plotFile";
+		}
+		else{
+		print
+		  qq{<font color="red">Problems with X and Y axis !</font>\n};
+				return;
+		}		
 		print
 qq{<tr><td class="tdc" colspan="8"><img alt="" src="/tmpimage/$plotFile" border="1" usemap="#$bioassays_id"></td></tr>},
 		  qq{<map name="$bioassays_id">$pmap</map>\n},

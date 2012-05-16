@@ -688,5 +688,18 @@ sub transformArray{
         return @numArray;
 }
 
+sub checkNumeric{
+	my @nums=@_;	
+	my $test=1;
+	
+	foreach my $expr (@nums) {
+    	if (!looks_like_number($expr)){     
+			$test=0;
+			return $test;
+		}
+	}
+        return $test;
+}
+
 
 1;    # return a true value

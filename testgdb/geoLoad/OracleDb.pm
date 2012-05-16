@@ -13,7 +13,7 @@ my ( $dbh, $sth, $sql, $row );
 
  my $user="genexpdb";
  my $passwd="vb1g3n3xpdb";
- my $host="genexpdb.ccrlikknzibd.us-east-1.rds.amazonaws.com";
+ my $host="genexpdb-dev.ccrlikknzibd.us-east-1.rds.amazonaws.com";
  my $sid="GENEXPDB";
  my $database_name="GENEXPDB";
  my $port="3306";
