@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Patrick</First><Last>Mc Gann</Last></Person>
+    <Email>pm223@cornell.edu</Email>
+    <Phone>(607) 227 0627</Phone>
+    <Laboratory>Wiedmann </Laboratory>
+    <Department>Food Science</Department>
+    <Organization>Cornell University</Organization>
+    <Address>
+      <Line>412 Stocking Hall</Line>
+      <City>Ithaca</City>
+      <State>NY</State>
+      <Zip-Code>14850</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Patrick</First><Last>McGann</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Martin</First><Last>Wiedmann</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Kathryn</First><Middle>J</Middle><Last>Boor</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Renata</First><Last>Ivanek</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL4604">
+    <Status database="GEO">
+      <Submission-Date>2006-11-29</Submission-Date>
+      <Release-Date>2006-12-01</Release-Date>
+      <Last-Update-Date>2006-12-01</Last-Update-Date>
+    </Status>
+    <Title>CUFSL Listeria interalins 384 v1</Title>
+    <Accession database="GEO">GPL4604</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1639">Listeria monocytogenes</Organism>
+    <Manufacturer>Big Red Spots, T2 002B Vet Research Tower, Cornell university, Ithaca NY 14853 USA</Manufacturer>
+    <Manufacture-Protocol>
+Oligonucleotides were resuspended in 1× SSC, 0.0025% Sarcosyl to a final molarity of 30uM. All oligonucleotides and controls were spotted in duplicate on Amino-silane coated Corning UltraGAPS slides (Corning, NY USA) using a custom built XYZ microarrayer. Oligonucleotides were UV-crosslinked at 300mJ for 1 minute. Printing quality was checked using Cy3-labeled random sequence nonamers 
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>Block number</Description>
+      </Column>
+      <Column position="3">
+        <Name>Row</Name>
+        <Description>Row number</Description>
+      </Column>
+      <Column position="4">
+        <Name>Column</Name>
+        <Description>Column number</Description>
+      </Column>
+      <Column position="5">
+        <Name>Type</Name>
+        <Description>hk=Housekeeper; test=Test gene; PC=positive control; bc=Background control</Description>
+      </Column>
+      <Column position="6">
+        <Name>ORF</Name>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="7">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="8">
+        <Name>SEQUENCE</Name>
+        <Description>Sequence of Oligo based on L. monocytogenes EDGe genome (Accession no.:AL591824)</Description>
+      </Column>
+    <External-Data rows="384">
+GPL4604-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM148833">
+    <Status database="GEO">
+      <Submission-Date>2006-12-06</Submission-Date>
+      <Release-Date>2007-02-22</Release-Date>
+      <Last-Update-Date>2007-02-22</Last-Update-Date>
+    </Status>
+    <Title>Listeria_16oC vs 37oC</Title>
+    <Accession database="GEO">GSM148833</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Listeria monocytogenes 10403S</Source>
+      <Organism taxid="393133">Listeria monocytogenes 10403S</Organism>
+      <Characteristics>
+Listeria monocytogenes 10403S (serotype 1/2a) (Bishop &amp; Henrichs, 1987) grown at 16oC
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the RNeasy kit (Qiagen) according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells were sonicated twice on ice for three 30 s bursts at 18–21 W. Contaminating DNA was removed using Turbo DNase as per the manufacturers instructions (Ambion Inc., TX, USA). The final RNA pellet was resuspended in RNase-Free water (Qiagen).  Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm) on a NanoDrop ND-1000 spectrophotometer (NanoDrop Technologies, Wilmington, DE, USA).
+      </Extract-Protocol>
+      <Label>Alexa Flour 635</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA labeling system (Invitrogen Inc., Carlsbad, CA, USA).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Listeria monocytogenes 10403S</Source>
+      <Organism taxid="393133">Listeria monocytogenes 10403S</Organism>
+      <Characteristics>
+Listeria monocytogenes 10403S (serotype 1/2a) (Bishop &amp; Henrichs, 1987) grown at 37oC
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the RNeasy kit (Qiagen) according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells were sonicated twice on ice for three 30 s bursts at 18–21 W. Contaminating DNA was removed using Turbo DNase as per the manufacturers instructions (Ambion Inc., TX, USA). The final RNA pellet was resuspended in RNase-Free water (Qiagen).  Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm) on a NanoDrop ND-1000 spectrophotometer (NanoDrop Technologies, Wilmington, DE, USA).
+      </Extract-Protocol>
+      <Label>Alexa Flour 532</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA labeling system (Invitrogen Inc., Carlsbad, CA, USA).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Before hybridization, microarray slides were treated for 10 min in a methyl pyrrilidone solution containing 0.18 M succinic anhydride, and 44 mM sodium borate (pH 8.0) and then washed in fresh methyl pyrrilidone for 10 min. Slides were successively washed for 1 min each in (i) nanopure H2O, (ii) 0.1% sodium dodecyl sulfate (SDS) (3 washes), (iii) nanopure water (5 washes), and (iv) 95% EtOH (1 wash). The slides were dried by centrifugation and immersed for 1 h in blocking solution (0.1% BSA, 5X SSC, 0.1% SDS) at 42oC. After blocking, the slides were washed for one minute each in nanopure H2O (5 washes) and in 95% EtOH (2 washes) and then dried by centrifugation. For the strains to be compared, labeled cDNA was resuspended in 50μl of hybridization buffer (5× SSC, 0.1% SDS, 0.1mM dithiothreitol (DTT), 0.5X formamide, 600μg/ml salmon sperm DNA ), denatured at 95oC for 5 min then applied to the slides using mSeries LifterSlips™ (Erie Scientific, Portsmouth, NH). Hybridization was conducted in a water bath at 42°C overnight. After hybridization, the slides were washed in 2X SSC+0.1% SDS (5 min at 42˚C), with subsequent washes at room temperature in 2X SSC+0.1% SDS (5 min), 2X SSC (5 min), 0.2X SSC (5 min), 0.05X SSC (1 min), followed by final rinse in nanopure H2O. The slides were dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+All images were scanned using a GenePix 4000b scanner (Axon Instruments Inc., Foster City, CA, USA). Acquired images were analyzed using GenePix 6.0 (Molecular Devices Corp., Sunnyvale, CA, USA).
+    </Scan-Protocol>
+    <Description>
+Due to the small number of targeted genes, two complete arrays were printed on each microarray slide. As two different probes, printed in duplicate, were used for each gene on a single array, the microarray design generated eight replicate spots for each gene per slide. Expression profiles were measured from three independent RNA extractions, resulting in twenty-four replicate spots per gene (twelve from each probe).
+    </Description>
+    <Data-Processing>
+Analyses of microarray data were performed in R (http://www.R-project.org) with Bioconductor (Gentleman et al., 2004) using LIMMA software (Wettenhall &amp; Smyth, 2004). To correct for background noise, the background intensity was subtracted from the foreground intensity for each spot (Yang et al., 2001). For normalization within arrays, the data were weighted for the housekeeping genes and genomic DNA controls and normalized using a print-tip loess (Smyth &amp; Speed, 2003). A linear model was fitted to the normalized log ratios and four B-statistics, t-statistics and P-values were generated for each gene
+
+The VALUE column represents normalized log2 (CH1/CH2) ratios derived from 6 arrays (3 upper arrays &amp; 3 lower arrays).  The 6 corresponding gpr files have been linked below as supplementary raw data files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4604" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148833/GSM148833_lower_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148833/GSM148833_lower_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148833/GSM148833_lower_3.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148833/GSM148833_upper_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148833/GSM148833_upper_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148833/GSM148833_upper_3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>corresponds to the ID column in related Platform GPL4604</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log2-transformed (CH1/CH2) ratio (M value)</Description>
+      </Column>
+      <Column position="3">
+        <Name>A</Name>
+        <Description>(Log2(CH1)+Log2(CH2))/2 (A value)</Description>
+      </Column>
+      <Column position="4">
+        <Name>t</Name>
+        <Description>The calculated t statistic</Description>
+      </Column>
+      <Column position="5">
+        <Name>P_Value</Name>
+        <Description>The calculated unadjusted p value</Description>
+      </Column>
+      <Column position="6">
+        <Name>adj_P_Val</Name>
+        <Description>The calculated p value adjusted for multiple comparisons</Description>
+      </Column>
+      <Column position="7">
+        <Name>B</Name>
+        <Description>The calculated Bayes Statistic</Description>
+      </Column>
+    <External-Data rows="384">
+GSM148833-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148839">
+    <Status database="GEO">
+      <Submission-Date>2006-12-06</Submission-Date>
+      <Release-Date>2007-02-22</Release-Date>
+      <Last-Update-Date>2007-02-22</Last-Update-Date>
+    </Status>
+    <Title>Listeria_30oC vs 37oC</Title>
+    <Accession database="GEO">GSM148839</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Listeria monocytogenes 10403S</Source>
+      <Organism taxid="393133">Listeria monocytogenes 10403S</Organism>
+      <Characteristics>
+Listeria monocytogenes 10403S (serotype 1/2a) (Bishop &amp; Henrichs, 1987) grown at 30oC
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the RNeasy kit (Qiagen) according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells were sonicated twice on ice for three 30 s bursts at 18–21 W. Contaminating DNA was removed using Turbo DNase as per the manufacturers instructions (Ambion Inc., TX, USA). The final RNA pellet was resuspended in RNase-Free water (Qiagen).  Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm) on a NanoDrop ND-1000 spectrophotometer (NanoDrop Technologies, Wilmington, DE, USA).
+      </Extract-Protocol>
+      <Label>Alexa Flour 635</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA labeling system (Invitrogen Inc., Carlsbad, CA, USA).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Listeria monocytogenes 10403S</Source>
+      <Organism taxid="393133">Listeria monocytogenes 10403S</Organism>
+      <Characteristics>
+Listeria monocytogenes 10403S (serotype 1/2a) (Bishop &amp; Henrichs, 1987) grown at 37oC
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the RNeasy kit (Qiagen) according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells were sonicated twice on ice for three 30 s bursts at 18–21 W. Contaminating DNA was removed using Turbo DNase as per the manufacturers instructions (Ambion Inc., TX, USA). The final RNA pellet was resuspended in RNase-Free water (Qiagen).  Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm) on a NanoDrop ND-1000 spectrophotometer (NanoDrop Technologies, Wilmington, DE, USA).
+      </Extract-Protocol>
+      <Label>Alexa Flour 532</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA labeling system (Invitrogen Inc., Carlsbad, CA, USA).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Before hybridization, microarray slides were treated for 10 min in a methyl pyrrilidone solution containing 0.18 M succinic anhydride, and 44 mM sodium borate (pH 8.0) and then washed in fresh methyl pyrrilidone for 10 min. Slides were successively washed for 1 min each in (i) nanopure H2O, (ii) 0.1% sodium dodecyl sulfate (SDS) (3 washes), (iii) nanopure water (5 washes), and (iv) 95% EtOH (1 wash). The slides were dried by centrifugation and immersed for 1 h in blocking solution (0.1% BSA, 5X SSC, 0.1% SDS) at 42oC. After blocking, the slides were washed for one minute each in nanopure H2O (5 washes) and in 95% EtOH (2 washes) and then dried by centrifugation. For the strains to be compared, labeled cDNA was resuspended in 50μl of hybridization buffer (5× SSC, 0.1% SDS, 0.1mM dithiothreitol (DTT), 0.5X formamide, 600μg/ml salmon sperm DNA ), denatured at 95oC for 5 min then applied to the slides using mSeries LifterSlips™ (Erie Scientific, Portsmouth, NH). Hybridization was conducted in a water bath at 42°C overnight. After hybridization, the slides were washed in 2X SSC+0.1% SDS (5 min at 42˚C), with subsequent washes at room temperature in 2X SSC+0.1% SDS (5 min), 2X SSC (5 min), 0.2X SSC (5 min), 0.05X SSC (1 min), followed by final rinse in nanopure H2O. The slides were dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+All images were scanned using a GenePix 4000b scanner (Axon Instruments Inc., Foster City, CA, USA). Acquired images were analyzed using GenePix 6.0 (Molecular Devices Corp., Sunnyvale, CA, USA).
+    </Scan-Protocol>
+    <Description>
+Due to the small number of targeted genes, two complete arrays were printed on each microarray slide. As two different probes, printed in duplicate, were used for each gene on a single array, the microarray design generated eight replicate spots for each gene per slide. Expression profiles were measured from three independent RNA extractions, resulting in twenty-four replicate spots per gene (twelve from each probe).
+    </Description>
+    <Data-Processing>
+Analyses of microarray data were performed in R (http://www.R-project.org) with Bioconductor (Gentleman et al., 2004) using LIMMA software (Wettenhall &amp; Smyth, 2004). To correct for background noise, the background intensity was subtracted from the foreground intensity for each spot (Yang et al., 2001). For normalization within arrays, the data were weighted for the housekeeping genes and genomic DNA controls and normalized using a print-tip loess (Smyth &amp; Speed, 2003). A linear model was fitted to the normalized log ratios and four B-statistics, t-statistics and P-values were generated for each gene
+
+The VALUE column represents normalized log2 (CH1/CH2) ratios derived from 6 arrays (3 upper arrays &amp; 3 lower arrays).  The 6 corresponding gpr files have been linked below as supplementary raw data files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4604" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148839/GSM148839_lower_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148839/GSM148839_lower_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148839/GSM148839_lower_3.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148839/GSM148839_upper_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148839/GSM148839_upper_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148839/GSM148839_upper_3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>corresponds to the ID column in related Platform GPL4604</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log2-transformed (CH1/CH2) ratio (M value)</Description>
+      </Column>
+      <Column position="3">
+        <Name>A</Name>
+        <Description>(Log2(CH1)+Log2(CH2))/2 (A value)</Description>
+      </Column>
+      <Column position="4">
+        <Name>t</Name>
+        <Description>The calculated t statistic</Description>
+      </Column>
+      <Column position="5">
+        <Name>P_Value</Name>
+        <Description>The calculated unadjusted p value</Description>
+      </Column>
+      <Column position="6">
+        <Name>adj_P_Val</Name>
+        <Description>The calculated p value adjusted for multiple comparisons</Description>
+      </Column>
+      <Column position="7">
+        <Name>B</Name>
+        <Description>The calculated Bayes Statistic</Description>
+      </Column>
+    <External-Data rows="384">
+GSM148839-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM148845">
+    <Status database="GEO">
+      <Submission-Date>2006-12-06</Submission-Date>
+      <Release-Date>2007-02-22</Release-Date>
+      <Last-Update-Date>2007-02-22</Last-Update-Date>
+    </Status>
+    <Title>Listeria_42oC vs 37oC</Title>
+    <Accession database="GEO">GSM148845</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Listeria monocytogenes 10403S</Source>
+      <Organism taxid="393133">Listeria monocytogenes 10403S</Organism>
+      <Characteristics>
+Listeria monocytogenes 10403S (serotype 1/2a) (Bishop &amp; Henrichs, 1987) grown at 42oC
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the RNeasy kit (Qiagen) according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells were sonicated twice on ice for three 30 s bursts at 18–21 W. Contaminating DNA was removed using Turbo DNase as per the manufacturers instructions (Ambion Inc., TX, USA). The final RNA pellet was resuspended in RNase-Free water (Qiagen).  Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm) on a NanoDrop ND-1000 spectrophotometer (NanoDrop Technologies, Wilmington, DE, USA).
+      </Extract-Protocol>
+      <Label>Alexa Flour 635</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA labeling system (Invitrogen Inc., Carlsbad, CA, USA).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Listeria monocytogenes 10403S</Source>
+      <Organism taxid="393133">Listeria monocytogenes 10403S</Organism>
+      <Characteristics>
+Listeria monocytogenes 10403S (serotype 1/2a) (Bishop &amp; Henrichs, 1987) grown at 37oC
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the RNeasy kit (Qiagen) according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells were sonicated twice on ice for three 30 s bursts at 18–21 W. Contaminating DNA was removed using Turbo DNase as per the manufacturers instructions (Ambion Inc., TX, USA). The final RNA pellet was resuspended in RNase-Free water (Qiagen).  Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm) on a NanoDrop ND-1000 spectrophotometer (NanoDrop Technologies, Wilmington, DE, USA).
+      </Extract-Protocol>
+      <Label>Alexa Flour 532</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA labeling system (Invitrogen Inc., Carlsbad, CA, USA).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Before hybridization, microarray slides were treated for 10 min in a methyl pyrrilidone solution containing 0.18 M succinic anhydride, and 44 mM sodium borate (pH 8.0) and then washed in fresh methyl pyrrilidone for 10 min. Slides were successively washed for 1 min each in (i) nanopure H2O, (ii) 0.1% sodium dodecyl sulfate (SDS) (3 washes), (iii) nanopure water (5 washes), and (iv) 95% EtOH (1 wash). The slides were dried by centrifugation and immersed for 1 h in blocking solution (0.1% BSA, 5X SSC, 0.1% SDS) at 42oC. After blocking, the slides were washed for one minute each in nanopure H2O (5 washes) and in 95% EtOH (2 washes) and then dried by centrifugation. For the strains to be compared, labeled cDNA was resuspended in 50μl of hybridization buffer (5× SSC, 0.1% SDS, 0.1mM dithiothreitol (DTT), 0.5X formamide, 600μg/ml salmon sperm DNA ), denatured at 95oC for 5 min then applied to the slides using mSeries LifterSlips™ (Erie Scientific, Portsmouth, NH). Hybridization was conducted in a water bath at 42°C overnight. After hybridization, the slides were washed in 2X SSC+0.1% SDS (5 min at 42˚C), with subsequent washes at room temperature in 2X SSC+0.1% SDS (5 min), 2X SSC (5 min), 0.2X SSC (5 min), 0.05X SSC (1 min), followed by final rinse in nanopure H2O. The slides were dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+All images were scanned using a GenePix 4000b scanner (Axon Instruments Inc., Foster City, CA, USA). Acquired images were analyzed using GenePix 6.0 (Molecular Devices Corp., Sunnyvale, CA, USA).
+    </Scan-Protocol>
+    <Description>
+Due to the small number of targeted genes, two complete arrays were printed on each microarray slide. As two different probes, printed in duplicate, were used for each gene on a single array, the microarray design generated eight replicate spots for each gene per slide. Expression profiles were measured from three independent RNA extractions, resulting in twenty-four replicate spots per gene (twelve from each probe).
+    </Description>
+    <Data-Processing>
+Analyses of microarray data were performed in R (http://www.R-project.org) with Bioconductor (Gentleman et al., 2004) using LIMMA software (Wettenhall &amp; Smyth, 2004). To correct for background noise, the background intensity was subtracted from the foreground intensity for each spot (Yang et al., 2001). For normalization within arrays, the data were weighted for the housekeeping genes and genomic DNA controls and normalized using a print-tip loess (Smyth &amp; Speed, 2003). A linear model was fitted to the normalized log ratios and four B-statistics, t-statistics and P-values were generated for each gene
+
+The VALUE column represents normalized log2 (CH1/CH2) ratios derived from 6 arrays (3 upper arrays &amp; 3 lower arrays).  The 6 corresponding gpr files have been linked below as supplementary raw data files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4604" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148845/GSM148845_lower_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148845/GSM148845_lower_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148845/GSM148845_lower_3.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148845/GSM148845_upper_1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148845/GSM148845_upper_2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM148nnn/GSM148845/GSM148845_upper_3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+        <Description>corresponds to the ID column in related Platform GPL4604</Description>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log2-transformed (CH1/CH2) ratio (M value)</Description>
+      </Column>
+      <Column position="3">
+        <Name>A</Name>
+        <Description>(Log2(CH1)+Log2(CH2))/2 (A value)</Description>
+      </Column>
+      <Column position="4">
+        <Name>t</Name>
+        <Description>The calculated t statistic</Description>
+      </Column>
+      <Column position="5">
+        <Name>P_Value</Name>
+        <Description>The calculated unadjusted p value</Description>
+      </Column>
+      <Column position="6">
+        <Name>adj_P_Val</Name>
+        <Description>The calculated p value adjusted for multiple comparisons</Description>
+      </Column>
+      <Column position="7">
+        <Name>B</Name>
+        <Description>The calculated Bayes Statistic</Description>
+      </Column>
+    <External-Data rows="384">
+GSM148845-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE6471">
+    <Status database="GEO">
+      <Submission-Date>2006-12-06</Submission-Date>
+      <Release-Date>2007-02-22</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Temperature-dependent expression of internalin and internalin-like genes  </Title>
+    <Accession database="GEO">GSE6471</Accession>
+    <Pubmed-ID>17337561</Pubmed-ID>
+    <Summary>
+Listeria monocytogenes, the etiological agent of listeriosis, is capable of growth and survival at temperatures ranging from 2 to 48oC, reflecting the diverse environments and host species inhabited by this organism. L. monocytogenes expresses up to 29 proteins, termed internalins, whose structure indicates they make good candidates for facilitating bacterial-host cell interactions. Considering the ubiquitous nature of this organism, we speculated that environmental temperature might serve as an important biological signal in controlling their expression. We therefore employed a subgenomic microarray to investigate the expression profiles of 24 members of the internalin gene family identified in L. monocytogenes 10403S. Competitive hybridization was performed between RNA extracted from 10403S grown to early stationary phase at 37oC, and 10403S grown to early stationary phase at 16oC, 30oC and 42oC. The data reveal that internalin genes can be divided into four broad categories such that (i) four internalin genes inlC2, inlD, lmo0331 and lmo0610 show temperature-dependent expression similar to sigB and the σB-dependent gene opuCA; (ii) three internalin genes inlA, inlB and inlC show temperature-dependent expression similar to the PrfA-dependent gene plcA; (iii) five internalin-like genes inlG, inlJ, lmo0327, lmo0514 and lmo1290 show unique temperature-dependent expression and (iv) twelve internalin genes show no difference in expression under the conditions investigated in this study. Our data also shows that the expression of many housekeeping genes can vary considerably under different temperatures, and normalization of both microarray and qRT-PCR data using housekeeping genes should be based on comprehensive experimental validation.
+Keywords: Listeria monocytogenes, internalins, temperature, sub-genomic microarrays
+    </Summary>
+    <Overall-Design>
+To enhance the relative proportion of cells in log phase, for all experiments, each strain was initially grown in BHI at 37oC with shaking (200 rpm) to OD600=0.4, then diluted 1:100 into fresh BHI and grown to OD600=0.4.
+.  A log phase culture of L. monocytogenes 1040S was diluted 1:100 in prewarmed BHI (16oC, 30oC, 37oC and 42oC) and subsequrently incubated with shaking (200 rpm) at the respective temperature until early stationary phase, defined as OD600=1.0 + 3 hrs for cells grown at 30 oC, 37 oC and 42 oC. For cells cultured at 16oC, early stationary phase was defined as OD600=1.0 + 6 hrs. Following incubation, RNA was stabilized by the addition of two volumes of RNAprotect™ (Qiagen, CA, USA). Bacterial cells were then harvested by centrifugation and stored at –80oC for no longer than 24 h before RNA isolation.
+For each growth condition described above, three independent RNA isolations were performed on different days to provide distinct biological replicates. Each set of independent RNA samples was used to perform competitive hybridization microarray experiments. For each set of biological replicates, RNA from cells cultured at 37oC was hybridized to RNA from cells cultured at 16oC, 30oC and 42oC
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib5" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contributor-Ref ref="contrib4" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM148833" />
+    <Sample-Ref ref="GSM148839" />
+    <Sample-Ref ref="GSM148845" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE6471/GSE6471_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/98705" />
+  </Series>
+
+</MINiML>

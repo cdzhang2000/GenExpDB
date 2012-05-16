@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>yanhong</First><Last>Liu</Last></Person>
+    <Email>yanhong.liu@ars.usda.gov</Email>
+    <Phone>215-233-6587</Phone>
+    <Fax>215-233-6581</Fax>
+    <Organization>ERRS-ARS-USDA</Organization>
+    <Address>
+      <Line>600 E. Mermaid Lane</Line>
+      <City>Wyndmoor</City>
+      <State>PA</State>
+      <Zip-Code>19038</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Amy</First><Last>Ream</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL6489">
+    <Status database="GEO">
+      <Submission-Date>2008-02-13</Submission-Date>
+      <Release-Date>2008-12-31</Release-Date>
+      <Last-Update-Date>2008-12-31</Last-Update-Date>
+    </Status>
+    <Title>Listeria monocytogenes strain F2365 5.6K</Title>
+    <Accession database="GEO">GPL6489</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1639">Listeria monocytogenes</Organism>
+    <Manufacturer>Combimatrix</Manufacturer>
+    <Manufacture-Protocol>
+The custom oligonucleotide microarray is synthesized on a semiconductor using an electrochemical synthesis process. Each oligonucleotide probe (spot) is synthesized on a platinum electrode that is independently controlled by the synthesizer’s computer. Synthesis is based on established phosphoramidite chemistry and occurs at thousands of sites simultaneously according to a computer algorithm that activates only specified electrodes. Since physical photolithographic masks, mechanical micromirrors, or inkjet technologies are not involved in the process, all probes can be easily changed without extra time or cost. 
+The oligonucleotides are synthesized in a proprietary porous reaction layer that coats the surface of the semiconductor, and acts to covalently attach the oligonucleotide to the surface of the chip.
+    </Manufacture-Protocol>
+    <Catalog-Number>5072</Catalog-Number>
+    <Support>other</Support>
+    <Coating>other</Coating>
+    <Web-Link>http://www.combimatrix.com/</Web-Link>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Name</Name>
+      </Column>
+      <Column position="3">
+        <Name>Gene Name</Name>
+      </Column>
+      <Column position="4">
+        <Name>Comment</Name>
+      </Column>
+      <Column position="5">
+        <Name>ORF</Name>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="6">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="5638">
+GPL6489-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM563916">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2011-06-10</Release-Date>
+      <Last-Update-Date>2011-06-10</Last-Update-Date>
+    </Status>
+    <Title>mutant vs. wild type bio rep 1 tech rep 1</Title>
+    <Accession database="GEO">GSM563916</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="phenotype">
+wild type
+      </Characteristics>
+      <Treatment-Protocol>
+Pressure treated (450 Mpa, 3 min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Listeria monocytogenes Scott A mutant and wild type grown to O.D.600 0.7 to 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Ambion RiboPure-Bacterial Kit following manufacture's instructions
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+dye swap labeling using Alexa 555(cy3)  and Alexa 647 (cy5)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>ctsR mutant cells</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="phenotype">
+ctsR mutant
+      </Characteristics>
+      <Treatment-Protocol>
+Pressure treated (450 Mpa, 3 min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Listeria monocytogenes Scott A mutant and wild type grown to O.D.600 0.7 to 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Ambion RiboPure-Bacterial Kit following manufacture's instructions
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+dye swap labeling using Alexa 555(cy3)  and Alexa 647 (cy5)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+according to CustomArray 12K microarray protocols provided by Combimatrix
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+at 5-um resolutions by the ScanArray ExpressHT microarray scanner
+    </Scan-Protocol>
+    <Description>
+normalized log2 ratios of mutant/wild type
+    </Description>
+    <Data-Processing>
+normalized using median over entire array,  log2 of Red signal/ Green signal. BRB-ArrayTools software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6489" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing mutant/wild type</Description>
+      </Column>
+      <Column position="3">
+        <Name>Cy3</Name>
+        <Description>raw median signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>Cy5</Name>
+        <Description>raw median signal</Description>
+      </Column>
+    <External-Data rows="5638">
+GSM563916-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM563917">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2011-06-10</Release-Date>
+      <Last-Update-Date>2011-06-10</Last-Update-Date>
+    </Status>
+    <Title>mutant vs. wild type bio rep 1 tech rep 2</Title>
+    <Accession database="GEO">GSM563917</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ctsR mutant cells</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="phenotype">
+ctsR mutant
+      </Characteristics>
+      <Treatment-Protocol>
+Pressure treated (450 Mpa, 3 min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Listeria monocytogenes Scott A mutant and wild type grown to O.D.600 0.7 to 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Ambion RiboPure-Bacterial Kit following manufacture's instructions
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+dye swap labeling using Alexa 555(cy3)  and Alexa 647 (cy5)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="phenotype">
+wild type
+      </Characteristics>
+      <Treatment-Protocol>
+Pressure treated (450 Mpa, 3 min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Listeria monocytogenes Scott A mutant and wild type grown to O.D.600 0.7 to 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Ambion RiboPure-Bacterial Kit following manufacture's instructions
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+dye swap labeling using Alexa 555(cy3)  and Alexa 647 (cy5)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+according to CustomArray 12K microarray protocols provided by Combimatrix
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+at 5-um resolutions by the ScanArray ExpressHT microarray scanner
+    </Scan-Protocol>
+    <Description>
+normalized log2 ratios of mutant/wild type
+    </Description>
+    <Data-Processing>
+normalized using median over entire array,  log2 of Red signal/ Green signal. BRB-ArrayTools software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6489" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing mutant/wild type</Description>
+      </Column>
+      <Column position="3">
+        <Name>Cy5</Name>
+        <Description>raw median signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>Cy3</Name>
+        <Description>raw median signal</Description>
+      </Column>
+    <External-Data rows="5638">
+GSM563917-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM563918">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2011-06-10</Release-Date>
+      <Last-Update-Date>2011-06-10</Last-Update-Date>
+    </Status>
+    <Title>mutant vs. wild type bio rep 2 tech rep 1</Title>
+    <Accession database="GEO">GSM563918</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>wild type cells</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="phenotype">
+wild type
+      </Characteristics>
+      <Treatment-Protocol>
+Pressure treated (450 Mpa, 3 min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Listeria monocytogenes Scott A mutant and wild type grown to O.D.600 0.7 to 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Ambion RiboPure-Bacterial Kit following manufacture's instructions
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+dye swap labeling using Alexa 555(cy3)  and Alexa 647 (cy5)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>ctsR mutant cells</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="phenotype">
+ctsR mutant
+      </Characteristics>
+      <Treatment-Protocol>
+Pressure treated (450 Mpa, 3 min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Listeria monocytogenes Scott A mutant and wild type grown to O.D.600 0.7 to 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Ambion RiboPure-Bacterial Kit following manufacture's instructions
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+dye swap labeling using Alexa 555(cy3)  and Alexa 647 (cy5)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+according to CustomArray 12K microarray protocols provided by Combimatrix
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+at 5-um resolutions by the ScanArray ExpressHT microarray scanner
+    </Scan-Protocol>
+    <Description>
+normalized log2 ratios of mutant/wild type
+    </Description>
+    <Data-Processing>
+normalized using median over entire array,  log2 of Red signal/ Green signal. BRB-ArrayTools software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6489" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing mutant/wild type</Description>
+      </Column>
+      <Column position="3">
+        <Name>Cy3</Name>
+        <Description>raw median signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>Cy5</Name>
+        <Description>raw median signal</Description>
+      </Column>
+    <External-Data rows="5638">
+GSM563918-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM563919">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2011-06-10</Release-Date>
+      <Last-Update-Date>2011-06-10</Last-Update-Date>
+    </Status>
+    <Title>mutant vs. wild type bio rep 2 tech rep 2</Title>
+    <Accession database="GEO">GSM563919</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>ctsR mutant cells</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="phenotype">
+ctsR mutant
+      </Characteristics>
+      <Treatment-Protocol>
+Pressure treated (450 Mpa, 3 min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Listeria monocytogenes Scott A mutant and wild type grown to O.D.600 0.7 to 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Ambion RiboPure-Bacterial Kit following manufacture's instructions
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+dye swap labeling using Alexa 555(cy3)  and Alexa 647 (cy5)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild type cells</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="phenotype">
+wild type
+      </Characteristics>
+      <Treatment-Protocol>
+Pressure treated (450 Mpa, 3 min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Listeria monocytogenes Scott A mutant and wild type grown to O.D.600 0.7 to 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA extracted using Ambion RiboPure-Bacterial Kit following manufacture's instructions
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+dye swap labeling using Alexa 555(cy3)  and Alexa 647 (cy5)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+according to CustomArray 12K microarray protocols provided by Combimatrix
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+at 5-um resolutions by the ScanArray ExpressHT microarray scanner
+    </Scan-Protocol>
+    <Description>
+normalized log2 ratios of mutant/wild type
+    </Description>
+    <Data-Processing>
+normalized using median over entire array,  log2 of Red signal/ Green signal. BRB-ArrayTools software was used.
+    </Data-Processing>
+    <Platform-Ref ref="GPL6489" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing mutant/wild type</Description>
+      </Column>
+      <Column position="3">
+        <Name>Cy5</Name>
+        <Description>raw median signal</Description>
+      </Column>
+      <Column position="4">
+        <Name>Cy3</Name>
+        <Description>raw median signal</Description>
+      </Column>
+    <External-Data rows="5638">
+GSM563919-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE22819">
+    <Status database="GEO">
+      <Submission-Date>2010-07-08</Submission-Date>
+      <Release-Date>2011-06-10</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Gene expression profiling of a pressure-tolerant Listeria monocytogenes Scott A ctsR deletion mutant</Title>
+    <Accession database="GEO">GSE22819</Accession>
+    <Pubmed-ID>21298319</Pubmed-ID>
+    <Summary>
+Transcriptional profling of a Listeria monocytogenes under pressure comparing ctsR mutant and wild type
+    </Summary>
+    <Overall-Design>
+one condition (pressure 450 Moa, 3min) experiment,  mutant vs. wild type, 2 biological replicates, two technical replicates
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM563916" />
+    <Sample-Ref ref="GSM563917" />
+    <Sample-Ref ref="GSM563918" />
+    <Sample-Ref ref="GSM563919" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/128099" />
+  </Series>
+
+</MINiML>

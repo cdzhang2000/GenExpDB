@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Michael</First><Last>Reck</Last></Person>
+    <Email>Michael.Reck@helmholtz-hzi.de</Email>
+    <Department>Microbial Communication</Department>
+    <Organization>Helmholtz Centre for Infection Research</Organization>
+    <Address>
+      <Line>Inhoffenstr. 7</Line>
+      <City>Braunschweig</City>
+      <Zip-Code>38124</Zip-Code>
+      <Country>Germany</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Xiaoli</First><Last>Xue</Last></Person>
+    <Email>xue07@helmholtz-hzi.de</Email>
+    <Phone>+49(0)53161813084</Phone>
+    <Fax>+49(0)53161813096</Fax>
+    <Laboratory>Microbial Communication</Laboratory>
+    <Department>Cell Biology</Department>
+    <Organization>Helmholtz Center for Infection Research</Organization>
+    <Address>
+      <Line>Inhoffenstr. 7</Line>
+      <City>Braunschweig</City>
+      <Postal-Code>D-38124</Postal-Code>
+      <Country>Germany</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Jürgen</First><Last>Tomasch</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Irene</First><Last>Wagner-Döbler</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL10540">
+    <Status database="GEO">
+      <Submission-Date>2010-06-14</Submission-Date>
+      <Release-Date>2010-09-21</Release-Date>
+      <Last-Update-Date>2010-09-21</Last-Update-Date>
+    </Status>
+    <Title>Agilent-023956 S. mutans UA159-140509</Title>
+    <Accession database="GEO">GPL10540</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+    <Manufacturer>Agilent Technologies</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site at http://www.agilent.com/
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL10540/GPL10540_023956_D_GEO_20090515.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>SystematicName</Name>
+        <Description>GenBank accession number of sequence used to design oligonucleotide probe</Description>
+      </Column>
+      <Column position="3">
+        <Name>ORF</Name>
+        <Description>Gene locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+      <Column position="4">
+        <Name>Description</Name>
+      </Column>
+      <Column position="5">
+        <Name>GeneSymbol</Name>
+        <Description>Gene symbols</Description>
+      </Column>
+      <Column position="6">
+        <Name>SEQUENCE</Name>
+      </Column>
+      <Column position="7">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="15744">
+GPL10540-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM645255">
+    <Status database="GEO">
+      <Submission-Date>2010-12-22</Submission-Date>
+      <Release-Date>2011-08-01</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>Treated Cy5 vs. Control Cy3 Rep. 1</Title>
+    <Accession database="GEO">GSM645255</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans, treated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+treated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Streptococcus mutans, untreated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+760 ng of each Cy3- and Cy5 labelled RNA was fracmented and hybridised to the microarray at 65°C for 16 h using the Agilent Hybridisation Chamber and Agilent Hybridisation Kit according to the manufacter`s instructions.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+the array was scanned using the Agilent DNA Microarray Scanner at 5 µm resolution and the raw data were extracted using Agilent Feature Extraction software (V9.5)
+    </Scan-Protocol>
+    <Description>
+DyeSwap 1/2, Rep. 1
+    </Description>
+    <Data-Processing>
+The data were processed by Bioconductor packages written in R language (http://www.r-project.org). The linear models for microarray analysis (LIMMA) package was used for background correction, Loess normalisation of the two chanels of one array, quantile-normalisation between different arrays and identification of differentially expressed genes.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10540" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM645nnn/GSM645255/GSM645255_MCy5vs.OCy3-I.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (treated/untreated)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM645255-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM645256">
+    <Status database="GEO">
+      <Submission-Date>2010-12-22</Submission-Date>
+      <Release-Date>2011-08-01</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>Treated Cy5 vs. Control Cy3 Rep. 2</Title>
+    <Accession database="GEO">GSM645256</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans, treated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+treated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Streptococcus mutans, untreated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+760 ng of each Cy3- and Cy5 labelled RNA was fracmented and hybridised to the microarray at 65°C for 16 h using the Agilent Hybridisation Chamber and Agilent Hybridisation Kit according to the manufacter`s instructions.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+the array was scanned using the Agilent DNA Microarray Scanner at 5 µm resolution and the raw data were extracted using Agilent Feature Extraction software (V9.5)
+    </Scan-Protocol>
+    <Description>
+DyeSwap 1/2, Rep. 2
+    </Description>
+    <Data-Processing>
+The data were processed by Bioconductor packages written in R language (http://www.r-project.org). The linear models for microarray analysis (LIMMA) package was used for background correction, Loess normalisation of the two chanels of one array, quantile-normalisation between different arrays and identification of differentially expressed genes.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10540" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM645nnn/GSM645256/GSM645256_MCy5vs.OCy3-II.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (treated/untreated)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM645256-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM645257">
+    <Status database="GEO">
+      <Submission-Date>2010-12-22</Submission-Date>
+      <Release-Date>2011-08-01</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>Treated Cy5 vs. Control Cy3 Rep. 3</Title>
+    <Accession database="GEO">GSM645257</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans, treated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+treated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Streptococcus mutans, untreated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+760 ng of each Cy3- and Cy5 labelled RNA was fracmented and hybridised to the microarray at 65°C for 16 h using the Agilent Hybridisation Chamber and Agilent Hybridisation Kit according to the manufacter`s instructions.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+the array was scanned using the Agilent DNA Microarray Scanner at 5 µm resolution and the raw data were extracted using Agilent Feature Extraction software (V9.5)
+    </Scan-Protocol>
+    <Description>
+DyeSwap 1/2, Rep. 3
+    </Description>
+    <Data-Processing>
+The data were processed by Bioconductor packages written in R language (http://www.r-project.org). The linear models for microarray analysis (LIMMA) package was used for background correction, Loess normalisation of the two chanels of one array, quantile-normalisation between different arrays and identification of differentially expressed genes.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10540" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM645nnn/GSM645257/GSM645257_MCy5vs.OCy3-III.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (treated/untreated)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM645257-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM645258">
+    <Status database="GEO">
+      <Submission-Date>2010-12-22</Submission-Date>
+      <Release-Date>2011-08-01</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>Treated Cy5 vs. Control Cy3 Rep. 4</Title>
+    <Accession database="GEO">GSM645258</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans, treated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+treated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Streptococcus mutans, untreated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+760 ng of each Cy3- and Cy5 labelled RNA was fracmented and hybridised to the microarray at 65°C for 16 h using the Agilent Hybridisation Chamber and Agilent Hybridisation Kit according to the manufacter`s instructions.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+the array was scanned using the Agilent DNA Microarray Scanner at 5 µm resolution and the raw data were extracted using Agilent Feature Extraction software (V9.5)
+    </Scan-Protocol>
+    <Description>
+DyeSwap 1/2, Rep. 4
+    </Description>
+    <Data-Processing>
+The data were processed by Bioconductor packages written in R language (http://www.r-project.org). The linear models for microarray analysis (LIMMA) package was used for background correction, Loess normalisation of the two chanels of one array, quantile-normalisation between different arrays and identification of differentially expressed genes.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10540" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM645nnn/GSM645258/GSM645258_MCy5vs.OCy3-IV.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (treated/untreated)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM645258-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM645259">
+    <Status database="GEO">
+      <Submission-Date>2010-12-22</Submission-Date>
+      <Release-Date>2011-08-01</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>Treated Cy3 vs. Control Cy5 Rep. 1</Title>
+    <Accession database="GEO">GSM645259</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans, untreated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Streptococcus mutans, treated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+treated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+760 ng of each Cy3- and Cy5 labelled RNA was fracmented and hybridised to the microarray at 65°C for 16 h using the Agilent Hybridisation Chamber and Agilent Hybridisation Kit according to the manufacter`s instructions.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+the array was scanned using the Agilent DNA Microarray Scanner at 5 µm resolution and the raw data were extracted using Agilent Feature Extraction software (V9.5)
+    </Scan-Protocol>
+    <Description>
+DyeSwap 2/2, Rep. 1
+    </Description>
+    <Data-Processing>
+The data were processed by Bioconductor packages written in R language (http://www.r-project.org). The linear models for microarray analysis (LIMMA) package was used for background correction, Loess normalisation of the two chanels of one array, quantile-normalisation between different arrays and identification of differentially expressed genes.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10540" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM645nnn/GSM645259/GSM645259_MCy3vs.OCy5-I.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (treated/untreated)</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>Loess-normalised log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM645259-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM645260">
+    <Status database="GEO">
+      <Submission-Date>2010-12-22</Submission-Date>
+      <Release-Date>2011-08-01</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>Treated Cy3 vs. Control Cy5 Rep. 2</Title>
+    <Accession database="GEO">GSM645260</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans, untreated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Streptococcus mutans, treated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+treated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+760 ng of each Cy3- and Cy5 labelled RNA was fracmented and hybridised to the microarray at 65°C for 16 h using the Agilent Hybridisation Chamber and Agilent Hybridisation Kit according to the manufacter`s instructions.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+the array was scanned using the Agilent DNA Microarray Scanner at 5 µm resolution and the raw data were extracted using Agilent Feature Extraction software (V9.5)
+    </Scan-Protocol>
+    <Description>
+DyeSwap 2/2, Rep. 2
+    </Description>
+    <Data-Processing>
+The data were processed by Bioconductor packages written in R language (http://www.r-project.org). The linear models for microarray analysis (LIMMA) package was used for background correction, Loess normalisation of the two chanels of one array, quantile-normalisation between different arrays and identification of differentially expressed genes.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10540" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM645nnn/GSM645260/GSM645260_MCy3vs.OCy5-II.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (treated/untreated)</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>Loess-normalised log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM645260-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM645261">
+    <Status database="GEO">
+      <Submission-Date>2010-12-22</Submission-Date>
+      <Release-Date>2011-08-01</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>Treated Cy3 vs. Control Cy5 Rep. 3</Title>
+    <Accession database="GEO">GSM645261</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans, untreated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Streptococcus mutans, treated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+treated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+760 ng of each Cy3- and Cy5 labelled RNA was fracmented and hybridised to the microarray at 65°C for 16 h using the Agilent Hybridisation Chamber and Agilent Hybridisation Kit according to the manufacter`s instructions.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+the array was scanned using the Agilent DNA Microarray Scanner at 5 µm resolution and the raw data were extracted using Agilent Feature Extraction software (V9.5)
+    </Scan-Protocol>
+    <Description>
+Dye Swap 2/2, Rep. 3
+    </Description>
+    <Data-Processing>
+The data were processed by Bioconductor packages written in R language (http://www.r-project.org). The linear models for microarray analysis (LIMMA) package was used for background correction, Loess normalisation of the two chanels of one array, quantile-normalisation between different arrays and identification of differentially expressed genes.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10540" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM645nnn/GSM645261/GSM645261_MCy3vs.OCy5-III.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (treated/untreated)</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>Loess-normalised log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM645261-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM645262">
+    <Status database="GEO">
+      <Submission-Date>2010-12-22</Submission-Date>
+      <Release-Date>2011-08-01</Release-Date>
+      <Last-Update-Date>2011-08-01</Last-Update-Date>
+    </Status>
+    <Title>Treated Cy3 vs. Control Cy5 Rep. 4</Title>
+    <Accession database="GEO">GSM645262</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans, untreated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Streptococcus mutans, treated</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics tag="treatment">
+treated
+      </Characteristics>
+      <Characteristics tag="cell type">
+biofilm
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Treatment-Protocol>
+biofilm cells were treated with 0.25 µg/ml carolacton, control wells without treatment
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Biofilms (initial OD600 = 0.01) were grown in THBS medium supplemented with (0.25 µg/ml) and without carolacton for 8 hours in 24 well polystyrene plates (Greiner, Germany).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+total RNA was extracted using the RNeasy Mini Kit (Qiagen, Germany)
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+RNA samples were labelled either with Cy3 or Cy5 using the ULS fluorescent labelling kit (Kreatech, Germany)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+760 ng of each Cy3- and Cy5 labelled RNA was fracmented and hybridised to the microarray at 65°C for 16 h using the Agilent Hybridisation Chamber and Agilent Hybridisation Kit according to the manufacter`s instructions.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+the array was scanned using the Agilent DNA Microarray Scanner at 5 µm resolution and the raw data were extracted using Agilent Feature Extraction software (V9.5)
+    </Scan-Protocol>
+    <Description>
+Dye Swap 2/2, Rep. 4
+    </Description>
+    <Data-Processing>
+The data were processed by Bioconductor packages written in R language (http://www.r-project.org). The linear models for microarray analysis (LIMMA) package was used for background correction, Loess normalisation of the two chanels of one array, quantile-normalisation between different arrays and identification of differentially expressed genes.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10540" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM645nnn/GSM645262/GSM645262_MCy3vs.OCy5-IV.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log2 ratio (treated/untreated)</Description>
+      </Column>
+      <Column position="3">
+        <Name>INV_VALUE</Name>
+        <Description>Loess-normalised log2 ratio (Cy5/Cy3)</Description>
+      </Column>
+    <External-Data rows="15744">
+GSM645262-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE26274">
+    <Status database="GEO">
+      <Submission-Date>2010-12-22</Submission-Date>
+      <Release-Date>2011-08-01</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Analysis of carolacton regulated genes</Title>
+    <Accession database="GEO">GSE26274</Accession>
+    <Pubmed-ID>21840978</Pubmed-ID>
+    <Summary>
+Transcriptional profiling of carolacton treated S. mutans biofilm cells in comparison to untreated biofilms after 8h of growth.
+    </Summary>
+    <Overall-Design>
+Two condition experiment, carolacton treated vs. untreated, biological replicates: 4, 2 technical replicates of each sample (Dye Swap)
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM645255" />
+    <Sample-Ref ref="GSM645256" />
+    <Sample-Ref ref="GSM645257" />
+    <Sample-Ref ref="GSM645258" />
+    <Sample-Ref ref="GSM645259" />
+    <Sample-Ref ref="GSM645260" />
+    <Sample-Ref ref="GSM645261" />
+    <Sample-Ref ref="GSM645262" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE26274/GSE26274_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/135139" />
+  </Series>
+
+</MINiML>

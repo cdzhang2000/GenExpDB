@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Feng</First><Last>Zheng</Last></Person>
+    <Organization>Research Institute for Medicine of Nanjing Command</Organization>
+    <Address>
+      <Line>293 East Zhongshan Road</Line>
+      <City>Nanjing</City>
+      <Postal-Code>210002</Postal-Code>
+      <Country>China</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Jiaqi</First><Last>Tang</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL10447">
+    <Status database="GEO">
+      <Submission-Date>2010-05-20</Submission-Date>
+      <Release-Date>2010-06-20</Release-Date>
+      <Last-Update-Date>2011-10-19</Last-Update-Date>
+    </Status>
+    <Title>Streptococcus suis serotype 2 05ZYH33 strain</Title>
+    <Accession database="GEO">GPL10447</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="391295">Streptococcus suis 05ZYH33</Organism>
+    <Manufacturer>Combimatrix</Manufacturer>
+    <Manufacture-Protocol>
+According to the whole genome sequence of 05ZYH33 (NC_009442), specific oligo-nucleotide probes with an average length of 35 nt were designed to cover every putative ORF (2194 in total) in SS2 genome using Array Designer 2.0 and then synthesized onto complementary metal oxide semiconductor (CMOS) matrix utilizing in situ electrochemical synthesis technique.
+    </Manufacture-Protocol>
+    <Pubmed-ID>21149588</Pubmed-ID>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Name</Name>
+      </Column>
+      <Column position="3">
+        <Name>ORF</Name>
+        <Description>Protein locus tags  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Streptococcus suis 05ZYH33[organism]</Link-Suffix>
+      </Column>
+      <Column position="4">
+        <Name>PROTEIN_NAME</Name>
+        <Description>Streptococcus suis serotype 2 strain 05ZYH33 ORFs</Description>
+      </Column>
+      <Column position="5">
+        <Name>SEQUENCE</Name>
+      </Column>
+    <External-Data rows="1970">
+GPL10447-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM545813">
+    <Status database="GEO">
+      <Submission-Date>2010-05-20</Submission-Date>
+      <Release-Date>2010-06-20</Release-Date>
+      <Last-Update-Date>2010-05-21</Last-Update-Date>
+    </Status>
+    <Title>4009754_WT</Title>
+    <Accession database="GEO">GSM545813</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus suis 2, 05ZYH33 wild-type strain, postexponential phase of growth</Source>
+      <Organism taxid="391295">Streptococcus suis 05ZYH33</Organism>
+      <Characteristics tag="strain">
+05ZYH33
+      </Characteristics>
+      <Growth-Protocol>
+The strain was grown in Todd-Hewitt broth (THB) to OD600=0.9 in the absence of antibiotics.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Trizol reagent (Invitrogen), and purified using RNeasy Mini Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was labeled with Cy3-dCTP during the reverse transcription and purified using QIAquick Nucleotide Removal Kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+After pre-hybridization, microarray slides were hybridized with the relevant samples at 65℃ for 15 h. This was repeated 4 times for both samples (WT and RGG).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+All hybridization slides were scanned by GenePix 4100A scanner after appropriate washing, and the average pixel intensity values were quantified using GenePix Pro 4.1.
+    </Scan-Protocol>
+    <Data-Processing>
+The microarray data were normalized by quantile normalization and logarithmically transformed before further analysis.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10447" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM545nnn/GSM545813/GSM545813.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>CV</Name>
+        <Description>coefficient of variation</Description>
+      </Column>
+    <External-Data rows="1970">
+GSM545813-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM545814">
+    <Status database="GEO">
+      <Submission-Date>2010-05-20</Submission-Date>
+      <Release-Date>2010-06-20</Release-Date>
+      <Last-Update-Date>2010-05-21</Last-Update-Date>
+    </Status>
+    <Title>4009754_RGG</Title>
+    <Accession database="GEO">GSM545814</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus suis 2, 05ZYH33 rgg isogenic mutant strain, postexponential phase of growth</Source>
+      <Organism taxid="391295">Streptococcus suis 05ZYH33</Organism>
+      <Characteristics tag="strain">
+05ZYH33 rgg isogenic mutant
+      </Characteristics>
+      <Growth-Protocol>
+The strain was grown in Todd-Hewitt broth (THB) to OD600=0.9 in the absence of antibiotics.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using Trizol reagent (Invitrogen), and purified using RNeasy Mini Kit (Qiagen).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+cDNA was labeled with Cy3-dCTP during the reverse transcription and purified using QIAquick Nucleotide Removal Kit (Qiagen).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+After pre-hybridization, microarray slides were hybridized with the relevant samples at 65℃ for 15 h. This was repeated 4 times for both samples (WT and RGG).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+All hybridization slides were scanned by GenePix 4100A scanner after appropriate washing, and the average pixel intensity values were quantified using GenePix Pro 4.1.
+    </Scan-Protocol>
+    <Data-Processing>
+The microarray data were normalized by quantile normalization and logarithmically transformed before further analysis.
+    </Data-Processing>
+    <Platform-Ref ref="GPL10447" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM545nnn/GSM545814/GSM545814.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>CV</Name>
+        <Description>coefficient of variation</Description>
+      </Column>
+    <External-Data rows="1970">
+GSM545814-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE21940">
+    <Status database="GEO">
+      <Submission-Date>2010-05-20</Submission-Date>
+      <Release-Date>2010-06-20</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Microarray analysis of Rgg-dependent transcriptional regulation in Streptococcus suis serotype 2 strain 05ZYH33</Title>
+    <Accession database="GEO">GSE21940</Accession>
+    <Pubmed-ID>21149588</Pubmed-ID>
+    <Summary>
+Streptococcus suis 2 Rgg-dependent transcription was analyzed.
+    </Summary>
+    <Overall-Design>
+Microarray analysis was performed using RNA samples isolated from Streptococcus suis 2 wild-type strain 05ZYH33 as well as RNA isolated from 05ZYH33 rgg isogenic mutant strain during postexponential phases of growth.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM545813" />
+    <Sample-Ref ref="GSM545814" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE21940/GSE21940_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/126883" />
+  </Series>
+
+</MINiML>

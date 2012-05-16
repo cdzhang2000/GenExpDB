@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Samuel</First><Last>Shelburne</Last></Person>
+    <Email>sshelburne@mdanderson.org</Email>
+    <Phone>713-792-3629</Phone>
+    <Fax>713-794-4350</Fax>
+    <Department>Infectious Diseases</Department>
+    <Organization>MD Anderson Cancer Center</Organization>
+    <Address>
+      <Line>1515 Holcombe Blvd</Line>
+      <City>Houston</City>
+      <State>TX</State>
+      <Zip-Code>77030</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Paul</First><Last>Sumby</Last></Person>
+    <Laboratory>James M. Musser</Laboratory>
+    <Department>Pathology</Department>
+    <Organization>Methodist Hospital</Organization>
+    <Address>
+      <Line>6565 Fannin Street</Line>
+      <City>Houston</City>
+      <State>TX</State>
+      <Zip-Code>77030</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Ronan</First><Middle>K</Middle><Last>Carroll</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Samuel</First><Middle>A</Middle><Last>Shelburne</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>James</First><Middle>M</Middle><Last>Musser</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL9080">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2011-01-17</Last-Update-Date>
+    </Status>
+    <Title>TMHRI/Affy Streptococcus pyogenes array</Title>
+    <Accession database="GEO">GPL9080</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1314">Streptococcus pyogenes</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+Standard Affymetrix procedures.
+    </Manufacture-Protocol>
+    <Catalog-Number>N/A</Catalog-Number>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contact-Ref ref="contrib2" />
+    <Supplementary-Data type="CDF">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL9080/GPL9080.cdf.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL9080/GPL9080_TMHRI-JMa520400_probe_sequences.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL9080/GPL9080_probe_sequences_readme.txt
+    </Supplementary-Data>
+    <Relation type="Affiliated with" target="GPL6186" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Streptococcus pyogenes[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>Gene description</Name>
+        <Description>Function of the proposed ORF</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="2198">
+GPL9080-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM656257">
+    <Status database="GEO">
+      <Submission-Date>2011-01-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2011-04-01</Last-Update-Date>
+    </Status>
+    <Title>MGAS10870_1</Title>
+    <Accession database="GEO">GSM656257</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Strain MGAS10870 grown to early stationary phase in THY</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS10870
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+wild-type RopB allele
+      </Characteristics>
+      <Characteristics tag="growth">
+early stationary phase in THY
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strain was grown to early stationary phase in THY.  2x RNAprotect (Qiagen) was added for 5 mins and cells were pelleted.  Total RNA was extracted with RNeasy (Qiagen) and reverse transcribed to cDNA with SuperScriptIII (Invitrogen).  cDNA was labeled and hybridized following Affymetrix instructions.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Per Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Per Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Per Affymetrix protocol
+    </Scan-Protocol>
+    <Data-Processing>
+Probes corresponding to the serotype M3 strains used were extracted from the total data set.  The total intensity of the array for each sample was then calculated by adding the values for each of the probe sets.  The probe set values were then normalized such that the total intensity derived from each sample was equivalent. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM656nnn/GSM656257/GSM656257.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>signal intensity (spot density)</Description>
+      </Column>
+    <External-Data rows="1590">
+GSM656257-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM656264">
+    <Status database="GEO">
+      <Submission-Date>2011-01-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2011-04-01</Last-Update-Date>
+    </Status>
+    <Title>MGAS10870_2</Title>
+    <Accession database="GEO">GSM656264</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>MGAS10870 grown to early stationary phase in THY</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS10870
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+wild-type RopB allele
+      </Characteristics>
+      <Characteristics tag="growth">
+early stationary phase in THY
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strain was grown to early stationary phase in THY.  2x RNAprotect (Qiagen) was added for 5 mins and cells were pelleted.  Total RNA was extracted with RNeasy (Qiagen) and reverse transcribed to cDNA with SuperScriptIII (Invitrogen).  cDNA was labeled and hybridized following Affymetrix instructions.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Per Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Per Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Per Affymetrix protocol
+    </Scan-Protocol>
+    <Data-Processing>
+Probes corresponding to the serotype M3 strains used were extracted from the total data set.  The total intensity of the array for each sample was then calculated by adding the values for each of the probe sets.  The probe set values were then normalized such that the total intensity derived from each sample was equivalent. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM656nnn/GSM656264/GSM656264.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>signal intensity (spot density)</Description>
+      </Column>
+    <External-Data rows="1590">
+GSM656264-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM656267">
+    <Status database="GEO">
+      <Submission-Date>2011-01-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2011-04-01</Last-Update-Date>
+    </Status>
+    <Title>10870deltaropB_1</Title>
+    <Accession database="GEO">GSM656267</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>10870deltaropB grown to early stationary phase in THY</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS10870
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+deltaropB
+      </Characteristics>
+      <Characteristics tag="growth">
+early stationary phase in THY
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strain was grown to early stationary phase in THY.  2x RNAprotect (Qiagen) was added for 5 mins and cells were pelleted.  Total RNA was extracted with RNeasy (Qiagen) and reverse transcribed to cDNA with SuperScriptIII (Invitrogen).  cDNA was labeled and hybridized following Affymetrix instructions.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Per Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Per Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Per Affymetrix protocol
+    </Scan-Protocol>
+    <Data-Processing>
+Probes corresponding to the serotype M3 strains used were extracted from the total data set.  The total intensity of the array for each sample was then calculated by adding the values for each of the probe sets.  The probe set values were then normalized such that the total intensity derived from each sample was equivalent. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM656nnn/GSM656267/GSM656267.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>signal intensity (spot density)</Description>
+      </Column>
+    <External-Data rows="1590">
+GSM656267-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM656268">
+    <Status database="GEO">
+      <Submission-Date>2011-01-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2011-04-01</Last-Update-Date>
+    </Status>
+    <Title>10870deltaropB_2</Title>
+    <Accession database="GEO">GSM656268</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>10870deltaropB grown to early stationary phase in THY</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS10870
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+deltaropB
+      </Characteristics>
+      <Characteristics tag="growth">
+early stationary phase in THY
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strain was grown to early stationary phase in THY.  2x RNAprotect (Qiagen) was added for 5 mins and cells were pelleted.  Total RNA was extracted with RNeasy (Qiagen) and reverse transcribed to cDNA with SuperScriptIII (Invitrogen).  cDNA was labeled and hybridized following Affymetrix instructions.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Per Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Per Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Per Affymetrix protocol
+    </Scan-Protocol>
+    <Data-Processing>
+Probes corresponding to the serotype M3 strains used were extracted from the total data set.  The total intensity of the array for each sample was then calculated by adding the values for each of the probe sets.  The probe set values were then normalized such that the total intensity derived from each sample was equivalent. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM656nnn/GSM656268/GSM656268.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>signal intensity (spot density)</Description>
+      </Column>
+    <External-Data rows="1590">
+GSM656268-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM656269">
+    <Status database="GEO">
+      <Submission-Date>2011-01-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2011-04-01</Last-Update-Date>
+    </Status>
+    <Title>MGAS9937_1</Title>
+    <Accession database="GEO">GSM656269</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>MGAS9937 grown to early stationary phase in THY</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS9937
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+RopB allele containing a C85Y polymorphism
+      </Characteristics>
+      <Characteristics tag="growth">
+early stationary phase in THY
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strain was grown to early stationary phase in THY.  2x RNAprotect (Qiagen) was added for 5 mins and cells were pelleted.  Total RNA was extracted with RNeasy (Qiagen) and reverse transcribed to cDNA with SuperScriptIII (Invitrogen).  cDNA was labeled and hybridized following Affymetrix instructions.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Per Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Per Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Per Affymetrix protocol
+    </Scan-Protocol>
+    <Data-Processing>
+Probes corresponding to the serotype M3 strains used were extracted from the total data set.  The total intensity of the array for each sample was then calculated by adding the values for each of the probe sets.  The probe set values were then normalized such that the total intensity derived from each sample was equivalent. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM656nnn/GSM656269/GSM656269.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>signal intensity (spot density)</Description>
+      </Column>
+    <External-Data rows="1590">
+GSM656269-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM656270">
+    <Status database="GEO">
+      <Submission-Date>2011-01-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2011-04-01</Last-Update-Date>
+    </Status>
+    <Title>MGAS9937_2</Title>
+    <Accession database="GEO">GSM656270</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>MGAS9937 grown to early stationary phase in THY</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS9937
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+RopB allele containing a C85Y polymorphism
+      </Characteristics>
+      <Characteristics tag="growth">
+early stationary phase in THY
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strain was grown to early stationary phase in THY.  2x RNAprotect (Qiagen) was added for 5 mins and cells were pelleted.  Total RNA was extracted with RNeasy (Qiagen) and reverse transcribed to cDNA with SuperScriptIII (Invitrogen).  cDNA was labeled and hybridized following Affymetrix instructions.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Per Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Per Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Per Affymetrix protocol
+    </Scan-Protocol>
+    <Data-Processing>
+Probes corresponding to the serotype M3 strains used were extracted from the total data set.  The total intensity of the array for each sample was then calculated by adding the values for each of the probe sets.  The probe set values were then normalized such that the total intensity derived from each sample was equivalent. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM656nnn/GSM656270/GSM656270.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>signal intensity (spot density)</Description>
+      </Column>
+    <External-Data rows="1590">
+GSM656270-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM656271">
+    <Status database="GEO">
+      <Submission-Date>2011-01-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2011-04-01</Last-Update-Date>
+    </Status>
+    <Title>9937deltaropB_1</Title>
+    <Accession database="GEO">GSM656271</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>9937deltaropB grown to early stationary phase in THY</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS9937
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+deltaropB
+      </Characteristics>
+      <Characteristics tag="growth">
+early stationary phase in THY
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strain was grown to early stationary phase in THY.  2x RNAprotect (Qiagen) was added for 5 mins and cells were pelleted.  Total RNA was extracted with RNeasy (Qiagen) and reverse transcribed to cDNA with SuperScriptIII (Invitrogen).  cDNA was labeled and hybridized following Affymetrix instructions.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Per Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Per Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Per Affymetrix protocol
+    </Scan-Protocol>
+    <Data-Processing>
+Probes corresponding to the serotype M3 strains used were extracted from the total data set.  The total intensity of the array for each sample was then calculated by adding the values for each of the probe sets.  The probe set values were then normalized such that the total intensity derived from each sample was equivalent. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM656nnn/GSM656271/GSM656271.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>signal intensity (spot density)</Description>
+      </Column>
+    <External-Data rows="1590">
+GSM656271-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM656272">
+    <Status database="GEO">
+      <Submission-Date>2011-01-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2011-04-01</Last-Update-Date>
+    </Status>
+    <Title>9937deltaropB_2</Title>
+    <Accession database="GEO">GSM656272</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>9937deltaropB grown to early stationary phase in THY</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS9937
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+deltaropB
+      </Characteristics>
+      <Characteristics tag="growth">
+early stationary phase in THY
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Strain was grown to early stationary phase in THY.  2x RNAprotect (Qiagen) was added for 5 mins and cells were pelleted.  Total RNA was extracted with RNeasy (Qiagen) and reverse transcribed to cDNA with SuperScriptIII (Invitrogen).  cDNA was labeled and hybridized following Affymetrix instructions.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Per Affymetrix protocol
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Per Affymetrix protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Per Affymetrix protocol
+    </Scan-Protocol>
+    <Data-Processing>
+Probes corresponding to the serotype M3 strains used were extracted from the total data set.  The total intensity of the array for each sample was then calculated by adding the values for each of the probe sets.  The probe set values were then normalized such that the total intensity derived from each sample was equivalent. 
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM656nnn/GSM656272/GSM656272.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>signal intensity (spot density)</Description>
+      </Column>
+    <External-Data rows="1590">
+GSM656272-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE26655">
+    <Status database="GEO">
+      <Submission-Date>2011-01-17</Submission-Date>
+      <Release-Date>2011-04-01</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Defining the serotype M3 RopB regulon</Title>
+    <Accession database="GEO">GSE26655</Accession>
+    <Pubmed-ID>21490401</Pubmed-ID>
+    <Summary>
+Recent whole-genome sequencing of large populations of the same bacterial species has revealed significant disparity among genes in the frequency of single nucleotide polymorphisms (SNPs).  For example, a previous analysis of invasive serotype M3 group A streptococci (GAS) found the highest frequency of SNPs in the gene (ropB) encoding the regulator of proteinase B (RopB).  This finding led us to hypothesize that RopB polymorphisms contribute to altered GAS host-pathogen interactions.  Sequencing of ropB in 171 invasive serotype M3 GAS strains from a surveillance study identified 19 distinct ropB alleles.  Inactivation of the ropB gene in strains producing distinct RopB variants had dramatically different effects on GAS global gene expression.  Further, analysis of laboratory-generated isoallelic GAS strains differing only by a single amino acid replacement in RopB confirmed that the variant protein affected the transcript level of the gene encoding streptococcal proteinase B, a major RopB-regulated virulence factor.  Comparison of parental, RopB-inactivated, and RopB isoallelic strains in mouse infection models demonstrated that RopB polymorphisms significantly influence GAS virulence and disease manifestations.  These studies detail a paradigm in which unbiased, whole-genome sequence analysis of populations of clinical bacterial isolates creates new avenues of productive investigation into the pathogenesis of common human infections.
+    </Summary>
+    <Overall-Design>
+This study examined the effects of RopB inactivaiton on two distinct serotype M3 group A streptococcal strains with distinct forms of the RopB protein.  RopB was inactivated in a strain with a wild-type RopB allele (strain MGAS10870) and in a strain with a RopB allele containing a C85Y polymorphism (strain MGAS9937). The wild-type and RopB inactivated strains were grown in duplicate to the early stationary growth phase in standard laboratory medium (THY).  Total RNA was isolated, converted to cDNA, and hybridized to a custom-made Affymetrix GeneChip.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM656257" />
+    <Sample-Ref ref="GSM656264" />
+    <Sample-Ref ref="GSM656267" />
+    <Sample-Ref ref="GSM656268" />
+    <Sample-Ref ref="GSM656269" />
+    <Sample-Ref ref="GSM656270" />
+    <Sample-Ref ref="GSM656271" />
+    <Sample-Ref ref="GSM656272" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE26655/GSE26655_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/136393" />
+  </Series>
+
+</MINiML>

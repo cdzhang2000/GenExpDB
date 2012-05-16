@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jess</First><Last>Leber</Last></Person>
+    <Email>jessleber@alum.mit.edu</Email>
+    <Phone>510-697-5436</Phone>
+    <Laboratory>Leber</Laboratory>
+    <Department>Microbiology</Department>
+    <Organization>The University of Chicago</Organization>
+    <Address>
+      <Line>920 E. 58th Street CLSC 615</Line>
+      <City>Chicago</City>
+      <State>IL</State>
+      <Zip-Code>60637</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL13395">
+    <Status database="GEO">
+      <Submission-Date>2011-04-11</Submission-Date>
+      <Release-Date>2011-04-12</Release-Date>
+      <Last-Update-Date>2011-04-12</Last-Update-Date>
+    </Status>
+    <Title>WUSTL_TIGR Listeria monocytogenes spotted 70-mer oligonucletoide array</Title>
+    <Accession database="GEO">GPL13395</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="169963">Listeria monocytogenes EGD-e</Organism>
+    <Organism taxid="265669">Listeria monocytogenes serotype 4b str. F2365</Organism>
+    <Organism taxid="267409">Listeria monocytogenes serotype 1/2a str. F6854</Organism>
+    <Organism taxid="267410">Listeria monocytogenes serotype 4b str. H7858</Organism>
+    <Manufacturer>WUSTL genomics facility</Manufacturer>
+    <Manufacture-Protocol>
+printed on Corning UltraGap slides
+    </Manufacture-Protocol>
+    <Description>
+TIGR PFGRC 70-mer oligonucleotides
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL13395/GPL13395_platform_table.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>TIGR PVGRC oligo designation, with ListiList ORF designation preceeding for strain EGDe spots</Description>
+      </Column>
+      <Column position="2">
+        <Name>SEQUENCE</Name>
+        <Description>sequence of 70-mer oligo</Description>
+      </Column>
+      <Column position="3">
+        <Name>NAME</Name>
+        <Description>TIGR PFGRC annotation</Description>
+      </Column>
+      <Column position="4">
+        <Name>ORF</Name>
+        <Description>ORF name  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+    <External-Data rows="3576">
+GPL13395-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM706196">
+    <Status database="GEO">
+      <Submission-Date>2011-04-11</Submission-Date>
+      <Release-Date>2011-04-12</Release-Date>
+      <Last-Update-Date>2011-04-12</Last-Update-Date>
+    </Status>
+    <Title>WT_BHI_30min_repA</Title>
+    <Accession database="GEO">GSM706196</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT 10403S LM grown in BHI</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference total RNA from all samples used in this experiment (6 samples)</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+applied to spotted arrays in binding buffer containing HEPES, SSC, tRNA, and SDS at 63 °C for 48 hours (see Leber et al, PloS Pathogens, 2008 for more detail)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned on a Molecular Devices GenePix 4100B scanner, using GenePix Pro software
+    </Scan-Protocol>
+    <Description>
+biological replicate 1 of 3
+    </Description>
+    <Data-Processing>
+Background subtracted data obtained from log2 of processed Red signal/processed Green signal, using GenePix Pro software
+    </Data-Processing>
+    <Platform-Ref ref="GPL13395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM706nnn/GSM706196/GSM706196.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) test/ref</Description>
+      </Column>
+    <External-Data rows="3576">
+GSM706196-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM706197">
+    <Status database="GEO">
+      <Submission-Date>2011-04-11</Submission-Date>
+      <Release-Date>2011-04-12</Release-Date>
+      <Last-Update-Date>2011-04-12</Last-Update-Date>
+    </Status>
+    <Title>WT_BHI_30min_repB</Title>
+    <Accession database="GEO">GSM706197</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT 10403S LM grown in BHI</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference total RNA from all samples used in this experiment (6 samples)</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+applied to spotted arrays in binding buffer containing HEPES, SSC, tRNA, and SDS at 63 °C for 48 hours (see Leber et al, PloS Pathogens, 2008 for more detail)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned on a Molecular Devices GenePix 4100B scanner, using GenePix Pro software
+    </Scan-Protocol>
+    <Description>
+biological replicate 2 of 3
+    </Description>
+    <Data-Processing>
+Background subtracted data obtained from log2 of processed Red signal/processed Green signal, using GenePix Pro software
+    </Data-Processing>
+    <Platform-Ref ref="GPL13395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM706nnn/GSM706197/GSM706197.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) test/ref</Description>
+      </Column>
+    <External-Data rows="3576">
+GSM706197-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM706198">
+    <Status database="GEO">
+      <Submission-Date>2011-04-11</Submission-Date>
+      <Release-Date>2011-04-12</Release-Date>
+      <Last-Update-Date>2011-04-12</Last-Update-Date>
+    </Status>
+    <Title>WT_BHI_30min_repC</Title>
+    <Accession database="GEO">GSM706198</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT 10403S LM grown in BHI</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference total RNA from all samples used in this experiment (6 samples)</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+applied to spotted arrays in binding buffer containing HEPES, SSC, tRNA, and SDS at 63 °C for 48 hours (see Leber et al, PloS Pathogens, 2008 for more detail)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned on a Molecular Devices GenePix 4100B scanner, using GenePix Pro software
+    </Scan-Protocol>
+    <Description>
+biological replicate 3 of 3
+    </Description>
+    <Data-Processing>
+Background subtracted data obtained from log2 of processed Red signal/processed Green signal, using GenePix Pro software
+    </Data-Processing>
+    <Platform-Ref ref="GPL13395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM706nnn/GSM706198/GSM706198.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) test/ref</Description>
+      </Column>
+    <External-Data rows="3576">
+GSM706198-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM706199">
+    <Status database="GEO">
+      <Submission-Date>2011-04-11</Submission-Date>
+      <Release-Date>2011-04-12</Release-Date>
+      <Last-Update-Date>2011-04-12</Last-Update-Date>
+    </Status>
+    <Title>WT_BHI+bile_30min_repA</Title>
+    <Accession database="GEO">GSM706199</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT 10403S LM grown in BHI + 1% bile</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference total RNA from all samples used in this experiment (6 samples)</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+applied to spotted arrays in binding buffer containing HEPES, SSC, tRNA, and SDS at 63 °C for 48 hours (see Leber et al, PloS Pathogens, 2008 for more detail)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned on a Molecular Devices GenePix 4100B scanner, using GenePix Pro software
+    </Scan-Protocol>
+    <Description>
+biological replicate 1 of 3
+    </Description>
+    <Data-Processing>
+Background subtracted data obtained from log2 of processed Red signal/processed Green signal, using GenePix Pro software
+    </Data-Processing>
+    <Platform-Ref ref="GPL13395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM706nnn/GSM706199/GSM706199.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) test/ref</Description>
+      </Column>
+    <External-Data rows="3576">
+GSM706199-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM706200">
+    <Status database="GEO">
+      <Submission-Date>2011-04-11</Submission-Date>
+      <Release-Date>2011-04-12</Release-Date>
+      <Last-Update-Date>2011-04-12</Last-Update-Date>
+    </Status>
+    <Title>WT_BHI+bile_30min_repB</Title>
+    <Accession database="GEO">GSM706200</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT 10403S LM grown in BHI + 1% bile</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference total RNA from all samples used in this experiment (6 samples)</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+applied to spotted arrays in binding buffer containing HEPES, SSC, tRNA, and SDS at 63 °C for 48 hours (see Leber et al, PloS Pathogens, 2008 for more detail)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned on a Molecular Devices GenePix 4100B scanner, using GenePix Pro software
+    </Scan-Protocol>
+    <Description>
+biological replicate 2 of 3
+    </Description>
+    <Data-Processing>
+Background subtracted data obtained from log2 of processed Red signal/processed Green signal, using GenePix Pro software
+    </Data-Processing>
+    <Platform-Ref ref="GPL13395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM706nnn/GSM706200/GSM706200.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) test/ref</Description>
+      </Column>
+    <External-Data rows="3576">
+GSM706200-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM706201">
+    <Status database="GEO">
+      <Submission-Date>2011-04-11</Submission-Date>
+      <Release-Date>2011-04-12</Release-Date>
+      <Last-Update-Date>2011-04-12</Last-Update-Date>
+    </Status>
+    <Title>WT_BHI+bile_30min_repC</Title>
+    <Accession database="GEO">GSM706201</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>WT 10403S LM grown in BHI + 1% bile</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>pooled reference total RNA from all samples used in this experiment (6 samples)</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="strain">
+10403S
+      </Characteristics>
+      <Treatment-Protocol>
++/- 1% porcine bile (Sigma) for 30 min
+      </Treatment-Protocol>
+      <Growth-Protocol>
+BHI, 37 °C, 250 RPM shaking, midlog
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Trizol with silica beads in MP FastPrep
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+5 ug amplified RNA was reaction with Cy dye for 60 min, and purified using Zymo clean and concentrate columns (see Leber et al, PloS Pathogens, 2008 for more detail)
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+applied to spotted arrays in binding buffer containing HEPES, SSC, tRNA, and SDS at 63 °C for 48 hours (see Leber et al, PloS Pathogens, 2008 for more detail)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned on a Molecular Devices GenePix 4100B scanner, using GenePix Pro software
+    </Scan-Protocol>
+    <Description>
+biological replicate 3 of 3
+    </Description>
+    <Data-Processing>
+Background subtracted data obtained from log2 of processed Red signal/processed Green signal, using GenePix Pro software
+    </Data-Processing>
+    <Platform-Ref ref="GPL13395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM706nnn/GSM706201/GSM706201.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) test/ref</Description>
+      </Column>
+    <External-Data rows="3576">
+GSM706201-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE28507">
+    <Status database="GEO">
+      <Submission-Date>2011-04-11</Submission-Date>
+      <Release-Date>2011-04-12</Release-Date>
+      <Last-Update-Date>2012-03-23</Last-Update-Date>
+    </Status>
+    <Title>Listeria monocytogenes transcriptional response to bile</Title>
+    <Accession database="GEO">GSE28507</Accession>
+    <Pubmed-ID>21542862</Pubmed-ID>
+    <Summary>
+These studies were designed to examine the acute Listeria monocytogenes transcriptional response to mammalian (porcine) bile.
+    </Summary>
+    <Overall-Design>
+Triplicate WT Listeria monocytogenes (strain 10403S) were grown to mid-log in BHI at 37 °C.  Samples were divided, and either treated or not treated by addition of porcine bile (Sigma, to 1% final) for 30 minutes.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM706196" />
+    <Sample-Ref ref="GSM706197" />
+    <Sample-Ref ref="GSM706198" />
+    <Sample-Ref ref="GSM706199" />
+    <Sample-Ref ref="GSM706200" />
+    <Sample-Ref ref="GSM706201" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE28507/GSE28507_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/138987" />
+  </Series>
+
+</MINiML>

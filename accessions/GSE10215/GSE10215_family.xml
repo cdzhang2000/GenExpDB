@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jeffrey</First><Middle>P</Middle><Last>Bond</Last></Person>
+    <Department>Microbiology and Molecular Genetics</Department>
+    <Organization>University of Vermont</Organization>
+    <Address>
+      <Line>95 Carrigan Dri e</Line>
+      <City>Burlington</City>
+      <State>VT</State>
+      <Zip-Code>05405</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Grace</First><Middle>A</Middle><Last>Spatafora</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Nathaniel</First><Last>Langer</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Jeremy</First><Last>Shaw</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL6395">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2009-01-18</Last-Update-Date>
+    </Status>
+    <Title>University of Vermont Affymetrix Streptococcus mutans UA159 3K microarray version 1</Title>
+    <Accession database="GEO">GPL6395</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+Affymetrix Microchip Manufacturing Protocol
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>GB_ACC</Name>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&amp;db=Nucleotide&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="3">
+        <Name>GENOME_ACC</Name>
+      </Column>
+      <Column position="4">
+        <Name>Gene_Desc</Name>
+      </Column>
+      <Column position="5">
+        <Name>ORF</Name>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="6">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="2925">
+GPL6395-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM257876">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>Low Mn, experiment A</Title>
+    <Accession database="GEO">GSM257876</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 Low Mn, experiment A</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+Chelex-treated semi-defined medium was supplemented with ferric citrate, magnesium chloride, and 0.1 micromolar (Low) MnCl2
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in reconstituted chelex-treated semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+Low Mn, experiment A
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257876/GSM257876.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257876-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM257877">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>High Mn, experiment A</Title>
+    <Accession database="GEO">GSM257877</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 High Mn, experiment A</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+Chelex-treated semi-defined medium was supplemented with ferric citrate, magnesium chloride, and 10 micromolar (High) MnCl2
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in reconstituted chelex-treated semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+High Mn, experiment A
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257877/GSM257877.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257877-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM257878">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>Low Mn, experiment B</Title>
+    <Accession database="GEO">GSM257878</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 Low Mn, experiment B</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+Chelex-treated semi-defined medium was supplemented with ferric citrate, magnesium chloride, and 0.1 micromolar (Low) MnCl2
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in reconstituted chelex-treated semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+Low Mn, experiment B
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257878/GSM257878.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257878-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM257879">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>High Mn, experiment B</Title>
+    <Accession database="GEO">GSM257879</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 High Mn, experiment B</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+Chelex-treated semi-defined medium was supplemented with ferric citrate, magnesium chloride, and 10 micromolar (High) MnCl2
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in reconstituted chelex-treated semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+High Mn, experiment B
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257879/GSM257879.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257879-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM257880">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>Low Mn, experiment C</Title>
+    <Accession database="GEO">GSM257880</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 Low Mn, experiment C</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+Chelex-treated semi-defined medium was supplemented with ferric citrate, magnesium chloride, and 0.1 micromolar (Low) MnCl2
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in reconstituted chelex-treated semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+Low Mn, experiment C
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257880/GSM257880.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257880-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM257881">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>High Mn, experiment C</Title>
+    <Accession database="GEO">GSM257881</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 High Mn, experiment C</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+Chelex-treated semi-defined medium was supplemented with ferric citrate, magnesium chloride, and 10 micromolar (High) MnCl2
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in reconstituted chelex-treated semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+High Mn, experiment C
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257881/GSM257881.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257881-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM257882">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>WT, experiment D</Title>
+    <Accession database="GEO">GSM257882</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 WT, experiment D</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+semi-defined medium ~ 2micromolar MnCl2 via ICP
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+WT, experiment D
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257882/GSM257882.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257882-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM257883">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>SloR mutant, experiment D</Title>
+    <Accession database="GEO">GSM257883</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 SloR mutant, experiment D</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+semi-defined medium ~ 2micromolar MnCl2 via ICP
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+SloR mutant, experiment D
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257883/GSM257883.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257883-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM257884">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>WT, experiment E</Title>
+    <Accession database="GEO">GSM257884</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 WT, experiment E</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+semi-defined medium ~ 2micromolar MnCl2 via ICP
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+WT, experiment E
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257884/GSM257884.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257884-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM257885">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2008-01-22</Last-Update-Date>
+    </Status>
+    <Title>SloR mutant, experiment E</Title>
+    <Accession database="GEO">GSM257885</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159 SloR mutant, experiment E</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+mid-log planktonic
+      </Characteristics>
+      <Treatment-Protocol>
+semi-defined medium ~ 2micromolar MnCl2 via ICP
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in semi-defined medium
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells resuspended in TRI Reagent (Ambion) were disrupted in BIO101 FastPrep machine.  Ethanol-precipitated nucleic acid was DNAse treated on an RNAeasy column according to the recommendation of the supplier (Qiagen).
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+RNA samples were amplified using a Two-Cycle cDNA Synthesis Kit according to the manufacturerÕs instructions (Affymetrix, Santa Clara, CA). Following second cycle, second strand cDNA synthesis, and cleanup, biotinylated-cRNA was prepared by in vitro transcription, fragmented and labeled using a streptavadin-phycoerythrin conjugate.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were applied to Affymetrix Gene Chip at 45C for 16 hr.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Biotinylated anti-streptavadin antibodies were used to amplify the signal. Probe arrays were scanned using a Hewlett-Packard Gene Array Scanner (Agilent Technologies).
+    </Scan-Protocol>
+    <Description>
+SloR mutant, experiment E
+    </Description>
+    <Data-Processing>
+RMA
+    </Data-Processing>
+    <Platform-Ref ref="GPL6395" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM257nnn/GSM257885/GSM257885.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="2925">
+GSM257885-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE10215">
+    <Status database="GEO">
+      <Submission-Date>2008-01-20</Submission-Date>
+      <Release-Date>2009-01-18</Release-Date>
+      <Last-Update-Date>2012-03-19</Last-Update-Date>
+    </Status>
+    <Title>Global transcriptional analysis of S. mutans metalloregulation</Title>
+    <Accession database="GEO">GSE10215</Accession>
+    <Pubmed-ID>18375805</Pubmed-ID>
+    <Pubmed-ID>19915021</Pubmed-ID>
+    <Summary>
+Multiple S. mutans genes that are subject to SloR control are likely contributors to virulence.  The regulation of these genes in response to metal ion limitation vs. availability in the oral cavity can significantly facilitate the caries-forming process and hence continued analysis of these data can reveal novel candidate genes for the purposes of therapeutic intervention and/or prevention.
+Keywords: Genetic modification, dose response, metalloregulation
+    </Summary>
+    <Overall-Design>
+Analyses were based on a comparison between low Mn and high Mn groups (paired comparisons A, B, and C) and the monitoring of gene expression in the presence (WT) or absence (mutant) of SloR under moderate Mn content. Analysis of significance amongst all genes and the formulation of hypotheses that are relevant to the cariogenic state were performed.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contributor-Ref ref="contrib4" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM257876" />
+    <Sample-Ref ref="GSM257877" />
+    <Sample-Ref ref="GSM257878" />
+    <Sample-Ref ref="GSM257879" />
+    <Sample-Ref ref="GSM257880" />
+    <Sample-Ref ref="GSM257881" />
+    <Sample-Ref ref="GSM257882" />
+    <Sample-Ref ref="GSM257883" />
+    <Sample-Ref ref="GSM257884" />
+    <Sample-Ref ref="GSM257885" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE10215/GSE10215_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/108337" />
+  </Series>
+
+</MINiML>

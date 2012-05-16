@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Aimee</First><Last>Shen</Last></Person>
+    <Email>aimee_shen@student.hms.harvard.edu</Email>
+    <Laboratory>Darren Higgins</Laboratory>
+    <Department>Microbiology and Molecular Genetics</Department>
+    <Organization>Harvard University</Organization>
+    <Address>
+      <Line>Armenise Building, rm 313, 200 Longwood Avenue</Line>
+      <City>Boston</City>
+      <State>MA</State>
+      <Zip-Code>02115</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Darren</First><Middle>E</Middle><Last>Higgins</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3074">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2006-02-11</Last-Update-Date>
+    </Status>
+    <Title>EGD-e microarray platform</Title>
+    <Accession database="GEO">GPL3074</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1639">Listeria monocytogenes</Organism>
+    <Manufacturer>TIGR</Manufacturer>
+    <Manufacture-Protocol>
+Listeria monocytogenes
+The Listeria monocytogenes genome microarray consists of 6347 70-mer oligonucleotides representing ORFs from:
+
+Listeria monocytogenes - strain EGD-e
+Listeria monocytogenes - strain 4b F2365
+Listeria monocytogenes - strain 1/2a F6854
+Listeria monocytogenes - strain 4b H7858
+printed on amino-silane Nexterion A Schott slides
+    </Manufacture-Protocol>
+    <Description>
+Note that the ID number given is the product of the TIGR ID and the sum of (block+column+row). 
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>Indicates which 17x17 block oligonucleotide is located (total of 48 blocks)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Row</Name>
+        <Description>Indicates the row in a given block that the oligonucleotide is located</Description>
+      </Column>
+      <Column position="4">
+        <Name>Column</Name>
+        <Description>Indicates the column in a given block that the oligonucleotide is located</Description>
+      </Column>
+      <Column position="5">
+        <Name>Chip_ID</Name>
+        <Description>NTorf number assigned by TIGR</Description>
+      </Column>
+      <Column position="6">
+        <Name>TIGR_ID</Name>
+        <Description>ID number given by TIGR file</Description>
+      </Column>
+      <Column position="7">
+        <Name>ORF</Name>
+        <Description>Gene_name: lmo number given by ListiList website </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="8">
+        <Name>Common_name</Name>
+        <Description>annotated gene function or name</Description>
+      </Column>
+    <External-Data rows="5686">
+GPL3074-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM83085">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_15_04 BHI RT1 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83085</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+10_10_04 RNA sample
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+10_10_04 RNA sample
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+RNA was harvested from 24hr cultures grown at RT lying flat in 10mL BHI. 
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="4743">
+GSM83085-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83086">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_15_04 BHI RT2 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83086</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+10_10_04 RNA sample
+      </Characteristics>
+      <Growth-Protocol>
+24 hr RT lying flat in 10 mL BHI
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+10_10_04 RNA sample
+      </Characteristics>
+      <Growth-Protocol>
+24 hr RT lying flat in 10 mL BHI
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+RNA was harvested from 24hr cultures grown at RT lying flat in 10mL BHI. 
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="4707">
+GSM83086-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83087">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_17_04 BHI RT1 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83087</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+7_14_04
+      </Characteristics>
+      <Growth-Protocol>
+24 hr RT lying flat in 10 mL BHI
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+7_14_05 RNA sample
+      </Characteristics>
+      <Growth-Protocol>
+24 hr RT lying flat in 10 mL BHI
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+RNA was harvested from 24hr cultures grown at RT lying flat in 10mL BHI. 
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="4059">
+GSM83087-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83088">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_17_04 BHI RT2 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83088</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+7_14_05 RNA sample
+      </Characteristics>
+      <Growth-Protocol>
+24 hr RT lying flat in 10 mL BHI
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+7_14_05 RNA sample
+      </Characteristics>
+      <Growth-Protocol>
+24 hr RT lying flat in 10 mL BHI
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+RNA was harvested from 24hr cultures grown at RT lying flat in 10mL BHI. 
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="5443">
+GSM83088-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83089">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>01_25_05 BHI RT EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83089</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+11_02_04 RNA sample
+      </Characteristics>
+      <Growth-Protocol>
+24 hr RT lying flat in 10 mL BHI
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+11_02_04 RNA sample
+      </Characteristics>
+      <Growth-Protocol>
+24 hr RT lying flat in 10 mL BHI
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+RNA was harvested from 24hr cultures grown at RT lying flat in 10mL BHI. 
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="5276">
+GSM83089-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83091">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_15_04 37˚C J774.1 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83091</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="∆mogR strain grown overnight at 30˚C, 10_10_04 RNA sample, 9hr intracellular growth inside J774 macrophage-like cells (MOI = 1">
+1)
+      </Characteristics>
+      <Growth-Protocol>
+9hr intracellular growth inside J774 macrophage-like cells
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="EGDe strain grown overnight at 30˚C, 10_10_04 RNA sample, 9hr intracellular growth inside J774 macrophage-like cells (MOI = 1">
+1)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+9 hr intracellular growth in J774 macrophage-like cells
+      </Label-Protocol>
+    </Channel>
+    <Description>
+RNA was harvested from intracellular bacteria grown at 37˚C in J774 cells
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="4946">
+GSM83091-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83092">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_15_04 37˚C J774.2 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83092</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="EGDe strain grown overnight at 30˚C, 10_10_04 RNA sample, 9hr intracellular growth inside J774 macrophage-like cells (MOI = 1">
+1)
+      </Characteristics>
+      <Growth-Protocol>
+9hr intracellular growth inside J774 macrophage-like cells
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="∆mogR strain grown overnight at 30˚C, 10_10_04 RNA sample, 9hr intracellular growth inside J774 macrophage-like cells (MOI = 1">
+1)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+9 hr intracellular growth in J774 macrophage-like cells
+      </Label-Protocol>
+    </Channel>
+    <Description>
+RNA was harvested from intracellular bacteria grown at 37˚C in J774 cells
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="5277">
+GSM83092-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83098">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_19_04 37˚C J774.1 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83098</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="∆mogR strain grown overnight at 30˚C, 10_05_04 RNA sample, 9hr intracellular growth inside J774 macrophage-like cells (MOI = 1">
+1)
+      </Characteristics>
+      <Growth-Protocol>
+9hr intracellular growth inside J774 macrophage-like cells
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="EGDe strain grown overnight at 30˚C, 10_05_04 RNA sample, 9hr intracellular growth inside J774 macrophage-like cells (MOI = 1">
+1)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+9 hr intracellular growth in J774 macrophage-like cells
+      </Label-Protocol>
+    </Channel>
+    <Description>
+RNA was harvested from intracellular EGDe and ∆mogR bacteria grown at 37˚C in J774 cells then competitively hybridized
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="2700">
+GSM83098-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83099">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_19_04 37˚C J774.2 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83099</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="EGDe strain grown overnight at 30˚C, 10_05_04 RNA sample, 9hr intracellular growth inside J774 macrophage-like cells (MOI = 1">
+1)
+      </Characteristics>
+      <Growth-Protocol>
+9hr intracellular growth inside J774 macrophage-like cells
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="∆mogR strain grown overnight at 30˚C, 10_05_04 RNA sample, 9hr intracellular growth inside J774 macrophage-like cells (MOI = 1">
+1)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+9 hr intracellular growth in J774 macrophage-like cells
+      </Label-Protocol>
+    </Channel>
+    <Description>
+RNA was harvested from intracellular EGDe and ∆mogR bacteria grown at 37˚C in J774 cells then competitively hybridized
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="3815">
+GSM83099-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83109">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>9_20_04 BHI 37˚C.2 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83109</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+EGDe strain, 37˚C, 7_14_04 RNA, 24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Characteristics>
+      <Growth-Protocol>
+24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+∆mogR strain, 37˚C, 7_14_04 RNA, 24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Characteristics>
+      <Growth-Protocol>
+24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Competitive hybridization of EGDe and ∆mogR total RNA
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="4615">
+GSM83109-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83110">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_01_04 BHI 37˚C.1 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83110</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+EGDe strain, 37˚C, 5_19_04 RNA, 24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Characteristics>
+      <Growth-Protocol>
+24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+∆mogR strain, 37˚C, 5_19_04 RNA, 24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Characteristics>
+      <Growth-Protocol>
+24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Competitive hybridization of EGDe and ∆mogR total RNA
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="4208">
+GSM83110-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83111">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_17_04 BHI 37˚C.1 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83111</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>∆mogR, 37˚C</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+∆mogR strain, 37˚C, 10_10_04 RNA, 24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+EGDe strain, 37˚C, 10_10_04 RNA, 24 hr cultures grown lying flat in 10 mL BHI at 37˚C
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+Competitive hybridization of EGDe and ∆mogR total RNA
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="3404">
+GSM83111-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83112">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>10_17_04 BHI 37˚C.2 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83112</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+EGDe strain grown 24 hr at 37˚C lying flat in 10mL BHI, 10_10_04 RNA sample
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+∆mogR strain grown 24 hr at 37˚C lying flat in 10mL BHI, 10_10_04 RNA sample
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+RNA was harvested from 24 hr cultures of EGDe and ∆mogR then competitively hybridized to TIGR microarray
+    </Description>
+    <Data-Processing>
+Gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="3384">
+GSM83112-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM83113">
+    <Status database="GEO">
+      <Submission-Date>2005-11-11</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2005-11-25</Last-Update-Date>
+    </Status>
+    <Title>09_20_04 BHI 37˚C.1 EGDe vs ∆mogR</Title>
+    <Accession database="GEO">GSM83113</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>∆mogR</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+∆mogR strain grown for 24hr lying flat in 10mL BHI at 37˚C, 7_14_04 sample
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>EGDe wild-type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+∆mogR strain grown for 24hr lying flat in 10mL BHI at 37˚C, 7_14_04 sample
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+RNA was harvested from cultures of EGDe and ∆mogR grown at 37˚C in BHI and competitively hybridized to TIGR microarrays. 
+    </Description>
+    <Data-Processing>
+gene Pix Pro 3.0 software
+    </Data-Processing>
+    <Platform-Ref ref="GPL3074" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log(ratio) of 633/543</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ratio of Medians (633/543)</Name>
+        <Description>Ratio of Medians (633/543 nm ) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ratio of Means (633/543)</Name>
+        <Description>Ratio of Means (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ratios SD (633/543)</Name>
+        <Description>Ratio of standard deviation (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+      <Column position="6">
+        <Name>Rgn Ratio (633/543)</Name>
+        <Description>Range Ratio (633/543 nm) determined by Gene Pix Pro 3.0 software</Description>
+      </Column>
+    <External-Data rows="1882">
+GSM83113-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE3655">
+    <Status database="GEO">
+      <Submission-Date>2005-11-23</Submission-Date>
+      <Release-Date>2006-02-11</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>MogR regulon in response to temperature and growth condition</Title>
+    <Accession database="GEO">GSE3655</Accession>
+    <Pubmed-ID>16617375</Pubmed-ID>
+    <Summary>
+Microarray analyses comparing the transcriptional profile of wild-type EGDe relative to ∆mogR (L. monocytogenes) during growth at 37˚C and RT in BHI broth and during intracellular growth inside J774 host cells at 37˚C. These analyses revealed that MogR primarily functions to repress flagellar motility genes during growth at 37˚C.
+Keywords: EGDe vs ∆mogR, Temperature, Growth condition
+    </Summary>
+    <Overall-Design>
+Oligonucleotide spotted arrays obtained from the Pathogen Functional Genomic Resource Center at TIGR were used for competitive hybridization studies comparing the transcriptional profile of wild-type EGDe to ∆mogR (L. monocytogenes). A minimum of two technical replicates with associated dye swaps was performed for each growth condition. 14 samples were analyzed, comprising 9 biological replicates; dye swaps were performed for 6 of the biological replicates.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM83085" />
+    <Sample-Ref ref="GSM83086" />
+    <Sample-Ref ref="GSM83087" />
+    <Sample-Ref ref="GSM83088" />
+    <Sample-Ref ref="GSM83089" />
+    <Sample-Ref ref="GSM83091" />
+    <Sample-Ref ref="GSM83092" />
+    <Sample-Ref ref="GSM83098" />
+    <Sample-Ref ref="GSM83099" />
+    <Sample-Ref ref="GSM83109" />
+    <Sample-Ref ref="GSM83110" />
+    <Sample-Ref ref="GSM83111" />
+    <Sample-Ref ref="GSM83112" />
+    <Sample-Ref ref="GSM83113" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/93781" />
+    <Data-Table>
+        <Title>EGDe vs (delta)mogR BHI 37C</Title>
+      <Column position="1">
+        <Name>Sequence Code</Name>
+      </Column>
+      <Column position="2">
+        <Name>Accession #</Name>
+      </Column>
+      <Column position="3">
+        <Name>Fold Change</Name>
+      </Column>
+      <Column position="4">
+        <Name>P-value</Name>
+      </Column>
+      <Column position="5">
+        <Name>Sequence Description</Name>
+      </Column>
+      <Column position="6">
+        <Name>Log(Error)</Name>
+      </Column>
+      <Column position="7">
+        <Name>Log(Ratio)</Name>
+      </Column>
+      <Column position="8">
+        <Name>Ratio</Name>
+      </Column>
+      <Column position="9">
+        <Name>X Dev</Name>
+      </Column>
+      <Column position="10">
+        <Name>Log(Intensity)</Name>
+      </Column>
+      <Column position="11">
+        <Name>Intensity1</Name>
+      </Column>
+      <Column position="12">
+        <Name>Intensity2</Name>
+      </Column>
+      <Column position="13">
+        <Name>Abs(Fold Change)</Name>
+      </Column>
+    <External-Data rows="2843">
+GSE3655-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+    <Data-Table>
+        <Title>EGDe vs (delta)mogR BHI RT</Title>
+      <Column position="1">
+        <Name>Sequence Code</Name>
+      </Column>
+      <Column position="2">
+        <Name>Accession #</Name>
+      </Column>
+      <Column position="3">
+        <Name>Fold Change</Name>
+      </Column>
+      <Column position="4">
+        <Name>P-value</Name>
+      </Column>
+      <Column position="5">
+        <Name>Sequence Description</Name>
+      </Column>
+      <Column position="6">
+        <Name>Log(Error)</Name>
+      </Column>
+      <Column position="7">
+        <Name>Log(Ratio)</Name>
+      </Column>
+      <Column position="8">
+        <Name>Ratio</Name>
+      </Column>
+      <Column position="9">
+        <Name>X Dev</Name>
+      </Column>
+      <Column position="10">
+        <Name>Log(Intensity)</Name>
+      </Column>
+      <Column position="11">
+        <Name>Intensity1</Name>
+      </Column>
+      <Column position="12">
+        <Name>Intensity2</Name>
+      </Column>
+      <Column position="13">
+        <Name>Abs(Fold Change)</Name>
+      </Column>
+    <External-Data rows="2833">
+GSE3655-tbl-2.txt
+    </External-Data>
+    </Data-Table>
+    <Data-Table>
+        <Title>EGDe vs (delta)mogR J774 37C</Title>
+      <Column position="1">
+        <Name>Sequence Code</Name>
+      </Column>
+      <Column position="2">
+        <Name>Accession #</Name>
+      </Column>
+      <Column position="3">
+        <Name>Fold Change</Name>
+      </Column>
+      <Column position="4">
+        <Name>P-value</Name>
+      </Column>
+      <Column position="5">
+        <Name>Sequence Description</Name>
+      </Column>
+      <Column position="6">
+        <Name>Log(Error)</Name>
+      </Column>
+      <Column position="7">
+        <Name>Log(Ratio)</Name>
+      </Column>
+      <Column position="8">
+        <Name>Ratio</Name>
+      </Column>
+      <Column position="9">
+        <Name>X Dev</Name>
+      </Column>
+      <Column position="10">
+        <Name>Log(Intensity)</Name>
+      </Column>
+      <Column position="11">
+        <Name>Intensity1</Name>
+      </Column>
+      <Column position="12">
+        <Name>Intensity2</Name>
+      </Column>
+      <Column position="13">
+        <Name>Abs(Fold Change)</Name>
+      </Column>
+    <External-Data rows="2773">
+GSE3655-tbl-3.txt
+    </External-Data>
+    </Data-Table>
+  </Series>
+
+</MINiML>

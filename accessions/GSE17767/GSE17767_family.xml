@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Paul</First><Last>Sumby</Last></Person>
+    <Laboratory>James M. Musser</Laboratory>
+    <Department>Pathology</Department>
+    <Organization>Methodist Hospital</Organization>
+    <Address>
+      <Line>6565 Fannin Street</Line>
+      <City>Houston</City>
+      <State>TX</State>
+      <Zip-Code>77030</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL9080">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2011-01-17</Last-Update-Date>
+    </Status>
+    <Title>TMHRI/Affy Streptococcus pyogenes array</Title>
+    <Accession database="GEO">GPL9080</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1314">Streptococcus pyogenes</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+Standard Affymetrix procedures.
+    </Manufacture-Protocol>
+    <Catalog-Number>N/A</Catalog-Number>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CDF">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL9080/GPL9080.cdf.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL9080/GPL9080_TMHRI-JMa520400_probe_sequences.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL9080/GPL9080_probe_sequences_readme.txt
+    </Supplementary-Data>
+    <Relation type="Affiliated with" target="GPL6186" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Streptococcus pyogenes[organism]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>Gene description</Name>
+        <Description>Function of the proposed ORF</Description>
+      </Column>
+      <Column position="4">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="2198">
+GPL9080-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM443784">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain MGAS2221 in THY, exponential, sample A</Title>
+    <Accession database="GEO">GSM443784</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>WT, exponential phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS2221
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="growth phase">
+exponential phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+MGAS2221 T1 A
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443784/GSM443784.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443784-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443785">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain MGAS2221 in THY, exponential, sample B</Title>
+    <Accession database="GEO">GSM443785</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>WT, exponential phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS2221
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="growth phase">
+exponential phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+MGAS2221 T1 B
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443785/GSM443785.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443785-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443786">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain MGAS2221 in THY, exponential, sample C</Title>
+    <Accession database="GEO">GSM443786</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>WT, exponential phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS2221
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="growth phase">
+exponential phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+MGAS2221 T1 C
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443786/GSM443786.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443786-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443787">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain 2221ΔPEL in THY, exponential, sample A</Title>
+    <Accession database="GEO">GSM443787</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PEL mutant, exponential phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+2221ΔPEL
+      </Characteristics>
+      <Characteristics tag="genotype">
+PEL mutant
+      </Characteristics>
+      <Characteristics tag="growth phase">
+exponential phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+2221ΔPEL T1 A
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443787/GSM443787.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443787-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443788">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain 2221ΔPEL in THY, exponential, sample B</Title>
+    <Accession database="GEO">GSM443788</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PEL mutant, exponential phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+2221ΔPEL
+      </Characteristics>
+      <Characteristics tag="genotype">
+PEL mutant
+      </Characteristics>
+      <Characteristics tag="growth phase">
+exponential phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+2221ΔPEL T1 B
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443788/GSM443788.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443788-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443789">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain 2221ΔPEL in THY, exponential, sample C</Title>
+    <Accession database="GEO">GSM443789</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PEL mutant, exponential phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+2221ΔPEL
+      </Characteristics>
+      <Characteristics tag="genotype">
+PEL mutant
+      </Characteristics>
+      <Characteristics tag="growth phase">
+exponential phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+2221ΔPEL T1 C
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443789/GSM443789.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443789-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443790">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain MGAS2221 in THY, stationary, sample A</Title>
+    <Accession database="GEO">GSM443790</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>WT, stationary phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS2221
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+MGAS2221 T2 A
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443790/GSM443790.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443790-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443791">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain MGAS2221 in THY, stationary, sample B</Title>
+    <Accession database="GEO">GSM443791</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>WT, stationary phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS2221
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+MGAS2221 T2 B
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443791/GSM443791.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443791-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443792">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain MGAS2221 in THY, stationary, sample C</Title>
+    <Accession database="GEO">GSM443792</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>WT, stationary phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+MGAS2221
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+MGAS2221 T2 C
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443792/GSM443792.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443792-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443793">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain 2221ΔPEL in THY, stationary, sample A</Title>
+    <Accession database="GEO">GSM443793</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PEL mutant, stationary phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+2221ΔPEL
+      </Characteristics>
+      <Characteristics tag="genotype">
+PEL mutant
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+2221ΔPEL T2 A
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443793/GSM443793.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443793-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443794">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain 2221ΔPEL in THY, stationary, sample B</Title>
+    <Accession database="GEO">GSM443794</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PEL mutant, stationary phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+2221ΔPEL
+      </Characteristics>
+      <Characteristics tag="genotype">
+PEL mutant
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+2221ΔPEL T2 B
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443794/GSM443794.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443794-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM443795">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2009-08-24</Last-Update-Date>
+    </Status>
+    <Title>Strain 2221ΔPEL in THY, stationary, sample C</Title>
+    <Accession database="GEO">GSM443795</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PEL mutant, stationary phase</Source>
+      <Organism taxid="1314">Streptococcus pyogenes</Organism>
+      <Characteristics tag="strain">
+2221ΔPEL
+      </Characteristics>
+      <Characteristics tag="genotype">
+PEL mutant
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary phase
+      </Characteristics>
+      <Treatment-Protocol>
+Two volumes of RNAprotect was added to each strain, incubated at RT for 5 mins, centrifuged, a bacterial cell pellet quick frozen in liquid nitrogen.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+GAS strains were grown in THY broth to O.D. 600 of 0.5 (exponential phase) or 1.7 (stationary phase).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted via mechanical disruption and purified using the Qiagen Rneasy kit.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+RNA was converted to cDNA, the cDNA was fragmented, and the cDNA labeled with biotin.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Labeled cDNA was hybridized to a custom array for 16h at 40 degrees C.  GeneChips were washed and stained using  the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a GeneArray Scanner G2500A.
+    </Scan-Protocol>
+    <Description>
+2221ΔPEL T2 C
+    </Description>
+    <Data-Processing>
+The data were analyzed with GCOS using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9080" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM443nnn/GSM443795/GSM443795.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS signal intensity</Description>
+      </Column>
+    <External-Data rows="1929">
+GSM443795-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE17767">
+    <Status database="GEO">
+      <Submission-Date>2009-08-22</Submission-Date>
+      <Release-Date>2009-08-25</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Transcriptome comparison of Streptococcus pyogenes strain MGAS2221 with that of an isogenic PEL mutant</Title>
+    <Accession database="GEO">GSE17767</Accession>
+    <Pubmed-ID>19888332</Pubmed-ID>
+    <Summary>
+PEL is a small regulatory RNA that is present within the S. pyogenes genome.  In some strains of S. pyogenes, the PEL sRNA regulates many of the known virulence factors produced by this pathogen.  A genome-wide analysis of PEL-regulated genes had not been performed previously so we analyzed this by comparing the parental M1T1 isolate MGAS2221 with an isogenic PEL mutant.  Comparing gene transcript levels between these two strains at the exponential and stationary phases of growth, we identified that PEL has no regulatory function in MGAS2221.
+    </Summary>
+    <Overall-Design>
+Three cultures of each GAS strain were grown in THY broth to exponential (O.D. 0.5) and stationary (O.D. 1.7) phases of growth.  Two volumes of RNA protect were added to samples recovered at these O.D.'s, the samples incubated at room temperature for 5 minutes, and the bacteria collected through centrifugation.  Total RNA was isolated via a mechanical disruption method, converted to cDNA, fragmented, labeled, and hybridized to our Affymetrix microarray.  Estimates of gene expression were calculated using GCOS software v1.4.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM443784" />
+    <Sample-Ref ref="GSM443785" />
+    <Sample-Ref ref="GSM443786" />
+    <Sample-Ref ref="GSM443787" />
+    <Sample-Ref ref="GSM443788" />
+    <Sample-Ref ref="GSM443789" />
+    <Sample-Ref ref="GSM443790" />
+    <Sample-Ref ref="GSM443791" />
+    <Sample-Ref ref="GSM443792" />
+    <Sample-Ref ref="GSM443793" />
+    <Sample-Ref ref="GSM443794" />
+    <Sample-Ref ref="GSM443795" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE17767/GSE17767_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE17790" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/123283" />
+  </Series>
+
+</MINiML>

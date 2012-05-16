@@ -1,0 +1,2373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Regina</First><Last>Stoll</Last></Person>
+    <Email>regina.stoll@biozentrum.uni-wuerzburg.de</Email>
+    <Organization>Lehrstuhl für Mikrobiologie</Organization>
+    <Address>
+      <Line>Biozentrum, Am Hubland</Line>
+      <City>Würzburg</City>
+      <Zip-Code>97074</Zip-Code>
+      <Country>Germany</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL6554">
+    <Status database="GEO">
+      <Submission-Date>2008-03-06</Submission-Date>
+      <Release-Date>2008-03-08</Release-Date>
+      <Last-Update-Date>2008-03-08</Last-Update-Date>
+    </Status>
+    <Title>University of Wuerzburg Listeria monocytogenes PTS 1K microarray version1</Title>
+    <Accession database="GEO">GPL6554</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1639">Listeria monocytogenes</Organism>
+    <Manufacturer>BF-Biolabs, Schneider and Zeltz</Manufacturer>
+    <Manufacture-Protocol>
+BF-Biolabs designs and produces custom-made microarrays for gene-identification, SNP- and gene-expression analysis. With respect to certain scientific or diagnostic tasks, BF-Biolabs uses specialized microarray production processes to achieve optimal specificity and sensitivity.
+size of slide: 27 x 8 mm
+Origin (x,y): 24,3mm ; 8,5 mm
+Spot distance: 500 µm
+replica: 3
+subarrays: 12
+size of on subarray: 8 x 8 spots
+    </Manufacture-Protocol>
+    <Web-Link>http://www.bf-biolabs.com</Web-Link>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>block</Name>
+        <Description>block number</Description>
+      </Column>
+      <Column position="3">
+        <Name>row</Name>
+        <Description>row in this block</Description>
+      </Column>
+      <Column position="4">
+        <Name>column</Name>
+        <Description>column in this block</Description>
+      </Column>
+      <Column position="5">
+        <Name>SPOT_ID</Name>
+      </Column>
+      <Column position="6">
+        <Name>ORF</Name>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name] AND Listeria monocytogenes[organism]</Link-Suffix>
+      </Column>
+      <Column position="7">
+        <Name>SEQUENCE</Name>
+      </Column>
+    <External-Data rows="654">
+GPL6554-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Platform iid="GPL7062">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-12-01</Last-Update-Date>
+    </Status>
+    <Title>IHM Listeria monocytogenes whole genome 12k array</Title>
+    <Accession database="GEO">GPL7062</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1639">Listeria monocytogenes</Organism>
+    <Manufacturer>Institute for Hygiene and Microbiology, University of Wuerzburg</Manufacturer>
+    <Manufacture-Protocol>
+oligonucleotides purchased from Operon Biotechnologies, Inc.
+ARRAY PRINTING
+1. Dissolve oligonucleotide probe or PCR product in the appropriate spotting solution to obtain the
+recommended final probe concentration:
+DNA Probes Final Spotting Concentration
+Oligonucleotides 10 - 20 micromolar
+PCR products 0.1 – 1 mg/ml
+2. Transfer an appropriate volume of probes to a microtiter plate.
+3. Set up the arrayer according to the manufacturer’s recommendations. If you were previously
+using slides that were thicker than 1.0 mm, for optimal spotting you may need to re-calibrate
+the distance between the slide surface and the spotting pins.
+4. Print the substrates at 40-50% relative humidity at 20 to 25°C.
+DNA IMMOBILIZATION
+1. Incubate printed microarray slides in humidity chamber at room temperature for 30 min (see
+appendix for details of how to prepare this chamber) to ensure quantitative immobilization.
+2. Proceed to washing
+HANDLING OF PRINTED ARRAYS
+The volume of washing solution should be at least 250 ml per 5 slides. Make sure that slides
+do not dry out between washing steps, or between the washing and blocking step.
+WASHING
+1. Wash slides to remove unbound probe molecules and buffer substances to avoid
+interference with subsequent hybridization experiments.
+a. Rinse 1 x 5 min in 0.1% Triton X-100 at room temperature.
+b. Rinse 2 x 2 min in 1 mM HCl solution at room temperature.
+c. Rinse 1 x 10 min in 100 mM KCl solution at room temperature.
+d. &lt;optional&gt; Denaturation step for arrays spotted with PCR-probes: 1 x 3 min in
+boiling diH2O.
+e. Rinse 1 x 1 min in diH2O at room temperature.
+2. Proceed to Blocking immediately.
+BLOCKING
+1. Block the slides with Nexterion® Blocking Solution or alternatively with 50 mM
+ethanolamine, 0.1% SDS (add freshly before use) in 0.1 M Tris, pH 9.0 as follows:
+a. Incubate slides 1 x 15 min in 1x Nexterion® Blocking Solution at 50°C. The
+volume of blocking solution should be at least 100 ml for 5 slides.
+b. Rinse 1 x 1 min in diH2O at room temperature.
+• Dry the Nexterion® Slide E in an oil-free air or nitrogen stream or by centrifugation
+(200 x g for 5 min) to avoid any water stains on the slide surface.
+• Proceed to hybridization.
+HYBRIDIZATION
+1. Re-suspend the dried, labeled target to be applied to the array in Nexterion® Hyb. In
+case the target is already dissolved in a different buffer or in water, the sample can
+also be diluted in Nexterion Hyb to get at least 90% (v/v) buffer in the final
+hybridization solution.
+2. Denature the suspended target by heating at 95°C for 3 min in a heat block, perform
+a quick spin in a microcentrifuge, then pipette the appropriate volume onto the array
+surface of a blocked slide under the coverslip or inside a hybridization station.
+POST-HYBRIDIZATION WASHING
+1. Place the array into a slide rack and immerse in a dish containing 2x SSC and 0.2%
+SDS. Wash in the above solution 1 x 10 min at room temperature.
+2. Wash 1 x 10 min in 2x SSC.
+3. Wash 1 x 10 min in 0.2x SSC at room temperature.
+4. Dry the array in an oil free air or nitrogen stream or by centrifugation (200 x g for 5
+min) to avoid water stains on the slide surface.
+5. Protect the array from light, dust and abrasion of the array surface, until ready for
+scanning. Ensure that the laser and filter set of the scanner is compatible with the
+fluorescent labeling of the probe molecules.
+    </Manufacture-Protocol>
+    <Description>
+Oligonucleotide sequence information may be found in GPL7062_sequence_oligos.txt linked below as a supplementary file.
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL7062/GPL7062_sequence_oligos.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>gene_ID; ORF# based on Listeria monocytogenes genome </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="3">
+        <Name>column</Name>
+        <Description>Column in the subarray</Description>
+      </Column>
+      <Column position="4">
+        <Name>row</Name>
+        <Description>Row in the subarray</Description>
+      </Column>
+      <Column position="5">
+        <Name>block</Name>
+        <Description>Subarray</Description>
+      </Column>
+      <Column position="6">
+        <Name>annotation</Name>
+        <Description>gene description</Description>
+      </Column>
+    <External-Data rows="12180">
+GPL7062-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM305909">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>BHI/LB Replicate 1</Title>
+    <Accession database="GEO">GSM305909</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>BHI culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>LB culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305909/GSM305909.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing one medium/another medium</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305909-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305910">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>BHI/LB Replicate 2</Title>
+    <Accession database="GEO">GSM305910</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>BHI culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>LB culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305910/GSM305910.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing one medium/another medium</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305910-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305911">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>BHI/LB Replicate 3</Title>
+    <Accession database="GEO">GSM305911</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>BHI culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>LB culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305911/GSM305911.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing one medium/another medium</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305911-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305912">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>BHI/MM Replicate 1</Title>
+    <Accession database="GEO">GSM305912</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>BHI culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>MM culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305912/GSM305912.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing one medium/another medium</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305912-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305913">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>BHI/MM Replicate 2</Title>
+    <Accession database="GEO">GSM305913</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>BHI culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>MM culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305913/GSM305913.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing one medium/another medium</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305913-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305914">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>BHI/MM Replicate 3</Title>
+    <Accession database="GEO">GSM305914</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>BHI culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>MM culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305914/GSM305914.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing one medium/another medium</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305914-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305915">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>MM/LB Replicate 1</Title>
+    <Accession database="GEO">GSM305915</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>MM culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>LB culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305915/GSM305915.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing one medium/another medium</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305915-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305916">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>MM/LB Replicate 2</Title>
+    <Accession database="GEO">GSM305916</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>MM culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>LB culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305916/GSM305916.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing one medium/another medium</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305916-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305917">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>MM/LB Replicate 3</Title>
+    <Accession database="GEO">GSM305917</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>MM culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>LB culture</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305917/GSM305917.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing one medium/another medium</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305917-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305921">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA /EGD glucose Replicate 1</Title>
+    <Accession database="GEO">GSM305921</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glucose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glucose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305921/GSM305921.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305921-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305922">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA /EGD glucose Replicate 2</Title>
+    <Accession database="GEO">GSM305922</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glucose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glucose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305922/GSM305922.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305922-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305923">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA* /EGD glucose Replicate 1</Title>
+    <Accession database="GEO">GSM305923</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA*</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glucose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glucose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305923/GSM305923.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305923-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305924">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA* /EGD glucose Replicate 2</Title>
+    <Accession database="GEO">GSM305924</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA*</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glucose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glucose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305924/GSM305924.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305924-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305925">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA /EGD cellobiose Replicate 1</Title>
+    <Accession database="GEO">GSM305925</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM cellobiose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM cellobiose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305925/GSM305925.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305925-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305926">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA /EGD cellobiose Replicate 2</Title>
+    <Accession database="GEO">GSM305926</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM cellobiose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM cellobiose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305926/GSM305926.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305926-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305927">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA* /EGD cellobiose Replicate 1</Title>
+    <Accession database="GEO">GSM305927</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA*</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM cellobiose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM cellobiose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305927/GSM305927.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305927-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305928">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA* /EGD cellobiose Replicate 2</Title>
+    <Accession database="GEO">GSM305928</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA*</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM cellobiose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM cellobiose OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305928/GSM305928.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305928-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305929">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA /EGD glycerol Replicate 1</Title>
+    <Accession database="GEO">GSM305929</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glycerol OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glycerol OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305929/GSM305929.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305929-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305930">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA /EGD glycerol Replicate 2</Title>
+    <Accession database="GEO">GSM305930</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glycerol OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glycerol OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305930/GSM305930.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305930-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305931">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA* /EGD glycerol Replicate 1</Title>
+    <Accession database="GEO">GSM305931</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA*</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glycerol OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glycerol OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305931/GSM305931.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305931-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305932">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGDΔprfApPrfA* /EGD glycerol Replicate 2</Title>
+    <Accession database="GEO">GSM305932</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>mutant strain EGDΔprfApPrfA*</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glycerol OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>wild-type EGD strain</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+MM with 50 mM glycerol OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 2.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL6554" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305932/GSM305932.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="654">
+GSM305932-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305934">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGD/EGD-e Replicate 1</Title>
+    <Accession database="GEO">GSM305934</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGD</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>EGD-e</Source>
+      <Organism taxid="169963">Listeria monocytogenes EGD-e</Organism>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 1 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL7062" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305934/GSM305934.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio EGD/EGD-e</Description>
+      </Column>
+    <External-Data rows="12180">
+GSM305934-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305935">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-18</Last-Update-Date>
+    </Status>
+    <Title>EGD/EGD-e Replicate 2</Title>
+    <Accession database="GEO">GSM305935</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGD</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>EGD-e</Source>
+      <Organism taxid="169963">Listeria monocytogenes EGD-e</Organism>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 2 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL7062" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305935/GSM305935.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio EGD/EGD-e</Description>
+      </Column>
+    <External-Data rows="12180">
+GSM305935-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM305936">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2008-07-17</Last-Update-Date>
+    </Status>
+    <Title>EGD/EGD-e Replicate 3</Title>
+    <Accession database="GEO">GSM305936</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>EGD</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics tag="Listeria monocytogenes EGD; note">
+strain EGD is distinct from EGD-e.
+      </Characteristics>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy3</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>EGD-e</Source>
+      <Organism taxid="169963">Listeria monocytogenes EGD-e</Organism>
+      <Characteristics>
+OD600nm of 0.8
+      </Characteristics>
+      <Treatment-Protocol>
+L. monocytogenes strains were grown under aerobic conditions in brain heart infusion (BHI from BD Biosciences, contains 2 g dextrose/l), Luria Bertani (LB, contains 10 g/l Tryptone (Oxoid), 10 g/l NaCl, 5 g/l Bacto Yeast extract (BD Biosciences)) or a defined minimal medium (MM; MM equates MWB without any additional carbon source (Premaratne et al., 1991)) supplemented with different sugars at 37°C.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+bacteria were grown until OD600nm of 0.8
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA from the L. monocytogenes strains grown to an OD600 of 0.8 was extracted using the RNeasy® Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s protocol. Residual DNA was removed on a column with RNase-free DNase (QIAGEN)
+      </Extract-Protocol>
+      <Label>cy5</Label>
+      <Label-Protocol>
+30 µg of total RNA were primed with 9 µg Random primer at 70°C for 10 min, then reversed transcribed at 42°C for 2 h in the presence of 200 U SuperScript II RTase (Invitrogen), and 20 mM each dATP, dTTP, dGTP, with 16 µM dCTP, 50 nmol Cy3/Cy5-labelled dCTP
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The slides were hybridized according to the manufacturers protocol (BF-BIOlabs)
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+slides were scanned using ScanArray HT and analyzed using the Genepix Pro 6.0 software
+    </Scan-Protocol>
+    <Description>
+Biological replicate 3 of 3.
+    </Description>
+    <Data-Processing>
+normalized based on the ratio of medians (Genepix Pro 6.0 software)
+    </Data-Processing>
+    <Platform-Ref ref="GPL7062" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM305nnn/GSM305936/GSM305936.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized log2 ratio (Cy5/Cy3) representing overexpressing strain/wild type</Description>
+      </Column>
+    <External-Data rows="12180">
+GSM305936-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE12151">
+    <Status database="GEO">
+      <Submission-Date>2008-07-17</Submission-Date>
+      <Release-Date>2008-12-01</Release-Date>
+      <Last-Update-Date>2012-03-20</Last-Update-Date>
+    </Status>
+    <Title>Modulation of PrfA activity in Listeria monocytogenes upon growth in different culture media</Title>
+    <Accession database="GEO">GSE12151</Accession>
+    <Pubmed-ID>19047753</Pubmed-ID>
+    <Summary>
+PrfA activity was studied in L. monocytogenes strain EGD and in an isogenic prfA deletion mutant (EGDΔprfA) carrying multiple copies of the wild-type prfA or the mutant prfA* gene (strains EGDΔprfApPrfA and EGDΔprfApPrfA*) after growth in brain heart infusion (BHI), Luria-Bertani broth (LB) or a defined minimal medium (MM) supplemented either with one of the three PTS-carbohydrates, glucose, mannose and cellobiose, or the non-PTS carbon source glycerol. Low PrfA activity was observed in the wild-type EGD strain in BHI and LB with either of these carbon sources, while PrfA activity was high in minimal medium in presence of glycerol but significantly reduced in presence of cellobiose. The strains expressing the prfA and prfA* gene under the prfA promoters, P1 and P2, produced equally large amounts of PrfA protein and high PrfA activity was observed in strain EGDΔprfApPrfA* under all growth conditions. In contrast, high PrfA activity in strain EGDΔprfApPrfA was only observed when this strain was cultured in BHI but not in LB or MM (in presence of either carbon source). A ptsH mutant (lacking a functional HPr) was able to grow in BHI suggesting that growth of L. monocytogenes in this culture medium is supported by carbon sources whose uptake and metabolism are independent of the PTS pathway. However, this mutant was unable to grow in LB and MM regardless which of the four carbon sources was added, suggesting that uptake of the used carbohydrates and the catabolism of glycerol depend fully on the functional common PTS pathway. Furthermore, the growth rates of L. monocytogenes are strongly reduced in presence of large amounts of PrfA protein when growing MM but less in LB and only slightly in BHI. The expression profiles of the genes encoding PTS permeases were determined in the three strains under various growth conditions. The data suggest that PrfA activity correlates with the expression level and the phosphorylation state of specific PTS permeases.
+    </Summary>
+    <Overall-Design>
+This SuperSeries is composed of the following subset Series:
+GSE12143: Listeria monocytogenes EGD after growth BHI vs. LB vs. MM
+GSE12145: Listeria monocytogenes EGDΔprfApPrfA and EGDΔprfApPrfA* compared to the wild type strain EGD
+GSE12146: Listeria monocytogenes EGD and EGD-e
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM305909" />
+    <Sample-Ref ref="GSM305910" />
+    <Sample-Ref ref="GSM305911" />
+    <Sample-Ref ref="GSM305912" />
+    <Sample-Ref ref="GSM305913" />
+    <Sample-Ref ref="GSM305914" />
+    <Sample-Ref ref="GSM305915" />
+    <Sample-Ref ref="GSM305916" />
+    <Sample-Ref ref="GSM305917" />
+    <Sample-Ref ref="GSM305921" />
+    <Sample-Ref ref="GSM305922" />
+    <Sample-Ref ref="GSM305923" />
+    <Sample-Ref ref="GSM305924" />
+    <Sample-Ref ref="GSM305925" />
+    <Sample-Ref ref="GSM305926" />
+    <Sample-Ref ref="GSM305927" />
+    <Sample-Ref ref="GSM305928" />
+    <Sample-Ref ref="GSM305929" />
+    <Sample-Ref ref="GSM305930" />
+    <Sample-Ref ref="GSM305931" />
+    <Sample-Ref ref="GSM305932" />
+    <Sample-Ref ref="GSM305934" />
+    <Sample-Ref ref="GSM305935" />
+    <Sample-Ref ref="GSM305936" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE12151/GSE12151_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SuperSeries of" target="GSE12143" />
+    <Relation type="SuperSeries of" target="GSE12145" />
+    <Relation type="SuperSeries of" target="GSE12146" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/113765" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Sarita</First><Last>Raengpradub</Last></Person>
+    <Email>sr266@cornell.edu</Email>
+    <Laboratory>Food Safety Lab</Laboratory>
+    <Department>Food Science</Department>
+    <Organization>Cornell University</Organization>
+    <Address>
+      <Line>412 Stocking Hall</Line>
+      <City>Ithaca</City>
+      <State>NY</State>
+      <Zip-Code>14853</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Martin</First><Last>Wiedmann</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Kathryn</First><Middle>J</Middle><Last>Boor</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Yuewei</First><Last>Hu</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5029">
+    <Status database="GEO">
+      <Submission-Date>2007-03-23</Submission-Date>
+      <Release-Date>2007-08-01</Release-Date>
+      <Last-Update-Date>2007-08-01</Last-Update-Date>
+    </Status>
+    <Title>CUFSL Listeria 6K oligonuclotide array v1.0</Title>
+    <Accession database="GEO">GPL5029</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1639">Listeria monocytogenes</Organism>
+    <Organism taxid="1642">Listeria innocua</Organism>
+    <Manufacturer>Cornell University Microarray Core Facility, T2 002B Vet Research Tower, Cornell University, Ithaca, NY 14853 USA</Manufacturer>
+    <Manufacture-Protocol>
+2,857 70mer oligonucleotides were designed by and purchased from Operon Biotechnologies, Inc. (Huntsville, AL, USA) to represent 2,857 ORFs from Listeria monocytogenes EGD. 70mer oligonucleotides were designed for 61 Listeria innocua ORFs (based on L. innocua Clip 11262) and five Saccharomyces cerevisiae ORFs (to serve as negative controls) using ArrayOligoSelector (http://arrayoligosel.sourceforge.net). Oligonucleotides were resuspended in 1X SSC + 0.0025% Sarkosyl to a final concentration of 25uM. All oligonucleotides and controls were spotted in duplicate on Corning UltraGAPS slides (Corning, NY, USA) using a custom built XYZ microarrayer (based on the original design of Pat Brown from Stanford University). Oligonucleotides were UV-crosslinked at 300mJ for 1 minute. Printing quality was checked using Cy3-labeled random sequence nonamers.
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL5029/GPL5029.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>Block number (16 blocks total)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Row</Name>
+        <Description>Row number within a block (20 rows per block)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Column</Name>
+        <Description>Column number within a block (20 columns per block)</Description>
+      </Column>
+      <Column position="5">
+        <Name>ORF</Name>
+        <Description>Entrez Gene Link </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="6">
+        <Name>Chip_ID</Name>
+        <Description>ID assigned by Operon or spot type assigned by CUFSL</Description>
+      </Column>
+      <Column position="7">
+        <Name>SEQUENCE</Name>
+        <Description>Oligo sequence</Description>
+      </Column>
+      <Column position="8">
+        <Name>SPOT_ID</Name>
+      </Column>
+    <External-Data rows="3200">
+GPL5029-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM182058">
+    <Status database="GEO">
+      <Submission-Date>2007-04-13</Submission-Date>
+      <Release-Date>2007-10-14</Release-Date>
+      <Last-Update-Date>2007-10-14</Last-Update-Date>
+    </Status>
+    <Title>CtsR regulon, 10403S vs delta ctsR, log phase</Title>
+    <Accession database="GEO">GSM182058</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Listeria monocytogenes 10403S</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Listeria monocytogenes 10403S grown at 37°C to log phase (OD600=0.4). 
+      </Characteristics>
+      <Growth-Protocol>
+For all experiments, Listeria monocytogenes 10403S were grown in BHI broth at 37°C with shaking (250 rpm), followed by inoculation into 5 ml of BHI broth (1:100 dilution) and growth at 37°C with shaking to an OD600=0.4, then diluted again (1:100) into BHI broth and incubated at 37 °C with shaking until an OD600=0.4, then harvested for RNA isolation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the Qiagen RNeasy Midi kit according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells treated with lysozyme followed by sonication on ice for three 30 s bursts at 18–21 W (30 s pauses between bursts). RQ1 DNase treatment of total RNA in the presence of RNasin Plus RNA inhibitor (Promega) was performed according to the manufacturer’s protocol, followed by subsequent phenol:chloroform and chloroform extractions. RNA was ethanol-precipitated overnight, centrifuged and washed with 70% ethanol before resuspenson of the final RNA pellet in DEPC-treated water. Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm, 260/230 nm) on a NanoDrop ND-1000 spectrophotometer. RNA integrity was checked by agarose gel electrophoresis. 
+      </Extract-Protocol>
+      <Label>Alexa Fluor 635</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA (using random primers) and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA Labeling System.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Listeria monocytogenes FSL H6-190 (ctsR null mutant)</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Listeria monocytogenes FSL H6-190 (ctsR null mutant) grown at 37°C to log phase (OD600=0.4). 
+      </Characteristics>
+      <Growth-Protocol>
+For all experiments, Listeria monocytogenes FSL H6-190 (ctsR null mutant)  were grown in BHI broth at 37°C with shaking (250 rpm), followed by inoculation into 5 ml of BHI broth (1:100 dilution) and growth at 37°C with shaking to an OD600=0.4, then diluted again (1:100) into BHI broth and incubated at 37 °C with shaking until an OD600=0.4, then harvested for RNA isolation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the Qiagen RNeasy Midi kit according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells treated with lysozyme followed by sonication on ice for three 30 s bursts at 18–21 W (30 s pauses between bursts). RQ1 DNase treatment of total RNA in the presence of RNasin Plus RNA inhibitor (Promega) was performed according to the manufacturer’s protocol, followed by subsequent phenol:chloroform and chloroform extractions. RNA was ethanol-precipitated overnight, centrifuged and washed with 70% ethanol before resuspenson of the final RNA pellet in DEPC-treated water. Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm, 260/230 nm) on a NanoDrop ND-1000 spectrophotometer. RNA integrity was checked by agarose gel electrophoresis. 
+      </Extract-Protocol>
+      <Label>Alexa Fluor 532</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA (using random primers) and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA Labeling System.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray slide blocking was performed prior to hybridization. Slides were incubated for 10 min in a solution containing methyl pyrrilidone, succinic anhydride and sodium borate, and then washed in fresh methyl pyrrilidone for 10 min. Successive 1-min washes in nanopure water (once), 0.1% SDS (3 times), nanopure water (5 times), and 95% EtOH (once). The slides were dried by centrifugation and immersed for 1 h in blocking solution (0.1% BSA, 5X SSC, 0.1% SDS) at 42°C. After blocking, the slides were washed for 1 min each in nanopure water (5 times) and 95% EtOH (2 times) and then dried by centrifugation. For the strains to be compared, labeled cDNAs were combined and dried, then resuspended in 50μl of hybridization buffer (5X SSC, 0.1% SDS, 0.1mM dithiothreitol (DTT), 0.5X formamide, 0.06 μg/μl salmon sperm DNA in DEPC-treated water), denatured at 95°C for 5 min then applied to the slides using mSeries LifterSlips™ (Erie Scientific). Following overnight hybridization at 42°C, the slides were washed in 2X SSC+0.1% SDS (5 min at 42˚C), with subsequent 5-min washes at room temperature in 2X SSC+0.1% SDS, 2X SSC, and 0.2X SSC, followed by final rinse in nanopure water. Slides were dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned using a GenePix 4000B scanner (Molecular Devices Corp.). Raw TIFF images were automatically gridded and analyzed using GenePix Pro 6.0 software.
+    </Scan-Protocol>
+    <Description>
+Expression profiles were measured from three independent RNA extractions, resulting in six replicate spots per gene (array contains duplicate spots).
+    </Description>
+    <Data-Processing>
+Analyses of microarray data were performed in R with Bioconductor using LIMMA software (Smyth, 2005). Background correction was performed using the “normexp” method. For normalization within arrays, the data were weighted for the genomic DNA controls and normalized using print-tip loess method (Smyth &amp; Speed, 2003). The data were then scale normalized between arrays. The correlation between duplicate spots was calculated (Smyth et al., 2005) and a linear model was fitted to the normalized log ratios and empirical Bayes statistics were applied for differential expression analysis.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5029" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM182nnn/GSM182058/GSM182058_LMO_10403S_ctsR_LOG-1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM182nnn/GSM182058/GSM182058_LMO_10403S_ctsR_LOG-2.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM182nnn/GSM182058/GSM182058_LMO_10403S_ctsR_LOG-3.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log2-transformed (CH1/CH2) ratio or M value</Description>
+      </Column>
+      <Column position="3">
+        <Name>A</Name>
+        <Description>(Log2(CH1)+Log2(CH2))/2 or A value</Description>
+      </Column>
+      <Column position="4">
+        <Name>t</Name>
+        <Description>Calculated moderated t-statistic by LIMMA</Description>
+      </Column>
+      <Column position="5">
+        <Name>P.Value</Name>
+        <Description>Calculated p-value by LIMMA</Description>
+      </Column>
+      <Column position="6">
+        <Name>adj.P.Val</Name>
+        <Description>Calculated p-value adjusted for multiple comparisons (FDR) by LIMMA</Description>
+      </Column>
+      <Column position="7">
+        <Name>B</Name>
+        <Description>Calculated B-statistic by LIMMA</Description>
+      </Column>
+    <External-Data rows="3200">
+GSM182058-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM182086">
+    <Status database="GEO">
+      <Submission-Date>2007-04-13</Submission-Date>
+      <Release-Date>2007-10-14</Release-Date>
+      <Last-Update-Date>2007-10-14</Last-Update-Date>
+    </Status>
+    <Title>CtsR Regulon, ictsR-mcsA vs delta ctsR, log phase</Title>
+    <Accession database="GEO">GSM182086</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Listeria monocytogenes FSL H6-195 (ictsR-mcsA strain)</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Listeria monocytogenes FSL H6-195 (ictsR-mcsA strain expressing the ctsR-mscA operon in trans under control of an IPTG-inducible promoter) grown at 37°C to log phase (OD600=0.4) in BHI+0.5mM IPTG.
+      </Characteristics>
+      <Growth-Protocol>
+For all experiments, Listeria monocytogenes FSL H6-195 (ictsR-mcsA strain) were grown in BHI broth at 37°C with shaking (250 rpm), followed by inoculation into 5 ml of BHI broth+0.5mM IPTG (1:100 dilution) and growth at 37°C with shaking to an OD600=0.4, then diluted again (1:100) into BHI broth+0.5 mM IPTG and incubated at 37 °C with shaking until an OD600=0.4, then harvested for RNA isolation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the Qiagen RNeasy Midi kit according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells treated with lysozyme followed by sonication on ice for three 30 s bursts at 18–21 W (30 s pauses between bursts). RQ1 DNase treatment of total RNA in the presence of RNasin Plus RNA inhibitor (Promega) was performed according to the manufacturer’s protocol, followed by subsequent phenol:chloroform and chloroform extractions. RNA was ethanol-precipitated overnight, centrifuged and washed with 70% ethanol before resuspenson of the final RNA pellet in DEPC-treated water. Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm, 260/230 nm) on a NanoDrop ND-1000 spectrophotometer. RNA integrity was checked by agarose gel electrophoresis. 
+      </Extract-Protocol>
+      <Label>Alexa Fluor 635</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA (using random primers) and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA Labeling System.
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Listeria monocytogenes FSL H6-190 (ctsR null mutant)</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Listeria monocytogenes FSL H6-190 (ctsR null mutant) grown at 37°C to log phase (OD600=0.4).
+      </Characteristics>
+      <Growth-Protocol>
+For all experiments, Listeria monocytogenes FSL H6-190 (ctsR null mutant)  were grown in BHI broth at 37°C with shaking (250 rpm), followed by inoculation into 5 ml of BHI broth (1:100 dilution) and growth at 37°C with shaking to an OD600=0.4, then diluted again (1:100) into BHI broth and incubated at 37 °C with shaking until an OD600=0.4, then harvested for RNA isolation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from frozen bacterial pellets with the Qiagen RNeasy Midi kit according to the manufacturer’s protocol for enzymatic and mechanical disruption, except that cells treated with lysozyme followed by sonication on ice for three 30 s bursts at 18–21 W (30 s pauses between bursts). RQ1 DNase treatment of total RNA in the presence of RNasin Plus RNA inhibitor (Promega) was performed according to the manufacturer’s protocol, followed by subsequent phenol:chloroform and chloroform extractions. RNA was ethanol-precipitated overnight, centrifuged and washed with 70% ethanol before resuspenson of the final RNA pellet in DEPC-treated water. Total nucleic acid concentration and purity were estimated using absorbance readings (260/280 nm, 260/230 nm) on a NanoDrop ND-1000 spectrophotometer. RNA integrity was checked by agarose gel electrophoresis. 
+      </Extract-Protocol>
+      <Label>Alexa Fluor 532</Label>
+      <Label-Protocol>
+cDNA was synthesized from 10 μg purified total RNA (using random primers) and labeled with Alexa Fluor dyes using the SuperScript Plus Indirect cDNA Labeling System.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray slide blocking was performed prior to hybridization. Slides were incubated for 10 min in a solution containing methyl pyrrilidone, succinic anhydride and sodium borate, and then washed in fresh methyl pyrrilidone for 10 min. Successive 1-min washes in nanopure water (once), 0.1% SDS (3 times), nanopure water (5 times), and 95% EtOH (once). The slides were dried by centrifugation and immersed for 1 h in blocking solution (0.1% BSA, 5X SSC, 0.1% SDS) at 42°C. After blocking, the slides were washed for 1 min each in nanopure water (5 times) and 95% EtOH (2 times) and then dried by centrifugation. For the strains to be compared, labeled cDNAs were combined and dried, then resuspended in 50μl of hybridization buffer (5X SSC, 0.1% SDS, 0.1mM dithiothreitol (DTT), 0.5X formamide, 0.06 μg/μl salmon sperm DNA in DEPC-treated water), denatured at 95°C for 5 min then applied to the slides using mSeries LifterSlips™ (Erie Scientific). Following overnight hybridization at 42°C, the slides were washed in 2X SSC+0.1% SDS (5 min at 42˚C), with subsequent 5-min washes at room temperature in 2X SSC+0.1% SDS, 2X SSC, and 0.2X SSC, followed by final rinse in nanopure water. Slides were dried by centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Images were scanned using a GenePix 4000B scanner (Molecular Devices Corp.). Raw TIFF images were automatically gridded and analyzed using GenePix Pro 6.0 software.
+    </Scan-Protocol>
+    <Description>
+Expression profiles were measured from two independent RNA extractions, resulting in four replicate spots per gene (array contains duplicate spots).
+    </Description>
+    <Data-Processing>
+Analyses of microarray data were performed in R with Bioconductor using LIMMA software (Smyth, 2005). Background correction was performed using the “normexp” method. For normalization within arrays, the data were weighted for the genomic DNA controls and normalized using print-tip loess method (Smyth &amp; Speed, 2003). The data were then scale normalized between arrays. The correlation between duplicate spots was calculated (Smyth et al., 2005) and a linear model was fitted to the normalized log ratios and empirical Bayes statistics were applied for differential expression analysis.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5029" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM182nnn/GSM182086/GSM182086_LMO_pLIV2_ctsR_LOG+IPTG-1.gpr.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM182nnn/GSM182086/GSM182086_LMO_pLIV2_ctsR_LOG+IPTG-2.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Log2-transformed (CH1/CH2) ratio or M value</Description>
+      </Column>
+      <Column position="3">
+        <Name>A</Name>
+        <Description>(Log2(CH1)+Log2(CH2))/2 or A value</Description>
+      </Column>
+      <Column position="4">
+        <Name>t</Name>
+        <Description>Calculated moderated t-statistic by LIMMA</Description>
+      </Column>
+      <Column position="5">
+        <Name>P.Value</Name>
+        <Description>Calculated p-value by LIMMA</Description>
+      </Column>
+      <Column position="6">
+        <Name>adj.P.Val</Name>
+        <Description>Calculated p-value adjusted for multiple comparisons (FDR) by LIMMA</Description>
+      </Column>
+      <Column position="7">
+        <Name>B</Name>
+        <Description>Calculated B-statistic by LIMMA</Description>
+      </Column>
+    <External-Data rows="3200">
+GSM182086-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE7514">
+    <Status database="GEO">
+      <Submission-Date>2007-04-13</Submission-Date>
+      <Release-Date>2007-10-14</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>CtsR Regulon in Listeria monocytogenes</Title>
+    <Accession database="GEO">GSE7514</Accession>
+    <Pubmed-ID>17933929</Pubmed-ID>
+    <Summary>
+The foodborne pathogen Listeria monocytogenes uses a number of transcriptional regulators, including the negative regulator CtsR, to control gene expression under different environmental conditions and in response to stress. Gene expression patterns of DctsR log phase cells were compared to both wt and ictsR-mcsA log phase cells grown with 0.5mM IPTG to identify CtsR-dependent genes.We identified 62 CtsR-dependent genes that showed significant expression ratios (adj. P &lt; 0.05), with ≥ 1.5-fold differential expression either between ΔctsR and wt or between ΔctsR and ictsR-mcsA. 
+Keywords: Listeria monocytogenes, CtsR regulon, log phase
+    </Summary>
+    <Overall-Design>
+Independent RNA isolations were performed for each growth experiment (log phase cells). For wt vs. ctsR null mutant comparisons, three biological replicates were used in competitive whole-genome microarray experiments. For ictsR-mcsA vs ctsR null mutant comparisons, two biological replicates were used in competitive whole-genome microarray experiments. For each set of hybridizations, RNA from the parent strain (10403S) or the ictsR-mcsA strain were hybridized to RNA from the ctsR null mutant. 
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib4" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib2" position="3" />
+    <Contributor-Ref ref="contrib3" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM182058" />
+    <Sample-Ref ref="GSM182086" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE7514/GSE7514_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/100465" />
+  </Series>
+
+</MINiML>

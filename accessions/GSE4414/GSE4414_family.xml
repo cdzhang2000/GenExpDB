@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Biju</First><Last>Joseph</Last></Person>
+    <Email>bjoseph@hygiene.uni-wuerzburg.de</Email>
+    <Department>Department of Microbiology</Department>
+    <Organization>University of Wuerzburg</Organization>
+    <Address>
+      <Line>Josef-Schneider Str 2</Line>
+      <City>Wuerzburg</City>
+      <Zip-Code>97080</Zip-Code>
+      <Country>Germany</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Alexandra</First><Middle>K</Middle><Last>Marr</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Sonja</First><Last>Mertins</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Regina</First><Last>Ecke</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Stefanie</First><Last>Müller-Altrock</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Werner</First><Last>Goebel</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL3517">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-05-01</Last-Update-Date>
+    </Status>
+    <Title>Uni Wuerzburg Listeria monocytogenes 13.8K whole genome array</Title>
+    <Accession database="GEO">GPL3517</Accession>
+    <Technology>spotted oligonucleotide</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="1639">Listeria monocytogenes</Organism>
+    <Manufacturer>University of Wuerzburg</Manufacturer>
+    <Manufacture-Protocol>
+ARRAY PRINTING
+1. Dissolve oligonucleotide probe or PCR product in the appropriate spotting solution to obtain the
+recommended final probe concentration:
+DNA Probes Final Spotting Concentration
+Oligonucleotides 10 - 20 ìM
+PCR products 0.1 – 1 mg/ml
+2. Transfer an appropriate volume of probes to a microtiter plate.
+3. Set up the arrayer according to the manufacturer’s recommendations. If you were previously
+using slides that were thicker than 1.0 mm, for optimal spotting you may need to re-calibrate
+the distance between the slide surface and the spotting pins.
+4. Print the substrates at 40-50% relative humidity at 20 to 25°C.
+DNA IMMOBILIZATION
+1. Incubate printed microarray slides in humidity chamber at room temperature for 30 min (see
+appendix for details of how to prepare this chamber) to ensure quantitative immobilization.
+2. Proceed to washing
+    </Manufacture-Protocol>
+    <Coating>other</Coating>
+    <Description>
+Epoxy coated slides used to spot 70mer oligonucleotides
+Whole genome DNA microarrays that contain synthetic 70mer oligodeoxyribonucleotides covering all ORFs of the Lm genome. The oligonucleotides (sequences available at http://www.operon.com/arrays/oligosets_listeria.php) were spotted on epoxy coated glass slides from Quantifoil according to manufacturer’s instructions by M. Frosch (Institut für Hygiene and Mikrobiologie, Würzburg, Germany). Each oligo was spotted four times on a slide to generate four replicates for each oligo on a slide.
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contributor-Ref ref="contrib4" position="4" />
+    <Contributor-Ref ref="contrib5" position="5" />
+    <Contributor-Ref ref="contrib6" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>Subarray</Description>
+      </Column>
+      <Column position="3">
+        <Name>Row</Name>
+        <Description>Row in the subarray</Description>
+      </Column>
+      <Column position="4">
+        <Name>Column</Name>
+        <Description>Column in the subarray</Description>
+      </Column>
+      <Column position="5">
+        <Name>ORF</Name>
+        <Description>ORF# based on Listeria monocytogenes genome  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+      <Column position="6">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="13824">
+GPL3517-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM99217">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_1_1</Title>
+    <Accession database="GEO">GSM99217</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 0.3 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99217-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99218">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_1_2</Title>
+    <Accession database="GEO">GSM99218</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 0.3 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99218-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99219">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_1_3</Title>
+    <Accession database="GEO">GSM99219</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 0.3 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99219-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99221">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_1_4</Title>
+    <Accession database="GEO">GSM99221</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 0.3 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99221-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99227">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_1_5</Title>
+    <Accession database="GEO">GSM99227</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Characteristics Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium  
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 0.3 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99227-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99237">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_1_6</Title>
+    <Accession database="GEO">GSM99237</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 0.3 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99237-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99264">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_2_1</Title>
+    <Accession database="GEO">GSM99264</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99264-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99284">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_2_3</Title>
+    <Accession database="GEO">GSM99284</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99284-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99297">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_2_2</Title>
+    <Accession database="GEO">GSM99297</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99297-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99319">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_2_4</Title>
+    <Accession database="GEO">GSM99319</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm 
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99319-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99320">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_2_5</Title>
+    <Accession database="GEO">GSM99320</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm 
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99320-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99333">
+    <Status database="GEO">
+      <Submission-Date>2006-03-07</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_2_6</Title>
+    <Accession database="GEO">GSM99333</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Delta prfA </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 grown to OD 1.0 in minimal medium 
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star </Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99333-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99420">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_3_1</Title>
+    <Accession database="GEO">GSM99420</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>prfA wild type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 wild type prfA grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar harvested at the same time when the other strain reached an OD 600 nm 1.0
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99420-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99607">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_3_2</Title>
+    <Accession database="GEO">GSM99607</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>prfA wild type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 wild type prfA grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar harvested at the same time when the other strain reached an OD 600 nm 1.0
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99607-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99608">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_3_3</Title>
+    <Accession database="GEO">GSM99608</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>prfA wild type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 wild type prfA grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar harvested at the same time when the other strain reached an OD 600 nm 1.0
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99608-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99609">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_3_4</Title>
+    <Accession database="GEO">GSM99609</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>prfA wild type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 wild type prfA grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar harvested at the same time when the other strain reached an OD 600 nm 1.0
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99609-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99610">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_3_5</Title>
+    <Accession database="GEO">GSM99610</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>prfA wild type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 wild type prfA grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar harvested at the same time when the other strain reached an OD 600 nm 1.0
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99610-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM99611">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2006-03-09</Last-Update-Date>
+    </Status>
+    <Title>Glucose uptake_PrfA interaction_3_6</Title>
+    <Accession database="GEO">GSM99611</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>prfA wild type</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 wild type prfA grown to OD 1.0 in minimal medium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy5</Label>
+    </Channel>
+    <Channel position="2">
+      <Source>prfA Star</Source>
+      <Organism taxid="1639">Listeria monocytogenes</Organism>
+      <Characteristics>
+Delta prfA containing plasmid pERL3 pPrfAStar harvested at the same time when the other strain reached an OD 600 nm 1.0
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Label>Cy3</Label>
+    </Channel>
+    <Description>
+scanning software: ScanArray express software version: 3.0
+    </Description>
+    <Data-Processing>
+value: log2 transformed ratio of normalized channel 2 median to channel 1 median; normalization method: LOWESS algorithm
+    </Data-Processing>
+    <Platform-Ref ref="GPL3517" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>Flags</Name>
+        <Description>type of flag associated with the spot (absent/bad=0, good=1)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Ch1_Median</Name>
+        <Description>median channel 1 (median pixel intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="4">
+        <Name>Ch1B_Median</Name>
+        <Description>median channel 1 background (median background intensity of the spot at 633 nm)</Description>
+      </Column>
+      <Column position="5">
+        <Name>Ch2_Median</Name>
+        <Description>median channel 2 (median pixel intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Ch2B_Median</Name>
+        <Description>median channel 2 background (median background intensity of the spot at 543 nm)</Description>
+      </Column>
+      <Column position="7">
+        <Name>Ch1N_Median</Name>
+        <Description>normalized channel 1 median</Description>
+      </Column>
+      <Column position="8">
+        <Name>Ch2N_Median</Name>
+        <Description>normalized channel 2 median</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unf_Value</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median unfiltered</Description>
+      </Column>
+      <Column position="10">
+        <Name>VALUE</Name>
+        <Description>log2 transformed ratio of normalized channel 2 median to channel 1 median</Description>
+      </Column>
+    <External-Data rows="13824">
+GSM99611-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE4414">
+    <Status database="GEO">
+      <Submission-Date>2006-03-08</Submission-Date>
+      <Release-Date>2006-05-01</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Interference of PrfA with glucose uptake</Title>
+    <Accession database="GEO">GSE4414</Accession>
+    <Pubmed-ID>16707681</Pubmed-ID>
+    <Summary>
+Listeria monocytogenes (Lm) strains expressing high levels of the virulence regulator PrfA (mutant PrfA* or wild-type PrfA) show strong growth inhibition in minimal media when supplemented with glucose but not when supplemented with glucose-6-phosphate compared to the isogenic strains expressing low levels of PrfA. A significantly reduced rate of glucose uptake is observed in the PrfA* over-expressing strain growing in LB supplemented with glucose. Comparative transcriptome analyses were performed with RNA isolated from a prfA mutant and the isogenic strain carrying multiple prfA or prfA* copies on a plasmid. The analysis reveals in addition to high transcriptional up-regulation of the known PrfA-regulated virulence genes (group I), less pronounced up-regulation in the expression of several phage- and metabolic genes (group II) and strong down-regulation of several genes involved mainly in carbon- and nitrogen- metabolism in the PrfA* over-expressing strain (group III). Among the latter genes are in particular the nrgAB-, gltAB-, glnRA- (involved in nitrogen metabolism), ilvB- operons (involved in biosynthesis of the branched chain amino acids) and genes for some ABC transporters. Most of the down-regulated genes have been shown previously in Bacillus subtilis to belong to a class of genes whose expression is negatively affected by impaired glucose uptake. The results lead to the conclusion that excess PrfA(*) interferes with component(s) essential for PTS-mediated glucose transport.
+Keywords: Metabolism and Virulence gene expression
+    </Summary>
+    <Overall-Design>
+Transcriptome analyses were performed using whole genome DNA microarrays that contain synthetic 70mer oligodeoxyribonucleotides covering all ORFs of the Lm genome. Three independent RNA preparations from the conditions to be tested were pooled and 6 equal aliquots (15-20 µg) of total RNA from the strains were used to synthesize cDNA differentially labelled with Cy3-dCTP and Cy5-dCTP (Amersham Pharmacia, Freiburg, Germany) during a first-strand reverse transcription reaction with Superscript II RNase H- RT and 9 µg random primers (Life Technologies, Karlsruhe, Germany). Dye swap was performed as follows: Three cDNA samples from the one strain were generated using Cy3-dCTP and the other three using Cy5-dCTP and similarly for the other strain to be investigated. The two differentially labelled cDNA samples were combined, diluted to 3 × SSC, 0.1% (wt/vol) sodium dodecyl sulfate, hybridized to the microarray slide and incubated at 65°C for 16 hrs. Six such slides were hybridized using the generated probes for each strain combination. In this study there were 3 strain combinations in all.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contributor-Ref ref="contrib4" position="4" />
+    <Contributor-Ref ref="contrib5" position="5" />
+    <Contributor-Ref ref="contrib6" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM99217" />
+    <Sample-Ref ref="GSM99218" />
+    <Sample-Ref ref="GSM99219" />
+    <Sample-Ref ref="GSM99221" />
+    <Sample-Ref ref="GSM99227" />
+    <Sample-Ref ref="GSM99237" />
+    <Sample-Ref ref="GSM99264" />
+    <Sample-Ref ref="GSM99284" />
+    <Sample-Ref ref="GSM99297" />
+    <Sample-Ref ref="GSM99319" />
+    <Sample-Ref ref="GSM99320" />
+    <Sample-Ref ref="GSM99333" />
+    <Sample-Ref ref="GSM99420" />
+    <Sample-Ref ref="GSM99607" />
+    <Sample-Ref ref="GSM99608" />
+    <Sample-Ref ref="GSM99609" />
+    <Sample-Ref ref="GSM99610" />
+    <Sample-Ref ref="GSM99611" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/94649" />
+  </Series>
+
+</MINiML>

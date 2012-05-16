@@ -1,0 +1,3657 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Dragana</First><Last>Ajdic</Last></Person>
+    <Email>dragana-ajdic@ouhsc.edu</Email>
+    <Phone>405-271-1202</Phone>
+    <Fax>405-271-3117</Fax>
+    <Department>Microbiology and Immunology</Department>
+    <Organization>OUHSC</Organization>
+    <Address>
+      <Line>940 S. L. Young Blvd.</Line>
+      <City>Oklahoma City</City>
+      <State>OK</State>
+      <Zip-Code>73104</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Vi</First><Last>Pham</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL4769">
+    <Status database="GEO">
+      <Submission-Date>2007-01-20</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-06-15</Last-Update-Date>
+    </Status>
+    <Title>Streptococcus mutans UA159 Affymetrix Microarray</Title>
+    <Accession database="GEO">GPL4769</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1309">Streptococcus mutans</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+Affymetrix Microchip Manufacturing Protocol
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>GeneID</Name>
+      </Column>
+      <Column position="3">
+        <Name>Locus</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="4">
+        <Name>ORF</Name>
+        <Description>locus tag </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="5">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="1912">
+GPL4769-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM160647">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR1, biological replicate A</Title>
+    <Accession database="GEO">GSM160647</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160647/GSM160647.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160647/GSM160647.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160647-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160648">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR1, biological replicate B</Title>
+    <Accession database="GEO">GSM160648</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160648/GSM160648.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160648/GSM160648.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160648-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160649">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR2, biological replicate A</Title>
+    <Accession database="GEO">GSM160649</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160649/GSM160649.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160649/GSM160649.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160649-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160650">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR2, biological replicate B</Title>
+    <Accession database="GEO">GSM160650</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160650/GSM160650.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160650/GSM160650.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160650-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160651">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR3, biological replicate A</Title>
+    <Accession database="GEO">GSM160651</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160651/GSM160651.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160651/GSM160651.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160651-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160652">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR3, biological replicate B</Title>
+    <Accession database="GEO">GSM160652</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160652/GSM160652.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160652/GSM160652.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160652-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160653">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR4, biological replicate A</Title>
+    <Accession database="GEO">GSM160653</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160653/GSM160653.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160653/GSM160653.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160653-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160654">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR4, biological replicate B</Title>
+    <Accession database="GEO">GSM160654</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160654/GSM160654.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160654/GSM160654.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160654-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160655">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR5, biological replicate A</Title>
+    <Accession database="GEO">GSM160655</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160655/GSM160655.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160655/GSM160655.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160655-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160656">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR5, biological replicate B</Title>
+    <Accession database="GEO">GSM160656</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160656/GSM160656.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160656/GSM160656.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160656-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160657">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR6, biological replicate A</Title>
+    <Accession database="GEO">GSM160657</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose and dextranase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160657/GSM160657.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160657/GSM160657.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160657-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160658">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR6, biological replicate B</Title>
+    <Accession database="GEO">GSM160658</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with glucose and dextranase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160658/GSM160658.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160658/GSM160658.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160658-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160659">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR7, biological replicate A</Title>
+    <Accession database="GEO">GSM160659</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160659/GSM160659.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160659/GSM160659.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160659-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160660">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR7, biological replicate B</Title>
+    <Accession database="GEO">GSM160660</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160660/GSM160660.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160660/GSM160660.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160660-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160661">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR8, biological replicate A</Title>
+    <Accession database="GEO">GSM160661</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160661/GSM160661.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160661/GSM160661.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160661-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160662">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR8, biological replicate B</Title>
+    <Accession database="GEO">GSM160662</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160662/GSM160662.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160662/GSM160662.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160662-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160663">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR9, biological replicate A</Title>
+    <Accession database="GEO">GSM160663</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160663/GSM160663.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160663/GSM160663.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160663-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160664">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR9, biological replicate B</Title>
+    <Accession database="GEO">GSM160664</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160664/GSM160664.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160664/GSM160664.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160664-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160665">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR10, biological replicate A</Title>
+    <Accession database="GEO">GSM160665</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160665/GSM160665.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160665/GSM160665.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160665-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160666">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR10, biological replicate B</Title>
+    <Accession database="GEO">GSM160666</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160666/GSM160666.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160666/GSM160666.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160666-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160667">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR11, biological replicate A</Title>
+    <Accession database="GEO">GSM160667</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160667/GSM160667.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160667/GSM160667.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160667-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160668">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR11, biological replicate B</Title>
+    <Accession database="GEO">GSM160668</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with fructose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160668/GSM160668.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160668/GSM160668.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160668-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160669">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR12, biological replicate A</Title>
+    <Accession database="GEO">GSM160669</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with mannose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160669/GSM160669.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160669/GSM160669.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160669-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160670">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR12, biological replicate B</Title>
+    <Accession database="GEO">GSM160670</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with mannose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160670/GSM160670.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160670/GSM160670.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160670-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160671">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR13, biological replicate A</Title>
+    <Accession database="GEO">GSM160671</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with mannose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160671/GSM160671.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160671/GSM160671.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160671-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160672">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR13, biological replicate B</Title>
+    <Accession database="GEO">GSM160672</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with mannose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160672/GSM160672.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160672/GSM160672.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160672-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160673">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR14, biological replicate A</Title>
+    <Accession database="GEO">GSM160673</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with sucrose and dextranase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160673/GSM160673.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160673/GSM160673.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160673-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160674">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR14, biological replicate B</Title>
+    <Accession database="GEO">GSM160674</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with sucrose and dextranase
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160674/GSM160674.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160674/GSM160674.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160674-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160675">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR15, biological replicate A</Title>
+    <Accession database="GEO">GSM160675</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with lactose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160675/GSM160675.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160675/GSM160675.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160675-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160676">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR15, biological replicate B</Title>
+    <Accession database="GEO">GSM160676</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with lactose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160676/GSM160676.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160676/GSM160676.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160676-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160677">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR16, biological replicate A</Title>
+    <Accession database="GEO">GSM160677</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with galactose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160677/GSM160677.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160677/GSM160677.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160677-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160678">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR16, biological replicate B</Title>
+    <Accession database="GEO">GSM160678</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with galactose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160678/GSM160678.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160678/GSM160678.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160678-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160679">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR17, biological replicate A</Title>
+    <Accession database="GEO">GSM160679</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with raffinose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160679/GSM160679.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160679/GSM160679.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160679-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160680">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR17, biological replicate B</Title>
+    <Accession database="GEO">GSM160680</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with raffinose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160680/GSM160680.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160680/GSM160680.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160680-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160681">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR18, biological replicate A</Title>
+    <Accession database="GEO">GSM160681</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with stachyose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160681/GSM160681.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160681/GSM160681.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160681-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160682">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR18, biological replicate B</Title>
+    <Accession database="GEO">GSM160682</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with stachyose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160682/GSM160682.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160682/GSM160682.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160682-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160683">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR19, biological replicate A</Title>
+    <Accession database="GEO">GSM160683</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with trehalose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160683/GSM160683.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160683/GSM160683.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160683-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160684">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR19, biological replicate B</Title>
+    <Accession database="GEO">GSM160684</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with trehalose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160684/GSM160684.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160684/GSM160684.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160684-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160685">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR20, biological replicate A</Title>
+    <Accession database="GEO">GSM160685</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with maltose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160685/GSM160685.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160685/GSM160685.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160685-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160686">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR20, biological replicate B</Title>
+    <Accession database="GEO">GSM160686</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with maltose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160686/GSM160686.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160686/GSM160686.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160686-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160687">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR21, biological replicate A</Title>
+    <Accession database="GEO">GSM160687</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with maltotriose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160687/GSM160687.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160687/GSM160687.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160687-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160688">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR21, biological replicate B</Title>
+    <Accession database="GEO">GSM160688</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with maltotriose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160688/GSM160688.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160688/GSM160688.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160688-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160689">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR22, biological replicate A</Title>
+    <Accession database="GEO">GSM160689</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with cellobiose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160689/GSM160689.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160689/GSM160689.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160689-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160690">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR22, biological replicate B</Title>
+    <Accession database="GEO">GSM160690</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with cellobiose
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160690/GSM160690.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160690/GSM160690.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160690-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160691">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR23, biological replicate A</Title>
+    <Accession database="GEO">GSM160691</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with mannitol
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160691/GSM160691.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160691/GSM160691.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160691-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160692">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR23, biological replicate B</Title>
+    <Accession database="GEO">GSM160692</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with mannitol
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160692/GSM160692.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160692/GSM160692.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160692-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160693">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR24, biological replicate A</Title>
+    <Accession database="GEO">GSM160693</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with mannitol
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160693/GSM160693.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160693/GSM160693.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160693-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM160694">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-05-30</Last-Update-Date>
+    </Status>
+    <Title>Sugar transporter TR24, biological replicate B</Title>
+    <Accession database="GEO">GSM160694</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA159</Source>
+      <Organism taxid="210007">Streptococcus mutans UA159</Organism>
+      <Characteristics>
+planktonic cells
+      </Characteristics>
+      <Treatment-Protocol>
+Cells lysed using beat-beater.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Grown in defined medium with mannitol
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3ug of cDNA were hybridized for 16 hr at 47C on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.6
+    </Description>
+    <Data-Processing>
+Data were analyzed with Gene Chip Operating Software version 1.4 (GCOS 1.4) using Affymetrix default analysis settings and global scaling as normalization method.
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160694/GSM160694.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM160nnn/GSM160694/GSM160694.EXP.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>the call in an absolute analysis that indicates if the transcript was present (P), absent (A), marginal (M), or no call (NC)</Description>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+        <Description>'detection p-value', p-value that indicates the significance level of the detection call</Description>
+      </Column>
+    <External-Data rows="1912">
+GSM160694-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE6973">
+    <Status database="GEO">
+      <Submission-Date>2007-02-06</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2012-03-16</Last-Update-Date>
+    </Status>
+    <Title>Global transcriptional analysis of S. mutans sugar transporters</Title>
+    <Accession database="GEO">GSE6973</Accession>
+    <Pubmed-ID>17496079</Pubmed-ID>
+    <Summary>
+The transport of carbohydrates by Streptococcus mutans is accomplished by the phosphoenolpyruvate-phosphotrasferase system (PTS) and ATP-binding cassette (ABC) transporters. To undertake a global transcriptional analysis of all S. mutans sugar transporters simultaneously, we used a whole-genome expression microarray. Global transcription profiles of S. mutans UA159 were determined for several carbohydrates. The results revealed that PTSs were responsible for transport of monosaccharides, disaccharides and sugar alcohols. Six PTSs were transcribed only if a specific sugar was present in the growth medium, thus they were regulated at the transcriptional level. These included transporters for fructose, lactose, cellobiose, trehalose, and two transporters for mannitol. Three PTSs were repressed under all conditions tested. Interestingly, five PTSs were always highly expressed regardless of the sugar source used, presumably suggesting their availability for immediate uptake of most common dietary sugars (glucose, fructose, maltose and sucrose). The ABC transporters were found to be specific for polysaccharides, raffinose, stachyose and isomaltosaccharides. Compared to the PTS, the ABC transporters showed higher transcription under several tested conditions, suggesting that they might be transporting multiple substrates.
+Keywords: carbohydrate response
+    </Summary>
+    <Overall-Design>
+Global transcriptional patterns were obtained following growth on different carbohydrates (monosaccharides: glucose, mannose, galactose and fructose; disaccharides: sucrose, lactose, maltose, trehalose and cellobiose; oligosaccharides: raffinose, stachyose and maltotriose; a sugar-alcohol: manitol). To assure reproducibility of the data, the cultures were always grown to the same optical density for RNA extraction and hybridization on Affymetrix microarrays. Fourteen different conditions were analyzed with 2, 4 or 10 replicates for each.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM160647" />
+    <Sample-Ref ref="GSM160648" />
+    <Sample-Ref ref="GSM160649" />
+    <Sample-Ref ref="GSM160650" />
+    <Sample-Ref ref="GSM160651" />
+    <Sample-Ref ref="GSM160652" />
+    <Sample-Ref ref="GSM160653" />
+    <Sample-Ref ref="GSM160654" />
+    <Sample-Ref ref="GSM160655" />
+    <Sample-Ref ref="GSM160656" />
+    <Sample-Ref ref="GSM160657" />
+    <Sample-Ref ref="GSM160658" />
+    <Sample-Ref ref="GSM160659" />
+    <Sample-Ref ref="GSM160660" />
+    <Sample-Ref ref="GSM160661" />
+    <Sample-Ref ref="GSM160662" />
+    <Sample-Ref ref="GSM160663" />
+    <Sample-Ref ref="GSM160664" />
+    <Sample-Ref ref="GSM160665" />
+    <Sample-Ref ref="GSM160666" />
+    <Sample-Ref ref="GSM160667" />
+    <Sample-Ref ref="GSM160668" />
+    <Sample-Ref ref="GSM160669" />
+    <Sample-Ref ref="GSM160670" />
+    <Sample-Ref ref="GSM160671" />
+    <Sample-Ref ref="GSM160672" />
+    <Sample-Ref ref="GSM160673" />
+    <Sample-Ref ref="GSM160674" />
+    <Sample-Ref ref="GSM160675" />
+    <Sample-Ref ref="GSM160676" />
+    <Sample-Ref ref="GSM160677" />
+    <Sample-Ref ref="GSM160678" />
+    <Sample-Ref ref="GSM160679" />
+    <Sample-Ref ref="GSM160680" />
+    <Sample-Ref ref="GSM160681" />
+    <Sample-Ref ref="GSM160682" />
+    <Sample-Ref ref="GSM160683" />
+    <Sample-Ref ref="GSM160684" />
+    <Sample-Ref ref="GSM160685" />
+    <Sample-Ref ref="GSM160686" />
+    <Sample-Ref ref="GSM160687" />
+    <Sample-Ref ref="GSM160688" />
+    <Sample-Ref ref="GSM160689" />
+    <Sample-Ref ref="GSM160690" />
+    <Sample-Ref ref="GSM160691" />
+    <Sample-Ref ref="GSM160692" />
+    <Sample-Ref ref="GSM160693" />
+    <Sample-Ref ref="GSM160694" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE6973/GSE6973_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/99301" />
+  </Series>
+
+</MINiML>

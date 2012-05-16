@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Peter</First><Last>Sass</Last></Person>
+    <Email>peter.sass@microbiology-bonn.de</Email>
+    <Department>Institute for Microbiology (IMMIP)</Department>
+    <Organization>University of Bonn</Organization>
+    <Address>
+      <Line>Sigmund-Freud-Straße 25</Line>
+      <City>Bonn</City>
+      <State>NRW</State>
+      <Zip-Code>53115</Zip-Code>
+      <Country>Germany</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL5421">
+    <Status database="GEO">
+      <Submission-Date>2007-06-22</Submission-Date>
+      <Release-Date>2008-10-22</Release-Date>
+      <Last-Update-Date>2011-04-13</Last-Update-Date>
+    </Status>
+    <Title>sciTracer Staphylococcus aureus N315 Scienion2005</Title>
+    <Accession database="GEO">GPL5421</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="158879">Staphylococcus aureus subsp. aureus N315</Organism>
+    <Manufacturer>Scienion AG, Berlin, Germany</Manufacturer>
+    <Manufacture-Protocol>
+Product description:
+The sciTRACER S. aureus contains 2338 PCR products from all 2593 ORFs in the annotated genome (Ref ID: NC_002745), arranged in unique and second sequences: since the ORFs sizes range from 51 bp (e.g.: 13700427) up to 2kb (e.g.: 13701232), additional second PCR products have been developed. As unique sequences, 2333 PCR products and as second sequences, 333 PCR products are immobilized from which 5 are not in the group of unique gene fragments. All unique products cover 90 % of all ORFs. All PCR fragments are purified, concentration normalized, dissolved in spotting solution and spotted robotically onto modified glass slides. They are represented twice (duplicates) on each array. Controls are usually spotted in the last row of each subarray block forming the control area and comprising controls for spiking and endogenous controls.
+The SCIENION control set consists of positive, negative and multifunctional elements. All references/controls are spotted in a special pattern enabling functional monitoring of the entire experimental process. The glass slides are processed and ready for hybridization reaction. For easy correlation of gene names to their spot position on the slide the “Spot Identification Pattern-Table” (gal-file) is available.
+Information source:
+The genes represented on sciTRACER S. aureus are selected from order requests derived from the University of Würzburg, Infectious Biology Group (Head: Prof. Dr. Jörg Hacker) at the Institut für Molekulare Infektionsbiologie.
+Generation of sequences:
+1. The PCR fragments derive mostly from regions at the last 500 nt from the 3’ end and have an average size of 355 bps. In case that the predicted ORF displayed a size unsuitable for appropriate amplicon generation, the primer design was extended towards flanking regions in order to cover the desired ORF.
+2. All selected sequences are designed to provide the highest specificity and display minimal similarity to other mRNA and DNA sequences within the specified host genome.
+3. In order to obtain strong and comparable sensitivity and signal specificity, all fragments are designed to feature similar lengths, comparable G/C-contents and optimized melting temperatures.
+4. Based on algorithmic and manual revisions of the predicted sequences, the designed PCR fragments are well suited for the generation of highly reliable gene expression data.
+Quality controls:
+All sequences are validated in silico and approved by size control and sequence verification. The spot morphology is checked by automated optical control and hybridization of labeled RNA or SyBRGreenI® assay. Functional tests are performed by complex hybridization with labeled reference RNA for each batch.
+Source Organism:
+Staphylococcus aureus N 315 (NC_002745, contig BA000018)
+Microarray mapping:
+Each SCIENION microarray consists of two regions: the hybridizing region and the identifier region. The identifier region carries a sticker showing the name of the product, the date of production, batch number and the ID of the array. This region also serves to grasp the slide. The DNA microarray is in the center of the hybridizing region. Spot distance and feature size: The spot distance (center to center) is 375 µm. The array size is approximately 54 mm x 18 mm (height x broadness). Each array consists of 48 blocks and each block comprises 12 x 11 spots. These blocks are separated by a blank line and display a defined order.
+    </Manufacture-Protocol>
+    <Catalog-Number>Custom Design</Catalog-Number>
+    <Support>glass</Support>
+    <Coating>unknown</Coating>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>Block number</Description>
+      </Column>
+      <Column position="3">
+        <Name>Col</Name>
+        <Description>Column number</Description>
+      </Column>
+      <Column position="4">
+        <Name>Row</Name>
+        <Description>Row number</Description>
+      </Column>
+      <Column position="5">
+        <Name>ControlType</Name>
+        <Description>Control Type (-1: Negative ; 1: Positive ; 0: Not a Control)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Internal_ID</Name>
+        <Description>Internal Spot ID</Description>
+      </Column>
+      <Column position="7">
+        <Name>ProbeName</Name>
+        <Description>Name of the Probe</Description>
+      </Column>
+      <Column position="8">
+        <Name>Organism</Name>
+      </Column>
+      <Column position="9">
+        <Name>Genome Accessions</Name>
+        <Description>and contigs</Description>
+      </Column>
+      <Column position="10">
+        <Name>GENOME_ACC</Name>
+        <Description>Genome accession number</Description>
+      </Column>
+      <Column position="11">
+        <Name>GB_ACC</Name>
+        <Description>GenBank accession of controls</Description>
+      </Column>
+      <Column position="12">
+        <Name>ORF</Name>
+        <Description>GenBank identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix> AND Staphylococcus aureus[organism]</Link-Suffix>
+      </Column>
+      <Column position="13">
+        <Name>SPOT_ID</Name>
+        <Description>GEO Spot ID</Description>
+      </Column>
+    <External-Data rows="6912">
+GPL5421-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Platform iid="GPL5429">
+    <Status database="GEO">
+      <Submission-Date>2007-06-26</Submission-Date>
+      <Release-Date>2008-10-22</Release-Date>
+      <Last-Update-Date>2011-04-13</Last-Update-Date>
+    </Status>
+    <Title>sciTracer Staphylococcus aureus N315 Scienion2004</Title>
+    <Accession database="GEO">GPL5429</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="158879">Staphylococcus aureus subsp. aureus N315</Organism>
+    <Manufacturer>Scienion AG, Berlin, Germany</Manufacturer>
+    <Manufacture-Protocol>
+The sciTRACER S. aureus contains 2338 PCR products from all 2593 ORFs in the annotated genome (Ref ID: NC_002745), arranged in unique and second sequences: since the ORFs sizes range from 51 bp (e.g.: 13700427) up to 2kb (e.g.: 13701232), additional second PCR products have been developed. As unique sequences, 2333 PCR products and as second sequences, 333 PCR products are immobilized from which 5 are not in the group of unique gene fragments. All unique products cover 90 % of all ORFs. All PCR fragments are purified, concentration normalized, dissolved in spotting solution and spotted robotically onto modified glass slides. They are represented twice (duplicates) on each array. Controls are usually spotted in the last row of each subarray block forming the control area and comprising controls for spiking and endogenous controls. The SCIENION control set consists of positive, negative and multifunctional elements. All references/controls are spotted in a special pattern enabling functional monitoring of the entire experimental process. The glass slides are processed and ready for hybridization reaction. For easy correlation of gene names to their spot position on the slide the “Spot Identification Pattern-Table” (gal-file) is available. Information source: The genes represented on sciTRACER S. aureus are selected from order requests derived from the University of Würzburg, Infectious Biology Group (Head: Prof. Dr. Jörg Hacker) at the Institut für Molekulare Infektionsbiologie. Generation of sequences: 1. The PCR fragments derive mostly from regions at the last 500 nt from the 3’ end and have an average size of 355 bps. In case that the predicted ORF displayed a size unsuitable for appropriate amplicon generation, the primer design was extended towards flanking regions in order to cover the desired ORF. 2. All selected sequences are designed to provide the highest specificity and display minimal similarity to other mRNA and DNA sequences within the specified host genome. 3. In order to obtain strong and comparable sensitivity and signal specificity, all fragments are designed to feature similar lengths, comparable G/C-contents and optimized melting temperatures. 4. Based on algorithmic and manual revisions of the predicted sequences, the designed PCR fragments are well suited for the generation of highly reliable gene expression data. Quality controls: All sequences are validated in silico and approved by size control and sequence verification. The spot morphology is checked by automated optical control and hybridization of labeled RNA or SyBRGreenI® assay. Functional tests are performed by complex hybridization with labeled reference RNA for each batch. Source Organism: Staphylococcus aureus N 315 (NC_002745, contig BA000018) Microarray mapping: Each SCIENION microarray consists of two regions: the hybridizing region and the identifier region. The identifier region carries a sticker showing the name of the product, the date of production, batch number and the ID of the array. This region also serves to grasp the slide. The DNA microarray is in the center of the hybridizing region. Spot distance and feature size: The spot distance (center to center) is 375 µm. The array size is approximately 54 mm x 18 mm (height x broadness). Each array consists of 48 blocks and each block comprises 12 x 11 spots. These blocks are separated by a blank line and display a defined order. to Product description: The sciTRACER S. aureus contains 2338 PCR products from all 2593 ORFs in the annotated genome (Ref ID: NC_002745), arranged in unique and second sequences: since the ORFs sizes range from 51 bp (e.g.: 13700427) up to 2kb (e.g.: 13701232), additional second PCR products have been developed. As unique sequences, 2333 PCR products and as second sequences, 333 PCR products are immobilized from which 5 are not in the group of unique gene fragments. All unique products cover 90 % of all ORFs. All PCR fragments are purified, concentration normalized, dissolved in spotting solution and spotted robotically onto modified glass slides. They are represented twice (duplicates) on each array. Controls are usually spotted in the last row of each subarray block forming the control area and comprising controls for spiking and endogenous controls. The SCIENION control set consists of positive, negative and multifunctional elements. All references/controls are spotted in a special pattern enabling functional monitoring of the entire experimental process. The glass slides are processed and ready for hybridization reaction. For easy correlation of gene names to their spot position on the slide the “Spot Identification Pattern-Table” (gal-file) is available. Information source: The genes represented on sciTRACER S. aureus are selected from order requests derived from the University of Würzburg, Infectious Biology Group (Head: Prof. Dr. Jörg Hacker) at the Institut für Molekulare Infektionsbiologie. Generation of sequences: 1. The PCR fragments derive mostly from regions at the last 500 nt from the 3’ end and have an average size of 355 bps. In case that the predicted ORF displayed a size unsuitable for appropriate amplicon generation, the primer design was extended towards flanking regions in order to cover the desired ORF. 2. All selected sequences are designed to provide the highest specificity and display minimal similarity to other mRNA and DNA sequences within the specified host genome. 3. In order to obtain strong and comparable sensitivity and signal specificity, all fragments are designed to feature similar lengths, comparable G/C-contents and optimized melting temperatures. 4. Based on algorithmic and manual revisions of the predicted sequences, the designed PCR fragments are well suited for the generation of highly reliable gene expression data. Quality controls: All sequences are validated in silico and approved by size control and sequence verification. The spot morphology is checked by automated optical control and hybridization of labeled RNA or SyBRGreenI® assay. Functional tests are performed by complex hybridization with labeled reference RNA for each batch. Source Organism: Staphylococcus aureus N 315 (NC_002745, contig BA000018) Microarray mapping: Each SCIENION microarray consists of two regions: the hybridizing region and the identifier region. The identifier region carries a sticker showing the name of the product, the date of production, batch number and the ID of the array. This region also serves to grasp the slide. The DNA microarray is in the center of the hybridizing region. Spot distance and feature size: The spot distance (center to center) is 375 µm. The array size is approximately 54 mm x 18 mm (height x broadness). Each array consists of 48 blocks and each block comprises 12 x 11 spots. These blocks are separated by a blank line and display a defined order.
+    </Manufacture-Protocol>
+    <Catalog-Number>Custom Design</Catalog-Number>
+    <Support>glass</Support>
+    <Coating>unknown</Coating>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>Block</Name>
+        <Description>Block number</Description>
+      </Column>
+      <Column position="3">
+        <Name>Col</Name>
+        <Description>Column number</Description>
+      </Column>
+      <Column position="4">
+        <Name>Row</Name>
+        <Description>Row number</Description>
+      </Column>
+      <Column position="5">
+        <Name>ControlType</Name>
+        <Description>Control Type (-1: Negative ; 1: Positive ; 0: Not a Control)</Description>
+      </Column>
+      <Column position="6">
+        <Name>Internal_ID</Name>
+        <Description>internal Spot ID (&quot;&quot;2_&quot;&quot; second sequences)</Description>
+      </Column>
+      <Column position="7">
+        <Name>ProbeName</Name>
+        <Description>Name of the Probe</Description>
+      </Column>
+      <Column position="8">
+        <Name>Organism</Name>
+      </Column>
+      <Column position="9">
+        <Name>Genome Accessions</Name>
+        <Description>with contig accession</Description>
+      </Column>
+      <Column position="10">
+        <Name>GENOME_ACC</Name>
+        <Description>Genome accession number</Description>
+      </Column>
+      <Column position="11">
+        <Name>GB_ACC</Name>
+        <Description>GenBank accession</Description>
+      </Column>
+      <Column position="12">
+        <Name>ORF</Name>
+        <Description>GenBank identifier  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix> AND Staphylococcus aureus[organism]</Link-Suffix>
+      </Column>
+      <Column position="13">
+        <Name>SPOT_ID</Name>
+        <Description>GEO Spot ID</Description>
+      </Column>
+    <External-Data rows="6912">
+GPL5429-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM234953">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin16_samples13793A_chip119</Title>
+    <Accession database="GEO">GSM234953</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93A</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI).
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all study cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93A</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI).
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all mersacidin study cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234953/GSM234953.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="5248">
+GSM234953-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234955">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin16_samples13793A_chip218</Title>
+    <Accession database="GEO">GSM234955</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93A</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). 
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all study cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93A</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). 
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all mersacidin study cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234955/GSM234955.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="5248">
+GSM234955-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234956">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin16_samples13793A_chip120</Title>
+    <Accession database="GEO">GSM234956</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93A</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Source: Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93A</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Source: Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234956/GSM234956.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="5248">
+GSM234956-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234958">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin16_samples13793A_chip220</Title>
+    <Accession database="GEO">GSM234958</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93A</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Source: Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93A</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Source: Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234958/GSM234958.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="5248">
+GSM234958-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234963">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin16_samples13793G_chip025</Title>
+    <Accession database="GEO">GSM234963</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI).  Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G.
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI).  Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G.
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5429" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234963/GSM234963.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4954">
+GSM234963-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234964">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin16_samples13793G_chip117</Title>
+    <Accession database="GEO">GSM234964</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G. Source: Reipert, A., K. Ehlert, T. Kast, and G.
+      </Characteristics>
+      <Characteristics tag="Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother.47">
+568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G. Source: Reipert, A., K. Ehlert, T. Kast, and G.
+      </Characteristics>
+      <Characteristics tag="Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother.47">
+568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234964/GSM234964.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4954">
+GSM234964-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234965">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin16_samples13793G_chip026</Title>
+    <Accession database="GEO">GSM234965</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G. Source: Reipert, A., K. Ehlert, T. Kast, and G.
+      </Characteristics>
+      <Characteristics tag="Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother.47">
+568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G. Source: Reipert, A., K. Ehlert, T. Kast, and G.
+      </Characteristics>
+      <Characteristics tag="Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother.47">
+568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5429" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234965/GSM234965.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4954">
+GSM234965-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234966">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin16_samples13793G_chip118</Title>
+    <Accession database="GEO">GSM234966</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G. Source: Reipert, A., K. Ehlert, T. Kast, and G.
+      </Characteristics>
+      <Characteristics tag="Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother.47">
+568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G. Source: Reipert, A., K. Ehlert, T. Kast, and G.
+      </Characteristics>
+      <Characteristics tag="Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother.47">
+568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234966/GSM234966.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4954">
+GSM234966-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234971">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin1_samplesSASG511_chip113</Title>
+    <Accession database="GEO">GSM234971</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus SG511</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics>
+Staphylococcus aureus SG511 is a sensitive control strain (methicillin susceptible) from the strain collection of the Robert Koch-Institute, Berlin, Germany.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus SG511</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics>
+Staphylococcus aureus SG511 is a sensitive control strain (methicillin susceptible) from the strain collection of the Robert Koch-Institute, Berlin, Germany.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234971/GSM234971.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4856">
+GSM234971-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234973">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin1_samplesSASG511_chip115</Title>
+    <Accession database="GEO">GSM234973</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus SG511</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics>
+Staphylococcus aureus SG511 is a sensitive control strain (methicillin susceptible) from the strain collection of the Robert Koch-Institute, Berlin, Germany.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus SG511</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics>
+Staphylococcus aureus SG511 is a sensitive control strain (methicillin susceptible) from the strain collection of the Robert Koch-Institute, Berlin, Germany.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234973/GSM234973.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4856">
+GSM234973-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234992">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin1_samplesSASG511_chip114</Title>
+    <Accession database="GEO">GSM234992</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus SG511</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics>
+Staphylococcus aureus SG511 is a sensitive control strain (methicillin susceptible) from the strain collection of the Robert Koch-Institute, Berlin, Germany.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus SG511</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics>
+Staphylococcus aureus SG511 is a sensitive control strain (methicillin susceptible) from the strain collection of the Robert Koch-Institute, Berlin, Germany.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234992/GSM234992.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4856">
+GSM234992-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM234993">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2011-08-14</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin1_samplesSASG511_chip116</Title>
+    <Accession database="GEO">GSM234993</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus SG511</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics>
+Staphylococcus aureus SG511 is a sensitive control strain (methicillin susceptible) from the strain collection of the Robert Koch-Institute, Berlin, Germany.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 0.5. Next, mersacidin was added in subinhibitory concentrations and the cultures were further grown to an OD600 of ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus SG511</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics>
+Staphylococcus aureus SG511 is a sensitive control strain (methicillin susceptible) from the strain collection of the Robert Koch-Institute, Berlin, Germany.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and fixed by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The cells were subsequently harvested by 20 min of centrifugation at 4000 rpm and 37°C, and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, three different aliquots of total RNA preparations from separate cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 Units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and Cy3/Cy5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany) containing 2338 unique open reading frames representing 90% of the S. aureus N315 genome (NC_002745). Additional information on the microarray platform is described elsewhere. To increase reproducibility, each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison with the incorporated dye reversed on two separate arrays. All hybridizations were done with equal amounts of fluorescence-labeled cDNA probes or picomols of dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide following incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC/0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s).
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5421" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM234nnn/GSM234993/GSM234993.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4856">
+GSM234993-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM261772">
+    <Status database="GEO">
+      <Submission-Date>2008-02-01</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2008-10-23</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin4_samples13793G_chip017</Title>
+    <Accession database="GEO">GSM261772</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G.
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from fresh BHI broth overnight cultures and further incubated until they reached an OD600 ~ 1.0. CaCl2 was supplemented to all cultures to a final concentration of 1 mM since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and stabilized by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The culture was subsequently harvested by centrifugation and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, aliquots of total RNA preparations from three different cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and CyDye3 / CyDye5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G.
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from overnight cultures and grown to exponential phase until they reached an OD600 of 0.5 in BHI broth. Then, mersacidin was added as indicated, and the cultures were further grown to an OD600 of 1.0 for RNA preparations (~ 30 min) or longer to assess growth behavior. CaCl2 was supplemented to all mersacidin containing cultures to a final concentration of 1 mM, since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and stabilized by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The culture was subsequently harvested by centrifugation and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, aliquots of total RNA preparations from three different cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and CyDye3 / CyDye5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray-based transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany). Each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison to increase reproducibility. Only strain SA137/93G incubated with 0.2 x MIC of mersacidin was reproduced in duplicate. All hybridizations were done with equal amounts of cDNA probes displaying similar picomoles of incorporated dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide followed by incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC / 0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s). 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5429" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM261nnn/GSM261772/GSM261772.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4504">
+GSM261772-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM261773">
+    <Status database="GEO">
+      <Submission-Date>2008-02-01</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2008-10-23</Last-Update-Date>
+    </Status>
+    <Title>Mersacidin4_samples13793G_chip018</Title>
+    <Accession database="GEO">GSM261773</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G.
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from overnight cultures and grown to exponential phase until they reached an OD600 of 0.5 in BHI broth. Then, mersacidin was added as indicated, and the cultures were further grown to an OD600 of 1.0 for RNA preparations (~ 30 min) or longer to assess growth behavior. CaCl2 was supplemented to all mersacidin containing cultures to a final concentration of 1 mM, since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and stabilized by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The culture was subsequently harvested by centrifugation and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, aliquots of total RNA preparations from three different cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and CyDye3 / CyDye5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Staphylococcus aureus 137/93G</Source>
+      <Organism taxid="1280">Staphylococcus aureus</Organism>
+      <Characteristics tag="Methicillin-resistant S. aureus (MRSA) SA137/93A, isolated from a tracheal secretion and displays heterogeneous intermediate vancomycin resistance (hVISA strain, MIC">
+8 mg/L in BHI). Subculturing in presence of 6 mg/L vancomycin generated a mutant with homogeneous intermediate vancomycin resistance, that showed an MIC value of 16 mg/L in BHI and was designated SA137/93G.
+      </Characteristics>
+      <Characteristics tag="Source">
+Reipert, A., K. Ehlert, T. Kast, and G. Bierbaum. 2003. Morphological and genetic differences in two isogenic Staphylococcus aureus strains with decreased susceptibilities to vancomycin. Antimicrob.Agents Chemother. 47:568-576.
+      </Characteristics>
+      <Treatment-Protocol>
+S. aureus cultures for RNA preparations were diluted 200-fold from overnight cultures and grown to exponential phase until they reached an OD600 of 1.0 (~ 30 min). CaCl2 was supplemented to all mersacidin containing cultures to a final concentration of 1 mM, since Ca2+-ions enhance the bactericidal effect of mersacidin.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Exponential-phase cultures of 10 ml for total RNA preparations were grown as aforementioned and stabilized by incubation with two volumes of prewarmed RNAprotect Bacteria Reagent (Qiagen, Hilden, Germany) for 5 min at 37°C. The culture was subsequently harvested by centrifugation and the pellets were shock-frozen in fluid nitrogen and kept at -70°C. The cells were lysed in the presence of 400 µg/ml lysostaphin (Genmedics, Reutlingen, Germany) and total RNA was extracted using the PrestoSpin R bug kit including DNase I treatment (Molzym, Bremen, Germany) following the manufacturer’s instructions. Quality and quantity of total RNA were confirmed by agarose gel electrophoresis and measured using the Nanodrop spectrophotometer (Nanodrop Technologies, Wilmington, USA).
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Fluorescence-labeled single-stranded cDNA was obtained by reverse transcription of total RNA. To this end, aliquots of total RNA preparations from three different cultures of the respective experiment were pooled to a total amount of 9 µg (3 µg each) and transcribed into cDNA using 100 units (U) of BioScript reverse transcriptase (Bioline, Luckenwalde, Germany) following the manufacturer’s instructions. For direct cDNA labeling, the total reaction volume of 40 µl contained 75 µg/ml pd(N)6 random hexamers (GE Healthcare - Amersham, NJ, USA), 0.1 mM CyDye3- or CyDye5-dCTPs (GE Healthcare - Amersham) aside from 0.2 mM dCTP, 0.5 mM dATP, 0.5 mM dTTP, 0.5 mM dGTP and 25 U/ml RNase-OUT (Invitrogen, Karlsruhe, Germany). RNA was degraded by alkaline hydrolysis at 65°C and fluorescence-labeled cDNA was purified using the MinElute PCR purification kit (Qiagen). cDNA synthesis and CyDye3 / CyDye5 incorporation was verified using the Nanodrop spectrophotometer (Nanodrop Technologies).
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Microarray-based transcriptional profiling by competitive hybridization of fluorescence-labeled cDNA was performed using the custom PCR product full-genome chip sciTracer (Scienion, Berlin, Germany). Each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison to increase reproducibility. Only strain SA137/93G incubated with 0.2 x MIC of mersacidin was reproduced in duplicate. All hybridizations were done with equal amounts of cDNA probes displaying similar picomoles of incorporated dye. Fluorescence-labeled cDNA probes were mixed in hybridization buffer (Scienion) in a total volume of 55 µl and denatured at 95°C for 2 min and subsequently applied to the microarray slide followed by incubation at 42°C for 72 hours under humidified conditions according to the manufacturer’s instructions. Hybridized microarrays were washed at room temperature in SSC buffer with decreasing salt concentrations (1 x SSC / 0.3% SDS for 5 min, 0.2 x SSC for 5 min, 0.06 x SSC for 30s). 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The intensity of fluorescence of the microarray was scanned with a GenePix 4000B scanner (Axon Instruments/Distribution by Biozyme Scientific GmbH, Hessisch Oldendorf, Germany). TIFF images were captured and analysed with GenePixPro4.1 software (Axon Instruments). The actual signal intensity was calculated by substracting the mean value of the local background intensity from the mean value of the signal intensity of the individual spot.
+    </Scan-Protocol>
+    <Description>
+no additional information provided
+    </Description>
+    <Data-Processing>
+The data sets were then normalized by using Acuity 3.1 software (Axon Instruments) and by applying the LOWESS algorithm. Significant changes of gene expression were determined by implementing SAM (significance analysis of microarrays; http://www-stat.stanford.edu/~tibs/SAM/; (Tusher, V. G., R. Tibshirani, and G. Chu. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc.Natl.Acad.Sci.U.S.A 98:5116-5121.)) using the one class response and a false discovery rate of &lt; 1% with a medium number of falsely called significant genes of &lt;1.
+    </Data-Processing>
+    <Platform-Ref ref="GPL5429" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="GPR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM261nnn/GSM261773/GSM261773.gpr.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Lowess M normalized Log Ratio (F532 Median - B532, F635 Median - B635)</Description>
+      </Column>
+      <Column position="3">
+        <Name>Median of Ratios (532/635)</Name>
+        <Description>the median of pixel-by-pixel ratios of pixel intensities, with the median background subtracted.</Description>
+      </Column>
+      <Column position="4">
+        <Name>F532 Median - B532</Name>
+        <Description>the median feature pixel intensity at wavelength 532 with the median background subtracted.</Description>
+      </Column>
+      <Column position="5">
+        <Name>F635 Median - B635</Name>
+        <Description>the median feature pixel intensity at wavelength 635 with the median background subtracted.</Description>
+      </Column>
+      <Column position="6">
+        <Name>Log Ratio (532/635)</Name>
+        <Description>log (base 2) transform of the ratio of the medians.</Description>
+      </Column>
+    <External-Data rows="4504">
+GSM261773-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE9261">
+    <Status database="GEO">
+      <Submission-Date>2007-10-08</Submission-Date>
+      <Release-Date>2008-10-23</Release-Date>
+      <Last-Update-Date>2012-03-17</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional profiles of Staphylococcus aureus strains in the presence of the lantibiotic mersacidin.</Title>
+    <Accession database="GEO">GSE9261</Accession>
+    <Pubmed-ID>18947397</Pubmed-ID>
+    <Summary>
+The lantibiotic mersacidin is an antimicrobial peptide of 20 amino acids that is ribosomally produced by Bacillus sp. strain HIL Y-85,54728. Mersacidin acts by complexing the sugar phosphate head group of the peptidoglycan precursor lipid II, thereby inhibiting the transglycosylation reaction of peptidoglycan biosynthesis. 
+Here, we studied the transcriptomic response of S. aureus to subinhibitory concentrations of mersacidin using microarray and qRT-PCR techniques. The transcriptomics revealed an extensive induction of the cell wall stress response of S. aureus, which is partly controlled by the two-component regulatory system VraSR. In contrast to other cell wall-active antibiotics such as vancomycin, 0.2 x MIC of mersacidin was sufficient for induction. Interestingly, the cell wall stress response was equally induced in vancomycin intermediate resistant S. aureus (VISA) as well as in a highly susceptible strain. Furthermore, the efficiency of mersacidin was not affected by an increased cell wall thickness, which is part of the VISA-type resistance mechanism. Since the transcription of the VraDE ABC transporter genes was induced up to 1700-fold in our experiments, we analyzed the role of VraDE in the response of S. aureus to mersacidin. Unexpectedly, the deletion of the vraE gene did not result in an increased susceptibility to mersacidin compared to the wild type strain. In conclusion, mersacidin appears to be a strong inducer of the cell wall stress response of S. aureus at very low concentrations, which reflects its general mode of action as a cell wall-active peptide as well as its use of a unique target site on lipid II.
+Keywords: antibiotic induced response
+    </Summary>
+    <Overall-Design>
+In this experiment, the transcriptomic response of S. aureus was assayed via microarray analysis. 
+To this end, S. aureus strains SA137/93A [mersacidin MIC 35 mg/L] and SA137/93G [mersacidin MIC 30 mg/L] were grown without or with mersacidin [16 mg/L] to determine the genes being induced or repressed by the lantibiotic. SA137/93G was additionally grown in the presence of 4 mg/L mersacidin. Furthermore, the highly susceptible S. aureus strain SG511 [mersacidin MIC 1 mg/L] was also grown without or with mersacidin [1 mg/L]. 
+Each experiment was performed 4 times including a dye swap resulting in four chips per competitive comparison to increase reproducibility. Only strain SA137/93G incubated with 0.2 x MIC of mersacidin was reproduced in duplicate. All hybridizations were done with equal amounts of cDNA probes displaying similar picomoles of incorporated dye.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM234953" />
+    <Sample-Ref ref="GSM234955" />
+    <Sample-Ref ref="GSM234956" />
+    <Sample-Ref ref="GSM234958" />
+    <Sample-Ref ref="GSM234963" />
+    <Sample-Ref ref="GSM234964" />
+    <Sample-Ref ref="GSM234965" />
+    <Sample-Ref ref="GSM234966" />
+    <Sample-Ref ref="GSM234971" />
+    <Sample-Ref ref="GSM234973" />
+    <Sample-Ref ref="GSM234992" />
+    <Sample-Ref ref="GSM234993" />
+    <Sample-Ref ref="GSM261772" />
+    <Sample-Ref ref="GSM261773" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE9261/GSE9261_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/102887" />
+  </Series>
+
+</MINiML>

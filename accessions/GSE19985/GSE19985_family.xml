@@ -1,0 +1,1281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Izabela</First><Last>Sitkiewicz</Last></Person>
+    <Email>iza.sitkiewicz@gmail.com</Email>
+    <Department>Epidemiology and Clinical Microbiology</Department>
+    <Organization>National Medicines Institute</Organization>
+    <Address>
+      <Line>Chełmska 30/34</Line>
+      <City>Warsaw</City>
+      <Postal-Code>00-725</Postal-Code>
+      <Country>Poland</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>James</First><Middle>M</Middle><Last>Musser</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Paul</First><Last>Sumby</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Nicole</First><Middle>M</Middle><Last>Green</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Nina</First><Last>Guo</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Ann</First><Middle>M</Middle><Last>Bongiovanni</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Steven</First><Middle>S</Middle><Last>Witkin</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL9953">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-03-15</Last-Update-Date>
+    </Status>
+    <Title>TMHRI M28 GAS array</Title>
+    <Accession database="GEO">GPL9953</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+Standard Affymetrix procedures
+    </Manufacture-Protocol>
+    <Catalog-Number>N/A</Catalog-Number>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Relation type="Affiliated with" target="GPL6186" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>ORF number in MGAS6180 strain  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>LOCUS</Name>
+      </Column>
+      <Column position="4">
+        <Name>GENE DESCRIPTION</Name>
+        <Description>putative gene function</Description>
+      </Column>
+    <External-Data rows="1765">
+GPL9953-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM499302">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in THY, ML phase replicate 1</Title>
+    <Accession database="GEO">GSM499302</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>THY, ML phase replicate1</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+THY laboratory medium
+      </Characteristics>
+      <Characteristics tag="growth phase">
+mid logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499302/GSM499302.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499302-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499303">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in THY, ML phase replicate 2</Title>
+    <Accession database="GEO">GSM499303</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>THY, ML phase replicate2</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+THY laboratory medium
+      </Characteristics>
+      <Characteristics tag="growth phase">
+mid logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499303/GSM499303.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499303-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499304">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in THY, ML phase replicate 3</Title>
+    <Accession database="GEO">GSM499304</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>THY, ML phase replicate 3</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+THY laboratory medium
+      </Characteristics>
+      <Characteristics tag="growth phase">
+mid logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499304/GSM499304.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499304-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499305">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in THY, LL phase replicate 1</Title>
+    <Accession database="GEO">GSM499305</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>THY, LL phase replicate1</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+THY laboratory medium
+      </Characteristics>
+      <Characteristics tag="growth phase">
+late logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499305/GSM499305.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499305-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499306">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in THY, LL phase replicate 2</Title>
+    <Accession database="GEO">GSM499306</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>THY, LL phase replicate 2</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+THY laboratory medium
+      </Characteristics>
+      <Characteristics tag="growth phase">
+late logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499306/GSM499306.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499306-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499313">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in THY, LL phase replicate 3</Title>
+    <Accession database="GEO">GSM499313</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>THY, LL phase replicate 3</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+THY laboratory medium
+      </Characteristics>
+      <Characteristics tag="growth phase">
+late logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499313/GSM499313.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499313-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499314">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in THY, S phase replicate 1</Title>
+    <Accession database="GEO">GSM499314</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>THY, S phase replicate 1</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+THY laboratory medium
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499314/GSM499314.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499314-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499315">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in THY, S phase replicate 2</Title>
+    <Accession database="GEO">GSM499315</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>THY, S phase replicate 2</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+THY laboratory medium
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499315/GSM499315.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499315-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499360">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in THY, S phase replicate 3</Title>
+    <Accession database="GEO">GSM499360</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>THY, S phase replicate 3</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+THY laboratory medium
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499360/GSM499360.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499360-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499361">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in human amniotic fluid, mid log phase, replicate 1</Title>
+    <Accession database="GEO">GSM499361</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>AF, ML phase replicate 1</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+human amniotic fluid
+      </Characteristics>
+      <Characteristics tag="growth phase">
+mid logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499361/GSM499361.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499361-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499362">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in human amniotic fluid, mid log phase, replicate 2</Title>
+    <Accession database="GEO">GSM499362</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>AF, ML phase replicate 2</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+human amniotic fluid
+      </Characteristics>
+      <Characteristics tag="growth phase">
+mid logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499362/GSM499362.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499362-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499363">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in human amniotic fluid, mid log phase, replicate 3</Title>
+    <Accession database="GEO">GSM499363</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>AF, ML phase replicate 3</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+human amniotic fluid
+      </Characteristics>
+      <Characteristics tag="growth phase">
+mid logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499363/GSM499363.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499363-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499364">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in human amniotic fluid, late log phase, replicate 1</Title>
+    <Accession database="GEO">GSM499364</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>AF, LL phase replicate 1</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+human amniotic fluid
+      </Characteristics>
+      <Characteristics tag="growth phase">
+mid logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499364/GSM499364.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>(A) absent, (M) marginal or (P) present call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499364-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499365">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in human amniotic fluid, late log phase, replicate 2</Title>
+    <Accession database="GEO">GSM499365</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>AF, LL phase replicate 2</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+human amniotic fluid
+      </Characteristics>
+      <Characteristics tag="growth phase">
+late logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499365/GSM499365.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499365-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499367">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in human amniotic fluid, late log phase, replicate 3</Title>
+    <Accession database="GEO">GSM499367</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>AF, LL phase replicate 3</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+human amniotic fluid
+      </Characteristics>
+      <Characteristics tag="growth phase">
+mid logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499367/GSM499367.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499367-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499369">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in human amniotic fluid, stationary phase, replicate 1</Title>
+    <Accession database="GEO">GSM499369</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>AF, S phase replicate 1</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+human amniotic fluid
+      </Characteristics>
+      <Characteristics tag="growth phase">
+mid logarithmic
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499369/GSM499369.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499369-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499391">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in human amniotic fluid, stationary phase, replicate 2</Title>
+    <Accession database="GEO">GSM499391</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>AF, S phase replicate 2</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+human amniotic fluid
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499391/GSM499391.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499391-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM499399">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2010-01-22</Last-Update-Date>
+    </Status>
+    <Title>Group A Streptococcus grown in human amniotic fluid, stationary phase, replicate 3</Title>
+    <Accession database="GEO">GSM499399</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>AF, S phase replicate 3</Source>
+      <Organism taxid="319701">Streptococcus pyogenes MGAS6180</Organism>
+      <Characteristics tag="growth condition">
+human amniotic fluid
+      </Characteristics>
+      <Characteristics tag="growth phase">
+stationary
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+5ml culture was added to 10ml RNA protect (Qiagen), and GAS collected by centrifugation and stored at -80C. RNA was extracted from bacterial cell pellets through mechanical disruption using glass beads (MatrixB tubes) in a FastPrep machine. RNA was purified using hot acid phenol (Ambion) extraction and re-purified on Qiagen miRNeasy columns using standard protocol. DNA was removed with DNA-free (Ambion). RNA quality was assessed by bioanalyzer and O.D. measurements.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Standard Affymetrix
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Overnight 45C, Standard Affymetrix procedure
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Affymetrix GeneChip scanner 3000
+    </Scan-Protocol>
+    <Description>
+Part of the study on the adaptation of group A Streptococcus to human amniotic fluid 
+    </Description>
+    <Data-Processing>
+Raw data was normalized to total signal intensity of GAS probes on chip. Individual hybridization values of each probe were divided by sum of all hybridization values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL9953" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM499nnn/GSM499399/GSM499399.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>normalized value</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>Absent (A), marginal (M) or present (P) call</Description>
+      </Column>
+    <External-Data rows="1765">
+GSM499399-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE19985">
+    <Status database="GEO">
+      <Submission-Date>2010-01-21</Submission-Date>
+      <Release-Date>2010-03-15</Release-Date>
+      <Last-Update-Date>2012-03-21</Last-Update-Date>
+    </Status>
+    <Title>Adaptation of group A Streptococcus to human amniotic fluid</Title>
+    <Accession database="GEO">GSE19985</Accession>
+    <Pubmed-ID>20352104</Pubmed-ID>
+    <Summary>
+Background. For more than 100 years, group A Streptococcus has been identified as a cause of severe, and in many cases fatal, infections of the female urogenital tract. Due to advances in hospital hygiene and the advent of antibiotics, this type of infection has been virtually eradicated. However, within the last three decades there has been an increase in severe intra- and post-partum infections attributed to GAS.
+Principal Findings. The majority of changes in the GAS transcriptome involved down regulation of multiple adhesins and virulence factors and activation of the stress response. We observed significant changes in genes involved in the arginine deiminase pathway and in the nucleotide de novo synthesis pathway. 
+Conclusions/Significance. Our work provides new insight into how pathogenic bacteria respond to their environment to establish infection and cause disease. 
+    </Summary>
+    <Overall-Design>
+To identify genes that were up or down regulated in response to growth in AF, GAS was grown in human AF or standard laboratory media (THY) and samples for expression microarray analysis were collected during mid-logarithmic, late-logarithmic, and stationary growth phases. Microarray analysis was performed using a custom Affymetrix chip and normalized hybridization values derived from three biological replicates were collected at each growth point. Ratios of AF/THY above a 2-fold change and P-value &lt; 0.05 were considered significant.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib2" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM499302" />
+    <Sample-Ref ref="GSM499303" />
+    <Sample-Ref ref="GSM499304" />
+    <Sample-Ref ref="GSM499305" />
+    <Sample-Ref ref="GSM499306" />
+    <Sample-Ref ref="GSM499313" />
+    <Sample-Ref ref="GSM499314" />
+    <Sample-Ref ref="GSM499315" />
+    <Sample-Ref ref="GSM499360" />
+    <Sample-Ref ref="GSM499361" />
+    <Sample-Ref ref="GSM499362" />
+    <Sample-Ref ref="GSM499363" />
+    <Sample-Ref ref="GSM499364" />
+    <Sample-Ref ref="GSM499365" />
+    <Sample-Ref ref="GSM499367" />
+    <Sample-Ref ref="GSM499369" />
+    <Sample-Ref ref="GSM499391" />
+    <Sample-Ref ref="GSM499399" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE19985/GSE19985_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/120145" />
+  </Series>
+
+</MINiML>

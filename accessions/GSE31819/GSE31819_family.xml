@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Anne</First><Middle>de</Middle><Last>Jong</Last></Person>
+    <Email>anne.de.jong@rug.nl</Email>
+    <Phone>+31 50 363 2047</Phone>
+    <Fax>+31 50 363 2348</Fax>
+    <Department>Molecular Genetics</Department>
+    <Organization>university of Groningen</Organization>
+    <Address>
+      <Line>Kerklaan 30</Line>
+      <City>Haren</City>
+      <Postal-Code>9751 NN</Postal-Code>
+      <Country>Netherlands</Country>
+    </Address>
+    <Web-Link>molgen.biol.rug.nl</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Anne</First><Last>de Jong</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Siger</First><Last>Holsappel</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL11484">
+    <Status database="GEO">
+      <Submission-Date>2011-01-14</Submission-Date>
+      <Release-Date>2011-01-15</Release-Date>
+      <Last-Update-Date>2011-01-15</Last-Update-Date>
+    </Status>
+    <Title>Streptococcus pneumoniae D39 Multiplatform 1909k array</Title>
+    <Accession database="GEO">GPL11484</Accession>
+    <Technology>spotted DNA/cDNA</Technology>
+    <Distribution>non-commercial</Distribution>
+    <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+    <Manufacturer>university of Groningen</Manufacturer>
+    <Manufacture-Protocol>
+Standard spotting protocol on GenpakArray21
+    </Manufacture-Protocol>
+    <Support>glass</Support>
+    <Coating>aminosilane</Coating>
+    <Description>
+mixed spotted oligonucleotide/cDNA
+    </Description>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>ORF</Name>
+        <Description>Locus tag  </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene]</Link-Suffix>
+      </Column>
+      <Column position="3">
+        <Name>probe_id</Name>
+        <Description>Reference for the original probe design</Description>
+      </Column>
+      <Column position="4">
+        <Name>evalue</Name>
+        <Description>x homology value with TIGR4</Description>
+      </Column>
+      <Column position="5">
+        <Name>gene</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="6">
+        <Name>protein_id</Name>
+        <Description>protein name</Description>
+      </Column>
+      <Column position="7">
+        <Name>gene_id</Name>
+        <Description>GI number</Description>
+      </Column>
+      <Column position="8">
+        <Name>SEQUENCE</Name>
+        <Description>probe sequence</Description>
+      </Column>
+    <External-Data rows="1909">
+GPL11484-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM789257">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>185716_gluc_M_wtCy3-ccpACy5</Title>
+    <Accession database="GEO">GSM789257</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 1
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789257/GSM789257.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789257-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789258">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>185720_gluc_M_wtCy3-ccpACy5</Title>
+    <Accession database="GEO">GSM789258</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 2
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789258/GSM789258.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789258-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789259">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>186049_gluc_M_wtCy5-ccpACy3</Title>
+    <Accession database="GEO">GSM789259</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 3
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789259/GSM789259.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789259-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789260">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>185519_gluc_TS_wtCy5_ccpACy3</Title>
+    <Accession database="GEO">GSM789260</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 1
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789260/GSM789260.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789260-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789261">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>185698_gluc_TS_wtCy3_ccpACy5</Title>
+    <Accession database="GEO">GSM789261</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 2
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789261/GSM789261.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789261-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789262">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>185719_gluc_TS_wtCy3_ccpACy5</Title>
+    <Accession database="GEO">GSM789262</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with glucose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 3
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789262/GSM789262.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789262-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789263">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>186051_gal_M_wtCy5-ccpACy3</Title>
+    <Accession database="GEO">GSM789263</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 1
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789263/GSM789263.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789263-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789264">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>186053_gal_M_wtCy5-ccpACy3</Title>
+    <Accession database="GEO">GSM789264</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 2
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789264/GSM789264.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789264-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789265">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>186055_gal_M_wtCy3-ccpACy5</Title>
+    <Accession database="GEO">GSM789265</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to MID-log phase in CDM medium with Galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 3
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789265/GSM789265.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789265-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789266">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>342704_gal_TS_wtCy5_ccpACy3</Title>
+    <Accession database="GEO">GSM789266</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 1
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789266/GSM789266.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789266-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM789267">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2011-10-01</Last-Update-Date>
+    </Status>
+    <Title>342770_gal_TS_wtCy5_ccpACy3</Title>
+    <Accession database="GEO">GSM789267</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>2</Channel-Count>
+    <Channel position="1">
+      <Source>Net intensity (tr.mean) {A}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+Wild type
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Channel position="2">
+      <Source>Net intensity (tr.mean) {B}</Source>
+      <Organism taxid="373153">Streptococcus pneumoniae D39</Organism>
+      <Characteristics tag="genotype/variation">
+ccpA mutant
+      </Characteristics>
+      <Growth-Protocol>
+Cells were grown to transition (TS) phase in CDM medium with galactose as the sole carbon source
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated and purified using the High Pure RNA isolation kit (Roche diagnostics) as described (Kloosterman et al., 2006). Contaminating genomic DNA was removed by treatment with RNase-free DNase I (Roche diagnostics). RNA was isolated from Four replicate cultures.
+      </Extract-Protocol>
+      <Label>Cy5</Label>
+      <Label-Protocol>
+Total RNA was incubated for 16 h at 42°C in the presence of 400 U Superscript III RNase H reverse transcriptase (Invitrogen), 0.2 mM aminoallyl dUTP (Amersham), 0.5 mM dATP, 0.5 mM dCTP, 0.5 mM dGTP, 0.3 mM dTTP, and 3.2 g random nonamers. The synthesized cDNA was then labeled by coupling either Cy3 or Cy5 to the dUTP aminoallyl reactive group (CyScribe postlabeling kit; Amersham Biosciences) and was purified using a GFX PCR, DNA, and gel band purification kit (Amersham Biosciences
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+The protocol was performed as described in Kloosterman TG et al., 2006b
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Scanning was done using the Genepix 4200AL laser scanner
+    </Scan-Protocol>
+    <Description>
+Sample 2
+    </Description>
+    <Data-Processing>
+Dual-channel array images were analyzed with ArrayPro 4.5 software (Media Cybernetics Inc.). Spots were screened visually to identify those of low quality. Slide data were processed with MicroPreP. Prior to analysis, automatically and manually flagged spots and spots with very low background subtracted signal intensity (5% of the weakest spots [sum of Cy3 and Cy5 net signals]) were filtered out of all data sets.Net signal intensities were calculated by grid-based background subtraction. A grid-based Lowess transformation was performed for slide normalization, negative and empty values were removed, and outliers were removed by the deviation test. Expression ratios of copY mutant strain over the D39 wild-type strain were calculated. Further analysis was performed with a Cyber-T Student t test for paired data.
+    </Data-Processing>
+    <Platform-Ref ref="GPL11484" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM789nnn/GSM789267/GSM789267.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>LN ratio (Target /Control = ccpA mutant/wild type=ch2/ch1) and grid based lowess normalisation</Description>
+      </Column>
+    <External-Data rows="1817">
+GSM789267-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE31819">
+    <Status database="GEO">
+      <Submission-Date>2011-09-01</Submission-Date>
+      <Release-Date>2011-10-01</Release-Date>
+      <Last-Update-Date>2012-03-23</Last-Update-Date>
+    </Status>
+    <Title>CcpA Ensures Optimal Metabolic Fitness of Streptococcus pneumoniae</Title>
+    <Accession database="GEO">GSE31819</Accession>
+    <Pubmed-ID>22039538</Pubmed-ID>
+    <Summary>
+This SuperSeries is composed of the following subset Series:
+GSE31815: ccpA mutant compared to D39 wild-type in Streptococcus pneumoniae in CDM + Glucose at MID-log growth phase
+GSE31816: ccpA mutant compared to D39 wild-type in Streptococcus pneumoniae in CDM + GLucose at transition-phase of growth (TS)
+GSE31817: ccpA mutant compared to D39 wild-type in Streptococcus pneumoniae in CDM + Galactose at MID-log growth phase
+GSE31818: ccpA mutant compared to D39 wild-type in Streptococcus pneumoniae in CDM + galactose at transition-phase of growth (TS)
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM789257" />
+    <Sample-Ref ref="GSM789258" />
+    <Sample-Ref ref="GSM789259" />
+    <Sample-Ref ref="GSM789260" />
+    <Sample-Ref ref="GSM789261" />
+    <Sample-Ref ref="GSM789262" />
+    <Sample-Ref ref="GSM789263" />
+    <Sample-Ref ref="GSM789264" />
+    <Sample-Ref ref="GSM789265" />
+    <Sample-Ref ref="GSM789266" />
+    <Sample-Ref ref="GSM789267" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE31819/GSE31819_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SuperSeries of" target="GSE31815" />
+    <Relation type="SuperSeries of" target="GSE31816" />
+    <Relation type="SuperSeries of" target="GSE31817" />
+    <Relation type="SuperSeries of" target="GSE31818" />
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/145467" />
+  </Series>
+
+</MINiML>

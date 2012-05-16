@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Justin</First><Last>Merritt</Last></Person>
+    <Email>justin-merritt@ouhsc.edu</Email>
+    <Phone>405 271-2324</Phone>
+    <Department>Oral Biology</Department>
+    <Organization>University of Oklahoma Health Sciences Center</Organization>
+    <Address>
+      <Line>975 NE 10th St BRC364</Line>
+      <City>Oklahoma City</City>
+      <State>OK</State>
+      <Zip-Code>73104</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Dragana</First><Last>Ajdic</Last></Person>
+    <Email>dragana-ajdic@ouhsc.edu</Email>
+    <Phone>405-271-1202</Phone>
+    <Fax>405-271-3117</Fax>
+    <Department>Microbiology and Immunology</Department>
+    <Organization>OUHSC</Organization>
+    <Address>
+      <Line>940 S. L. Young Blvd.</Line>
+      <City>Oklahoma City</City>
+      <State>OK</State>
+      <Zip-Code>73104</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Zhoujie</First><Last>Xie</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL4769">
+    <Status database="GEO">
+      <Submission-Date>2007-01-20</Submission-Date>
+      <Release-Date>2007-06-15</Release-Date>
+      <Last-Update-Date>2007-06-15</Last-Update-Date>
+    </Status>
+    <Title>Streptococcus mutans UA159 Affymetrix Microarray</Title>
+    <Accession database="GEO">GPL4769</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="1309">Streptococcus mutans</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+Affymetrix Microchip Manufacturing Protocol
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>GeneID</Name>
+      </Column>
+      <Column position="3">
+        <Name>Locus</Name>
+        <Description>gene name</Description>
+      </Column>
+      <Column position="4">
+        <Name>ORF</Name>
+        <Description>locus tag </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=gene&amp;cmd=search&amp;term=</Link-Prefix>
+      </Column>
+      <Column position="5">
+        <Name>SPOT_ID</Name>
+        <Description>spot identifier</Description>
+      </Column>
+    <External-Data rows="1912">
+GPL4769-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM565623">
+    <Status database="GEO">
+      <Submission-Date>2010-07-12</Submission-Date>
+      <Release-Date>2010-08-15</Release-Date>
+      <Last-Update-Date>2010-07-12</Last-Update-Date>
+    </Status>
+    <Title>Control stain, no brsR expression</Title>
+    <Accession database="GEO">GSM565623</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA140</Source>
+      <Organism taxid="1309">Streptococcus mutans</Organism>
+      <Characteristics tag="cell type">
+planktonic cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔbrsRM /pFW5::PlacA
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were grown to OD600 = 0.3 and harvested by centrifugation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown overnight in chemically-defined medium with 0.5% glucose as carbon source. Overnight culture was diluted 1:30 in CDM with 1% (wt/vol) lactose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were lysed using beat-beater. Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3 μl of cDNA were hybridized for 16 hr at 47℃ on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.3
+    </Description>
+    <Data-Processing>
+Data were analyzed with Affymetrix Gene Chip Operating Software version 1.4 (GCOS 1.4)
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM565nnn/GSM565623/GSM565623.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="1912">
+GSM565623-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM565624">
+    <Status database="GEO">
+      <Submission-Date>2010-07-12</Submission-Date>
+      <Release-Date>2010-08-15</Release-Date>
+      <Last-Update-Date>2010-07-12</Last-Update-Date>
+    </Status>
+    <Title>inducible brsR strain</Title>
+    <Accession database="GEO">GSM565624</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Streptococcus mutans UA140</Source>
+      <Organism taxid="1309">Streptococcus mutans</Organism>
+      <Characteristics tag="cell type">
+planktonic cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+ΔbrsRM /pFW5::PlacA-brsR
+      </Characteristics>
+      <Treatment-Protocol>
+Cells were grown to OD600 = 0.3 and harvested by centrifugation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cells were grown overnight in chemically-defined medium with 0.5% glucose as carbon source. Overnight culture was diluted 1:30 in CDM with 1% (wt/vol) lactose.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were lysed using beat-beater. Extraction of total RNA was performed using Ambion RiboPure Bacteria kit according to the manufacturers protocol.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according to the standard Affymetrix protocol.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Following fragmentation, 3 μl of cDNA were hybridized for 16 hr at 47℃ on GeneChip S. mutans Genome Array. GeneChips were washed and stained in the Affymetrix Fluidics Station 450.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using a laser scanner 7G (Affymetrix)
+    </Scan-Protocol>
+    <Description>
+Gene transcription data from planktonic culture OD600=0.3
+    </Description>
+    <Data-Processing>
+Data were analyzed with Affymetrix Gene Chip Operating Software version 1.4 (GCOS 1.4)
+    </Data-Processing>
+    <Platform-Ref ref="GPL4769" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM565nnn/GSM565624/GSM565624.CEL.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>GCOS analyzed signal intensity</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+      </Column>
+      <Column position="4">
+        <Name>DETECTION P-VALUE</Name>
+      </Column>
+    <External-Data rows="1912">
+GSM565624-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE22902">
+    <Status database="GEO">
+      <Submission-Date>2010-07-12</Submission-Date>
+      <Release-Date>2010-08-15</Release-Date>
+      <Last-Update-Date>2012-03-22</Last-Update-Date>
+    </Status>
+    <Title>Identification of a Novel Bacteriocin Regulatory System in Streptococcus mutans</Title>
+    <Accession database="GEO">GSE22902</Accession>
+    <Pubmed-ID>21143316</Pubmed-ID>
+    <Summary>
+Recently, we described the function of a novel two-gene regulatory system consisting of a LytTR family transcription regulator and a membrane protein, which we referred to as the hdrRM operon.
+We determined that the HdrRM system controls the expression of another similar regulatory system annotated as SMU.2080 and SMU.2081. Like hdrRM, the SMU.2080 – 2081 operon encodes a LytTR family transcription regulator and membrane protein, which we now refer to as BrsR and BrsM, respectively. In this study, we used microarray to examine the regulatory role of BrsR and found that it functions as a transcription activator for a variety of bacteriocins and bacteriocin-related genes.
+    </Summary>
+    <Overall-Design>
+Streptococcus mutans UA140 derivatives, lacA ( genotype: ΔbrsRM /pFW5::PlacA ) and lacA2080 (genotype:ΔbrsRM /pFW5::PlacA-brsR),  were cultivated overnight at 37°C in a chemically-defined medium containing 0.5% (wt/vol) glucose as carbon source .  The overnight cultures were diluted 1:30 in CDM with 1% (wt/vol) lactose in a total volume of 30 ml.  The cells were allowed to grow to an optical density at 600 nm of 0.3 and RNA was extracted.  The transcriptional profile of the whole genome was examined with microarray.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM565623" />
+    <Sample-Ref ref="GSM565624" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE22902/GSE22902_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/127951" />
+  </Series>
+
+</MINiML>

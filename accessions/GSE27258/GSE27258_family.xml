@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Masahide</First><Last>Yano</Last></Person>
+    <Email>masahide.yano@phd.einstein.yu.edu</Email>
+    <Phone>71804302372</Phone>
+    <Laboratory>Pirofski</Laboratory>
+    <Department>Microbiology and Immunology</Department>
+    <Organization>Albert Einstein College of Medicine</Organization>
+    <Address>
+      <Line>1300 Morris Park Ave</Line>
+      <City>Bronx</City>
+      <State>NY</State>
+      <Zip-Code>10461</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Shruti</First><Last>Gohil</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Liise-anne</First><Last>Pirofski</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL13163">
+    <Status database="GEO">
+      <Submission-Date>2011-02-11</Submission-Date>
+      <Release-Date>2011-03-01</Release-Date>
+      <Last-Update-Date>2011-03-01</Last-Update-Date>
+    </Status>
+    <Title>Streptococcus pneumoniae TIGR4 4 x 2K</Title>
+    <Accession database="GEO">GPL13163</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="170187">Streptococcus pneumoniae TIGR4</Organism>
+    <Manufacturer>NimbleGen</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's website
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="NDF">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL13163/GPL13163_081030_Spne_EXP.ndf.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="NGD">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/platforms/GPL13163/GPL13163_081030_Spne_EXP.ngd.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+      </Column>
+      <Column position="2">
+        <Name>SEQ_ID</Name>
+      </Column>
+      <Column position="3">
+        <Name>GENE_EXPR_OPTION</Name>
+      </Column>
+      <Column position="4">
+        <Name>ORF</Name>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&amp;cmd=search&amp;term=</Link-Prefix>
+        <Link-Suffix>[gene name]</Link-Suffix>
+      </Column>
+    <External-Data rows="8016">
+GPL13163-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM673839">
+    <Status database="GEO">
+      <Submission-Date>2011-02-11</Submission-Date>
+      <Release-Date>2011-03-01</Release-Date>
+      <Last-Update-Date>2011-03-01</Last-Update-Date>
+    </Status>
+    <Title>Pneumo-1E2+CPS2-8min</Title>
+    <Accession database="GEO">GSM673839</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>1E2 + CSP2 - 8 min</Source>
+      <Organism taxid="1313">Streptococcus pneumoniae</Organism>
+      <Characteristics tag="treatment">
+1E2 (Streptococcus pneumoniae serotype 3 capsule specific monoclonal Ab) + CSP2 (Streptococcus pneumoniae serotype 3 capsule specific monoclonal Ab)
+      </Characteristics>
+      <Characteristics tag="time">
+8 min
+      </Characteristics>
+      <Treatment-Protocol>
+RNAprotect was used to avoid degredation of RNA.   mRNA was amplified with mRNA enrichment kit
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Up to early log phase in bacterial growth medium at 30 degree
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+mRNA was extracted with MICROBE express
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+One color (Cy3) labeling. see NimbleGen's NG_Expression_Guide_v5p1.pdf
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized using a Mix from nimblegen. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned with the  MS200 microarray schanner. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Scan-Protocol>
+    <Data-Processing>
+Data were analyzed using Robust Multichip Average. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Data-Processing>
+    <Platform-Ref ref="GPL13163" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CALLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673839/GSM673839_42050502_532.calls.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="PAIR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673839/GSM673839_42050502_532.pair.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>SE_EXPRS</Name>
+      </Column>
+    <External-Data rows="8016">
+GSM673839-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM673840">
+    <Status database="GEO">
+      <Submission-Date>2011-02-11</Submission-Date>
+      <Release-Date>2011-03-01</Release-Date>
+      <Last-Update-Date>2011-03-01</Last-Update-Date>
+    </Status>
+    <Title>Pneumo-untreated</Title>
+    <Accession database="GEO">GSM673840</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>untreated</Source>
+      <Organism taxid="1313">Streptococcus pneumoniae</Organism>
+      <Characteristics tag="treatment">
+untreated
+      </Characteristics>
+      <Treatment-Protocol>
+RNAprotect was used to avoid degredation of RNA.   mRNA was amplified with mRNA enrichment kit
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Up to early log phase in bacterial growth medium at 30 degree
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+mRNA was extracted with MICROBE express
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+One color (Cy3) labeling. see NimbleGen's NG_Expression_Guide_v5p1.pdf
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized using a Mix from nimblegen. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned with the  MS200 microarray schanner. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Scan-Protocol>
+    <Data-Processing>
+Data were analyzed using Robust Multichip Average. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Data-Processing>
+    <Platform-Ref ref="GPL13163" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CALLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673840/GSM673840_42052502_532.calls.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="PAIR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673840/GSM673840_42052502_532.pair.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>SE_EXPRS</Name>
+      </Column>
+    <External-Data rows="8016">
+GSM673840-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM673841">
+    <Status database="GEO">
+      <Submission-Date>2011-02-11</Submission-Date>
+      <Release-Date>2011-03-01</Release-Date>
+      <Last-Update-Date>2011-03-01</Last-Update-Date>
+    </Status>
+    <Title>Pneumo-31B12</Title>
+    <Accession database="GEO">GSM673841</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>31B12</Source>
+      <Organism taxid="1313">Streptococcus pneumoniae</Organism>
+      <Characteristics tag="treatment">
+31B12 (Streptococcus pneumoniae serotype 8 capsule specific monoclonal Ab - control)
+      </Characteristics>
+      <Treatment-Protocol>
+RNAprotect was used to avoid degredation of RNA.   mRNA was amplified with mRNA enrichment kit
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Up to early log phase in bacterial growth medium at 30 degree
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+mRNA was extracted with MICROBE express
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+One color (Cy3) labeling. see NimbleGen's NG_Expression_Guide_v5p1.pdf
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized using a Mix from nimblegen. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned with the  MS200 microarray schanner. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Scan-Protocol>
+    <Data-Processing>
+Data were analyzed using Robust Multichip Average. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Data-Processing>
+    <Platform-Ref ref="GPL13163" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CALLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673841/GSM673841_42051002_532.calls.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="PAIR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673841/GSM673841_42051002_532.pair.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>SE_EXPRS</Name>
+      </Column>
+    <External-Data rows="8016">
+GSM673841-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM673842">
+    <Status database="GEO">
+      <Submission-Date>2011-02-11</Submission-Date>
+      <Release-Date>2011-03-01</Release-Date>
+      <Last-Update-Date>2011-03-01</Last-Update-Date>
+    </Status>
+    <Title>Pneumo-1E2 1</Title>
+    <Accession database="GEO">GSM673842</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>1E2</Source>
+      <Organism taxid="1313">Streptococcus pneumoniae</Organism>
+      <Characteristics tag="treatment">
+1E2 (Streptococcus pneumoniae serotype 3 capsule specific monoclonal Ab)
+      </Characteristics>
+      <Treatment-Protocol>
+RNAprotect was used to avoid degredation of RNA.   mRNA was amplified with mRNA enrichment kit
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Up to early log phase in bacterial growth medium at 30 degree
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+mRNA was extracted with MICROBE express
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+One color (Cy3) labeling. see NimbleGen's NG_Expression_Guide_v5p1.pdf
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized using a Mix from nimblegen. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned with the  MS200 microarray schanner. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Scan-Protocol>
+    <Data-Processing>
+Data were analyzed using Robust Multichip Average. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Data-Processing>
+    <Platform-Ref ref="GPL13163" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CALLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673842/GSM673842_42051102_532.calls.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="PAIR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673842/GSM673842_42051102_532.pair.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>SE_EXPRS</Name>
+      </Column>
+    <External-Data rows="8016">
+GSM673842-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM673843">
+    <Status database="GEO">
+      <Submission-Date>2011-02-11</Submission-Date>
+      <Release-Date>2011-03-01</Release-Date>
+      <Last-Update-Date>2011-03-01</Last-Update-Date>
+    </Status>
+    <Title>Pneumo-1E2+CPS2-2min</Title>
+    <Accession database="GEO">GSM673843</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>1E2 + CSP2 - 2 min</Source>
+      <Organism taxid="1313">Streptococcus pneumoniae</Organism>
+      <Characteristics tag="treatment">
+1E2 (Streptococcus pneumoniae serotype 3 capsule specific monoclonal Ab) + CSP2 (Streptococcus pneumoniae serotype 3 capsule specific monoclonal Ab)
+      </Characteristics>
+      <Characteristics tag="time">
+2 min
+      </Characteristics>
+      <Treatment-Protocol>
+RNAprotect was used to avoid degredation of RNA.   mRNA was amplified with mRNA enrichment kit
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Up to early log phase in bacterial growth medium at 30 degree
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+mRNA was extracted with MICROBE express
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+One color (Cy3) labeling. see NimbleGen's NG_Expression_Guide_v5p1.pdf
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized using a Mix from nimblegen. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned with the  MS200 microarray schanner. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Scan-Protocol>
+    <Data-Processing>
+Data were analyzed using Robust Multichip Average. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Data-Processing>
+    <Platform-Ref ref="GPL13163" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CALLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673843/GSM673843_42052302_532.calls.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="PAIR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673843/GSM673843_42052302_532.pair.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>SE_EXPRS</Name>
+      </Column>
+    <External-Data rows="8016">
+GSM673843-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM673845">
+    <Status database="GEO">
+      <Submission-Date>2011-02-11</Submission-Date>
+      <Release-Date>2011-03-01</Release-Date>
+      <Last-Update-Date>2011-03-01</Last-Update-Date>
+    </Status>
+    <Title>Pneumo-CSP2-2min</Title>
+    <Accession database="GEO">GSM673845</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CSP2-2 min</Source>
+      <Organism taxid="1313">Streptococcus pneumoniae</Organism>
+      <Characteristics tag="treatment">
+CSP2 (Streptococcus pneumoniae serotype 3 capsule specific monoclonal Ab)
+      </Characteristics>
+      <Characteristics tag="time">
+2 min
+      </Characteristics>
+      <Treatment-Protocol>
+RNAprotect was used to avoid degredation of RNA.   mRNA was amplified with mRNA enrichment kit
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Up to early log phase in bacterial growth medium at 30 degree
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+mRNA was extracted with MICROBE express
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+One color (Cy3) labeling. see NimbleGen's NG_Expression_Guide_v5p1.pdf
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Samples were hybridized using a Mix from nimblegen. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were scanned with the  MS200 microarray schanner. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Scan-Protocol>
+    <Data-Processing>
+Data were analyzed using Robust Multichip Average. See NimbleGen's NG_Expression_Guide_v5p1.pdf
+    </Data-Processing>
+    <Platform-Ref ref="GPL13163" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CALLS">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673845/GSM673845_42050602_532.calls.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="PAIR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM673nnn/GSM673845/GSM673845_42050602_532.pair.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA signal</Description>
+      </Column>
+      <Column position="3">
+        <Name>SE_EXPRS</Name>
+      </Column>
+    <External-Data rows="8016">
+GSM673845-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE27258">
+    <Status database="GEO">
+      <Submission-Date>2011-02-11</Submission-Date>
+      <Release-Date>2011-03-01</Release-Date>
+      <Last-Update-Date>2012-03-23</Last-Update-Date>
+    </Status>
+    <Title>An antibody to Streptococcus pneumoniae capsular polysaccharide enhances quorum sensing</Title>
+    <Accession database="GEO">GSE27258</Accession>
+    <Pubmed-ID>21917597</Pubmed-ID>
+    <Summary>
+The primary mechanism by which pneumococcal capsular polysaccharide-based vaccines are believed to mediate protection is by induction of serotype-specific opsonic antibodies that facilitate bacterial killing by phagocytes (opsonophagocytosis).  However, antibodies that are protective against experimental pneumococcal pneumonia in mice but do not promote opsonophagocytic killing in vitro have also been identified 1-3.  Such non-opsonic antibodies are associated with bacterial clearance in vivo, but the mechanism by which this occurs is unknown.  In this letter, we demonstrate that a protective, non-opsonic serotype 3 pneumococcal capsular polysaccharide-specific monoclonal antibody (MAb) enhances quorum sensing, which results in competence induction and fratricide of serotype 3 pneumococcus.  Gene expression profile analysis revealed that the MAb together with the pneumococcal autoinducer, competence stimulating peptide 2 (CSP2), augments differential expression of competence (com) related bacteriocin-like peptide (blp) genes that are known to be involved in pneumococcal fratricide. Taken together, these findings reveal a previously unsuspected mechanism of antibody action, namely, enhancement of quorum sensing and bacterial fratricide.  Given that this activity does not require phagocytes, antibodies that function accordingly may hold promise as adjuncts to current vaccines or as desired products of next generation pneumococcal vaccines.
+    </Summary>
+    <Overall-Design>
+6 samples
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib2" position="2" />
+    <Contributor-Ref ref="contrib3" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM673839" />
+    <Sample-Ref ref="GSM673840" />
+    <Sample-Ref ref="GSM673841" />
+    <Sample-Ref ref="GSM673842" />
+    <Sample-Ref ref="GSM673843" />
+    <Sample-Ref ref="GSM673845" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/series/GSE27258/GSE27258_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="http://www.ncbi.nlm.nih.gov/bioproject/137163" />
+  </Series>
+
+</MINiML>
