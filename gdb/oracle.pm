@@ -731,10 +731,11 @@ sub dbgetExpmInfo {
 sub dbexpInfo {
 	my ($expid) = @_;
 
-	#czhang, order by add date and modify date
-	#$sql =qq{ select id, expname, samples, timepoint, channels, testcolumn, testbkgd, controlcolumn, cntlbkgd, logarithm, normalize, antilog, userma, expstddev, exporder, platform, testgenome, cntlgenome, adduser, moduser,to_char(adddate, 'mm/dd/yy HH:MIam') as adate, to_char(moddate, 'mm/dd/yy HH:MIam') as mdate, expmean from pexp where expid = ? order by exporder, timepoint, samples };
-	$sql =qq{ select id, expname, samples, timepoint, channels, testcolumn, testbkgd, controlcolumn, cntlbkgd, logarithm, normalize, antilog, userma, expstddev, exporder, platform, testgenome, cntlgenome, adduser, moduser,to_char(adddate, 'mm/dd/yy HH:MIam') as adate, to_char(moddate, 'mm/dd/yy HH:MIam') as mdate, expmean from pexp where expid = ? order by timepoint, mdate, exporder };
+#czhang re-order outut information by add date and 	
+#$sql =qq{ select id, expname, samples, timepoint, channels, testcolumn, testbkgd, controlcolumn, cntlbkgd, logarithm, normalize, antilog, userma, expstddev, exporder, platform, testgenome, cntlgenome, adduser, moduser,to_char(adddate, 'mm/dd/yy HH:MIam') as adate, to_char(moddate, 'mm/dd/yy HH:MIam') as mdate, expmean from pexp where expid = ? order by exporder, timepoint, samples };
 	
+
+$sql =qq{ select id, expname, samples, timepoint, channels, testcolumn, testbkgd, controlcolumn, cntlbkgd, logarithm, normalize, antilog, userma, expstddev, exporder, platform, testgenome, cntlgenome, adduser, moduser,to_char(adddate, 'mm/dd/yy HH:MIam') as adate, to_char(moddate, 'mm/dd/yy HH:MIam') as mdate, expmean from pexp where expid = ? order by adate, mdate, timepoint};
 	
 	$sth = $dbh->prepare($sql);
 	$sth->execute($expid);
@@ -1354,6 +1355,7 @@ sub dbgetAccExpm {
 	# we get ALL experiments so the OUID will be correct
 
 	$sql = qq{ select a.id, a.expid, a.expname, a.channels, a.timepoint, a.expstddev, a.platform, a.testgenome, a.cntlgenome from pexp a order by to_number(substr(a.accession,4)), a.exporder, a.timepoint, a.samples };
+	
 	$sth = $dbh->prepare($sql);
 	$sth->execute();
 
@@ -1480,7 +1482,7 @@ sub dbsaveExptoDB {
 	#$sql = qq{ insert into pexp (id,eid,expname,expid,accession,samples,channels,testcolumn,testbkgd,controlcolumn,cntlbkgd,logarithm,normalize,antilog,userma,plottype,info,expstddev,platform,testgenome,cntlgenome,adddate,adduser) values ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,sysdate,? ) };
 	
 	#CZHANG added exp mean value
-	$sql = qq{ insert into pexp (id,eid,expname,expid,accession,samples,channels,testcolumn,testbkgd,controlcolumn,cntlbkgd,logarithm,normalize,antilog,userma,plottype,info,expstddev,platform,testgenome,cntlgenome,adddate,adduser, expmean) values ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,SYSTIMESTAMP,?, ?) };
+	$sql = qq{ insert into pexp (id,eid,expname,expid,accession,samples,channels,testcolumn,testbkgd,controlcolumn,cntlbkgd,logarithm,normalize,antilog,userma,plottype,info,expstddev,platform,testgenome,cntlgenome,adddate,adduser, expmean) values ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,sysdate,?, ?) };
 	
 	$sth = $dbh->prepare($sql);
 
@@ -2698,7 +2700,7 @@ sub dbputgeoUpdate {
 	}
 
 	#add record if we do not have it...
-	$sql = qq{ insert into curated (id, accession, geodesc, geomatch, status, adddate, adduser)  values ( id_seq.nextval, ?, ?, ?, 1, SYSTIMESTAMP, ? ) };
+	$sql = qq{ insert into curated (id, accession, geodesc, geomatch, status, adddate, adduser)  values ( id_seq.nextval, ?, ?, ?, 1, sysdate, ? ) };
 	$sth = $dbh->prepare($sql);
 
 	my $numadded = 0;
