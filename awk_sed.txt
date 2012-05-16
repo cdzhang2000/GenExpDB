@@ -1,1 +1,13 @@
 awk '{if($2>1){ print $2}}' GSM731718-tbl-1.txt
+
+
+ sudo sed 's/genexpdb.ccrlikknzibd.us-east-1.rds.amazonaws.com/genexpdb-dev.ccrlikknzibd.us-east-1.rds.amazonaws.com/g' *.pm 
+ 
+ 
+ 
+
+In this example, the regular expression given in the sed command matches the html tags and replaces with the empty.
+
+$ sed -e 's/<[^>]*>//g'
+This <b> is </b> an <i>example</i>.
+This  is  an example.
